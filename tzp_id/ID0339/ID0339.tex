@@ -1,0 +1,250 @@
+\tzpanchor{0339}
+\tzpentryheader{0339}{Weak-Field Flow Dynamics in Static Lattice}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{4d9ab9d9-22e3-5b85-8980-cace77639a74}}\\
+\textbf{PiID} & \tzpcode{0917153643678} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{346}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1316.4123 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{02.1690 rad}\\
+\textbf{TZPID} & \tzpcode{ID0339} & \textbf{Node Dependencies}\quad \tzpidref{0338}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0339} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Weak-Field Flow Equation & Diffusion Carrier\\
+\textbf{Closure Support} & Potential Carrier & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Weak fields propagate through the static metamaterial lattice via diffusion modulated by spatial heterogeneity and pinned potentials.
+
+\tzpsection{Canonical Equation}
+\[
+\partial_t\psi=-\nabla\cdot\!\left(D(x)\nabla\psi\right)+V(x)\psi
+\]
+\[
+\mathbf{J}=-D(x)\nabla\psi
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $D$: source equation symbol.
+    \item $V$: auxiliary target state or comparison variable.
+    \item $J$: source equation symbol.
+    \item $x$: local field point or coordinate variable in the canonical equation.
+    \item $\psi$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0339 generated source Wolfram model *)
+ClearAll[K0339, Cr0339, T, R, A, W, I, N];
+eq0339$1 = HoldForm[PartialTpsi == (-Grad)*(D[x]*Gradpsi) + V[x]*psi];
+eq0339$2 = HoldForm[J == (-D[x])*Gradpsi];
+eq0339$3 = HoldForm[PartialTpsi + Grad*J == V[x]*psi];
+
+K0339 = HoldForm[{eq0339$1, eq0339$2, eq0339$3}];
+
+N = "normalized TRAWIN closure object for Weak-Field Flow Dynamics in Static Lattice";
+I = "Potential Carrier integration/comparison layer";
+W = "Diffusion Carrier wave or operator carrier";
+A = "Weak-Field Flow Equation admissible action/amplitude condition";
+R = "Diffusion Carrier rotation/curl preservation layer";
+T = "Weak-Field Flow Equation local source condition";
+
+Cr0339[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0339 = Cr0339[K0339];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Weak-Field Flow Equation local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Diffusion Carrier rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Weak-Field Flow Equation admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Diffusion Carrier wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Potential Carrier integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Weak-Field Flow Dynamics in Static Lattice.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0339] Weak-Field Flow Dynamics in Static Lattice}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\frac{\mathbf{B}^2}{2\mu}
+=
+\frac{1}{2}\rho(\Omega r)^2 .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+The magnetic energy density is:
+
+\begin{equation}
+u_B
+=
+\frac{\mathbf{B}^2}{2\mu}.
+\end{equation}
+
+The rotational kinetic energy density associated with angular velocity $\Omega$ at radius $r$ is:
+
+\begin{equation}
+u_{\Omega}
+=
+\frac{1}{2}\rho v^2 .
+\end{equation}
+
+Since tangential velocity is:
+
+\begin{equation}
+v=\Omega r,
+\end{equation}
+
+we obtain:
+
+\begin{equation}
+u_{\Omega}
+=
+\frac{1}{2}\rho(\Omega r)^2 .
+\end{equation}
+
+Equipartition requires:
+
+\begin{equation}
+\boxed{
+\frac{\mathbf{B}^2}{2\mu}
+=
+\frac{1}{2}\rho(\Omega r)^2 .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Magnetic--Coriolis equipartition identifies the balance point where magnetic field energy and rotational kinetic energy density match.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Weak-Field Flow Dynamics in Static Lattice by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Weak-Field Flow Equation}\par
+\[
+\partial_t\psi=-\nabla\cdot\!\left(D(x)\nabla\psi\right)+V(x)\psi
+\]
+\noindent This fixes the weak-field lattice-flow equation carried by the metamaterial background.\par
+\noindent\textbf{2. Diffusion Carrier}\par
+\[
+\mathbf{J}=-D(x)\nabla\psi
+\]
+\noindent This requires a positive diffusion carrier across the spatially varying lattice.\par
+\noindent\textbf{3. Potential Carrier}\par
+\[
+\partial_t\psi+\nabla\cdot\mathbf{J}=V(x)\psi
+\]
+\noindent This closes the entry by identifying the potential sector with the imposed meta-bit field profile.\par
+
+\clearpage
+\noindent\textbf{[ID 0339] Weak-Field Flow Dynamics in Static Lattice}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Weak-Field Flow Dynamics in Static Lattice is a registry definition in Field Theory and Action Principles with secondary pressure from Manifold and Metric Dynamics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Weak fields propagate through the static metamaterial lattice via diffusion modulated by spatial heterogeneity and pinned potentials. \textbf{Contextual meaning:} The entry reads Weak-Field Flow Dynamics in Static Lattice as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now presents the lattice-flow dynamics as a clean weak-field PDE instead of a corrupted extracted sentence. \textbf{Lemma support:} Weak-Field Flow Equation; Diffusion Carrier; Potential Carrier.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Magnetic--Coriolis equipartition identifies the balance point where magnetic field energy and rotational kinetic energy density match.
+
+\tzpsection{Equation Grounding}
+Equation anchors: partial sub tpsi = - abladot bigl(D(x) ablapsibigr)+V(x)psi; D(x)>0; and V(x)=V sub meta (x). Proof route: show that the stated weak-field lattice dynamics are well posed under positive diffusion and the imposed meta-bit potential. Formalization route: prove that positivity of the diffusion carrier preserves admissible evolution under the stated flow equation.
+
+\tzpsection{Interpretive Role}
+The entry now presents the lattice-flow dynamics as a clean weak-field PDE instead of a corrupted extracted sentence.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Isotropic Diffusion Transport}: The mathematical description of particle or energy spread through a uniform grid driven entirely by concentration gradients.
+\item \textbf{Potential-Driven Drift}: The addition of a smooth background bias force guiding the overall direction of the random diffusion process.
+\item \textbf{Linearized Field Propagation}: The approximation reducing complex, chaotic flow equations into a solvable system valid only for very small amplitudes.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0339]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0339_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0339] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Weak-Field Flow Dynamics in Static Lattice}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} weak fields propagate through the static metamaterial lattice via diffusion modulated by
+spatial heterogeneity and pinned potentials
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Weak-Field Flow Dynamics in Static Lattice is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0339_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

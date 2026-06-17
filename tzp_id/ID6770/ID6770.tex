@@ -1,0 +1,17 @@
+\section*{ID6770: How to Use This in TZP Modeling and Experiments You Can Run: a\textasciicircum{}rm obs\_m}
+\paragraph{Metadata.}
+PiID: 0234395544959 | RTEID: RTE:P26289.4135:T5.6178 | UUID: 9e85bb4b-7b68-52ac-a701-d4657dc724e5
+
+\paragraph{Canonical Statement.}
+\#\# How to use this in TZP modeling and experiments you can run 1. **Extract angular spectrum from a real image** - Use the same annulus averaging code (I used annulus mean) to extract \textbackslash{}(A(\textbackslash{}phi)\textbackslash{}), then FFT to get \textbackslash{}(A\_m\textbackslash{}). Compare peaks to expected values for aperture geometry (e.g., 6 vanes → m=12). 2. **Recover intrinsic spherical-harmonic content (deconvolution)** - In spectral space, the observed coefficients equal the intrinsic coefficients times the PSF transfer at each m: \textbackslash{}(a\textasciicircum{}\{\textbackslash{}rm obs\}\_m = T\_m a\textasciicircum{}\{\textbackslash{}rm true\}\_m\textbackslash{}). Estimate \textbackslash{}(T\_m\textbackslash{}) from your aperture/PSF model and invert (regularize) to recover \textbackslash{}(a\textasciicircum{}\{\textbackslash{}rm true\}\_m\textbackslash{}). That’s the recipe I sketched earlier. 3. **Build TZP maps filtered by instrument** - Generate synthetic TZP spherical-harmonic maps (superpositions of Y\_l\textasciicircum{}m), compute their equatorial angular spectra, multiply by PSF spectra, and compare to the real photos. Tune TZP coefficients to best match — that’s a parameter estimation problem. 4. **Measure branching metric** - Compute \textbackslash{}(M = |A\_\{m\textasciicircum{}*\}|\textasciicircum{}2/\textbackslash{}sum\_\{m\textbackslash{}ne m\textasciicircum{}*\}|A\_m|\textasciicircum{}2\textbackslash{}). Low M indicates branching/mode-mixing (fractal/IFS); high M indicates a clean aperture spike. Use M as a TZP “bifurcation index.”
+
+\paragraph{Canonical Equation.}
+\[
+a^{\rm obs}_m = T_m a^{\rm true}_m
+\]
+
+\paragraph{Dictionary.}
+Relation: a\textasciicircum{}rm obs\_m = T\_m a\textasciicircum{}rm true\_m
+
+\paragraph{Encyclopedia.}
+How to Use This in TZP Modeling and Experiments You Can Run: a\textasciicircum{}rm obs\_m is an algebraic definition, written a\textasciicircum{}rm obs\_m = T\_m a\textasciicircum{}rm true\_m. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from T\_m, a, r, u, m, defining a\textasciicircum{}rm obs\_m. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

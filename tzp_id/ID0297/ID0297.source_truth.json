@@ -1,0 +1,339 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:51:48.145110+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0297",
+    "uuid": "443a3959-3a64-5ca6-8265-623931de16e3",
+    "registry_id": "registry_id_0297",
+    "canonical_title": "Polarity Reversal Patterns",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0297/ID0297.TEX",
+      "json": "D:/TZPID/TZPID/ID0297/ID0297.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0297/ID0297.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Polarity reversals observed in pressed magnet experiments align with geomagnetic reversals and solar magnetic cycle flips, with correlation around 0.68.",
+    "technical_interpretation": "Polarity reversals observed in pressed magnet experiments align with geomagnetic reversals and solar magnetic cycle flips, with correlation around 0.68."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "r_{\\mathrm{corr}} \\approx 0.68",
+      "mathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}"
+    ],
+    "source_section_latex": "\\[\nr_{\\mathrm{corr}} \\approx 0.68\n\\]\n\\[\nmathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Correlation Estimate",
+      "formula_latex_blocks": [
+        "r_{\\mathrm{corr}} \\approx 0.68"
+      ],
+      "interpretive_role": "This fixes the observed correlation estimate between the reversal datasets."
+    },
+    {
+      "step": 2,
+      "component_title": "Reversal Match",
+      "formula_latex_blocks": [
+        "mathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}"
+      ],
+      "interpretive_role": "This identifies the qualitative matching pattern across the three reversal classes."
+    },
+    {
+      "step": 3,
+      "component_title": "Pattern Threshold",
+      "formula_latex_blocks": [
+        "r_{\\mathrm{corr}} > \\frac{1}{2}"
+      ],
+      "interpretive_role": "This closes the entry with a threshold statement for nontrivial pattern agreement."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0297}$",
+        "description": "canonical registry object for entry ID 0297."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0297}$",
+        "name": "canonical registry object for entry ID 0297.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{geomagnetic}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{solar}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Polarity Reversal Patterns\nCanonical operator translation\neq0297_1 = HoldForm[rcorr ~== 0.68];\neq0297_2 = HoldForm[mathcal(R)pressed ~ (R)geomagnetic ~ (R)solar];\n\nTRAWIN closure composition\nTRAWINClosure0297[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0297 := HoldForm[{eq0297_1, eq0297_2}];\nResult0297 := TRAWINClosure0297[K0297];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "r_{\\mathrm{corr}} \\approx 0.68",
+          "normalized_latex": "rCorr==0.68",
+          "wolfram_input": "rCorr==0.68",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rCorr == 0.68]",
+          "texform_roundtrip": "\\text{rCorr}=0.68",
+          "messages": []
+        },
+        {
+          "latex": "mathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}",
+          "normalized_latex": "mathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}",
+          "wolfram_input": "SimilarTo[mathcal[R]_(pressed),SimilarTo[RGeomagnetic,RSolar]]",
+          "normalization_notes": [
+            "\\sim normalized to SimilarTo[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[SimilarTo[mathcal[R]*_*pressed, SimilarTo[RGeomagnetic, RSolar]]]",
+          "texform_roundtrip": "\\text{SimilarTo}(\\_ \\text{pressed} \\text{mathcal}(R),\\text{SimilarTo}(\\text{RGeomagnetic},\\text{RSolar}))",
+          "messages": []
+        },
+        {
+          "latex": "r_{\\mathrm{corr}} > \\frac{1}{2}",
+          "normalized_latex": "rCorr>((1)/(2))",
+          "wolfram_input": "rCorr>((1)/(2))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rCorr > 1/2]",
+          "texform_roundtrip": "\\text{rCorr}>\\frac{1}{2}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0297 generated source-truth Wolfram model *)\nClearAll[K0297, TRAWINClosure0297];\neq0297$1 = HoldForm[rCorr == 0.68];\neq0297$2 = HoldForm[SimilarTo[mathcal[R]*_*pressed, SimilarTo[RGeomagnetic, RSolar]]];\neq0297$3 = HoldForm[rCorr > 1/2];\nK0297 = HoldForm[{eq0297$1, eq0297$2, eq0297$3}];\nTRAWINClosure0297[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0297 = TRAWINClosure0297[K0297];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Bridge Frequency.}\n\\begin{equation}\nf_{\\mathrm{bridge}}=\\frac{32}{27}f_0.\n\\end{equation}\n\n\\paragraph{Bridge Waveform.}\n\\begin{equation}\n\\Psi_{\\mathrm{bridge}}(t)\n=\nG_{\\sigma}(t)\n\\left[\n\\cos(2\\pi f_1t)\n-\n\\cos(2\\pi f_2t+\\theta)\n\\right].\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $f_0$ be a shared base frequency.  \nThe bridge frequency is fixed by:\n\n\\begin{equation}\nf_{\\mathrm{bridge}}=\\frac{32}{27}f_0.\n\\end{equation}\n\nA localized bridge is created by applying a Gaussian window $G_\\sigma(t)$ to a flipped and twisted carrier pair:\n\n\\begin{equation}\n\\boxed{\n\\Psi_{\\mathrm{bridge}}(t)\n=\nG_{\\sigma}(t)\n\\left[\n\\cos(2\\pi f_1t)\n-\n\\cos(2\\pi f_2t+\\theta)\n\\right].\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe flip--twist transform creates a localized beat-and-cancellation bridge from paired carriers.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0297/ID0297.source_truth.json",
+    "entry_id": "ID0297",
+    "registry_id": "registry_id_0297",
+    "canonical_title": "Polarity Reversal Patterns",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0297/ID0297.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "443a3959-3a64-5ca6-8265-623931de16e3",
+    "RTEID": "RTE:P1153.3170:T1.9003",
+    "poloidal_theta_rad": "1153.3170",
+    "toroidal_phi_rad": "1.9003",
+    "rteid_source": "manifest",
+    "PiID": "2737245870066",
+    "TZPi": "5",
+    "PiPE_position": "304",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "r_{\\mathrm{corr}} \\approx 0.68",
+        "numeric_atoms": [
+          "0.68"
+        ],
+        "symbolic_tokens": [
+          "r"
+        ],
+        "candidate_wolfram_input": "HoldForm[r$corr == 0.68]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0297\", 1, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Polarity Reversal Patterns\", \"latex\" -> \"r_{\\\\mathrm{corr}} \\\\approx 0.68\", \"numericAtoms\" -> {0.68}, \"symbolicTokens\" -> {\"r\"}, \"candidateWolframInput\" -> \"HoldForm[r$corr == 0.68]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "mathcal{R}_{\\mathrm{pressed}} \\sim \\mathcal{R}_{\\mathrm{geomagnetic}} \\sim \\mathcal{R}_{\\mathrm{solar}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathcal",
+          "R"
+        ],
+        "candidate_wolfram_input": "HoldForm[mathcal[R]$pressed == calR$geomagnetic == calR$solar]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0297\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"Polarity Reversal Patterns\", \"latex\" -> \"mathcal{R}_{\\\\mathrm{pressed}} \\\\sim \\\\mathcal{R}_{\\\\mathrm{geomagnetic}} \\\\sim \\\\mathcal{R}_{\\\\mathrm{solar}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathcal\", \"R\"}, \"candidateWolframInput\" -> \"HoldForm[mathcal[R]$pressed == calR$geomagnetic == calR$solar]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

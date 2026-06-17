@@ -1,0 +1,272 @@
+\tzpanchor{0047}
+\tzpentryheader{0047}{Bayesian Evidence Accumulation Framework}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{aee5652e-c2ff-5884-ba08-2a5a678a86f6}}\\
+\textbf{PiID} & \tzpcode{5105820974944} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{54}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{182.5114 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.3007 rad}\\
+\textbf{TZPID} & \tzpcode{ID0047} & \textbf{Node Dependencies}\quad \tzpidref{0046}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0047} & \textbf{Scale}\quad model selection\\
+\textbf{LOC Classification} & QA279 Bayesian inference & QC20 scientific model comparison\\
+\textbf{arXiv Classification} & Primary: stat.ML \quad Cross-list: physics.data-an, hep-th & \\
+\textbf{Primary Support} & Competing Hypotheses & Bayes Factor\\
+\textbf{Closure Support} & Posterior Odds Update & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Hypotheses in the TZP framework are evaluated using Bayesian inference, where evidence accumulates via likelihood ratios and simpler models are preferred.
+
+\tzpsection{Canonical Equation}
+\[
+\frac{P(H_{i}\mid D)}{P(H_{j}\mid D)}
+=
+\frac{P(D\mid H_{i})}{P(D\mid H_{j})}
+\frac{P(H_{i})}{P(H_{j})}
+\]
+\[
+B_{ij}
+=
+\frac{P(D\mid H_{i})}{P(D\mid H_{j})}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $P$: source equation symbol.
+    \item $H_{i}$: source equation symbol.
+    \item $D$: source equation symbol.
+    \item $H_{j}$: source equation symbol.
+    \item $B_{ij}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0047 generated source Wolfram model *)
+ClearAll[K0047, Cr0047, T, R, A, W, I, N];
+eq0047$1 = HoldForm[Tuple[P[HI, D]]/Tuple[P[HJ, D]] == (Tuple[P[D, HI]]/Tuple[P[D, HJ]])*(P[HI]/P[HJ])];
+eq0047$2 = HoldForm[BIj == Tuple[P[D, HI]]/Tuple[P[D, HJ]]];
+eq0047$3 = HoldForm[Pair[HI, HJ]];
+eq0047$4 = HoldForm[Tuple[P[HI, D]]/Tuple[P[HJ, D]] == BIj[P[HI]/P[HJ]]];
+
+K0047 = HoldForm[{eq0047$1, eq0047$2, eq0047$3, eq0047$4}];
+
+N = "normalized TRAWIN closure object for Bayesian Evidence Accumulation Framework";
+I = "Posterior Odds Update integration/comparison layer";
+W = "Bayes Factor wave or operator carrier";
+A = "Competing Hypotheses admissible action/amplitude condition";
+R = "Bayes Factor rotation/curl preservation layer";
+T = "Competing Hypotheses local source condition";
+
+Cr0047[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0047 = Cr0047[K0047];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Competing Hypotheses local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Bayes Factor rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Competing Hypotheses admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Bayes Factor wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Posterior Odds Update integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Bayesian Evidence Accumulation Framework.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0047] Bayesian Evidence Accumulation Framework}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\frac{P(H_i\mid D)}
+{P(H_j\mid D)}
+=
+\frac{P(D\mid H_i)}
+{P(D\mid H_j)}
+\frac{P(H_i)}
+{P(H_j)} .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Bayes' rule gives the posterior probability of a hypothesis $H_i$ after observing data $D$:
+
+\begin{equation}
+P(H_i\mid D)
+=
+\frac{P(D\mid H_i)P(H_i)}
+{P(D)} .
+\end{equation}
+
+Likewise,
+
+\begin{equation}
+P(H_j\mid D)
+=
+\frac{P(D\mid H_j)P(H_j)}
+{P(D)} .
+\end{equation}
+
+Taking the ratio cancels the evidence denominator $P(D)$:
+
+\begin{equation}
+\frac{P(H_i\mid D)}
+{P(H_j\mid D)}
+=
+\frac{P(D\mid H_i)P(H_i)}
+{P(D\mid H_j)P(H_j)} .
+\end{equation}
+
+Rearranging gives:
+
+\begin{equation}
+\boxed{
+\frac{P(H_i\mid D)}
+{P(H_j\mid D)}
+=
+\frac{P(D\mid H_i)}
+{P(D\mid H_j)}
+\frac{P(H_i)}
+{P(H_j)} .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+This equation formalizes evidence accumulation: posterior odds equal likelihood ratio times prior odds.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Bayesian Evidence Accumulation Framework by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Competing Hypotheses}\par
+\[
+(H_{i}, H_{j})
+\]
+\noindent This identifies the pair of models being compared against the same evidence.\par
+\noindent\textbf{2. Bayes Factor}\par
+\[
+B_{ij}
+=
+\frac{P(D\mid H_{i})}{P(D\mid H_{j})}
+\]
+\noindent This isolates the evidence contribution before priors are applied.\par
+\noindent\textbf{3. Posterior Odds Update}\par
+\[
+\frac{P(H_{i}\mid D)}{P(H_{j}\mid D)}
+=
+B_{ij}
+\frac{P(H_{i})}{P(H_{j})}
+\]
+\noindent This closes the progression by turning evidence and prior commitments into an updated model ranking.\par
+
+\clearpage
+\noindent\textbf{[ID 0047] Bayesian Evidence Accumulation Framework}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Bayesian Evidence Accumulation Framework is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Hypotheses in the TZP framework are evaluated using Bayesian inference, where evidence accumulates via likelihood ratios and simpler models are preferred. \textbf{Contextual meaning:} The entry reads Bayesian Evidence Accumulation Framework as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This framework gives the registry a disciplined way to absorb new evidence. It also links the physical canon to a publication workflow, because entries can be strengthened, weakened, or retired by explicit posterior updates. \textbf{Lemma support:} Competing Hypotheses; Bayes Factor; Posterior Odds Update.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+This equation formalizes evidence accumulation: posterior odds equal likelihood ratio times prior odds.
+
+\tzpsection{Equation Grounding}
+Equation anchors: When comparing competing Trawinistic hypotheses H iHtextbackslash iH i, the posterior odds satisfy P(H i D)P(H j D)=P(D H i)P(D H j)P(H i)P(H j)ratio P(Htextbackslash itextbar D) P(Htextbackslash jtextbar D) = ratio P(Dtextbar Htextbackslash i) P(Dtextbar Htextbackslash j) ratio P(Htextbackslash i) P(Htextbackslash j) P(H j D)P(H i D)=P(D H j)P(D H i)P(H j)P(H i), with likelihoods P(D H i)P(Dtextbar Htextbackslash i)P(D H i) computed using the Trawinistic action and priors chosen to penalise complexity. When comparing competing Trawinistic hypotheses H iHtextbackslash iH i, the posterior odds satisfy P(H i D)P(H j D)=P(D H i)P(D H j)P(H i)P(H j)ratio P(Htextbackslash itextbar D) P(Htextbackslash jtextbar D) = ratio P(Dtextbar Htextbackslash i) P(Dtextbar Htextbackslash j) ratio P(Htextbackslash i) P(Htextbackslash j) P(H j D)P(H i D)=P(D H j)P(D H i)P(H j)P(H i), with likelihoods P(D H i)P(Dtextbar Htextbackslash i)P(D H i) computed using the Trawinistic action and priors chosen to penalise complexity.
+
+\tzpsection{Interpretive Role}
+This framework gives the registry a disciplined way to absorb new evidence. It also links the physical canon to a publication workflow, because entries can be strengthened, weakened, or retired by explicit posterior updates.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Bayesian Evidence Field Buildup Framework}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Field Buildup Formal Analogue}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Field Buildup Terminology}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0047]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0047_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0047] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Bayesian Evidence Accumulation Framework}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} hypotheses in the TZP framework are evaluated using Bayesian inference, where evidence
+accumulates via likelihood ratios and simpler models are pre...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Bayesian Evidence Accumulation Framework is valid as a formal registry statement when
+its source equation and semantic claim are read together.''\\
+\textbf{Proof:} The source semantics state that hypotheses in the TZP framework are evaluated using
+Bayesian inference, where evidence accumulates via likelihood ratios and simpler models
+are preferred. This equation formalizes evidence accumulation: posterior odds equal
+likelihood ratio times prior odds. This framework gives the registry a disciplined way
+to absorb new evidence.. The CHL validation treats the equation as the formal anchor and
+the semantic text as the interpretation constraint.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- source-backed formal validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0047_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

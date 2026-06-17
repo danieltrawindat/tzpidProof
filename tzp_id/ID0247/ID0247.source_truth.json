@@ -1,0 +1,390 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:47:43.196588+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0247",
+    "uuid": "62e41666-8ae2-57d2-9aa1-8f39632e812e",
+    "registry_id": "registry_id_0247",
+    "canonical_title": "Cymatic Resonance Control at 432 Hz",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0247/ID0247.TEX",
+      "json": "D:/TZPID/TZPID/ID0247/ID0247.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0247/ID0247.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Cymatic resonance at 432 Hz is employed to modulate the DAANSphere's metamaterial structure; acoustic driving at this frequency optimises resonance conditions and couples mechanical vibrations to quantum states.",
+    "technical_interpretation": "Cymatic resonance at 432 Hz is employed to modulate the DAANSphere's metamaterial structure; acoustic driving at this frequency optimises resonance conditions and couples mechanical vibrations to quantum states."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\hat{\\mathcal{H}}_{\\mathrm{cym}}=\\int_{\\Omega}\\hat{\\rho}\\Phi_{\\mathrm{ac}}\\,d^3r",
+      "\\omega=2\\pi(432\\,\\mathrm{Hz})"
+    ],
+    "source_section_latex": "\\[\n\\hat{\\mathcal{H}}_{\\mathrm{cym}}=\\int_{\\Omega}\\hat{\\rho}\\Phi_{\\mathrm{ac}}\\,d^3r\n\\]\n\\[\n\\omega=2\\pi(432\\,\\mathrm{Hz})\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Mode Quantization",
+      "formula_latex_blocks": [
+        "\\hat{\\mathcal{H}}_{\\mathrm{cym}}=\\int_{\\Omega}\\hat{\\rho}\\Phi_{\\mathrm{ac}}\\,d^3r"
+      ],
+      "interpretive_role": "This fixes the quantized carrier mode indexed by the bounded geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Dispersion Law",
+      "formula_latex_blocks": [
+        "\\omega=2\\pi(432\\,\\mathrm{Hz})"
+      ],
+      "interpretive_role": "This turns the mode index into an actual propagation or resonance law."
+    },
+    {
+      "step": 3,
+      "component_title": "Boundary Condition",
+      "formula_latex_blocks": [
+        "\\nabla^2\\Phi_{\\mathrm{ac}}+k^2\\Phi_{\\mathrm{ac}}=0"
+      ],
+      "interpretive_role": "This closes the progression by enforcing the boundary or nodal condition that makes the pattern admissible."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      },
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\hat$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{\\Omega}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Phi_{ac}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi(432\\,Hz)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(432\\,Hz)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Cymatic Resonance Control at 432 Hz\nCanonical operator translation\neq0247_1 = HoldForm[((H))cym==IntegrateOmega(rho)Phiac d^3r];\neq0247_2 = HoldForm[omega==2(432 Hz)];\n\nTRAWIN closure composition\nTRAWINClosure0247[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0247 := HoldForm[{eq0247_1, eq0247_2}];\nResult0247 := TRAWINClosure0247[K0247];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\hat{\\mathcal{H}}_{\\mathrm{cym}}=\\int_{\\Omega}\\hat{\\rho}\\Phi_{\\mathrm{ac}}\\,d^3r",
+          "normalized_latex": "hat[H]_(cym)==IntegralOmegahat[rho]PhiAc*d^3*r",
+          "wolfram_input": "hat[H]_(cym)==IntegralOmegahat[rho]PhiAc*d^3*r",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[hat[H]*_*cym == IntegralOmegahat[rho]*PhiAc*d^3*r]",
+          "texform_roundtrip": "\\_ \\text{cym} \\text{hat}(H)=d^3 \\text{PhiAc} r \\text{IntegralOmegahat}(\\rho )",
+          "messages": []
+        },
+        {
+          "latex": "\\omega=2\\pi(432\\,\\mathrm{Hz})",
+          "normalized_latex": "omega==2*Pi[432*Hz]",
+          "wolfram_input": "omega==2*Pi[432*Hz]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omega == 2*Pi[432*Hz]]",
+          "texform_roundtrip": "\\omega =2 \\pi (432 \\text{Hz})",
+          "messages": []
+        },
+        {
+          "latex": "\\nabla^2\\Phi_{\\mathrm{ac}}+k^2\\Phi_{\\mathrm{ac}}=0",
+          "normalized_latex": "Grad^2*PhiAc+k^2*PhiAc==0",
+          "wolfram_input": "Grad^2*PhiAc+k^2*PhiAc==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Grad^2*PhiAc + k^2*PhiAc == 0]",
+          "texform_roundtrip": "\\text{Grad}^2 \\text{PhiAc}+k^2 \\text{PhiAc}=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0247 generated source-truth Wolfram model *)\nClearAll[K0247, TRAWINClosure0247];\neq0247$1 = HoldForm[hat[H]*_*cym == IntegralOmegahat[rho]*PhiAc*d^3*r];\neq0247$2 = HoldForm[omega == 2*Pi[432*Hz]];\neq0247$3 = HoldForm[Grad^2*PhiAc + k^2*PhiAc == 0];\nK0247 = HoldForm[{eq0247$1, eq0247$2, eq0247$3}];\nTRAWINClosure0247[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0247 = TRAWINClosure0247[K0247];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{P(H_i\\mid D)}\n{P(H_j\\mid D)}\n=\n\\frac{P(D\\mid H_i)}\n{P(D\\mid H_j)}\n\\frac{P(H_i)}\n{P(H_j)} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nBayes' rule gives the posterior probability of a hypothesis $H_i$ after observing data $D$:\n\n\\begin{equation}\nP(H_i\\mid D)\n=\n\\frac{P(D\\mid H_i)P(H_i)}\n{P(D)} .\n\\end{equation}\n\nLikewise,\n\n\\begin{equation}\nP(H_j\\mid D)\n=\n\\frac{P(D\\mid H_j)P(H_j)}\n{P(D)} .\n\\end{equation}\n\nTaking the ratio cancels the evidence denominator $P(D)$:\n\n\\begin{equation}\n\\frac{P(H_i\\mid D)}\n{P(H_j\\mid D)}\n=\n\\frac{P(D\\mid H_i)P(H_i)}\n{P(D\\mid H_j)P(H_j)} .\n\\end{equation}\n\nRearranging gives:\n\n\\begin{equation}\n\\boxed{\n\\frac{P(H_i\\mid D)}\n{P(H_j\\mid D)}\n=\n\\frac{P(D\\mid H_i)}\n{P(D\\mid H_j)}\n\\frac{P(H_i)}\n{P(H_j)} .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThis equation formalizes evidence accumulation: posterior odds equal likelihood ratio times prior odds.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "component-supported wave-pattern model",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0247/ID0247.source_truth.json",
+    "entry_id": "ID0247",
+    "registry_id": "registry_id_0247",
+    "canonical_title": "Cymatic Resonance Control at 432 Hz",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0247/ID0247.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "62e41666-8ae2-57d2-9aa1-8f39632e812e",
+    "RTEID": "RTE:P959.1559:T1.5804",
+    "poloidal_theta_rad": "959.1559",
+    "toroidal_phi_rad": "1.5804",
+    "rteid_source": "manifest",
+    "PiID": "0914564856692",
+    "TZPi": "4",
+    "PiPE_position": "254",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\hat{\\mathcal{H}}_{\\mathrm{cym}}=\\int_{\\Omega}\\hat{\\rho}\\Phi_{\\mathrm{ac}}\\,d^3r",
+        "numeric_atoms": [
+          "3"
+        ],
+        "symbolic_tokens": [
+          "hat",
+          "int",
+          "Omega",
+          "rho",
+          "Phi",
+          "d",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0247\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cymatic Resonance Control at 432 Hz\", \"latex\" -> \"\\\\hat{\\\\mathcal{H}}_{\\\\mathrm{cym}}=\\\\int_{\\\\Omega}\\\\hat{\\\\rho}\\\\Phi_{\\\\mathrm{ac}}\\\\,d^3r\", \"numericAtoms\" -> {3}, \"symbolicTokens\" -> {\"hat\", \"int\", \"Omega\", \"rho\", \"Phi\", \"d\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\omega=2\\pi(432\\,\\mathrm{Hz})",
+        "numeric_atoms": [
+          "2",
+          "432"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "Pi"
+        ],
+        "candidate_wolfram_input": "HoldForm[omega==2Pi[432Hz]]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0247\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Cymatic Resonance Control at 432 Hz\", \"latex\" -> \"\\\\omega=2\\\\pi(432\\\\,\\\\mathrm{Hz})\", \"numericAtoms\" -> {2, 432}, \"symbolicTokens\" -> {\"omega\", \"Pi\"}, \"candidateWolframInput\" -> \"HoldForm[omega==2Pi[432Hz]]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

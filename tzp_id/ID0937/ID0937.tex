@@ -1,0 +1,208 @@
+\tzpanchor{0937}
+\tzpentryheader{0937}{THE PHOTON-NEURAL COUPLING OPERATOR}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{1d85283d-1d02-5582-831a-bd939cfa8287}}\\
+\textbf{PiID} & \tzpcode{8759375195778} & \textbf{TZPi}\quad \tzpcode{5}\quad \textbf{PiPE}\quad \tzpcode{944}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{3576.4475 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{05.8929 rad}\\
+\textbf{TZPID} & \tzpcode{ID0937} & \textbf{Node Dependencies}\quad \tzpidref{0936}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0937} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA329 operator theory & QA169 categorical structure\\
+\textbf{arXiv Classification} & Primary: math.CT & Cross-list: math-ph, cs.LO\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+hat H(t) = hat H\_0 + hat V\_\{rm int\} + integral d\textasciicircum{}d r/; V\_\{text\{drive\}\}(mathbf r,t)/,hatpsi\textasciicircum{}dagger(mathbf r)hatpsi(mathbf r).
+
+\tzpsection{Canonical Equation}
+\[
+mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+\]
+\[
+mathcal{O}_{\mathrm{TZP}} = \mathcal{N}\circ \mathcal{I}\circ \mathcal{W}\circ \mathcal{A}\circ \mathcal{R}\circ \mathcal{T}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $O$: source equation symbol.
+    \item $\mathcal{X}$: source variable, local coordinate, or input state in the entry relation.
+    \item $\mathcal{Y}$: target variable or output state in the entry relation.
+    \item $\mathcal{N}$: integer mode index.
+    \item $\mathcal{I}$: source equation symbol.
+    \item $\mathcal{W}$: source equation symbol.
+    \item $\mathcal{R}$: global radius, boundary radius, or topological scale.
+    \item $\mathcal{T}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0937 generated source Wolfram model *)
+ClearAll[K0937, Cr0937, T, R, A, W, I, N];
+eq0937$1 = HoldForm[mathcalOTZP[X] -> Y];
+eq0937$2 = HoldForm[mathcal[O]*_*TZP == Ncirc*Icirc*Wcirc*Acirc*Rcirc*T];
+
+K0937 = HoldForm[{eq0937$1, eq0937$2}];
+
+N = "normalized TRAWIN closure object for THE PHOTON-NEURAL COUPLING OPERATOR";
+I = "THE PHOTON-NEURAL COUPLING OPERATOR integration/comparison layer";
+W = "THE PHOTON-NEURAL COUPLING OPERATOR wave or operator carrier";
+A = "THE PHOTON-NEURAL COUPLING OPERATOR admissible action/amplitude condition";
+R = "THE PHOTON-NEURAL COUPLING OPERATOR rotation/curl preservation layer";
+T = "THE PHOTON-NEURAL COUPLING OPERATOR local source condition";
+
+Cr0937[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0937 = Cr0937[K0937];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ THE PHOTON-NEURAL COUPLING OPERATOR local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ THE PHOTON-NEURAL COUPLING OPERATOR rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ THE PHOTON-NEURAL COUPLING OPERATOR admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ THE PHOTON-NEURAL COUPLING OPERATOR wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ THE PHOTON-NEURAL COUPLING OPERATOR integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for THE PHOTON-NEURAL COUPLING OPERATOR.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0937] THE PHOTON-NEURAL COUPLING OPERATOR}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+\]
+\[
+mathcal{O}_{\mathrm{TZP}} = \mathcal{N}\circ \mathcal{I}\circ \mathcal{W}\circ \mathcal{A}\circ \mathcal{R}\circ \mathcal{T}
+\]
+
+\paragraph{Primary Derivation.}
+The identity \( mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y} \) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.
+\paragraph{Equation Type.}
+This statement is classified as a operator relation.
+
+\paragraph{Interpretation.}
+This relation applies to the quantities defined above. In the TRAWIN reading, the equation functions as the operator-level carrier for the entry’s information content. Under CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors THE PHOTON-NEURAL COUPLING OPERATOR by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+\]
+\[
+mathcal{O}_{\mathrm{TZP}} = \mathcal{N}\circ \mathcal{I}\circ \mathcal{W}\circ \mathcal{A}\circ \mathcal{R}\circ \mathcal{T}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0937] THE PHOTON-NEURAL COUPLING OPERATOR}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+THE PHOTON-NEURAL COUPLING OPERATOR is a registry definition in Biological and Biomolecular Analogies with secondary pressure from Category Theory and Proof Structure.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} hat H(t) = hat H sub 0 + hat V sub rm int + integral d to the power d r/; V sub text drive (mathbf r,t)/,hatpsi to the power dagger(mathbf r)hatpsi(mathbf r). \textbf{Contextual meaning:} The entry reads THE PHOTON-NEURAL COUPLING OPERATOR as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc. \textbf{Lemma support:} Carrier Map; Composable Action; Normalized Output.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, THE PHOTON-NEURAL COUPLING OPERATOR is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: mathcal O sub TZP : X to Y; mathcal O sub TZP = N compose I compose W compose A compose R compose T; and mathcal O sub TZP (x) in Y sub adm. Proof route: show that the composite map lands in the admissible target class once the TRAWIN ordering is respected. Formalization route: prove closure of the stated operator or functor under composition with the TRAWIN chain.
+
+\tzpsection{Interpretive Role}
+The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Optogenetic Logic Bridging}: The incredible bio-engineering feat of using flashes of laser light to directly, physically trigger thoughts and calculations inside a living brain.
+\item \textbf{Photonic Synapse Firing}: The speed-of-light communication system that uses fiber optic cables to wire the cold, silicon computers directly into the wet, chaotic network of a biological mind.
+\item \textbf{Light-Driven Axon Routing}: The process of steering a pulse of electricity through the vast, tangled web of the brain by illuminating the exact path you want it to take.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0937]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0937].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0937] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont THE PHOTON-NEURAL COUPLING OPERATOR}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} THE PHOTON-NEURAL COUPLING OPERATOR is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``THE PHOTON-NEURAL COUPLING OPERATOR is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0937].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

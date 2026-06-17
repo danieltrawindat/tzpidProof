@@ -1,0 +1,399 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:15:26.360989+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0584",
+    "uuid": "b83d2f6a-546d-59f8-aa16-5ef47dd045c4",
+    "registry_id": "registry_id_0584",
+    "canonical_title": "SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0584/ID0584.TEX",
+      "json": "D:/TZPID/TZPID/ID0584/ID0584.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0584/ID0584.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records synaptic avalanche exponent (tau = 3/2) through the Senary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "tau=3/2"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\hbar_{\\mathrm{eff}} = \\hbar(1+\\chi_{\\mathrm{TZP}}).",
+      "\\Delta x\\,\\Delta p \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.",
+      "\\Delta t\\,\\Delta E \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}."
+    ],
+    "source_section_latex": "\\[\n\\hbar_{\\mathrm{eff}} = \\hbar(1+\\chi_{\\mathrm{TZP}}).\n\\]\n\\[\n\\Delta x\\,\\Delta p \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.\n\\]\n\\[\n\\Delta t\\,\\Delta E \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Avalanche Law",
+      "formula_latex_blocks": [
+        "\\hbar_{\\mathrm{eff}} = \\hbar(1+\\chi_{\\mathrm{TZP}})."
+      ],
+      "interpretive_role": "This fixes the avalanche-size distribution carried by the critical systems compared in the entry."
+    },
+    {
+      "step": 2,
+      "component_title": "Universal Exponent",
+      "formula_latex_blocks": [
+        "\\Delta x\\,\\Delta p \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}."
+      ],
+      "interpretive_role": "This isolates the universal exponent shared across the cited avalanche regimes."
+    },
+    {
+      "step": 3,
+      "component_title": "Cutoff Scaling",
+      "formula_latex_blocks": [
+        "\\Delta t\\,\\Delta E \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}."
+      ],
+      "interpretive_role": "This closes the entry by tying the finite-size cutoff to distance from the critical control parameter."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\hbar_{eff}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar(1+\\chi_{TZP})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\geq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Z$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$r(1+\\chi_{TZP})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)\nCanonical operator translation\neq0584_1 = HoldForm[hbareff == hbar(1+)];\neq0584_2 = HoldForm[Delta x Delta p >= q (hbareff)(2)];\neq0584_3 = HoldForm[Delta t Delta E >= q (hbareff)(2)];\n\nTRAWIN closure composition\nTRAWINClosure0584[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0584 := HoldForm[{eq0584_1, eq0584_2, eq0584_3}];\nResult0584 := TRAWINClosure0584[K0584];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\hbar_{\\mathrm{eff}} = \\hbar(1+\\chi_{\\mathrm{TZP}}).",
+          "normalized_latex": "hbarEff==hbar[1+chiTZP]",
+          "wolfram_input": "hbarEff==hbar[1+chiTZP]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[hbarEff == hbar[1 + chiTZP]]",
+          "texform_roundtrip": "\\text{hbarEff}=\\text{hbar}(\\text{chiTZP}+1)",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta x\\,\\Delta p \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.",
+          "normalized_latex": "Delta*xDelta*p>=((hbarEff)/(2))",
+          "wolfram_input": "Delta*xDelta*p>=((hbarEff)/(2))",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Delta*xDelta*p >= hbarEff/2]",
+          "texform_roundtrip": "\\text{Delta} p \\text{xDelta}\\geq \\frac{\\text{hbarEff}}{2}",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta t\\,\\Delta E \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.",
+          "normalized_latex": "Delta*tDelta*E>=((hbarEff)/(2))",
+          "wolfram_input": "Delta*tDelta*E>=((hbarEff)/(2))",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Delta*tDelta*E >= hbarEff/2]",
+          "texform_roundtrip": "e \\text{Delta} \\text{tDelta}\\geq \\frac{\\text{hbarEff}}{2}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0584 generated source-truth Wolfram model *)\nClearAll[K0584, TRAWINClosure0584];\neq0584$1 = HoldForm[hbarEff == hbar[1 + chiTZP]];\neq0584$2 = HoldForm[Delta*xDelta*p >= hbarEff/2];\neq0584$3 = HoldForm[Delta*tDelta*E >= hbarEff/2];\nK0584 = HoldForm[{eq0584$1, eq0584$2, eq0584$3}];\nTRAWINClosure0584[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0584 = TRAWINClosure0584[K0584];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equations.}\n\\begin{equation}\n\\hbar_{\\mathrm{eff}}\n=\n\\hbar(1+\\chi_{\\mathrm{TZP}}).\n\\end{equation}\n\n\\begin{equation}\n\\Delta x\\,\\Delta p\n\\geq\n\\frac{\\hbar_{\\mathrm{eff}}}{2}.\n\\end{equation}\n\n\\begin{equation}\n\\Delta t\\,\\Delta E\n\\geq\n\\frac{\\hbar_{\\mathrm{eff}}}{2}.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\chi_{\\mathrm{TZP}}$ encode the zero-point correction to the operational quantum scale.  \nDefine:\n\\begin{equation}\n\\hbar_{\\mathrm{eff}}\n=\n\\hbar(1+\\chi_{\\mathrm{TZP}}).\n\\end{equation}\n\nReplacing $\\hbar$ by $\\hbar_{\\mathrm{eff}}$ in the uncertainty relations gives:\n\\begin{equation}\n\\Delta x\\,\\Delta p\n\\geq\n\\frac{\\hbar_{\\mathrm{eff}}}{2},\n\\qquad\n\\Delta t\\,\\Delta E\n\\geq\n\\frac{\\hbar_{\\mathrm{eff}}}{2}.\n\\end{equation}\n\nThus no observation protocol can resolve below the effective uncertainty window:\n\\begin{equation}\n\\boxed{\n\\Omega_{\\mathrm{obs}}\n=\n\\left\\{\n(\\Delta x,\\Delta p,\\Delta t,\\Delta E):\n\\Delta x\\Delta p\\geq \\frac{\\hbar_{\\mathrm{eff}}}{2},\n\\;\n\\Delta t\\Delta E\\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}\n\\right\\}.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nObservability is bounded by a TZP-corrected effective quantum constant.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0584/ID0584.source_truth.json",
+    "entry_id": "ID0584",
+    "registry_id": "registry_id_0584",
+    "canonical_title": "SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0584/ID0584.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "b83d2f6a-546d-59f8-aa16-5ef47dd045c4",
+    "RTEID": "RTE:P2244.5024:T3.6982",
+    "poloidal_theta_rad": "2244.5024",
+    "toroidal_phi_rad": "3.6982",
+    "rteid_source": "manifest",
+    "PiID": "4818467669405",
+    "TZPi": "7",
+    "PiPE_position": "591",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\hbar_{\\mathrm{eff}} = \\hbar(1+\\chi_{\\mathrm{TZP}}).",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "hbar",
+          "chi"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0584\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)\", \"latex\" -> \"\\\\hbar_{\\\\mathrm{eff}} = \\\\hbar(1+\\\\chi_{\\\\mathrm{TZP}}).\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"hbar\", \"chi\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Delta x\\,\\Delta p \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Delta",
+          "hbar",
+          "x",
+          "p"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0584\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)\", \"latex\" -> \"\\\\Delta x\\\\,\\\\Delta p \\\\geq \\\\frac{\\\\hbar_{\\\\mathrm{eff}}}{2}.\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"Delta\", \"hbar\", \"x\", \"p\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\Delta t\\,\\Delta E \\geq \\frac{\\hbar_{\\mathrm{eff}}}{2}.",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Delta",
+          "hbar",
+          "t",
+          "E"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0584\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SYNAPTIC AVALANCHE EXPONENT (tau = 3/2)\", \"latex\" -> \"\\\\Delta t\\\\,\\\\Delta E \\\\geq \\\\frac{\\\\hbar_{\\\\mathrm{eff}}}{2}.\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"Delta\", \"hbar\", \"t\", \"E\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11383",
+    "uuid": "d680924f-01bf-54f4-9cfb-8cfc56c86d35",
+    "registry_id": "registry_id_11383",
+    "piid": "PiID-11383-portal-breathing",
+    "canonical_title": "Closed Curvature Parameter Sign",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11383\\ID11383.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "For a closed hypersphere with positive spatial curvature k=+1, the cosmological curvature parameter is negative.",
+    "technical_interpretation": "This formalizes the sign convention needed to discuss a nearly flat but globally closed hypersphere.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\Omega_{K}=-\\frac{k c^{2}}{a_{0}^{2}H_{0}^{2}},\\qquad k=+1\\Rightarrow \\Omega_{K}<0"
+    ],
+    "source_section_latex": "\\Omega_{K}=-\\frac{k c^{2}}{a_{0}^{2}H_{0}^{2}},\\qquad k=+1\\Rightarrow \\Omega_{K}<0"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Closed Curvature Parameter Sign",
+          "wolfram": "OmegaK == -k*c^2/(a0^2*H0^2)",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Theorem",
+    "obligation_role": "Curvature_Carrier",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11383",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

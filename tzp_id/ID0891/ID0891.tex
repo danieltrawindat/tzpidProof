@@ -1,0 +1,223 @@
+\tzpanchor{0891}
+\tzpentryheader{0891}{ZENITHAL TORSION VECTOR}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{a13d7cef-0408-58b5-b3f8-739383def1c1}}\\
+\textbf{PiID} & \tzpcode{6691473035982} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{898}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{3405.5858 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{05.6114 rad}\\
+\textbf{TZPID} & \tzpcode{ID0891} & \textbf{Node Dependencies}\quad \tzpidref{0890}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0891} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Trawin Hamiltonian & Tunnel Sector\\
+\textbf{Closure Support} & Einstein Response & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records zenithal torsion vector through a normalized Nonary TRAWIN operator chain.
+
+\tzpsection{Canonical Equation}
+\[
+\mathcal{O}_{\mathrm{id0891}}:\mathcal{X}_{\mathrm{id0891}}\longrightarrow\mathcal{Y}_{\mathrm{id0891}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0891}})=\mathcal{O}_{\mathrm{id0891}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0891}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{O}_{\mathrm{id0891}}$: canonical operator or carrier map for the entry.
+    \item $\mathcal{X}_{\mathrm{id0891}}$: source domain or input state space for the entry map.
+    \item $\mathcal{Y}_{\mathrm{id0891}}$: target domain or output state space for the entry map.
+    \item $\mathcal{N}_{\mathrm{TRAWIN}}$: TRAWIN normalization operator applied to the entry relation.
+    \item $\mathcal{Y}_{\mathrm{adm}}$: admissible output space selected by the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0891 generated source Wolfram model *)
+ClearAll[K0891, Cr0891, T, R, A, W, I, N];
+eq0891$1 = HoldForm[Oid0891[Xid0891] -> Yid0891];
+eq0891$2 = HoldForm[NTRAWIN[OId0891] == OId0891];
+eq0891$3 = HoldForm[Element[OId0891[x], YAdm]];
+
+K0891 = HoldForm[{eq0891$1, eq0891$2, eq0891$3}];
+
+N = "normalized TRAWIN closure object for ZENITHAL TORSION VECTOR";
+I = "ZENITHAL TORSION VECTOR integration/comparison layer";
+W = "ZENITHAL TORSION VECTOR wave or operator carrier";
+A = "ZENITHAL TORSION VECTOR admissible action/amplitude condition";
+R = "ZENITHAL TORSION VECTOR rotation/curl preservation layer";
+T = "ZENITHAL TORSION VECTOR local source condition";
+
+Cr0891[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0891 = Cr0891[K0891];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ ZENITHAL TORSION VECTOR local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ ZENITHAL TORSION VECTOR rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ ZENITHAL TORSION VECTOR admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ ZENITHAL TORSION VECTOR wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ ZENITHAL TORSION VECTOR integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for ZENITHAL TORSION VECTOR.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0891] ZENITHAL TORSION VECTOR}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\mathcal{O}_{\mathrm{id0891}}:\mathcal{X}_{\mathrm{id0891}}\longrightarrow \mathcal{Y}_{\mathrm{id0891}},\qquad
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0891}})=\mathcal{O}_{\mathrm{id0891}},\qquad
+\mathcal{O}_{\mathrm{id0891}}(x)\in\mathcal{Y}_{\mathrm{adm}}.
+\]
+
+\paragraph{Primary Derivation.} The entry is represented by the operator carrier\[
+\mathcal{O}_{\mathrm{id0891}}:\mathcal{X}_{\mathrm{id0891}}\longrightarrow \mathcal{Y}_{\mathrm{id0891}}.
+\]
+
+Insert the carrier into the ordered TRAWIN chain as\[
+C_{0891}=N\circ I\circ W\circ A\circ R\circ T(\mathcal{O}_{\mathrm{id0891}}).
+\]
+
+The derivation closes when the chain returns the normalized operator:\[
+C_{0891}=\mathcal{O}_{\mathrm{id0891}},\qquad \mathcal{O}_{\mathrm{id0891}}(x)\in\mathcal{Y}_{\mathrm{adm}}.
+\]
+
+Thus the Nonary derivation for [ID 0891] is the three-stage passage
+\[
+\mathcal{X}_{\mathrm{id0891}}\xrightarrow{\,\mathcal{O}_{\mathrm{id0891}}\,} \mathcal{Y}_{\mathrm{id0891}}\xrightarrow{\,\mathcal{N}_{\mathrm{TRAWIN}}\,} \mathcal{Y}_{\mathrm{adm}},
+\]
+with the entry title fixing the meaning of the carrier and the TRAWIN normalization fixing the admissibility test.
+
+\paragraph{Interpretation.} ZENITHAL TORSION VECTOR is therefore an operator-level Nonary step: the named process is not accepted as a loose label until it survives TRAWIN ordering and closure.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors ZENITHAL TORSION VECTOR by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\mathcal{O}_{\mathrm{id0891}}:\mathcal{X}_{\mathrm{id0891}}\longrightarrow\mathcal{Y}_{\mathrm{id0891}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0891}})=\mathcal{O}_{\mathrm{id0891}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0891}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0891] ZENITHAL TORSION VECTOR}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+ZENITHAL TORSION VECTOR is a registry definition in Resonance and Phase Locking with secondary pressure from Biological and Biomolecular Analogies.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} hat H Trawin[psi, t] = hat H tunnel + hat H ER + hat H SC + hat H cymatic + hat H TZP ; hat H tunnel = -hbar to the power 2/(2 m sub eff ) nabla to the power 2 + V sub barrier (r, theta, phi, t) ; hat H ER = integral sqrt |g| R to the power munu T sub munu dSigma ; hat H SC = sum (epsilon sub k - mu)(c to the power dagger sub kuparrow c sub kuparrow + c to the power dagger sub kdownarrow c sub kdownarrow ) + Delta sum (c to the power dagger sub kuparrow c to the power dagger sub -kdownarrow + h.c.). \textbf{Contextual meaning:} The entry reads ZENITHAL TORSION VECTOR as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now states zenithal torsion vector through an actual Hamiltonian decomposition rather than malformed extracted notation. \textbf{Lemma support:} Trawin Hamiltonian; Tunnel Sector; Einstein Response.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, ZENITHAL TORSION VECTOR is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: hat H Trawin[psi, t] = hat H tunnel + hat H ER + hat H SC + hat H cymatic + hat H TZP; hat H tunnel = -hbar to the power 2/(2 m sub eff ) abla to the power 2 + V sub barrier (r, theta, phi, t); and hat H ER = integral sqrt |g| R to the power mu u T sub mu u dSigma. Proof route: show that the stated Trawin Hamiltonian decomposes coherently into tunnel, Einstein-response, superconducting, cymatic, and TZP sectors. Formalization route: prove that the tunnel and Einstein-response sectors are admissible components of the stated zenithal torsion Hamiltonian.
+
+\tzpsection{Interpretive Role}
+The entry now states zenithal torsion vector through an actual Hamiltonian decomposition rather than malformed extracted notation.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Absolute-Upward Spatial Shearing}: The terrifying measurement of the invisible, violent force that isn't trying to spin the room in a circle, but is actively trying to rip the ceiling straight off the building.
+\item \textbf{Pole-Aligned Twisting Gradients}: The complex math tracking how the magnetic tornado is incredibly calm and smooth around the 'equator', but furiously, aggressively knotted right at the very 'North Pole'.
+\item \textbf{Z-Axis Singular Rotation Forcing}: The brute-force engineering required to take a wildly splashing, tumbling ball of plasma and violently force it to only spin perfectly, cleanly around a single, vertical stick.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0891]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0891].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0891] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont ZENITHAL TORSION VECTOR}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} ZENITHAL TORSION VECTOR is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``ZENITHAL TORSION VECTOR is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0891].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

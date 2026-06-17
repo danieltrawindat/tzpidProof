@@ -1,0 +1,20 @@
+# Master Batch 001 Carriers Certificate
+
+- Status: `pass`
+- Isabelle theory: `isabelle_tzpid/TZPID_MasterBatch001_Carriers.thy`
+- Source batch: `Master theorem batch 001`
+
+| Check | Value | Expected | Pass |
+|---|---:|---:|---|
+| mode_spacing_residual_zero | 0 | 0 | True |
+| helicity_decomposition_residual_zero | 0 | 0 | True |
+| scalar_unitary_norm_preserved | 12.25 | 12.25 | True |
+| tensor_dimension_margin_nonnegative | 4 | 4 | True |
+| zero_acceleration_zero_work | 0 | 0 | True |
+| azimuthal_zero_mode_zero_phase | 0 | 0 | True |
+| kk_frequency_recovers_mode | -3 | -3 | True |
+| kk_tower_mass_nonnegative | 0.6 | 0.6 | True |
+| fourier_mode_energy_nonnegative | 2.125 | 2.125 | True |
+| image_obligation_flags_present | 1 | 1 | True |
+
+This certificate backs the batch 001 carrier layer for mode spacing, helicity decomposition, scalar information preservation, tensor dimension margins, force/phase zero cases, KK modes, Fourier energy, and image-obligation readiness flags.

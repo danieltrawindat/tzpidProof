@@ -1,0 +1,69 @@
+{
+  "certificate": "FIFTH_FLIP_GOLDEN_TRACE_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:58+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational/trigonometric certificate for the golden trace hinge; not a full crystallographic restriction proof.",
+  "equations": {
+    "phi": "phi = (1 + sqrt(5))/2",
+    "golden_fixed_point": "phi^2 = phi + 1",
+    "golden_reciprocal": "1/phi = phi - 1",
+    "fivefold_trace": "2 cos(2 pi / 5) = 1/phi",
+    "crystal_trace_guard": "2 cos(2 pi / 5) notin {-2,-1,0,1,2}"
+  },
+  "checks": {
+    "golden_fixed_point": "pass",
+    "golden_reciprocal_identity": "pass",
+    "fivefold_trace_equals_golden_reciprocal": "pass",
+    "fivefold_trace_open_unit_interval": "pass",
+    "fivefold_trace_not_integer_crystal_trace": "pass",
+    "musical_fifth_flip": "pass"
+  },
+  "values": [
+    {
+      "quantity": "phi",
+      "value": 1.618033988749895,
+      "expected": 1.618033988749895,
+      "absolute_residual": 0.0,
+      "role": "positive golden fixed point"
+    },
+    {
+      "quantity": "phi_squared_minus_phi_minus_one",
+      "value": 0.0,
+      "expected": 0.0,
+      "absolute_residual": 0.0,
+      "role": "golden fixed-point residual"
+    },
+    {
+      "quantity": "golden_reciprocal_minus_phi_minus_one",
+      "value": -1.1102230246251565e-16,
+      "expected": 0.0,
+      "absolute_residual": 1.1102230246251565e-16,
+      "role": "reciprocal flip identity"
+    },
+    {
+      "quantity": "fivefold_trace",
+      "value": 0.6180339887498949,
+      "expected": 0.6180339887498948,
+      "absolute_residual": 1.1102230246251565e-16,
+      "role": "2 cos(72 degrees) equals 1/phi"
+    },
+    {
+      "quantity": "pentagon_diagonal_ratio",
+      "value": 1.618033988749895,
+      "expected": 1.618033988749895,
+      "absolute_residual": 0.0,
+      "role": "fivefold geometric scale ratio"
+    },
+    {
+      "quantity": "musical_fifth_reciprocal",
+      "value": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "absolute_residual": 0.0,
+      "role": "3/2 reciprocal flip to 2/3"
+    }
+  ],
+  "tolerance": 1e-12,
+  "status": "pass"
+}

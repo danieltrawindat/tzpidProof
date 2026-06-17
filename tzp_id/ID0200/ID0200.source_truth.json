@@ -1,0 +1,568 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:43:53.169775+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0200",
+    "uuid": "db5f61c2-29f5-5b3d-9215-6b9047347a98",
+    "registry_id": "registry_id_0200",
+    "canonical_title": "Alfv\\'en Wave Dispersion Relation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0200/ID0200.TEX",
+      "json": "D:/TZPID/TZPID/ID0200/ID0200.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0200/ID0200.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "In a magnetized plasma with magnetic field \\(B\\) and mass density \\(\\rho\\), the Alfv\\'en velocity is \\(v_A=B/\\sqrt{\\mu_0\\rho}\\). For a rotating system with gyroscopic frequency \\(\\omega_{\\mathrm{gyro}}\\), the dispersion relation is treated as an implicit mode equation for \\(\\omega_n\\), not as an independently fixed standing-wave formula.",
+    "technical_interpretation": "In a magnetized plasma with magnetic field $B$ and mass density $\\rho$, the Alfv\\'en velocity is \\[ v_A = \\frac{B}{\\sqrt{\\mu_0 \\rho}}. \\] For a rotating system with gyro-frequency $\\omega_{\\mathrm{gyro}}$, the wave dispersion relation is \\[ \\omega^2 = k^2 v_A^2\\left[1 + \\left(\\frac{\\omega_{\\mathrm{gyro}}}{\\omega}\\right)^2\\right]. \\]"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "v_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}",
+      "k_n=\\frac{n}{R}",
+      "\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0",
+      "\\omega_n^2\n=\n\\frac{k_n^2v_{\\mathrm{A}}^2}{2}\n\\left[\n1+\n\\sqrt{\n1+\n4\\left(\n\\frac{\\omega_{\\mathrm{gyro}}}{k_nv_{\\mathrm{A}}}\n\\right)^2\n}\n\\right]",
+      "f_n=\\frac{\\omega_n}{2\\pi}"
+    ],
+    "source_section_latex": "\\[\nv_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}\n\\]\n\\[\nk_n=\\frac{n}{R}\n\\]\n\\[\n\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0\n\\]\n\\[\n\\omega_n^2\n=\n\\frac{k_n^2v_{\\mathrm{A}}^2}{2}\n\\left[\n1+\n\\sqrt{\n1+\n4\\left(\n\\frac{\\omega_{\\mathrm{gyro}}}{k_nv_{\\mathrm{A}}}\n\\right)^2\n}\n\\right]\n\\]\n\\[\nf_n=\\frac{\\omega_n}{2\\pi}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Dispersion Law",
+      "formula_latex_blocks": [
+        "v_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}"
+      ],
+      "interpretive_role": "This fixes the traveling Alfv\\'en carrier that later entries quantize and redistribute."
+    },
+    {
+      "step": 2,
+      "component_title": "Implicit Gyroscopic Mode Closure",
+      "formula_latex_blocks": [
+        "\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0"
+      ],
+      "interpretive_role": "This keeps the mode frequency, gyroscopic correction, and Alfv\\'en speed in one closure equation."
+    },
+    {
+      "step": 3,
+      "component_title": "Mode Closure",
+      "formula_latex_blocks": [
+        "f_n = \\frac{n v_{\\mathrm{A}}}{2\\pi R}"
+      ],
+      "interpretive_role": "This closes the progression by tying the standing spectrum to an actual mode-index relation."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$v_{\\mathrm{A}}$",
+        "description": "Alfv\\'en velocity of the magnetized medium."
+      },
+      {
+        "symbol": "$B$",
+        "description": "magnetic field magnitude."
+      },
+      {
+        "symbol": "$\\mu_0$",
+        "description": "vacuum permeability."
+      },
+      {
+        "symbol": "$\\rho$",
+        "description": "mass density of the magnetized medium."
+      },
+      {
+        "symbol": "$\\omega_{\\mathrm{gyro}}$",
+        "description": "gyroscopic angular frequency of the rotating system."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\sqrt$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{gyro}^{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{gyro}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Alfv\\\\'en Wave Dispersion Relation\nCanonical operator translation\neq0200_1 = HoldForm[vA == (B)(Sqrt(mu_0 rho))];\neq0200_2 = HoldForm[k_n==(n)/(R)];\neq0200_3 = HoldForm[omega_n^(4) - k_n^(2)vA^(2)omega_n^(2) - k_n^(2)vA^(2)omegagyro^(2) ==0];\neq0200_4 = HoldForm[omega_n^2 == (k_n^2vA^2)(2) [ 1+ Sqrt( 1+ 4( (omegagyro)(k_nvA) )^2 ) ]];\n\nTRAWIN closure composition\nTRAWINClosure0200[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0200 := HoldForm[{eq0200_1, eq0200_2, eq0200_3, eq0200_4}];\nResult0200 := TRAWINClosure0200[K0200];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "v_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}",
+          "normalized_latex": "vA==((B)/(Sqrt[mu0*rho]))",
+          "wolfram_input": "vA==((B)/(Sqrt[mu0*rho]))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[vA == B/Sqrt[mu0*rho]]",
+          "texform_roundtrip": "\\text{vA}=\\frac{B}{\\sqrt{\\text{mu0} \\rho }}",
+          "messages": []
+        },
+        {
+          "latex": "k_n=\\frac{n}{R}",
+          "normalized_latex": "kN==((n)/(R))",
+          "wolfram_input": "kN==((n)/(R))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[kN == n/R]",
+          "texform_roundtrip": "\\text{kN}=\\frac{n}{R}",
+          "messages": []
+        },
+        {
+          "latex": "\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0",
+          "normalized_latex": "omegaN^(4)-kN^(2)vA^(2)omegaN^(2)-kN^(2)vA^(2)omegaGyro^(2)==0",
+          "wolfram_input": "omegaN^(4)-kN^(2)vA^(2)omegaN^(2)-kN^(2)vA^(2)omegaGyro^(2)==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaN^4 - kN^2*vA^2*omegaN^2 - kN^2*vA^2*omegaGyro^2 == 0]",
+          "texform_roundtrip": "-\\text{kN}^2 \\text{omegaGyro}^2 \\text{vA}^2-\\text{kN}^2 \\text{omegaN}^2 \\text{vA}^2+\\text{omegaN}^4=0",
+          "messages": []
+        },
+        {
+          "latex": "\\omega_n^2\n=\n\\frac{k_n^2v_{\\mathrm{A}}^2}{2}\n\\left[\n1+\n\\sqrt{\n1+\n4\\left(\n\\frac{\\omega_{\\mathrm{gyro}}}{k_nv_{\\mathrm{A}}}\n\\right)^2\n}\n\\right]",
+          "normalized_latex": "omegaN^2==((kN^2*vA^2)/(2))[1+sqrt[1+4(((omegaGyro)/(kNvA)))^2]]",
+          "wolfram_input": "omegaN^2==((kN^2*vA^2)/(2))[1+sqrt[1+4(((omegaGyro)/(kNvA)))^2]]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaN^2 == ((kN^2*vA^2)/2)[1 + sqrt[1 + 4*(omegaGyro/kNvA)^2]]]",
+          "texform_roundtrip": "\\text{omegaN}^2=\\frac{\\text{kN}^2 \\text{vA}^2}{2}\\left(\\text{sqrt}\\left(\\frac{4 \\text{omegaGyro}^2}{\\text{kNvA}^2}+1\\right)+1\\right)",
+          "messages": []
+        },
+        {
+          "latex": "f_n=\\frac{\\omega_n}{2\\pi}",
+          "normalized_latex": "fN==((omegaN)/(2*Pi))",
+          "wolfram_input": "fN==((omegaN)/(2*Pi))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[fN == omegaN/(2*Pi)]",
+          "texform_roundtrip": "\\text{fN}=\\frac{\\text{omegaN}}{2 \\pi }",
+          "messages": []
+        },
+        {
+          "latex": "f_n = \\frac{n v_{\\mathrm{A}}}{2\\pi R}",
+          "normalized_latex": "fN==((n*vA)/(2*Pi*R))",
+          "wolfram_input": "fN==((n*vA)/(2*Pi*R))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[fN == (n*vA)/(2*Pi*R)]",
+          "texform_roundtrip": "\\text{fN}=\\frac{n \\text{vA}}{2 \\pi  R}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0200 generated source-truth Wolfram model *)\nClearAll[K0200, TRAWINClosure0200];\neq0200$1 = HoldForm[vA == B/Sqrt[mu0*rho]];\neq0200$2 = HoldForm[kN == n/R];\neq0200$3 = HoldForm[omegaN^4 - kN^2*vA^2*omegaN^2 - kN^2*vA^2*omegaGyro^2 == 0];\neq0200$4 = HoldForm[omegaN^2 == ((kN^2*vA^2)/2)[1 + sqrt[1 + 4*(omegaGyro/kNvA)^2]]];\neq0200$5 = HoldForm[fN == omegaN/(2*Pi)];\neq0200$6 = HoldForm[fN == (n*vA)/(2*Pi*R)];\nK0200 = HoldForm[{eq0200$1, eq0200$2, eq0200$3, eq0200$4, eq0200$5, eq0200$6}];\nTRAWINClosure0200[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0200 = TRAWINClosure0200[K0200];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nv_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}\n\\]\n\\[\nk_n=\\frac{n}{R}\n\\]\n\\[\n\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0\n\\]\n\\[\n\\omega_n^2\n=\n\\frac{k_n^2v_{\\mathrm{A}}^2}{2}\n\\left[\n1+\n\\sqrt{\n1+\n4\\left(\n\\frac{\\omega_{\\mathrm{gyro}}}{k_nv_{\\mathrm{A}}}\n\\right)^2\n}\n\\right]\n\\]\n\\[\nf_n=\\frac{\\omega_n}{2\\pi}\n\\]\n\n\\paragraph{Primary Derivation.}\nTo derive the stated relation through direct evaluation of the expression. leading to the displayed result.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe statement concerns the variables introduced in the displayed formula. In the TRAWIN reading, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-24",
+    "review_status": "approved_for_symbol_key_and_equation_grounding",
+    "method": "formula-normalized raw export alignment followed by manual review",
+    "approved_claims": [
+      {
+        "formula_latex": "v_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}",
+        "role": "Alfv\\'en velocity definition for a magnetized medium",
+        "symbol_definitions": {
+          "v_{\\mathrm{A}}": "Alfv\\'en velocity of the magnetized medium",
+          "B": "magnetic field magnitude",
+          "\\mu_0": "vacuum permeability",
+          "\\rho": "mass density of the magnetized medium"
+        },
+        "source_path": "D:/Conversation/OpenAI_Exports_textplus/conversations-002.json",
+        "source_record": "conversation_15:c506605e-7624-4352-8679-e0d96b2cc77c",
+        "alignment_status": "exact_equation_candidate",
+        "alignment_score": 0.9355
+      }
+    ],
+    "supporting_registry_evidence": {
+      "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+      "page": 117,
+      "supports": "The gyroscopic dispersion statement and interpretive context already recorded for ID0200."
+    },
+    "limitation": "The newly aligned raw-export passage explicitly supports the Alfv\\'en velocity definition; it is not independent validation of the derived quartic mode closure or its positive-root solution."
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "The Alfv\\'en wave dispersion entry begins with the characteristic propagation speed of a magnetized medium. Its velocity balances magnetic-field strength against mass-density inertia and vacuum permeability.",
+      "contextual_meaning": "A stronger magnetic field increases the characteristic wave speed, while a denser medium reduces it because more mass responds to magnetic restoring forces. This approved velocity relation anchors the entry before rotation modifies allowed modal frequencies.",
+      "formal_statement_latex": "\\[\nv_{\\mathrm{A}}=\\frac{B}{\\sqrt{\\mu_0\\rho}}\n\\]",
+      "derivable_consequences": "At fixed density, increasing \\(B\\) increases \\(v_{\\mathrm{A}}\\) linearly. At fixed field magnitude, increasing \\(\\rho\\) reduces \\(v_{\\mathrm{A}}\\) through inverse square-root dependence.",
+      "lemma_support": "The approved alignment states the Alfv\\'en velocity relation and identifies \\(v_{\\mathrm{A}}\\), \\(B\\), \\(\\mu_0\\), and \\(\\rho\\). Gyroscopic mode closure remains progression material.",
+      "technical_interpretation": "The relation packages magnetic restoring strength and material inertia into a speed scale used before bounded-mode and gyroscopic corrections are introduced.",
+      "equation_grounding": "\\(v_{\\mathrm{A}}\\) is the Alfv\\'en velocity of the magnetized medium; \\(B\\) is magnetic field magnitude; \\(\\mu_0\\) is vacuum permeability; and \\(\\rho\\) is mass density of the magnetized medium.",
+      "interpretive_role": "This entry anchors wave dispersion in a magnetohydrodynamic carrier relation before the derivation examines bounded and rotational corrections.",
+      "tzp_thesaurus": [
+        {
+          "term": "Alfv\\'en Velocity",
+          "meaning": "The magnetic wave-speed scale arising from field strength and medium density."
+        },
+        {
+          "term": "Magnetic Restoring Force",
+          "meaning": "The field-mediated response that supports transverse propagation in a magnetized plasma."
+        },
+        {
+          "term": "Gyroscopic Mode Closure",
+          "meaning": "The later implicit frequency relation that modifies the anchored wave speed."
+        }
+      ]
+    },
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 213,
+      "applied_at": "20260524_214627"
+    },
+    "equation_support_summary": "The Alfv\\'en velocity anchors the medium response; the support equations then introduce bounded wave number and gyroscopic mode closure."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0200/ID0200.source_truth.json",
+    "entry_id": "ID0200",
+    "registry_id": "registry_id_0200",
+    "canonical_title": "Alfv\\'en Wave Dispersion Relation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0200/ID0200.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "db5f61c2-29f5-5b3d-9215-6b9047347a98",
+    "RTEID": "RTE:P776.6444:T1.2797",
+    "poloidal_theta_rad": "776.6444",
+    "toroidal_phi_rad": "1.2797",
+    "rteid_source": "manifest",
+    "PiID": "4428810975665",
+    "TZPi": "0",
+    "PiPE_position": "207",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "v_{\\mathrm{A}} = \\frac{B}{\\sqrt{\\mu_0 \\rho}}",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "sqrt",
+          "mu",
+          "rho",
+          "v"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0200\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Alfv\\\\'en Wave Dispersion Relation\", \"latex\" -> \"v_{\\\\mathrm{A}} = \\\\frac{B}{\\\\sqrt{\\\\mu_0 \\\\rho}}\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"sqrt\", \"mu\", \"rho\", \"v\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "k_n=\\frac{n}{R}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "k",
+          "n",
+          "R"
+        ],
+        "candidate_wolfram_input": "HoldForm[k$n==((n)/(R))]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0200\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"Alfv\\\\'en Wave Dispersion Relation\", \"latex\" -> \"k_n=\\\\frac{n}{R}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"k\", \"n\", \"R\"}, \"candidateWolframInput\" -> \"HoldForm[k$n==((n)/(R))]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\omega_n^{4}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_n^{2}\n-\nk_n^{2}v_{\\mathrm{A}}^{2}\\omega_{\\mathrm{gyro}}^{2}\n=0",
+        "numeric_atoms": [
+          "4",
+          "2",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "n",
+          "k",
+          "v"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0200\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Alfv\\\\'en Wave Dispersion Relation\", \"latex\" -> \"\\\\omega_n^{4}\\n-\\nk_n^{2}v_{\\\\mathrm{A}}^{2}\\\\omega_n^{2}\\n-\\nk_n^{2}v_{\\\\mathrm{A}}^{2}\\\\omega_{\\\\mathrm{gyro}}^{2}\\n=0\", \"numericAtoms\" -> {4, 2, 0}, \"symbolicTokens\" -> {\"omega\", \"n\", \"k\", \"v\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "\\omega_n^2\n=\n\\frac{k_n^2v_{\\mathrm{A}}^2}{2}\n\\left[\n1+\n\\sqrt{\n1+\n4\\left(\n\\frac{\\omega_{\\mathrm{gyro}}}{k_nv_{\\mathrm{A}}}\n\\right)^2\n}\n\\right]",
+        "numeric_atoms": [
+          "2",
+          "1",
+          "4"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "sqrt",
+          "n",
+          "k",
+          "v",
+          "nv"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0200\", 4, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Alfv\\\\'en Wave Dispersion Relation\", \"latex\" -> \"\\\\omega_n^2\\n=\\n\\\\frac{k_n^2v_{\\\\mathrm{A}}^2}{2}\\n\\\\left[\\n1+\\n\\\\sqrt{\\n1+\\n4\\\\left(\\n\\\\frac{\\\\omega_{\\\\mathrm{gyro}}}{k_nv_{\\\\mathrm{A}}}\\n\\\\right)^2\\n}\\n\\\\right]\", \"numericAtoms\" -> {2, 1, 4}, \"symbolicTokens\" -> {\"omega\", \"sqrt\", \"n\", \"k\", \"v\", \"nv\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 5,
+        "latex": "f_n=\\frac{\\omega_n}{2\\pi}",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "Pi",
+          "f",
+          "n"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0200\", 5, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Alfv\\\\'en Wave Dispersion Relation\", \"latex\" -> \"f_n=\\\\frac{\\\\omega_n}{2\\\\pi}\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"omega\", \"Pi\", \"f\", \"n\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 5,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

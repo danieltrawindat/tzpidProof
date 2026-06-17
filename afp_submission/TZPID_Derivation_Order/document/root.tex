@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+\title{A Derivation-Order Certificate for a 10,271-Node Registry}
+\author{Daniel Alexander Trawin}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This AFP candidate formalizes the derivation-order invariant for a reassembled proof ladder over a 10,271-entry registry. The submitted theory encodes 753 concrete dependency edges as rung pairs and proves that each edge points from an earlier prerequisite rung to a later dependent rung. The result is a small, auditable Isabelle/HOL certificate for acyclicity with respect to the supplied ranking: every materialized dependency respects the strict upward-rung order. The wider registry, graph-topology report, and publication paper are treated as source documentation for the generated edge set; the formal AFP contribution is the checked order invariant itself.
+\end{abstract}
+
+\tableofcontents
+
+\section{Overview}
+
+The theory in this entry is generated from the materialized dependency-edge audit of the TZPID proof ladder. Each edge \((d,r)\) means that registry rung \(r\) depends on prerequisite rung \(d\). The intended invariant is therefore \(d < r\).
+
+The formalization deliberately has a narrow scope. It does not attempt to prove the scientific content of the registry entries. It proves that the exported dependency order is non-circular with respect to the reassembled proof ladder.
+
+\section{Sources}
+
+The edge list and informal documentation are derived from the TZPIDProof archive:
+
+\begin{itemize}
+  \item \emph{TZPID Reassembled Proof Ladder---All IDs in Derivation Order}.
+  \item \emph{TZPID Proof Ladder Graph Topology Report}.
+  \item \emph{The DAG Breakthrough: A Derivation-Order Certificate for the TZPID Registry}.
+\end{itemize}
+
+Archive DOI: \url{https://doi.org/10.5281/zenodo.20632000}.
+
+\section{Formal Development}
+
+\input{session}
+
+\bibliographystyle{plain}
+\begin{thebibliography}{1}
+
+\bibitem{nipkow-paulson-wenzel}
+Tobias Nipkow, Lawrence C. Paulson, and Markus Wenzel.
+\newblock \emph{Isabelle/HOL: A Proof Assistant for Higher-Order Logic}.
+\newblock Springer, 2002.
+
+\bibitem{tzpid-doi}
+Daniel Alexander Trawin.
+\newblock \emph{TZPID Reassembled Proof Ladder and DAG Certificate}.
+\newblock Zenodo, 2026.
+\newblock \url{https://doi.org/10.5281/zenodo.20632000}.
+
+\end{thebibliography}
+
+\end{document}

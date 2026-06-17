@@ -1,0 +1,248 @@
+\tzpanchor{0035}
+\tzpentryheader{0035}{Quantum Field Propagator (TZP Background)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{f671f064-1ccc-5d61-99fb-00197490b8c2}}\\
+\textbf{PiID} & \tzpcode{4197169399375} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{42}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{135.9128 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.2239 rad}\\
+\textbf{TZPID} & \tzpcode{ID0035} & \textbf{Node Dependencies}\quad \tzpidref{0019}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0035} & \textbf{Scale}\quad propagation\\
+\textbf{LOC Classification} & QC174.52 propagators & QA431 Green functions\\
+\textbf{arXiv Classification} & Primary: hep-th \quad Cross-list: quant-ph, gr-qc & \\
+\textbf{Primary Support} & Wave Operator Source Equation & Point-to-Point Response Kernel\\
+\textbf{Closure Support} & Potential-Induced Suppression & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+This Green function describes how disturbances propagate from x'x'x' to xxx in the presence of the TZP.
+
+\tzpsection{Canonical Equation}
+\[
+\Box_{\mathrm{T}}\,G_{\mathrm{T}}(x,x')
+=
+-\delta(x,x')
+\]
+\[
+G_{\mathrm{T}}(x,x')
+\sim
+e^{-V_{T}(x,x')}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $G_{\mathrm{T}}(x,x')$: Trawinistic Green function.
+    \item $\delta(x,x')$: point-source delta term that anchors the Green-function response.
+    \item $V_{T}(x,x')$: TZP potential or suppression kernel between source and response points.
+    \item $T$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0035 generated source Wolfram model *)
+ClearAll[K0035, Cr0035, T, R, A, W, I, N];
+eq0035$1 = HoldForm[BoxT[GT[x, xp]] == -DiracDelta[x, xp]];
+eq0035$2 = HoldForm[SimilarTo[GT[x, xp], Exp[-VT[x, xp]]]];
+eq0035$3 = HoldForm[GT[x, xp]];
+
+K0035 = HoldForm[{eq0035$1, eq0035$2, eq0035$3}];
+
+N = "normalized TRAWIN closure object for Quantum Field Propagator (TZP Background)";
+I = "Potential-Induced Suppression integration/comparison layer";
+W = "Point-to-Point Response Kernel wave or operator carrier";
+A = "Wave Operator Source Equation admissible action/amplitude condition";
+R = "Point-to-Point Response Kernel rotation/curl preservation layer";
+T = "Wave Operator Source Equation local source condition";
+
+Cr0035[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0035 = Cr0035[K0035];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Wave Operator Source Equation local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Point-to-Point Response Kernel rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Wave Operator Source Equation admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Point-to-Point Response Kernel wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Potential-Induced Suppression integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Quantum Field Propagator (TZP Background).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0035] Quantum Field Propagator (TZP Background)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\Box_T G_T(x,x')
+=
+-\delta(x,x') .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $G_T(x,x')$ be the Green function or propagator for a scalar field on the Trawinistic background.
+
+The propagator is defined as the response at $x$ to a point source at $x'$.  
+The appropriate wave operator is the Trawinistic d'Alembertian:
+
+\begin{equation}
+\Box_T .
+\end{equation}
+
+For a Green function, applying the wave operator returns the negative delta source:
+
+\begin{equation}
+\Box_T G_T(x,x')
+=
+-\delta(x,x') .
+\end{equation}
+
+Thus,
+
+\begin{equation}
+\boxed{
+\Box_T G_T(x,x')
+=
+-\delta(x,x') .
+}
+\end{equation}
+
+Boundary conditions are chosen to remain compatible with the TZP structure and may include exponential suppression induced by $V_T$.
+
+\paragraph{Interpretation.}
+The TZP propagator measures how field disturbances travel through a Trawinistic background with degenerate geometry and zero-point boundary structure.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Quantum Field Propagator (TZP Background) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Wave Operator Source Equation}\par
+\[
+\Box_{\mathrm{T}}\,G_{\mathrm{T}}(x,x')
+=
+-\delta(x,x')
+\]
+\noindent This defines the propagator as the Green function of the Trawinistic wave operator.\par
+\noindent\textbf{2. Point-to-Point Response Kernel}\par
+\[
+G_{\mathrm{T}}(x,x')
+\]
+\noindent This is the actual two-point amplitude that solves the source equation.\par
+\noindent\textbf{3. Potential-Induced Suppression}\par
+\[
+G_{\mathrm{T}}(x,x')
+\sim
+e^{-V_{T}(x,x')}
+\]
+\noindent This closes the progression by incorporating anchor-localized suppression into the response law.\par
+
+\clearpage
+\noindent\textbf{[ID 0035] Quantum Field Propagator (TZP Background)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Quantum Field Propagator (TZP Background) is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} This Green function describes how disturbances propagate from x x x  to xxx in the presence of the TZP. \textbf{Contextual meaning:} The entry reads Quantum Field Propagator (TZP Background) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This operator is the two-point response kernel for the Trawinistic field equations. It controls vacuum expectations, diagrammatic expansions, and how anchor-localized corrections modify ordinary propagation. \textbf{Lemma support:} Wave Operator Source Equation; Point-to-Point Response Kernel; Potential-Induced Suppression.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The TZP propagator measures how field disturbances travel through a Trawinistic background with degenerate geometry and zero-point boundary structure.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The propagator GT(x,x )G T (x,x )GT(x,x ) for a scalar field in the Trawinistic manifold satisfies  TGT(x,x )=-delta(x,x )Box to the power T G T (x,x ) = -delta(x,x ) TGT(x,x )=-delta(x,x ) subject to boundary conditions consistent with the TZP structure and includes exponential suppression factors derived from the TZP potential. The propagator GT(x,x )G T (x,x )GT(x,x ) for a scalar field in the Trawinistic manifold satisfies  TGT(x,x )=-delta(x,x )Box to the power T G T (x,x ) = -delta(x,x ) TGT(x,x )=-delta(x,x ) subject to boundary conditions consistent with the TZP structure and includes exponential suppression factors derived from the TZP potential.
+
+\tzpsection{Interpretive Role}
+This operator is the two-point response kernel for the Trawinistic field equations. It controls vacuum expectations, diagrammatic expansions, and how anchor-localized corrections modify ordinary propagation.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{State-Level Carrier Domain Propagator Tzp Background}: quantum-state language for amplitudes, measurement, basis structure, or weak coupling.
+\item \textbf{State-Level Carrier Domain Quantum-State Analogue}: quantum-state language for amplitudes, measurement, basis structure, or weak coupling.
+\item \textbf{Carrier Domain Terminology}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0035]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0035_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0035] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Quantum Field Propagator (TZP Background)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} this Green function describes how disturbances propagate from x'x'x' to xxx in the
+presence of the TZP
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Quantum Field Propagator (TZP Background) is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0035_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

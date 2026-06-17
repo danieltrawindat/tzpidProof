@@ -1,0 +1,386 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:59:51.068498+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0396",
+    "uuid": "75a5f795-9a28-5970-b217-93af8ac106c8",
+    "registry_id": "registry_id_0396",
+    "canonical_title": "Beat Frequency Resonance and Information Density",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0396/ID0396.TEX",
+      "json": "D:/TZPID/TZPID/ID0396/ID0396.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0396/ID0396.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The tripartite channel architecture predicts that resonant beat frequencies occur at fres=f0?,fres=f0alpha, where f0f0 is a base frequency and ?alpha is the fine-structure constant. Each measurement across the channels yields an information density of log2(153,600)approx17.23log2(153,600)approx17.23 bits.",
+    "technical_interpretation": "The tripartite channel architecture predicts that resonant beat frequencies occur at fres=f0?,fres=f0alpha, where f0f0 is a base frequency and ?alpha is the fine-structure constant. Each measurement across the channels yields an information density of log2(153,600)approx17.23log2(153,600)approx17.23 bits."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\omega_{\\mathrm{beat}}=\\lvert\\omega_{1}-\\omega_{2}\\rvert",
+      "\\rho_{I}=\\log_{2}(153600)"
+    ],
+    "source_section_latex": "\\[\n\\omega_{\\mathrm{beat}}=\\lvert\\omega_{1}-\\omega_{2}\\rvert\n\\]\n\\[\n\\rho_{I}=\\log_{2}(153600)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Mode Quantization",
+      "formula_latex_blocks": [
+        "\\omega_{\\mathrm{beat}}=\\lvert\\omega_{1}-\\omega_{2}\\rvert"
+      ],
+      "interpretive_role": "This fixes the quantized carrier mode indexed by the bounded geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Dispersion Law",
+      "formula_latex_blocks": [
+        "\\rho_{I}=\\log_{2}(153600)"
+      ],
+      "interpretive_role": "This turns the mode index into an actual propagation or resonance law."
+    },
+    {
+      "step": 3,
+      "component_title": "Boundary Condition",
+      "formula_latex_blocks": [
+        "\\omega_{\\mathrm{beat}}=n\\pi v_{\\mathrm{A}}/L"
+      ],
+      "interpretive_role": "This closes the progression by enforcing the boundary or nodal condition that makes the pattern admissible."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\omega_{beat}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{1}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rho_{I}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\log_{2}(153600)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$I$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$g_{2}(153600)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Beat Frequency Resonance and Information Density\nCanonical operator translation\neq0396_1 = HoldForm[omegabeat==1-omega2];\neq0396_2 = HoldForm[rhoI==2(153600)];\n\nTRAWIN closure composition\nTRAWINClosure0396[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0396 := HoldForm[{eq0396_1, eq0396_2}];\nResult0396 := TRAWINClosure0396[K0396];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\omega_{\\mathrm{beat}}=\\lvert\\omega_{1}-\\omega_{2}\\rvert",
+          "normalized_latex": "omegaBeat==Abs[omega1-omega2]",
+          "wolfram_input": "omegaBeat==Abs[omega1-omega2]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaBeat == Abs[omega1 - omega2]]",
+          "texform_roundtrip": "\\text{omegaBeat}=| \\text{omega1}-\\text{omega2}|",
+          "messages": []
+        },
+        {
+          "latex": "\\rho_{I}=\\log_{2}(153600)",
+          "normalized_latex": "rhoI==log2[153600]",
+          "wolfram_input": "rhoI==log2[153600]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rhoI == log2[153600]]",
+          "texform_roundtrip": "\\text{rhoI}=\\text{log2}(153600)",
+          "messages": []
+        },
+        {
+          "latex": "\\omega_{\\mathrm{beat}}=n\\pi v_{\\mathrm{A}}/L",
+          "normalized_latex": "omegaBeat==nPi*vA/L",
+          "wolfram_input": "omegaBeat==nPi*vA/L",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaBeat == nPi*(vA/L)]",
+          "texform_roundtrip": "\\text{omegaBeat}=\\frac{\\text{nPi} \\text{vA}}{L}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0396 generated source-truth Wolfram model *)\nClearAll[K0396, TRAWINClosure0396];\neq0396$1 = HoldForm[omegaBeat == Abs[omega1 - omega2]];\neq0396$2 = HoldForm[rhoI == log2[153600]];\neq0396$3 = HoldForm[omegaBeat == nPi*(vA/L)];\nK0396 = HoldForm[{eq0396$1, eq0396$2, eq0396$3}];\nTRAWINClosure0396[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0396 = TRAWINClosure0396[K0396];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Continuity Constraint.}\n\\begin{equation}\n\\partial_r(rv_r)+\\partial_z(zv_z)=0.\n\\end{equation}\n\n\\paragraph{Resonance Operator.}\n\\begin{equation}\n\\mathcal{R}_{\\mathrm{EHD}}[\\mathbf{v}]\n=\n-\\frac{\\nabla p}{\\rho}\n+\n\\frac{q}{m}\n(\\mathbf{E}+\\mathbf{v}\\times\\mathbf{B}).\n\\end{equation}\n\n\\paragraph{Mode Selection.}\n\\begin{equation}\n\\mathcal{R}_{\\mathrm{EHD}}[\\mathbf{v}_k]\n=\n\\lambda_k\\mathbf{v}_k.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nThe admissible axisymmetric flow space is constrained by:\n\\begin{equation}\n\\partial_r(rv_r)+\\partial_z(zv_z)=0.\n\\end{equation}\n\nPressure and electromagnetic forcing define the total acceleration operator:\n\\begin{equation}\n\\mathcal{R}_{\\mathrm{EHD}}[\\mathbf{v}]\n=\n-\\frac{\\nabla p}{\\rho}\n+\n\\frac{q}{m}\n(\\mathbf{E}+\\mathbf{v}\\times\\mathbf{B}).\n\\end{equation}\n\nResonant modes are those reproduced by the operator up to scale:\n\\begin{equation}\n\\boxed{\n\\mathcal{R}_{\\mathrm{EHD}}[\\mathbf{v}_k]\n=\n\\lambda_k\\mathbf{v}_k.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe EHD resonance operator identifies flow modes amplified by pressure and electromagnetic forcing.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "analogue-physics model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0396/ID0396.source_truth.json",
+    "entry_id": "ID0396",
+    "registry_id": "registry_id_0396",
+    "canonical_title": "Beat Frequency Resonance and Information Density",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0396/ID0396.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "75a5f795-9a28-5970-b217-93af8ac106c8",
+    "RTEID": "RTE:P1537.7559:T2.5337",
+    "poloidal_theta_rad": "1537.7559",
+    "toroidal_phi_rad": "2.5337",
+    "rteid_source": "manifest",
+    "PiID": "6094330572703",
+    "TZPi": "0",
+    "PiPE_position": "403",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\omega_{\\mathrm{beat}}=\\lvert\\omega_{1}-\\omega_{2}\\rvert",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "lvert",
+          "rvert"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0396\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Beat Frequency Resonance and Information Density\", \"latex\" -> \"\\\\omega_{\\\\mathrm{beat}}=\\\\lvert\\\\omega_{1}-\\\\omega_{2}\\\\rvert\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"omega\", \"lvert\", \"rvert\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\rho_{I}=\\log_{2}(153600)",
+        "numeric_atoms": [
+          "2",
+          "153600"
+        ],
+        "symbolic_tokens": [
+          "rho",
+          "log",
+          "I"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0396\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Beat Frequency Resonance and Information Density\", \"latex\" -> \"\\\\rho_{I}=\\\\log_{2}(153600)\", \"numericAtoms\" -> {2, 153600}, \"symbolicTokens\" -> {\"rho\", \"log\", \"I\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

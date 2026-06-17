@@ -1,0 +1,17 @@
+\section*{ID6414: Numerical Implementation Plan (Fast Demo You Can Run): σ\_r(t)}
+\paragraph{Metadata.}
+PiID: 0825039302133 | RTEID: RTE:P24906.9864:T3.3399 | UUID: 0ce2ac4f-c9d4-509f-936d-b36a9c7aef87
+
+\paragraph{Canonical Statement.}
+- Generate synthetic EEG \textbackslash{}(s(t) = 0.6\textbackslash{}sin(2\textbackslash{}pi 10 t) + 0.3\textbackslash{}sin(2\textbackslash{}pi 2 t)\textbackslash{}) (alpha + delta). - Use \textbackslash{}(\textbackslash{}sigma\_r(t)=\textbackslash{}sigma\_0 + \textbackslash{}kappa \textbackslash{}cdot \textbackslash{}text\{Env\}\_\{\textbackslash{}alpha\}(s(t))\textbackslash{}) with \textbackslash{}(\textbackslash{}kappa=0.5\textbackslash{}). - Recompute \textbackslash{}(I(t)\textbackslash{}) as we did earlier for the breathing torus but with the EEG-driven \textbackslash{}(\textbackslash{}sigma\_r(t)\textbackslash{}). - Plot \textbackslash{}(|I(t)|\textbackslash{}), compute its spectrum, and evaluate coherence between \textbackslash{}(s(t)\textbackslash{}) and \textbackslash{}(|I(t)|\textbackslash{}).
+
+\paragraph{Canonical Equation.}
+\[
+\sigma_r(t)=\sigma_0 + \kappa \cdot \text{Env}_{\alpha}(s(t))
+\]
+
+\paragraph{Dictionary.}
+Numerical Implementation Plan (Fast Demo You Can Run): σ\_r(t) — σ\_r(t)=σ\_0 + κ · Env\_α(s(t))
+
+\paragraph{Encyclopedia.}
+Numerical Implementation Plan (Fast Demo You Can Run): σ\_r(t) is an algebraic definition, written σ\_r(t)=σ\_0 + κ · Env\_α(s(t)). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from κ, α, s, defining σ\_r(t). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

@@ -1,0 +1,298 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:26:24.866089+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0186",
+    "uuid": "09187ac0-23b7-5198-9711-054a94ae0d55",
+    "registry_id": "registry_id_0186",
+    "canonical_title": "Black Holes as Reverse TZP Processes",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0186/ID0186.TEX",
+      "json": "D:/TZPID/TZPID/ID0186/ID0186.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0186/ID0186.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Black holes represent the reverse of TZP emergences: a collective distortion of the vacuum becomes so extreme that matter collapses back into the zero-point field, erasing local decoherence.",
+    "technical_interpretation": "Black holes represent the reverse of TZP emergences: a collective distortion of the vacuum becomes so extreme that matter collapses back into the zero-point field, erasing local decoherence."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{M} \\rightarrow \\mathcal{V}_{\\mathrm{TZP}}^{-1}",
+      "\\Delta S \\rightarrow 0"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{M} \\rightarrow \\mathcal{V}_{\\mathrm{TZP}}^{-1}\n\\]\n\\[\n\\Delta S \\rightarrow 0\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "First Support",
+      "formula_latex_blocks": [
+        "\\mathcal{M} \\rightarrow \\mathcal{V}_{\\mathrm{TZP}}^{-1}"
+      ],
+      "interpretive_role": "This support equation moves the entry from the abstract claim toward a concrete first measurable relation."
+    },
+    {
+      "step": 2,
+      "component_title": "Second Support",
+      "formula_latex_blocks": [
+        "\\Delta S \\rightarrow 0"
+      ],
+      "interpretive_role": "This support equation adds the second structural constraint needed to narrow the admissible TRAWIN reading."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Closure",
+      "formula_latex_blocks": [
+        "\\tzpnormalizewrap{\\mathcal{M},\\Delta S,\\text{reverse process}}"
+      ],
+      "interpretive_role": "This normalized closure ties the support terms together and closes the progression under the TRAWIN frame."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0186}$",
+        "description": "canonical registry object for entry ID 0186."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0186}$",
+        "name": "canonical registry object for entry ID 0186.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tzpnormalizewrap$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V_{TZP}^{-1}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Black Holes as Reverse TZP Processes\nCanonical operator translation\neq0186_1 = HoldForm[(M) arrow (V)TZP^(-1)];\neq0186_2 = HoldForm[Delta S arrow 0];\n\nTRAWIN closure composition\nTRAWINClosure0186[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0186 := HoldForm[{eq0186_1, eq0186_2}];\nResult0186 := TRAWINClosure0186[K0186];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{M} \\rightarrow \\mathcal{V}_{\\mathrm{TZP}}^{-1}",
+          "normalized_latex": "M*arrow*VTZP^(-1)",
+          "wolfram_input": "M*arrow*VTZP^(-1)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(M*arrow)/VTZP]",
+          "texform_roundtrip": "\\frac{\\text{arrow} M}{\\text{VTZP}}",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta S \\rightarrow 0",
+          "normalized_latex": "Delta*Sarrow0",
+          "wolfram_input": "Delta*Sarrow0",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Delta*Sarrow0]",
+          "texform_roundtrip": "\\text{Delta} \\text{Sarrow0}",
+          "messages": []
+        },
+        {
+          "latex": "\\tzpnormalizewrap{\\mathcal{M},\\Delta S,\\text{reverse process}}",
+          "normalized_latex": "TZPNormalizeWrap[M,Delta*S]",
+          "wolfram_input": "TZPNormalizeWrap[M,Delta*S]",
+          "normalization_notes": [
+            "\\tzpnormalizewrap normalized to TZPNormalizeWrap[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPNormalizeWrap[M, Delta*S]]",
+          "texform_roundtrip": "\\text{TZPNormalizeWrap}(M,\\text{Delta} S)",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0186 generated source-truth Wolfram model *)\nClearAll[K0186, TRAWINClosure0186];\neq0186$1 = HoldForm[(M*arrow)/VTZP];\neq0186$2 = HoldForm[Delta*Sarrow0];\neq0186$3 = HoldForm[TZPNormalizeWrap[M, Delta*S]];\nK0186 = HoldForm[{eq0186$1, eq0186$2, eq0186$3}];\nTRAWINClosure0186[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0186 = TRAWINClosure0186[K0186];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\mathcal{M} \\rightarrow \\mathcal{V}_{\\mathrm{TZP}}^{-1}\n\\]\n\\[\n\\Delta S \\rightarrow 0\n\\]\n\n\\paragraph{Primary Derivation.}\nOne can verify the equality using functional and analytic properties. yielding the required identity.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. According to CHL, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0186/ID0186.source_truth.json",
+    "entry_id": "ID0186",
+    "registry_id": "registry_id_0186",
+    "canonical_title": "Black Holes as Reverse TZP Processes",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0186/ID0186.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "09187ac0-23b7-5198-9711-054a94ae0d55",
+    "RTEID": "RTE:P722.2793:T1.1901",
+    "poloidal_theta_rad": "722.2793",
+    "toroidal_phi_rad": "1.1901",
+    "rteid_source": "manifest",
+    "PiID": "9489549303819",
+    "TZPi": "9",
+    "PiPE_position": "193",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

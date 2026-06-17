@@ -1,0 +1,415 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:49:45.225244+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0272",
+    "uuid": "f2b9c5f0-20a7-549d-be2b-32db976a06dd",
+    "registry_id": "registry_id_0272",
+    "canonical_title": "Multi-Scale Correlation Matrix",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0272/ID0272.TEX",
+      "json": "D:/TZPID/TZPID/ID0272/ID0272.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0272/ID0272.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "A correlation matrix comparing twelve phenomena between laboratory gyroscopes and astrophysical systems---such as opposing field regions, precession, nested field topology, Elsasser criticality and helicity conservation---shows a mean correlation coefficient of about 0.81.",
+    "technical_interpretation": "A correlation matrix comparing twelve phenomena between laboratory gyroscopes and astrophysical systems---such as opposing field regions, precession, nested field topology, Elsasser criticality and helicity conservation---shows a mean correlation coefficient of about 0.81."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+      "\\eta_{J_z}\\circ\\Phi_Q(f)=\\mathcal{B}(f)\\circ\\eta_{J_z}"
+    ],
+    "source_section_latex": "\\[\nC_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}\n\\]\n\\[\n\\eta_{J_z}\\circ\\Phi_Q(f)=\\mathcal{B}(f)\\circ\\eta_{J_z}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Diagnostic Definition",
+      "formula_latex_blocks": [
+        "C_{\\lambda i,\\lambda j}=C_{ij}"
+      ],
+      "interpretive_role": "This defines the scalar diagnostic or conversion quantity named by the title."
+    },
+    {
+      "step": 2,
+      "component_title": "Scaling Relation",
+      "formula_latex_blocks": [
+        "\\|C\\|_{F}<\\infty"
+      ],
+      "interpretive_role": "This elevates the quantity into a comparative scaling or correlation law."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Regime",
+      "formula_latex_blocks": [
+        "\\eta_{J_z}\\circ\\Phi_Q(f)=\\mathcal{B}(f)\\circ\\eta_{J_z}"
+      ],
+      "interpretive_role": "This closes the entry by normalizing the diagnostic against a stated reference regime."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0272}$",
+        "description": "canonical registry object for entry ID 0272."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0272}$",
+        "name": "canonical registry object for entry ID 0272.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\sigma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta_{J_z}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\circ$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\infty$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{ij}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Q(f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B(f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{\\lambda i,\\lambda j}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$v(x_i,x_j)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Multi-Scale Correlation Matrix\nCanonical operator translation\neq0272_1 = HoldForm[Cij == (cov(x_i,x_j))/(_i_j)];\neq0272_2 = HoldForm[_z_Q(f)==(B)(f)_z];\n\nTRAWIN closure composition\nTRAWINClosure0272[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0272 := HoldForm[{eq0272_1, eq0272_2}];\nResult0272 := TRAWINClosure0272[K0272];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+          "normalized_latex": "CIj==(Tuple[cov[xI,xJ]]/(sigmaIsigmaJ))",
+          "wolfram_input": "CIj==(Tuple[cov[xI,xJ]]/(sigmaIsigmaJ))",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CIj == Tuple[cov[xI, xJ]]/sigmaIsigmaJ]",
+          "texform_roundtrip": "\\text{CIj}=\\frac{\\text{Tuple}(\\text{cov}(\\text{xI},\\text{xJ}))}{\\text{sigmaIsigmaJ}}",
+          "messages": []
+        },
+        {
+          "latex": "\\eta_{J_z}\\circ\\Phi_Q(f)=\\mathcal{B}(f)\\circ\\eta_{J_z}",
+          "normalized_latex": "etaJzcircPhiQ[f]==B[f]circetaJz",
+          "wolfram_input": "etaJzcircPhiQ[f]==B[f]circetaJz",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[etaJzcircPhiQ[f] == B[f]*circetaJz]",
+          "texform_roundtrip": "\\text{etaJzcircPhiQ}(f)=\\text{circetaJz} B(f)",
+          "messages": []
+        },
+        {
+          "latex": "C_{\\lambda i,\\lambda j}=C_{ij}",
+          "normalized_latex": "CLambdailambdaj==CIj",
+          "wolfram_input": "CLambdailambdaj==CIj",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CLambdailambdaj == CIj]",
+          "texform_roundtrip": "\\text{CLambdailambdaj}=\\text{CIj}",
+          "messages": []
+        },
+        {
+          "latex": "\\|C\\|_{F}<\\infty",
+          "normalized_latex": "CF<Infinity",
+          "wolfram_input": "CF<Infinity",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CF < Infinity]",
+          "texform_roundtrip": "\\text{CF}<\\infty",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0272 generated source-truth Wolfram model *)\nClearAll[K0272, TRAWINClosure0272];\neq0272$1 = HoldForm[CIj == Tuple[cov[xI, xJ]]/sigmaIsigmaJ];\neq0272$2 = HoldForm[etaJzcircPhiQ[f] == B[f]*circetaJz];\neq0272$3 = HoldForm[CLambdailambdaj == CIj];\neq0272$4 = HoldForm[CF < Infinity];\nK0272 = HoldForm[{eq0272$1, eq0272$2, eq0272$3, eq0272$4}];\nTRAWINClosure0272[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0272 = TRAWINClosure0272[K0272];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n[q,p]=i\\hbar .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nContinuous-variable quantum systems use observables with continuous spectra, such as position $q$ and momentum $p$.\n\nThe commutator is defined by\n\\begin{equation}\n[q,p]=qp-pq .\n\\end{equation}\n\nCanonical quantization imposes\n\\begin{equation}\n\\boxed{\n[q,p]=i\\hbar .\n}\n\\end{equation}\n\nIn the Trawinistic extension, curvature may modify the phase-space volume element while preserving the canonical commutator as the primary algebraic witness.\n\n\\paragraph{Interpretation.}\nContinuous-variable systems extend the registry from finite qubit states into infinite-dimensional Hilbert-space dynamics.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0272/ID0272.source_truth.json",
+    "entry_id": "ID0272",
+    "registry_id": "registry_id_0272",
+    "canonical_title": "Multi-Scale Correlation Matrix",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0272/ID0272.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "f2b9c5f0-20a7-549d-be2b-32db976a06dd",
+    "RTEID": "RTE:P1056.2364:T1.7404",
+    "poloidal_theta_rad": "1056.2364",
+    "toroidal_phi_rad": "1.7404",
+    "rteid_source": "manifest",
+    "PiID": "4326648213393",
+    "TZPi": "8",
+    "PiPE_position": "279",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "sigma",
+          "C",
+          "ij",
+          "x",
+          "i",
+          "j"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0272\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Multi-Scale Correlation Matrix\", \"latex\" -> \"C_{ij} = \\\\frac{\\\\operatorname{cov}(x_i,x_j)}{\\\\sigma_i\\\\sigma_j}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"sigma\", \"C\", \"ij\", \"x\", \"i\", \"j\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\eta_{J_z}\\circ\\Phi_Q(f)=\\mathcal{B}(f)\\circ\\eta_{J_z}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "eta",
+          "circ",
+          "Phi",
+          "J",
+          "z",
+          "Q",
+          "f"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0272\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Multi-Scale Correlation Matrix\", \"latex\" -> \"\\\\eta_{J_z}\\\\circ\\\\Phi_Q(f)=\\\\mathcal{B}(f)\\\\circ\\\\eta_{J_z}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"eta\", \"circ\", \"Phi\", \"J\", \"z\", \"Q\", \"f\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

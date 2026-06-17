@@ -1,0 +1,75 @@
+{
+  "certificate": "OPERATOR_SPECTRAL_CARRIERS_CERTIFICATE",
+  "generated_utc": "2026-06-09T00:00:00Z",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "isabelle_theory": "isabelle_tzpid/TZPID_OperatorSpectral_Carriers.thy",
+  "source_batch": "Operator/spectral batch 006",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "ordered_two_mode_gap_nonnegative",
+      "value": 2.5,
+      "expected": 2.5,
+      "pass": true
+    },
+    {
+      "name": "harmonic_ladder_adjacent_step",
+      "value": 2.5,
+      "expected": 2.5,
+      "pass": true
+    },
+    {
+      "name": "curvature_shift_monotone",
+      "value": 0.5999999999999996,
+      "expected": 0.6,
+      "pass": true
+    },
+    {
+      "name": "kk_access_frequency_recovers_mode",
+      "value": 1199169832.0,
+      "expected": 1199169832.0,
+      "pass": true
+    },
+    {
+      "name": "full_beat_period_recovers_turn",
+      "value": 6.283185307179586,
+      "expected": 6.283185307179586,
+      "pass": true
+    },
+    {
+      "name": "semidiurnal_is_half_full_period",
+      "value": 5.2359877559829915,
+      "expected": 5.2359877559829915,
+      "pass": true
+    },
+    {
+      "name": "detuning_denominator_positive",
+      "value": 3.25,
+      "expected": 3.25,
+      "pass": true
+    },
+    {
+      "name": "transfer_rate_uses_denominator",
+      "value": 0.20676923076923076,
+      "expected": 0.20676923076923076,
+      "pass": true
+    },
+    {
+      "name": "gap_exceeds_perturbation",
+      "value": 2.1,
+      "expected": 2.1,
+      "pass": true
+    }
+  ],
+  "parameters": {
+    "lambda0": 1.25,
+    "lambda1": 3.75,
+    "base_frequency": 2.5,
+    "mode_n": 4,
+    "radius": 120000000.0,
+    "omega_solar": 14.5,
+    "omega_lunar": 13.9,
+    "detuning": 1.5
+  }
+}

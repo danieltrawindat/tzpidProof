@@ -1,0 +1,17 @@
+\section*{ID9613: Definition of a\_lm}
+\paragraph{Metadata.}
+PiID: 5464955697810 | RTEID: RTE:P37329.4138:T4.9587 | UUID: 9a994f51-f4a1-57dd-be15-9361bae5fe23
+
+\paragraph{Canonical Statement.}
+plete orthonormal set on \$L\textasciicircum{}2(S\textasciicircum{}2)\$. \textbackslash{}begin\{definition\}[Spherical Harmonic Basis] The spherical harmonics are given by: \textbackslash{}begin\{equation\} Y\_l\textasciicircum{}m(\textbackslash{}theta, \textbackslash{}phi) = \textbackslash{}sqrt\{\textbackslash{}frac\{(2l+1)(l-m)!\}\{4\textbackslash{}pi(l+m)!\}\} P\_l\textasciicircum{}m(\textbackslash{}cos\textbackslash{}theta) e\textasciicircum{}\{im\textbackslash{}phi\} \textbackslash{}end\{equation\} where \$P\_l\textasciicircum{}m\$ denotes the associated Legendre polynomials, \$l = 0, 1, 2, \textbackslash{}ldots\$ and \$m = -l, \textbackslash{}ldots, l\$. \textbackslash{}end\{definition\} Any square-integrable function on the sphere admits a unique decomposition: \textbackslash{}begin\{equation\} f(\textbackslash{}theta, \textbackslash{}phi) = \textbackslash{}sum\_\{l=0\}\textasciicircum{}\textbackslash{}infty \textbackslash{}sum\_\{m=-l\}\textasciicircum{}l a\_\{lm\} Y\_l\textasciicircum{}m(\textbackslash{}theta, \textbackslash{}phi) \textbackslash{}end\{equation\} with coefficients determined by the inner product \$a\_\{lm\} = \textbackslash{}int\_\{S\textasciicircum{}2\} f(\textbackslash{}theta, \textbackslash{}phi) \textbackslash{}overline\{Y\_l\textasciicircum{}m(\textbackslash{}theta, \textbackslash{}phi)\} \textbackslash{}, d\textbackslash{}Omega\$. For holographic applications, we truncate this expansion at a maximum degree \$l\_\{\textbackslash{}max\}\$ determined by the desired spatial resolution. The total number of coefficients equals \$(l\_\{\textbackslash{}max\} + 1)\textasciicircum{}2\$, which must be chosen in relation to the 153,600 discrete sampling points on the DAANSphere to avoid aliasing artifacts. \textbackslash{}subsection\{Helical Propagator and Transfer Function\} Light propagation through the rotating double helix applies a transfer function in the orbital angular momentum basis. Each OAM mo
+
+\paragraph{Canonical Equation.}
+\[
+a_{lm} = \int_{S^2} f(\theta, \phi) \overline{Y_l^m(\theta, \phi)} \, d\Omega
+\]
+
+\paragraph{Dictionary.}
+Definition of a\_lm — a\_lm = ∫\_S\textasciicircum{}2 f(θ, φ) overlineY\_l\textasciicircum{}m(θ, φ) dΩ
+
+\paragraph{Encyclopedia.}
+Definition of a\_lm is an integral expression, written a\_lm = ∫\_S\textasciicircum{}2 f(θ, φ) overlineY\_l\textasciicircum{}m(θ, φ) dΩ. It is obtained by integrating over a domain, accumulating contributions across the region of interest. It is built from θ, φ, Ω, S, f, Y\_l, defining a\_lm. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

@@ -1,0 +1,17 @@
+\section*{ID9778: Spectral Topology: KK Modes and Extra Dimensions: Ω\textasciicircum{}k-1}
+\paragraph{Metadata.}
+PiID: 7422057505968 | RTEID: RTE:P37970.1455:T6.0145 | UUID: a61e3c0f-6e8d-56e7-a980-7d0914ab80c4
+
+\paragraph{Canonical Statement.}
+l back into 3D fields via de Rham codifferentials. Define \$\textbackslash{}delta\_k = \textbackslash{}pm \textbackslash{}star d\textbackslash{}star\$ on \$k\$-forms. The inverse of an observed \$k\$-form \$\textbackslash{}omega\_k\$ is \textbackslash{}[ \textbackslash{}omega\_\{k-1\} = \textbackslash{}delta(\textbackslash{}Delta\textasciicircum{}\{-1\}\textbackslash{}omega\_k). \textbackslash{}] In Mathematica terms: \textbackslash{}begin\{verbatim\} SpectralCohomologyInverse[ωobs\_, \{cs\_, R\_, μ\_r\_, B0\_\}] := Module[\{δ0, δ1\}, δ0[ω3\_] := HodgeStar[3,2]@ExteriorDerivative@HodgeStar[2,3]@ω3; δ1[ω2\_] := HodgeStar[2,1]@ExteriorDerivative@HodgeStar[1,2]@ω2; InverseFourierBessel[ωobs, BesselJZeros[\#\&,10]\& /@ Range[0,5]] ] \textbackslash{}end\{verbatim\} This moves down the cohomological ladder from \$\textbackslash{}Omega\textasciicircum{}k\$ to \$\textbackslash{}Omega\textasciicircum{}\{k-1\}\$. The combined spectral- and topology-inversion thus relates anomalous frequencies to linked field configurations, tying KK modes to loop linkages.
+
+\paragraph{Canonical Equation.}
+\[
+\Omega^{k-1}
+\]
+
+\paragraph{Dictionary.}
+Spectral Topology: KK Modes and Extra Dimensions: Ω\textasciicircum{}k-1 — Ω\textasciicircum{}k-1
+
+\paragraph{Encyclopedia.}
+Spectral Topology: KK Modes and Extra Dimensions: Ω\textasciicircum{}k-1 is a symbolic expression, written Ω\textasciicircum{}k-1. It introduces a symbol or relation used elsewhere in the framework. It is built from Ω, k. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

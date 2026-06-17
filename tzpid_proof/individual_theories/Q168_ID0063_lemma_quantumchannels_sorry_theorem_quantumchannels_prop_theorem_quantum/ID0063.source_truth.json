@@ -1,0 +1,297 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:32:42.714528+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0063",
+    "uuid": "657fa3b3-607d-5f86-b026-b69e787edb74",
+    "registry_id": "registry_id_0063",
+    "canonical_title": "Measurement Back-Action",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0063/ID0063.TEX",
+      "json": "D:/TZPID/TZPID/ID0063/ID0063.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0063/ID0063.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Measuring a quantum system perturbs it; the operator expresses this disturbance, including curvature and TZP corrections.",
+    "technical_interpretation": "Measuring a quantum system perturbs it; the operator expresses this disturbance, including curvature and TZP corrections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{M}[\\rho]\n=\n\\sum_{k} M_{k}\\rho M_{k}^{\\dagger} - \\rho",
+      "\\sum_{k} M_{k}^{\\dagger}M_{k} = I"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{M}[\\rho]\n=\n\\sum_{k} M_{k}\\rho M_{k}^{\\dagger} - \\rho\n\\]\n\\[\n\\sum_{k} M_{k}^{\\dagger}M_{k} = I\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "State to Be Measured",
+      "formula_latex_blocks": [
+        "\\rho"
+      ],
+      "interpretive_role": "This is the incoming system state before the measurement channel acts."
+    },
+    {
+      "step": 2,
+      "component_title": "Measurement Completeness",
+      "formula_latex_blocks": [
+        "\\sum_{k} M_{k}^{\\dagger}M_{k} = I"
+      ],
+      "interpretive_role": "This guarantees that the measurement family is physically admissible."
+    },
+    {
+      "step": 3,
+      "component_title": "Back-Action Channel",
+      "formula_latex_blocks": [
+        "\\mathcal{M}[\\rho]\n=\n\\sum_{k} M_{k}\\rho M_{k}^{\\dagger} - \\rho"
+      ],
+      "interpretive_role": "This closes the progression by writing the disturbance induced by the measurement itself."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\sum_{k}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\dagger$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M_{k}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M_{k}^{\\dagger}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$I$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Measurement Back-Action\nCanonical operator translation\neq0063_1 = HoldForm[(M)[rho] == Sumk Mkrho Mk^() - rho];\neq0063_2 = HoldForm[Sumk Mk^()Mk == I];\n\nTRAWIN closure composition\nTRAWINClosure0063[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0063 := HoldForm[{eq0063_1, eq0063_2}];\nResult0063 := TRAWINClosure0063[K0063];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{M}[\\rho]\n=\n\\sum_{k} M_{k}\\rho M_{k}^{\\dagger} - \\rho",
+          "normalized_latex": "M[rho]==SumK*MKrho*MK^(Dagger)-rho",
+          "wolfram_input": "M[rho]==SumK*MKrho*MK^(Dagger)-rho",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[M[rho] == SumK*MKrho*MK^Dagger - rho]",
+          "texform_roundtrip": "M(\\rho )=\\text{MKrho} \\text{SumK} \\text{MK}^{\\text{Dagger}}-\\rho",
+          "messages": []
+        },
+        {
+          "latex": "\\sum_{k} M_{k}^{\\dagger}M_{k} = I",
+          "normalized_latex": "SumK*MK^(Dagger)MK==I",
+          "wolfram_input": "SumK*MK^(Dagger)MK==I",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[SumK*MK^Dagger*MK == I]",
+          "texform_roundtrip": "\\text{SumK} \\text{MK}^{\\text{Dagger}+1}=i",
+          "messages": []
+        },
+        {
+          "latex": "\\rho",
+          "normalized_latex": "rho",
+          "wolfram_input": "rho",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rho]",
+          "texform_roundtrip": "\\rho",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0063 generated source-truth Wolfram model *)\nClearAll[K0063, TRAWINClosure0063];\neq0063$1 = HoldForm[M[rho] == SumK*MKrho*MK^Dagger - rho];\neq0063$2 = HoldForm[SumK*MK^Dagger*MK == I];\neq0063$3 = HoldForm[rho];\nK0063 = HoldForm[{eq0063$1, eq0063$2, eq0063$3}];\nTRAWINClosure0063[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0063 = TRAWINClosure0063[K0063];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{d\\rho}{dt}\n=\n-\\frac{i}{\\hbar}[H,\\rho]\n+\n\\sum_k\n\\left(\nL_k \\rho L_k^\\dagger\n-\n\\frac{1}{2}\n\\{L_k^\\dagger L_k,\\rho\\}\n\\right).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFor open systems interacting with environment, non-unitary corrections appear.\n\nThe most general Markovian, completely positive evolution is:\n\\begin{equation}\n\\boxed{\n\\frac{d\\rho}{dt}\n=\n-\\frac{i}{\\hbar}[H,\\rho]\n+\n\\sum_k\n\\left(\nL_k \\rho L_k^\\dagger\n-\n\\frac{1}{2}\n\\{L_k^\\dagger L_k,\\rho\\}\n\\right).\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nEnvironment introduces decoherence and dissipation.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0063/ID0063.source_truth.json",
+    "entry_id": "ID0063",
+    "registry_id": "registry_id_0063",
+    "canonical_title": "Measurement Back-Action",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0063/ID0063.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "657fa3b3-607d-5f86-b026-b69e787edb74",
+    "RTEID": "RTE:P244.6430:T0.4031",
+    "poloidal_theta_rad": "244.6430",
+    "toroidal_phi_rad": "0.4031",
+    "rteid_source": "manifest",
+    "PiID": "3078164062862",
+    "TZPi": "4",
+    "PiPE_position": "70",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

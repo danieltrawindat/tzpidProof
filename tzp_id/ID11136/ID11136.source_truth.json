@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11136",
+    "uuid": "7b4a0d44-fc1d-593d-84e1-f878cb9a6de1",
+    "registry_id": "registry_ID11136",
+    "canonical_title": "Phone2 TZP Vacuum Divergence — Rho Text Vac R T Sum N 0 Infty Sum I 1 N Tzp -1 N Gamm"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_005",
+    "anchor_title": "TZP Vacuum Divergence",
+    "anchor_source_file": "univision.txt",
+    "anchor_line_number": "103",
+    "mapping_method": "nearest_prior_same_source",
+    "line_distance": "2"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_005 TZP Vacuum Divergence, extracted from univision.txt line 105, with canonical equation $\\rho_{\\text{vac}}(r,t) = \\sum_{n=0}^{\\infty} \\sum_{i=1}^{N_{\\TZP}} (-1)^n \\Gamma\\left(n+\\tfrac{1}{2}\\right) K_n\\left(\\frac{|r-r_{\\TZP}^{(i)}|}{\\xi}\\right) e^{in(\\omega_0 t + \\theta_i)}$.",
+    "technical_interpretation": "ID11136 supports theorem anchor PHONE2_ANCHOR_005 TZP Vacuum Divergence. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 105. Equation grounding: \\rho_{\\text{vac}}(r,t) = \\sum_{n=0}^{\\infty} \\sum_{i=1}^{N_{\\TZP}} (-1)^n \\Gamma\\left(n+\\tfrac{1}{2}\\right) K_n\\left(\\frac{|r-r_{\\TZP}^{(i)}|}{\\xi}\\right) e^{in(\\omega_0 t + \\theta_i)}"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\rho_{\\text{vac}}(r,t) = \\sum_{n=0}^{\\infty} \\sum_{i=1}^{N_{\\TZP}} (-1)^n \\Gamma\\left(n+\\tfrac{1}{2}\\right) K_n\\left(\\frac{|r-r_{\\TZP}^{(i)}|}{\\xi}\\right) e^{in(\\omega_0 t + \\theta_i)}"
+    ],
+    "source_section_latex": "\\[\n\\rho_{\\text{vac}}(r,t) = \\sum_{n=0}^{\\infty} \\sum_{i=1}^{N_{\\TZP}} (-1)^n \\Gamma\\left(n+\\tfrac{1}{2}\\right) K_n\\left(\\frac{|r-r_{\\TZP}^{(i)}|}{\\xi}\\right) e^{in(\\omega_0 t + \\theta_i)}\n\\]",
+    "wolfram_form_hint": "rho_{text{vac}}(r,t) = Sum_{n=0}^{Infinity} Sum_{i=1}^{N_{TZP}} (-1)^n Gamma(n+tfrac{1}{2}) K_n(frac{|r-r_{TZP}^{(i)}|}{xi}) e^{in(omega_0 t + theta_i)}"
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "univision.txt line 105",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=23; anchor=PHONE2_ANCHOR_005 TZP Vacuum Divergence; domain=signal_wave; mapping=nearest_prior_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_005 TZP Vacuum Divergence. Source: univision.txt line 105.",
+    "encyclopedia": "ID11136 supports theorem anchor PHONE2_ANCHOR_005 TZP Vacuum Divergence. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 105. Equation grounding: \\rho_{\\text{vac}}(r,t) = \\sum_{n=0}^{\\infty} \\sum_{i=1}^{N_{\\TZP}} (-1)^n \\Gamma\\left(n+\\tfrac{1}{2}\\right) K_n\\left(\\frac{|r-r_{\\TZP}^{(i)}|}{\\xi}\\right) e^{in(\\omega_0 t + \\theta_i)}",
+    "source_file": "univision.txt",
+    "line_number": "105",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_symbolic_carrier_verified",
+      "message": "fallback carrier parsed under HoldComplete",
+      "rescue_class": "equation_candidate",
+      "wolfram_candidate": "Phone2EquationCarrier[\"ID11136\", <|\"canonical\" -> \"\\\\rho_{\\\\text{vac}}(r,t) = \\\\sum_{n=0}^{\\\\infty} \\\\sum_{i=1}^{N_{\\\\TZP}} (-1)^n \\\\Gamma\\\\left(n+\\\\tfrac{1}{2}\\\\right) K_n\\\\left(\\\\frac{|r-r_{\\\\TZP}^{(i)}|}{\\\\xi}\\\\right) e^{in(\\\\omega_0 t + \\\\theta_i)}\", \"rescueClass\" -> \"equation_candidate\"|>]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_symbolic_carrier_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11136",
+    "title": "Phone2 TZP Vacuum Divergence — Rho Text Vac R T Sum N 0 Infty Sum I 1 N Tzp -1 N Gamm",
+    "uuid": "7b4a0d44-fc1d-593d-84e1-f878cb9a6de1",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43243.5611:T2.1371",
+    "poloidal_theta_rad": "43243.5611",
+    "toroidal_phi_rad": "2.1371",
+    "rteid_source": "computed",
+    "PiID": "2878542534048",
+    "TZPi": "2",
+    "PiPE_position": "11143"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

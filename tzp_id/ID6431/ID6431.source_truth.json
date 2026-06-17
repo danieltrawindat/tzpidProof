@@ -1,0 +1,301 @@
+{
+  "schema": {
+    "name": "TZPID source truth generated from canonical equation master",
+    "version": "0.3.0",
+    "generated_at": "2026-06-06T04:32:40Z",
+    "non_destructive": true,
+    "basis": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+    "basis_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "identity": {
+    "tzpid": "ID6431",
+    "uuid": "4db003a6-ecb6-5dbd-93d3-39bd3faaccfe",
+    "registry_id": "registry_id_6431",
+    "canonical_title": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1",
+    "previous_or_source_id": "ID6431",
+    "source_files": {
+      "master_csv": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_truth": "D:/TZPID/TZPID/ID6431/ID6431.source_truth.json",
+      "planned_tex": "D:/TZPID/TZPID/ID6431/ID6431.TEX",
+      "planned_json": "D:/TZPID/TZPID/ID6431/ID6431.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID6431/ID6431.id_system.json"
+    }
+  },
+  "classification": {
+    "source_family": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export",
+    "category": "canonical-equation-master-intake",
+    "formation_method": "Algebraic definition"
+  },
+  "theory": {
+    "canonical_statement": "### Step 2 — *Wave equation admits lemniscate solutions* - You propose \\(\\Psi_{2,1}=A\\cos(2\\phi)\\cos(\\theta)e^{-i\\omega t}\\) and claim \\(\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}\\). - **Issue:** the Laplace–Beltrami operator on a torus is *not* simply \\((1/R^2)\\partial_\\phi^2+(1/r^2)\\partial_\\theta^2\\) because the \\(\\phi\\)-direction metric factor depends on \\(\\theta\\) (the prefactor \\((R+r\\cos\\theta)^{-2}\\) appears). For a thin torus limit \\(r\\ll R\\) you can approximate \\[ \\Delta_s \\approx \\frac{1}{(R+r\\cos\\theta)^2}\\frac{\\partial^2}{\\partial\\phi^2}+\\frac{1}{r^2}\\frac{\\partial^2}{\\partial\\theta^2} \\] but even then evaluation at a mode with \\(\\cos(2\\phi)\\cos\\theta\\) requires accounting for \\(\\theta\\)-dependence. The simple eigenvalue \\(4/R^2+1/r^2\\) is correct only in the **separable** approximation where the metric factor is treated as constant (e.g., evaluate at \\(\\cos\\theta\\) mean). - **To make rigorous**: derive the exact Laplace–Beltrami on the torus and either (A) demonstrate your mode is an exact eigenfunction (unlikely), or (B) show it is an *approximate* eigenmode in the thin-torus limit (error bounds \\(O(r/R)\\)). Provide the asymptotic expansion for \\(\\omega^2\\). - **Actionable**: compute \\(\\Delta_s\\) symbolically (I can do that) and show residual \\(\\Delta_s\\Psi + \\kappa\\Psi\\) is small.",
+    "technical_interpretation": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1 is an algebraic definition, written Δ_sΨ_2,1=-(4/R^2 + 1/r^2)Ψ_2,1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from R, r, defining Δ_sΨ_2,1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}"
+    ],
+    "source_section_latex": "\\[\n\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "slot": 1,
+      "latex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+      "source": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_path": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852",
+      "status": "canonical_master_source"
+    }
+  ],
+  "formation": {
+    "method": "Algebraic definition",
+    "inputs": "R, r",
+    "note": "Introduced in the derivation where - Issue: the Laplace–Beltrami operator on a torus is not simply because the -direction metric factor depends on (the prefactor…"
+  },
+  "source_evidence": {
+    "dictionary": "Step 2 — Wave equation admits lemniscate solutions - You propose and claim .",
+    "encyclopedia": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1 is an algebraic definition, written Δ_sΨ_2,1=-(4/R^2 + 1/r^2)Ψ_2,1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from R, r, defining Δ_sΨ_2,1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+    "master_csv_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "symbol_index": {
+    "reviewed_source_symbols": [],
+    "status": "needs_symbol_extraction_from_canonical_master_entry"
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "Step 2 — Wave equation admits lemniscate solutions - You propose and claim .",
+      "contextual_meaning": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1 is an algebraic definition, written Δ_sΨ_2,1=-(4/R^2 + 1/r^2)Ψ_2,1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from R, r, defining Δ_sΨ_2,1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "formal_statement_latex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+      "technical_interpretation": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1 is an algebraic definition, written Δ_sΨ_2,1=-(4/R^2 + 1/r^2)Ψ_2,1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from R, r, defining Δ_sΨ_2,1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "equation_grounding": "Equation grounding source: TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv.",
+      "tzp_thesaurus": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1"
+    },
+    "equation_support_summary": "Generated from the canonical equation master and awaiting source-context expansion."
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_source_truth_formalization"
+    },
+    "lean": {
+      "status": "pending_source_truth_formalization"
+    },
+    "rocq": {
+      "status": "pending_source_truth_formalization"
+    },
+    "wolfram": {
+      "status": "wolfram_form_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "note": "Carrier form preserves source LaTeX as Wolfram-readable data; semantic proof remains domain-specific.",
+      "parse_verified_at_utc": "2026-06-10T21:39:33Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260610_213826\\source_truth_wolfram_parse_results.json"
+    }
+  },
+  "promotion_status": {
+    "status": "source_truth_seeded_from_canonical_master",
+    "needs_review": true
+  },
+  "proof_support": {
+    "status": "pending",
+    "note": "Folder and source-truth JSON were created for registry coverage; deeper proof obligations should be generated downstream."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:32:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID6431/ID6431.source_truth.json",
+    "entry_id": "ID6431",
+    "registry_id": "registry_id_6431",
+    "canonical_title": "Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID6431/ID6431.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "8d3a06f8-5b63-5221-88aa-1b20459a24d4",
+    "RTEID": "RTE:P24973.0012:T3.4487",
+    "poloidal_theta_rad": "24973.0012",
+    "toroidal_phi_rad": "3.4487",
+    "rteid_source": "computed",
+    "PiID": "1551843063545",
+    "TZPi": "3",
+    "PiPE_position": "6438",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+          "normalized_latex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID6431\", 1, \"\\\\Delta_s\\\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\\\Psi_{2,1}\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID6431 minted source-truth Wolfram carrier model *)\nClearAll[K6431, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq6431$1 = HoldForm[TZPIDCanonicalLatex[\"ID6431\", 1, \"\\\\Delta_s\\\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\\\Psi_{2,1}\"]];\nK6431 = HoldForm[{eq6431$1}];\nTZPIDCanonicalCarrier[\"ID6431\"] = <|\"id\" -> \"ID6431\", \"title\" -> \"Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1\", \"blocks\" -> K6431|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\Delta_s\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\Psi_{2,1}",
+        "numeric_atoms": [
+          "2",
+          "1",
+          "4"
+        ],
+        "symbolic_tokens": [
+          "Delta",
+          "Psi",
+          "s",
+          "R",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID6431\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Step 2 — Wave Equation Admits Lemniscate Solutions: Δ_sΨ_2,1\", \"latex\" -> \"\\\\Delta_s\\\\Psi_{2,1}=-(4/R^2 + 1/r^2)\\\\Psi_{2,1}\", \"numericAtoms\" -> {2, 1, 4}, \"symbolicTokens\" -> {\"Delta\", \"Psi\", \"s\", \"R\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11400",
+    "uuid": "1dcadabc-217c-5eae-8610-576af599b324",
+    "registry_id": "registry_id_11400",
+    "piid": "PiID-11400-portal-equilibrium",
+    "canonical_title": "Portal Surface-Tension Force Component",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11400\\ID11400.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The surface-tension component is modeled by a Young-Laplace-style curvature pressure term.",
+    "technical_interpretation": "This carries the Young-Laplace part of the droplet equilibrium model into the registry.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F_{s}=\\gamma\\left(\\frac{1}{R_{1}}+\\frac{1}{R_{2}}\\right)"
+    ],
+    "source_section_latex": "F_{s}=\\gamma\\left(\\frac{1}{R_{1}}+\\frac{1}{R_{2}}\\right)"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Portal Surface-Tension Force Component",
+          "wolfram": "Fs == gamma*(1/R1 + 1/R2)",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Portal_Force_Component",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11400",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

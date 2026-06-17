@@ -1,0 +1,321 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T21:00:35.558964+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0913",
+    "uuid": "e15d4090-3265-58ec-a3de-6c788480224c",
+    "registry_id": "registry_id_0913",
+    "canonical_title": "BIJECTION INJECTION VERIFIER",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0913/ID0913.TEX",
+      "json": "D:/TZPID/TZPID/ID0913/ID0913.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0913/ID0913.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "dL/dt = sum\\_\\{collisions\\} (r\\_impact x F\\_magnetic)",
+    "technical_interpretation": "dL/dt = sum\\_\\{collisions\\} (r\\_impact x F\\_magnetic)"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "DAANSphereNavigationProtocol[blob_, params_ := Module[",
+      "persistenceCondition[blob_, threshold_ := Module["
+    ],
+    "source_section_latex": "\\[\nDAANSphereNavigationProtocol[blob_, params_ := Module[\n\\]\n\\[\npersistenceCondition[blob_, threshold_ := Module[\n\\]"
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0913}$",
+        "description": "canonical registry object for entry ID 0913."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0913}$",
+        "name": "canonical registry object for entry ID 0913.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "BIJECTION INJECTION VERIFIER\nCanonical operator translation\neq0913_1 = HoldForm[DAANSphereNavigationProtocol[blob_, params_ :== Module[];\neq0913_2 = HoldForm[persistenceCondition[blob_, threshold_ :== Module[];\n\nTRAWIN closure composition\nTRAWINClosure0913[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0913 := HoldForm[{eq0913_1, eq0913_2}];\nResult0913 := TRAWINClosure0913[K0913];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "DAANSphereNavigationProtocol[blob_, params_ := Module[",
+          "normalized_latex": "DAANSphereNavigationProtocol[blob_,params_==Module[",
+          "wolfram_input": "DAANSphereNavigationProtocol[blob,params] == ModuleProtocol[blob,params]",
+          "normalization_notes": [
+            "entry-specific Wolfram override applied",
+            "override_source=entry_specific_salvage",
+            "override_reason=Replace truncated Module with symbolic protocol relation."
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[DAANSphereNavigationProtocol[blob, params] == ModuleProtocol[blob, params]]",
+          "texform_roundtrip": "\\text{DAANSphereNavigationProtocol}(\\text{blob},\\text{params})=\\text{ModuleProtocol}(\\text{blob},\\text{params})",
+          "messages": []
+        },
+        {
+          "latex": "persistenceCondition[blob_, threshold_ := Module[",
+          "normalized_latex": "persistenceCondition[blob_,threshold_==Module[",
+          "wolfram_input": "persistenceCondition[blob,threshold] == ModuleCondition[blob,threshold]",
+          "normalization_notes": [
+            "entry-specific Wolfram override applied",
+            "override_source=entry_specific_salvage",
+            "override_reason=Replace truncated Module with symbolic condition relation."
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[persistenceCondition[blob, threshold] == ModuleCondition[blob, threshold]]",
+          "texform_roundtrip": "\\text{persistenceCondition}(\\text{blob},\\text{threshold})=\\text{ModuleCondition}(\\text{blob},\\text{threshold})",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0913 generated source-truth Wolfram model *)\nClearAll[K0913, TRAWINClosure0913];\neq0913$1 = HoldForm[DAANSphereNavigationProtocol[blob, params] == ModuleProtocol[blob, params]];\neq0913$2 = HoldForm[persistenceCondition[blob, threshold] == ModuleCondition[blob, threshold]];\nK0913 = HoldForm[{eq0913$1, eq0913$2}];\nTRAWINClosure0913[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0913 = TRAWINClosure0913[K0913];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nDAANSphereNavigationProtocol[blob_, params_ := Module[\n\\]\n\\[\npersistenceCondition[blob_, threshold_ := Module[\n\\]\n\n\\paragraph{Primary Derivation.}\nTo derive the stated relation by differentiating and applying the relevant definitions. yielding the required identity.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. According to CHL, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0913/ID0913.source_truth.json",
+    "entry_id": "ID0913",
+    "registry_id": "registry_id_0913",
+    "canonical_title": "BIJECTION INJECTION VERIFIER",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0913/ID0913.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "e15d4090-3265-58ec-a3de-6c788480224c",
+    "RTEID": "RTE:P3491.0166:T5.7521",
+    "poloidal_theta_rad": "3491.0166",
+    "toroidal_phi_rad": "5.7521",
+    "rteid_source": "manifest",
+    "PiID": "5546873115956",
+    "TZPi": "3",
+    "PiPE_position": "920",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "DAANSphereNavigationProtocol[blob_, params_ := Module[",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "DAANSphereNavigationProtocol",
+          "blob",
+          "params",
+          "Module"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "code_fragment_or_placeholder",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0913\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"BIJECTION INJECTION VERIFIER\", \"latex\" -> \"DAANSphereNavigationProtocol[blob_, params_ := Module[\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"DAANSphereNavigationProtocol\", \"blob\", \"params\", \"Module\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"code_fragment_or_placeholder\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "persistenceCondition[blob_, threshold_ := Module[",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "persistenceCondition",
+          "blob",
+          "threshold",
+          "Module"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "code_fragment_or_placeholder",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0913\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"BIJECTION INJECTION VERIFIER\", \"latex\" -> \"persistenceCondition[blob_, threshold_ := Module[\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"persistenceCondition\", \"blob\", \"threshold\", \"Module\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"code_fragment_or_placeholder\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

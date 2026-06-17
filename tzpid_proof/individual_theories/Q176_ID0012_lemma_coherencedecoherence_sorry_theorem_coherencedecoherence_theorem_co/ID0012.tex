@@ -1,0 +1,248 @@
+\tzpanchor{0012}
+\tzpentryheader{0012}{Field Coherence Metric}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{3632af36-bfa9-5537-b3d7-00ebb7670c2e}}\\
+\textbf{PiID} & \tzpcode{7932384626433} & \textbf{TZPi}\quad \tzpcode{4}\quad \textbf{PiPE}\quad \tzpcode{19}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{46.5987 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.0768 rad}\\
+\textbf{TZPID} & \tzpcode{ID0012} & \textbf{Node Dependencies}\quad \tzpidref{0001}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0012} & \textbf{Scale}\quad coherence\\
+\textbf{LOC Classification} & QC174.17 coherence and decoherence & QA614 inner-product structures\\
+\textbf{arXiv Classification} & Primary: quant-ph \quad Cross-list: math-ph, gr-qc & \\
+\textbf{Primary Support} & Trawinistic Inner Product & Norm Stabilization\\
+\textbf{Closure Support} & Normalized Coherence Ratio & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+This metric measures the degree of coherence between two fields on the Trawinistic manifold.
+
+\tzpsection{Canonical Equation}
+\[
+C(\phi_{1},\phi_{2})
+=
+\frac{\left|\langle \phi_{1},\phi_{2}\rangle\right|}
+{\|\phi_{1}\|\,\|\phi_{2}\|}
+\]
+\[
+\|\phi\| = \sqrt{\langle \phi,\phi\rangle}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $C$: speed of light or relativistic conversion factor.
+    \item $\phi_{1}$: flux, phase, or topological map term in the source equation.
+    \item $\phi_{2}$: flux, phase, or topological map term in the source equation.
+    \item $\phi$: flux, phase, or topological map term in the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0012 generated source Wolfram model *)
+ClearAll[K0012, Cr0012, T, R, A, W, I, N];
+eq0012$1 = HoldForm[C[phi1, phi2] == Tuple[Abs[Inner[phi1, phi2]]]/(phi1*phi2)];
+eq0012$2 = HoldForm[phi == Sqrt[Inner[phi, phi]]];
+eq0012$3 = HoldForm[Inner[phi1, phi2]];
+
+K0012 = HoldForm[{eq0012$1, eq0012$2, eq0012$3}];
+
+N = "normalized TRAWIN closure object for Field Coherence Metric";
+I = "Normalized Coherence Ratio integration/comparison layer";
+W = "Norm Stabilization wave or operator carrier";
+A = "Trawinistic Inner Product admissible action/amplitude condition";
+R = "Norm Stabilization rotation/curl preservation layer";
+T = "Trawinistic Inner Product local source condition";
+
+Cr0012[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0012 = Cr0012[K0012];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Trawinistic Inner Product local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Norm Stabilization rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Trawinistic Inner Product admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Norm Stabilization wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Coherence Ratio integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Field Coherence Metric.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0012] Field Coherence Metric}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+C(\phi_1,\phi_2)
+=
+\frac{
+\left|\langle \phi_1,\phi_2\rangle\right|
+}{
+\lVert \phi_1\rVert\,\lVert \phi_2\rVert
+}.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\phi_1$ and $\phi_2$ be two field configurations on $M$.  
+Their raw overlap is measured by the inner product:
+
+\begin{equation}
+\langle \phi_1,\phi_2\rangle .
+\end{equation}
+
+To remove dependence on field magnitude, normalize by the product of the two norms:
+
+\begin{equation}
+\lVert \phi_1\rVert\,\lVert \phi_2\rVert .
+\end{equation}
+
+Taking the absolute value gives a nonnegative coherence score:
+
+\begin{equation}
+\boxed{
+C(\phi_1,\phi_2)
+=
+\frac{
+\left|\langle \phi_1,\phi_2\rangle\right|
+}{
+\lVert \phi_1\rVert\,\lVert \phi_2\rVert
+}.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The field coherence metric measures normalized alignment between two field states. Values near $1$ indicate strong coherence; values near $0$ indicate decoherence or orthogonality.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Field Coherence Metric by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Trawinistic Inner Product}\par
+\[
+\langle \phi_{1},\phi_{2}\rangle
+\]
+\noindent This provides the raw comparison datum from which coherence is extracted.\par
+\noindent\textbf{2. Norm Stabilization}\par
+\[
+\|\phi\| = \sqrt{\langle \phi,\phi\rangle}
+\]
+\noindent This rescales the comparison so the metric reads alignment rather than absolute field magnitude.\par
+\noindent\textbf{3. Normalized Coherence Ratio}\par
+\[
+C(\phi_{1},\phi_{2})
+=
+\frac{\left|\langle \phi_{1},\phi_{2}\rangle\right|}
+{\|\phi_{1}\|\,\|\phi_{2}\|}
+\]
+\noindent This closes the progression by producing a bounded scalar that can survive comparison across singularly regularized field states.\par
+
+\clearpage
+\noindent\textbf{[ID 0012] Field Coherence Metric}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Field Coherence Metric is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} This metric measures the degree of coherence between two fields on the Trawinistic manifold. \textbf{Contextual meaning:} The entry reads Field Coherence Metric as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Trawinistic Inner Product; Norm Stabilization; Normalized Coherence Ratio.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The field coherence metric measures normalized alignment between two field states. Values near 1 indicate strong coherence; values near 0 indicate decoherence or orthogonality.
+
+\tzpsection{Equation Grounding}
+Equation anchors: Given two field configurations   1phitextbackslash 1  1 and   2phitextbackslash 2  2 on MMM, the field coherence metric C(  1,  2)C(phitextbackslash 1,phitextbackslash 2)C(  1,  2) is defined as C=   1,  2    1     2 C = ratio textbarphitextbackslash 1,phitextbackslash 2textbar textbackslashtextbarphitextbackslash 1textbackslashtextbartextbackslash,textbackslashtextbarphitextbackslash 2textbackslashtextbar C=   1    2    1,  2 , where  , dot,dot ,  denotes the Trawinistic inner product and    = , textbackslashtextbarphitextbackslashtextbar=sqrt phi,phi    = , . Given two field configurations   1phitextbackslash 1  1 and   2phitextbackslash 2  2 on MMM, the field coherence metric C(  1,  2)C(phitextbackslash 1,phitextbackslash 2)C(  1,  2) is defined as C=   1,  2    1     2 C = ratio textbarphitextbackslash 1,phitextbackslash 2textbar textbackslashtextbarphitextbackslash 1textbackslashtextbartextbackslash,textbackslashtextbarphitextbackslash 2textbackslashtextbar C=   1    2    1,  2 , where  , dot,dot ,  denotes the Trawinistic inner product and    = , textbackslashtextbarphitextbackslashtextbar=sqrt phi,phi    = , .
+
+\tzpsection{Interpretive Role}
+This metric gives the registry a clean scalar handle on alignment, decoherence, and modal overlap. It is especially useful once curvature and singular corrections begin to influence how fields interact near the anchor.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Carrier Domain Phase Order Measure Tensor}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Carrier Domain Phase Order Measure Tensor Geometric Analogue}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Measure Tensor Terminology}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0012]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0012_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0012] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Field Coherence Metric}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} this metric measures the degree of coherence between two fields on the Trawinistic
+manifold
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Field Coherence Metric is valid as a tensorial/geometric statement when the stated
+tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0012_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

@@ -1,0 +1,476 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:53:26.764383+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0317",
+    "uuid": "cd06e785-7356-51c8-ac37-79d00bfa758c",
+    "registry_id": "registry_id_0317",
+    "canonical_title": "Reverse Harmonic Decomposition Algorithm",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0317/ID0317.TEX",
+      "json": "D:/TZPID/TZPID/ID0317/ID0317.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0317/ID0317.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Given an observed spectrum $S_{\\mathrm{obs}}(\\omega,k)$, form a mode table, measure the observed helicity $H_{\\mathrm{obs}}$, and for each resonance $\\omega_i$ perform a spherical-harmonic transform to extract $(n_i,\\ell_i,m_i)$. Solve",
+    "technical_interpretation": "Given an observed spectrum $S_{\\mathrm{obs}}(\\omega,k)$, form a mode table, measure the observed helicity $H_{\\mathrm{obs}}$, and for each resonance $\\omega_i$ perform a spherical-harmonic transform to extract $(n_i,\\ell_i,m_i)$. Solve \\[ \\omega_i - \\omega_{\\mathrm{uncoupled}}(n_i,\\ell_i,m_i) = m^{\\mathrm{KK}}_{i}\\frac{c}{R_{\\mathrm{KK}}}, \\] compute the amplitude $A_i$ from the helicity data, and reconstruct the initial field by summing the corresponding eigenmodes with phase factor \\[ \\exp\\!\\left(\\frac{2\\pi i\\, m^{\\mathrm{KK}}_{i} z}{R_{\\mathrm{KK}}}\\right). \\]"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\omega_i - \\omega_{\\mathrm{uncoupled}}(n_i,\\ell_i,m_i) = m^{\\mathrm{KK}}_{i}\\frac{c}{R_{\\mathrm{KK}}},",
+      "\\exp\\!\\left(\\frac{2\\pi i\\, m^{\\mathrm{KK}}_{i} z}{R_{\\mathrm{KK}}}\\right).",
+      "f(t)=\\sum_{n\\geq0} a_n e^{in\\omega t}",
+      "a_n=\\frac{1}{2\\pi}\\int_0^{2\\pi} f(t)e^{-in\\omega t}\\,dt"
+    ],
+    "source_section_latex": "\\[ \\omega_i - \\omega_{\\mathrm{uncoupled}}(n_i,\\ell_i,m_i) = m^{\\mathrm{KK}}_{i}\\frac{c}{R_{\\mathrm{KK}}}, \\] compute the amplitude $A_i$ from the helicity data, and reconstruct the initial field by summing the corresponding eigenmodes with phase factor \\[ \\exp\\!\\left(\\frac{2\\pi i\\, m^{\\mathrm{KK}}_{i} z}{R_{\\mathrm{KK}}}\\right). \\]\n\n\\[\nf(t)=\\sum_{n\\geq0} a_n e^{in\\omega t}\n\\]\n\\[\na_n=\\frac{1}{2\\pi}\\int_0^{2\\pi} f(t)e^{-in\\omega t}\\,dt\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Mode Quantization",
+      "formula_latex_blocks": [
+        "f(t)=\\sum_{n\\geq0} a_n e^{in\\omega t}"
+      ],
+      "interpretive_role": "This fixes the quantized carrier mode indexed by the bounded geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Dispersion Law",
+      "formula_latex_blocks": [
+        "a_n=\\frac{1}{2\\pi}\\int_0^{2\\pi} f(t)e^{-in\\omega t}\\,dt"
+      ],
+      "interpretive_role": "This turns the mode index into an actual propagation or resonance law."
+    },
+    {
+      "step": 3,
+      "component_title": "Boundary Condition",
+      "formula_latex_blocks": [
+        "f_{\\mathrm{rev}}(t)=\\sum_{n\\geq0}a_n e^{-in\\omega t}"
+      ],
+      "interpretive_role": "This closes the progression by enforcing the boundary or nodal condition that makes the pattern admissible."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{uncoupled}(n_i,\\ell_i,m_i)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\exp$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\frac{2\\pi i\\, m^{KK}_{i} z}{R_{KK}}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{n\\geq0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$K$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{KK}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a_{uncoupled}(n_i,\\ell_i,m_i)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\frac{2\\pi i\\, m^{KK}_{i} z}{R_{KK}}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$f(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$f_{rev}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Reverse Harmonic Decomposition Algorithm\nCanonical operator translation\neq0317_1 = HoldForm[omega_i - omegauncoupled(n_i,_i,m_i) == m^(KK)i(c)(RKK),];\neq0317_2 = HoldForm[Exp((2 i m^(KK)i z)(RKK))];\neq0317_3 = HoldForm[f(t)==Sumn >= q0 a_n e^(inomega t)];\neq0317_4 = HoldForm[a_n==(1)/(2)Integrate_0^(2) f(t)e^(-inomega t) dt];\n\nTRAWIN closure composition\nTRAWINClosure0317[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0317 := HoldForm[{eq0317_1, eq0317_2, eq0317_3, eq0317_4}];\nResult0317 := TRAWINClosure0317[K0317];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\omega_i - \\omega_{\\mathrm{uncoupled}}(n_i,\\ell_i,m_i) = m^{\\mathrm{KK}}_{i}\\frac{c}{R_{\\mathrm{KK}}},",
+          "normalized_latex": "omegaI-omegaUncoupled[nI,ellI,mI]==m^(KK)_(i)((c)/(RKK))",
+          "wolfram_input": "omegaI-omegaUncoupled[nI,ellI,mI]==m^(KK)_(i)((c)/(RKK))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaI - omegaUncoupled[nI, ellI, mI] == m^KK*_*i*(c/RKK)]",
+          "texform_roundtrip": "\\text{omegaI}-\\text{omegaUncoupled}(\\text{nI},\\text{ellI},\\text{mI})=\\frac{\\_ c i m^{\\text{KK}}}{\\text{RKK}}",
+          "messages": []
+        },
+        {
+          "latex": "\\exp\\!\\left(\\frac{2\\pi i\\, m^{\\mathrm{KK}}_{i} z}{R_{\\mathrm{KK}}}\\right).",
+          "normalized_latex": "exp[((2*Pi*im^(KK)_(i)z)/(RKK))]",
+          "wolfram_input": "exp[((2*Pi*im^(KK)_(i)z)/(RKK))]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[exp[(2*Pi*im^KK*_*i*z)/RKK]]",
+          "texform_roundtrip": "\\exp \\left(\\frac{2 \\pi  \\_ i z \\text{im}^{\\text{KK}}}{\\text{RKK}}\\right)",
+          "messages": []
+        },
+        {
+          "latex": "f(t)=\\sum_{n\\geq0} a_n e^{in\\omega t}",
+          "normalized_latex": "f[t]==SumN0*aN*Exp[I*nomega*t]",
+          "wolfram_input": "f[t]==SumN0*aN*Exp[I*nomega*t]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[f[t] == SumN0*aN*Exp[I*nomega*t]]",
+          "texform_roundtrip": "f(t)=\\text{aN} \\text{SumN0} e^{i \\text{nomega} t}",
+          "messages": []
+        },
+        {
+          "latex": "a_n=\\frac{1}{2\\pi}\\int_0^{2\\pi} f(t)e^{-in\\omega t}\\,dt",
+          "normalized_latex": "aN==((1)/(2*Pi))Integral0^(2*Pi)f[t]Exp[-inomega*t]*dt",
+          "wolfram_input": "aN==((1)/(2*Pi))Integral0^(2*Pi)f[t]Exp[-inomega*t]*dt",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[aN == (1/(2*Pi))*Integral0^(2*Pi)*f[t]*Exp[(-inomega)*t]*dt]",
+          "texform_roundtrip": "\\text{aN}=\\frac{\\text{dt} \\text{Integral0}^{2 \\pi } f(t) e^{-\\text{inomega} t}}{2 \\pi }",
+          "messages": []
+        },
+        {
+          "latex": "f_{\\mathrm{rev}}(t)=\\sum_{n\\geq0}a_n e^{-in\\omega t}",
+          "normalized_latex": "fRev[t]==SumN0*aN*Exp[-inomega*t]",
+          "wolfram_input": "fRev[t]==SumN0*aN*Exp[-inomega*t]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[fRev[t] == SumN0*aN*Exp[(-inomega)*t]]",
+          "texform_roundtrip": "\\text{fRev}(t)=\\text{aN} \\text{SumN0} e^{-\\text{inomega} t}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0317 generated source-truth Wolfram model *)\nClearAll[K0317, TRAWINClosure0317];\neq0317$1 = HoldForm[omegaI - omegaUncoupled[nI, ellI, mI] == m^KK*_*i*(c/RKK)];\neq0317$2 = HoldForm[exp[(2*Pi*im^KK*_*i*z)/RKK]];\neq0317$3 = HoldForm[f[t] == SumN0*aN*Exp[I*nomega*t]];\neq0317$4 = HoldForm[aN == (1/(2*Pi))*Integral0^(2*Pi)*f[t]*Exp[(-inomega)*t]*dt];\neq0317$5 = HoldForm[fRev[t] == SumN0*aN*Exp[(-inomega)*t]];\nK0317 = HoldForm[{eq0317$1, eq0317$2, eq0317$3, eq0317$4, eq0317$5}];\nTRAWINClosure0317[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0317 = TRAWINClosure0317[K0317];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\nabla^{T}g=0,\n\\qquad\nT(\\nabla^{T})=0\n\\quad\n(x\\neq p).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nAway from the TZP, the geometry should reduce to ordinary metric-compatible differential geometry. Therefore the Trawinistic connection $\\nabla^{T}$ must satisfy metric compatibility:\n\n\\begin{equation}\n\\nabla^{T}g=0 .\n\\end{equation}\n\nIt must also be torsion-free away from the degenerate point:\n\n\\begin{equation}\nT(\\nabla^{T})=0,\n\\qquad x\\neq p .\n\\end{equation}\n\nWhen $\\det(g)\\neq 0$, the unique connection satisfying metric compatibility and zero torsion is the Levi-Civita connection. Hence:\n\n\\begin{equation}\n\\nabla^{T}=\\nabla^{LC},\n\\qquad x\\neq p .\n\\end{equation}\n\nAt $p$, where $\\det(g)|_p=0$, $\\nabla^{T}$ is extended by the rule that null vectors are annihilated or stabilized under the degenerate structure.\n\n\\paragraph{Interpretation.}\nThe Trawinistic connection preserves ordinary geometry away from $p$ while extending the differential structure into the TZP degeneracy.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0317/ID0317.source_truth.json",
+    "entry_id": "ID0317",
+    "registry_id": "registry_id_0317",
+    "canonical_title": "Reverse Harmonic Decomposition Algorithm",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0317/ID0317.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "cd06e785-7356-51c8-ac37-79d00bfa758c",
+    "RTEID": "RTE:P1230.9814:T2.0283",
+    "poloidal_theta_rad": "1230.9814",
+    "toroidal_phi_rad": "2.0283",
+    "rteid_source": "manifest",
+    "PiID": "8174881520920",
+    "TZPi": "1",
+    "PiPE_position": "324",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\omega_i - \\omega_{\\mathrm{uncoupled}}(n_i,\\ell_i,m_i) = m^{\\mathrm{KK}}_{i}\\frac{c}{R_{\\mathrm{KK}}},",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "omega",
+          "ell",
+          "i",
+          "n",
+          "m",
+          "R"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0317\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Reverse Harmonic Decomposition Algorithm\", \"latex\" -> \"\\\\omega_i - \\\\omega_{\\\\mathrm{uncoupled}}(n_i,\\\\ell_i,m_i) = m^{\\\\mathrm{KK}}_{i}\\\\frac{c}{R_{\\\\mathrm{KK}}},\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"omega\", \"ell\", \"i\", \"n\", \"m\", \"R\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\exp\\!\\left(\\frac{2\\pi i\\, m^{\\mathrm{KK}}_{i} z}{R_{\\mathrm{KK}}}\\right).",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "exp",
+          "Pi",
+          "i",
+          "m",
+          "z",
+          "R"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0317\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Reverse Harmonic Decomposition Algorithm\", \"latex\" -> \"\\\\exp\\\\!\\\\left(\\\\frac{2\\\\pi i\\\\, m^{\\\\mathrm{KK}}_{i} z}{R_{\\\\mathrm{KK}}}\\\\right).\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"exp\", \"Pi\", \"i\", \"m\", \"z\", \"R\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "f(t)=\\sum_{n\\geq0} a_n e^{in\\omega t}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "sum",
+          "omega",
+          "f",
+          "t",
+          "n",
+          "a",
+          "e",
+          "in"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0317\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Reverse Harmonic Decomposition Algorithm\", \"latex\" -> \"f(t)=\\\\sum_{n\\\\geq0} a_n e^{in\\\\omega t}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"sum\", \"omega\", \"f\", \"t\", \"n\", \"a\", \"e\", \"in\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "a_n=\\frac{1}{2\\pi}\\int_0^{2\\pi} f(t)e^{-in\\omega t}\\,dt",
+        "numeric_atoms": [
+          "1",
+          "2",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "int",
+          "omega",
+          "a",
+          "n",
+          "f",
+          "t",
+          "e",
+          "in",
+          "dt"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0317\", 4, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Reverse Harmonic Decomposition Algorithm\", \"latex\" -> \"a_n=\\\\frac{1}{2\\\\pi}\\\\int_0^{2\\\\pi} f(t)e^{-in\\\\omega t}\\\\,dt\", \"numericAtoms\" -> {1, 2, 0}, \"symbolicTokens\" -> {\"Pi\", \"int\", \"omega\", \"a\", \"n\", \"f\", \"t\", \"e\", \"in\", \"dt\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 4,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

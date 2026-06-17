@@ -1,0 +1,285 @@
+\tzpanchor{0643}
+\tzpentryheader{0643}{Gauss Linking Number and Topological Invariant}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{ddf3a6f0-142b-5397-8844-3a7bcbdda6d5}}\\
+\textbf{PiID} & \tzpcode{3717872146844} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{650}\\
+\textbf{RTEID} & \textbf{Manifest row}\quad \tzpcode{not listed} & \textbf{Source}\quad \tzpcode{Coordinate Manifest}\\
+\textbf{TZPID} & \tzpcode{ID0643} & \textbf{Node Dependencies}\quad \tzpidref{0642}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0643} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Variation Law & Support Relation\\
+\textbf{Closure Support} & Closure Relation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Gauss linking number records the topological linking of two closed curves through the double contour integral $Lk=\frac{1}{4\pi}\oint_{C_1}\oint_{C_2}\frac{(\mathbf{r}_1-\mathbf{r}_2)\cdot(\mathrm{d}\mathbf{r}_1\times\mathrm{d}\mathbf{r}_2)}{|\mathbf{r}_1-\mathbf{r}_2|^3}$.
+
+\tzpsection{Canonical Equation}
+\[
+\tzpfitmath{Lk = \frac{1}{4\pi} \oint_{C_1} \oint_{C_2} \frac{ (\mathbf{r}_1-\mathbf{r}_2) \cdot (\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2) }{ |\mathbf{r}_1-\mathbf{r}_2|^3 }.}
+\]
+\[
+\mathbf{r}_1-\mathbf{r}_2.
+\]
+\[
+\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2.
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $Lk$: Gauss linking number of the two closed curves.
+    \item $\pi$: circular constant in the Gauss-integral normalization.
+    \item $C_1$: first closed curve or flux-tube path.
+    \item $C_2$: second closed curve or flux-tube path.
+    \item $r_1$: position vector on the first curve.
+    \item $r_2$: position vector on the second curve.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0643 generated source Wolfram model *)
+ClearAll[K0643, Cr0643, T, R, A, W, I, N];
+eq0643$1 = HoldForm[TZPFitMath[Lk == (1/(4*Pi))*ContourIntegralC1ContourIntegralC2[((r1 - r2)*(dr1*dr2))/Abs[r1 - r2]^3]]];
+eq0643$2 = HoldForm[r1 - r2];
+eq0643$3 = HoldForm[dr1*dr2];
+
+K0643 = HoldForm[{eq0643$1, eq0643$2, eq0643$3}];
+
+N = "normalized TRAWIN closure object for Gauss Linking Number and Topological Invariant";
+I = "Gauss Linking Number and Topological Invariant integration/comparison layer";
+W = "Gauss Linking Number and Topological Invariant wave or operator carrier";
+A = "Gauss Linking Number and Topological Invariant admissible action/amplitude condition";
+R = "Gauss Linking Number and Topological Invariant rotation/curl preservation layer";
+T = "Gauss Linking Number and Topological Invariant local source condition";
+
+Cr0643[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0643 = Cr0643[K0643];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Gauss Linking Number and Topological Invariant local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Gauss Linking Number and Topological Invariant rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Gauss Linking Number and Topological Invariant admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Gauss Linking Number and Topological Invariant wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Gauss Linking Number and Topological Invariant integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Gauss Linking Number and Topological Invariant.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0643] Gauss Linking Number and Topological Invariant}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\begingroup\small
+\paragraph{Primary Equation.}
+\begin{equation}
+Lk
+=
+\frac{1}{4\pi}
+\oint_{C_1}
+\oint_{C_2}
+\frac{
+(\mathbf{r}_1-\mathbf{r}_2)
+\cdot
+(\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2)
+}{
+|\mathbf{r}_1-\mathbf{r}_2|^3
+}.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $C_1$ and $C_2$ be two closed magnetic flux tubes or field-line loops.  
+The Gauss linking integral measures how many times the two loops wind around one another.
+
+For points $\mathbf{r}_1\in C_1$ and $\mathbf{r}_2\in C_2$, the relative displacement is:
+
+\begin{equation}
+\mathbf{r}_1-\mathbf{r}_2 .
+\end{equation}
+
+The oriented area element generated by the two path differentials is:
+
+\begin{equation}
+\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2 .
+\end{equation}
+
+Normalizing by the cubic separation gives the universal linking density:
+
+\begin{equation}
+\frac{
+(\mathbf{r}_1-\mathbf{r}_2)
+\cdot
+(\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2)
+}{
+|\mathbf{r}_1-\mathbf{r}_2|^3
+}.
+\end{equation}
+
+The full linking number is:
+
+\begin{equation}
+\boxed{
+Lk
+=
+\frac{1}{4\pi}
+\oint_{C_1}
+\oint_{C_2}
+\frac{
+(\mathbf{r}_1-\mathbf{r}_2)
+\cdot
+(\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2)
+}{
+|\mathbf{r}_1-\mathbf{r}_2|^3
+}.
+}
+\end{equation}
+
+\paragraph{Wolfram Form.}
+\begin{verbatim}
+Lk == (1/(4*Pi))*
+  Integrate[
+    Dot[r1 - r2, Cross[dr1, dr2]]/Norm[r1 - r2]^3,
+    {r1, C1}, {r2, C2}
+  ]
+\end{verbatim}
+
+\paragraph{Interpretation.}
+The linking number is integer-valued and topologically stable. It supplies the universal counting rule behind helicity quantisation.
+\endgroup
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The double contour integral records oriented linking for the paired closed curves and supplies the invariant used by later topology applications.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\tzpfitmath{Lk = \frac{1}{4\pi} \oint_{C_1} \oint_{C_2} \frac{ (\mathbf{r}_1-\mathbf{r}_2) \cdot (\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2) }{ |\mathbf{r}_1-\mathbf{r}_2|^3 }.}
+\]
+\[
+\mathbf{r}_1-\mathbf{r}_2.
+\]
+\[
+\mathrm{d}\mathbf{r}_1\times \mathrm{d}\mathbf{r}_2.
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0643] Gauss Linking Number and Topological Invariant}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+The Gauss linking number is an integer-valued invariant measuring oriented winding between two disjoint closed curves. It records linking that cannot be removed through continuous deformation without curve intersection.
+
+\tzpsection{Contextual Meaning}
+
+For closed field-line or flux-tube paths, \(Lk\) counts mutual linking. The curves may bend or move while retaining this number so long as they do not cross; appearance can change while topological connectedness remains fixed.
+
+\tzpsection{Formal Statement}
+
+\[
+Lk=\frac{1}{4\pi}\oint_{C_1}\oint_{C_2}\frac{(\mathbf{r}_1-\mathbf{r}_2)\cdot(\mathrm{d}\mathbf{r}_1\times\mathrm{d}\mathbf{r}_2)}{|\mathbf{r}_1-\mathbf{r}_2|^3}
+\]
+
+\tzpsection{Derivable Consequences}
+
+Smooth deformations without intersection preserve \(Lk\). Reversing one curve's orientation reverses its sign; topologically unlinked curves have zero linking number under the standard reading.
+
+\tzpsection{Lemma Support}
+
+The approved aligned source supplies the integral and identifies \(Lk\), paths \(C_1\), \(C_2\), and position vectors \(\mathbf{r}_1\), \(\mathbf{r}_2\). Later helicity readings remain applications.
+
+\tzpsection{Technical Interpretation}
+
+The difference vector records separation, the cross product of path differentials records orientation, and cubic distance normalization weights contributions before double integration.
+
+\tzpsection{Equation Grounding}
+
+\(Lk\) is the Gauss linking number of the two closed curves; \(C_1\) and \(C_2\) are the first and second closed curves or flux-tube paths; and \(\mathbf{r}_1\), \(\mathbf{r}_2\) are their respective position vectors.
+
+\tzpsection{Interpretive Role}
+
+This entry anchors topological counting with a precise invariant later pages may apply to linked flux or helicity models.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Gauss Linking Number}: The integer topological count of oriented winding between two closed curves. \enspace\textbullet\enspace \textbf{Closed Curve Pair}: The two paths over which the double contour integral is evaluated. \enspace\textbullet\enspace \textbf{Topological Invariance}: Preservation of linking under deformation that does not allow the curves to cross.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0643].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0643] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Gauss Linking Number and Topological Invariant}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} TZPID ENTRY 0643 is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``TZPID ENTRY 0643 is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0643].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

@@ -1,0 +1,17 @@
+\section*{ID6535: Numerical Recipe (Practical: How to Simulate \& Visualize): ζ\_l,m}
+\paragraph{Metadata.}
+PiID: 2334028308711 | RTEID: RTE:P25376.8563:T4.1141 | UUID: 0c52f582-c03b-5c6e-baba-b33ce8a2f017
+
+\paragraph{Canonical Statement.}
+**Spectral method (recommended for global, smooth flows):** 1. Expand \textbackslash{}(\textbackslash{}Psi\textbackslash{}) in spherical harmonics \textbackslash{}(Y\_l\textasciicircum{}m\textbackslash{}). Represent vorticity \textbackslash{}(\textbackslash{}zeta\textbackslash{}) via \textbackslash{}(\textbackslash{}zeta\_\{l,m\}=-\textbackslash{}frac\{l(l+1)\}\{R\textasciicircum{}2\}\textbackslash{}Psi\_\{l,m\}\textbackslash{}). 2. Time-step the barotropic vorticity equation in spectral space with a nonlinear transform (compute Jacobian in grid space then transform back). Use RK4 or a stable explicit method with small dt. 3. Add linear damping \textbackslash{}(-\textbackslash{}alpha \textbackslash{}zeta\textbackslash{}) and hyperdiffusion \textbackslash{}(-\textbackslash{}nu\textbackslash{}nabla\textasciicircum{}4\textbackslash{}zeta\textbackslash{}) if needed to control enstrophy cascade.
+
+\paragraph{Canonical Equation.}
+\[
+\zeta_{l,m}=-\frac{l(l+1)}{R^2}\Psi_{l,m}
+\]
+
+\paragraph{Dictionary.}
+Spectral method (recommended for global, smooth flows): 1 (ζ\_l,m)
+
+\paragraph{Encyclopedia.}
+Numerical Recipe (Practical: How to Simulate \& Visualize): ζ\_l,m is an algebraic definition, written ζ\_l,m=-(l(l+1))/(R\textasciicircum{}2)Ψ\_l,m. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from l, R, m, defining ζ\_l,m. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

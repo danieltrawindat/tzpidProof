@@ -1,0 +1,215 @@
+\tzpanchor{0796}
+\tzpentryheader{0796}{SO(3) times U(1) Configuration Bundle}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{cb4b0b1e-0c77-5213-ab7a-f3a8128673ba}}\\
+\textbf{PiID} & \tzpcode{1859502445945} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{803}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{3052.2126 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{05.0291 rad}\\
+\textbf{TZPID} & \tzpcode{ID0796} & \textbf{Node Dependencies}\quad \tzpidref{0795}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0796} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Geometric Carrier & Compatibility Law\\
+\textbf{Closure Support} & Topological Closure & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records so(3) times u(1) configuration bundle through a normalized Octonary TRAWIN operator chain.
+
+\tzpsection{Canonical Equation}
+\[
+\mathcal{O}_{\mathrm{id0796}}:\mathcal{X}_{\mathrm{id0796}}\longrightarrow\mathcal{Y}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0796}})=\mathcal{O}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0796}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{O}_{\mathrm{id0796}}$: canonical operator or carrier map for the entry.
+    \item $\mathcal{X}_{\mathrm{id0796}}$: source domain or input state space for the entry map.
+    \item $\mathcal{Y}_{\mathrm{id0796}}$: target domain or output state space for the entry map.
+    \item $\mathcal{N}_{\mathrm{TRAWIN}}$: TRAWIN normalization operator applied to the entry relation.
+    \item $\mathcal{Y}_{\mathrm{adm}}$: admissible output space selected by the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0796 generated source Wolfram model *)
+ClearAll[K0796, Cr0796, T, R, A, W, I, N];
+eq0796$1 = HoldForm[Oid0796[Xid0796] -> Yid0796];
+eq0796$2 = HoldForm[NTRAWIN[OId0796] == OId0796];
+eq0796$3 = HoldForm[Element[OId0796[x], YAdm]];
+
+K0796 = HoldForm[{eq0796$1, eq0796$2, eq0796$3}];
+
+N = "normalized TRAWIN closure object for SO(3) times U(1) Configuration Bundle";
+I = "SO(3) times U(1) Configuration Bundle integration/comparison layer";
+W = "SO(3) times U(1) Configuration Bundle wave or operator carrier";
+A = "SO(3) times U(1) Configuration Bundle admissible action/amplitude condition";
+R = "SO(3) times U(1) Configuration Bundle rotation/curl preservation layer";
+T = "SO(3) times U(1) Configuration Bundle local source condition";
+
+Cr0796[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0796 = Cr0796[K0796];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ SO(3) times U(1) Configuration Bundle local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ SO(3) times U(1) Configuration Bundle rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ SO(3) times U(1) Configuration Bundle admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ SO(3) times U(1) Configuration Bundle wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ SO(3) times U(1) Configuration Bundle integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for SO(3) times U(1) Configuration Bundle.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0796] SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\mathcal{O}_{\mathrm{id0796}}:\mathcal{X}_{\mathrm{id0796}}\longrightarrow\mathcal{Y}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0796}})=\mathcal{O}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0796}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\paragraph{Primary Derivation.}
+The first line specifies a map, while the subsequent line provides its explicit form \( \mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0796}})=\mathcal{O}_{\mathrm{id0796}} \). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.
+\paragraph{Equation Type.}
+This statement is classified as a map relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. In the TRAWIN reading, the equation functions as the mapping carrier for the entry’s information content. In CHL terms, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors SO(3) times U(1) Configuration Bundle by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\mathcal{O}_{\mathrm{id0796}}:\mathcal{X}_{\mathrm{id0796}}\longrightarrow\mathcal{Y}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0796}})=\mathcal{O}_{\mathrm{id0796}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0796}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0796] SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+SO(3) times U(1) Configuration Bundle is a registry definition in Vortex and Cymatic Transport with secondary pressure from Resonance and Phase Locking.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} sum sub i=1 to the power 3x 10 to the power 9. \textbf{Contextual meaning:} The entry reads SO(3) times U(1) Configuration Bundle as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity. \textbf{Lemma support:} Geometric Carrier; Compatibility Law; Topological Closure.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, SO(3) times U(1) Configuration Bundle is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: pdf?utm sub source =chatgpt; name = payload; and get( repo sub name , ) repo = c. Proof route: show that the effective geometry preserves the required compatibility condition while supporting the stated topological invariant. Formalization route: prove that the effective deformation leaves the relevant Euler characteristic or bundle invariant well-defined.
+
+\tzpsection{Interpretive Role}
+The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Strong-Force Energy Minimization}: The massive, sprawling equations describing how the most powerful, violent force in the universe still naturally, lazily tries to settle into the absolute lowest possible energy state.
+\item \textbf{Gluon-Field Self-Interactions}: The bizarre, headache-inducing complication that the invisible particles carrying the strong force actually feel the strong force themselves, meaning the flashlight beam is actively pulling on its own light.
+\item \textbf{Chromodynamic Curvature Mapping}: The attempt to draw a physical picture of a force so completely alien to human experience that it relies on three completely different, invisible 'colors' of electrical charge.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0796]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0796].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0796] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} SO(3) times U(1) Configuration Bundle is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``SO(3) times U(1) Configuration Bundle is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0796].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

@@ -1,0 +1,444 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:38:45.600373+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0137",
+    "uuid": "ae08cf86-58cd-5594-8ea3-4df9df2cc49c",
+    "registry_id": "registry_id_0137",
+    "canonical_title": "Megastructure Formation Theorem",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0137/ID0137.TEX",
+      "json": "D:/TZPID/TZPID/ID0137/ID0137.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0137/ID0137.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Standing-wave interference across the universe produces filaments with wavelength \\(\\lambda=\\pi R_{\\mathrm{universe}}/n\\), where \\(R_{\\mathrm{universe}}\\) is the Hubble radius. For the selected mode scale, this gives \\(\\lambda\\approx150\\,\\mathrm{Mpc}\\). These filaments are modeled as flux tubes with \\(T^2\\) topology, and the predicted spacing is compared against observed cosmic-web scales.",
+    "technical_interpretation": "Standing wave interference across the universe produces filaments with wavelength $\\lambda$ = $\\pi$ R\\_universe / n, where R\\_universe is the Hubble radius. For n of order unity, $\\lambda$ $f(\\lambda x) = \\lambda^D f(x) \\implies D omega^{2} = k^{2} v_{\\mathrm{A}}^{2}\\left[1 + \\left(\\frac{\\omega_{\\mathrm{gyro}}}{\\omega}\\right)^{2}\\right] 3/2$ 150 Mpc. These filaments are flux tubes with T2 topology; the predicted cosmic web spacing matches observations."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}",
+      "\\lambda \\approx 150\\ \\mathrm{Mpc}",
+      "\\mathcal{F}_{\\mathrm{web}}\\sim T^2"
+    ],
+    "source_section_latex": "\\[\n\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}\n\\]\n\\[\n\\lambda \\approx 150\\ \\mathrm{Mpc}\n\\]\n\\[\n\\mathcal{F}_{\\mathrm{web}}\\sim T^2\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Megastructure Wavelength Law",
+      "formula_latex_blocks": [
+        "\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}"
+      ],
+      "interpretive_role": "This gives the interference-controlled spacing scale for large filaments."
+    },
+    {
+      "step": 2,
+      "component_title": "Observed-Scale Match",
+      "formula_latex_blocks": [
+        "\\lambda \\approx 150\\ \\mathrm{Mpc}"
+      ],
+      "interpretive_role": "This ties the wavelength law to the stated observationally relevant spacing."
+    },
+    {
+      "step": 3,
+      "component_title": "Toroidal Flux-Tube Class",
+      "formula_latex_blocks": [
+        "\\mathcal{F}_{\\mathrm{web}}\\sim T^2"
+      ],
+      "interpretive_role": "This closes the progression by assigning the resulting filaments a toroidal topological character."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0137}$",
+        "description": "canonical registry object for entry ID 0137."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0137}$",
+        "name": "canonical registry object for entry ID 0137.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{universe}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F_{web}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Megastructure Formation Theorem\nCanonical operator translation\neq0137_1 = HoldForm[lambda==( Runiverse)(n)];\neq0137_2 = HoldForm[lambda ~== 150\\ Mpc];\neq0137_3 = HoldForm[(F)web ~ T^2];\n\nTRAWIN closure composition\nTRAWINClosure0137[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0137 := HoldForm[{eq0137_1, eq0137_2, eq0137_3}];\nResult0137 := TRAWINClosure0137[K0137];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}",
+          "normalized_latex": "lambda==((Pi*RUniverse)/(n))",
+          "wolfram_input": "lambda==((Pi*RUniverse)/(n))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[lambda == (Pi*RUniverse)/n]",
+          "texform_roundtrip": "\\lambda =\\frac{\\pi  \\text{RUniverse}}{n}",
+          "messages": []
+        },
+        {
+          "latex": "\\lambda \\approx 150\\ \\mathrm{Mpc}",
+          "normalized_latex": "lambda==150*Mpc",
+          "wolfram_input": "lambda==150*Mpc",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[lambda == 150*Mpc]",
+          "texform_roundtrip": "\\lambda =150 \\text{Mpc}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{F}_{\\mathrm{web}}\\sim T^2",
+          "normalized_latex": "\\mathcal{F}_{\\mathrm{web}}\\sim T^2",
+          "wolfram_input": "SimilarTo[FWeb,T^2]",
+          "normalization_notes": [
+            "\\sim normalized to SimilarTo[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[SimilarTo[FWeb, T^2]]",
+          "texform_roundtrip": "\\text{SimilarTo}\\left(\\text{FWeb},T^2\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0137 generated source-truth Wolfram model *)\nClearAll[K0137, TRAWINClosure0137];\neq0137$1 = HoldForm[lambda == (Pi*RUniverse)/n];\neq0137$2 = HoldForm[lambda == 150*Mpc];\neq0137$3 = HoldForm[SimilarTo[FWeb, T^2]];\nK0137 = HoldForm[{eq0137$1, eq0137$2, eq0137$3}];\nTRAWINClosure0137[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0137 = TRAWINClosure0137[K0137];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}\n\\]\n\\[\n\\lambda \\approx 150\\ \\mathrm{Mpc}\n\\]\n\\[\n\\mathcal{F}_{\\mathrm{web}}\\sim T^2\n\\]\n\n\\paragraph{Primary Derivation.}\nTo derive the stated relation through direct evaluation of the expression. yielding the required identity.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. Within the TRAWIN framework, the equation functions as the generalized carrier for the entry’s information content. In CHL terms, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "publication_overrides": {
+    "dictionary_latex": "\\begingroup\\small\n\\tzpsection{Definition}\nA filament wavelength law relating the standing-wave spacing scale to the Hubble radius.\n\n\\tzpsection{Contextual Meaning}\nThe entry uses a global radius and an integer mode index to set a model wavelength for large-scale filament spacing.\n\n\\tzpsection{Formal Statement}\n\\[\n\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}\n\\]\n\n\\tzpsection{Derivable Consequences}\nFor fixed \\(R_{\\mathrm{universe}}\\), increasing \\(n\\) reduces the predicted spacing \\(\\lambda\\).\n\n\\tzpsection{Lemma Support}\nThe aligned source explicitly identifies \\(\\lambda\\) as a filament wavelength and \\(R_{\\mathrm{universe}}\\) as the Hubble radius.\n\n\\tzpsection{Technical Interpretation}\nThe formula provides a mode-indexed standing-wave scale; the later topology comparison remains model-conditional.\n\n\\tzpsection{Equation Grounding}\n\\(\\lambda\\) is the filament wavelength and \\(R_{\\mathrm{universe}}\\) is the Hubble radius.\n\n\\tzpsection{Interpretive Role}\nThis entry supplies a large-scale wavelength node for the progression and proof-certificate layers.\n\n\\tzpsection{TZP Thesaurus}\nFilament wavelength; Hubble radius; mode index; standing-wave spacing; cosmic-web scale.\n\\endgroup",
+    "dictionary_sections": {
+      "definition": "The megastructure wavelength law is a mode-indexed spacing relation for large-scale filaments. It sets a filament wavelength from a global radius scale and an integer mode count.",
+      "contextual_meaning": "The global length scale is the Hubble radius, \\(R_{\\mathrm{universe}}\\), and the output is filament wavelength \\(\\lambda\\). A standing-wave reading partitions the large domain into repeated spacing intervals; topology or cosmic-web comparison remains later interpretation.",
+      "formal_statement_latex": "\\[\n\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}\n\\]",
+      "derivable_consequences": "For fixed Hubble radius, increasing \\(n\\) reduces \\(\\lambda\\); for fixed \\(n\\), increasing the global radius increases wavelength proportionally. The approximate \\(150\\,\\mathrm{Mpc}\\) value is an evaluated comparison.",
+      "lemma_support": "The approved alignment states the equation and identifies \\(\\lambda\\) as filament wavelength and \\(R_{\\mathrm{universe}}\\) as Hubble radius. It does not validate later topology claims.",
+      "technical_interpretation": "The coefficient \\(\\pi/n\\) scales a global radial measure by mode count, organizing modeled spacing rather than asserting an unrestricted empirical fit.",
+      "equation_grounding": "\\(\\lambda\\) denotes filament wavelength and \\(R_{\\mathrm{universe}}\\) denotes the Hubble radius in the approved equation-aligned source. The mode symbol \\(n\\) appears in the mathematical relation but awaits separate symbol-level source approval.",
+      "interpretive_role": "This entry translates a global radius assumption into a spacing law referenced conditionally by later topology and comparison layers.",
+      "tzp_thesaurus": [
+        {
+          "term": "Filament Wavelength",
+          "meaning": "The modeled interval between standing-wave filament features."
+        },
+        {
+          "term": "Hubble Radius",
+          "meaning": "The global radius scale used by the approved wavelength relation."
+        },
+        {
+          "term": "Mode-Indexed Spacing",
+          "meaning": "A spacing obtained by scaling a global length with an integer mode count."
+        }
+      ]
+    },
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 216,
+      "applied_at": "20260524_214627"
+    },
+    "equation_support_summary": "The progression evaluates the wavelength law at its selected scale and then records the conditional topological classification of the resulting filament model."
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-24",
+    "review_status": "approved_for_symbol_key_and_equation_grounding",
+    "method": "formula-normalized engine-source alignment followed by manual review",
+    "approved_claims": [
+      {
+        "formula_latex": "\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}",
+        "role": "standing-wave filament wavelength law",
+        "symbol_definitions": {
+          "\\lambda": "filament wavelength",
+          "R_{\\mathrm{universe}}": "Hubble radius"
+        },
+        "source_path": "D:/00_Engine/CSV/open_ai_eqation_arc_full.csv",
+        "source_record": "row_2732",
+        "alignment_status": "exact_equation_candidate",
+        "alignment_score": 0.9065
+      }
+    ],
+    "limitation": "The aligned source explicitly identifies the filament wavelength and defines the Hubble-radius variable in that relation; it does not independently validate the flux-tube topology or observational comparison."
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0137/ID0137.source_truth.json",
+    "entry_id": "ID0137",
+    "registry_id": "registry_id_0137",
+    "canonical_title": "Megastructure Formation Theorem",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0137/ID0137.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "ae08cf86-58cd-5594-8ea3-4df9df2cc49c",
+    "RTEID": "RTE:P532.0014:T0.8766",
+    "poloidal_theta_rad": "532.0014",
+    "toroidal_phi_rad": "0.8766",
+    "rteid_source": "manifest",
+    "PiID": "1725359408128",
+    "TZPi": "9",
+    "PiPE_position": "144",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\lambda=\\frac{\\pi R_{\\mathrm{universe}}}{n}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "lambda",
+          "Pi",
+          "R",
+          "n"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0137\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Megastructure Formation Theorem\", \"latex\" -> \"\\\\lambda=\\\\frac{\\\\pi R_{\\\\mathrm{universe}}}{n}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"lambda\", \"Pi\", \"R\", \"n\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\lambda \\approx 150\\ \\mathrm{Mpc}",
+        "numeric_atoms": [
+          "150"
+        ],
+        "symbolic_tokens": [
+          "lambda"
+        ],
+        "candidate_wolfram_input": "HoldForm[lambda == 150*Mpc]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0137\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Megastructure Formation Theorem\", \"latex\" -> \"\\\\lambda \\\\approx 150\\\\ \\\\mathrm{Mpc}\", \"numericAtoms\" -> {150}, \"symbolicTokens\" -> {\"lambda\"}, \"candidateWolframInput\" -> \"HoldForm[lambda == 150*Mpc]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\mathcal{F}_{\\mathrm{web}}\\sim T^2",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "T"
+        ],
+        "candidate_wolfram_input": "HoldForm[calF$web== T^2]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0137\", 3, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Megastructure Formation Theorem\", \"latex\" -> \"\\\\mathcal{F}_{\\\\mathrm{web}}\\\\sim T^2\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"T\"}, \"candidateWolframInput\" -> \"HoldForm[calF$web== T^2]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={Dimensional Accessibility: Harmonic Channels to Extra-Dimensional Modes},pdfsubject={TZPID Companion Spine Series, Paper C4},pdfkeywords={TZPID, dimensional accessibility}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Dimensional Accessibility: Harmonic Channels to Extra-Dimensional Modes\\[0.6em]
+\large TZPID Companion Spine Series, Paper C4 of XXVII\\
+\normalsize Kaluza--Klein decomposition of gyromagnetic-acoustic systems}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion develops the program's extra-dimensional access claim: that coupled gyromagnetic-acoustic systems in rotating frames possess harmonic channels to higher-dimensional field modes, made explicit through Kaluza--Klein decomposition of the acoustic wave equation on curved manifolds.
+The source manuscript's stated thesis: ``We present a comprehensive field-theoretic treatment of coupled gyromagneticacoustic systems exhibiting topologically non-trivial field configurations. The formalism unifies classical magnetohydrodynamics with geometric acoustics in rotating reference frames, revealing harmonic access channels to extra-dimensional field modes through Kaluza-Klein decomposition of the acoustic wave equation on curved spacetime manifol\,\ldots'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID3614, ID3365, ID1917, ID1952, ID1953, ID9616, ID9645) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper licenses every Kaluza--Klein appearance in the core series, from the observable suite of Paper IV to the dispersion relations of the enclosure.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The core series repeatedly touches a Kaluza--Klein tower without pausing to justify it: Paper IV's observable bridge includes the resonance shift $\delta\omega/\omega = m_{\mathrm{KK}}c/(R_{\mathrm{KK}}\omega_0)$ and the helicity-transfer channel $\mathcal{H}_{\mathrm{mag}} \to \mathcal{H}_{\mathrm{KK}}$; the registry's cavity entries carry the KK-corrected dispersion $\omega^2_{\mathrm{KK}} = \omega^2_{\mathrm{acoustic}} + \omega^2_{\mathrm{magnetic}} + (m_{\mathrm{KK}}c/R_{\mathrm{KK}})^2$. This companion is where those appearances are earned.
+
+The source manuscript's treatment unifies classical magnetohydrodynamics with geometric acoustics in rotating reference frames and shows that the resulting wave operator, decomposed on a curved manifold with a compact extra dimension, yields a tower of effective masses---the KK ladder---whose low rungs couple to laboratory-accessible gyromagnetic-acoustic drives. The claim of \emph{accessibility} is the manuscript's sharp content: not merely that extra-dimensional modes exist in the formalism, but that specific harmonic channels (cavity modes at specific ratios, helicity-carrying configurations) couple to them with non-vanishing overlap.
+
+The spine below anchors the decomposition, the tower, and the access channels to the registry. In the enclosure language of the core series, dimensional accessibility is the dynamical face of Paper I's projection claim: if we inhabit the boundary phenomenology of a higher-dimensional enclosure, there must be operators whose spectra reach the bulk, and this companion names them.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID3614} \to \text{ID3365} \to \text{ID1917} \to \text{ID1952} \\
+\to \text{ID1953} \to \text{ID9616} \to \text{ID9645}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID3614: Dimensional Accessibility Equation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{align\} \textbackslash{}Delta l \&= 0, \textbackslash{}pm 1, \textbackslash{}pm 2 \textbackslash{}\textbackslash{} \textbackslash{}Delta m \&= 0, \textbackslash{}pm 1 \textbackslash{}end\{align\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Dimensional Accessibility Equation --- Delta l \&= 0, pm 1, pm 2 Delta m \&= 0, pm 1\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `D:\textbackslash{}00\_EngineCSVdimensional\_accessibility.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID3614\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID3365: Classical Capacitance Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} C\_\{ \textbackslash{}text\{classical\}\} = B \textbackslash{}log\_2(1 + \textbackslash{}text\{SNR\}) \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Classical Capacitance Relation --- C\_ classical = B log\_2(1 + SNR)\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID3365\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID1917: EID\_0314 Magnetic Field Source (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{v\_A = \textbackslash{}\textbackslash{}frac\{B\}\{\textbackslash{}\textbackslash{}sqrt\{\textbackslash{}\textbackslash{}mu\_0 \textbackslash{}\textbackslash{}rho\}\}}}\par\medskip
+\noindent\textit{Dictionary definition.} EID\_0314 Magnetic Field Source --- v\_A = fracBsqrt(mu\_0 rho) [ID1917]\par\medskip
+\noindent\textit{Encyclopedia reading.} \textbackslash{} extbf Dimensional Gateway : Rotating frame at relativistic rim speeds creates Kerr-like spacetime metricr \textbackslash{}item \textbackslash{} extbf Harmonic Modulator : Permeable boundary with tessellated oscillationsr \textbackslash{}end enumerate r \textbackslash{}section The Acoustic-Topological Bridge r Sound waves in magnetized media couple to magnetic field lines through magnetoacoustic modes. When these modes resonate with the topological structure's natural frequencies, they can \textbackslash{} extbf selectively excite specific higher-dimensional projection states r \textbackslash{}section Mathematical Framework r \textbackslash{}subsection Magnetoacoustic Wave Equation r In a magnetized medium, acoustic perturbations couple to magnetic field oscillation \textbackslash{}xi \textbackslash{}partial t\textasciicircum{}2 = v A\textasciicircum{}2 \textbackslash{} abla\textasciicircum{}2 \textbackslash{}xi + \textbackslash{}frac 1 \textbackslash{}mu 0 \textbackslash{}rho (\textbackslash{} abla \textbackslash{} imes \textbackslash{}mathbf B ) \textbackslash{} imes (\textbackslash{} abla \textbackslash{} imes \textbackslash{}delta \textbackslash{}mathbf B )r \textbackslash{}end equation r wher = displacement field (acoustic)r \textbackslash{}item = Alfvu00e9n
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID1917\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID1952: EID\_1039 Helicity Coupling Source (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{v\_A = \textbackslash{}\textbackslash{}frac\{B\}\{\textbackslash{}\textbackslash{}sqrt\{\textbackslash{}\textbackslash{}mu\_0 \textbackslash{}\textbackslash{}rho\}\}}}\par\medskip
+\noindent\textit{Dictionary definition.} EID\_1039 Helicity Coupling Source --- v\_A = fracBsqrt(mu\_0 rho) [ID1952]\par\medskip
+\noindent\textit{Encyclopedia reading.} extbf Dimensional Gateway : Rotating frame at relativistic rim speeds creates Kerr-like spacetime metric \textbackslash{}item \textbackslash{} extbf Harmonic Modulator : Permeable boundary with tessellated oscillations \textbackslash{}end enumerate Sound waves in magnetized media couple to magnetic field lines through magnetoacoustic modes. \textbackslash{}section Mathematical Framework \textbackslash{}subsection Magnetoacoustic Wave Equation In a magnetized medium, acoustic perturbations couple to magnetic field oscillations: \textbackslash{}begin equation \textbackslash{}frac \textbackslash{}partial\textasciicircum{}2 \textbackslash{}xi \textbackslash{}partial t\textasciicircum{}2 = v A\textasciicircum{}2 \textbackslash{} abla\textasciicircum{}2 \textbackslash{}xi + \textbackslash{}frac 1 \textbackslash{}mu 0 \textbackslash{}rho (\textbackslash{} abla \textbackslash{} imes \textbackslash{}mathbf B ) \textbackslash{} imes (\textbackslash{} abla \textbackslash{} imes \textbackslash{}delta \textbackslash{}mathbf B ) \textbackslash{}end equation where: \textbackslash{}begin itemize \textbackslash{}item = displacement field (acoustic) \textbackslash{}item = Alfvu00e9n velocity \textbackslash{}item = magnetic field perturbation \textbackslash{}end itemize \textbackslash{}subsection Topological Mode Coupling The magnetic helicity (topological invariant) couples to acoustic mod
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID1952\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID1953: EID\_1040 Helicity Coupling Source (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{v\_A = \textbackslash{}\textbackslash{}frac\{B\}\{\textbackslash{}\textbackslash{}sqrt\{\textbackslash{}\textbackslash{}mu\_0 \textbackslash{}\textbackslash{}rho\}\}}}\par\medskip
+\noindent\textit{Dictionary definition.} EID\_1040 Helicity Coupling Source --- v\_A = fracBsqrt(mu\_0 rho)\par\medskip
+\noindent\textit{Encyclopedia reading.} reate quantized helicity structuresr \textbackslash{}item \textbackslash{} extbf Dimensional Gateway : Rotating frame at relativistic rim speeds creates Kerr-like spacetime metricr \textbackslash{}item \textbackslash{} extbf Harmonic Modulator : Permeable boundary with tessellated oscillationsr \textbackslash{}end enumerate r Sound waves in magnetized media couple to magnetic field lines through magnetoacoustic modes. When these modes resonate with the topological structure's natural frequencies, they can \textbackslash{} extbf selectively excite specific higher-dimensional projection states .r \textbackslash{}section Mathematical Framework r \textbackslash{}subsection Magnetoacoustic Wave Equation r In a magnetized medium, acoustic perturbations couple to magnetic field oscillation \textbackslash{}xi \textbackslash{}partial t\textasciicircum{}2 = v A\textasciicircum{}2 \textbackslash{} abla\textasciicircum{}2 \textbackslash{}xi + \textbackslash{}frac 1 \textbackslash{}mu 0 \textbackslash{}rho (\textbackslash{} abla \textbackslash{} imes \textbackslash{}mathbf B ) \textbackslash{} imes (\textbackslash{} abla \textbackslash{} imes \textbackslash{}delta \textbackslash{}mathbf B )r \textbackslash{}end equation r wher = displacement field (acoustic)r \textbackslash{}item = Alfvu00e9
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID1953\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9616: Relation: D -> d\_min (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{d \textbackslash{}to d\_\{min\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: D -> d\_min --- d -> d\_min\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: D -> d\_min is a symbolic expression, written d -> d\_min. It introduces a symbol or relation used elsewhere in the framework. It is built from d\_min. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID9616\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID9645: Relation: H\_M(t) (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}mathcal\{H\}\_M(t)}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: H\_M(t) --- H\_M(t)\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: H\_M(t) is a symbolic expression, written H\_M(t). It introduces a symbol or relation used elsewhere in the framework. It is built from H, M. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{dimensional\_accessib\_ID9645\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the dimensional accessibility spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID3614 & Core\_Definition & \texttt{dimensional\_accessib\_ID3614\_identity} \\
+ID3365 & Core\_Definition & \texttt{dimensional\_accessib\_ID3365\_identity} \\
+ID1917 & Core\_Definition & \texttt{dimensional\_accessib\_ID1917\_identity} \\
+ID1952 & Core\_Definition & \texttt{dimensional\_accessib\_ID1952\_identity} \\
+ID1953 & Core\_Definition & \texttt{dimensional\_accessib\_ID1953\_identity} \\
+ID9616 & Core\_Definition & \texttt{dimensional\_accessib\_ID9616\_structure} \\
+ID9645 & Core\_Definition & \texttt{dimensional\_accessib\_ID9645\_structure} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 0 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID3614 & --- & --- \\
+ID3365 & --- & --- \\
+ID1917 & --- & --- \\
+ID1952 & --- & --- \\
+ID1953 & --- & --- \\
+ID9616 & --- & --- \\
+ID9645 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This companion is the bridge between the enclosure geometry (Paper I) and the movement engine (Paper IV). The $S^3$ eigenmodes of the stage become, under KK decomposition, the tower this paper makes accessible; the magnetoacoustic gateway of Paper IV is the access channel in its laboratory form; and the half-Bessel seam of Paper VI---bulk integer orders against boundary half-orders---is the spectral fingerprint of exactly the dimensional split formalized here.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_dimensional\_accessibility.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{dimensional\_accessibility\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID3614} (\texttt{dimensional\_accessib\_ID3614\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3365} (\texttt{dimensional\_accessib\_ID3365\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID1917} (\texttt{dimensional\_accessib\_ID1917\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID1952} (\texttt{dimensional\_accessib\_ID1952\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID1953} (\texttt{dimensional\_accessib\_ID1953\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9616} (\texttt{dimensional\_accessib\_ID9616\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9645} (\texttt{dimensional\_accessib\_ID9645\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. The KK decomposition is standard mathematics; the accessibility claim---non-vanishing coupling of named laboratory channels to tower modes---is the framework's surplus, and a null measurement of the predicted resonance shifts at the claimed couplings is its direct falsifier.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+Dimensional accessibility upgrades the enclosure from a picture to an apparatus: it names the operators whose spectra reach the bulk and computes the tower they reach. Its refinement targets are quantitative---overlap integrals for each named channel, tower spacings for the enclosure radii of the core series---and its falsification axis is the cleanest in the companion corpus: the predicted shifts either appear at the predicted couplings or they do not.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: dimensional accessibility}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{dimensional accessibility}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

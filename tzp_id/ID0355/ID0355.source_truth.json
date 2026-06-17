@@ -1,0 +1,380 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:56:31.878706+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0355",
+    "uuid": "67e9ad82-382a-543c-a0b8-54d93b9745b3",
+    "registry_id": "registry_id_0355",
+    "canonical_title": "Encoding Pipeline Functor",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0355/ID0355.TEX",
+      "json": "D:/TZPID/TZPID/ID0355/ID0355.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0355/ID0355.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Establish morphisms between the objects of the base category as follows: an encoding morphism maps matrix data to sphere addresses; a holographic morphism transforms discrete sphere points into continuous wavefront configurations through spherical harmonic decomposition; a propagation morphism describes evolution through a rotating double-helix optical system; and a quantisation morphism maps classical fields to quantum states. The composition of these morphisms defines a complete transformation from classical matrix spaces to quantum observables.",
+    "technical_interpretation": "Establish morphisms between the objects of the base category as follows: an encoding morphism maps matrix data to sphere addresses; a holographic morphism transforms discrete sphere points into continuous wavefront configurations through spherical harmonic decomposition; a propagation morphism describes evolution through a rotating double-helix optical system; and a quantisation morphism maps classical fields to quantum states. The composition of these morphisms defines a complete transformation from classical matrix spaces to quantum observables."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}",
+      "F(g\\circ f)=F(g)\\circ F(f)"
+    ],
+    "source_section_latex": "\\[\nF:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}\n\\]\n\\[\nF(g\\circ f)=F(g)\\circ F(f)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Carrier Map",
+      "formula_latex_blocks": [
+        "F:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}"
+      ],
+      "interpretive_role": "This names the entry as an actual map between carrier domains rather than a loose metaphor."
+    },
+    {
+      "step": 2,
+      "component_title": "Composable Action",
+      "formula_latex_blocks": [
+        "F(g\\circ f)=F(g)\\circ F(f)"
+      ],
+      "interpretive_role": "This inserts the map into the ordered TRAWIN chain and makes composition explicit."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Output",
+      "formula_latex_blocks": [
+        "\\mathcal{P}:\\mathcal{H}^{6\\times10^{9}}\\to\\mathcal{H}^{153600}"
+      ],
+      "interpretive_role": "This closes the entry by requiring that the output land in the admissible target class."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0355}$",
+        "description": "canonical registry object for entry ID 0355."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0355}$",
+        "name": "canonical registry object for entry ID 0355.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\toC_{enc}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\circ$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\toH^{153600}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{raw}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{enc}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(g\\circ f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(g)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H^{153600}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Encoding Pipeline Functor\nCanonical operator translation\neq0355_1 = HoldForm[F:(C)raw -> (C)enc];\neq0355_2 = HoldForm[F(g f)==F(g) F(f)];\n\nTRAWIN closure composition\nTRAWINClosure0355[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0355 := HoldForm[{eq0355_1, eq0355_2}];\nResult0355 := TRAWINClosure0355[K0355];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "F:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}",
+          "normalized_latex": "F:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}",
+          "wolfram_input": "F[Craw] -> Cenc",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[Craw] -> Cenc]",
+          "texform_roundtrip": "F(\\text{Craw})\\to \\text{Cenc}",
+          "messages": []
+        },
+        {
+          "latex": "F(g\\circ f)=F(g)\\circ F(f)",
+          "normalized_latex": "F[gcirc*f]==F[g]circ*F[f]",
+          "wolfram_input": "F[gcirc*f]==F[g]circ*F[f]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[gcirc*f] == F[g]*circ*F[f]]",
+          "texform_roundtrip": "F(f \\text{gcirc})=\\text{circ} F(f) F(g)",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{P}:\\mathcal{H}^{6\\times10^{9}}\\to\\mathcal{H}^{153600}",
+          "normalized_latex": "\\mathcal{P}:\\mathcal{H}^{6\\times10^{9}}\\to\\mathcal{H}^{153600}",
+          "wolfram_input": "P[H6times109] -> H153600",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[P[H6times109] -> H153600]",
+          "texform_roundtrip": "P(\\text{H6times109})\\to \\text{H153600}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0355 generated source-truth Wolfram model *)\nClearAll[K0355, TRAWINClosure0355];\neq0355$1 = HoldForm[F[Craw] -> Cenc];\neq0355$2 = HoldForm[F[gcirc*f] == F[g]*circ*F[f]];\neq0355$3 = HoldForm[P[H6times109] -> H153600];\nK0355 = HoldForm[{eq0355$1, eq0355$2, eq0355$3}];\nTRAWINClosure0355[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0355 = TRAWINClosure0355[K0355];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nB_{\\partial\\Omega}\\phi\n=\n\\sum_n b_n(\\partial\\Omega)\\,\\phi_n .\n\\end{equation}\n\n\\paragraph{Coefficient Decomposition.}\n\\begin{equation}\nb_n\n=\nb_n^{\\mathrm{geom}}\n+\nb_n^{\\mathrm{top}}\n+\nb_n^{\\mathrm{curv}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFrom mode quantization, a confined field can be expanded as:\n\n\\begin{equation}\n\\phi=\\sum_n \\phi_n .\n\\end{equation}\n\nBoundary geometry modifies the amplitude or phase of each mode through coefficients $b_n(\\partial\\Omega)$.\n\nThe boundary-response operator is therefore:\n\n\\begin{equation}\n\\boxed{\nB_{\\partial\\Omega}\\phi\n=\n\\sum_n b_n(\\partial\\Omega)\\,\\phi_n .\n}\n\\end{equation}\n\nThe coefficient naturally decomposes into geometric, topological, and curvature components:\n\n\\begin{equation}\nb_n\n=\nb_n^{\\mathrm{geom}}\n+\nb_n^{\\mathrm{top}}\n+\nb_n^{\\mathrm{curv}} .\n\\end{equation}\n\n\\paragraph{Interpretation.}\nBoundaries actively reshape quantum fields by reweighting their confined mode expansion.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0355/ID0355.source_truth.json",
+    "entry_id": "ID0355",
+    "registry_id": "registry_id_0355",
+    "canonical_title": "Encoding Pipeline Functor",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0355/ID0355.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "67e9ad82-382a-543c-a0b8-54d93b9745b3",
+    "RTEID": "RTE:P1378.5438:T2.2714",
+    "poloidal_theta_rad": "1378.5438",
+    "toroidal_phi_rad": "2.2714",
+    "rteid_source": "manifest",
+    "PiID": "9036001133053",
+    "TZPi": "1",
+    "PiPE_position": "362",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "F:\\mathcal{C}_{\\mathrm{raw}}\\to\\mathcal{C}_{\\mathrm{enc}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "F"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0355\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Encoding Pipeline Functor\", \"latex\" -> \"F:\\\\mathcal{C}_{\\\\mathrm{raw}}\\\\to\\\\mathcal{C}_{\\\\mathrm{enc}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"F\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "F(g\\circ f)=F(g)\\circ F(f)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "circ",
+          "F",
+          "g",
+          "f"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0355\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Encoding Pipeline Functor\", \"latex\" -> \"F(g\\\\circ f)=F(g)\\\\circ F(f)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"circ\", \"F\", \"g\", \"f\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

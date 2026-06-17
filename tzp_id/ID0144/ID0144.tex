@@ -1,0 +1,227 @@
+\tzpanchor{0144}
+\tzpentryheader{0144}{Improved Model Parameter Sweep}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{475cc172-bfc4-5758-9807-1046a8a18db8}}\\
+\textbf{PiID} & \tzpcode{4081284811174} & \textbf{TZPi}\quad \tzpcode{4}\quad \textbf{PiPE}\quad \tzpcode{151}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{559.1840 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.9214 rad}\\
+\textbf{TZPID} & \tzpcode{ID0144} & \textbf{Node Dependencies}\quad \tzpidref{0143}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0144} & \textbf{Scale}\quad partial synchronization regime exploration\\
+\textbf{LOC Classification} & QA276 computational parameter studies & QA371 nonlinear oscillators\\
+\textbf{arXiv Classification} & Primary: nlin.AO \quad Cross-list: physics.data-an, astro-ph.EP & \\
+\textbf{Primary Support} & Coupling Sweep Interval & Time-Dependent Order Parameter\\
+\textbf{Closure Support} & Cluster-Frequency Set & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+To explore synchronization regimes in complex networks, sweep the coupling parameter k$_0$ and visualize the time-dependent order parameter r(t) and phase distributions. Identify parameter regimes where partial synchronization or frequency clustering emerges.
+
+\tzpsection{Canonical Equation}
+\[
+K_0\in [K_{\min},K_{\max}]
+\]
+\[
+r(t;K_0)=\left|\frac{1}{N}\sum_{j=1}^{N}e^{i\theta_j(t;K_0)}\right|
+\]
+\[
+\Omega_{\mathrm{cluster}}(K_0)=\{\dot{\theta}_j:\ |\dot{\theta}_j-\dot{\theta}_k|<\varepsilon\}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $K_0$: source equation symbol.
+    \item $K_{\min}$: source equation symbol.
+    \item $K_{\max}$: source equation symbol.
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $\theta_j(t;K_0)$: source equation symbol.
+    \item $\Omega_{\mathrm{cluster}}(K_0)$: angular frequency term in the source equation.
+    \item $\theta$: phase angle or local angular coordinate.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0144 generated source Wolfram model *)
+ClearAll[K0144, Cr0144, T, R, A, W, I, N];
+eq0144$1 = HoldForm[Element[K0, Commutator[KMin, KMax]]];
+eq0144$2 = HoldForm[r[t; K0] == Abs[(1/N)*SumJ1^N*Exp[I*thetaJ[t; K0]]]];
+eq0144$3 = HoldForm[OmegaCluster[K0] == dot[theta]*(_j:Abs[dot[theta]*_j - dot[theta]*_k] < epsilon)];
+
+K0144 = HoldForm[{eq0144$1, eq0144$2, eq0144$3}];
+
+N = "normalized TRAWIN closure object for Improved Model Parameter Sweep";
+I = "Cluster-Frequency Set integration/comparison layer";
+W = "Time-Dependent Order Parameter wave or operator carrier";
+A = "Coupling Sweep Interval admissible action/amplitude condition";
+R = "Time-Dependent Order Parameter rotation/curl preservation layer";
+T = "Coupling Sweep Interval local source condition";
+
+Cr0144[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0144 = Cr0144[K0144];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Coupling Sweep Interval local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Time-Dependent Order Parameter rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Coupling Sweep Interval admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Time-Dependent Order Parameter wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Cluster-Frequency Set integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Improved Model Parameter Sweep.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0144] Improved Model Parameter Sweep}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+K_0\in [K_{\min},K_{\max}]
+\]
+\[
+r(t;K_0)=\left|\frac{1}{N}\sum_{j=1}^{N}e^{i\theta_j(t;K_0)}\right|
+\]
+\[
+\Omega_{\mathrm{cluster}}(K_0)=\{\dot{\theta}_j:\ |\dot{\theta}_j-\dot{\theta}_k|<\varepsilon\}
+\]
+
+\paragraph{Primary Derivation.}
+The relation is obtained by differentiating and applying the relevant definitions. yielding the required identity.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. In the TRAWIN reading, the equation functions as the generalized carrier for the entry’s information content. In CHL terms, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Improved Model Parameter Sweep by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Coupling Sweep Interval}\par
+\[
+K_0\in [K_{\min},K_{\max}]
+\]
+\noindent This sets the parameter domain over which the complex network is interrogated.\par
+\noindent\textbf{2. Time-Dependent Order Parameter}\par
+\[
+r(t;K_0)=\left|\frac{1}{N}\sum_{j=1}^{N}e^{i\theta_j(t;K_0)}\right|
+\]
+\noindent This identifies the principal coherence observable to track through the sweep.\par
+\noindent\textbf{3. Cluster-Frequency Set}\par
+\[
+\Omega_{\mathrm{cluster}}(K_0)=\{\dot{\theta}_j:\ |\dot{\theta}_j-\dot{\theta}_k|<\varepsilon\}
+\]
+\noindent This closes the progression by formalizing the subset-frequency structure the sweep is designed to detect.\par
+
+\clearpage
+\noindent\textbf{[ID 0144] Improved Model Parameter Sweep}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Improved Model Parameter Sweep is a Operator. To explore synchronization regimes in complex networks, sweep the coupling parameter k  and visualize the time dependent order parameter r(t) and phase distributions. Identify parameter regimes where partial synchronization or frequency clustering emerges.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} To explore synchronization regimes in complex networks, sweep the coupling parameter k  and visualize the time dependent order parameter r(t) and phase distributions. Identify parameter regimes where partial synchronization or frequency clustering emerges.
+\textbf{Contextual meaning:} Scanning parameter space reveals where and how coherence increases in heterogeneous networks. It is a compu
+\textbf{Derivable consequences:} Need to extend models to include torques; prediction of resonance ratios; improved match with observations.
+\textbf{Lemma support:} To explore synchronization regimes in complex networks, sweep the coupling parameter k  and visualize the time dependent order parameter r(t) and phase distributions. Identify parameter regimes where partial synchronization or frequency clustering emerges.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Incorporate tidal torques into models and test whether predicted resonances match observed ones; observe spin--orbit locking phenomena. ID 144: Improved Model Parameter Sweep
+
+\tzpsection{Equation Grounding}
+To explore synchronization regimes in complex networks, sweep the coupling parameter k  and visualize the time dependent order parameter r(t) and phase distributions. Identify parameter regimes where partial synchronization or frequency clustering emerges.
+
+\tzpsection{Interpretive Role}
+Scanning parameter space reveals where and how coherence increases in heterogeneous networks. It is a compu
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Coupling Sweep Interval}: The parameter domain over which the complex network is interrogated.
+\item \textbf{Time-Dependent Order Parameter}: The principal coherence observable to track through the sweep.
+\item \textbf{Cluster-Frequency Set}: The formalization of the subset-frequency structure the sweep is designed to detect.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0144]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0144_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0144] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Improved Model Parameter Sweep}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} to explore synchronization regimes in complex networks, sweep the coupling parameter
+k\_0 and visualize the time-dependent order parameter r(t) an...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Improved Model Parameter Sweep is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0144_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

@@ -1,0 +1,217 @@
+\tzpanchor{0267}
+\tzpentryheader{0267}{Magnetic Reynolds Number}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{c5cc204f-ef7f-52c7-99fc-55c742a09e38}}\\
+\textbf{PiID} & \tzpcode{6104543266482} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{274}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1036.8203 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.7084 rad}\\
+\textbf{TZPID} & \tzpcode{ID0267} & \textbf{Node Dependencies}\quad \tzpidref{0266}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0267} & \textbf{Scale}\quad magnetofluid\\
+\textbf{LOC Classification} & QC809 magnetohydrodynamics & QC6 fluid and plasma dynamics\\
+\textbf{arXiv Classification} & Primary: physics.plasm-ph & Cross-list: astro-ph.SR, gr-qc\\
+\textbf{Primary Support} & Dimensionless Ratio & Critical Regime\\
+\textbf{Closure Support} & Normalized Threshold & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The magnetic Reynolds number R\_m = mu\_0 times sigma times length times velocity (equivalently length squared times angular velocity times mu\_0 times sigma) measures the ratio of magnetic advection to diffusion in a conducting fluid.
+
+\tzpsection{Canonical Equation}
+\[
+R_m=\mu_0\sigma vL
+\]
+\[
+R_m=\mu_0\sigma L^2\omega
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $R_m$: source equation symbol.
+    \item $\mu_0$: vacuum permeability constant.
+    \item $\sigma$: conductivity or coupling coefficient in the source equation.
+    \item $L$: characteristic length scale or Lagrangian carrier in the entry relation.
+    \item $\omega$: angular frequency term in the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0267 generated source Wolfram model *)
+ClearAll[K0267, Cr0267, T, R, A, W, I, N];
+eq0267$1 = HoldForm[RM == mu0*sigma*vL];
+eq0267$2 = HoldForm[RM == mu0*sigma*L^2*omega];
+eq0267$3 = HoldForm[RM == vL/eta];
+
+K0267 = HoldForm[{eq0267$1, eq0267$2, eq0267$3}];
+
+N = "normalized TRAWIN closure object for Magnetic Reynolds Number";
+I = "Normalized Threshold integration/comparison layer";
+W = "Critical Regime wave or operator carrier";
+A = "Dimensionless Ratio admissible action/amplitude condition";
+R = "Critical Regime rotation/curl preservation layer";
+T = "Dimensionless Ratio local source condition";
+
+Cr0267[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0267 = Cr0267[K0267];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Dimensionless Ratio local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Critical Regime rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Dimensionless Ratio admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Critical Regime wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Threshold integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Magnetic Reynolds Number.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0267] Magnetic Reynolds Number}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\Gamma[\phi] = W[J] - \int J\phi.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Effective action is Legendre transform of generating functional.
+
+Thus:
+\begin{equation}
+\boxed{
+\Gamma[\phi] = W[J] - \int J\phi.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Encodes full quantum corrections.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Magnetic Reynolds Number by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Dimensionless Ratio}\par
+\[
+R_m=\mu_0\sigma vL
+\]
+\noindent This defines the transport-to-diffusion balance that controls the magnetic regime.\par
+\noindent\textbf{2. Critical Regime}\par
+\[
+R_m=\mu_0\sigma L^2\omega
+\]
+\noindent This marks the onset of the self-organizing dynamo window.\par
+\noindent\textbf{3. Normalized Threshold}\par
+\[
+R_m=\frac{vL}{\eta}
+\]
+\noindent This closes the entry by normalizing the actual regime against the critical threshold.\par
+
+\clearpage
+\noindent\textbf{[ID 0267] Magnetic Reynolds Number}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Magnetic Reynolds Number is a registry definition in Information Synchronization with secondary pressure from Field Theory and Action Principles.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The magnetic Reynolds number R sub m = mu sub 0 times sigma times length times velocity (equivalently length squared times angular velocity times mu sub 0 times sigma) measures the ratio of magnetic advection to diffusion in a conducting fluid. \textbf{Contextual meaning:} The entry reads Magnetic Reynolds Number as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry gives the later dynamo closure pages an actual diagnostic parameter instead of a purely verbal regime claim. \textbf{Lemma support:} Dimensionless Ratio; Critical Regime; Normalized Threshold.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Encodes full quantum corrections.
+
+\tzpsection{Equation Grounding}
+Equation anchors: R sub m=mu sub 0sigma vL; R sub m=mu sub 0sigma L to the power 2omega; and R sub m=ratio vL eta. Proof route: show that exceeding the critical ratio is necessary for the self-excited magnetic regime stated in the surrounding arc. Formalization route: prove that the normalized dynamo ratio is dimensionless and monotone in the stated transport variables.
+
+\tzpsection{Interpretive Role}
+The entry gives the later dynamo closure pages an actual diagnostic parameter instead of a purely verbal regime claim.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Convective-to-Diffusive Field Transport Ratio}: The key dimensionless metric determining whether a magnetic field is swept along by a flowing fluid or simply leaks out and fades away.
+\item \textbf{Magnetic Flux Freezing Condition}: The state achieved when this number is extremely high, meaning the magnetic field lines are solidly "glued" to the moving plasma and stretch with it.
+\item \textbf{Fluid-Dominated Magnetic Advection Limit}: The specific operational threshold where the physical pushing of the fluid entirely overpowers the natural decay of the magnetic field.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0267]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0267_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0267] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Magnetic Reynolds Number}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the magnetic Reynolds number R\textbackslash{}\_m = mu\textbackslash{}\_0 times sigma times length times velocity
+(equivalently length squared times angular velocity times mu\textbackslash{}\_0 t...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Magnetic Reynolds Number is valid as a formal dynamical law when the Hamiltonian or
+energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0267_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

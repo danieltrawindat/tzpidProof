@@ -1,0 +1,328 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={The Bessel Residual Bridge: A Falsifiable Layer Between Accumulated Gravity and Matter Creation},pdfsubject={TZPID Gold Spine Series, Paper VI, DOI: 10.5281/zenodo.20631271},pdfkeywords={hyperspherical Bessel modes, entropy fold, curvature residual, causal kernel, half-Bessel drop, TZPID, DOI 10.5281/zenodo.20631271}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Bessel Residual Bridge: A Falsifiable Layer Between Accumulated Gravity and Matter Creation\\[0.6em]
+\large TZPID Gold Spine Series, Paper VI of VIII}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20631271}{10.5281/zenodo.20631271}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Papers V and VII of this series approach the same terminal equation---the Poisson closure $\nabla^2\Phi = 4\pi G_{\mathrm{eff}}\rho$ (ID1816)---from opposite directions: gravity reading existing matter, and vacuum energy condensing into new matter. This paper constructs the bridge between them: a deliberately narrow, falsifiable residual layer. The chain is: hyperspherical resonance $\to$ half-Bessel mode drop $\to$ entropy-fold residual $\to$ causal accumulation $\to$ curvature residual $\to$ ordinary mass-energy accounting $\to$ matter source. The enclosure's radial modes obey the Bessel equation lifted to four spatial dimensions, $x^2 y'' + x y' + (x^2 - \nu^2)y = 0$ with $\nu = \ell + (d-2)/2$, so $d = 4$ gives $\nu = \ell + 1$ (TAP-001); boundary quantization selects $k_{\ell q} = j_{\ell+1,q}/R$ (TAP-002). A drop between integer and half-integer Bessel orders releases the finite energy $\Delta E_{\mathrm{half}} = \hbar v_s (j_{\nu,q} - j_{\nu - 1/2,q})/R$, with the fundamental-mode fingerprint $\delta = (j_{1,1} - \pi)/j_{1,1} = 0.180105\ldots$, an 18.01\% drop (TAP-003). The associated entropy defect seeds a conjectural curvature source, the entropy-fold tensor $\Sigma_{\mathrm{half}} = \ell_P^2 (\nabla_\mu \nabla_\nu - g_{\mu\nu}\Box)(\Delta S_{\mathrm{half}}/k_B)$ (TAP-004), which joins matter and acoustic stress in an effective source (TAP-005) and accumulates causally through the normalized past-directed kernel $K(t,\tau) = \tau_{\mathrm{dec}}^{-1} e^{-(t-\tau)/\tau_{\mathrm{dec}}}\Theta(t-\tau)$ (TAP-006) into accumulated curvature $G_{\mathrm{acc}} = \frac{8\pi G}{c^4}\int K\, T_{\mathrm{eff}}\, d\tau$ (TAP-007). Crucially, ordinary mass-energy accounting is preserved exactly: Planck-scaled gravitational charges $q_g = m/m_P$ with isotope-level binding-energy subtraction (TAP-009, TAP-010) and $1/N$ large-number smoothing (TAP-011) keep the standard ledger intact. The falsifiable claim is the residual: after subtracting rest mass, binding energy, ordinary acoustic stress, and standard stress-energy, $\Delta G_{\mathrm{res}} = G_{\mathrm{acc}} - G_{\mathrm{matter}} = G_{\mathrm{sound}} + \ell_P^{-2}\int K\, \Sigma_{\mathrm{half}}\, d\tau$ should remain (TAP-012). Eleven of twelve obligations carry passing Wolfram certificates. Source equations are registered as ID10793--ID10860. A closing development reads the fold process as the foundation of time itself, with three numerical anchors: a parameter-free clock period $\tau_{\mathrm{fold}} = 2\pi R / (v_s (j_{1,1} - \pi))$, a cosmological tick of $7.56$ Gyr equal to $0.52$--$0.57$ of the Hubble time from independent measurements, and exact factor-4 proximity to the Margolus--Levitin quantum speed limit.
+\end{abstract}
+
+\section{Introduction: why the series needs a bridge}
+\label{sec:intro}
+
+A unification program earns its keep at the seams. Paper V recovered gravitation as the accumulated response to mass-energy transport, terminating on the Poisson closure ID1816. Paper VII will derive matter itself from vacuum energy crossing a creation threshold, terminating---deliberately---on the \emph{same} closure. Two spines sharing a terminal node is elegant bookkeeping, but it raises a question that decides whether the program is physics or accounting fiction: \emph{when the new-matter ledger and the gravity ledger are both balanced, is there anything left over?}
+
+The registry's answer is a narrow residual mechanism, and its narrowness is the point. The conservative reading is enforced throughout: ordinary mass-energy remains the accounting layer, exactly as in standard physics, to isotope-level precision. The new claim is confined to a single, subtractable, sign-definite prediction: a hyperspherical half-Bessel mode drop creates an entropy-fold correction that accumulates causally into curvature \emph{beyond} matter-only stress-energy. If the subtraction leaves nothing, the bridge falls and Papers V and VII must join some other way. If it leaves the predicted residual, the enclosure's mode structure is doing gravitational work.
+
+The chain reads:
+\begin{equation*}
+\begin{gathered}
+\text{hyperspherical resonance} \to \text{half-Bessel drop} \to \text{entropy-fold residual} \to \text{causal accumulation} \\
+\to \text{curvature residual} \to \text{ordinary mass-energy accounting} \to \text{matter source}.
+\end{gathered}
+\end{equation*}
+Its formal skeleton is a set of twelve curated obligations, TAP-BESSEL-001 through TAP-BESSEL-012 (abbreviated TAP-001\ldots TAP-012 below), with source witnesses extracted from the consolidated derivation \texttt{getting\_closer.md}, whose unique displayed equation blocks are minted into the canonical registry as ID10793--ID10860 with a full source-line crosswalk. In the formal pipeline, the bridge's Isabelle focus theory imports \emph{both} \texttt{TZPID\_Gravity\_Focus} and \texttt{TZPID\_EnergyMatter\_Focus}---the proof-level expression of its position between Papers V and VII.
+
+\section{The enclosure's radial mathematics}
+\label{sec:bessel}
+
+\subsection{The Bessel equation in a four-dimensional enclosure (TAP-001)}
+
+The radial modes of a hyperspherical enclosure obey the Bessel equation
+\begin{equation}
+x^2 y'' + x y' + (x^2 - \nu^2)\, y = 0, \qquad \nu = \ell + \frac{d - 2}{2},
+\label{eq:besseld}
+\end{equation}
+where $d$ is the number of spatial dimensions and $\ell$ the angular momentum index. For the familiar $d = 3$, $\nu = \ell + 1/2$: half-integer orders, the spherical Bessel functions of Papers I and V. For the enclosure's $d = 4$,
+\begin{equation}
+\nu = \ell + 1,
+\end{equation}
+integer orders (certified as \texttt{hyperspherical\_order\_d4}). The framework's geometric claim from Paper I---that we inhabit the three-dimensional boundary phenomenology of a four-dimensional hyperspherical bulk---thus acquires a spectral fingerprint: \emph{bulk radial modes live at integer Bessel order; boundary radial modes live at half-integer order}. The gap between adjacent half-orders is precisely where the bridge's energetics live.
+
+\subsection{Boundary quantization (TAP-002)}
+
+As throughout the series, the wall selects the spectrum:
+\begin{equation}
+J_{\ell+1}(kR) = 0 \quad \Longrightarrow \quad k_{\ell q} = \frac{j_{\ell+1,\, q}}{R},
+\label{eq:quantization}
+\end{equation}
+with $j_{\nu,q}$ the $q$-th positive zero of $J_\nu$ (certified as \texttt{bessel\_boundary\_quantization}). This is the $d = 4$ lift of the eigenvalue ladder computed in Paper I's worked BAO check.
+
+\subsection{The half-Bessel drop and its fingerprint (TAP-003)}
+
+Consider a transition in which a mode drops by half a Bessel order---the spectral signature of a configuration moving between bulk-like ($\nu$ integer) and boundary-like ($\nu$ half-integer) behaviour, i.e.\ across the dimensional seam of the enclosure. The released energy is finite and computable:
+\begin{equation}
+\Delta E_{\mathrm{half}} = \frac{\hbar v_s}{R}\, \big( j_{\nu,q} - j_{\nu - 1/2,\, q} \big),
+\label{eq:halfdrop}
+\end{equation}
+with $v_s$ the relevant propagation speed. For the fundamental ($\nu = 1$, $q = 1$): $j_{1,1} = 3.83171\ldots$ and $j_{1/2,1} = \pi$, giving the dimensionless fingerprint
+\begin{equation}
+\delta = \frac{j_{1,1} - \pi}{j_{1,1}} = 0.180105\ldots,
+\label{eq:fingerprint}
+\end{equation}
+an $18.01\%$ fundamental-mode drop (certified as \texttt{half\_bessel\_drop\_fraction}). Equation \eqref{eq:fingerprint} is the bridge's most concrete number: a parameter-free, dimension-derived constant that any experimental realization of the mode drop must reproduce.
+
+\section{The entropy fold and the effective source}
+\label{sec:entropy}
+
+\subsection{The entropy-fold tensor (TAP-004)}
+
+A mode drop is irreversible bookkeeping: the defect entropy $\Delta S_{\mathrm{half}}$ produced when the spectrum folds from one order family to the other. The bridge's central conjecture---explicitly flagged Hypothesis\_Only in the obligations ledger---is that this entropy defect seeds curvature through the entropy-fold tensor
+\begin{equation}
+\Sigma_{\mathrm{half}} = \ell_P^2\, \big( \nabla_\mu \nabla_\nu - g_{\mu\nu}\Box \big)\, \frac{\Delta S_{\mathrm{half}}}{k_B},
+\label{eq:entropyfold}
+\end{equation}
+with $\ell_P$ the Planck length: a transverse (identically conserved) second-derivative construction on a dimensionless entropy density, the minimal tensor that can act as a curvature source without violating $\nabla^\nu T_{\mu\nu} = 0$. The guardrail \texttt{entropy\_residual\_isolated} certifies that \eqref{eq:entropyfold} is algebraically separable from the ordinary sectors---the property that makes the subtraction experiment of Section~\ref{sec:residual} well-posed.
+
+\subsection{The effective stress-energy (TAP-005)}
+
+The full source then decomposes into three sectors:
+\begin{equation}
+T_{\mathrm{eff}} = T_{\mathrm{matter}} + T_{\mathrm{sound}} + \frac{c^4}{8\pi G\, \ell_P^2}\, \Sigma_{\mathrm{half}},
+\label{eq:teff}
+\end{equation}
+ordinary matter, ordinary acoustic/resonance stress, and the entropy-fold term. The effective-source decomposition certificate verifies the exact identity
+\begin{equation}
+T_{\mathrm{eff}} - T_{\mathrm{matter}}
+= T_{\mathrm{sound}} + \text{entropy-fold stress}.
+\end{equation}
+Equation \eqref{eq:teff} refines Paper V's $T^{\mathrm{eff}}_{ij} = T^{\mathrm{N}}_{ij} + \delta T_{ij}$: the generic accumulated correction now has a specific spectral origin.
+
+\section{Causal accumulation into curvature}
+\label{sec:accumulation}
+
+\subsection{The kernel (TAP-006)}
+
+Accumulation is implemented by the causal kernel already met in Paper V:
+\begin{equation}
+K(t, \tau) = \tau_{\mathrm{dec}}^{-1}\, e^{-(t - \tau)/\tau_{\mathrm{dec}}}\, \Theta(t - \tau),
+\label{eq:kernel}
+\end{equation}
+past-directed by the step function and normalized to unity (certified as \texttt{kernel\_normalization}: $\int K\, d\tau = 1$). Only the past contributes; a steady source saturates rather than diverges.
+
+\subsection{Accumulated curvature and its decomposition (TAP-007, TAP-008)}
+
+The accumulated curvature is the causal convolution of the effective source,
+\begin{equation}
+G_{\mathrm{acc}} = \frac{8\pi G}{c^4} \int K(t, \tau)\, T_{\mathrm{eff}}(\tau)\, d\tau,
+\label{eq:gacc}
+\end{equation}
+which, by \eqref{eq:teff}, decomposes exactly into matter, sound, and entropy-fold contributions. This is the curvature-residual decomposition certificate. The same kernel applied to effective currents yields the frame-dragging residual (TAP-008, the one obligation whose geometric certificate remains open):
+\begin{equation}
+h^{\mathrm{acc}}_{0a} = -\frac{4G}{c^3} \int G_R \int K\, J^{\mathrm{eff}}_a\, d\tau\, dV',
+\label{eq:framedrag}
+\end{equation}
+with $G_R$ the retarded Green's function---the bridge's point of contact with Paper IV's gravitomagnetic observables.
+
+\section{Ordinary accounting preserved}
+\label{sec:accounting}
+
+The bridge's conservatism is enforced by three obligations that keep the standard mass-energy ledger untouched. The Planck-scaled gravitational charge (TAP-009),
+\begin{equation}
+q_g = \frac{m}{m_P}, \qquad \alpha_G = q_g(X)\, q_g(Y) = \frac{G\, m_X m_Y}{\hbar c},
+\label{eq:charge}
+\end{equation}
+reproduces the gravitational coupling identically (certified as \texttt{planck\_charge\_coupling}). At isotope level (TAP-010),
+\begin{equation}
+q_g(Z, N) = \frac{Z m_p + N m_n + Z m_e - E_{\mathrm{bind}}/c^2}{m_P},
+\label{eq:isotope}
+\end{equation}
+binding energy is subtracted exactly as standard physics requires (certified as \texttt{isotope\_mass\_accounting}). And large-number smoothing (TAP-011),
+\begin{equation}
+Q_g = \sum_i q_{g,i}, \qquad \mathrm{Var}(\bar{q}) = \frac{\sigma_q^2}{N},
+\label{eq:smoothing}
+\end{equation}
+turns particle-level charge sums into the smooth source geometry of Paper V. This is the large-number smoothing certificate. Nothing in the standard ledger is modified; the bridge's entire novelty is what remains \emph{after} this ledger is balanced.
+
+\section{The measurable residual}
+\label{sec:residual}
+
+The terminal obligation (TAP-012, role Falsifiability\_Note) states the prediction as a subtraction:
+\begin{equation}
+\Delta G_{\mathrm{res}} \;=\; G_{\mathrm{acc}} - G_{\mathrm{matter}} \;=\; G_{\mathrm{sound}} + \frac{1}{\ell_P^2} \int K\, \Sigma_{\mathrm{half}}\, d\tau,
+\label{eq:residual}
+\end{equation}
+certified (\texttt{ordinary\_mass\_energy\_residual}) as an exact algebraic identity of the decomposition: after subtracting the ordinary matter contribution, what remains is precisely the acoustic term plus the entropy-fold term. The experimental protocol is therefore a four-step subtraction performed on any system hosting driven hyperspherical (or laboratory-analogue spherical) resonance: subtract rest mass; subtract binding energy via \eqref{eq:isotope}; subtract ordinary sound/resonance stress $G_{\mathrm{sound}}$ (computable from the drive); and test whether a curvature/source residual with the kernel's temporal signature \eqref{eq:kernel} and the fingerprint fraction \eqref{eq:fingerprint} survives. Three discriminators separate the prediction from systematics: the residual must \emph{accumulate causally} (rise during sustained drive with timescale $\tau_{\mathrm{dec}}$, persist after shutoff, decay exponentially); it must \emph{scale with the mode-drop energetics} \eqref{eq:halfdrop}, switching off when the drive avoids half-order transitions; and its fundamental-mode magnitude must carry the parameter-free $18.01\%$ ratio.
+
+\section{Obligations ledger and verification status}
+\label{sec:ledger}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{The twelve bridge obligations.}
+\label{tab:ledger}
+\begin{tabular}{llll}
+\toprule
+ID & Role & Obligation & Certificate \\
+\midrule
+TAP-001 & $d{=}4$ Bessel lift, $\nu = \ell + 1$ & Core\_Definition & pass \\
+TAP-002 & Boundary quantization $k_{\ell q} = j_{\ell+1,q}/R$ & Core\_Definition & pass \\
+TAP-003 & Half-Bessel drop $\Delta E_{\mathrm{half}}$; $\delta = 18.01\%$ & Derived\_Theorem & pass \\
+TAP-004 & Entropy-fold tensor $\Sigma_{\mathrm{half}}$ & Hypothesis\_Only & pass (isolation) \\
+TAP-005 & Effective source decomposition & Derived\_Theorem & pass \\
+TAP-006 & Causal kernel, normalized & Core\_Definition & pass \\
+TAP-007 & Accumulated curvature decomposition & Derived\_Theorem & pass \\
+TAP-008 & Frame-dragging residual & Derived\_Theorem & open (kernel geometry) \\
+TAP-009 & Planck charge preserves coupling & Core\_Definition & pass \\
+TAP-010 & Isotope-level binding subtraction & Core\_Definition & pass \\
+TAP-011 & Large-number smoothing & Derived\_Theorem & pass \\
+TAP-012 & Measurable residual prediction & Falsifiability\_Note & pass \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:ledger} summarizes the ledger. The bridge sits between the two gold spines as
+\begin{equation*}
+\begin{gathered}
+\underbrace{\text{ID7216} \to \cdots \to \text{ID1816}}_{\text{Gravity (Paper V)}}\\
+\Downarrow\\
+\underbrace{\text{TAP-001} \to \text{TAP-003} \to \text{TAP-004}
+\to \text{TAP-007} \to \text{TAP-012}}_{\text{this bridge}}\\
+\Downarrow\\
+\underbrace{\text{ID0024} \to \cdots \to \text{ID1816}}_{\text{Energy-to-Matter (Paper VII)}}.
+\end{gathered}
+\end{equation*}
+with the Isabelle focus theory importing both neighbouring foci and the computational certificate recording the Wolfram pass statuses listed above. Beyond the per-obligation checks, the certificate verifies the structural guardrails:
+\begin{enumerate}
+\item hyperspherical order in $d=4$;
+\item half-Bessel drop fraction, $0.180105\ldots$;
+\item kernel normalization;
+\item effective-source decomposition;
+\item ordinary mass-energy residual;
+\item Planck-charge coupling;
+\item large-number smoothing.
+\end{enumerate}
+
+\section{Worked numbers: the fingerprint across realizations}
+\label{sec:worked}
+
+The bridge's constants are computable in advance for any realization, which is what makes the subtraction protocol concrete. Three scales illustrate.
+
+\textbf{Laboratory acoustic cavity.} A driven spherical resonator of radius $R = 0.1$ m with sound speed $v_s = 1500$ m\,s$^{-1}$ (water-filled) has fundamental eigenfrequencies set by \eqref{eq:quantization} at $f = v_s\, j_{\nu,1}/(2\pi R)$: for $j_{1,1} = 3.83171$, $f \approx 9.15$ kHz; for the half-order neighbour $j_{1/2,1} = \pi$, $f \approx 7.50$ kHz. The half-drop releases $\Delta E_{\mathrm{half}}/E = \delta = 18.01\%$ of the fundamental mode energy per folding event, at a beat-scale frequency difference of $1.65$ kHz---squarely in the measurable band. The curvature residual itself is Planck-suppressed through \eqref{eq:entropyfold} and unobservably small at laboratory energy, but the \emph{spectral} fingerprint---mode pairs at the exact frequency ratio $j_{1,1}/\pi = 1.2197$, folding events releasing the $18.01\%$ fraction with the kernel's exponential signature---is testable acoustics, and a failure there falsifies the mode-drop hypothesis cheaply, before any gravitational claim is engaged.
+
+\textbf{The BAO enclosure.} At the cosmological realization of Paper I ($r_s = 147.05$ Mpc), the same ratio predicts a paired feature: if the principal acoustic node sits at $k_1 r_s = \pi$, the integer-order bulk partner sits at $k r_s = j_{1,1} = 3.83171$, i.e.\ at $k \approx 0.02606$ Mpc$^{-1}$, a $22\%$ offset from the standard node. A stacked analysis of survey power spectra that finds excess structure at the $j_{1,1}/\pi$ offset---beyond what the standard transfer function predicts---would be the cosmological face of the half-Bessel seam; its absence bounds the bulk-mode coupling at that scale.
+
+\textbf{The decay constant.} The kernel timescale $\tau_{\mathrm{dec}}$ is the bridge's one free temporal parameter. The two realizations bracket it from opposite ends: laboratory protocols scan $\tau_{\mathrm{dec}}$ directly through drive-shutoff decay fits, while the cosmological realization constrains $\tau_{\mathrm{dec}}$ against the growth history $D(t)$ already present in ID7257. Consistency of the two estimates is a nontrivial cross-check the framework must survive.
+
+\section{The structure of the entropy-fold tensor}
+\label{sec:structure}
+
+Because TAP-004 is the bridge's only Hypothesis\_Only obligation, its construction deserves scrutiny. Three properties motivate the specific form \eqref{eq:entropyfold}.
+
+\emph{Transversality.} The operator $\nabla_\mu \nabla_\nu - g_{\mu\nu}\Box$ is identically divergence-free on scalars: $\nabla^\mu(\nabla_\mu \nabla_\nu - g_{\mu\nu}\Box)\phi = 0$ up to curvature commutators. The entropy-fold term can therefore be added to $T^{\mathrm{tot}}_{\mu\nu}$ without violating the conservation law $\nabla^\nu T^{\mathrm{tot}}_{\mu\nu} = 0$ that Paper V's unified closure (ID0167) holds exact. Any candidate residual source lacking this property would break the series' own bookkeeping; \eqref{eq:entropyfold} is the minimal construction that does not.
+
+\emph{Dimensional necessity.} The prefactor $\ell_P^2$ and the dimensionless argument $\Delta S_{\mathrm{half}}/k_B$ make $\Sigma_{\mathrm{half}}$ carry dimensions of curvature with no adjustable coupling: the Planck area is forced by dimensional analysis once the source is declared to be entropy rather than energy. This is the same structural move as Jacobson's entropic derivation, but localized: where the thermodynamic derivations source curvature from horizon entropy globally, the entropy fold sources it from a specific, countable spectral event.
+
+\emph{Countability.} $\Delta S_{\mathrm{half}}$ is the defect entropy of a discrete folding---per event, of order $k_B$ times the log of the fold multiplicity---so the residual is built from countable increments with the kernel deciding their persistence. The prediction is therefore granular in principle: residual growth should correlate with the \emph{rate} of half-order transitions, not merely with drive power, and a drive protocol that holds power fixed while moving the mode population across the half-order seam modulates the predicted residual while holding every mundane stress constant. This is the cleanest discriminator the bridge offers.
+
+\section{Demarcation}
+\label{sec:demarcation}
+
+\textbf{Established mathematics and physics:} the Bessel equation and its dimensional lift \eqref{eq:besseld}; the zeros $j_{\nu,q}$ and the exact evaluation of \eqref{eq:fingerprint}; causal convolution kernels; Planck-unit accounting \eqref{eq:charge}--\eqref{eq:isotope}; the statistics of \eqref{eq:smoothing}; transverse tensor constructions of the form appearing in \eqref{eq:entropyfold}.
+
+\textbf{Framework hypotheses, explicitly guarded:} that half-order mode drops occur physically at the enclosure's dimensional seam; that their entropy defect sources curvature via \eqref{eq:entropyfold} (flagged Hypothesis\_Only); and that the accumulated residual \eqref{eq:residual} is nonzero. The bridge is constructed so that a null subtraction experiment cleanly kills the third hypothesis without disturbing Papers V or VII's internal logic---and so that a positive result, with the $18.01\%$ fingerprint and the kernel's temporal signature, could not easily be mimicked by mundane stress.
+
+\section{The fold as the foundation of time}
+\label{sec:time}
+
+The bridge's machinery contains, unplanned, a theory of time---and unlike most such theories it can be backed numerically. The observation is structural: every ingredient that physics ordinarily uses to characterize time appears in this paper as a derived property of the half-Bessel fold process. The fold is irreversible (it produces defect entropy $\Delta S_{\mathrm{half}} > 0$); it is discrete (folds are countable spectral events); it is directed (the kernel's step function $\Theta(t - \tau)$ admits only the past); and it accumulates (the convolution \eqref{eq:gacc} is a running total). These are, respectively, the thermodynamic arrow, the tick, the causal order, and duration. The framework's claim, stated at the strength the evidence supports: \emph{within this corpus, time is not a background parameter on which the fold process runs; time is the bookkeeping of the fold process itself}. Duration is fold count; the arrow is the sign of $\Delta S_{\mathrm{half}}$; causal order is the kernel's support. Three quantitative anchors make the claim more than rhetoric.
+
+\textbf{(i) The tick is parameter-free.} The fold connects the integer-order and half-order fundamentals, whose frequency gap in an enclosure of radius $R$ and propagation speed $v_s$ is $\Delta\omega = v_s\,(j_{1,1} - \pi)/R$, with $j_{1,1} - \pi = 0.690113\ldots$ fixed by the Bessel zeros alone. The associated clock period---the beat time of the dimensional seam---is
+\begin{equation}
+\tau_{\mathrm{fold}} \;=\; \frac{2\pi}{\Delta\omega} \;=\; \frac{2\pi R}{v_s\,(j_{1,1} - \pi)} \;=\; 9.1045\;\frac{R}{v_s},
+\label{eq:tick}
+\end{equation}
+a pure number times the cavity crossing time. For the laboratory realization of Section~\ref{sec:worked} ($R = 0.1$ m, $v_s = 1500$ m\,s$^{-1}$): $\tau_{\mathrm{fold}} = 0.607$ ms (beat frequency $1647$ Hz)---directly measurable. For the cosmological enclosure ($R = r_s = 147.05$ Mpc, $v_s = c/\sqrt{3}$): $\tau_{\mathrm{fold}} = 15.77\, R/c \approx 7.56$ Gyr.
+
+\textbf{(ii) The cosmological tick is half the Hubble time.} The number just computed invites the series' sharpest consistency check. The Hubble time is $t_H = 1/H_0 = 14.51$ Gyr (Planck, $H_0 = 67.4$) or $13.31$ Gyr (local, $H_0 = 73.5$), giving
+\begin{equation}
+\frac{\tau_{\mathrm{fold}}}{t_H} \;=\; 0.52\text{--}0.57 \;\approx\; \tfrac{1}{2}.
+\label{eq:halfhubble}
+\end{equation}
+The inputs are independent measurements: $r_s$ from the CMB acoustic scale, $H_0$ from distance ladders or CMB fits. That the enclosure's half-Bessel clock ticks at order the breathing time of the enclosure itself (Paper VIII's $H = \dot{R}/R$) is exactly what the foundation-of-time reading requires---a fold clock wildly faster or slower than the cosmological evolution it allegedly times would refute the identification. The near-$\tfrac{1}{2}$ value is recorded as an observed coincidence inviting derivation, not asserted as one; its refinement target is to derive the factor from the breathing kinematics (where $\dot{V}/V = 3H$ already supplies natural small fractions) or to show it accidental.
+
+\textbf{(iii) The fold clock runs within a factor of four of the quantum speed limit.} The Margolus--Levitin theorem bounds how fast any system of energy $E$ above its ground state can evolve to an orthogonal state: $t_\perp \geq \pi\hbar/(2E)$. Applied to the fold energy $\Delta E_{\mathrm{half}} = \hbar v_s (j_{1,1} - \pi)/R$ of Eq.~\eqref{eq:halfdrop}, this gives $t_\perp = \pi R/(2 v_s (j_{1,1} - \pi))$, and comparison with \eqref{eq:tick} yields the exact, parameter-free ratio
+\begin{equation}
+t_\perp \;=\; \frac{\tau_{\mathrm{fold}}}{4}.
+\label{eq:qsl}
+\end{equation}
+The fold tick sits a factor of four above the fastest clock quantum mechanics permits at the fold's own energy scale---at every realization, laboratory or cosmological, since the ratio is dimensionless. A fundamental clock should saturate the quantum speed limit up to an $O(1)$ factor; the fold clock does, and the factor is exactly $4$.
+
+Two further consequences tighten the section into the bridge's existing ledger. First, \emph{the kernel's form is now derived rather than postulated}: if folds are independent events at mean rate $1/\tau_{\mathrm{dec}}$, the waiting-time statistics are Poissonian, and the memory kernel of a fold-built clock is necessarily the normalized exponential $K(t,\tau) = \tau_{\mathrm{dec}}^{-1} e^{-(t-\tau)/\tau_{\mathrm{dec}}}\Theta(t-\tau)$---precisely TAP-006. The foundation-of-time reading thus retroactively explains the one functional form the bridge had assumed. Second, it \emph{fixes the bridge's free parameter}: identifying the mean fold interval with the seam beat time predicts $\tau_{\mathrm{dec}} \approx \tau_{\mathrm{fold}}$, i.e.\ $0.6$ ms for the laboratory cavity of Section~\ref{sec:worked}. The drive-shutoff decay measurement specified there now has a predicted value rather than a free fit. And the entropy ledger denominated in folds acquires a minimum entry: each fold, as an irreversible binary spectral event, writes at least $k_B \ln 2$ (the Landauer floor), so the residual's growth rate is bounded below by $k_B \ln 2$ per $\tau_{\mathrm{fold}}$ per participating mode.
+
+Demarcation, as always: items (i) and (iii) are exact mathematics; item (ii) is a measured consistency at the factor-two level; the identification of time with fold bookkeeping is the framework hypothesis these numbers make falsifiable. A laboratory kernel timescale far from $\tau_{\mathrm{fold}}$, or a derived cosmological ratio incompatible with \eqref{eq:halfhubble}, strikes it.
+
+\section{Relation to the series and to standard cosmological accounting}
+\label{sec:relation}
+
+It is worth closing the loop on how the bridge changes---and pointedly does not change---the standard accounting on each side of the seam.
+
+\textbf{On the gravity side (Paper V).} The accumulated-force law $\mathbf{a} = \mathbf{a}_{\mathrm{N}}(1 + \alpha M_{\mathrm{acc}}/M^{(0)})$ left the origin of the accumulated correction abstract. The bridge supplies a candidate microphysics: the entropy-fold stress, accumulated by the same kernel, is one concrete contributor to $M_{\mathrm{acc}}$'s gravitational effect. A bound on Paper V's $\alpha$ therefore propagates into a bound on the product of fold rate and $\tau_{\mathrm{dec}}$ here; the two papers' parameters are not independent, and a joint fit is the correct statistical treatment.
+
+\textbf{On the matter side (Paper VII).} The creation threshold $P_{\mathrm{vac}} \geq P_{\mathrm{crit}}$ needs an energy bookkeeping that says where threshold-crossing energy comes from and what is left behind. The half-Bessel drop provides the discrete energy quantum \eqref{eq:halfdrop} and an entropy ledger for what the fold leaves; the bridge thus equips the creation spine with a mode-resolved source term rather than a bulk assumption. Conversely, Paper VII's regularization of the vacuum sum (ID10165) is what guarantees that the mode populations being folded are finite, so the bridge borrows its convergence from the far side of the seam.
+
+\textbf{Against standard cosmology.} Nothing in the bridge alters nucleosynthesis, recombination, or the standard growth of structure: the entropy-fold term is Planck-suppressed at particle scales, the smoothing law \eqref{eq:smoothing} hides it in bulk matter, and its only macroscopic expression is the slow, kernel-shaped curvature residual \eqref{eq:residual}. The framework's wager is that precision gravitational accounting---laboratory subtraction experiments, secular gravimetry, and stacked survey statistics at the $j_{1,1}/\pi$ offset---is now good enough to see, or kill, a residual of exactly this shape.
+
+\section{Conclusion: the seam made testable}
+\label{sec:conclusion}
+
+The bridge does deliberately little. It preserves every ledger standard physics keeps; it adds one guarded tensor sourced by one spectral event---the half-Bessel drop at the enclosure's dimensional seam---accumulated by one normalized causal kernel; and it exposes one subtraction, Eq.~\eqref{eq:residual}, with one parameter-free fingerprint, Eq.~\eqref{eq:fingerprint}. Eleven of its twelve obligations carry passing certificates; the twelfth (the frame-dragging residual geometry) is the declared open item.
+
+With the seam bridged, the series can cross it. Paper VII takes up the far side: the energy-to-matter logic by which a regularized vacuum energy density builds pressure, crosses the creation threshold $P_{\mathrm{vac}} \geq P_{\mathrm{crit}}$, condenses into pairs, and is fixed in mass by $E = mc^2$ before sourcing the same Poisson closure where this bridge began.
+
+\begin{thebibliography}{13}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited; source equations ID10793--ID10860.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Bessel Residual Bridge}, TZPIDProof archive, bridge spine document and obligations CSV (2026).
+
+\bibitem{source} Trawin, D. A., \emph{Getting Closer} (consolidated derivation), source SHA-1 \texttt{a2a5e54f}, with equation registration crosswalk for the source equations (2026).
+
+\bibitem{paper5} Trawin, D. A., \emph{Gravity as an Accumulated Force}, TZPID Gold Spine Series, Paper V (2026).
+
+\bibitem{paper7} Trawin, D. A., \emph{The Energy-to-Matter Logic}, TZPID Gold Spine Series, Paper VII (2026).
+
+\bibitem{watson} Watson, G. N., \emph{A Treatise on the Theory of Bessel Functions}, Cambridge University Press (1944).
+
+\bibitem{abramowitz} Abramowitz, M., and Stegun, I. A., \emph{Handbook of Mathematical Functions}, Dover (1965). Bessel zeros.
+
+\bibitem{padmanabhan} Padmanabhan, T., \emph{Thermodynamical aspects of gravity: new insights}, Rep.\ Prog.\ Phys.\ \textbf{73}, 046901 (2010). Entropy-sourced curvature comparison point.
+
+\bibitem{jacobson} Jacobson, T., \emph{Thermodynamics of spacetime}, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+
+\bibitem{poisson} Poisson, E., and Will, C. M., \emph{Gravity: Newtonian, Post-Newtonian, Relativistic}, Cambridge University Press (2014). Retarded Green's function methods.
+
+\bibitem{margolus} Margolus, N., and Levitin, L. B., \emph{The maximum speed of dynamical evolution}, Physica D \textbf{120}, 188 (1998). Quantum speed limit used in Section~\ref{sec:time}.
+
+\bibitem{landauer} Landauer, R., \emph{Irreversibility and heat generation in the computing process}, IBM J.\ Res.\ Dev.\ \textbf{5}, 183 (1961). The $k_B \ln 2$ floor per irreversible binary event.
+
+\bibitem{planckh0} Planck Collaboration, \emph{Planck 2018 results. VI}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020); sound horizon $r_s = 147.05$ Mpc and $H_0$ values used in Section~\ref{sec:time}.
+
+\end{thebibliography}
+
+\end{document}

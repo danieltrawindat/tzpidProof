@@ -1,0 +1,397 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:37:07.994148+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0117",
+    "uuid": "53c3c0cf-601b-54c8-b821-de82139c09d8",
+    "registry_id": "registry_id_0117",
+    "canonical_title": "Spin-Coherence Order Parameter",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0117/ID0117.TEX",
+      "json": "D:/TZPID/TZPID/ID0117/ID0117.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0117/ID0117.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "This order parameter quantifies how aligned the planetary spins become under the Kuramoto model.",
+    "technical_interpretation": "This order parameter quantifies how aligned the planetary spins become under the Kuramoto model."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}",
+      "r = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|",
+      "\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)"
+    ],
+    "source_section_latex": "\\[\nr e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\n\\]\n\\[\nr = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|\n\\]\n\\[\n\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Complex Mean Phase",
+      "formula_latex_blocks": [
+        "r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}"
+      ],
+      "interpretive_role": "This packages all planetary phases into one complex mean."
+    },
+    {
+      "step": 2,
+      "component_title": "Coherence Magnitude",
+      "formula_latex_blocks": [
+        "r = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|"
+      ],
+      "interpretive_role": "This extracts the degree of alignment from that complex mean."
+    },
+    {
+      "step": 3,
+      "component_title": "Collective Phase",
+      "formula_latex_blocks": [
+        "\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)"
+      ],
+      "interpretive_role": "This closes the progression by recovering the shared mean angle of the ensemble."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\psi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{j=1}^{N}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\arg$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Spin-Coherence Order Parameter\nCanonical operator translation\neq0117_1 = HoldForm[r e^(i) == (1)/(N)Sumj==1^(N) e^(i_j)];\neq0117_2 = HoldForm[r == |(1)/(N)Sumj==1^(N) e^(i_j)|];\neq0117_3 = HoldForm[== ((1)/(N)Sumj==1^(N) e^(i_j))];\n\nTRAWIN closure composition\nTRAWINClosure0117[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0117 := HoldForm[{eq0117_1, eq0117_2, eq0117_3}];\nResult0117 := TRAWINClosure0117[K0117];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}",
+          "normalized_latex": "r*Exp[I*psi]==((1)/(N))SumJ1^(N)Exp[I*thetaJ]",
+          "wolfram_input": "r*Exp[I*psi]==((1)/(N))SumJ1^(N)Exp[I*thetaJ]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[r*Exp[I*psi] == (1/N)*SumJ1^N*Exp[I*thetaJ]]",
+          "texform_roundtrip": "e^{i \\psi } r=\\frac{e^{i \\text{thetaJ}} \\text{SumJ1}^N}{N}",
+          "messages": []
+        },
+        {
+          "latex": "r = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|",
+          "normalized_latex": "r==Abs[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+          "wolfram_input": "r==Abs[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[r == Abs[(1/N)*SumJ1^N*Exp[I*thetaJ]]]",
+          "texform_roundtrip": "r=e^{-\\Im(\\text{thetaJ})} \\left| \\frac{\\text{SumJ1}^N}{N}\\right|",
+          "messages": []
+        },
+        {
+          "latex": "\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)",
+          "normalized_latex": "psi==arg[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+          "wolfram_input": "psi==arg[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[psi == arg[(1/N)*SumJ1^N*Exp[I*thetaJ]]]",
+          "texform_roundtrip": "\\psi =\\arg \\left(\\frac{e^{i \\text{thetaJ}} \\text{SumJ1}^N}{N}\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0117 generated source-truth Wolfram model *)\nClearAll[K0117, TRAWINClosure0117];\neq0117$1 = HoldForm[r*Exp[I*psi] == (1/N)*SumJ1^N*Exp[I*thetaJ]];\neq0117$2 = HoldForm[r == Abs[(1/N)*SumJ1^N*Exp[I*thetaJ]]];\neq0117$3 = HoldForm[psi == arg[(1/N)*SumJ1^N*Exp[I*thetaJ]]];\nK0117 = HoldForm[{eq0117$1, eq0117$2, eq0117$3}];\nTRAWINClosure0117[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0117 = TRAWINClosure0117[K0117];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nr e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\n\\]\n\\[\nr = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|\n\\]\n\\[\n\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)\n\\]\n\n\\paragraph{Primary Derivation.}\nThis argument establishes the identity through direct evaluation of the expression. which confirms the stated equality.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nIt pertains to the fields or functions just described. Within the TRAWIN framework, the equation functions as the generalized carrier for the entry’s information content. Within the CHL view, the derivation provides a certificate connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0117/ID0117.source_truth.json",
+    "entry_id": "ID0117",
+    "registry_id": "registry_id_0117",
+    "canonical_title": "Spin-Coherence Order Parameter",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0117/ID0117.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "53c3c0cf-601b-54c8-b821-de82139c09d8",
+    "RTEID": "RTE:P454.3370:T0.7486",
+    "poloidal_theta_rad": "454.3370",
+    "toroidal_phi_rad": "0.7486",
+    "rteid_source": "manifest",
+    "PiID": "6470938446095",
+    "TZPi": "8",
+    "PiPE_position": "124",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "psi",
+          "sum",
+          "theta",
+          "r",
+          "e",
+          "i",
+          "N",
+          "j"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0117\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Spin-Coherence Order Parameter\", \"latex\" -> \"r e^{i\\\\psi} = \\\\frac{1}{N}\\\\sum_{j=1}^{N} e^{i\\\\theta_j}\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"psi\", \"sum\", \"theta\", \"r\", \"e\", \"i\", \"N\", \"j\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "r = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "sum",
+          "theta",
+          "r",
+          "N",
+          "j",
+          "e",
+          "i"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "absolute_value_or_norm_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0117\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Spin-Coherence Order Parameter\", \"latex\" -> \"r = \\\\left|\\\\frac{1}{N}\\\\sum_{j=1}^{N} e^{i\\\\theta_j}\\\\right|\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"sum\", \"theta\", \"r\", \"N\", \"j\", \"e\", \"i\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"absolute_value_or_norm_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "psi",
+          "arg",
+          "sum",
+          "theta",
+          "N",
+          "j",
+          "e",
+          "i"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0117\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Spin-Coherence Order Parameter\", \"latex\" -> \"\\\\psi = \\\\arg\\\\!\\\\left(\\\\frac{1}{N}\\\\sum_{j=1}^{N} e^{i\\\\theta_j}\\\\right)\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"psi\", \"arg\", \"sum\", \"theta\", \"N\", \"j\", \"e\", \"i\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

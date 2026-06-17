@@ -1,0 +1,415 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T20:45:35.596810+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0028",
+    "uuid": "e7054e64-47d8-5f5d-82d7-966c10279112",
+    "registry_id": "registry_id_0028",
+    "canonical_title": "Constraint: TZP Torsion Localisation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0028/ID0028.TEX",
+      "json": "D:/TZPID/TZPID/ID0028/ID0028.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0028/ID0028.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The torsion of the Trawinistic connection vanishes away from the zero point and is allowed only as a finite, localized residue concentrated at the anchor.",
+    "technical_interpretation": "The torsion tensor T($\\nabla$T)T(\\nabla\\^{}\\{\\text\\{T\\}\\})T($\\nabla$T) vanishes for all x$\\neq$px \\neq px=p and satisfies $\\int$NTa\\_ bc dnx=Na\\_ bc\\int\\_\\{\\mathcal\\{N\\}\\} T\\textsuperscript{\\{a\\}\\textbackslash\\_\\{\\textbackslash,bc\\}\\textbackslash,\\text\\{d\\}}n x = N\\^{}\\{a\\}\\textbackslash\\_\\{\\textbackslash,bc\\}\\int$NTa\\_bcdnx=Na\\_bc for any neighbourhood N\\mathcal\\{N\\}N containing ppp, where Na\\_ bcN\\^{}\\{a\\}\\textbackslash\\_\\{\\textbackslash,bc\\}Na\\_bc is a fixed finite tensor capturing torsion concentrated at the TZP.\\\\\\"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "T(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)",
+      "\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}"
+    ],
+    "source_section_latex": "\\[\nT(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)\n\\]\n\\[\n\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}\n\\]\nfor every neighborhood \\(\\mathcal N\\) containing \\(p\\)."
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Exterior Vanishing of Torsion",
+      "formula_latex_blocks": [
+        "T(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)"
+      ],
+      "interpretive_role": "This forces the regular manifold to behave like an ordinary torsion-free geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Localized Integrated Torsion Residue",
+      "formula_latex_blocks": [
+        "\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}"
+      ],
+      "interpretive_role": "This replaces distributed torsion with a finite localized residue around the anchor."
+    },
+    {
+      "step": 3,
+      "component_title": "Neighborhood-Independent Localization Rule",
+      "formula_latex_blocks": [
+        "\\mathcal N \\ni p"
+      ],
+      "interpretive_role": "This closes the progression by requiring the same finite residue for every enclosing neighborhood, which is the signature of point localization."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\nabla^{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\neq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{\\mathcal N}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\ni$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T(\\nabla^{T})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T^{a}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N^{a}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Constraint: TZP Torsion Localisation\nCanonical operator translation\neq0028_1 = HoldForm[T(Grad^(T))==0 (x != p)];\neq0028_2 = HoldForm[Integrate N T^(a)()bc d^(n)x == N^(a)()bc];\n\nTRAWIN closure composition\nTRAWINClosure0028[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0028 := HoldForm[{eq0028_1, eq0028_2}];\nResult0028 := TRAWINClosure0028[K0028];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "T(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)",
+          "normalized_latex": "T[Grad^(T)]==0(x!=p)",
+          "wolfram_input": "T[Grad^(T)]==0(x!=p)",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[T[Grad^T] == 0*(x != p)]",
+          "texform_roundtrip": "T\\left(\\text{Grad}^T\\right)=0",
+          "messages": []
+        },
+        {
+          "latex": "\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}",
+          "normalized_latex": "IntegralN*T^(a)()_(bc)d^(n)x==N^(a)()_(bc)",
+          "wolfram_input": "IntegralOver[NRegion, TorsionTensorDensity[a,b,c]*dNx] == TorsionChargeN[a,b,c]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers",
+            "entry-specific Wolfram override applied",
+            "override_source=entry_specific_salvage",
+            "override_reason=Recover torsion integral notation from malformed superscript/subscript extraction."
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[IntegralOver[NRegion, TorsionTensorDensity[a, b, c]*dNx] == TorsionChargeN[a, b, c]]",
+          "texform_roundtrip": "\\text{IntegralOver}(\\text{NRegion},\\text{dNx} \\text{TorsionTensorDensity}(a,b,c))=\\text{TorsionChargeN}(a,b,c)",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal N \\ni p",
+          "normalized_latex": "\\mathcal N \\ni p",
+          "wolfram_input": "Contains[N,p]",
+          "normalization_notes": [
+            "\\ni normalized to Contains[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Contains[N, p]]",
+          "texform_roundtrip": "\\text{Contains}(N,p)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0028 generated source-truth Wolfram model *)\nClearAll[K0028, TRAWINClosure0028];\neq0028$1 = HoldForm[T[Grad^T] == 0*(x != p)];\neq0028$2 = HoldForm[IntegralOver[NRegion, TorsionTensorDensity[a, b, c]*dNx] == TorsionChargeN[a, b, c]];\neq0028$3 = HoldForm[Contains[N, p]];\nK0028 = HoldForm[{eq0028$1, eq0028$2, eq0028$3}];\nTRAWINClosure0028[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0028 = TRAWINClosure0028[K0028];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nT(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)\n\\]\n\\[\n\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}\n\\]\nfor every neighborhood \\(\\mathcal N\\) containing \\(p\\).\n\n\\paragraph{Primary Derivation.}\nThis condition \\( T(\\nabla^{\\mathrm{T}})=0 \\) enforces a normalization. It sets the quantity to a fixed value away from special points and introduces a delta-function source at those points, ensuring that the integral of the quantity equals the specified constant.\n\\paragraph{Equation Type.}\nThis statement is classified as a normalization relation.\n\n\\paragraph{Interpretation.}\nThis relation applies to the quantities defined above. Within the TRAWIN framework, the equation functions as the normalized carrier for the entry’s information content. According to CHL, the derivation provides a certificate connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "by simp (fallback)",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "id": "ID0028",
+        "title": "Constraint: TZP Torsion Localisation",
+        "canonical_claim": "The torsion of the Trawinistic connection vanishes away from the zero point and is allowed only as a finite, localized residue concentrated at the anchor.",
+        "proof_lane": "L1 Source-traceable statement",
+        "exact_language": "This source (Levi‑Civita connection) supports the theorem analogue (torsion) by showing that Because the Levi‑Civita connection is torsion‑free, torsion vanishes on a manifold endowed with this connection.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Levi‑Civita connection",
+        "url": "https://mathworld.wolfram.com/Levi-CivitaConnection.html",
+        "doi_or_arxiv": "",
+        "source_type": "reference article",
+        "relevance": "Because the Levi‑Civita connection is torsion‑free, torsion vanishes on a manifold endowed with this connection. This supports the constraint that torsion is localized at the zero point and vanishes elsewhere.",
+        "supported_component": "theorem analogue (torsion)",
+        "confidence": "medium",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0028/ID0028.source_truth.json",
+    "entry_id": "ID0028",
+    "registry_id": "registry_id_0028",
+    "canonical_title": "Constraint: TZP Torsion Localisation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0028/ID0028.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "e7054e64-47d8-5f5d-82d7-966c10279112",
+    "RTEID": "RTE:P108.7302:T0.1792",
+    "poloidal_theta_rad": "108.7302",
+    "toroidal_phi_rad": "0.1792",
+    "rteid_source": "manifest",
+    "PiID": "7950288419716",
+    "TZPi": "8",
+    "PiPE_position": "35",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "T(\\nabla^{\\mathrm{T}})=0\n\\qquad (x\\neq p)",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "nabla",
+          "neq",
+          "T",
+          "x",
+          "p"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0028\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constraint: TZP Torsion Localisation\", \"latex\" -> \"T(\\\\nabla^{\\\\mathrm{T}})=0\\n\\\\qquad (x\\\\neq p)\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"nabla\", \"neq\", \"T\", \"x\", \"p\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\int_{\\mathcal N}\nT^{a}{}_{bc}\\,d^{n}x\n=\nN^{a}{}_{bc}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "int",
+          "N",
+          "T",
+          "a",
+          "bc",
+          "d",
+          "n",
+          "x"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0028\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constraint: TZP Torsion Localisation\", \"latex\" -> \"\\\\int_{\\\\mathcal N}\\nT^{a}{}_{bc}\\\\,d^{n}x\\n=\\nN^{a}{}_{bc}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"int\", \"N\", \"T\", \"a\", \"bc\", \"d\", \"n\", \"x\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

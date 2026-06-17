@@ -1,0 +1,8 @@
+% Auto-generated source-truth intake stub for ID4649.
+\tzpentry{ID4649}{Radius Radians Center Center Relation}
+\paragraph{Canonical Statement.}
+ID4649 introduces Radius Radians Center Center Relation as a source-extracted canonical equation candidate. The equation is promoted from the Tier A equation-source intake and remains pending source-context expansion, duplicate review against the earlier TZPID corpus, Wolfram normalization, symbol-key enrichment, and derivation/proof-lane construction.
+\paragraph{Canonical Equation.}
+$$ DECLARE radius_radians FLOAT8; center_x FLOAT8; center_y FLOAT8; center_z FLOAT8; BEGIN -- Convert radius to radians (simple division) radius_radians := radius_meters / 6371000.0; -- Earth radius in meters -- Get center point coordinates (simple array lookup) SELECT x, y, z INTO center_x, center_y, center_z FROM daansphere_base WHERE daansphere_base.sphere_index = center.sphere_index; -- Find all points within radius using dot product RETURN QUERY SELECT b.sphere_index, acos(LEAST(1.0, b.x * center_x + b.y * center_y + b.z * center_z)) * 6371000.0 as distance FROM daansphere_base b WHERE (b.x * center_x + b.y * center_y + b.z * center_z) > cos(radius_radians) ORDER BY (b.x * center_x + b. ...
+\paragraph{Registry Metadata.}
+UUID: \texttt{f4481643-e17f-5dc0-86d5-1c6f9ddbdc1f}. PiID: \texttt{PiID-4649}. LOC: \texttt{QA - Mathematics: geometry and topology}. arXiv: \texttt{math.DG}.

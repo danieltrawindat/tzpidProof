@@ -1,0 +1,367 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:36:36.452612+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0662",
+    "uuid": "7eada9f5-aecb-5ecc-b79f-3694203c73b7",
+    "registry_id": "registry_id_0662",
+    "canonical_title": "Convergence Locus Equation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0662/ID0662.TEX",
+      "json": "D:/TZPID/TZPID/ID0662/ID0662.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0662/ID0662.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records convergence locus equation through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "=R\\textasciicircum{}\\{wedge\\}3"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].",
+      "i\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle.",
+      "\\mathcal{A}_{\\mathrm{TZP}}(\\mathrm{id}_{0662})=\\mathcal{A}_{\\mathrm{adm}}"
+    ],
+    "source_section_latex": "\\[\n\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].\n\\]\n\\[\ni\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle.\n\\]\n\\[\n\\mathcal{A}_{\\mathrm{TZP}}(\\mathrm{id}_{0662})=\\mathcal{A}_{\\mathrm{adm}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Canonical Definition",
+      "formula_latex_blocks": [
+        "\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho]."
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Support Relation",
+      "formula_latex_blocks": [
+        "i\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle."
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "\\mathcal{A}_{\\mathrm{TZP}}(\\mathrm{id}_{0662})=\\mathcal{A}_{\\mathrm{adm}}"
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\psi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rangle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{TZP}(id_{0662})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{adm}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Convergence Locus Equation\nCanonical operator translation\neq0662_1 = HoldForm[(drho)/(dt) == -(i)/(hbar)[H,rho]];\neq0662_2 = HoldForm[ihbar (d)/(dt)| == H|];\neq0662_3 = HoldForm[(A)TZP(id0662)==(A)adm];\n\nTRAWIN closure composition\nTRAWINClosure0662[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0662 := HoldForm[{eq0662_1, eq0662_2, eq0662_3}];\nResult0662 := TRAWINClosure0662[K0662];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].",
+          "normalized_latex": "((drho)/(dt))==-((i)/(hbar))[H,rho]",
+          "wolfram_input": "((drho)/(dt))==-((i)/(hbar))[H,rho]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[drho/dt == -(i/hbar)[H, rho]]",
+          "texform_roundtrip": "\\frac{\\text{drho}}{\\text{dt}}=-\\frac{i}{\\text{hbar}}(H,\\rho )",
+          "messages": []
+        },
+        {
+          "latex": "i\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle.",
+          "normalized_latex": "ihbar[(d)/(dt)]Abs[psi]==Hpsi",
+          "wolfram_input": "ihbar[(d)/(dt)]Abs[psi]==Hpsi",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ihbar[d/dt]*Abs[psi] == Hpsi]",
+          "texform_roundtrip": "| \\psi |  \\text{ihbar}\\left(\\frac{d}{\\text{dt}}\\right)=\\text{Hpsi}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{A}_{\\mathrm{TZP}}(\\mathrm{id}_{0662})=\\mathcal{A}_{\\mathrm{adm}}",
+          "normalized_latex": "ATZP[id0662]==AAdm",
+          "wolfram_input": "ATZP[id0662]==AAdm",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ATZP[id0662] == AAdm]",
+          "texform_roundtrip": "\\text{ATZP}(\\text{id0662})=\\text{AAdm}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0662 generated source-truth Wolfram model *)\nClearAll[K0662, TRAWINClosure0662];\neq0662$1 = HoldForm[drho/dt == -(i/hbar)[H, rho]];\neq0662$2 = HoldForm[ihbar[d/dt]*Abs[psi] == Hpsi];\neq0662$3 = HoldForm[ATZP[id0662] == AAdm];\nK0662 = HoldForm[{eq0662$1, eq0662$2, eq0662$3}];\nTRAWINClosure0662[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0662 = TRAWINClosure0662[K0662];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFrom Schrödinger evolution:\n\\begin{equation}\ni\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle.\n\\end{equation}\n\nConstruct density matrix $\\rho = |\\psi\\rangle\\langle \\psi|$ and differentiate:\n\\begin{equation}\n\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].\n\\end{equation}\n\n\\paragraph{Interpretation.}\nClosed-system evolution is unitary.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0662/ID0662.source_truth.json",
+    "entry_id": "ID0662",
+    "registry_id": "registry_id_0662",
+    "canonical_title": "Convergence Locus Equation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0662/ID0662.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7eada9f5-aecb-5ecc-b79f-3694203c73b7",
+    "RTEID": "RTE:P2543.5105:T4.1909",
+    "poloidal_theta_rad": "2543.5105",
+    "toroidal_phi_rad": "4.1909",
+    "rteid_source": "manifest",
+    "PiID": "4953430146549",
+    "TZPi": "0",
+    "PiPE_position": "669",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\frac{d\\rho}{dt} = -\\frac{i}{\\hbar}[H,\\rho].",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "rho",
+          "hbar",
+          "dt",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0662\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Convergence Locus Equation\", \"latex\" -> \"\\\\frac{d\\\\rho}{dt} = -\\\\frac{i}{\\\\hbar}[H,\\\\rho].\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"rho\", \"hbar\", \"dt\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "i\\hbar \\frac{d}{dt}|\\psi\\rangle = H|\\psi\\rangle.",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "hbar",
+          "psi",
+          "rangle",
+          "i",
+          "dt",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "absolute_value_or_norm_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0662\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Convergence Locus Equation\", \"latex\" -> \"i\\\\hbar \\\\frac{d}{dt}|\\\\psi\\\\rangle = H|\\\\psi\\\\rangle.\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"hbar\", \"psi\", \"rangle\", \"i\", \"dt\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"absolute_value_or_norm_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\mathcal{A}_{\\mathrm{TZP}}(\\mathrm{id}_{0662})=\\mathcal{A}_{\\mathrm{adm}}",
+        "numeric_atoms": [
+          "0662"
+        ],
+        "symbolic_tokens": [],
+        "candidate_wolfram_input": "HoldForm[calA$TZP[id$n0662]==calA$adm]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0662\", 3, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Convergence Locus Equation\", \"latex\" -> \"\\\\mathcal{A}_{\\\\mathrm{TZP}}(\\\\mathrm{id}_{0662})=\\\\mathcal{A}_{\\\\mathrm{adm}}\", \"numericAtoms\" -> {0662}, \"symbolicTokens\" -> {}, \"candidateWolframInput\" -> \"HoldForm[calA$TZP[id$n0662]==calA$adm]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

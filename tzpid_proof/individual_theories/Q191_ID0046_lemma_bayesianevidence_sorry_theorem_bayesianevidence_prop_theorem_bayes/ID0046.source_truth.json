@@ -1,0 +1,287 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:31:18.120795+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0046",
+    "uuid": "59e1fc03-0c22-567b-8ca0-fc7fc16122f1",
+    "registry_id": "registry_id_0046",
+    "canonical_title": "Order-of-Magnitude Invariance Across 47 Orders of Scale",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0046/ID0046.TEX",
+      "json": "D:/TZPID/TZPID/ID0046/ID0046.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0046/ID0046.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The unification theory predicts that properly normalised physical quantities maintain similar magnitudes over an enormous range of scales, highlighting deep structural consistency.",
+    "technical_interpretation": "The unification theory predicts that properly normalised physical quantities maintain similar magnitudes over an enormous range of scales, highlighting deep structural consistency."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{R}\n=\n\\frac{Q}{Q'}",
+      "\\left|\\log_{10}\\mathcal{R}\\right| \\leq 1"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{R}\n=\n\\frac{Q}{Q'}\n\\]\n\\[\n\\left|\\log_{10}\\mathcal{R}\\right| \\leq 1\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Paired Observable",
+      "formula_latex_blocks": [
+        "(Q, Q')"
+      ],
+      "interpretive_role": "This identifies the quantity being compared across two widely separated scales."
+    },
+    {
+      "step": 2,
+      "component_title": "Normalized Scale Ratio",
+      "formula_latex_blocks": [
+        "\\mathcal{R}\n=\n\\frac{Q}{Q'}"
+      ],
+      "interpretive_role": "This forms the direct cross-scale comparison statistic."
+    },
+    {
+      "step": 3,
+      "component_title": "One-Decade Invariance Window",
+      "formula_latex_blocks": [
+        "\\left|\\log_{10}\\mathcal{R}\\right| \\leq 1"
+      ],
+      "interpretive_role": "This closes the progression by bounding acceptable drift to a single order of magnitude despite the enormous scale span."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0046}$",
+        "description": "canonical registry object for entry ID 0046."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0046}$",
+        "name": "canonical registry object for entry ID 0046.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\log_{10}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\leq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Q$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Order-of-Magnitude Invariance Across 47 Orders of Scale\nCanonical operator translation\neq0046_1 = HoldForm[(R) == (Q)/(Q')];\neq0046_2 = HoldForm[|10(R)| <= q 1];\n\nTRAWIN closure composition\nTRAWINClosure0046[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0046 := HoldForm[{eq0046_1, eq0046_2}];\nResult0046 := TRAWINClosure0046[K0046];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{R}\n=\n\\frac{Q}{Q'}",
+          "normalized_latex": "R==((Q)/(Q'))",
+          "wolfram_input": "R==((Q)/(Q'))",
+          "normalization_notes": [
+            "mathcal unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[R == Q/Derivative[1][Q]]",
+          "texform_roundtrip": "R=\\frac{Q}{Q'}",
+          "messages": []
+        },
+        {
+          "latex": "\\left|\\log_{10}\\mathcal{R}\\right| \\leq 1",
+          "normalized_latex": "Abs[log10*R]<=1",
+          "wolfram_input": "Abs[log10*R]<=1",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Abs[log10*R] <= 1]",
+          "texform_roundtrip": "| \\text{log10} R| \\leq 1",
+          "messages": []
+        },
+        {
+          "latex": "(Q, Q')",
+          "normalized_latex": "Tuple[Q,Q']",
+          "wolfram_input": "Tuple[Q,Q']",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Tuple[Q, Derivative[1][Q]]]",
+          "texform_roundtrip": "\\text{Tuple}\\left(Q,Q'\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0046 generated source-truth Wolfram model *)\nClearAll[K0046, TRAWINClosure0046];\neq0046$1 = HoldForm[R == Q/Derivative[1][Q]];\neq0046$2 = HoldForm[Abs[log10*R] <= 1];\neq0046$3 = HoldForm[Tuple[Q, Derivative[1][Q]]];\nK0046 = HoldForm[{eq0046$1, eq0046$2, eq0046$3}];\nTRAWINClosure0046[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0046 = TRAWINClosure0046[K0046];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{Q}{Q'}\n=\n\\mathcal{O}(1).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $Q$ and $Q'$ be corresponding quantities related by a scaling map between laboratory and astrophysical systems.\n\nIf the scaling preserves the essential dimensionless structure, then the transformed quantity should not diverge across the mapped systems. Thus the ratio:\n\n\\begin{equation}\n\\frac{Q}{Q'}\n\\end{equation}\n\nmust remain bounded within a finite order-of-magnitude interval.\n\nThis boundedness condition is expressed as:\n\n\\begin{equation}\n\\boxed{\n\\frac{Q}{Q'}\n=\n\\mathcal{O}(1).\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe scaling relation is valid when corresponding quantities remain order-equivalent despite extreme differences in physical size.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "by simp (fallback)",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0046/ID0046.source_truth.json",
+    "entry_id": "ID0046",
+    "registry_id": "registry_id_0046",
+    "canonical_title": "Order-of-Magnitude Invariance Across 47 Orders of Scale",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0046/ID0046.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "59e1fc03-0c22-567b-8ca0-fc7fc16122f1",
+    "RTEID": "RTE:P178.6282:T0.2943",
+    "poloidal_theta_rad": "178.6282",
+    "toroidal_phi_rad": "0.2943",
+    "rteid_source": "manifest",
+    "PiID": "7510582097494",
+    "TZPi": "2",
+    "PiPE_position": "53",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

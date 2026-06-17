@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11205",
+    "uuid": "1e2efd43-44be-53e1-a78d-490129e4b55a",
+    "registry_id": "registry_ID11205",
+    "canonical_title": "Phone2 CMBEmergenceTheorem — T Vacuum Tzp T Μν Tzp Exp -R 2/Ξ Coherence 2"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_009",
+    "anchor_title": "CMBEmergenceTheorem",
+    "anchor_source_file": "UnificationComparison.txt",
+    "anchor_line_number": "999",
+    "mapping_method": "nearest_same_source",
+    "line_distance": "598"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_009 CMBEmergenceTheorem, extracted from UnificationComparison.txt line 401, with canonical equation $T_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]$.",
+    "technical_interpretation": "ID11205 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 401. Equation grounding: T_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "T_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]"
+    ],
+    "source_section_latex": "\\[\nT_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]\n\\]",
+    "wolfram_form_hint": "T_vacuum = ⟨TZP|T^muν|TZP⟩ * Exp[-r^2/ξ_coherence^2]"
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "UnificationComparison.txt line 401",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=644; anchor=PHONE2_ANCHOR_009 CMBEmergenceTheorem; domain=general_math; mapping=nearest_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_009 CMBEmergenceTheorem. Source: UnificationComparison.txt line 401.",
+    "encyclopedia": "ID11205 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 401. Equation grounding: T_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]",
+    "source_file": "UnificationComparison.txt",
+    "line_number": "401",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_equation_parse_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "equation_candidate",
+      "wolfram_candidate": "Tvacuum == ⟨TZP|T^munu|TZP⟩ * Exp[-r^2/ξ_coherence^2]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_equation_parse_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11205",
+    "title": "Phone2 CMBEmergenceTheorem — T Vacuum Tzp T Μν Tzp Exp -R 2/Ξ Coherence 2",
+    "uuid": "1e2efd43-44be-53e1-a78d-490129e4b55a",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43511.5034:T2.5785",
+    "poloidal_theta_rad": "43511.5034",
+    "toroidal_phi_rad": "2.5785",
+    "rteid_source": "computed",
+    "PiID": "1352205117336",
+    "TZPi": "5",
+    "PiPE_position": "11212"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

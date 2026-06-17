@@ -1,0 +1,328 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:31:38.440926+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0050",
+    "uuid": "b7c88850-4e47-5699-933e-a2e1ff58896d",
+    "registry_id": "registry_id_0050",
+    "canonical_title": "Quantum Fields on Curved Manifolds",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0050/ID0050.TEX",
+      "json": "D:/TZPID/TZPID/ID0050/ID0050.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0050/ID0050.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "On a Trawinistic manifold $M$, a quantum field is a section of an appropriate fibre bundle whose dynamics are given by covariant field equations using the Trawinistic connection; field operators satisfy canonical commutation relations adapted to the curved geometry.",
+    "technical_interpretation": "On a Trawinistic manifold $M$, a quantum field is a section of an appropriate fibre bundle whose dynamics are given by covariant field equations using the Trawinistic connection; field operators satisfy canonical commutation relations adapted to the curved geometry."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\phi \\in \\Gamma(E \\to M)",
+      "\\left(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)\\phi = 0"
+    ],
+    "source_section_latex": "\\[\n\\phi \\in \\Gamma(E \\to M)\n\\]\n\\[\n\\left(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)\\phi = 0\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Bundle-Valued Quantum Field",
+      "formula_latex_blocks": [
+        "\\phi \\in \\Gamma(E \\to M)"
+      ],
+      "interpretive_role": "This identifies the field as a geometric section rather than a flat coordinate function."
+    },
+    {
+      "step": 2,
+      "component_title": "Covariant Wave Operator",
+      "formula_latex_blocks": [
+        "\\nabla^{\\mu}\\nabla_{\\mu}\\phi"
+      ],
+      "interpretive_role": "This upgrades ordinary propagation to propagation compatible with the Trawinistic connection."
+    },
+    {
+      "step": 3,
+      "component_title": "Curved-Manifold Field Equation",
+      "formula_latex_blocks": [
+        "\\left(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)\\phi = 0"
+      ],
+      "interpretive_role": "This closes the progression by stating the quantum field dynamics directly on the curved manifold."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\Gamma$",
+        "description": "closed loop, path, or admissible trajectory in the entry domain."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\Gamma$",
+        "name": "closed loop, path, or admissible trajectory in the entry domain.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Gamma(E \\to M)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla^{\\mu}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla_{\\mu}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a(E \\to M)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Section[phi, Bundle[E, M]]\nFieldEquation == F[phi, TrawinD[phi], g] == 0 Grad Grad +\n  m 2 + R, Gamma(E -> M), Grad",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\phi \\in \\Gamma(E \\to M)",
+          "normalized_latex": "\\phi \\in \\Gamma(E \\to M)",
+          "wolfram_input": "Element[phi,Gamma[E->M]]",
+          "normalization_notes": [
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[phi, Gamma[E -> M]]]",
+          "texform_roundtrip": "\\phi \\in \\Gamma (e\\to M)",
+          "messages": []
+        },
+        {
+          "latex": "\\left(\\nabla^{\\mu}\\nabla_{\\mu} + m^{2} + \\xi R\\right)\\phi = 0",
+          "normalized_latex": "(Grad^(mu)GradMu+m^(2)+xi*R)phi==0",
+          "wolfram_input": "(Grad^(mu)GradMu+m^(2)+xi*R)phi==0",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(Grad^mu*GradMu + m^2 + xi*R)*phi == 0]",
+          "texform_roundtrip": "\\phi  \\left(\\text{GradMu} \\text{Grad}^{\\mu }+m^2+R \\xi \\right)=0",
+          "messages": []
+        },
+        {
+          "latex": "\\nabla^{\\mu}\\nabla_{\\mu}\\phi",
+          "normalized_latex": "Grad^(mu)GradMuphi",
+          "wolfram_input": "Grad^(mu)GradMuphi",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Grad^mu*GradMuphi]",
+          "texform_roundtrip": "\\text{GradMuphi} \\text{Grad}^{\\mu }",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0050 generated source-truth Wolfram model *)\nClearAll[K0050, TRAWINClosure0050];\neq0050$1 = HoldForm[Element[phi, Gamma[E -> M]]];\neq0050$2 = HoldForm[(Grad^mu*GradMu + m^2 + xi*R)*phi == 0];\neq0050$3 = HoldForm[Grad^mu*GradMuphi];\nK0050 = HoldForm[{eq0050$1, eq0050$2, eq0050$3}];\nTRAWINClosure0050[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0050 = TRAWINClosure0050[K0050];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Statement.}\nA quantum field on a Trawinistic manifold is a section of an appropriate fibre bundle whose dynamics are governed by covariant field equations using the Trawinistic connection.\n\n\\paragraph{Primary Derivation.}\nLet $E\\to M$ be a fibre bundle over the Trawinistic manifold $M$.  \nA field configuration is a section:\n\n\\begin{equation}\n\\phi:M\\to E .\n\\end{equation}\n\nThe dynamics of the field must respect the geometry of $M$, so ordinary derivatives are replaced by Trawinistic covariant derivatives:\n\n\\begin{equation}\n\\partial_a\\phi\n\\quad\\longrightarrow\\quad\n\\nabla^T_a\\phi .\n\\end{equation}\n\nA generic covariant field equation therefore takes the form:\n\n\\begin{equation}\n\\mathcal{F}\n\\left(\n\\phi,\\nabla^T\\phi,g\n\\right)\n=\n0 .\n\\end{equation}\n\n\\paragraph{Interpretation.}\nQuantum fields on a Trawinistic manifold are geometric objects whose evolution is determined by TZP-compatible covariant differential structure.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0050/ID0050.source_truth.json",
+    "entry_id": "ID0050",
+    "registry_id": "registry_id_0050",
+    "canonical_title": "Quantum Fields on Curved Manifolds",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0050/ID0050.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "b7c88850-4e47-5699-933e-a2e1ff58896d",
+    "RTEID": "RTE:P194.1611:T0.3199",
+    "poloidal_theta_rad": "194.1611",
+    "toroidal_phi_rad": "0.3199",
+    "rteid_source": "manifest",
+    "PiID": "5820974944592",
+    "TZPi": "4",
+    "PiPE_position": "57",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

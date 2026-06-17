@@ -1,0 +1,295 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:25:55.727406+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0180",
+    "uuid": "6f6b7bc2-4a71-531b-ad6a-00926ab79300",
+    "registry_id": "registry_id_0180",
+    "canonical_title": "Stability Threshold at the TZP",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0180/ID0180.TEX",
+      "json": "D:/TZPID/TZPID/ID0180/ID0180.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0180/ID0180.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "When coherence is locally broken, frictional drag and inertia appear; the region acquires a finite signal propagation speed ccc and experiences sequential states---effectively, time begins.",
+    "technical_interpretation": "When coherence is locally broken, frictional drag and inertia appear; the region acquires a finite signal propagation speed ccc and experiences sequential states---effectively, time begins."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\lambda < \\lambda_c",
+      "\\Delta \\mathcal{R}_{\\mathrm{TZP}}(\\lambda_c)=0"
+    ],
+    "source_section_latex": "\\[\n\\lambda < \\lambda_c\n\\]\n\\[\n\\Delta \\mathcal{R}_{\\mathrm{TZP}}(\\lambda_c)=0\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "First Support",
+      "formula_latex_blocks": [
+        "\\lambda < \\lambda_c"
+      ],
+      "interpretive_role": "This support equation moves the entry from the abstract claim toward a concrete first measurable relation."
+    },
+    {
+      "step": 2,
+      "component_title": "Second Support",
+      "formula_latex_blocks": [
+        "\\Delta \\mathcal{R}_{\\mathrm{TZP}}(\\lambda_c)=0"
+      ],
+      "interpretive_role": "This support equation adds the second structural constraint needed to narrow the admissible TRAWIN reading."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Closure",
+      "formula_latex_blocks": [
+        "\\tzpnormalizewrap{\\lambda,\\lambda_c,\\text{stability}}"
+      ],
+      "interpretive_role": "This normalized closure ties the support terms together and closes the progression under the TRAWIN frame."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0180}$",
+        "description": "canonical registry object for entry ID 0180."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0180}$",
+        "name": "canonical registry object for entry ID 0180.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tzpnormalizewrap$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{TZP}(\\lambda_c)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Stability Threshold at the TZP\nCanonical operator translation\neq0180_1 = HoldForm[lambda < lambda_c];\neq0180_2 = HoldForm[Delta (R)TZP(lambda_c)==0];\n\nTRAWIN closure composition\nTRAWINClosure0180[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0180 := HoldForm[{eq0180_1, eq0180_2}];\nResult0180 := TRAWINClosure0180[K0180];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\lambda < \\lambda_c",
+          "normalized_latex": "lambda<lambdaC",
+          "wolfram_input": "lambda<lambdaC",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[lambda < lambdaC]",
+          "texform_roundtrip": "\\lambda <\\text{lambdaC}",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta \\mathcal{R}_{\\mathrm{TZP}}(\\lambda_c)=0",
+          "normalized_latex": "DeltaRTZP[lambdaC]==0",
+          "wolfram_input": "DeltaRTZP[lambdaC]==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[DeltaRTZP[lambdaC] == 0]",
+          "texform_roundtrip": "\\text{DeltaRTZP}(\\text{lambdaC})=0",
+          "messages": []
+        },
+        {
+          "latex": "\\tzpnormalizewrap{\\lambda,\\lambda_c,\\text{stability}}",
+          "normalized_latex": "TZPNormalizeWrap[lambda,lambdaC]",
+          "wolfram_input": "TZPNormalizeWrap[lambda,lambdaC]",
+          "normalization_notes": [
+            "\\tzpnormalizewrap normalized to TZPNormalizeWrap[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPNormalizeWrap[lambda, lambdaC]]",
+          "texform_roundtrip": "\\text{TZPNormalizeWrap}(\\lambda ,\\text{lambdaC})",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0180 generated source-truth Wolfram model *)\nClearAll[K0180, TRAWINClosure0180];\neq0180$1 = HoldForm[lambda < lambdaC];\neq0180$2 = HoldForm[DeltaRTZP[lambdaC] == 0];\neq0180$3 = HoldForm[TZPNormalizeWrap[lambda, lambdaC]];\nK0180 = HoldForm[{eq0180$1, eq0180$2, eq0180$3}];\nTRAWINClosure0180[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0180 = TRAWINClosure0180[K0180];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\lambda < \\lambda_c\n\\]\n\\[\n\\Delta \\mathcal{R}_{\\mathrm{TZP}}(\\lambda_c)=0\n\\]\n\n\\paragraph{Primary Derivation.}\nThis argument establishes the identity by differentiating and applying the relevant definitions. leading to the displayed result.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThis relation applies to the quantities defined above. Within the TRAWIN framework, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0180/ID0180.source_truth.json",
+    "entry_id": "ID0180",
+    "registry_id": "registry_id_0180",
+    "canonical_title": "Stability Threshold at the TZP",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0180/ID0180.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "6f6b7bc2-4a71-531b-ad6a-00926ab79300",
+    "RTEID": "RTE:P698.9800:T1.1517",
+    "poloidal_theta_rad": "698.9800",
+    "toroidal_phi_rad": "1.1517",
+    "rteid_source": "manifest",
+    "PiID": "6446229489549",
+    "TZPi": "9",
+    "PiPE_position": "187",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

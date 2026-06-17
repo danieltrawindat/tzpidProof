@@ -1,0 +1,8 @@
+% Auto-generated source-truth intake stub for ID3826.
+\tzpentry{ID3826}{Gyromagnetic Pressure Definition}
+\paragraph{Canonical Statement.}
+ID3826 introduces Gyromagnetic Pressure Definition as a source-extracted canonical equation candidate. The equation is promoted from the Tier A equation-source intake and remains pending source-context expansion, duplicate review against the earlier TZPID corpus, Wolfram normalization, symbol-key enrichment, and derivation/proof-lane construction.
+\paragraph{Canonical Equation.}
+\[Psi]_, \[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \[Pi] . InverseMetric[\[Psi]] . \[Pi]; Umag = -MuEff[\[Psi]] . BExternal[r_cm[\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\[Psi]]]; Hcouple = (gfactor MuB/\[HBar]) Lgyro[\[Psi]] . MuEff[\[Psi]] + \[Lambda]coupling A[r_obs] . Jgyro[\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\[Psi], \[Pi]]]; \end{implementation} \section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...
+\paragraph{Registry Metadata.}
+UUID: \texttt{544b840a-850d-50e2-b7c8-205deb7efd90}. PiID: \texttt{PiID-3826}. LOC: \texttt{QC - Physics: waves, acoustics, and fluid dynamics}. arXiv: \texttt{physics.flu-dyn}.

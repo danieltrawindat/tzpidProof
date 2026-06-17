@@ -1,0 +1,366 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:11:37.554407+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0538",
+    "uuid": "a1aa6f3d-7edf-57ef-aa3b-fab96f6120a6",
+    "registry_id": "registry_id_0538",
+    "canonical_title": "SELF-PERPETUATING VORTEX DYNAMO",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0538/ID0538.TEX",
+      "json": "D:/TZPID/TZPID/ID0538/ID0538.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0538/ID0538.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "gamma\\_\\{text\\{eff\\}\\} < exp(-pi * KissingNumber) implies text\\{TIP\\}",
+    "technical_interpretation": "gamma\\_\\{text\\{eff\\}\\} < exp(-pi * KissingNumber) implies text\\{TIP\\}"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "omega_{\\mathrm{vort}}= abla\\times v",
+      "partial_t B= abla\\times(v\\times B)+\\eta abla^2 B"
+    ],
+    "source_section_latex": "\\[\nomega_{\\mathrm{vort}}= abla\\times v\n\\]\n\\[\npartial_t B= abla\\times(v\\times B)+\\eta abla^2 B\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Vorticity Carrier",
+      "formula_latex_blocks": [
+        "omega_{\\mathrm{vort}}= abla\\times v"
+      ],
+      "interpretive_role": "This fixes the vorticity carrier that seeds the rotating transport structure of the entry."
+    },
+    {
+      "step": 2,
+      "component_title": "Induction Law",
+      "formula_latex_blocks": [
+        "partial_t B= abla\\times(v\\times B)+\\eta abla^2 B"
+      ],
+      "interpretive_role": "This states the induction law that lets the carrier flow amplify or dissipate the magnetic field."
+    },
+    {
+      "step": 3,
+      "component_title": "Dynamo Growth Rate",
+      "formula_latex_blocks": [
+        "gamma_{\\mathrm{dyn}}=\\frac{1}{2}\\frac{d}{dt}\\log\\!\\int_V |B|^2\\,dV"
+      ],
+      "interpretive_role": "This closes the entry by measuring whether the induced field genuinely sustains dynamo growth."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0538}$",
+        "description": "canonical registry object for entry ID 0538."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0538}$",
+        "name": "canonical registry object for entry ID 0538.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times(v\\times B)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\log$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$s(v\\times B)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "SELF-PERPETUATING VORTEX DYNAMO\nCanonical operator translation\neq0538_1 = HoldForm[omegavort== abla* v];\neq0538_2 = HoldForm[partial_t B== abla*(v* B)+ abla^2 B];\n\nTRAWIN closure composition\nTRAWINClosure0538[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0538 := HoldForm[{eq0538_1, eq0538_2}];\nResult0538 := TRAWINClosure0538[K0538];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "omega_{\\mathrm{vort}}= abla\\times v",
+          "normalized_latex": "omegaVort==abla*v",
+          "wolfram_input": "omegaVort==abla*v",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaVort == abla*v]",
+          "texform_roundtrip": "\\text{omegaVort}=\\text{abla} v",
+          "messages": []
+        },
+        {
+          "latex": "partial_t B= abla\\times(v\\times B)+\\eta abla^2 B",
+          "normalized_latex": "partialT*B==abla*(v*B)+eta*abla^2*B",
+          "wolfram_input": "partialT*B==abla*(v*B)+eta*abla^2*B",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[partialT*B == abla*(v*B) + eta*abla^2*B]",
+          "texform_roundtrip": "B \\text{partialT}=\\text{abla}^2 B \\eta +\\text{abla} B v",
+          "messages": []
+        },
+        {
+          "latex": "gamma_{\\mathrm{dyn}}=\\frac{1}{2}\\frac{d}{dt}\\log\\!\\int_V |B|^2\\,dV",
+          "normalized_latex": "gammaDyn==((1)/(2))((d)/(dt))log*IntegralVAbs[B]^2*dV",
+          "wolfram_input": "gammaDyn==((1)/(2))((d)/(dt))log*IntegralVAbs[B]^2*dV",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[gammaDyn == (1/2)*(d/dt)*log*IntegralVAbs[B]^2*dV]",
+          "texform_roundtrip": "\\text{gammaDyn}=\\frac{d \\text{dV} \\log  \\text{IntegralVAbs}(B)^2}{2 \\text{dt}}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0538 generated source-truth Wolfram model *)\nClearAll[K0538, TRAWINClosure0538];\neq0538$1 = HoldForm[omegaVort == abla*v];\neq0538$2 = HoldForm[partialT*B == abla*(v*B) + eta*abla^2*B];\neq0538$3 = HoldForm[gammaDyn == (1/2)*(d/dt)*log*IntegralVAbs[B]^2*dV];\nK0538 = HoldForm[{eq0538$1, eq0538$2, eq0538$3}];\nTRAWINClosure0538[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0538 = TRAWINClosure0538[K0538];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\Lambda\n=\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2}.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\mathbf{B}$ be magnetic field strength, $\\rho$ mass density, $\\mu$ magnetic permeability, and $\\Omega$ angular rotation rate.\n\nThe magnetic contribution is represented by field magnitude squared:\n\n\\begin{equation}\n\\mathbf{B}^2 .\n\\end{equation}\n\nThe inertial-rotational scale is represented by:\n\n\\begin{equation}\n\\rho\\,\\mu\\,\\Omega^2 .\n\\end{equation}\n\nThe dimensionless comparison between these two effects defines the Elsasser-type parameter:\n\n\\begin{equation}\n\\boxed{\n\\Lambda\n=\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2}.\n}\n\\end{equation}\n\nThe attractor condition is:\n\n\\begin{equation}\n\\Lambda \\approx 1 .\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Elsasser attractor occurs when magnetic and rotational scales enter near-balance, producing a self-organizing critical manifold.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0538/ID0538.source_truth.json",
+    "entry_id": "ID0538",
+    "registry_id": "registry_id_0538",
+    "canonical_title": "SELF-PERPETUATING VORTEX DYNAMO",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0538/ID0538.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "a1aa6f3d-7edf-57ef-aa3b-fab96f6120a6",
+    "RTEID": "RTE:P2065.8741:T3.4039",
+    "poloidal_theta_rad": "2065.8741",
+    "toroidal_phi_rad": "3.4039",
+    "rteid_source": "manifest",
+    "PiID": "3719070217986",
+    "TZPi": "0",
+    "PiPE_position": "545",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "omega_{\\mathrm{vort}}= abla\\times v",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "omega",
+          "abla",
+          "v"
+        ],
+        "candidate_wolfram_input": "HoldForm[omega$vort== abla* v]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0538\", 1, <|\"kind\" -> \"symbolic\", \"title\" -> \"SELF-PERPETUATING VORTEX DYNAMO\", \"latex\" -> \"omega_{\\\\mathrm{vort}}= abla\\\\times v\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"omega\", \"abla\", \"v\"}, \"candidateWolframInput\" -> \"HoldForm[omega$vort== abla* v]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "partial_t B= abla\\times(v\\times B)+\\eta abla^2 B",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "eta",
+          "partial",
+          "t",
+          "B",
+          "abla",
+          "v"
+        ],
+        "candidate_wolfram_input": "HoldForm[partial$t B== abla*(v* B)+eta abla^2 B]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0538\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"SELF-PERPETUATING VORTEX DYNAMO\", \"latex\" -> \"partial_t B= abla\\\\times(v\\\\times B)+\\\\eta abla^2 B\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"eta\", \"partial\", \"t\", \"B\", \"abla\", \"v\"}, \"candidateWolframInput\" -> \"HoldForm[partial$t B== abla*(v* B)+eta abla^2 B]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

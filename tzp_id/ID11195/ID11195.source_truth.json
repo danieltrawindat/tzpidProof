@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11195",
+    "uuid": "88f56bdb-52f4-5090-a0e3-b41c6ed0c739",
+    "registry_id": "registry_ID11195",
+    "canonical_title": "Phone2 CMBEmergenceTheorem — R Μν - 1/2 G Μν R + Λ G Μν 8Πg/C 4 Stress Energy Total"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_009",
+    "anchor_title": "CMBEmergenceTheorem",
+    "anchor_source_file": "UnificationComparison.txt",
+    "anchor_line_number": "999",
+    "mapping_method": "nearest_same_source",
+    "line_distance": "810"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_009 CMBEmergenceTheorem, extracted from UnificationComparison.txt line 189, with canonical equation $R^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total$.",
+    "technical_interpretation": "ID11195 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 189. Equation grounding: R^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "R^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total"
+    ],
+    "source_section_latex": "\\[\nR^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total\n\\]",
+    "wolfram_form_hint": "R^muν - (1/2)g^muν R + Λ g^muν == (8PiG/c^4) × stress_energy_total"
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "UnificationComparison.txt line 189",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=268; anchor=PHONE2_ANCHOR_009 CMBEmergenceTheorem; domain=general_math; mapping=nearest_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_009 CMBEmergenceTheorem. Source: UnificationComparison.txt line 189.",
+    "encyclopedia": "ID11195 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 189. Equation grounding: R^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total",
+    "source_file": "UnificationComparison.txt",
+    "line_number": "189",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_equation_parse_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "equation_candidate",
+      "wolfram_candidate": "R^munu - (1/2)g^munu R + Lambda g^munu == (8PiG/c^4) * stress_energy_total",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_equation_parse_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11195",
+    "title": "Phone2 CMBEmergenceTheorem — R Μν - 1/2 G Μν R + Λ G Μν 8Πg/C 4 Stress Energy Total",
+    "uuid": "88f56bdb-52f4-5090-a0e3-b41c6ed0c739",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43472.6712:T2.5146",
+    "poloidal_theta_rad": "43472.6712",
+    "toroidal_phi_rad": "2.5146",
+    "rteid_source": "computed",
+    "PiID": "0199920598135",
+    "TZPi": "0",
+    "PiPE_position": "11202"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11132",
+    "uuid": "0fa3317b-eaa8-5c27-b34c-a1a3ca24ff39",
+    "registry_id": "registry_ID11132",
+    "canonical_title": "Phone2 Elsasser Universality — Elsasserconvergence System Module"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_003",
+    "anchor_title": "Elsasser Universality",
+    "anchor_source_file": "univision.txt",
+    "anchor_line_number": "125",
+    "mapping_method": "nearest_prior_same_source",
+    "line_distance": "10"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_003 Elsasser Universality, extracted from univision.txt line 135, with canonical equation $ElsasserConvergence[system_] := Module[$.",
+    "technical_interpretation": "ID11132 supports theorem anchor PHONE2_ANCHOR_003 Elsasser Universality. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 135. Equation grounding: ElsasserConvergence[system_] := Module["
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "ElsasserConvergence[system_] := Module["
+    ],
+    "source_section_latex": "\\[\nElsasserConvergence[system_] := Module[\n\\]",
+    "wolfram_form_hint": "ElsasserConvergence[system_] := Module["
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "univision.txt line 135",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=2299; anchor=PHONE2_ANCHOR_003 Elsasser Universality; domain=optimization_computation; mapping=nearest_prior_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_003 Elsasser Universality. Source: univision.txt line 135.",
+    "encyclopedia": "ID11132 supports theorem anchor PHONE2_ANCHOR_003 Elsasser Universality. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 135. Equation grounding: ElsasserConvergence[system_] := Module[",
+    "source_file": "univision.txt",
+    "line_number": "135",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_fragment_carrier_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "fragment_carrier",
+      "wolfram_candidate": "Phone2EquationCarrier[\"ID11132\", <|\"canonical\" -> \"ElsasserConvergence[system_] := Module[\", \"rescueClass\" -> \"hard_fragment\"|>]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_fragment_carrier_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11132",
+    "title": "Phone2 Elsasser Universality — Elsasserconvergence System Module",
+    "uuid": "0fa3317b-eaa8-5c27-b34c-a1a3ca24ff39",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43228.0282:T2.1115",
+    "poloidal_theta_rad": "43228.0282",
+    "toroidal_phi_rad": "2.1115",
+    "rteid_source": "computed",
+    "PiID": "8294287854253",
+    "TZPi": "7",
+    "PiPE_position": "11139"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

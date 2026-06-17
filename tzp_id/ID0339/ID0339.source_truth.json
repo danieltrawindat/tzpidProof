@@ -1,0 +1,366 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:55:13.658228+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0339",
+    "uuid": "4d9ab9d9-22e3-5b85-8980-cace77639a74",
+    "registry_id": "registry_id_0339",
+    "canonical_title": "Weak-Field Flow Dynamics in Static Lattice",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0339/ID0339.TEX",
+      "json": "D:/TZPID/TZPID/ID0339/ID0339.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0339/ID0339.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Weak fields propagate through the static metamaterial lattice via diffusion modulated by spatial heterogeneity and pinned potentials.",
+    "technical_interpretation": "Weak fields propagate through the static metamaterial lattice via diffusion modulated by spatial heterogeneity and pinned potentials."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\partial_t\\psi=-\\nabla\\cdot\\!\\left(D(x)\\nabla\\psi\\right)+V(x)\\psi",
+      "\\mathbf{J}=-D(x)\\nabla\\psi"
+    ],
+    "source_section_latex": "\\[\n\\partial_t\\psi=-\\nabla\\cdot\\!\\left(D(x)\\nabla\\psi\\right)+V(x)\\psi\n\\]\n\\[\n\\mathbf{J}=-D(x)\\nabla\\psi\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Weak-Field Flow Equation",
+      "formula_latex_blocks": [
+        "\\partial_t\\psi=-\\nabla\\cdot\\!\\left(D(x)\\nabla\\psi\\right)+V(x)\\psi"
+      ],
+      "interpretive_role": "This fixes the weak-field lattice-flow equation carried by the metamaterial background."
+    },
+    {
+      "step": 2,
+      "component_title": "Diffusion Carrier",
+      "formula_latex_blocks": [
+        "\\mathbf{J}=-D(x)\\nabla\\psi"
+      ],
+      "interpretive_role": "This requires a positive diffusion carrier across the spatially varying lattice."
+    },
+    {
+      "step": 3,
+      "component_title": "Potential Carrier",
+      "formula_latex_blocks": [
+        "\\partial_t\\psi+\\nabla\\cdot\\mathbf{J}=V(x)\\psi"
+      ],
+      "interpretive_role": "This closes the entry by identifying the potential sector with the imposed meta-bit field profile."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\psi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Weak-Field Flow Dynamics in Static Lattice\nCanonical operator translation\neq0339_1 = HoldForm[D_t==-Grad(D(x)Grad)+V(x)];\neq0339_2 = HoldForm[(J)==-D(x)Grad];\n\nTRAWIN closure composition\nTRAWINClosure0339[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0339 := HoldForm[{eq0339_1, eq0339_2}];\nResult0339 := TRAWINClosure0339[K0339];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\partial_t\\psi=-\\nabla\\cdot\\!\\left(D(x)\\nabla\\psi\\right)+V(x)\\psi",
+          "normalized_latex": "PartialTpsi==-Grad*(D[x]Gradpsi)+V[x]psi",
+          "wolfram_input": "PartialTpsi==-Grad*(D[x]Gradpsi)+V[x]psi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PartialTpsi == (-Grad)*(D[x]*Gradpsi) + V[x]*psi]",
+          "texform_roundtrip": "\\text{PartialTpsi}=\\psi  V(x)-\\text{Grad} \\text{Gradpsi} x",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{J}=-D(x)\\nabla\\psi",
+          "normalized_latex": "J==-D[x]Gradpsi",
+          "wolfram_input": "J==-D[x]Gradpsi",
+          "normalization_notes": [
+            "mathbf unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[J == (-D[x])*Gradpsi]",
+          "texform_roundtrip": "J=-\\text{Gradpsi} x",
+          "messages": []
+        },
+        {
+          "latex": "\\partial_t\\psi+\\nabla\\cdot\\mathbf{J}=V(x)\\psi",
+          "normalized_latex": "PartialTpsi+Grad*J==V[x]psi",
+          "wolfram_input": "PartialTpsi+Grad*J==V[x]psi",
+          "normalization_notes": [
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PartialTpsi + Grad*J == V[x]*psi]",
+          "texform_roundtrip": "\\text{Grad} J+\\text{PartialTpsi}=\\psi  V(x)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0339 generated source-truth Wolfram model *)\nClearAll[K0339, TRAWINClosure0339];\neq0339$1 = HoldForm[PartialTpsi == (-Grad)*(D[x]*Gradpsi) + V[x]*psi];\neq0339$2 = HoldForm[J == (-D[x])*Gradpsi];\neq0339$3 = HoldForm[PartialTpsi + Grad*J == V[x]*psi];\nK0339 = HoldForm[{eq0339$1, eq0339$2, eq0339$3}];\nTRAWINClosure0339[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0339 = TRAWINClosure0339[K0339];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{\\mathbf{B}^2}{2\\mu}\n=\n\\frac{1}{2}\\rho(\\Omega r)^2 .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nThe magnetic energy density is:\n\n\\begin{equation}\nu_B\n=\n\\frac{\\mathbf{B}^2}{2\\mu}.\n\\end{equation}\n\nThe rotational kinetic energy density associated with angular velocity $\\Omega$ at radius $r$ is:\n\n\\begin{equation}\nu_{\\Omega}\n=\n\\frac{1}{2}\\rho v^2 .\n\\end{equation}\n\nSince tangential velocity is:\n\n\\begin{equation}\nv=\\Omega r,\n\\end{equation}\n\nwe obtain:\n\n\\begin{equation}\nu_{\\Omega}\n=\n\\frac{1}{2}\\rho(\\Omega r)^2 .\n\\end{equation}\n\nEquipartition requires:\n\n\\begin{equation}\n\\boxed{\n\\frac{\\mathbf{B}^2}{2\\mu}\n=\n\\frac{1}{2}\\rho(\\Omega r)^2 .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nMagnetic--Coriolis equipartition identifies the balance point where magnetic field energy and rotational kinetic energy density match.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0339/ID0339.source_truth.json",
+    "entry_id": "ID0339",
+    "registry_id": "registry_id_0339",
+    "canonical_title": "Weak-Field Flow Dynamics in Static Lattice",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0339/ID0339.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "4d9ab9d9-22e3-5b85-8980-cace77639a74",
+    "RTEID": "RTE:P1316.4123:T2.1690",
+    "poloidal_theta_rad": "1316.4123",
+    "toroidal_phi_rad": "2.1690",
+    "rteid_source": "manifest",
+    "PiID": "0917153643678",
+    "TZPi": "3",
+    "PiPE_position": "346",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\partial_t\\psi=-\\nabla\\cdot\\!\\left(D(x)\\nabla\\psi\\right)+V(x)\\psi",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "partial",
+          "psi",
+          "nabla",
+          "t",
+          "D",
+          "x",
+          "V"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0339\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Weak-Field Flow Dynamics in Static Lattice\", \"latex\" -> \"\\\\partial_t\\\\psi=-\\\\nabla\\\\cdot\\\\!\\\\left(D(x)\\\\nabla\\\\psi\\\\right)+V(x)\\\\psi\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"partial\", \"psi\", \"nabla\", \"t\", \"D\", \"x\", \"V\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\mathbf{J}=-D(x)\\nabla\\psi",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathbf",
+          "nabla",
+          "psi",
+          "D",
+          "x"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0339\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Weak-Field Flow Dynamics in Static Lattice\", \"latex\" -> \"\\\\mathbf{J}=-D(x)\\\\nabla\\\\psi\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathbf\", \"nabla\", \"psi\", \"D\", \"x\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

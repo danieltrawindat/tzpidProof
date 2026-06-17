@@ -1,0 +1,414 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:11:17.931109+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0534",
+    "uuid": "aaf72740-19c4-5288-a065-e83a2abbdb38",
+    "registry_id": "registry_id_0534",
+    "canonical_title": "FLUID STELLAR POSITIONING (Radial Modulation)",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0534/ID0534.TEX",
+      "json": "D:/TZPID/TZPID/ID0534/ID0534.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0534/ID0534.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "r -> R\\_\\{text\\{sphere\\}\\} (1 + epsilon sin[n omega\\_\\{text\\{rotation\\}\\} t])",
+    "technical_interpretation": "r -> R\\_\\{text\\{sphere\\}\\} (1 + epsilon sin[n omega\\_\\{text\\{rotation\\}\\} t])"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "z(\\theta,\\phi,\\rho,\\tau) = \\frac{\\rho \\sin\\theta \\sin\\phi}{1 + \\sin^{2}\\theta}",
+      "V(x,t) = V_{0}\\!\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)\\cos(\\omega t)"
+    ],
+    "source_section_latex": "\\[\nz(\\theta,\\phi,\\rho,\\tau) = \\frac{\\rho \\sin\\theta \\sin\\phi}{1 + \\sin^{2}\\theta}\n\\]\n\\[\nV(x,t) = V_{0}\\!\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)\\cos(\\omega t)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Radial Height Profile",
+      "formula_latex_blocks": [
+        "z(\\theta,\\phi,\\rho,\\tau) = \\frac{\\rho \\sin\\theta \\sin\\phi}{1 + \\sin^{2}\\theta}"
+      ],
+      "interpretive_role": "This fixes the radial height profile used to place the stellar carrier inside the modulated geometric frame."
+    },
+    {
+      "step": 2,
+      "component_title": "Carrier Modulation",
+      "formula_latex_blocks": [
+        "V(x,t) = V_{0}\\!\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)\\cos(\\omega t)"
+      ],
+      "interpretive_role": "This turns the spatial carrier into an actual time-dependent modulation law with a primary and overtone branch."
+    },
+    {
+      "step": 3,
+      "component_title": "Tilt Closure",
+      "formula_latex_blocks": [
+        "gamma_{\\mathrm{tilt}}(\\lambda) = \\gamma_{0}\\sin\\lambda"
+      ],
+      "interpretive_role": "This closes the entry by fixing the tilt response as a smooth sinusoidal closure parameter."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      },
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tau$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sin^{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cos(\\omega t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\gamma_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V(x,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$z(\\theta,\\phi,\\rho,\\tau)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$s(\\omega t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a_{tilt}(\\lambda)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "FLUID STELLAR POSITIONING (Radial Modulation)\nCanonical operator translation\neq0534_1 = HoldForm[z(,,rho,) == (rho Sin Sin)(1 + Sin^(2))];\neq0534_2 = HoldForm[V(x,t) == V0(Sin(2 x)/(lambda) + (1)/(4)Sin(4 x)/(lambda))Cos(omega t)];\n\nTRAWIN closure composition\nTRAWINClosure0534[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0534 := HoldForm[{eq0534_1, eq0534_2}];\nResult0534 := TRAWINClosure0534[K0534];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "z(\\theta,\\phi,\\rho,\\tau) = \\frac{\\rho \\sin\\theta \\sin\\phi}{1 + \\sin^{2}\\theta}",
+          "normalized_latex": "z[theta,phi,rho,tau]==((rho*Sintheta*Sinphi)/(1+Sin^(2)theta))",
+          "wolfram_input": "z[theta,phi,rho,tau]==((rho*Sintheta*Sinphi)/(1+Sin^(2)theta))",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[z[theta, phi, rho, tau] == (rho*Sintheta*Sinphi)/(1 + Sin^2*theta)]",
+          "texform_roundtrip": "z(\\theta ,\\phi ,\\rho ,\\tau )=\\frac{\\rho  \\text{Sinphi} \\text{Sintheta}}{\\text{Sin}^2 \\theta +1}",
+          "messages": []
+        },
+        {
+          "latex": "V(x,t) = V_{0}\\!\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)\\cos(\\omega t)",
+          "normalized_latex": "V[x,t]==V0[Sin[(2*Pi*x)/(lambda)]+((1)/(4))Sin[(4*Pi*x)/(lambda)]]Cos[omega*t]",
+          "wolfram_input": "V[x,t]==V0[Sin[(2*Pi*x)/(lambda)]+((1)/(4))Sin[(4*Pi*x)/(lambda)]]Cos[omega*t]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[V[x, t] == V0[Sin[(2*Pi*x)/lambda] + (1/4)*Sin[(4*Pi*x)/lambda]]*Cos[omega*t]]",
+          "texform_roundtrip": "V(x,t)=\\cos (\\omega  t) \\text{V0}\\left(\\sin \\left(\\frac{2 \\pi  x}{\\lambda }\\right)+\\frac{1}{4} \\sin \\left(\\frac{4 \\pi  x}{\\lambda }\\right)\\right)",
+          "messages": []
+        },
+        {
+          "latex": "gamma_{\\mathrm{tilt}}(\\lambda) = \\gamma_{0}\\sin\\lambda",
+          "normalized_latex": "gammaTilt[lambda]==gamma0*Sinlambda",
+          "wolfram_input": "gammaTilt[lambda]==gamma0*Sinlambda",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[gammaTilt[lambda] == gamma0*Sinlambda]",
+          "texform_roundtrip": "\\text{gammaTilt}(\\lambda )=\\text{gamma0} \\text{Sinlambda}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0534 generated source-truth Wolfram model *)\nClearAll[K0534, TRAWINClosure0534];\neq0534$1 = HoldForm[z[theta, phi, rho, tau] == (rho*Sintheta*Sinphi)/(1 + Sin^2*theta)];\neq0534$2 = HoldForm[V[x, t] == V0[Sin[(2*Pi*x)/lambda] + (1/4)*Sin[(4*Pi*x)/lambda]]*Cos[omega*t]];\neq0534$3 = HoldForm[gammaTilt[lambda] == gamma0*Sinlambda];\nK0534 = HoldForm[{eq0534$1, eq0534$2, eq0534$3}];\nTRAWINClosure0534[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0534 = TRAWINClosure0534[K0534];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{\\delta S}{\\delta \\phi}=0 .\n\\end{equation}\n\n\\paragraph{Expanded Field Form.}\n\\begin{equation}\n\\nabla^T_a\\nabla^{T\\,a}\\phi\n+\n\\frac{\\partial V_T}{\\partial \\phi}\n+\n\\mathcal{C}_{RT}\n+\n\\mathcal{C}_{\\tau}\n=\n0 .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nStarting from the action:\n\n\\begin{equation}\nS[\\phi]\n=\n\\int_M\n\\mathcal{L}_T\n\\left(\n\\phi,\\nabla^T\\phi,g\n\\right)\n\\,\\mathrm{d}^n x ,\n\\end{equation}\n\nphysical fields satisfy the stationarity condition:\n\n\\begin{equation}\n\\frac{\\delta S}{\\delta\\phi}=0 .\n\\end{equation}\n\nThe kinetic contribution produces the Trawinistic Laplacian term:\n\n\\begin{equation}\n\\nabla^T_a\\nabla^{T\\,a}\\phi .\n\\end{equation}\n\nThe potential contribution produces:\n\n\\begin{equation}\n\\frac{\\partial V_T}{\\partial \\phi}.\n\\end{equation}\n\nAdditional curvature and torsion couplings are collected as:\n\n\\begin{equation}\n\\mathcal{C}_{RT}\n+\n\\mathcal{C}_{\\tau}.\n\\end{equation}\n\nTherefore the field equation takes the form:\n\n\\begin{equation}\n\\boxed{\n\\nabla^T_a\\nabla^{T\\,a}\\phi\n+\n\\frac{\\partial V_T}{\\partial \\phi}\n+\n\\mathcal{C}_{RT}\n+\n\\mathcal{C}_{\\tau}\n=\n0 .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Trawinistic field equation combines kinetic propagation, TZP potential response, curvature coupling, and torsion-localized correction.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0534/ID0534.source_truth.json",
+    "entry_id": "ID0534",
+    "registry_id": "registry_id_0534",
+    "canonical_title": "FLUID STELLAR POSITIONING (Radial Modulation)",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0534/ID0534.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "aaf72740-19c4-5288-a065-e83a2abbdb38",
+    "RTEID": "RTE:P2054.2245:T3.3847",
+    "poloidal_theta_rad": "2054.2245",
+    "toroidal_phi_rad": "3.3847",
+    "rteid_source": "manifest",
+    "PiID": "2247371907021",
+    "TZPi": "1",
+    "PiPE_position": "541",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "z(\\theta,\\phi,\\rho,\\tau) = \\frac{\\rho \\sin\\theta \\sin\\phi}{1 + \\sin^{2}\\theta}",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "phi",
+          "rho",
+          "tau",
+          "sin",
+          "z"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0534\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"FLUID STELLAR POSITIONING (Radial Modulation)\", \"latex\" -> \"z(\\\\theta,\\\\phi,\\\\rho,\\\\tau) = \\\\frac{\\\\rho \\\\sin\\\\theta \\\\sin\\\\phi}{1 + \\\\sin^{2}\\\\theta}\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"theta\", \"phi\", \"rho\", \"tau\", \"sin\", \"z\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "V(x,t) = V_{0}\\!\\left(\\sin\\!\\frac{2\\pi x}{\\lambda} + \\frac{1}{4}\\sin\\!\\frac{4\\pi x}{\\lambda}\\right)\\cos(\\omega t)",
+        "numeric_atoms": [
+          "1/4",
+          "0",
+          "2",
+          "1",
+          "4"
+        ],
+        "symbolic_tokens": [
+          "sin",
+          "Pi",
+          "lambda",
+          "cos",
+          "omega",
+          "V",
+          "x",
+          "t"
+        ],
+        "candidate_wolfram_input": "HoldForm[V[x,t] == V$n0(Sin((2Pi x)/(lambda)) + ((1)/(4))Sin((4Pi x)/(lambda)))Cos[omega t]]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0534\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"FLUID STELLAR POSITIONING (Radial Modulation)\", \"latex\" -> \"V(x,t) = V_{0}\\\\!\\\\left(\\\\sin\\\\!\\\\frac{2\\\\pi x}{\\\\lambda} + \\\\frac{1}{4}\\\\sin\\\\!\\\\frac{4\\\\pi x}{\\\\lambda}\\\\right)\\\\cos(\\\\omega t)\", \"numericAtoms\" -> {1/4, 0, 2, 1, 4}, \"symbolicTokens\" -> {\"sin\", \"Pi\", \"lambda\", \"cos\", \"omega\", \"V\", \"x\", \"t\"}, \"candidateWolframInput\" -> \"HoldForm[V[x,t] == V$n0(Sin((2Pi x)/(lambda)) + ((1)/(4))Sin((4Pi x)/(lambda)))Cos[omega t]]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

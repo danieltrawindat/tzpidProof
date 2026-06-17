@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11430",
+    "uuid": "d854b680-848b-542e-a562-d7fd1c628b44",
+    "registry_id": "registry_id_11430",
+    "piid": "PiID-11430-s4s5-mix",
+    "canonical_title": "Signed Energy Inversion",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11430\\ID11430.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The TZP energy channel is modeled as equal magnitude and opposite polarity relative to ordinary projection energy.",
+    "technical_interpretation": "This records the polarity symmetry rule from the folded source discussion without treating it as proof of physical negative energy.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "E=mc^2,\\qquad E_{\\mathrm{TZP}}=-E,\\qquad I_E=\\operatorname{sign}(E_{\\mathrm{TZP}}/E)=-1"
+    ],
+    "source_section_latex": "E=mc^2,\\qquad E_{\\mathrm{TZP}}=-E,\\qquad I_E=\\operatorname{sign}(E_{\\mathrm{TZP}}/E)=-1"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Signed Energy Inversion",
+          "wolfram": "E == m*c^2 && ETZP == -E && IE == Sign[ETZP/E]",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Folded_Source_Term",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11430",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

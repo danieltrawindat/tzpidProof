@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11378",
+    "uuid": "f3265588-6ba7-5dcc-99b8-7b64e6019051",
+    "registry_id": "registry_id_11378",
+    "piid": "PiID-11378-portal-breathing",
+    "canonical_title": "Scale-Radius Hubble Rate",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11378\\ID11378.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The Hubble rate is the logarithmic derivative of the scale radius of the cosmic hypersphere.",
+    "technical_interpretation": "This is the clock equation for the breathing enclosure. It rewrites expansion as fractional change of the hyperspherical scale radius.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H(t)=\\frac{\\dot R(t)}{R(t)}"
+    ],
+    "source_section_latex": "H(t)=\\frac{\\dot R(t)}{R(t)}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Scale-Radius Hubble Rate",
+          "wolfram": "H == Rdot/R",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Breathing_Geometry",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11378",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

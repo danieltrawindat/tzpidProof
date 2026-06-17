@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11401",
+    "uuid": "568e6eac-1627-5632-ba19-9e6de8f7a332",
+    "registry_id": "registry_id_11401",
+    "piid": "PiID-11401-portal-equilibrium",
+    "canonical_title": "Portal Inertial Force Component",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11401\\ID11401.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The inertial component in the portal force model is mass times acceleration.",
+    "technical_interpretation": "This is the inertial/momentum carrier for apex dynamics in the droplet equilibrium model.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F_{i}=ma"
+    ],
+    "source_section_latex": "F_{i}=ma"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Portal Inertial Force Component",
+          "wolfram": "Fi == m*a",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Portal_Force_Component",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11401",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

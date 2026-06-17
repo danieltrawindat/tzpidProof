@@ -1,0 +1,118 @@
+{
+  "certificate": "MATTER_CREATION_PRESSURE_EOS_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:59+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for a local quadratic pressure carrier; not a final physical equation of state.",
+  "equations": {
+    "pressure": "p(rho_vac) = p0 + a(rho_vac - rho_c)^2",
+    "pressure_derivative": "p'(rho_vac) = 2a(rho_vac - rho_c)",
+    "stationary_point": "p'(rho_c) = 0",
+    "pressure_floor": "p(rho_vac) >= p0 when a >= 0"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "stationary_point_verified": "pass",
+    "pressure_floor_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "unit_critical_density",
+      "role": "Unit critical density with positive quadratic pressure curvature.",
+      "p0": 0.0,
+      "curvature_a": 1.0,
+      "rho_c": 1.0,
+      "half_width": 1.0,
+      "samples_each_side": 1000
+    },
+    {
+      "name": "offset_pressure_floor",
+      "role": "Nonzero pressure floor with broad positive curvature.",
+      "p0": 0.25,
+      "curvature_a": 0.4,
+      "rho_c": 2.5,
+      "half_width": 2.0,
+      "samples_each_side": 1000
+    },
+    {
+      "name": "sharp_stationary_carrier",
+      "role": "Sharper local pressure well around a small critical density.",
+      "p0": -0.1,
+      "curvature_a": 3.0,
+      "rho_c": 0.35,
+      "half_width": 0.7,
+      "samples_each_side": 1000
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "unit_critical_density",
+      "role": "Unit critical density with positive quadratic pressure curvature.",
+      "p0": 0.0,
+      "curvature_a": 1.0,
+      "rho_c": 1.0,
+      "half_width": 1.0,
+      "samples": 2001,
+      "critical_pressure": 0.0,
+      "critical_derivative": 0.0,
+      "sampled_min_pressure": 0.0,
+      "sampled_min_rho": 1.0,
+      "max_pressure_gap": 1.0,
+      "min_pressure_gap": 0.0,
+      "grid_step": 0.001,
+      "status": "pass",
+      "critical_derivative_zero": "pass",
+      "critical_pressure_equals_p0": "pass",
+      "pressure_not_below_p0": "pass",
+      "sampled_minimum_at_rho_c": "pass",
+      "derivative_changes_sign_across_rho_c": "pass"
+    },
+    {
+      "scenario": "offset_pressure_floor",
+      "role": "Nonzero pressure floor with broad positive curvature.",
+      "p0": 0.25,
+      "curvature_a": 0.4,
+      "rho_c": 2.5,
+      "half_width": 2.0,
+      "samples": 2001,
+      "critical_pressure": 0.25,
+      "critical_derivative": 0.0,
+      "sampled_min_pressure": 0.25,
+      "sampled_min_rho": 2.5,
+      "max_pressure_gap": 1.6,
+      "min_pressure_gap": 0.0,
+      "grid_step": 0.002,
+      "status": "pass",
+      "critical_derivative_zero": "pass",
+      "critical_pressure_equals_p0": "pass",
+      "pressure_not_below_p0": "pass",
+      "sampled_minimum_at_rho_c": "pass",
+      "derivative_changes_sign_across_rho_c": "pass"
+    },
+    {
+      "scenario": "sharp_stationary_carrier",
+      "role": "Sharper local pressure well around a small critical density.",
+      "p0": -0.1,
+      "curvature_a": 3.0,
+      "rho_c": 0.35,
+      "half_width": 0.7,
+      "samples": 2001,
+      "critical_pressure": -0.1,
+      "critical_derivative": 0.0,
+      "sampled_min_pressure": -0.1,
+      "sampled_min_rho": 0.35,
+      "max_pressure_gap": 1.4699999999999998,
+      "min_pressure_gap": 0.0,
+      "grid_step": 0.0007,
+      "status": "pass",
+      "critical_derivative_zero": "pass",
+      "critical_pressure_equals_p0": "pass",
+      "pressure_not_below_p0": "pass",
+      "sampled_minimum_at_rho_c": "pass",
+      "derivative_changes_sign_across_rho_c": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\MATTER_CREATION_PRESSURE_EOS_GRID.csv",
+  "status": "pass"
+}

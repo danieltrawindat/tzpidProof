@@ -1,0 +1,61 @@
+{
+  "schema": "TZPIDProof individual theorem proof package",
+  "generated_at_utc": "2026-06-10T00:42:14+00:00",
+  "queue": {
+    "queue_index": "309",
+    "source": "statement_inventory",
+    "id": "ID3288",
+    "name": "ID3288: Modal Frequency Relation",
+    "kind": "Theorem",
+    "obligation_role": "",
+    "semantic_anchor_id": "ID3288",
+    "source_file": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID3288",
+    "line": "2913",
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "duplicate_source_id_name": "no"
+  },
+  "metadata": {
+    "tzpid": "ID3288",
+    "title": "Modal Frequency Relation",
+    "uuid": "53d1b62c-eec4-564f-8968-412e452b04a7",
+    "PiID": "3378699360072",
+    "RTEID": "RTE:P12768.0342:T2.1882",
+    "TZPi": "9",
+    "PiPE_position": "3295",
+    "poloidal_theta_rad": "12768.0342",
+    "toroidal_phi_rad": "2.1882",
+    "loc_class": "QC - Physics: quantum theory",
+    "arxiv_class": "quant-ph",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "https://orcid.org/0009-0001-4630-3715",
+    "embedded_at_utc": "2026-06-10T00:42:14+00:00"
+  },
+  "master_row": {
+    "id": "ID3288",
+    "title": "Modal Frequency Relation",
+    "canonical_statement": "}$ = Alfvén velocity \\item $\\delta \\mathbf{B}$ = magnetic field perturbation \\end{itemize} \\subsection{Topological Mode Coupling} The magnetic helicity (topological invariant) couples to acoustic modes: \\begin{equation} \\mathcal{H}_M = \\int_V \\mathbf{A} \\cdot \\mathbf{B} \\, dV - \\frac{\\omega_{gyro}}{c^2} \\int_V \\mathbf{r} \\times (\\mathbf{E} \\times \\mathbf{B}) \\, dV \\end{equation} Time derivative under acoustic modulation \\subsection{Type I: Alfvén Resonance Ladder} \\begin{theorem}[Alfvén Mode Quantization] In a spherical cavity of radius R with permeable boundary $\\mu_r$, Alfvén waves satisfy: \\begin{equation} \\omega_{n\\ell m} = \\frac{v_A}{R} \\sqrt{n^2 + \\frac{\\ell(\\ell+1)}{1 + \\frac{R}{2\\delta_{skin}}}} \\end{equation} where n, $\\ell$, m are quantum numbers encoding topological winding. \\end{theorem} \\textbf{Achievable Today}: Frequencies 1-100 kHz in ferrofluid systems with B $\\sim$ 0.1-1 T. \\subsection{Type II: Hopf Fibration Harmonics} Your rotating dipole system naturally generates Hopf fibration structure: \\begin{equation} S^3 \\xrightarrow{\\pi} S^2, \\quad \\pi^{-1}(p) \\cong S^1 \\end{equation} The fiber circles $S^1$ correspond to magnetic field lines. Acoustic standing waves alo",
+    "canonical_equation": "\\begin{equation} \\omega_{n \\ell m} = \\frac{v_A}{R} \\sqrt{n^2 + \\frac{ \\ell( \\ell+1)}{1 + \\frac{R}{2 \\delta_{skin}}}} \\end{equation}",
+    "formation_method": "Algebraic definition",
+    "formation_inputs": "ell, v_A, R, n, s, k",
+    "formation_note": "Recovered from a D:\\All source document.",
+    "dictionary": "Modal Frequency Relation — ω_n ℓ m = (v_A)/(R) sqrtn^2 + frac ℓ( ℓ+1)1 + fracR2 δ_skin",
+    "encyclopedia": "The entry preserves the equation exactly as extracted from `00_Engine\\Lemma-Maker\\Prism\\QuantumTopoHoloNavSystem_formatted2.tex` for registry alignment and later derivation.",
+    "isabelle_kind": "Theorem",
+    "obligation_role": "",
+    "proof_required_checks": "",
+    "gold_spine": "",
+    "lean_rocq": "registry_ID3288",
+    "wolfram_status": "",
+    "isabelle_sid": "9671",
+    "uuid": "53d1b62c-eec4-564f-8968-412e452b04a7"
+  },
+  "source_truth_relative": "../../tzp_id/ID3288/ID3288.source_truth.json",
+  "tex_relative": "../../tzp_id/ID3288/ID3288.tex",
+  "formal_status": {
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "isabelle_batch_source": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID3288",
+    "note": "Proof package captures the theorem row, metadata, source truth, TeX source, and current semantic translation status."
+  }
+}

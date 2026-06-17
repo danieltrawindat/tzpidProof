@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11431",
+    "uuid": "85e482cb-40c8-5f2d-bad9-05b40cbd1fd6",
+    "registry_id": "registry_id_11431",
+    "piid": "PiID-11431-s4s5-mix",
+    "canonical_title": "Bessel Signal Z Score Calibration",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11431\\ID11431.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The Bessel support statistic is normalized by the recorded mean and standard deviation.",
+    "technical_interpretation": "This records the Bessel signal calibration cited by the folded-source note.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "z_B=\\frac{s(t)-2.5055}{0.2167}"
+    ],
+    "source_section_latex": "z_B=\\frac{s(t)-2.5055}{0.2167}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Bessel Signal Z Score Calibration",
+          "wolfram": "zB == (s - 2.5055)/0.2167",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Diagnostic_Definition",
+    "obligation_role": "Folded_Source_Term",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11431",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

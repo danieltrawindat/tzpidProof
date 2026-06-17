@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11425",
+    "uuid": "e36353fa-0971-50e9-967a-fce3ca0f0397",
+    "registry_id": "registry_id_11425",
+    "piid": "PiID-11425-s4s5-mix",
+    "canonical_title": "Occupancy Equivalent Radius Ratio",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11425\\ID11425.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "For an n-dimensional hypervolume fraction phi_i, the equivalent radius ratio is phi_i to the one over n.",
+    "technical_interpretation": "This generalizes the occupancy-radius conversion from S3 to S4 and S5.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\frac{R_i}{R}=\\phi_i^{1/n}"
+    ],
+    "source_section_latex": "\\frac{R_i}{R}=\\phi_i^{1/n}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Occupancy Equivalent Radius Ratio",
+          "wolfram": "RiOverR == phi_i^(1/n)",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Occupancy_Interface",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11425",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

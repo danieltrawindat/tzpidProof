@@ -1,0 +1,476 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:57:34.892172+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0368",
+    "uuid": "5527b462-854e-57a8-a437-dc8984272b52",
+    "registry_id": "registry_id_0368",
+    "canonical_title": "Extended Helicity Functional",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0368/ID0368.TEX",
+      "json": "D:/TZPID/TZPID/ID0368/ID0368.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0368/ID0368.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Helicity measures the linkage between magnetic field lines, corrected for rotation and contributions from extra dimensions.",
+    "technical_interpretation": "Helicity measures the linkage between magnetic field lines, corrected for rotation and contributions from extra dimensions."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{H}_{\\mathrm{ext}}=\\int_{\\Omega}\\mathbf{A}\\cdot\\mathbf{B}\\,d^{3}x+\\int_{\\partial\\Omega}\\alpha\\,dS",
+      "\\mathbf{B}=\\nabla\\times\\mathbf{A}"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{H}_{\\mathrm{ext}}=\\int_{\\Omega}\\mathbf{A}\\cdot\\mathbf{B}\\,d^{3}x+\\int_{\\partial\\Omega}\\alpha\\,dS\n\\]\n\\[\n\\mathbf{B}=\\nabla\\times\\mathbf{A}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Variation Law",
+      "formula_latex_blocks": [
+        "\\mathcal{H}_{\\mathrm{ext}}=\\int_{\\Omega}\\mathbf{A}\\cdot\\mathbf{B}\\,d^{3}x+\\int_{\\partial\\Omega}\\alpha\\,dS"
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Support Relation",
+      "formula_latex_blocks": [
+        "\\mathbf{B}=\\nabla\\times\\mathbf{A}"
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "\\frac{d}{dt}\\mathcal{H}_{\\mathrm{ext}}=0"
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{H}_{\\mathrm{ext}}$",
+        "description": "extended helicity functional."
+      },
+      {
+        "symbol": "$\\mathbf{A}$",
+        "description": "vector potential whose curl defines the magnetic field."
+      },
+      {
+        "symbol": "$\\mathbf{B}$",
+        "description": "magnetic field defined by $\\nabla\\times\\mathbf{A}$."
+      },
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      },
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\int_{\\Omega}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{\\partial\\Omega}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\alpha$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{ext}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Extended Helicity Functional\nCanonical operator translation\neq0368_1 = HoldForm[(H)ext==IntegrateOmega(A)(B) d^(3)x+IntegrateDOmega dS];\neq0368_2 = HoldForm[(B)==Grad*(A)];\n\nTRAWIN closure composition\nTRAWINClosure0368[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0368 := HoldForm[{eq0368_1, eq0368_2}];\nResult0368 := TRAWINClosure0368[K0368];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{H}_{\\mathrm{ext}}=\\int_{\\Omega}\\mathbf{A}\\cdot\\mathbf{B}\\,d^{3}x+\\int_{\\partial\\Omega}\\alpha\\,dS",
+          "normalized_latex": "HExt==IntegralOmegaA*B*d^(3)x+IntegralPartialOmegaalpha*dS",
+          "wolfram_input": "HExt==IntegralOmegaA*B*d^(3)x+IntegralPartialOmegaalpha*dS",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HExt == IntegralOmegaA*B*d^3*x + IntegralPartialOmegaalpha*dS]",
+          "texform_roundtrip": "\\text{HExt}=B d^3 \\text{IntegralOmegaA} x+\\text{dS} \\text{IntegralPartialOmegaalpha}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{B}=\\nabla\\times\\mathbf{A}",
+          "normalized_latex": "B==Grad*A",
+          "wolfram_input": "B==Grad*A",
+          "normalization_notes": [
+            "mathbf unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B == Grad*A]",
+          "texform_roundtrip": "B=A \\text{Grad}",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{d}{dt}\\mathcal{H}_{\\mathrm{ext}}=0",
+          "normalized_latex": "((d)/(dt))HExt==0",
+          "wolfram_input": "((d)/(dt))HExt==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(d/dt)*HExt == 0]",
+          "texform_roundtrip": "\\frac{d \\text{HExt}}{\\text{dt}}=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0368 generated source-truth Wolfram model *)\nClearAll[K0368, TRAWINClosure0368];\neq0368$1 = HoldForm[HExt == IntegralOmegaA*B*d^3*x + IntegralPartialOmegaalpha*dS];\neq0368$2 = HoldForm[B == Grad*A];\neq0368$3 = HoldForm[(d/dt)*HExt == 0];\nK0368 = HoldForm[{eq0368$1, eq0368$2, eq0368$3}];\nTRAWINClosure0368[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0368 = TRAWINClosure0368[K0368];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\mathbf{B}=\\nabla\\times\\mathbf{A}\n\\]\n\\[\n\\mathbf{E}=-\\dot{\\mathbf{A}}-\\nabla\\Phi\n\\]\n\n\\paragraph{Primary Derivation.}\nThe recovered conductive-media passage supplies the potential-to-field relations used as support for the helicity functional: the magnetic field is the curl of the vector potential, while the electric field is generated by its time derivative together with the scalar-potential gradient.\n\n\\paragraph{Interpretation.}\nThese relations ground the field variables entering extended helicity. They do not independently prove conservation of the full boundary-corrected helicity functional.\n% END TZP DERIVATION LAYER"
+  },
+  "publication_overrides": {
+    "dictionary_latex": "\\begingroup\\small\n\\tzpsection{Definition}\nAn extended helicity functional supported by potential-to-field relations in a conductive medium.\n\n\\tzpsection{Contextual Meaning}\nThe entry reads magnetic structure through a vector potential whose curl determines the magnetic field.\n\n\\tzpsection{Formal Statement}\n\\[\n\\mathbf{B}=\\nabla\\times\\mathbf{A}, \\qquad \\mathbf{E}=-\\dot{\\mathbf{A}}-\\nabla\\Phi\n\\]\n\n\\tzpsection{Derivable Consequences}\nAny admitted vector potential \\(\\mathbf{A}\\) determines a magnetic field \\(\\mathbf{B}\\) through its curl.\n\n\\tzpsection{Lemma Support}\nThe approved source passage validates the potential-to-field support relations used by this entry.\n\n\\tzpsection{Technical Interpretation}\n\\(\\mathbf{A}\\) is the vector potential and \\(\\mathbf{B}\\) is the magnetic field derived from it.\n\n\\tzpsection{Equation Grounding}\nThe grounded support pair is \\(\\mathbf{B}=\\nabla\\times\\mathbf{A}\\) and \\(\\mathbf{E}=-\\dot{\\mathbf{A}}-\\nabla\\Phi\\).\n\n\\tzpsection{Interpretive Role}\nThis entry supplies the field-definition layer needed by the helicity construction while leaving the complete conservation claim separately reviewable.\n\n\\tzpsection{TZP Thesaurus}\nHelicity; vector potential; magnetic field; electric field; conductive medium.\n\\endgroup",
+    "dictionary_sections": {
+      "definition": "The extended helicity functional is grounded by potential-to-field relations: a vector potential produces a magnetic field through its curl and participates in the associated electric-field relation.",
+      "contextual_meaning": "Helicity measures organized linkage in a field configuration. The magnetic field in that reading must be tied to a generating potential, so \\(\\mathbf{B}=\\nabla\\times\\mathbf{A}\\) establishes the field structure before boundary extensions are interpreted.",
+      "formal_statement_latex": "\\[\n\\mathbf{B}=\\nabla\\times\\mathbf{A}, \\qquad \\mathbf{E}=-\\dot{\\mathbf{A}}-\\nabla\\Phi\n\\]",
+      "derivable_consequences": "Once \\(\\mathbf{A}\\) is specified, \\(\\mathbf{B}\\) is fixed by its curl. Adding a gradient leaves that curl unchanged under the usual gauge reading; complete helicity interpretation remains conditional.",
+      "lemma_support": "The approved passage supports potential-to-field relations in conductive media and defines \\(\\mathbf{A}\\) and \\(\\mathbf{B}\\). It does not certify every extended-helicity claim.",
+      "technical_interpretation": "Curl extracts rotational field content from the potential; the potential-field pairing is the mathematical carrier for linkage-sensitive field structure.",
+      "equation_grounding": "\\(\\mathbf{A}\\) is the vector potential whose curl defines the magnetic field; \\(\\mathbf{B}\\) is the magnetic field defined by that curl. The associated \\(\\mathbf{E}\\) and \\(\\Phi\\) terms are displayed for relation context but await independent symbol-level approval.",
+      "interpretive_role": "This entry supplies the field-definition bridge required before later helicity and linkage interpretations are stated.",
+      "tzp_thesaurus": [
+        {
+          "term": "Vector Potential",
+          "meaning": "A generating field whose curl supplies the magnetic field."
+        },
+        {
+          "term": "Magnetic Curl Relation",
+          "meaning": "The defining relation that connects potential structure to magnetic structure."
+        },
+        {
+          "term": "Helicity Carrier",
+          "meaning": "The potential-field pairing used to represent linkage-sensitive organization."
+        }
+      ]
+    },
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 210,
+      "applied_at": "20260524_214627"
+    },
+    "equation_support_summary": "The potential-to-field relations anchor magnetic structure before the progression applies them within the extended helicity functional."
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-24",
+    "review_status": "approved_for_support_relation_symbol_key_and_derivation_repair",
+    "method": "formula-normalized raw export alignment followed by manual review",
+    "approved_claims": [
+      {
+        "formula_latex": "\\mathbf{B}=\\nabla\\times\\mathbf{A},\\qquad \\mathbf{E}=-\\dot{\\mathbf{A}}-\\nabla\\Phi",
+        "role": "potential-to-field support relations in conductive media",
+        "symbol_definitions": {
+          "\\mathbf{A}": "vector potential whose curl defines the magnetic field",
+          "\\mathbf{B}": "magnetic field defined by the curl of the vector potential"
+        },
+        "source_path": "D:/Conversation/OpenAI_Exports_textplus/conversations-002.json",
+        "source_record": "conversation_57:a7da2a38-fe5e-421d-be3a-9ffea40c5f0d",
+        "alignment_status": "exact_equation_candidate",
+        "alignment_score": 0.977
+      }
+    ],
+    "limitation": "The approved passage confirms the potential-to-field support relations; it does not independently validate the complete extended helicity functional or its conservation."
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "mathematical-topology conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0368/ID0368.source_truth.json",
+    "entry_id": "ID0368",
+    "registry_id": "registry_id_0368",
+    "canonical_title": "Extended Helicity Functional",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0368/ID0368.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "5527b462-854e-57a8-a437-dc8984272b52",
+    "RTEID": "RTE:P1429.0257:T2.3546",
+    "poloidal_theta_rad": "1429.0257",
+    "toroidal_phi_rad": "2.3546",
+    "rteid_source": "manifest",
+    "PiID": "0548820466521",
+    "TZPi": "0",
+    "PiPE_position": "375",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\mathcal{H}_{\\mathrm{ext}}=\\int_{\\Omega}\\mathbf{A}\\cdot\\mathbf{B}\\,d^{3}x+\\int_{\\partial\\Omega}\\alpha\\,dS",
+        "numeric_atoms": [
+          "3"
+        ],
+        "symbolic_tokens": [
+          "int",
+          "Omega",
+          "mathbf",
+          "partial",
+          "alpha",
+          "d",
+          "x",
+          "dS"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0368\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Extended Helicity Functional\", \"latex\" -> \"\\\\mathcal{H}_{\\\\mathrm{ext}}=\\\\int_{\\\\Omega}\\\\mathbf{A}\\\\cdot\\\\mathbf{B}\\\\,d^{3}x+\\\\int_{\\\\partial\\\\Omega}\\\\alpha\\\\,dS\", \"numericAtoms\" -> {3}, \"symbolicTokens\" -> {\"int\", \"Omega\", \"mathbf\", \"partial\", \"alpha\", \"d\", \"x\", \"dS\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\mathbf{B}=\\nabla\\times\\mathbf{A}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathbf",
+          "nabla"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0368\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Extended Helicity Functional\", \"latex\" -> \"\\\\mathbf{B}=\\\\nabla\\\\times\\\\mathbf{A}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathbf\", \"nabla\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

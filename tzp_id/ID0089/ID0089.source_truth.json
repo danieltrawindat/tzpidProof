@@ -1,0 +1,401 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:34:49.425247+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0089",
+    "uuid": "bbb66db1-cad1-592a-9e38-cd0a4680a163",
+    "registry_id": "registry_id_0089",
+    "canonical_title": "FractalNodes Category-Theoretic Isomorphism Across Scales",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0089/ID0089.TEX",
+      "json": "D:/TZPID/TZPID/ID0089/ID0089.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0089/ID0089.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "There exists a functor FFF from the category of laboratory gyromagnetic systems to the category of astrophysical rotating systems such that FFF preserves morphisms (dynamical evolutions) and objects (system configurations); natural isomorphisms ensure equivalence of rotational dynamics up to scale.",
+    "technical_interpretation": "There exists a functor FFF from the category of laboratory gyromagnetic systems to the category of astrophysical rotating systems such that FFF preserves morphisms (dynamical evolutions) and objects (system configurations); natural isomorphisms ensure equivalence of rotational dynamics up to scale."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}",
+      "F(g\\circ f)=F(g)\\circ F(f)\n\\qquad\n\\text{and}\\qquad\n\\eta: F \\Rightarrow G"
+    ],
+    "source_section_latex": "\\[\nF: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}\n\\]\n\\[\nF(g\\circ f)=F(g)\\circ F(f)\n\\qquad\n\\text{and}\\qquad\n\\eta: F \\Rightarrow G\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Scale-Translation Functor",
+      "formula_latex_blocks": [
+        "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}"
+      ],
+      "interpretive_role": "This identifies the map carrying systems across scale while preserving structure."
+    },
+    {
+      "step": 2,
+      "component_title": "Functorial Composition Law",
+      "formula_latex_blocks": [
+        "F(g\\circ f)=F(g)\\circ F(f)"
+      ],
+      "interpretive_role": "This requires dynamical composition to survive the scale translation intact."
+    },
+    {
+      "step": 3,
+      "component_title": "Natural Equivalence Witness",
+      "formula_latex_blocks": [
+        "\\eta: F \\Rightarrow G"
+      ],
+      "interpretive_role": "This closes the progression by exhibiting a natural comparison between admissible scale translations."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0089}$",
+        "description": "canonical registry object for entry ID 0089."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0089}$",
+        "name": "canonical registry object for entry ID 0089.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\circ$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Rightarrow$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(g\\circ f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(g)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(f)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "F : LabGyro -> AstroRot FunctorComposition[F_, g_, f_] :=\n  F[Composition[g,f]] == LabGyro, AstroRot, F,",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}",
+          "normalized_latex": "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}",
+          "wolfram_input": "F[mathbfLabGyro] -> mathbfAstroRot",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[mathbfLabGyro] -> mathbfAstroRot]",
+          "texform_roundtrip": "F(\\text{mathbfLabGyro})\\to \\text{mathbfAstroRot}",
+          "messages": []
+        },
+        {
+          "latex": "F(g\\circ f)=F(g)\\circ F(f)\n\\qquad\n\\text{and}\\qquad\n\\eta: F \\Rightarrow G",
+          "normalized_latex": "F[gcirc*f]==F[g]circ*F[f]&&eta:F->G",
+          "wolfram_input": "F[gcirc*f]==F[g]circ*F[f]&&eta:F->G",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "text prose removed from Wolfram parse"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[gcirc*f] == F[g]*circ*F[f] && (eta:F) -> G]",
+          "texform_roundtrip": "F(f \\text{gcirc})=\\text{circ} F(f) F(g)\\land (\\eta :F)\\to G",
+          "messages": []
+        },
+        {
+          "latex": "F(g\\circ f)=F(g)\\circ F(f)",
+          "normalized_latex": "F[gcirc*f]==F[g]circ*F[f]",
+          "wolfram_input": "F[gcirc*f]==F[g]circ*F[f]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[gcirc*f] == F[g]*circ*F[f]]",
+          "texform_roundtrip": "F(f \\text{gcirc})=\\text{circ} F(f) F(g)",
+          "messages": []
+        },
+        {
+          "latex": "\\eta: F \\Rightarrow G",
+          "normalized_latex": "eta:F->G",
+          "wolfram_input": "eta:F->G",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[eta:F -> G]",
+          "texform_roundtrip": "\\eta :F\\to G",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0089 generated source-truth Wolfram model *)\nClearAll[K0089, TRAWINClosure0089];\neq0089$1 = HoldForm[F[mathbfLabGyro] -> mathbfAstroRot];\neq0089$2 = HoldForm[F[gcirc*f] == F[g]*circ*F[f] && (eta:F) -> G];\neq0089$3 = HoldForm[F[gcirc*f] == F[g]*circ*F[f]];\neq0089$4 = HoldForm[eta:F -> G];\nK0089 = HoldForm[{eq0089$1, eq0089$2, eq0089$3, eq0089$4}];\nTRAWINClosure0089[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0089 = TRAWINClosure0089[K0089];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Scale-Translation Functor.}\n\\begin{equation}\nF:\\mathrm{LabGyro}\\longrightarrow\\mathrm{AstroRot}.\n\\end{equation}\n\n\\paragraph{Functorial Composition Law.}\n\\begin{equation}\nF(g\\circ f)\n=\nF(g)\\circ F(f).\n\\end{equation}\n\n\\paragraph{Natural Equivalence Witness.}\n\\begin{equation}\n\\eta:F\\Rightarrow G .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\mathrm{LabGyro}$ be a category of laboratory gyromagnetic systems and $\\mathrm{AstroRot}$ a category of astrophysical rotating systems.\n\nA scale-translation functor assigns:\n\\begin{equation}\nF:\\mathrm{LabGyro}\\to\\mathrm{AstroRot}.\n\\end{equation}\n\nTo preserve dynamical structure, it must preserve composition:\n\\begin{equation}\nF(g\\circ f)=F(g)\\circ F(f).\n\\end{equation}\n\nIf two such translations $F$ and $G$ encode the same cross-scale content, a natural transformation witnesses their equivalence:\n\\begin{equation}\n\\boxed{\n\\eta:F\\Rightarrow G .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nFractalNodes supply a categorical bridge between laboratory gyromagnetic behavior and astrophysical rotating systems.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0089/ID0089.source_truth.json",
+    "entry_id": "ID0089",
+    "registry_id": "registry_id_0089",
+    "canonical_title": "FractalNodes Category-Theoretic Isomorphism Across Scales",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0089/ID0089.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "bbb66db1-cad1-592a-9e38-cd0a4680a163",
+    "RTEID": "RTE:P345.6068:T0.5695",
+    "poloidal_theta_rad": "345.6068",
+    "toroidal_phi_rad": "0.5695",
+    "rteid_source": "manifest",
+    "PiID": "5342117067982",
+    "TZPi": "7",
+    "PiPE_position": "96",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathbf",
+          "longrightarrow",
+          "F"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0089\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"FractalNodes Category-Theoretic Isomorphism Across Scales\", \"latex\" -> \"F: \\\\mathbf{LabGyro} \\\\longrightarrow \\\\mathbf{AstroRot}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathbf\", \"longrightarrow\", \"F\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "F(g\\circ f)=F(g)\\circ F(f)\n\\qquad\n\\text{and}\\qquad\n\\eta: F \\Rightarrow G",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "circ",
+          "eta",
+          "Rightarrow",
+          "F",
+          "g",
+          "f",
+          "G"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0089\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"FractalNodes Category-Theoretic Isomorphism Across Scales\", \"latex\" -> \"F(g\\\\circ f)=F(g)\\\\circ F(f)\\n\\\\qquad\\n\\\\text{and}\\\\qquad\\n\\\\eta: F \\\\Rightarrow G\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"circ\", \"eta\", \"Rightarrow\", \"F\", \"g\", \"f\", \"G\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

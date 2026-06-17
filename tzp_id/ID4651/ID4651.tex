@@ -1,0 +1,8 @@
+% Auto-generated source-truth intake stub for ID4651.
+\tzpentry{ID4651}{Add DAANSphere Column Existing PostGIS Table Relation}
+\paragraph{Canonical Statement.}
+ID4651 introduces Add DAANSphere Column Existing PostGIS Table Relation as a source-extracted canonical equation candidate. The equation is promoted from the Tier A equation-source intake and remains pending source-context expansion, duplicate review against the earlier TZPID corpus, Wolfram normalization, symbol-key enrichment, and derivation/proof-lane construction.
+\paragraph{Canonical Equation.}
+$$ BEGIN -- Add DAANSphere column to existing PostGIS table EXECUTE format('ALTER TABLE %I ADD COLUMN daansphere daansphere_point', table_name); -- Populate it with nearest DAANSphere points EXECUTE format('UPDATE %I SET daansphere = postgis_to_daansphere(geog, 3)', table_name); -- Create index for fast lookups EXECUTE format('CREATE INDEX idx_%I_daansphere ON %I ((daansphere).sphere_index)', table_name, table_name); RAISE NOTICE 'Table % successfully migrated to DAANSphere', table_name; END; $$
+\paragraph{Registry Metadata.}
+UUID: \texttt{2b92f7b5-4e7b-5d37-977a-f1c7431fe6c3}. PiID: \texttt{PiID-4651}. LOC: \texttt{QA - Mathematics: geometry and topology}. arXiv: \texttt{math.DG}.

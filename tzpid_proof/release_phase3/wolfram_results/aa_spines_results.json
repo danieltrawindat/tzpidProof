@@ -1,0 +1,110 @@
+[
+	{
+		"id":"ID10335",
+		"spine":"Vortex-Core Topological Fluid Dynamics",
+		"check":"aa_vortex_curvature_identity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"0",
+		"notes":"Curvature carrier normalizes to F = dA + A.A."
+	},
+	{
+		"id":"ID10339",
+		"spine":"Vortex-Core Topological Fluid Dynamics",
+		"check":"aa_vortex_alfven_positive",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Alfven velocity square is positive for positive B, mu0, and rho."
+	},
+	{
+		"id":"ID10345",
+		"spine":"Vortex-Core Topological Fluid Dynamics",
+		"check":"aa_vortex_mach_ratio",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"0",
+		"notes":"Mach-ratio definition recovers speed after multiplication by c_sound."
+	},
+	{
+		"id":"ID10499",
+		"spine":"DNA-TZPQVS Isomorphism",
+		"check":"aa_dna_entropy_floor",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Uniform 20-symbol entropy equals Log2[20]."
+	},
+	{
+		"id":"ID10503",
+		"spine":"DNA-TZPQVS Isomorphism",
+		"check":"aa_dna_unitary_identity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Evolution operator normalizes to identity at t=t0."
+	},
+	{
+		"id":"ID10519",
+		"spine":"DNA-TZPQVS Isomorphism",
+		"check":"aa_dna_helix_length",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Pitch-corrected helix length is no smaller than base length."
+	},
+	{
+		"id":"ID10535",
+		"spine":"Neutrino-Piezoelectric Coupling",
+		"check":"aa_neutrino_enhancement_square",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"n^2",
+		"notes":"Coherent enhancement ratio reduces to n^2."
+	},
+	{
+		"id":"ID10536",
+		"spine":"Neutrino-Piezoelectric Coupling",
+		"check":"aa_neutrino_capture_rate_positive",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Capture rate is positive under positive input factors."
+	},
+	{
+		"id":"ID10538",
+		"spine":"Neutrino-Piezoelectric Coupling",
+		"check":"aa_neutrino_information_log",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"0",
+		"notes":"Information yield normalizes to Log2[rate tau]."
+	},
+	{
+		"id":"ID10475",
+		"spine":"Quantum-Information Genesis of Curvature",
+		"check":"aa_qi_kernel_normalization",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"1",
+		"notes":"Accumulation kernel equals 1 at zero delay."
+	},
+	{
+		"id":"ID10483",
+		"spine":"Quantum-Information Genesis of Curvature",
+		"check":"aa_qi_phase_shift_units",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"dimensionless",
+		"notes":"GM omega\/(c^3 r) has dimension vector zero."
+	},
+	{
+		"id":"ID10484",
+		"spine":"Quantum-Information Genesis of Curvature",
+		"check":"aa_qi_decoherence_positive",
+		"status":"pass",
+		"engine":"WolframScript",
+		"result":"True",
+		"notes":"Decoherence rate is positive under positive constants and width."
+	}
+]

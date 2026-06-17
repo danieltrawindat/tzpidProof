@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11395",
+    "uuid": "c8785047-aace-5da3-b034-10ea420841bb",
+    "registry_id": "registry_id_11395",
+    "piid": "PiID-11395-portal-breathing",
+    "canonical_title": "Nested Energy Density Fourth-Power Scaling",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11395\\ID11395.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "If mode energy scales as hbar omega and omega scales as inverse radius while volume scales as R cubed, energy density scales as R to the minus fourth.",
+    "technical_interpretation": "This is the core bridge between nested smaller scales, higher oscillation, and pressure/matter-threshold behavior.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "E_{n}\\sim\\hbar\\omega_{n},\\quad V_{n}\\sim R_{n}^{3},\\quad \\omega_{n}\\sim R_{n}^{-1}\\Rightarrow \\rho_{n}\\sim R_{n}^{-4}"
+    ],
+    "source_section_latex": "E_{n}\\sim\\hbar\\omega_{n},\\quad V_{n}\\sim R_{n}^{3},\\quad \\omega_{n}\\sim R_{n}^{-1}\\Rightarrow \\rho_{n}\\sim R_{n}^{-4}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Nested Energy Density Fourth-Power Scaling",
+          "wolfram": "rho == hbar*c/R^4",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Theorem",
+    "obligation_role": "Nested_Scaling",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11395",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

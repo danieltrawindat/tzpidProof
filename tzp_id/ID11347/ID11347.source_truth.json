@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11347",
+    "uuid": "2ae20b6e-2fd8-5292-a372-e6ea3010b7f3",
+    "registry_id": "registry_ID11347",
+    "canonical_title": "Phone2 CMBEmergenceTheorem — Initialdna Ψ 0"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_009",
+    "anchor_title": "CMBEmergenceTheorem",
+    "anchor_source_file": "UnificationComparison.txt",
+    "anchor_line_number": "999",
+    "mapping_method": "nearest_same_source",
+    "line_distance": "182"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_009 CMBEmergenceTheorem, extracted from UnificationComparison.txt line 817, with canonical equation $InitialDNA → |Ψ_0⟩,$.",
+    "technical_interpretation": "ID11347 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 817. Equation grounding: InitialDNA → |Ψ_0⟩,"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "InitialDNA → |Ψ_0⟩,"
+    ],
+    "source_section_latex": "\\[\nInitialDNA → |Ψ_0⟩,\n\\]",
+    "wolfram_form_hint": "InitialDNA -> |Ψ_0⟩,"
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "UnificationComparison.txt line 817",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=670; anchor=PHONE2_ANCHOR_009 CMBEmergenceTheorem; domain=general_math; mapping=nearest_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_009 CMBEmergenceTheorem. Source: UnificationComparison.txt line 817.",
+    "encyclopedia": "ID11347 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 817. Equation grounding: InitialDNA → |Ψ_0⟩,",
+    "source_file": "UnificationComparison.txt",
+    "line_number": "817",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_fragment_carrier_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "fragment_carrier",
+      "wolfram_candidate": "Phone2EquationCarrier[\"ID11347\", <|\"canonical\" -> \"InitialDNA → |Ψ_0⟩,\", \"rescueClass\" -> \"hard_fragment\"|>]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_fragment_carrier_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11347",
+    "title": "Phone2 CMBEmergenceTheorem — Initialdna Ψ 0",
+    "uuid": "2ae20b6e-2fd8-5292-a372-e6ea3010b7f3",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P44062.9209:T3.4871",
+    "poloidal_theta_rad": "44062.9209",
+    "toroidal_phi_rad": "3.4871",
+    "rteid_source": "computed",
+    "PiID": "0922334365779",
+    "TZPi": "4",
+    "PiPE_position": "11354"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

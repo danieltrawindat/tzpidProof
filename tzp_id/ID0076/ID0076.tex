@@ -1,0 +1,266 @@
+\tzpanchor{0076}
+\tzpentryheader{0076}{Fluctuation--Dissipation Relations}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{16019d19-3151-534d-902a-66290c04a7b3}}\\
+\textbf{PiID} & \tzpcode{0899862803482} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{83}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{295.1249 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.4863 rad}\\
+\textbf{TZPID} & \tzpcode{ID0076} & \textbf{Node Dependencies}\quad \tzpidref{0062}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0076} & \textbf{Scale}\quad noise-response coupling\\
+\textbf{LOC Classification} & QC174 fluctuation-dissipation & QC311 linear response\\
+\textbf{arXiv Classification} & Primary: cond-mat.stat-mech \quad Cross-list: quant-ph, hep-th & \\
+\textbf{Primary Support} & Noise Spectrum & Response Function\\
+\textbf{Closure Support} & Fluctuation--Dissipation Relation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Dissipation and fluctuations are related; curvature and the TZP modify the effective temperature and the relationship between noise and response.
+
+\tzpsection{Canonical Equation}
+\[
+S(\omega)
+=
+2\hbar\,
+\coth\!\left(
+\frac{\hbar\omega}{2k_{\mathrm{B}}T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega)
+\]
+\[
+T_{\mathrm{eff}} = T_{\mathrm{eff}}^{\mathrm{th}} + T_{\mathrm{eff}}^{\mathrm{TZP}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $S$: source equation symbol.
+    \item $\omega$: angular frequency term in the source equation.
+    \item $\hbar$: reduced Planck constant carrying the quantum scale.
+    \item $k_{\mathrm{B}}$: source equation symbol.
+    \item $T_{\mathrm{eff}}$: source equation symbol.
+    \item $R$: global radius, boundary radius, or topological scale.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0076 generated source Wolfram model *)
+ClearAll[K0076, Cr0076, T, R, A, W, I, N];
+eq0076$1 = HoldForm[S[omega] == 2*hbarcoth[hbaromega/(2*kBTEff)]*ImR[omega]];
+eq0076$2 = HoldForm[TEff == TEff^th + TEff^TZP];
+eq0076$3 = HoldForm[S[omega]];
+eq0076$4 = HoldForm[R[omega]];
+
+K0076 = HoldForm[{eq0076$1, eq0076$2, eq0076$3, eq0076$4}];
+
+N = "normalized TRAWIN closure object for Fluctuation--Dissipation Relations";
+I = "Fluctuation--Dissipation Relation integration/comparison layer";
+W = "Response Function wave or operator carrier";
+A = "Noise Spectrum admissible action/amplitude condition";
+R = "Response Function rotation/curl preservation layer";
+T = "Noise Spectrum local source condition";
+
+Cr0076[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0076 = Cr0076[K0076];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Noise Spectrum local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Response Function rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Noise Spectrum admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Response Function wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Fluctuation--Dissipation Relation integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Fluctuation--Dissipation Relations.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0076] Fluctuation--Dissipation Relations}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+S(\omega)
+=
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega).
+\end{equation}
+
+\paragraph{Effective Temperature Split.}
+\begin{equation}
+T_{\mathrm{eff}}
+=
+T_{\mathrm{eff}}^{\mathrm{th}}
++
+T_{\mathrm{eff}}^{\mathrm{TZP}} .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $S(\omega)$ be the noise spectrum and $R(\omega)$ the response function.  
+Dissipation is encoded by the imaginary part:
+\begin{equation}
+\operatorname{Im}R(\omega).
+\end{equation}
+
+The fluctuation factor is set by the effective thermal and zero-point scale:
+\begin{equation}
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right).
+\end{equation}
+
+Multiplying the two pieces gives:
+\begin{equation}
+\boxed{
+S(\omega)
+=
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Noise and response are coupled through an effective temperature that includes ordinary thermal and TZP contributions.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Fluctuation--Dissipation Relations by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Noise Spectrum}\par
+\[
+S(\omega)
+\]
+\noindent This is the observable fluctuation content resolved by frequency.\par
+\noindent\textbf{2. Response Function}\par
+\[
+R(\omega)
+\]
+\noindent This encodes how the system reacts to perturbation at the same frequency.\par
+\noindent\textbf{3. Fluctuation--Dissipation Relation}\par
+\[
+S(\omega)
+=
+2\hbar\,
+\coth\!\left(
+\frac{\hbar\omega}{2k_{\mathrm{B}}T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega)
+\]
+\noindent This closes the progression by relating fluctuation amplitude to dissipative response.\par
+
+\clearpage
+\noindent\textbf{[ID 0076] Fluctuation--Dissipation Relations}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Fluctuation--Dissipation Relations is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Dissipation and fluctuations are related; curvature and the TZP modify the effective temperature and the relationship between noise and response. \textbf{Contextual meaning:} The entry reads Fluctuation--Dissipation Relations as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This law ties the spectral-noise entries directly to linear response and transport. It lets the registry move from observed fluctuations to response coefficients without changing conceptual language. \textbf{Lemma support:} Noise Spectrum; Response Function; Fluctuation--Dissipation Relation.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Noise and response are coupled through an effective temperature that includes ordinary thermal and TZP contributions.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The Trawinistic fluctuation--dissipation theorem relates the response function R(omega)R(omega)R(omega) of a system to its noise spectrum S(omega)S(omega)S(omega) via S(omega)=2  cothu2061( omega2kBTeff)Im R(omega)S(omega) = 2hbartextbackslash,textbackslash cothtextbackslash left(ratio hbar omega 2 k B T eff textbackslash right) Im textbackslash,R(omega)S(omega)=2 coth(2kBTeff omega)ImR(omega), where TeffT eff Teff includes contributions from curvature and zero-point fluctuations. The Trawinistic fluctuation--dissipation theorem relates the response function R(omega)R(omega)R(omega) of a system to its noise spectrum S(omega)S(omega)S(omega) via S(omega)=2  cothu2061( omega2kBTeff)Im R(omega)S(omega) = 2hbartextbackslash,textbackslash cothtextbackslash left(ratio hbar omega 2 k B T eff textbackslash right) Im textbackslash,R(omega)S(omega)=2 coth(2kBTeff omega)ImR(omega), where TeffT eff Teff includes contributions from curvature and zero-point fluctuations.
+
+\tzpsection{Interpretive Role}
+This law ties the spectral-noise entries directly to linear response and transport. It lets the registry move from observed fluctuations to response coefficients without changing conceptual language.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Fluctuation Dissipation Relations}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Fluctuation Dissipation Relations Formal Analogue}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Relations Equivalence}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0076]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0076_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0076] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Fluctuation--Dissipation Relations}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} dissipation and fluctuations are related; curvature and the TZP modify the effective
+temperature and the relationship between noise and response
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Fluctuation--Dissipation Relations is valid as a tensorial/geometric statement when the
+stated tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0076_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

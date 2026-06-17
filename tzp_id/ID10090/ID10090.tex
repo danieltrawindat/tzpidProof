@@ -1,0 +1,17 @@
+\section*{ID10090: Wolfram Language Implementation}
+\paragraph{Metadata.}
+PiID: 2325330225763 | RTEID: RTE:P39181.7108:T1.7276 | UUID: cee4b2d0-16a0-5deb-a64b-63d42c176978
+
+\paragraph{Canonical Statement.}
+\textbackslash{}begin\{algorithm\} \textbackslash{}caption\{Reverse Harmonic Decomposition\} \textbackslash{}begin\{algorithmic\} \textbackslash{}STATE \textbackslash{}textbf\{Input:\} Observed spectrum \$S\_\{\textbackslash{}text\{obs\}\}(\textbackslash{}omega, \textbackslash{}mathbf\{k\})\$ \textbackslash{}STATE \textbackslash{}textbf\{Output:\} Initial field configuration \$\textbackslash{}Psi\_0(\textbackslash{}mathbf\{r\})\$ \textbackslash{}STATE \$\textbackslash{}mathcal\{T\} \textbackslash{}leftarrow \textbackslash{}text\{GenerateModeTable\}[\textbackslash{}\{n,l,m,n',l',m',m\_\{KK\}\textbackslash{}\}]\$ \textbackslash{}STATE \$\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{obs\}\} \textbackslash{}leftarrow \textbackslash{}text\{MeasureHelicity\}[S\_\{\textbackslash{}text\{obs\}\}]\$ \textbackslash{}FOR\{each resonance \$\textbackslash{}omega\_i\$ in \$S\_\{\textbackslash{}text\{obs\}\}\$\} \textbackslash{}STATE \$\textbackslash{}\{n\_i, l\_i, m\_i\textbackslash{}\} \textbackslash{}leftarrow \textbackslash{}text\{SphericalHarmonicTransform\}[S\_\{\textbackslash{}text\{obs\}\}(\textbackslash{}omega\_i)]\$ \textbackslash{}STATE \$m\_\{KK\}\textasciicircum{}\{(i)\} \textbackslash{}leftarrow \textbackslash{}Solve\textbackslash{}left[\textbackslash{}omega\_i - \textbackslash{}omega\_\{\textbackslash{}text\{uncoupled\}\}(n\_i,l\_i,m\_i) = \textbackslash{}frac\{m\_\{KK\} c\}\{R\_\{KK\}\}\textbackslash{}right]\$ \textbackslash{}STATE \$\textbackslash{}mathcal\{A\}\_i \textbackslash{}leftarrow \textbackslash{}text\{ComputeAmplitude\}[\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{obs\}\}, \textbackslash{}\{n\_i, l\_i, m\_i, m\_\{KK\}\textasciicircum{}\{(i)\}\textbackslash{}\}]\$ \textbackslash{}ENDFOR \textbackslash{}STATE \$\textbackslash{}Psi\_0 \textbackslash{}leftarrow \textbackslash{}sum\_i \textbackslash{}mathcal\{A\}\_i \textbackslash{}cdot \textbackslash{}text\{EigenMode\}[n\_i, l\_i
+
+\paragraph{Canonical Equation.}
+\[
+\mathcal{H}_{\text{obs}} \leftarrow \text{MeasureHelicity}[S_{\text{obs}}]
+\]
+
+\paragraph{Dictionary.}
+Wolfram Language Implementation — H\_obs arrow MeasureHelicity[S\_obs]
+
+\paragraph{Encyclopedia.}
+Wolfram Language Implementation is a symbolic expression, written H\_obs arrow MeasureHelicity[S\_obs]. It introduces a symbol or relation used elsewhere in the framework. It is built from H, S\_. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

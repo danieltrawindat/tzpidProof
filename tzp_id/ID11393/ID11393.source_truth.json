@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11393",
+    "uuid": "7e218d52-4977-5c60-bea5-8ec53ecd0e27",
+    "registry_id": "registry_id_11393",
+    "piid": "PiID-11393-portal-breathing",
+    "canonical_title": "Nested Radius Contraction",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11393\\ID11393.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "A nested enclosure is represented by a radius contraction factor lambda between zero and one.",
+    "technical_interpretation": "This is the carrier for smaller nesting in the hyperspherical hierarchy.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "R_{n+1}=\\lambda R_{n},\\qquad 0<\\lambda<1"
+    ],
+    "source_section_latex": "R_{n+1}=\\lambda R_{n},\\qquad 0<\\lambda<1"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Nested Radius Contraction",
+          "wolfram": "Rnext == lambda*R",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Nested_Scaling",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11393",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

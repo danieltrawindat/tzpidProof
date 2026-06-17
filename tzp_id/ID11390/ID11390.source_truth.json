@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11390",
+    "uuid": "0bedd5a0-45d8-5c98-a0e3-c973f0d0ae59",
+    "registry_id": "registry_id_11390",
+    "piid": "PiID-11390-portal-breathing",
+    "canonical_title": "Three-Phase Occupancy Closure",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11390\\ID11390.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "Ordinary matter, THZ topological-current occupancy, and breathing-volume occupancy sum to one.",
+    "technical_interpretation": "This is the conservative mathematical form of the oil-water/interface analogy: phases share an effective container but occupy incompatible state channels.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\phi_{b}(x,t)+\\phi_{T}(x,t)+\\phi_{E}(x,t)=1"
+    ],
+    "source_section_latex": "\\phi_{b}(x,t)+\\phi_{T}(x,t)+\\phi_{E}(x,t)=1"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Three-Phase Occupancy Closure",
+          "wolfram": "phib + phiT + phiE == 1",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Occupancy_Interface",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11390",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

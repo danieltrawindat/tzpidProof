@@ -1,0 +1,55 @@
+{
+	"generated_by":"topological_unification_existing_id_review.wls",
+	"review_scope":"Existing-ID deduplication support for Topological Unification priority candidates",
+	"result_count":5,
+	"computed_pass_count":1,
+	"symbolic_carrier_verified_count":4,
+	"results":[
+		{
+			"name":"TZP vacuum divergence spectral carrier",
+			"id":"ID4214; ID4227",
+			"status":"symbolic_carrier_verified",
+			"details":{
+				"head":"HoldForm",
+				"contains_BesselK":true,
+				"contains_Gamma":true
+			}
+		},
+		{
+			"name":"Information manifold product and tangent split",
+			"id":"ID4192; ID4193",
+			"status":"symbolic_carrier_verified",
+			"details":{
+				"manifold_head":"HoldForm",
+				"tangent_head":"HoldForm"
+			}
+		},
+		{
+			"name":"Opposing dipole d^-4 divergence",
+			"id":"ID4195; ID10136; ID11134",
+			"status":"computed_pass",
+			"details":{
+				"limit_d_to_0_plus":"Infinity",
+				"u_bare":"(3*mu^2*mu0)\/(2*d^4*Pi)"
+			}
+		},
+		{
+			"name":"Integrated-information\/critical flux threshold expression",
+			"id":"ID4200; ID4218; ID4364",
+			"status":"symbolic_carrier_verified",
+			"details":{
+				"expression":"alpha*Sqrt[(c^3*hbar)\/(e^2*G)]",
+				"carrier":"HoldForm[PhiCritical == alpha*Sqrt[hbar*(c^3\/(G*e^2))]]"
+			}
+		},
+		{
+			"name":"S3 apparent dark-density and dark-potential carriers",
+			"id":"ID4201; ID4229; ID11143",
+			"status":"symbolic_carrier_verified",
+			"details":{
+				"rho_dark":"HoldForm[rhoDarkApparent == (c^2\/(4*Pi*G*RU^2))*laplacianS3[phiDark]]",
+				"phi_dark":"HoldForm[phiDark[chiObs] == (-G)*Sum[M[i]\/(RU*Sin[Abs[chiObs - chi[i]]]), {i, 1, nMasses}]]"
+			}
+		}
+	]
+}

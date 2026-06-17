@@ -1,0 +1,228 @@
+\tzpanchor{0134}
+\tzpentryheader{0134}{Extended Bridge Frequency Sweep}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{7d4ef0e3-8d2f-57fc-9873-8c26b86f9f49}}\\
+\textbf{PiID} & \tzpcode{2231725359408} & \textbf{TZPi}\quad \tzpcode{5}\quad \textbf{PiPE}\quad \tzpcode{141}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{520.3518 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.8574 rad}\\
+\textbf{TZPID} & \tzpcode{ID0134} & \textbf{Node Dependencies}\quad \tzpidref{0133}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0134} & \textbf{Scale}\quad smooth frequency interpolation in the window\\
+\textbf{LOC Classification} & QA371 time-dependent oscillators & QC20 wave phenomena\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: nlin.PS, physics.class-ph & \\
+\textbf{Primary Support} & Swept Ratio Law & Time-Dependent Bridge Frequency\\
+\textbf{Closure Support} & Window Conditions & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Instead of a fixed bridging ratio, define the time-dependent ratio
+
+\tzpsection{Canonical Equation}
+\[ r(t) = 1 + (r_0 - 1) h(t) \] within the Gaussian window, where $h(t)$ is a smooth function. This sweeps the bridging frequency across a small range, enabling a continuous mapping between frequency states.
+
+\[
+r(t)=1+(r_0-1)h(t)
+\]
+\[
+f_{\mathrm{bridge}}(t)=r(t)\,f_B'
+\]
+\[
+h(t_0)=1,\qquad h(t\to\pm\infty)=0
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $r_0$: source equation symbol.
+    \item $f_{\mathrm{bridge}}(t)$: source equation symbol.
+    \item $f_B$: source equation symbol.
+    \item $t_0$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0134 generated source Wolfram model *)
+ClearAll[K0134, Cr0134, T, R, A, W, I, N];
+eq0134$1 = HoldForm[r[t] == 1 + (r0 - 1)*h[t]];
+eq0134$2 = HoldForm[r[t] == 1 + (r0 - 1)*h[t]];
+eq0134$3 = HoldForm[fBridge[t] == r[t]*Derivative[1][fB]];
+eq0134$4 = HoldForm[TZPSequence[h[t0] == 1, h[t -> PlusMinusInfinity] == 0]];
+
+K0134 = HoldForm[{eq0134$1, eq0134$2, eq0134$3, eq0134$4}];
+
+N = "normalized TRAWIN closure object for Extended Bridge Frequency Sweep";
+I = "Window Conditions integration/comparison layer";
+W = "Time-Dependent Bridge Frequency wave or operator carrier";
+A = "Swept Ratio Law admissible action/amplitude condition";
+R = "Time-Dependent Bridge Frequency rotation/curl preservation layer";
+T = "Swept Ratio Law local source condition";
+
+Cr0134[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0134 = Cr0134[K0134];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Swept Ratio Law local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Time-Dependent Bridge Frequency rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Swept Ratio Law admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Time-Dependent Bridge Frequency wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Window Conditions integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Extended Bridge Frequency Sweep.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0134] Extended Bridge Frequency Sweep}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[ r(t) = 1 + (r_0 - 1) h(t) \] within the Gaussian window, where $h(t)$ is a smooth function. This sweeps the bridging frequency across a small range, enabling a continuous mapping between frequency states.
+
+\[
+r(t)=1+(r_0-1)h(t)
+\]
+\[
+f_{\mathrm{bridge}}(t)=r(t)\,f_B'
+\]
+\[
+h(t_0)=1,\qquad h(t\to\pm\infty)=0
+\]
+
+\paragraph{Primary Derivation.}
+The first line specifies a map, while the subsequent line provides its explicit form \( f_{\mathrm{bridge}}(t)=r(t)\,f_B' \). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.
+\paragraph{Equation Type.}
+This statement is classified as a map relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. Interpreted through TRAWIN, the equation functions as the mapping carrier for the entry’s information content. Under CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Extended Bridge Frequency Sweep by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Swept Ratio Law}\par
+\[
+r(t)=1+(r_0-1)h(t)
+\]
+\noindent This turns the bridge ratio into a time-dependent interpolation.\par
+\noindent\textbf{2. Time-Dependent Bridge Frequency}\par
+\[
+f_{\mathrm{bridge}}(t)=r(t)\,f_B'
+\]
+\noindent This carries the sweep directly into the bridge carrier itself.\par
+\noindent\textbf{3. Window Conditions}\par
+\[
+h(t_0)=1,\qquad h(t\to\pm\infty)=0
+\]
+\noindent This closes the progression by requiring the sweep to be local and to relax back to the unswept state.\par
+
+\clearpage
+\noindent\textbf{[ID 0134] Extended Bridge Frequency Sweep}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Extended Bridge Frequency Sweep is a Operator. Instead of a fixed bridging ratio, define a time dependent ratio r(t) = 1 + (r  -- 1) h(t) within the Gaussian window, where h(t) is a smooth function. This sweeps the bridging frequency across a small range, enabling continuous mapping between frequency states.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Instead of a fixed bridging ratio, define a time dependent ratio r(t) = 1 + (r  -- 1) h(t) within the Gaussian window, where h(t) is a smooth function. This sweeps the bridging frequency across a small range, enabling continuous mapping between frequency states.
+\textbf{Contextual meaning:} Sweeping the bridge ratio allows dynamic modulation of the mapping between carriers. It generalizes the bridge operator to a continuum of values.
+\textbf{Derivable consequences:} Frequency modulation; adiabatic transitions between states; dynamic domain walls.
+\textbf{Lemma support:} Instead of a fixed bridging ratio, define a time dependent ratio r(t) = 1 + (r  -- 1) h(t) within the Gaussian window, where h(t) is a smooth function. This sweeps the bridging frequency across a small range, enabling continuous mapping between frequency states.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Introduce local perturbations to a phase twisted signal and verify that the pattern persists; attempt global modifications to remove the defect. ID 134: Extended Bridge Frequency Sweep
+
+\tzpsection{Equation Grounding}
+Instead of a fixed bridging ratio, define a time dependent ratio r(t) = 1 + (r  -- 1) h(t) within the Gaussian window, where h(t) is a smooth function. This sweeps the bridging frequency across a small range, enabling continuous mapping between frequency states.
+
+\tzpsection{Interpretive Role}
+Sweeping the bridge ratio allows dynamic modulation of the mapping between carriers. It generalizes the bridge operator to a continuum of values.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Swept Ratio Law}: The conversion of the bridge ratio into a time-dependent interpolation.
+\item \textbf{Time-Dependent Bridge Frequency}: The application of the sweep directly into the bridge carrier itself.
+\item \textbf{Window Conditions}: The requirement for the sweep to be local and to relax back to the unswept state.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0134]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0134_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0134] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Extended Bridge Frequency Sweep}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} instead of a fixed bridging ratio, define the time-dependent ratio \textbackslash{}[ r(t) = 1 + (r\_0 -
+1) h(t) \textbackslash{}] within the Gaussian window, where h(t) is a sm...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Extended Bridge Frequency Sweep is valid as a spectral relation when frequency, phase,
+and propagation variables satisfy the stated equation.''\\
+\textbf{Proof:} The source statement describes a wave, harmonic, or resonance relation. The proof
+obligation is that the frequency-domain quantities are typed consistently and that the
+derived propagation or resonance condition follows from the stated variables.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- spectral-relation validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0134_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

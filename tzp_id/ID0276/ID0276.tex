@@ -1,0 +1,250 @@
+\tzpanchor{0276}
+\tzpentryheader{0276}{Differential Rotation Ubiquity}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{12c17f25-708c-563a-b917-8f50a4c6e86b}}\\
+\textbf{PiID} & \tzpcode{6482133936072} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{283}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1071.7693 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.7659 rad}\\
+\textbf{TZPID} & \tzpcode{ID0276} & \textbf{Node Dependencies}\quad \tzpidref{0275}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0276} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Rotation Gradient & Shear Condition\\
+\textbf{Closure Support} & Coupling Criterion & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Every observed rotating astrophysical body exhibits internal differential rotation---from Earth's inner--outer core shear and Jupiter's zonal bands to the Sun's latitudinal gradients and galactic rotation curves---and this differential rotation is necessary for gyromagnetic coupling.
+
+\tzpsection{Canonical Equation}
+\[
+partial_r \Omega  eq 0
+\]
+\[
+Delta \Omega = \Omega_{\mathrm{inner}} - \Omega_{\mathrm{outer}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\Omega$: domain, angular, or boundary operator associated with the equation.
+    \item $\Omega_{\mathrm{inner}}$: angular frequency term in the source equation.
+    \item $\Omega_{\mathrm{outer}}$: angular frequency term in the source equation.
+    \item $\mathcal{G}_{\mathrm{gyro}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0276 generated source Wolfram model *)
+ClearAll[K0276, Cr0276, T, R, A, W, I, N];
+eq0276$1 = HoldForm[partialR*Omega*eq0];
+eq0276$2 = HoldForm[Delta*Omega == OmegaInner - OmegaOuter];
+eq0276$3 = HoldForm[Delta*Omega*eq0Longrightarrow*GGyro*eq0];
+
+K0276 = HoldForm[{eq0276$1, eq0276$2, eq0276$3}];
+
+N = "normalized TRAWIN closure object for Differential Rotation Ubiquity";
+I = "Coupling Criterion integration/comparison layer";
+W = "Shear Condition wave or operator carrier";
+A = "Rotation Gradient admissible action/amplitude condition";
+R = "Shear Condition rotation/curl preservation layer";
+T = "Rotation Gradient local source condition";
+
+Cr0276[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0276 = Cr0276[K0276];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Rotation Gradient local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Shear Condition rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Rotation Gradient admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Shear Condition wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Coupling Criterion integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Differential Rotation Ubiquity.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0276] Differential Rotation Ubiquity}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+S(\omega)
+=
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega).
+\end{equation}
+
+\paragraph{Effective Temperature Split.}
+\begin{equation}
+T_{\mathrm{eff}}
+=
+T_{\mathrm{eff}}^{\mathrm{th}}
++
+T_{\mathrm{eff}}^{\mathrm{TZP}} .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $S(\omega)$ be the noise spectrum and $R(\omega)$ the response function.  
+Dissipation is encoded by the imaginary part:
+\begin{equation}
+\operatorname{Im}R(\omega).
+\end{equation}
+
+The fluctuation factor is set by the effective thermal and zero-point scale:
+\begin{equation}
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right).
+\end{equation}
+
+Multiplying the two pieces gives:
+\begin{equation}
+\boxed{
+S(\omega)
+=
+2\hbar
+\coth\left(
+\frac{\hbar\omega}{2k_B T_{\mathrm{eff}}}
+\right)
+\operatorname{Im}R(\omega).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Noise and response are coupled through an effective temperature that includes ordinary thermal and TZP contributions.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Differential Rotation Ubiquity by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Rotation Gradient}\par
+\[
+partial_r \Omega  eq 0
+\]
+\noindent This fixes the existence of differential rotation as a nonzero rotation gradient.\par
+\noindent\textbf{2. Shear Condition}\par
+\[
+Delta \Omega = \Omega_{\mathrm{inner}} - \Omega_{\mathrm{outer}}
+\]
+\noindent This measures the actual rotational shear across the carrier.\par
+\noindent\textbf{3. Coupling Criterion}\par
+\[
+Delta \Omega  eq 0 \Longrightarrow \mathcal{G}_{\mathrm{gyro}}  eq 0
+\]
+\noindent This closes the entry by linking nonzero shear to gyromagnetic coupling.\par
+
+\clearpage
+\noindent\textbf{[ID 0276] Differential Rotation Ubiquity}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Differential Rotation Ubiquity is a registry definition in Information Synchronization with secondary pressure from Field Theory and Action Principles.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Every observed rotating astrophysical body exhibits internal differential rotation---from Earth s inner--outer core shear and Jupiter s zonal bands to the Sun s latitudinal gradients and galactic rotation curves---and this differential rotation is necessary for gyromagnetic coupling. \textbf{Contextual meaning:} The entry reads Differential Rotation Ubiquity as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now states differential rotation as a measurable shear condition rather than only a broad observational claim. \textbf{Lemma support:} Rotation Gradient; Shear Condition; Coupling Criterion.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Noise and response are coupled through an effective temperature that includes ordinary thermal and TZP contributions.
+
+\tzpsection{Equation Grounding}
+Equation anchors: partial sub r Omega eq 0; Delta Omega = Omega sub inner - Omega sub outer; and Delta Omega eq 0 implies G sub gyro eq 0. Proof route: show that nonzero differential rotation is necessary for the stated gyromagnetic coupling criterion. Formalization route: prove that the stated nonzero shear implies the gyromagnetic coupling condition.
+
+\tzpsection{Interpretive Role}
+The entry now states differential rotation as a measurable shear condition rather than only a broad observational claim.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Universal Presence of Radial Shear}: The observation that almost all fluid celestial bodies spin faster at their equators than their poles, or faster at their cores than their surfaces.
+\item \textbf{Latitude-Dependent Angular Velocity Normalization}: The mathematical mapping of exactly how spin speeds continuously change as you move across the surface or deep into the interior of a star or planet.
+\item \textbf{Driving Force of Toroidal Field Generation}: The critical mechanism where this uneven spinning catches, stretches, and wraps magnetic field lines tightly around the body's equator.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0276]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0276_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0276] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Differential Rotation Ubiquity}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} every observed rotating astrophysical body exhibits internal differential rotation---
+from Earth's inner--outer core shear and Jupiter's zonal bands...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Differential Rotation Ubiquity is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0276_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

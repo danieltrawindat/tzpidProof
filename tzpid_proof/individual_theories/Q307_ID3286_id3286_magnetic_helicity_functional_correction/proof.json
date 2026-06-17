@@ -1,0 +1,61 @@
+{
+  "schema": "TZPIDProof individual theorem proof package",
+  "generated_at_utc": "2026-06-10T00:42:14+00:00",
+  "queue": {
+    "queue_index": "307",
+    "source": "statement_inventory",
+    "id": "ID3286",
+    "name": "ID3286: Magnetic Helicity Functional Correction",
+    "kind": "Theorem",
+    "obligation_role": "",
+    "semantic_anchor_id": "ID3286",
+    "source_file": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID3286",
+    "line": "2911",
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "duplicate_source_id_name": "no"
+  },
+  "metadata": {
+    "tzpid": "ID3286",
+    "title": "Magnetic Helicity Functional Correction",
+    "uuid": "937ed8b6-d2e4-55eb-b079-39d9942d05f5",
+    "PiID": "2033786993600",
+    "RTEID": "RTE:P12760.2677:T2.1754",
+    "TZPi": "6",
+    "PiPE_position": "3293",
+    "poloidal_theta_rad": "12760.2677",
+    "toroidal_phi_rad": "2.1754",
+    "loc_class": "QC - Physics: plasma and electromagnetic fields",
+    "arxiv_class": "physics.plasm-ph",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "https://orcid.org/0009-0001-4630-3715",
+    "embedded_at_utc": "2026-06-10T00:42:14+00:00"
+  },
+  "master_row": {
+    "id": "ID3286",
+    "title": "Magnetic Helicity Functional Correction",
+    "canonical_statement": "oacoustic Wave Equation} In a magnetized medium, acoustic perturbations couple to magnetic field oscillations: \\begin{equation} \\frac{\\partial^2 \\xi}{\\partial t^2} = v_A^2 \\nabla^2 \\xi + \\frac{1}{\\mu_0 \\rho} (\\nabla \\times \\mathbf{B}) \\times (\\nabla \\times \\delta \\mathbf{B}) \\end{equation} where: \\begin{itemize} \\item $\\xi$ = displacement field (acoustic) \\item $v_A = \\frac{B}{\\sqrt{\\mu_0 \\rho}}$ = Alfvén velocity \\item $\\delta \\mathbf{B}$ = magnetic field perturbation \\end{itemize} \\subsection{Topological Mode Coupling} The magnetic helicity (topological invariant) couples to acoustic modes: \\begin{equation} \\mathcal{H}_M = \\int_V \\mathbf{A} \\cdot \\mathbf{B} \\, dV - \\frac{\\omega_{gyro}}{c^2} \\int_V \\mathbf{r} \\times (\\mathbf{E} \\times \\mathbf{B}) \\, dV \\end{equation} Time derivative under acoustic modulation \\subsection{Type I: Alfvén Resonance Ladder} \\begin{theorem}[Alfvén Mode Quantization] In a spherical cavity of radius R with permeable boundary $\\mu_r$, Alfvén waves satisfy: \\begin{equation} \\omega_{n\\ell m} = \\frac{v_A}{R} \\sqrt{n^2 + \\frac{\\ell(\\ell+1)}{1 + \\frac{R}{2\\delta_{skin}}}} \\end{equation} where n, $\\ell$, m are quantum numbers encoding topological winding. \\end{t",
+    "canonical_equation": "\\begin{equation} \\mathcal{H}_M = \\int_V \\mathbf{A} \\cdot \\mathbf{B} \\, dV - \\frac{ \\omega_{gyro}}{c^2} \\int_V \\mathbf{r} \\times ( \\mathbf{E} \\times \\mathbf{B}) \\, dV \\end{equation}",
+    "formation_method": "Integral expression",
+    "formation_inputs": "V, A, B, g, y, r",
+    "formation_note": "Recovered from a D:\\All source document.",
+    "dictionary": "Magnetic Helicity Functional Correction — H_M = ∫_V A · B dV - frac ω_gyroc^2 ∫_V r × ( E × B) dV",
+    "encyclopedia": "The entry preserves the equation exactly as extracted from `00_Engine\\Lemma-Maker\\Prism\\QuantumTopoHoloNavSystem_formatted2.tex` for registry alignment and later derivation.",
+    "isabelle_kind": "Theorem",
+    "obligation_role": "Core_Definition",
+    "proof_required_checks": "core_spine_alignment;dependency_coverage;scale_transition_check;semantic_grounding",
+    "gold_spine": "",
+    "lean_rocq": "registry_ID3286",
+    "wolfram_status": "",
+    "isabelle_sid": "9669",
+    "uuid": "937ed8b6-d2e4-55eb-b079-39d9942d05f5"
+  },
+  "source_truth_relative": "../../tzp_id/ID3286/ID3286.source_truth.json",
+  "tex_relative": "../../tzp_id/ID3286/ID3286.tex",
+  "formal_status": {
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "isabelle_batch_source": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID3286",
+    "note": "Proof package captures the theorem row, metadata, source truth, TeX source, and current semantic translation status."
+  }
+}

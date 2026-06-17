@@ -1,0 +1,17 @@
+\section*{ID6699: How to Use This to Correlate Your Photos with the Generated Vortex Images: C\_ell M}
+\paragraph{Metadata.}
+PiID: 1956730229219 | RTEID: RTE:P26013.7047:T5.1635 | UUID: 87e1be89-46be-54a8-88a6-fbea35e6bd99
+
+\paragraph{Canonical Statement.}
+**B. Build a model PSF (Airy × spike pattern) and spherical-harmonic projection** 1. Model PSF as \textbackslash{}[ \textbackslash{}text\{PSF\}(\textbackslash{}theta,\textbackslash{}phi) \textbackslash{}approx \textbackslash{}left|\textbackslash{}frac\{2J\_1(\textbackslash{}alpha)\}\{\textbackslash{}alpha\}\textbackslash{}right|\textasciicircum{}2 \textbackslash{};+\textbackslash{}; \textbackslash{}sum\_k A\_k\textbackslash{}, \textbackslash{}mathrm\{sinc\}(\textbackslash{}dots)\textbackslash{},\textbackslash{}cos(m\_k\textbackslash{}phi+\textbackslash{}phi\_k), \textbackslash{}] where the second term models vanes (sinc in radial coordinate, cos in angle). 2. Project the PSF onto spherical harmonics: \textbackslash{}[ a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\} = \textbackslash{}int\_\{S\textasciicircum{}2\} \textbackslash{}text\{PSF\}(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}, Y\_\textbackslash{}ell\textasciicircum{}\{m*\}(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}, d\textbackslash{}Omega. \textbackslash{}] 3. Similarly project your vortex model \textbackslash{}(\textbackslash{}Psi(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}) and compute cross-correlation in spectral space: \textbackslash{}[ C\_\{\textbackslash{}ell m\} = \textbackslash{}frac\{a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\} \textbackslash{}; a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}Psi *\}\}\{\textbackslash{}sqrt\{\textbackslash{}sum |a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\}|\textasciicircum{}2\textbackslash{},\textbackslash{}sum |a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}Psi\}|\textasciicircum{}2\}\}. \textbackslash{}] High \textbackslash{}(C\_\{\textbackslash{}ell m\}\textbackslash{}) for a band of \textbackslash{}(m\textbackslash{}) indicates those angular modes are common to both images (optical spike pattern and vortex arm structure).
+
+\paragraph{Canonical Equation.}
+\[
+C_{\ell m} = \frac{a_{\ell m}^{\text{PSF}} \; a_{\ell m}^{\Psi *}}{\sqrt{\sum |a_{\ell m}^{\text{PSF}}|^2\,\sum |a_{\ell m}^{\Psi}|^2}}.
+\]
+
+\paragraph{Dictionary.}
+Relation: C\_ℓ m = fraca\_ℓ m\textasciicircum{}PSF a\_ℓ m\textasciicircum{}Ψ *sqrt∑ |a\_ℓ m\textasciicircum{}PSF|\textasciicircum{}2 ∑ |a\_ℓ m\textasciicircum{}Ψ|\textasciicircum{}2.
+
+\paragraph{Encyclopedia.}
+How to Use This to Correlate Your Photos with the Generated Vortex Images: C\_ell M is a series / summation, written C\_ℓ m = fraca\_ℓ m\textasciicircum{}PSF a\_ℓ m\textasciicircum{}Ψ *sqrt∑ |a\_ℓ m\textasciicircum{}PSF|\textasciicircum{}2 ∑ |a\_ℓ m\textasciicircum{}Ψ|\textasciicircum{}2.. It is expressed as a sum or series over modes or indices, superposing discrete contributions. It is built from ell, Ψ, a\_ m, defining C\_ℓ m. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

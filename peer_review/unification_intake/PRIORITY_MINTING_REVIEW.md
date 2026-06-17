@@ -1,0 +1,38 @@
+# Priority Minting Review
+
+Generated: 2026-06-11T05:33:42
+
+## Decision Rule
+
+Do not mint from this page automatically.  Each row is a clean review target: first compare it to `keyword_suggested_ids`; if no existing ID is semantically equivalent, then mint a new ID with dictionary, encyclopedia, Wolfram form, and source-truth JSON.
+
+- Unmapped mint-review candidates: 14
+- Trawin-Enlil currently contributes no unmapped mint-review candidates in this pass; it is mainly an existing-ID refinement source.
+- Topological Unification contributes the new theorem/definition candidates that need human promotion judgment.
+
+## Candidate Table
+
+| Source | Kind | Line | Role | Suggested existing IDs | Candidate |
+| --- | --- | ---: | --- | --- | --- |
+| Topological Unification of QM and GR | display_math | 105 | definition_or_identity | ID4226; ID4227; ID9525; ID0213; ID9829; ID0020; ID0068; ID0158; ID0194; ID0429 | `SmallCircle] g \[TildeEqual] PathSpace[f,g] \[Times] Contractible ] ]; natural = NaturalTransformation[ Source \|-> QuantumTopology \[CircleTimes] GravitationalGeometry, Target \|-> EmergentSpacetime \[CirclePlus] ConsciousInformation, Components[X_] := TZP[X] \[SmallCircle] Lemniscate[X] \[SmallCircle] Toroidal[X] ] ] \end{lstlisting} \begin{formalization}[Universal Higher Topos] Let \(\mathcal{T}_{\infty}\) be a higher categorical structure whose degree-zero objects are \[ \begin{aligned} \...` |
+| Topological Unification of QM and GR | display_math | 133 | symbolic_expression | ID4226; ID4227; ID0158; ID6084; ID9178; ID9829; ID0020; ID0223; ID0283; ID10931 | `\mathrm{Hom}^{(n)} [ \mathrm{TZP}, \mathrm{Einstein}, \mathrm{Quantum}, \mathrm{Neural} ].` |
+| Topological Unification of QM and GR | display_math | 284 | series_or_spectral_expansion | ID4226; ID4227; ID0158; ID6084; ID9178; ID9829; ID0020; ID0223; ID0283; ID10931 | `g^{\mathrm{FQT}}_{ij} = \sum_{k,l,m,n} g^{\mathrm{Fisher}}_{ij} \otimes g^{\mathrm{Quantum}}_{kl} \otimes g^{\mathrm{Topological}}_{mn}.` |
+| Topological Unification of QM and GR | display_math | 295 | definition_or_identity | ID4226; ID4227; ID0158; ID6084; ID9178; ID9829; ID0020; ID0223; ID0283; ID10931 | `g^{\mathrm{FQT}} = g^{\mathrm{Fisher}} \otimes g^{\mathrm{Quantum}} \otimes g^{\mathrm{Topological}}.` |
+| Topological Unification of QM and GR | definition_environment | 84 | theorem_statement_or_definition_block | ID4226; ID4227; ID9525; ID0020; ID0068; ID0158; ID0429; ID1834; ID1924; ID4214 | `[$\infty$-Topos of Physical Reality] Let $\mathcal{T}_\infty$ denote the $\infty$-topos with: \begin{align} \mathcal{T}_\infty &:= \varprojlim_{n \to \infty} \left[ \mathbf{Set}_{\Delta^{op}}^{(n)} \right] \\ \text{Objects}_0 &:= \{\text{VacuumStates}, \text{QuantumFields}, \text{SpacetimeManifolds}\} \\ \text{Morphisms}_n &:= \Hom^{(n)}[\TZP, \text{Einstein}, \text{Quantum}, \text{Neural}] \end{align}` |
+| Topological Unification of QM and GR | theorem_environment | 190 | theorem_statement_or_definition_block | ID4214; ID9529; ID0068; ID0429; ID1834; ID4226; ID4227; ID9023; ID9806; ID0020 | `[TZP Vacuum Divergence] At spatial position $r \to r_{\TZP}$, the vacuum energy density satisfies: \begin{equation} \rho_{\text{vac}}(r,t) = \sum_{n=0}^{\infty} \sum_{i=1}^{N_{\TZP}} (-1)^n \Gamma\left(n+\tfrac{1}{2}\right) K_n\left(\frac{\|r-r_{\TZP}^{(i)}\|}{\xi}\right) e^{in(\omega_0 t + \theta_i)} \end{equation} where $K_n$ denotes modified Bessel functions of the second kind, $\xi$ is coherence length, and $\theta_i$ encodes topological phase.` |
+| Topological Unification of QM and GR | theorem_environment | 212 | theorem_statement_or_definition_block | ID0237; ID0239; ID0268; ID0270; ID0278; ID0500; ID10128; ID1271; ID1326; ID1334 | `[Elsasser Universality] All self-gravitating rotating bodies with active magnetic fields converge to: \begin{equation} \Lambda := \frac{B^2}{\mu_0 \rho \eta \omega} \to 1 \pm 0.5 \end{equation} across systems differing by $10^{47}$ orders of magnitude in scale.` |
+| Topological Unification of QM and GR | definition_environment | 256 | theorem_statement_or_definition_block | ID4192; ID4193; ID0156; ID0162; ID0245; ID0285; ID0308; ID0346; ID0365; ID0396 | `[Information Manifold Structure] The complete information manifold $\mathcal{M}_{153600}$ decomposes as: \begin{equation} \mathcal{M}_{153600} = S^3 \times T^2 \times \mathbb{CP}^{76799} \end{equation} with tangent bundle: \begin{equation} T\mathcal{M} = T_{\text{temporal}} \oplus T_{\text{atemporal}} \oplus T_{\text{mediator}} \end{equation}` |
+| Topological Unification of QM and GR | theorem_environment | 306 | theorem_statement_or_definition_block | ID0395; ID0470; ID2283; ID4218; ID4226; ID4227; ID8493; ID9281; ID9282; ID9523 | `[Universal Critical Exponent] The critical exponent $\tau$ governing avalanche size distribution satisfies: \begin{equation} P(s) \sim s^{-\tau} e^{-s/s_c}, \quad \tau = \frac{3}{2} \end{equation}` |
+| Topological Unification of QM and GR | theorem_environment | 338 | theorem_statement_or_definition_block | ID3381; ID5755; ID5756; ID9716; ID9723; ID3391; ID4199; ID4218; ID4248; ID9714 | `[Topological Field Constraint] Two opposing magnetic dipoles with moments $\vec{\mu}_1 = -\vec{\mu}_2 = \mu\hat{z}$ at separation $d$ exhibit interaction energy: \begin{equation} U(d) = \frac{3\mu_0\mu^2}{2\pi d^4} + U_{\text{constraint}}(d) \end{equation} As $d \to 0$: $U \to \infty$, preventing annihilation and enforcing toroidal flux topology.` |
+| Topological Unification of QM and GR | corollary_environment | 351 | theorem_statement_or_definition_block | ID3381; ID4199; ID5755; ID5756; ID1825; ID3318; ID3319; ID3391; ID3615; ID4218 | `[Topological Locking] Magnetic flux through any closed surface satisfies: \begin{equation} \Phi = n\Phi_0, \quad \Phi_0 = \frac{h}{2e} \approx 2.07 \times 10^{-15} \text{ Wb} \end{equation}` |
+| Topological Unification of QM and GR | theorem_environment | 359 | theorem_statement_or_definition_block | ID4226; ID4227; ID9525; ID8493; ID4218; ID9281; ID9282; ID9283; ID9284; ID9523 | `[Universal Criticality] Quantum decoherence cascades, neural avalanches, and TZP information flow exhibit identical scaling: \begin{equation} P(s) \sim s^{-\tau} e^{-s/s_c}, \quad \tau = \frac{3}{2} \end{equation}` |
+| Topological Unification of QM and GR | definition_environment | 397 | theorem_statement_or_definition_block | - | `[Integrated Information] The consciousness threshold emerges when integrated information exceeds: \begin{equation} \Phi_{\text{critical}} = \sqrt{\frac{\hbar c^3}{Ge^2}} \times \alpha \end{equation} where $\alpha \approx 1/137$ is the fine structure constant.` |
+| Topological Unification of QM and GR | theorem_environment | 406 | theorem_statement_or_definition_block | - | `[Discrete Dark Matter Distribution] In $S^3$ topology with radius $R_U$, black hole accumulation at discrete positions yields apparent dark matter density: \begin{equation} \rho_{\text{dark}}^{\text{apparent}} = \frac{c^2}{4\pi GR_U^2} \Delta_{S^3}\Phi_{\text{dark}} \end{equation} where $\Phi_{\text{dark}}(\chi_{\text{obs}}) = -G\sum_i \frac{M_i}{R_U\sin(\|\chi_{\text{obs}} - \chi_i\|)}$` |
+
+## First Recommended Promotions
+
+1. Review the `TZP Vacuum Divergence` theorem against existing vacuum/Bessel IDs before minting.
+2. Review the `Elsasser Universality` theorem against the gyromagnetic and magnetic-torsion carriers.
+3. Review the `Universal Critical Exponent` duplicates against existing avalanche IDs before minting; this may be a reuse, not a new ID.
+4. Review `Topological Locking` and flux quantization against existing quantum/magnetic flux IDs.
+5. Treat large categorical definitions as HOL carrier structure first; mint only the smallest formal equations needed for the spine.

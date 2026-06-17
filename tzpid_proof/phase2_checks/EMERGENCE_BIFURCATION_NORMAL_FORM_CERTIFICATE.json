@@ -1,0 +1,26 @@
+{
+  "certificate": "EMERGENCE_BIFURCATION_NORMAL_FORM_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:58+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for normal-form carriers; not a full domain-specific physical bifurcation fit.",
+  "equations": {
+    "pitchfork": "f(mu,x) = mu*x - x^3",
+    "pitchfork_branches": "x = 0 and x^2 = mu imply f(mu,x)=0",
+    "saddle_node": "g(mu,x) = mu + x^2",
+    "transition_boundary": "control - critical = 0",
+    "asymptotic_profile": "E(t)=exp(-scale/t) for t>0 else 0"
+  },
+  "checks": {
+    "pitchfork_branches_zero_residual": "pass",
+    "saddle_node_cusp_zero_residual": "pass",
+    "transition_boundary_zero_residual": "pass",
+    "asymptotic_profile_zero_before_onset": "pass",
+    "asymptotic_profile_positive_after_onset": "pass"
+  },
+  "sample_rows": 31,
+  "max_pitchfork_residual": 1.734723475976807e-18,
+  "max_boundary_residual": 0.0,
+  "status": "pass"
+}

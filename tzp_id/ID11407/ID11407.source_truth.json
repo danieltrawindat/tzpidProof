@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11407",
+    "uuid": "639b8bb5-4acf-5a90-9bac-3dba17f200d7",
+    "registry_id": "registry_id_11407",
+    "piid": "PiID-11407-portal-equilibrium",
+    "canonical_title": "Predicted Acoustic Pressure Rearrangement",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11407\\ID11407.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "Solving the golden portal state equation for the acoustic/field pressure force gives the predicted stabilizing field contribution.",
+    "technical_interpretation": "This is the algebraic rearrangement of the golden portal state. It is Wolfram-checkable and useful for future experimental prediction tables.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F_{a,\\mathrm{pred}}=F_{s}\\varphi-F_{i}"
+    ],
+    "source_section_latex": "F_{a,\\mathrm{pred}}=F_{s}\\varphi-F_{i}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Predicted Acoustic Pressure Rearrangement",
+          "wolfram": "FaPred == Fs*phi - Fi",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Theorem",
+    "obligation_role": "Portal_Phi_Equilibrium",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11407",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

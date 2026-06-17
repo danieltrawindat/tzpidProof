@@ -1,0 +1,245 @@
+\tzpanchor{0229}
+\tzpentryheader{0229}{Disharmonic Fold Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{8a228d07-1705-570b-bb65-3bed7ea4d046}}\\
+\textbf{PiID} & \tzpcode{3378678316527} & \textbf{TZPi}\quad \tzpcode{8}\quad \textbf{PiPE}\quad \tzpcode{236}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{889.2579 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.4652 rad}\\
+\textbf{TZPID} & \tzpcode{ID0229} & \textbf{Node Dependencies}\quad \tzpidref{0228}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0229} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA329 operator theory & QA169 categorical structure\\
+\textbf{arXiv Classification} & Primary: math.CT & Cross-list: math-ph, cs.LO\\
+\textbf{Primary Support} & Unconstrained 4D Radial Mode & Effective Hypersurface Projection\\
+\textbf{Closure Support} & Projected Fold and Nodal Scale & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+A local disharmonic fold is observed on an effective two-dimensional projected hypersurface derived from an unconstrained four-dimensional radial field; the projection selects a cylindrical zeroth-order Bessel profile.
+
+\tzpsection{Canonical Equation}
+\[
+\mathcal{L}_4 u_4=0,\qquad u_4(r)\propto\frac{J_1(k r)}{k r}
+\]
+\[
+\mathsf{P}_{4\to2}:\mathcal{L}_4\rightsquigarrow\mathcal{L}_2,\qquad \delta\phi_{\mathrm{proj}}(r,t)=\varepsilon J_0(k r)\cos(\omega t)
+\]
+\[
+J_0(k r_0)=0,\qquad k r_0=2.4048255577\ldots
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $u_4$: unconstrained four-dimensional radial carrier field.
+    \item $\varepsilon$: small phase-deviation amplitude.
+    \item $J_0(kr)$: cylindrical zeroth-order Bessel profile on the effective projected slice.
+    \item $\omega$: angular frequency of the projected oscillation.
+    \item $r_0$: first-node radius of the projected Bessel profile.
+    \item $\mathcal{L}_4,\mathcal{L}_2$: four-dimensional and projected two-dimensional radial Helmholtz operators.
+    \item $\mathsf{P}_{4\to2}$: declared hypersurface projection selecting the effective two-dimensional radial sector.
+    \item $\delta\phi_{\mathrm{proj}}(r,t)$: projected local phase-deviation field.
+    \item $J_1(k r)/(k r)$: regular unconstrained four-dimensional radial profile.
+    \item $k$: radial wavenumber of the projected disturbance.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0229 generated source Wolfram model *)
+ClearAll[K0229, Cr0229, T, R, A, W, I, N];
+eq0229$1 = HoldForm[u4[r] == BesselJ[1, k*r]/(k*r)];
+eq0229$2 = HoldForm[P4to2[L4] == L2];
+eq0229$3 = HoldForm[deltaPhiProjected[r, t] == epsilon*BesselJ[0, k*r]*Cos[omega*t]];
+eq0229$4 = HoldForm[k*r0 == BesselJZero[0, 1]];
+
+K0229 = HoldForm[{eq0229$1, eq0229$2, eq0229$3, eq0229$4}];
+
+N = "normalized TRAWIN closure object for Disharmonic Fold Operator";
+I = "Projected Fold and Nodal Scale integration/comparison layer";
+W = "Effective Hypersurface Projection wave or operator carrier";
+A = "Unconstrained 4D Radial Mode admissible action/amplitude condition";
+R = "Effective Hypersurface Projection rotation/curl preservation layer";
+T = "Unconstrained 4D Radial Mode local source condition";
+
+Cr0229[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0229 = Cr0229[K0229];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Unconstrained 4D Radial Mode local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Effective Hypersurface Projection rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Unconstrained 4D Radial Mode admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Effective Hypersurface Projection wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Projected Fold and Nodal Scale integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Disharmonic Fold Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0229] Disharmonic Fold Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Unconstrained Four-Dimensional Mode.}
+For a radially symmetric field on a four-spatial-dimensional slice,
+\[
+\mathcal{L}_4u_4=\left(\partial_r^2+\frac{3}{r}\partial_r+k^2\right)u_4=0,\qquad u_4(r)\propto\frac{J_1(k r)}{k r}.
+\]
+Its first boundary node satisfies \(J_1(k r^{(4)}_0)=0\), hence \(k r^{(4)}_0\approx3.8317059702\).
+\paragraph{Hypersurface Projection Rule.}
+Introduce the model constraint \(\mathsf{P}_{4\to2}\) selecting the effective two-dimensional longitudinal sector:
+\[
+\mathsf{P}_{4\to2}:\mathcal{L}_4\rightsquigarrow\mathcal{L}_2=\partial_r^2+\frac{1}{r}\partial_r+k^2.
+\]
+The projected localized fold therefore obeys
+\[
+\delta\phi_{\mathrm{proj}}(r,t)=\varepsilon J_0(k r)\cos(\omega t),\qquad J_0(k r_0)=0,\quad k r_0\approx2.4048255577.
+\]
+\paragraph{Interpretation.}
+The higher-dimensional event remains hyperspherical in origin; its printed nodal metric is the effective projected observation selected by the declared constraint. This completes the node convention as a model-conditional extension of the sourced entry.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The explicit projection \(\mathsf{P}_{4\to2}\) maps the four-dimensional radial carrier to an effective two-dimensional disturbance profile, for which \(J_0(k r_0)=0\) gives \(k r_0\approx2.4048255577\).
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Unconstrained 4D Radial Mode}\par
+\[
+\left(\partial_r^2+\frac{3}{r}\partial_r+k^2\right)u_4(r)=0
+\]
+\[
+u_4(r)\propto\frac{J_1(k r)}{k r},\qquad k r^{(4)}_0\approx3.8317059702
+\]
+\noindent The isotropic four-spatial-dimensional carrier supplies the higher-dimensional radial origin of the event.\par
+\noindent\textbf{2. Effective Hypersurface Projection}\par
+\[
+\mathsf{P}_{4\to2}:\left(\partial_r^2+\frac{3}{r}\partial_r+k^2\right)\rightsquigarrow\left(\partial_r^2+\frac{1}{r}\partial_r+k^2\right)
+\]
+\noindent The declared geometric constraint selects the effective two-dimensional radial sector used by the observed disturbance.\par
+\noindent\textbf{3. Projected Fold and Nodal Scale}\par
+\[
+\delta\phi_{\mathrm{proj}}(r,t)=\varepsilon J_0(k r)\cos(\omega t)
+\]
+\[
+J_0(k r_0)=0,\qquad k r_0\approx2.4048255577
+\]
+\noindent The projected mode gives the node value recorded by the resonance metric without misidentifying it as spherical Bessel j-zero.\par
+
+\clearpage
+\noindent\textbf{[ID 0229] Disharmonic Fold Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+The disharmonic fold operator is a localized departure from coherent background behavior observed in an effective two-dimensional hypersurface sector. Its projected radial component is modeled by the ordinary zeroth-order Bessel profile \(J_0(k r)\), while its higher-dimensional carrier begins as an unconstrained four-dimensional radial wave.
+
+\tzpsection{Contextual Meaning}
+
+The entry keeps the disturbance hyperspherical in origin without forcing its observable node metric to be a four-dimensional boundary zero. An explicit projection constraint \(\mathsf{P}_{4\to2}\) selects the two-dimensional longitudinal observation sector, where concentric radial rings naturally carry the required \(J_0\) node.
+
+\tzpsection{Formal Statement}
+
+\[
+u_4(r)\propto\frac{J_1(k r)}{k r},\qquad
+\mathsf{P}_{4\to2}:\mathcal{L}_4\rightsquigarrow\mathcal{L}_2,\qquad
+\delta\phi_{\mathrm{proj}}(r,t)=\varepsilon J_0(k r)\cos(\omega t)
+\]
+\[
+J_0(k r_0)=0,\qquad k r_0\approx2.4048255577
+\]
+
+\tzpsection{Derivable Consequences}
+
+The unconstrained four-dimensional mode has first boundary zero at \(k r\approx3.8317059702\), whereas the projected two-dimensional mode has first zero at \(k r\approx2.4048255577\). The projection rule therefore converts a higher-dimensional origin into the nodal scale recorded for the localized fold.
+
+\tzpsection{Lemma Support}
+
+The retrieved source supplies the local disturbance and records its node near 2.405. The hypersurface-projection derivation is an author-specified model extension: it resolves the previously inconsistent spherical notation by making the displayed node explicitly cylindrical \(J_0\) in the projected sector.
+
+\tzpsection{Technical Interpretation}
+
+This is a controlled dimensional-reduction model. The operator \(\mathsf{P}_{4\to2}\) must be understood as a declared effective constraint or observation rule, not merely as evaluation of an isotropic four-dimensional solution on a plane. Under that rule, the radial equations and node values are consistent.
+
+\tzpsection{Equation Grounding}
+
+\(u_4\) is the unconstrained four-dimensional radial carrier; \(\mathsf{P}_{4\to2}\) is the effective projection constraint; \(\delta\phi_{\mathrm{proj}}\) is the observed local phase deviation; \(J_0\) is the projected cylindrical Bessel profile; and \(r_0\) is its first-node radius.
+
+\tzpsection{Interpretive Role}
+
+This entry links the higher-dimensional metric arc to a measurable projected resonance scale: the field event may originate in the hyperspherical sector while the recorded nodal pattern is evaluated in its effective planar observation layer.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Disharmonic Fold}: A local departure from harmonic coherence represented as a structured disturbance. \enspace\textbullet\enspace \textbf{Hypersurface Projection}: The effective dimensional-reduction constraint selecting the observed radial sector. \enspace\textbullet\enspace \textbf{First Node}: The first radius at which the projected ordinary Bessel profile reaches zero.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0229].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0229] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Disharmonic Fold Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} Under the declared projection constraint,
+\[
+\mathsf{P}_{4\to2}:\mathcal{L}_4\rightsquigarrow\mathcal{L}_2,\qquad \delta\phi_{\mathrm{proj}}(r,t)=\varepsilon J_0(k r)\cos(\omega t).
+\]
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} The effective projected profile realizes the recorded first-node scale.\\
+\textbf{Proof:} The regular 4D radial Helmholtz solution is proportional to \(J_1(k r)/(k r)\). By the stated model constraint, the observed sector obeys the 2D radial operator and has regular solution \(J_0(k r)\). Hence \(J_0(k r_0)=0\) gives \(k r_0=2.4048255577\ldots\).\\
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE UNDER PROJECTION CONSTRAINT}\\
+\textbf{Formal Status:} THEORETICAL -- author-approved geometric extension in the production source truth\\
+\textbf{Physical Status:} THEORETICAL -- projected realization remains to be tested
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0229].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

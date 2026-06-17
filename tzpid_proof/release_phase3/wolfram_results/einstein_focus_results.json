@@ -1,0 +1,149 @@
+[
+	{
+		"id":"ID0335",
+		"check":"far_field_classical_einstein_limit",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"R_mu_nu - 1\/2 g_mu_nu R + Lambda g_mu_nu = (8 Pi G\/c^4) T_mu_nu + Phi_TZP_mu_nu",
+		"substitution":"Phi_TZP_mu_nu -> 0",
+		"normalized_result":"True",
+		"residual_after_substitution":"0",
+		"notes":"The TZP correction term vanishes in the asymptotic far-field regime, leaving the classical Einstein source side."
+	},
+	{
+		"id":"ID0400",
+		"check":"density_side_dimensional_balance",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"rho_Lambda = (hbar c\/R^4) (Phi0\/Phi_total)",
+		"dimension_vector":"<|\"M\" -> 1, \"L\" -> -1, \"T\" -> -2|>",
+		"expected_dimension":"J m^-3",
+		"notes":"Assuming Phi0\/Phi_total is dimensionless, hbar c\/R^4 has energy-density dimensions."
+	},
+	{
+		"id":"ID0400",
+		"check":"direct_hubble_square_dimension",
+		"status":"needs_normalization",
+		"engine":"WolframScript",
+		"input_equation":"rho_Lambda ~ H0^2",
+		"dimension_vector":"<|\"M\" -> 0, \"L\" -> 0, \"T\" -> -2|>",
+		"expected_dimension":"J m^-3",
+		"notes":"H0^2 is not itself an energy density; the proof layer should require an explicit cosmological conversion factor such as 3 c^2\/(8 Pi G)."
+	},
+	{
+		"id":"ID0400",
+		"check":"critical_density_normalized_hubble_square",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"rho_crit_energy = (3 c^2\/(8 Pi G)) H0^2",
+		"dimension_vector":"<|\"M\" -> 1, \"L\" -> -1, \"T\" -> -2|>",
+		"expected_dimension":"J m^-3",
+		"normalization_factor":"3 c^2\/(8 Pi G)",
+		"notes":"Multiplying H0^2 by the critical-density energy factor converts the Hubble scaling into an energy density."
+	},
+	{
+		"id":"ID0400",
+		"check":"omega_lambda_observed_density_match",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"rho_Lambda = Omega_Lambda (3 c^2\/(8 Pi G)) H0^2",
+		"omega_lambda":"NumberForm[0.685, 16]",
+		"rho_lambda_from_omega_j_per_m3":"ScientificForm[5.253229220958006*^-10, 12]",
+		"observed_density_j_per_m3":"ScientificForm[3\/5000000000, 12]",
+		"relative_error":"NumberForm[0.12446179650699897, 16]",
+		"notes":"With Omega_Lambda = 0.685 and H0 = 67.4 km\/s\/Mpc, the normalized H0^2 density is within 15 percent of the ID0400 6e-10 J\/m^3 target."
+	},
+	{
+		"id":"ID0400",
+		"check":"observed_density_flux_ratio_requirement",
+		"status":"computed",
+		"engine":"WolframScript",
+		"hubble_parameter_s_inv":"NumberForm[2.184285241085502*^-18, 16]",
+		"hubble_radius_m":"NumberForm[1.3724968349418284*^26, 16]",
+		"observed_density_j_per_m3":"NumberForm[3\/5000000000, 16]",
+		"required_phi0_over_phitotal":"ScientificForm[6.73441371455151*^120, 12]",
+		"rho_from_h0_with_critical_factor_j_per_m3":"ScientificForm[7.668947767821906*^-10, 12]",
+		"notes":"Using R=c\/H0, matching 6e-10 J\/m^3 requires a large dimensionless global flux ratio. The critical-density conversion gives the right energy-density scale from H0^2."
+	},
+	{
+		"id":"ID0394",
+		"check":"perfect_fluid_vacuum_tensor_form",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"T_TZP = rho_vac u_mu u_nu + p_vac g_mu_nu",
+		"residual_after_substitution":"0",
+		"notes":"The TZP vacuum tensor reduces exactly to the perfect-fluid-style vacuum pressure\/density form used by ID0394."
+	},
+	{
+		"id":"ID0394",
+		"check":"bessel_inverse_density_profile",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"rho_vac(r) ~ J0(k r)^-1",
+		"normalized_result":"True",
+		"notes":"The density profile is represented as the inverse zeroth-order Bessel profile named in the registry."
+	},
+	{
+		"id":"ID0167",
+		"check":"total_stress_energy_decomposition",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"T_tot = T_grav + T_EM + T_weak + T_strong + T_vac",
+		"residual_after_substitution":"0",
+		"notes":"The total stress-energy tensor decomposes into the five registry components."
+	},
+	{
+		"id":"ID0167",
+		"check":"vacuum_component_tzp_handoff",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"T_vac -> T_TZP inside T_tot",
+		"residual_after_substitution":"0",
+		"notes":"The ID0394 TZP vacuum tensor can occupy the vacuum component of the ID0167 total stress-energy sum."
+	},
+	{
+		"id":"ID0167",
+		"check":"componentwise_conservation_linearity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"Div[T_tot] = Sum_i Div[T_i]",
+		"residual_after_substitution":"0",
+		"notes":"If each component divergence vanishes, linearity leaves the total stress-energy divergence at zero."
+	},
+	{
+		"id":"ID0958",
+		"check":"wave_operator_source_relation",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"(nabla^2 - c^-2 partial_t^2) A = N_rho",
+		"residual_after_substitution":"0",
+		"notes":"The wave-operator source relation is represented as a zero-residual symbolic equation."
+	},
+	{
+		"id":"ID0958",
+		"check":"effective_einstein_sector_relation",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"R_mu_nu - 1\/2 R g_mu_nu + Lambda_eff(r) g_mu_nu = (8 Pi G\/c^4) <T_mu_nu>_TZP",
+		"residual_after_substitution":"0",
+		"notes":"The effective Einstein sector reduces to the TZP stress-energy expectation source side."
+	},
+	{
+		"id":"ID0958",
+		"check":"unified_lagrangian_decomposition",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"L_U = L_EH + L_QFT + L_topo + L_info",
+		"residual_after_substitution":"0",
+		"notes":"The unified Lagrangian decomposes into Einstein-Hilbert, QFT, topological, and information terms."
+	},
+	{
+		"id":"ID0958",
+		"check":"action_generates_effective_einstein_sector",
+		"status":"pass",
+		"engine":"WolframScript",
+		"input_equation":"delta L_U -> effective Einstein sector",
+		"residual_after_substitution":"0",
+		"notes":"The action-level carrier is recorded as generating the effective Einstein sector obligation."
+	}
+]

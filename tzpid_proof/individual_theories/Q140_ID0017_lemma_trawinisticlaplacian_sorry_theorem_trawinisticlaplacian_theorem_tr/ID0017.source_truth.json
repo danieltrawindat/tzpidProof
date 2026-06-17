@@ -1,0 +1,373 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:28:55.726804+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0017",
+    "uuid": "130269c8-27cd-522d-8ffb-0a885015ddf9",
+    "registry_id": "registry_id_0017",
+    "canonical_title": "Trawinistic Connection",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0017/ID0017.TEX",
+      "json": "D:/TZPID/TZPID/ID0017/ID0017.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0017/ID0017.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The Trawinistic connection generalizes the Levi-Civita connection so that covariant differentiation remains meaningful in a manifold with a degenerate metric at the zero point. It agrees with ordinary geometry away from the anchor and acquires singular behavior only where the null sector requires it.",
+    "technical_interpretation": "The Trawinistic connection \\$\\textbackslash{}nabla\\$T\\textbackslash{}textbackslash nabla\\textbackslash{}\\^{}\\{\\}\\textbackslash{}\\{\\textbackslash{}textbackslash text\\textbackslash{}\\{T\\textbackslash{}\\}\\textbackslash{}\\}\\textbackslash{}nabla\\$T is the unique affine connection satisfying (i) metric compatibility away from ppp, \\$\\textbackslash{}nabla\\$Tg=0\\textbackslash{}textbackslash nabla\\textbackslash{}\\^{}\\{\\}\\textbackslash{}\\{\\textbackslash{}textbackslash text\\textbackslash{}\\{T\\textbackslash{}\\}\\textbackslash{}\\} g = 0\\$\\textbackslash{}nabla\\$Tg=0; (ii) torsion T(\\$\\textbackslash{}nabla\\$T)=0T(\\textbackslash{}textbackslash nabla\\textbackslash{}\\^{}\\{\\}\\textbackslash{}\\{\\textbackslash{}textbackslash text\\textbackslash{}\\{T\\textbackslash{}\\}\\textbackslash{}\\})=0T(\\$\\textbackslash{}nabla\\$T)=0 outside ppp; (iii) \\$\\textbackslash{}nabla\\$T\\textbackslash{}textbackslash nabla\\textbackslash{}\\^{}\\{\\}\\textbackslash{}\\{\\textbackslash{}textbackslash text\\textbackslash{}\\{T\\textbackslash{}\\}\\textbackslash{}\\}\\textbackslash{}nabla\\$T reduces to the Levi-Civita connection when det⁡g\\$\\textbackslash{}neq\\$0\\textbackslash{}textbackslash det g\\textbackslash{}textbackslash neq 0detg=0; and (iv) \\$\\textbackslash{}nabla\\$T\\textbackslash{}textbackslash nabla\\textbackslash{}\\^{}\\{\\}\\textbackslash{}\\{\\textbackslash{}textbackslash text\\textbackslash{}\\{T\\textbackslash{}\\}\\textbackslash{}\\}\\textbackslash{}nabla\\$T annihilates null vectors at ppp.\\textbackslash{}\\textbackslash{}\\textbackslash{}"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\nabla^{\\mathrm{T}} g = 0\n\\qquad \\text{away from } p",
+      "T(\\nabla^{\\mathrm{T}})=0\n\\qquad \\text{away from } p",
+      "\\nabla^{\\mathrm{T}}\\big\\vert_{\\det g \\neq 0}\n=\n\\nabla^{\\mathrm{LC}},\n\\qquad\n\\nabla^{\\mathrm{T}} n = 0\n\\ \\text{for}\\ n \\in \\operatorname{Null}_{p}(M)"
+    ],
+    "source_section_latex": "\\[\n\\nabla^{\\mathrm{T}} g = 0\n\\qquad \\text{away from } p\n\\]\n\\[\nT(\\nabla^{\\mathrm{T}})=0\n\\qquad \\text{away from } p\n\\]\n\\[\n\\nabla^{\\mathrm{T}}\\big\\vert_{\\det g \\neq 0}\n=\n\\nabla^{\\mathrm{LC}},\n\\qquad\n\\nabla^{\\mathrm{T}} n = 0\n\\ \\text{for}\\ n \\in \\operatorname{Null}_{p}(M)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Metric Compatibility Off the Anchor",
+      "formula_latex_blocks": [
+        "\\nabla^{\\mathrm{T}} g = 0\n\\qquad \\text{away from } p"
+      ],
+      "interpretive_role": "This ensures the connection preserves the metric structure wherever the geometry is regular."
+    },
+    {
+      "step": 2,
+      "component_title": "Torsion-Free Exterior Behavior",
+      "formula_latex_blocks": [
+        "T(\\nabla^{\\mathrm{T}})=0\n\\qquad \\text{away from } p"
+      ],
+      "interpretive_role": "This aligns the operator with standard affine geometry in the ordinary part of the manifold."
+    },
+    {
+      "step": 3,
+      "component_title": "Singular Matching Rule",
+      "formula_latex_blocks": [
+        "\\nabla^{\\mathrm{T}}\\big\\vert_{\\det g \\neq 0}\n=\n\\nabla^{\\mathrm{LC}},\n\\qquad\n\\nabla^{\\mathrm{T}} n = 0\n\\ \\text{for}\\ n \\in \\operatorname{Null}_{p}(M)"
+      ],
+      "interpretive_role": "This closes the progression by specifying exactly how the connection behaves both away from and at the singular anchor."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0017}$",
+        "description": "canonical registry object for entry ID 0017."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0017}$",
+        "name": "canonical registry object for entry ID 0017.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\nabla^{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\big$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\vert_{\\det g \\neq 0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla^{LC}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T(\\nabla^{T})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$l_{p}(M)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "MetricCompatible[TrawinConnection, g] == True\n  Torsion[TrawinConnection][x] == 0 /;\nx != p TrawinConnection == LeviCivitaConnection[g] /;\nDet[g[x]] != 0",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\nabla^{\\mathrm{T}} g = 0\n\\qquad \\text{away from } p",
+          "normalized_latex": "Grad^(T)g==0*p",
+          "wolfram_input": "Grad^(T)g==0*p",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "text prose removed from Wolfram parse",
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Grad^T*g == 0*p]",
+          "texform_roundtrip": "g \\text{Grad}^T=0",
+          "messages": []
+        },
+        {
+          "latex": "T(\\nabla^{\\mathrm{T}})=0\n\\qquad \\text{away from } p",
+          "normalized_latex": "T[Grad^(T)]==0*p",
+          "wolfram_input": "T[Grad^(T)]==0*p",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "text prose removed from Wolfram parse",
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[T[Grad^T] == 0*p]",
+          "texform_roundtrip": "T\\left(\\text{Grad}^T\\right)=0",
+          "messages": []
+        },
+        {
+          "latex": "\\nabla^{\\mathrm{T}}\\big\\vert_{\\det g \\neq 0}\n=\n\\nabla^{\\mathrm{LC}},\n\\qquad\n\\nabla^{\\mathrm{T}} n = 0\n\\ \\text{for}\\ n \\in \\operatorname{Null}_{p}(M)",
+          "normalized_latex": "\\nabla^{\\mathrm{T}}\\big\\vert_{\\det g \\neq 0} = \\nabla^{\\mathrm{LC}}, \\nabla^{\\mathrm{T}} n = 0 \\text{for} n \\in \\operatorname{Null}_{p}(M)",
+          "wolfram_input": "Element[TZPSequence[Grad^(T)bigDetg0==Grad^(LC),Grad^(T)n==0&&n],NullP[M]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[TZPSequence[Grad^T*bigDetg0 == Grad^LC, Grad^T*n == 0 && n], NullP[M]]]",
+          "texform_roundtrip": "\\text{TZPSequence}\\left(\\text{bigDetg0} \\text{Grad}^T=\\text{Grad}^{\\text{LC}},n \\text{Grad}^T=0\\land n\\right)\\in \\text{NullP}(M)",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0017 generated source-truth Wolfram model *)\nClearAll[K0017, TRAWINClosure0017];\neq0017$1 = HoldForm[Grad^T*g == 0*p];\neq0017$2 = HoldForm[T[Grad^T] == 0*p];\neq0017$3 = HoldForm[Element[TZPSequence[Grad^T*bigDetg0 == Grad^LC, Grad^T*n == 0 && n], NullP[M]]];\nK0017 = HoldForm[{eq0017$1, eq0017$2, eq0017$3}];\nTRAWINClosure0017[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0017 = TRAWINClosure0017[K0017];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\nabla^{T}g=0,\n\\qquad\nT(\\nabla^{T})=0\n\\quad\n(x\\neq p).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nAway from the TZP, the geometry should reduce to ordinary metric-compatible differential geometry. Therefore the Trawinistic connection $\\nabla^{T}$ must satisfy metric compatibility:\n\n\\begin{equation}\n\\nabla^{T}g=0 .\n\\end{equation}\n\nIt must also be torsion-free away from the degenerate point:\n\n\\begin{equation}\nT(\\nabla^{T})=0,\n\\qquad x\\neq p .\n\\end{equation}\n\nWhen $\\det(g)\\neq 0$, the unique connection satisfying metric compatibility and zero torsion is the Levi-Civita connection. Hence:\n\n\\begin{equation}\n\\nabla^{T}=\\nabla^{LC},\n\\qquad x\\neq p .\n\\end{equation}\n\nAt $p$, where $\\det(g)|_p=0$, $\\nabla^{T}$ is extended by the rule that null vectors are annihilated or stabilized under the degenerate structure.\n\n\\paragraph{Interpretation.}\nThe Trawinistic connection preserves ordinary geometry away from $p$ while extending the differential structure into the TZP degeneracy.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {
+      "isabelle": "by simp (fallback)",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:49+00:00",
+        "id": "ID0017",
+        "title": "Trawinistic Connection",
+        "canonical_claim": "The Trawinistic connection generalizes the Levi-Civita connection so that covariant differentiation remains meaningful in a manifold with a degenerate metric at the zero point. It agrees with ordinary geometry away from the anchor and acquires singular behavior only where the null sector requires it.",
+        "proof_lane": "L1 Source-traceable statement",
+        "exact_language": "This source (Levi‑Civita connection) supports the theorem analogue (metric‑compatible connection) by showing that This reference states that on a Riemannian manifold there is a unique torsion‑free connection compatible with the metric, known as the Levi‑Civita connection.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Levi‑Civita connection",
+        "url": "https://mathworld.wolfram.com/Levi-CivitaConnection.html",
+        "doi_or_arxiv": "",
+        "source_type": "reference article",
+        "relevance": "This reference states that on a Riemannian manifold there is a unique torsion‑free connection compatible with the metric, known as the Levi‑Civita connection. It is the canonical connection used to differentiate tensors and preserve the metric. This provides the starting point for generalising the connection to a degenerate metric.",
+        "supported_component": "theorem analogue (metric‑compatible connection)",
+        "confidence": "medium",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:49+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0017/ID0017.source_truth.json",
+    "entry_id": "ID0017",
+    "registry_id": "registry_id_0017",
+    "canonical_title": "Trawinistic Connection",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0017/ID0017.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "130269c8-27cd-522d-8ffb-0a885015ddf9",
+    "RTEID": "RTE:P66.0148:T0.1088",
+    "poloidal_theta_rad": "66.0148",
+    "toroidal_phi_rad": "0.1088",
+    "rteid_source": "manifest",
+    "PiID": "8462643383279",
+    "TZPi": "3",
+    "PiPE_position": "24",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

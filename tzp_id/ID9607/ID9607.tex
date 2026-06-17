@@ -1,0 +1,17 @@
+\section*{ID9607: Relation: (θ\_i, φ\_i)}
+\paragraph{Metadata.}
+PiID: 8543475464955 | RTEID: RTE:P37306.1145:T4.9203 | UUID: c9b794b9-1b8e-58fd-9ac6-63575e537770
+
+\paragraph{Canonical Statement.}
+agraph\{Phase One: Singular Value Decomposition and Spherical Projection\} Given an input blob matrix \$\textbackslash{}mathbf\{B\} \textbackslash{}in \textbackslash{}mathbb\{R\}\textasciicircum{}\{n \textbackslash{}times m\}\$, compute its singular value decomposition \$\textbackslash{}mathbf\{B\} = \textbackslash{}mathbf\{U\}\textbackslash{}mathbf\{\textbackslash{}Sigma\}\textbackslash{}mathbf\{V\}\textasciicircum{}\textbackslash{}top\$. Extract the three leading left singular vectors \$\textbackslash{}mathbf\{u\}\_1, \textbackslash{}mathbf\{u\}\_2, \textbackslash{}mathbf\{u\}\_3\$ and normalize each to unit length, yielding three points on a unit sphere. These points capture the dominant directional components of the blob matrix. \textbackslash{}paragraph\{Phase Two: Pi-Digit Generation via Continued Fractions\} Convert each unit vector to spherical coordinates \$(\textbackslash{}theta\_i, \textbackslash{}phi\_i)\$ and form the continued fraction expansions of these six angles. The continued fraction representation provides a sequence of integers that encode irrational values with controllable precision. Multiply each continued fraction coefficient by \$\textbackslash{}pi\textasciicircum{}\{p/2\}\$ where \$p\$ is the desired precision, then extract integer digits in base \$\textbackslash{}lfloor \textbackslash{}pi \textbackslash{}rfloor = 3\$. This produces a sequence of digits that appears random but is deterministically generated from the blob structure. \textbackslash{}paragraph\{Phase Three: Cantor P
+
+\paragraph{Canonical Equation.}
+\[
+(\theta_i, \phi_i)
+\]
+
+\paragraph{Dictionary.}
+Relation: (θ\_i, φ\_i) — (θ\_i, φ\_i)
+
+\paragraph{Encyclopedia.}
+Relation: (θ\_i, φ\_i) is a symbolic expression, written (θ\_i, φ\_i). It introduces a symbol or relation used elsewhere in the framework. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

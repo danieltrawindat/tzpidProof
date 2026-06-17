@@ -1,0 +1,493 @@
+{
+  "certificate": "HUBBLE_FRIEDMANN_OBSERVED_FIT_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:49:11+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Published summary-constraint residual scaffold; not a raw likelihood and not a full covariance cosmology fit.",
+  "observed_constraints": [
+    {
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "source_url": "https://arxiv.org/abs/1807.06209",
+      "parameter": "H0",
+      "observed_value": 67.4,
+      "sigma": 0.5,
+      "note": "Planck base-LambdaCDM H0 = 67.4 +/- 0.5 km/s/Mpc."
+    },
+    {
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "source_url": "https://arxiv.org/abs/1807.06209",
+      "parameter": "Omega_m",
+      "observed_value": 0.315,
+      "sigma": 0.007,
+      "note": "Planck base-LambdaCDM Omega_m = 0.315 +/- 0.007."
+    },
+    {
+      "probe": "CMB+BAO",
+      "source": "Planck 2018 VI joint curvature constraint",
+      "source_url": "https://www.aanda.org/articles/aa/abs/2020/09/aa33910-18/aa33910-18.html",
+      "parameter": "Omega_K",
+      "observed_value": 0.001,
+      "sigma": 0.002,
+      "note": "Planck+BAO curvature constraint is consistent with flatness, Omega_K about 0.001 +/- 0.002."
+    },
+    {
+      "probe": "SN distance ladder",
+      "source": "SH0ES 2022",
+      "source_url": "https://ui.adsabs.harvard.edu/abs/2022ApJ...934L...7R/abstract",
+      "parameter": "H0",
+      "observed_value": 73.04,
+      "sigma": 1.04,
+      "note": "Cepheid-SN Ia distance ladder baseline H0 = 73.04 +/- 1.04 km/s/Mpc."
+    },
+    {
+      "probe": "SN+Cepheid",
+      "source": "Pantheon+ with SH0ES",
+      "source_url": "https://arxiv.org/abs/2202.04077",
+      "parameter": "H0",
+      "observed_value": 73.3,
+      "sigma": 1.1,
+      "note": "Pantheon+ including SH0ES reports H0 = 73.3 +/- 1.1 km/s/Mpc."
+    },
+    {
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "source_url": "https://academic.oup.com/nsr/article/13/10/nwag115/8497412",
+      "parameter": "w0",
+      "observed_value": -0.838,
+      "sigma": 0.055,
+      "note": "Published summary gives w0 = -0.838 +/- 0.055 for DESI+CMB+Pantheon+."
+    },
+    {
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "source_url": "https://academic.oup.com/nsr/article/13/10/nwag115/8497412",
+      "parameter": "wa",
+      "observed_value": -0.62,
+      "sigma": 0.205,
+      "note": "Symmetric approximation to wa = -0.62 +0.22/-0.19."
+    },
+    {
+      "probe": "Pantheon+ CMB+BAO",
+      "source": "Pantheon+ cosmological constraints",
+      "source_url": "https://arxiv.org/abs/2202.04077",
+      "parameter": "wa",
+      "observed_value": -0.65,
+      "sigma": 0.3,
+      "note": "Symmetric approximation to wa = -0.65 +0.28/-0.32 from Pantheon+ with CMB and BAO."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "planck_lambda_cdm_flat",
+      "role": "Locked flat LambdaCDM reference from the CPL scaffold.",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_K": 0.0,
+      "w0": -1.0,
+      "wa": 0.0
+    },
+    {
+      "name": "closed_breathing_lambda_cdm",
+      "role": "Closed-enclosure LambdaCDM carrier with small negative curvature.",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_K": -0.001,
+      "w0": -1.0,
+      "wa": 0.0
+    },
+    {
+      "name": "dynamic_cpl_demo",
+      "role": "Prior non-fit CPL demonstration point.",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_K": 0.0,
+      "w0": -0.95,
+      "wa": 0.2
+    }
+  ],
+  "residuals": [
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 67.4,
+      "sigma": 0.5,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "Omega_m",
+      "model_value": 0.315,
+      "observed_value": 0.315,
+      "sigma": 0.007,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "CMB+BAO",
+      "source": "Planck 2018 VI joint curvature constraint",
+      "parameter": "Omega_K",
+      "model_value": 0.0,
+      "observed_value": 0.001,
+      "sigma": 0.002,
+      "residual": -0.001,
+      "pull_sigma": -0.5,
+      "chi2": 0.25
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "SN distance ladder",
+      "source": "SH0ES 2022",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.04,
+      "sigma": 1.04,
+      "residual": -5.640000000000001,
+      "pull_sigma": -5.423076923076923,
+      "chi2": 29.40976331360947
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "SN+Cepheid",
+      "source": "Pantheon+ with SH0ES",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.3,
+      "sigma": 1.1,
+      "residual": -5.8999999999999915,
+      "pull_sigma": -5.363636363636355,
+      "chi2": 28.768595041322225
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "w0",
+      "model_value": -1.0,
+      "observed_value": -0.838,
+      "sigma": 0.055,
+      "residual": -0.16200000000000003,
+      "pull_sigma": -2.945454545454546,
+      "chi2": 8.675702479338847
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "wa",
+      "model_value": 0.0,
+      "observed_value": -0.62,
+      "sigma": 0.205,
+      "residual": 0.62,
+      "pull_sigma": 3.024390243902439,
+      "chi2": 9.146936347412256
+    },
+    {
+      "scenario": "planck_lambda_cdm_flat",
+      "probe": "Pantheon+ CMB+BAO",
+      "source": "Pantheon+ cosmological constraints",
+      "parameter": "wa",
+      "model_value": 0.0,
+      "observed_value": -0.65,
+      "sigma": 0.3,
+      "residual": 0.65,
+      "pull_sigma": 2.166666666666667,
+      "chi2": 4.6944444444444455
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 67.4,
+      "sigma": 0.5,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "Omega_m",
+      "model_value": 0.315,
+      "observed_value": 0.315,
+      "sigma": 0.007,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "CMB+BAO",
+      "source": "Planck 2018 VI joint curvature constraint",
+      "parameter": "Omega_K",
+      "model_value": -0.001,
+      "observed_value": 0.001,
+      "sigma": 0.002,
+      "residual": -0.002,
+      "pull_sigma": -1.0,
+      "chi2": 1.0
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "SN distance ladder",
+      "source": "SH0ES 2022",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.04,
+      "sigma": 1.04,
+      "residual": -5.640000000000001,
+      "pull_sigma": -5.423076923076923,
+      "chi2": 29.40976331360947
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "SN+Cepheid",
+      "source": "Pantheon+ with SH0ES",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.3,
+      "sigma": 1.1,
+      "residual": -5.8999999999999915,
+      "pull_sigma": -5.363636363636355,
+      "chi2": 28.768595041322225
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "w0",
+      "model_value": -1.0,
+      "observed_value": -0.838,
+      "sigma": 0.055,
+      "residual": -0.16200000000000003,
+      "pull_sigma": -2.945454545454546,
+      "chi2": 8.675702479338847
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "wa",
+      "model_value": 0.0,
+      "observed_value": -0.62,
+      "sigma": 0.205,
+      "residual": 0.62,
+      "pull_sigma": 3.024390243902439,
+      "chi2": 9.146936347412256
+    },
+    {
+      "scenario": "closed_breathing_lambda_cdm",
+      "probe": "Pantheon+ CMB+BAO",
+      "source": "Pantheon+ cosmological constraints",
+      "parameter": "wa",
+      "model_value": 0.0,
+      "observed_value": -0.65,
+      "sigma": 0.3,
+      "residual": 0.65,
+      "pull_sigma": 2.166666666666667,
+      "chi2": 4.6944444444444455
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 67.4,
+      "sigma": 0.5,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "CMB",
+      "source": "Planck 2018 VI base-LambdaCDM",
+      "parameter": "Omega_m",
+      "model_value": 0.315,
+      "observed_value": 0.315,
+      "sigma": 0.007,
+      "residual": 0.0,
+      "pull_sigma": 0.0,
+      "chi2": 0.0
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "CMB+BAO",
+      "source": "Planck 2018 VI joint curvature constraint",
+      "parameter": "Omega_K",
+      "model_value": 0.0,
+      "observed_value": 0.001,
+      "sigma": 0.002,
+      "residual": -0.001,
+      "pull_sigma": -0.5,
+      "chi2": 0.25
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "SN distance ladder",
+      "source": "SH0ES 2022",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.04,
+      "sigma": 1.04,
+      "residual": -5.640000000000001,
+      "pull_sigma": -5.423076923076923,
+      "chi2": 29.40976331360947
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "SN+Cepheid",
+      "source": "Pantheon+ with SH0ES",
+      "parameter": "H0",
+      "model_value": 67.4,
+      "observed_value": 73.3,
+      "sigma": 1.1,
+      "residual": -5.8999999999999915,
+      "pull_sigma": -5.363636363636355,
+      "chi2": 28.768595041322225
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "w0",
+      "model_value": -0.95,
+      "observed_value": -0.838,
+      "sigma": 0.055,
+      "residual": -0.11199999999999999,
+      "pull_sigma": -2.036363636363636,
+      "chi2": 4.146776859504131
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "DESI DR2+CMB+Pantheon+",
+      "source": "DESI DR2 summary constraint",
+      "parameter": "wa",
+      "model_value": 0.2,
+      "observed_value": -0.62,
+      "sigma": 0.205,
+      "residual": 0.8200000000000001,
+      "pull_sigma": 4.000000000000001,
+      "chi2": 16.000000000000007
+    },
+    {
+      "scenario": "dynamic_cpl_demo",
+      "probe": "Pantheon+ CMB+BAO",
+      "source": "Pantheon+ cosmological constraints",
+      "parameter": "wa",
+      "model_value": 0.2,
+      "observed_value": -0.65,
+      "sigma": 0.3,
+      "residual": 0.8500000000000001,
+      "pull_sigma": 2.833333333333334,
+      "chi2": 8.02777777777778
+    }
+  ],
+  "scenario_totals": {
+    "planck_lambda_cdm_flat": {
+      "scenario": "planck_lambda_cdm_flat",
+      "chi2": 80.94544162612725,
+      "dof": 8,
+      "reduced_chi2": 10.118180203265906,
+      "max_abs_pull_sigma": 5.423076923076923,
+      "status": "computed"
+    },
+    "closed_breathing_lambda_cdm": {
+      "scenario": "closed_breathing_lambda_cdm",
+      "chi2": 81.69544162612725,
+      "dof": 8,
+      "reduced_chi2": 10.211930203265906,
+      "max_abs_pull_sigma": 5.423076923076923,
+      "status": "computed"
+    },
+    "dynamic_cpl_demo": {
+      "scenario": "dynamic_cpl_demo",
+      "chi2": 86.60291299221362,
+      "dof": 8,
+      "reduced_chi2": 10.825364124026702,
+      "max_abs_pull_sigma": 5.423076923076923,
+      "status": "computed"
+    }
+  },
+  "parameter_fit": {
+    "H0": {
+      "parameter": "H0",
+      "fit_value": 69.15456889642843,
+      "fit_sigma": 0.41699247904952497,
+      "constraint_count": 3,
+      "chi2": 40.47382809427535,
+      "dof": 2,
+      "reduced_chi2": 20.236914047137674,
+      "status": "computed"
+    },
+    "Omega_m": {
+      "parameter": "Omega_m",
+      "fit_value": 0.315,
+      "fit_sigma": 0.007,
+      "constraint_count": 1,
+      "chi2": 0.0,
+      "dof": 0,
+      "reduced_chi2": null,
+      "status": "computed"
+    },
+    "Omega_K": {
+      "parameter": "Omega_K",
+      "fit_value": 0.001,
+      "fit_sigma": 0.002,
+      "constraint_count": 1,
+      "chi2": 0.0,
+      "dof": 0,
+      "reduced_chi2": null,
+      "status": "computed"
+    },
+    "w0": {
+      "parameter": "w0",
+      "fit_value": -0.838,
+      "fit_sigma": 0.055,
+      "constraint_count": 1,
+      "chi2": 0.0,
+      "dof": 0,
+      "reduced_chi2": null,
+      "status": "computed"
+    },
+    "wa": {
+      "parameter": "wa",
+      "fit_value": -0.6295493277788298,
+      "fit_sigma": 0.16925715150766688,
+      "constraint_count": 2,
+      "chi2": 0.00681689074039009,
+      "dof": 1,
+      "reduced_chi2": 0.00681689074039009,
+      "status": "computed"
+    }
+  },
+  "best_fit_point": {
+    "H0": 69.15456889642843,
+    "Omega_m": 0.315,
+    "Omega_K": 0.001,
+    "w0": -0.838,
+    "wa": -0.6295493277788298
+  },
+  "checks": {
+    "positive_uncertainties": "pass",
+    "finite_residuals": "pass",
+    "parameter_coverage_H0_Omega_m_Omega_K_w0_wa": "pass",
+    "summary_fit_computed": "computed"
+  },
+  "overall_status": "pass"
+}

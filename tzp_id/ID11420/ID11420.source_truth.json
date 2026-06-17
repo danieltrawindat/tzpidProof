@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11420",
+    "uuid": "410e29ed-df2c-5ee8-b8df-0bc1c79c3fb8",
+    "registry_id": "registry_id_11420",
+    "piid": "PiID-11420-s4s5-mix",
+    "canonical_title": "Sn Matter Density Scaling",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11420\\ID11420.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "Matter density distributed through an n-sphere scales inversely with R to the n.",
+    "technical_interpretation": "This generalizes the familiar S3 matter scaling to S4 and S5.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\rho_{m}\\sim R^{-n}"
+    ],
+    "source_section_latex": "\\rho_{m}\\sim R^{-n}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Sn Matter Density Scaling",
+          "wolfram": "rhom == R^-n",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Scaling_Law",
+    "obligation_role": "HigherDimensional_Density",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11420",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

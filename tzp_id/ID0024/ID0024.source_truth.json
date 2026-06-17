@@ -1,0 +1,435 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:29:29.480689+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0024",
+    "uuid": "cea266a9-90df-5dad-9382-b16921324214",
+    "registry_id": "registry_id_0024",
+    "canonical_title": "TZP Vacuum Energy Density",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0024/ID0024.TEX",
+      "json": "D:/TZPID/TZPID/ID0024/ID0024.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0024/ID0024.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The TZP vacuum energy density is the finite zero-point energy obtained by weighting vacuum modes with the Trawin spectral index and normalizing by the fourth power of the Trawin base unit.",
+    "technical_interpretation": "The vacuum energy density at the TZP is defined as $\\rho$\\_vacT=1u\\_T4 $\\int$0$\\omega$\\_cutη($\\omega$) ℏ$\\omega$ d$\\omega$\\rho\\textbackslash\\_\\{\\text\\{vac\\}\\}\\textsuperscript{\\{\\text\\{T\\}\\}=\\frac\\{1\\}\\{u\\textbackslash\\_\\{\\text\\{T\\}\\}}4\\}\\textbackslash,\\int\\_\\{0\\}\\^{}\\{\\omega\\textbackslash\\_\\{\\text\\{cut\\}\\}\\}\\eta(\\omega)\\textbackslash,\\hbar\\omega\\textbackslash,\\text\\{d\\}\\omega$\\rho$\\_vacT=u\\_T41$\\int$0$\\omega$\\_cutη($\\omega$)ℏ$\\omega$d$\\omega$, where η($\\omega$)\\eta(\\omega)η($\\omega$) is the spectral density index from ID\\,015 and $\\omega$\\_cut\\omega\\textbackslash\\_\\{\\text\\{cut\\}\\}\\omega$\\_cut is a high-frequency cutoff determined by $\\HD$.\\\\\\"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+      "\\omega_{\\mathrm{cut}}=\\omega_{\\mathrm{cut}}(S_{\\mathrm{HD}})"
+    ],
+    "source_section_latex": "\\[\n\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega\n\\]\n\\[\n\\omega_{\\mathrm{cut}}=\\omega_{\\mathrm{cut}}(S_{\\mathrm{HD}})\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Spectral Weighting Function",
+      "formula_latex_blocks": [
+        "\\eta(\\omega)"
+      ],
+      "interpretive_role": "This determines how each frequency contributes to the vacuum integral."
+    },
+    {
+      "step": 2,
+      "component_title": "Cutoff-Controlled Vacuum Integral",
+      "formula_latex_blocks": [
+        "\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega"
+      ],
+      "interpretive_role": "This gathers the weighted zero-point contributions up to the span-controlled ultraviolet cutoff."
+    },
+    {
+      "step": 3,
+      "component_title": "Base-Unit Density Scaling",
+      "formula_latex_blocks": [
+        "\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega"
+      ],
+      "interpretive_role": "This closes the progression by converting weighted spectral energy into a density expressed in the framework's own geometric units."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\rho_{vac}^{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{cut}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta(\\omega)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{cut}(S_{HD})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S_{HD}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a(\\omega)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a_{cut}(S_{HD})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "TZP Vacuum Energy Density\nCanonical operator translation\neq0024_1 = HoldForm[rhovac^(T) == (1)(uT^(4)) Integrate0^(omegacut) (omega) hbaromega domega];\neq0024_2 = HoldForm[omegacut==omegacut(SHD)];\n\nTRAWIN closure composition\nTRAWINClosure0024[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0024 := HoldForm[{eq0024_1, eq0024_2}];\nResult0024 := TRAWINClosure0024[K0024];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+          "normalized_latex": "rhoVac^(T)==((1)/(uT^(4)))*Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+          "wolfram_input": "rhoVac^(T)==((1)/(uT^(4)))*Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rhoVac^T == (1/uT^4)*Integral0^omegaCut*eta[omega]*hbaromega*domega]",
+          "texform_roundtrip": "\\text{rhoVac}^T=\\frac{\\text{domega} \\text{hbaromega} \\eta (\\omega ) \\text{Integral0}^{\\text{omegaCut}}}{\\text{uT}^4}",
+          "messages": []
+        },
+        {
+          "latex": "\\omega_{\\mathrm{cut}}=\\omega_{\\mathrm{cut}}(S_{\\mathrm{HD}})",
+          "normalized_latex": "omegaCut==omegaCut[SHD]",
+          "wolfram_input": "omegaCut==omegaCut[SHD]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaCut == omegaCut[SHD]]",
+          "texform_roundtrip": "\\text{omegaCut}=\\text{omegaCut}(\\text{SHD})",
+          "messages": []
+        },
+        {
+          "latex": "\\eta(\\omega)",
+          "normalized_latex": "eta[omega]",
+          "wolfram_input": "eta[omega]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[eta[omega]]",
+          "texform_roundtrip": "\\eta (\\omega )",
+          "messages": []
+        },
+        {
+          "latex": "\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+          "normalized_latex": "Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+          "wolfram_input": "Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Integral0^omegaCut*eta[omega]*hbaromega*domega]",
+          "texform_roundtrip": "\\text{domega} \\text{hbaromega} \\eta (\\omega ) \\text{Integral0}^{\\text{omegaCut}}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0024 generated source-truth Wolfram model *)\nClearAll[K0024, TRAWINClosure0024];\neq0024$1 = HoldForm[rhoVac^T == (1/uT^4)*Integral0^omegaCut*eta[omega]*hbaromega*domega];\neq0024$2 = HoldForm[omegaCut == omegaCut[SHD]];\neq0024$3 = HoldForm[eta[omega]];\neq0024$4 = HoldForm[Integral0^omegaCut*eta[omega]*hbaromega*domega];\nK0024 = HoldForm[{eq0024$1, eq0024$2, eq0024$3, eq0024$4}];\nTRAWINClosure0024[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0024 = TRAWINClosure0024[K0024];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_T^4}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\n\\hbar\\omega\\,\n\\mathrm{d}\\omega .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nEach vacuum mode of frequency $\\omega$ contributes energy proportional to:\n\n\\begin{equation}\n\\hbar\\omega .\n\\end{equation}\n\nThe spectral density index $\\eta(\\omega)$ weights the contribution of each frequency:\n\n\\begin{equation}\n\\eta(\\omega)\\hbar\\omega .\n\\end{equation}\n\nIntegrating over all allowed frequencies up to the cutoff $\\omega_{\\mathrm{cut}}$ gives the weighted vacuum energy:\n\n\\begin{equation}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\hbar\\omega\\,\\mathrm{d}\\omega .\n\\end{equation}\n\nTo convert this to a density in Trawin units, divide by the fourth power of the base unit:\n\n\\begin{equation}\nu_T^4 .\n\\end{equation}\n\nTherefore,\n\n\\begin{equation}\n\\boxed{\n\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_T^4}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\n\\hbar\\omega\\,\n\\mathrm{d}\\omega .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\n$\\rho_{\\mathrm{vac}}^{T}$ defines vacuum energy density as a spectral integral normalized by the four-dimensional Trawin base scale.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "id": "ID0024",
+        "title": "TZP Vacuum Energy Density",
+        "canonical_claim": "The TZP vacuum energy density is the finite zero-point energy obtained by weighting vacuum modes with the Trawin spectral index and normalizing by the fourth power of the Trawin base unit.",
+        "proof_lane": "L5 Physical/experimental evidence support",
+        "exact_language": "This source (Vacuum energy) supports the physical evidence (vacuum fluctuations) by showing that The article describes how vacuum energy leads to observable phenomena such as the Casimir effect and the Lamb shift.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Vacuum energy",
+        "url": "https://en.wikipedia.org/wiki/Vacuum_energy",
+        "doi_or_arxiv": "",
+        "source_type": "reference article",
+        "relevance": "The article describes how vacuum energy leads to observable phenomena such as the Casimir effect and the Lamb shift. It notes that the Casimir effect is an experimentally verified force arising from vacuum fluctuations. This supports the concept of a finite vacuum energy density near the zero point.",
+        "supported_component": "physical evidence (vacuum fluctuations)",
+        "confidence": "medium",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0024/ID0024.source_truth.json",
+    "entry_id": "ID0024",
+    "registry_id": "registry_id_0024",
+    "canonical_title": "TZP Vacuum Energy Density",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0024/ID0024.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "cea266a9-90df-5dad-9382-b16921324214",
+    "RTEID": "RTE:P93.1973:T0.1536",
+    "poloidal_theta_rad": "93.1973",
+    "toroidal_phi_rad": "0.1536",
+    "rteid_source": "manifest",
+    "PiID": "3832795028841",
+    "TZPi": "5",
+    "PiPE_position": "31",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+        "numeric_atoms": [
+          "1",
+          "4",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "rho",
+          "int",
+          "omega",
+          "eta",
+          "hbar",
+          "T",
+          "u",
+          "d"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0024\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"TZP Vacuum Energy Density\", \"latex\" -> \"\\\\rho_{\\\\mathrm{vac}}^{T}\\n=\\n\\\\frac{1}{u_{T}^{4}}\\n\\\\int_{0}^{\\\\omega_{\\\\mathrm{cut}}}\\n\\\\eta(\\\\omega)\\\\,\\\\hbar\\\\omega\\\\,d\\\\omega\", \"numericAtoms\" -> {1, 4, 0}, \"symbolicTokens\" -> {\"rho\", \"int\", \"omega\", \"eta\", \"hbar\", \"T\", \"u\", \"d\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\omega_{\\mathrm{cut}}=\\omega_{\\mathrm{cut}}(S_{\\mathrm{HD}})",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "omega",
+          "S"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0024\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"TZP Vacuum Energy Density\", \"latex\" -> \"\\\\omega_{\\\\mathrm{cut}}=\\\\omega_{\\\\mathrm{cut}}(S_{\\\\mathrm{HD}})\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"omega\", \"S\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

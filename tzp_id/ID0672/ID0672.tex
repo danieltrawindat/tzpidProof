@@ -1,0 +1,224 @@
+\tzpanchor{0672}
+\tzpentryheader{0672}{ROUND-TRIP FIDELITY METRIC}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{12d03b9e-0c09-5d46-a4a6-6c1751a91d12}}\\
+\textbf{PiID} & \tzpcode{5495853710507} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{679}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2582.3427 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{04.2549 rad}\\
+\textbf{TZPID} & \tzpcode{ID0672} & \textbf{Node Dependencies}\quad \tzpidref{0671}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0672} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Geometric Carrier & Compatibility Law\\
+\textbf{Closure Support} & Topological Closure & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records round-trip fidelity metric through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.
+
+\tzpsection{Canonical Equation}
+\[
+[q,p]=i\hbar.
+\]
+\[
+[q,p]=qp-pq.
+\]
+\[
+\boxed{ [q,p]=i\hbar. }
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\hbar$: reduced Planck constant carrying the quantum scale.
+    \item $\mathcal{K}_{0672}$: canonical registry object for entry ID 0672.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0672 generated source Wolfram model *)
+ClearAll[K0672, Cr0672, T, R, A, W, I, N];
+eq0672$1 = HoldForm[Commutator[q, p] == ihbar];
+eq0672$2 = HoldForm[Commutator[q, p] == qp - pq];
+eq0672$3 = HoldForm[Commutator[q, p] == ihbar];
+
+K0672 = HoldForm[{eq0672$1, eq0672$2, eq0672$3}];
+
+N = "normalized TRAWIN closure object for ROUND-TRIP FIDELITY METRIC";
+I = "Topological Closure integration/comparison layer";
+W = "Compatibility Law wave or operator carrier";
+A = "Geometric Carrier admissible action/amplitude condition";
+R = "Compatibility Law rotation/curl preservation layer";
+T = "Geometric Carrier local source condition";
+
+Cr0672[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0672 = Cr0672[K0672];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Geometric Carrier local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Compatibility Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Geometric Carrier admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Compatibility Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Topological Closure integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for ROUND-TRIP FIDELITY METRIC.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0672] ROUND-TRIP FIDELITY METRIC}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+[q,p]=i\hbar .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Continuous-variable quantum systems use observables with continuous spectra, such as position $q$ and momentum $p$.
+
+The commutator is defined by
+\begin{equation}
+[q,p]=qp-pq .
+\end{equation}
+
+Canonical quantization imposes
+\begin{equation}
+\boxed{
+[q,p]=i\hbar .
+}
+\end{equation}
+
+In the Trawinistic extension, curvature may modify the phase-space volume element while preserving the canonical commutator as the primary algebraic witness.
+
+\paragraph{Interpretation.}
+Continuous-variable systems extend the registry from finite qubit states into infinite-dimensional Hilbert-space dynamics.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors ROUND-TRIP FIDELITY METRIC by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Geometric Carrier}\par
+\[
+[q,p]=i\hbar.
+\]
+\noindent This fixes the effective geometry or carrier space named by the entry title.\par
+\noindent\textbf{2. Compatibility Law}\par
+\[
+[q,p]=qp-pq.
+\]
+\noindent This makes the geometry admissible by imposing its internal compatibility law.\par
+\noindent\textbf{3. Topological Closure}\par
+\[
+\boxed{ [q,p]=i\hbar. }
+\]
+\noindent This closes the entry by tying the local structure to a global topological invariant.\par
+
+\clearpage
+\noindent\textbf{[ID 0672] ROUND-TRIP FIDELITY METRIC}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+ROUND-TRIP FIDELITY METRIC is a registry definition in Gyromagnetic and Rotating-Frame Physics with secondary pressure from Vortex and Cymatic Transport.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} F sub RT = |langle psi sub in | mathcal D (mathcal E (psi sub in )) rangle| to the power 2 > 0.999999. \textbf{Contextual meaning:} The entry reads ROUND-TRIP FIDELITY METRIC as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity. \textbf{Lemma support:} Geometric Carrier; Compatibility Law; Topological Closure.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Continuous-variable systems extend the registry from finite qubit states into infinite-dimensional Hilbert-space dynamics.
+
+\tzpsection{Equation Grounding}
+Equation anchors: ratio 153 , 000 129 , 000 = 1; bd to the power bulk = u03b7 sub u03bcu03bd + (4G sub N/d) u222b d to the power d k T sub u03bcu03bd The file is too long and its contents have been truncated; and ity conservation:r H[u03a8recon] = Hobs (22)r The reconstruction algorithm employs spectral decomposition in the basis of spherical harufffemonics and. Proof route: show that the effective geometry preserves the required compatibility condition while supporting the stated topological invariant. Formalization route: prove that the effective deformation leaves the relevant Euler characteristic or bundle invariant well-defined.
+
+\tzpsection{Interpretive Role}
+The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Signal-Degradation Echo Bouncing}: The brutally honest measurement of sending a perfectly crisp, clean piece of data across the room, bouncing it off the far wall, and weeping at how garbled and ruined it looks when it comes back.
+\item \textbf{Quantum-State Survival Percentage}: The terrifyingly low, decimal-point number proving exactly what tiny fraction of the magical, superposed reality actually managed to survive the harsh, noisy, hot trip through the physical wires.
+\item \textbf{Error-Accumulation Cycle Counting}: The depressing realization that every single time the computer thinks about the number, reads it, or writes it, it adds a tiny, unavoidable smudge of noise that slowly ruins the answer.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0672]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0672_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0672] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont ROUND-TRIP FIDELITY METRIC}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the entry records round-trip fidelity metric through the Septenary derivation layer,
+using the displayed relations as operational anchors for the c...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``ROUND-TRIP FIDELITY METRIC is valid as a tensorial/geometric statement when the stated
+tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0672_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

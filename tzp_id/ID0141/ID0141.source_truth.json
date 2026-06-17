@@ -1,0 +1,395 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:39:04.884451+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0141",
+    "uuid": "3a692337-eb69-5a86-8472-d66934e5c4f5",
+    "registry_id": "registry_id_0141",
+    "canonical_title": "Kuramoto Dominant Coupling Hypothesis",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0141/ID0141.TEX",
+      "json": "D:/TZPID/TZPID/ID0141/ID0141.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0141/ID0141.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "In networks with strongly heterogeneous couplings, global synchronization is suppressed unless the largest coupling pairs represent a significant fraction of total coupling. Planetary spins illustrate this: the Jupiter--Saturn pair dominates, so cluster dynamics should be analyzed in subsets rather than globally.",
+    "technical_interpretation": "In networks with strongly heterogeneous couplings, global synchronization is suppressed unless the largest coupling pairs represent a significant fraction of total coupling. Planetary spins illustrate this: the Jupiter--Saturn pair dominates, so cluster dynamics should be analyzed in subsets rather than globally."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}",
+      "\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1",
+      "r_{\\mathrm{cluster}}>r_{\\mathrm{global}}"
+    ],
+    "source_section_latex": "\\[\n\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}\n\\]\n\\[\n\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1\n\\]\n\\[\nr_{\\mathrm{cluster}}>r_{\\mathrm{global}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Dominant Share",
+      "formula_latex_blocks": [
+        "\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}"
+      ],
+      "interpretive_role": "This quantifies how much of the total coupling budget is concentrated in the strongest pair."
+    },
+    {
+      "step": 2,
+      "component_title": "Global Suppression Rule",
+      "formula_latex_blocks": [
+        "\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1"
+      ],
+      "interpretive_role": "This states the hypothesized failure of full synchronization when no dominant share crosses the needed threshold."
+    },
+    {
+      "step": 3,
+      "component_title": "Cluster Preference",
+      "formula_latex_blocks": [
+        "r_{\\mathrm{cluster}}>r_{\\mathrm{global}}"
+      ],
+      "interpretive_role": "This closes the progression by saying the observable coherence should migrate into subsets before it appears globally."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0141}$",
+        "description": "canonical registry object for entry ID 0141."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0141}$",
+        "name": "canonical registry object for entry ID 0141.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\chi_{\\max}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\max$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{i<j}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\chi_{crit}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Longrightarrow$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\ll$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{\\max}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{ij}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Kuramoto Dominant Coupling Hypothesis\nCanonical operator translation\neq0141_1 = HoldForm[==(A)(Sumi<jAij)];\neq0141_2 = HoldForm[< rglobal 1];\neq0141_3 = HoldForm[rcluster>rglobal];\n\nTRAWIN closure composition\nTRAWINClosure0141[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0141 := HoldForm[{eq0141_1, eq0141_2, eq0141_3}];\nResult0141 := TRAWINClosure0141[K0141];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}",
+          "normalized_latex": "chiMax==((AMax)/(SumIjAIj))",
+          "wolfram_input": "chiMax==((AMax)/(SumIjAIj))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[chiMax == AMax/SumIjAIj]",
+          "texform_roundtrip": "\\text{chiMax}=\\frac{\\text{AMax}}{\\text{SumIjAIj}}",
+          "messages": []
+        },
+        {
+          "latex": "\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1",
+          "normalized_latex": "chiMax<chiCritLongrightarrow*rGloballl1",
+          "wolfram_input": "chiMax<chiCritLongrightarrow*rGloballl1",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[chiMax < chiCritLongrightarrow*rGloballl1]",
+          "texform_roundtrip": "\\text{chiMax}<\\text{chiCritLongrightarrow} \\text{rGloballl1}",
+          "messages": []
+        },
+        {
+          "latex": "r_{\\mathrm{cluster}}>r_{\\mathrm{global}}",
+          "normalized_latex": "rCluster>rGlobal",
+          "wolfram_input": "rCluster>rGlobal",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rCluster > rGlobal]",
+          "texform_roundtrip": "\\text{rCluster}>\\text{rGlobal}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0141 generated source-truth Wolfram model *)\nClearAll[K0141, TRAWINClosure0141];\neq0141$1 = HoldForm[chiMax == AMax/SumIjAIj];\neq0141$2 = HoldForm[chiMax < chiCritLongrightarrow*rGloballl1];\neq0141$3 = HoldForm[rCluster > rGlobal];\nK0141 = HoldForm[{eq0141$1, eq0141$2, eq0141$3}];\nTRAWINClosure0141[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0141 = TRAWINClosure0141[K0141];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}\n\\]\n\\[\n\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1\n\\]\n\\[\nr_{\\mathrm{cluster}}>r_{\\mathrm{global}}\n\\]\n\n\\paragraph{Primary Derivation.}\nThe first line specifies a map, while the subsequent line provides its explicit form \\( \\chi_{\\max}<\\chi_{\\mathrm{crit}} \\). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.\n\\paragraph{Equation Type.}\nThis statement is classified as a map relation.\n\n\\paragraph{Interpretation.}\nThis relation applies to the quantities defined above. From the TRAWIN perspective, the equation functions as the mapping carrier for the entry’s information content. In CHL terms, the derivation provides a certificate connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0141/ID0141.source_truth.json",
+    "entry_id": "ID0141",
+    "registry_id": "registry_id_0141",
+    "canonical_title": "Kuramoto Dominant Coupling Hypothesis",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0141/ID0141.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "3a692337-eb69-5a86-8472-d66934e5c4f5",
+    "RTEID": "RTE:P547.5343:T0.9022",
+    "poloidal_theta_rad": "547.5343",
+    "toroidal_phi_rad": "0.9022",
+    "rteid_source": "manifest",
+    "PiID": "3594081284811",
+    "TZPi": "1",
+    "PiPE_position": "148",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\chi_{\\max}=\\frac{A_{\\max}}{\\sum_{i<j}A_{ij}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "chi",
+          "max",
+          "sum",
+          "A",
+          "i",
+          "j",
+          "ij"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0141\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Kuramoto Dominant Coupling Hypothesis\", \"latex\" -> \"\\\\chi_{\\\\max}=\\\\frac{A_{\\\\max}}{\\\\sum_{i<j}A_{ij}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"chi\", \"max\", \"sum\", \"A\", \"i\", \"j\", \"ij\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\chi_{\\max}<\\chi_{\\mathrm{crit}}\n\\;\\Longrightarrow\\;\nr_{\\mathrm{global}}\\ll 1",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "chi",
+          "max",
+          "Longrightarrow",
+          "ll",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0141\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Kuramoto Dominant Coupling Hypothesis\", \"latex\" -> \"\\\\chi_{\\\\max}<\\\\chi_{\\\\mathrm{crit}}\\n\\\\;\\\\Longrightarrow\\\\;\\nr_{\\\\mathrm{global}}\\\\ll 1\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"chi\", \"max\", \"Longrightarrow\", \"ll\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "r_{\\mathrm{cluster}}>r_{\\mathrm{global}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "r"
+        ],
+        "candidate_wolfram_input": "HoldForm[r$cluster>r$global]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0141\", 3, <|\"kind\" -> \"symbolic\", \"title\" -> \"Kuramoto Dominant Coupling Hypothesis\", \"latex\" -> \"r_{\\\\mathrm{cluster}}>r_{\\\\mathrm{global}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"r\"}, \"candidateWolframInput\" -> \"HoldForm[r$cluster>r$global]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# TZPID Shell/Code Artifact Quarantine
+
+Generated UTC: 2026-06-11T10:54:26.554324+00:00
+
+These rows are intentionally kept out of the equation-proof lane. They may be useful as provenance or reproducibility instructions, but they are not mathematical equations and should not be minted as proof obligations without manual extraction.
+
+Quarantined artifacts: `21`
+
+| ID | Title | Candidate | Action |
+|---|---|---|---|
+| ID0594 | The Superconducting Pair Creation Operator | ErrorActionPreference = 'Stop^{\prime} \|\| env:USERNAME | do not mint as equation; keep in provenance quarantine |
+| ID5326 | Always Needsbuildoutputscache Staging Has Files Relation | {{ always() && needs.build.outputs.cache-staging-has-files == 'true^{\prime} }} steps: - name: Checkout tools branch uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2 with: ref: | do not mint as equation; keep in provenance quarantine |
+| ID5372 | Stepsmerge or Delegateoutputssecrets Relation | {{ ! steps.merge_or_delegate.outputs.secrets == '' && ! steps.merge_or_delegate.outputs.mOrD == '' }} name: Check whether user is part of mathlib-reviewers team uses: tspascoal/get-user-teams-membership@57e9f42acd78f4d0f496b3be4368fc5f62696662 # v3.0.0 id: act | do not mint as equation; keep in provenance quarantine |
+| ID5373 | Stepsactorteamsoutputsisteammember Magnetization Relation | {{ steps.actorTeams.outputs.isTeamMember == 'true^{\prime} }} uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2 with: ref: master sparse-checkout: \| scripts/get_tlabel.py scripts/maintainer_merge_message.py - name: Determine Zulip topic | do not mint as equation; keep in provenance quarantine |
+| ID5375 | Stepsactorteamsoutputsisteammember Magnetization Relation | {{ steps.actorTeams.outputs.isTeamMember == 'true^{\prime} }} uses: GrantBirki/comment@608e41b19bc973020ec0e189ebfdae935d7fe0cc # v2.1.1 with: # if a comment triggers the action, then `issue.number` is set # if a review or review comment triggers the action, t | do not mint as equation; keep in provenance quarantine |
+| ID3911 | Python Propagator Relation | python = Get-Command python -ErrorAction SilentlyContinue if (-not | do not mint as equation; keep in provenance quarantine |
+| ID3913 | Reportsfoldername Curvature Relation | ReportsFolderName = ""AzimuthalReports"" ) # Ensure Python is available if (-not (Get-Command python -ErrorAction SilentlyContinue)) { Write-Error ""Python is not installed or not in PATH. Please install Python and retry."" exit 1 } # Create reports directory | do not mint as equation; keep in provenance quarantine |
+| ID4646 | Env Google CLOUD Project Relation | env:GOOGLE_CLOUD_PROJECT="your-actual-project-id" Windows Command Prompt: text set GOOGLE_CLOUD_PROJECT=your-actual-project-id Example with Real Project ID: powershell # If your project ID is "nasa-automation-2025" | do not mint as equation; keep in provenance quarantine |
+| ID5303 | Stepsapp Tokenoutputstoken Name Get Latest Release Tag Relation | {{ steps.app-token.outputs.token }} - name: Get latest release tag from leanprover/lean4-nightly id: get-latest-release run: \| RELEASE_TAG= | do not mint as equation; keep in provenance quarantine |
+| ID5310 | Stepsapp Token Outputstoken Name Attempt Automatic PR Relation | {{ steps.app-token-2.outputs.token }} - name: Attempt automatic PR creation id: auto_pr if: steps.check_branch.outputs.result == 'false^{\prime} continue-on-error: true env: BUMP_VERSION: | do not mint as equation; keep in provenance quarantine |
+| ID5311 | Auto Action Relation | {SHA}" --auto=yes - name: Fallback to manual instructions if: steps.auto_pr.outcome == 'failure^{\prime} && steps.check_branch.outputs.result == 'false^{\prime} env: BUMP_VERSION: | do not mint as equation; keep in provenance quarantine |
+| ID5313 | PR Fi Name Push Changes If Stepspr Relation | PR_NUMBER" fi - name: Push changes if: steps.pr-info.outputs.pullRequestNumber != '' && steps.pr-info.outputs.targetBranch == 'main^{\prime} env: PR_NUMBER: | do not mint as equation; keep in provenance quarantine |
+| ID5322 | Stepsarchiveoutcome Vector Potential Relation | {{ steps.archive.outcome == 'success^{\prime} }} shell: bash run: \| cd pr-branch lake env ../tools-branch/.lake/build/bin/cache --staging-dir="../cache-staging" stage Archive.lean - name: stage Counterexamples cache files if: | do not mint as equation; keep in provenance quarantine |
+| ID5325 | Always Stepsmk Alloutcome Relation | {{ always() && steps.mk_all.outcome != 'skipped^{\prime} }} run: \| if [[ " | do not mint as equation; keep in provenance quarantine |
+| ID5338 | Comment Comment Bodymd Name Find Existing Comment Relation | COMMENT" > comment_body.md - name: Find existing comment if: steps.check.outputs.has_special == 'true^{\prime} uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4 id: find-comment with: issue-number: | do not mint as equation; keep in provenance quarantine |
+| ID5358 | SecretsMATHLIB Triage Private KEY Name Find Bors Relation | {{ secrets.MATHLIB_TRIAGE_PRIVATE_KEY }} - name: Find bors merge/delegate id: merge_or_delegate run: \| COMMENT=" | do not mint as equation; keep in provenance quarantine |
+| ID5380 | Stepsactorteamsoutputsisteammember Magnetization Relation | {{ steps.actorTeams.outputs.isTeamMember == 'true^{\prime} }} id: determine_topic run: \| ./scripts/get_tlabel.sh "/repos/leanprover-community/mathlib4/issues/ | do not mint as equation; keep in provenance quarantine |
+| ID5382 | Stepsapp Tokenoutputstoken Script Const Owner Repo Relation | {{ steps.app-token.outputs.token }} script: \| const { owner, repo } = context.repo; const issue_number = | do not mint as equation; keep in provenance quarantine |
+| ID6004 | Erroractionpreference Energy Relation | ErrorActionPreference = 'SilentlyContinue^{\prime}\n | do not mint as equation; keep in provenance quarantine |
+| ID6140 | Stepsget Timelineoutputsdata Username Relation | {{ steps.get-timeline.outputs.data }}' USERNAME= | do not mint as equation; keep in provenance quarantine |
+| ID9536 | Initial Setup: the Comprehensive Python Library Installer | venvDir \= "C:\LocalAI-Server\.venv" | do not mint as equation; keep in provenance quarantine |

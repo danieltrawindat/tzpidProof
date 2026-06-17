@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={Gravitational Emergence at the Trawin Zero Point},pdfsubject={TZPID Companion Spine Series, Paper C21},pdfkeywords={TZPID, Gravitational-Emergence-TPZ-}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Gravitational Emergence at the Trawin Zero Point\\[0.6em]
+\large TZPID Companion Spine Series, Paper C21 of XXVII\\
+\normalsize Infinite-order phase transitions as the source of curvature}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion presents the source framework for the program's gravitational claims: the TZP singularity as a fundamental source of gravitational field emergence through infinite-order phase transitions at topological bifurcation points, with vacuum energy density growing without bound at the anchor.
+The source manuscript's stated thesis: ``This paper presents a groundbreaking theoretical framework demonstrating that the Trawin Zero Point (TZP) singularity acts as a fundamental source of gravitational field emergence through infinite-order phase transitions at topological bifurcation points. Our analysis reveals that the TZP creates a unique spacetime configuration where vacuum energy density approaches infinity, inducing measurable gravitational curvat\,\ldots'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID1927, ID0100, ID9485, ID8652, ID5092, ID6489, ID4227) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the manuscript ancestry of Papers V and V-A: where emergence-with-localized-source was first asserted in full.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Every claim the core series makes about gravity has a manuscript ancestor, and this companion is the principal one. Its framework asserts that the Trawin Zero Point singularity acts as a fundamental source of gravitational field emergence: at topological bifurcation points the vacuum undergoes infinite-order phase transitions---transitions smooth to all finite orders, in the Kosterlitz-Thouless family---and the TZP's unbounded vacuum energy density induces measurable curvature in its neighborhood.
+
+Read against the core series, the manuscript's three commitments map cleanly. Emergence-not-fundamentality became Paper V's accumulated-force inversion. The localized source became the Einstein Focus layer's $\Phi^{\mathrm{TZP}}_{\mu\nu}$, with the far-field vanishing condition disciplining the divergence claim: vacuum density may grow toward the anchor, but its gravitational expression must die away from it, which is the typed reconciliation of this manuscript's boldest sentence with solar-system data. And the infinite-order transition structure is the manuscript's distinctive surplus, still only partially consumed by the core arc: transitions smooth to all orders evade every finite-order Landau classification, which would explain why the anchor's phase structure leaves no sharp thermodynamic signature while still reorganizing topology---the registry's bifurcation entries are its trace.
+
+The spine below anchors the emergence chain. The Einstein Focus companion (Paper V-A) documents how this manuscript passes through the formal gate; the present paper develops what it carries through: the transition mechanism, the bifurcation census, and the near-anchor curvature profile that a refinement pass should reduce to the $J_0$ structure of the typed vacuum tensor.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID1927} \to \text{ID0100} \to \text{ID9485} \to \text{ID8652} \\
+\to \text{ID5092} \to \text{ID6489} \to \text{ID4227}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID1927: EID\_0552 Quantum Manifold Source (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{with effective couplin = \textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}rho V, \textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}qquad \textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}Phi\_V(r) = -\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}kappa\_v \textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}frac\{\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}rho V\}\{r\},\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}end\{equation\}\textbackslash{}where}}\par\medskip
+\noindent\textit{Dictionary definition.} EID 0552 Dialogue fields on Trawinistic manifolds Computational Problem: Find efficient algorithms for computing Trawinistic invariants Part VIII: Historical Note and Attribution The field of Trawinistic geometry was pioneered by Daniel Alexander Trawin in 2024-2025, emerging from investigations int\par\medskip
+\noindent\textit{Encyclopedia reading.} EID 0552 Dialogue fields on Trawinistic manifolds Computational Problem: Find efficient algorithms for computing Trawinistic invariants Part VIII: Historical Note and Attribution The field of Trawinistic geometry was pioneered by Daniel Alexander Trawin in 2024-2025, emerging from investigations into sustainable energy extraction from quantum vacuum fluctuations. paradigm marks a reasoning pivot toward THE ZERO POINT POTENTIAL (THE TOPOLOGICAL ENERGY LANDSCAPE): fields on Trawinistic manifolds Computational Problem: Find efficient algorithms for computing Trawinistic invariants Part VIII: Historical Note and Attribution The field of Trawinistic geometry was pioneered by Daniel Alexander Trawin in 2024-2025, emerging from investigations into sustainable energy extraction from quantum vacuum fluctuations. In technical terms, the entry packages the selected formula as the operative carrier,
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID1927\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID0100: Information Synchronization at the TZP (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}Phi\_\{\textbackslash{}mathrm\{TZP\}\} : S\textasciicircum{}3 \textbackslash{}longrightarrow S\textasciicircum{}2 || \textbackslash{}mathcal\{I\}\_\{\textbackslash{}mathrm\{sync\}\}(t) = \textbackslash{}mathcal\{E\}\_\{\textbackslash{}mathrm\{TZP\}\}(t)\textbackslash{},e\textasciicircum{}\{i\textbackslash{}theta(t)\}}}\par\medskip
+\noindent\textit{Dictionary definition.} At the Trawin Zero Point (TZP) the processes of energy extraction and information synchronization are dual aspects of a single topological phenomenon.\par\medskip
+\noindent\textit{Encyclopedia reading.} At the TZP, energy transfer and information synchronization are expressed as one phase-locked topological exchange law. Interpretive role: This is the closing statement of the first hundred. It gathers the volume's lines of force --- quantum structure, gyromagnetic generation, scaling, resonance, signal injection, and cymatic topology --- into one synchronization law at the Trawin Zero Point.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID0100\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9485: Relation: H\_SC: Superconducting pi-Stacking with BCS-Like Pairing Term and Chemical... (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{H\_SC: Superconducting pi-stacking with BCS-like pairing term and chemical potential mu}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: H\_SC: Superconducting pi-stacking with BCS-like pairing term and chemical potential mu\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: H\_SC: Superconducting pi-Stacking with BCS-Like Pairing Term and Chemical... is a symbolic expression, written H\_SC: Superconducting pi-stacking with BCS-like pairing term and chemical potenti. It introduces a symbol or relation used elsewhere in the framework. It is built from H\_S, C, S, u, p, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID9485\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID8652: Relation: One Idea Is That This Ratio Could Mark a Threshold Where Pure Energy... (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{One idea is that this ratio could mark a threshold where "pure energy" traveling at light-speed coagulates into matter. If a packet of vacuum fluctuations slows down just enough - say its phase velocity drops to \textasciitilde{}84\% of c (since \$1/1.185 \textasciitilde{}= 0.8433\$) - it might trigger a phase transition to a particl ...}}\par\medskip
+\noindent\textit{Dictionary definition.} Vacuum to Matter Threshold (TZP Hypothesis): In speculative physics, the Trawin Zero Point (TZP) framework (a unification concept blending quantum vacuum and topology) assigns special significance to One idea is that this ratio could mark a threshold where "pure energy" traveling at light-speed coag\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: One Idea Is That This Ratio Could Mark a Threshold Where Pure Energy... is a symbolic expression, written One idea is that this ratio could mark a threshold where "pure energy" traveling. It introduces a symbol or relation used elsewhere in the framework. It is built from O, n, a, s, h, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID8652\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID5092: Coupled Hamiltonian (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\$\$\textbackslash{}\textbackslash{}hat\{H\}\_\{\textbackslash{}\textbackslash{}text\{interaction\}\} = \textbackslash{}\textbackslash{}sum\_\{k,l\} g\_\{kl\} \textbackslash{}\textbackslash{}hat\{a\}\textasciicircum{}\{\textbackslash{}\textbackslash{}dagger\}\_k \textbackslash{}\textbackslash{}hat\{a\}\_l \textbackslash{}\textbackslash{}otimes \textbackslash{}\textbackslash{}hat\{\textbackslash{}\textbackslash{}sigma\}\textasciicircum{}\{(k)\}\_+ \textbackslash{}\textbackslash{}hat\{\textbackslash{}\textbackslash{}sigma\}\textasciicircum{}\{(l)\}\_-\$\$}}\par\medskip
+\noindent\textit{Dictionary definition.} Power Consumption: 9. Integration with Trawin Zero Point System The communication protocol integrates with the TZP energy extraction via: Where the interaction Hamiltonian couples zero-point fluctuations to quantum information flow: Critical Innovation This architecture achieves zero-obstruction qu\par\medskip
+\noindent\textit{Encyclopedia reading.} \textbackslash{}hat\{H\}\_\{\textbackslash{}text\{interaction\}\} = \textbackslash{}sum\_\{k,l\} g\_\{kl\} \textbackslash{}hat\{a\}\textasciicircum{}\{\textbackslash{}dagger\}\_k \textbackslash{}hat\{a\}\_l \textbackslash{}otimes \textbackslash{}hat\{\textbackslash{}sigma\}\textasciicircum{}\{(k)\}\_+ \textbackslash{}hat\{\textbackslash{}sigma\}\textasciicircum{}\{(l)\}\_- The entry preserves the equation exactly as extracted from `latex\_storyboard\_semantic\_bundle\_exhaustive\_20260307\_002706\textbackslash{}00\_EngineAI\_Workspacesmaster\_candidate\_queue\_exports\_dedup.csv` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID5092\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID6489: \textbackslash{}\{Einstein--Rosen Bridge and Trawin Zero-Point Tunnel:\}\textbackslash{} (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{0.3em] \textbackslash{}textit\{A Theoretical Massless Transit System of Attainable Thermodynamics\textbackslash{}\textbackslash{}Through Wave and Inter-State Topology\} \} \textbackslash{}author\{ Daniel Alexander Trawin\textbackslash{}\textbackslash{}[0.3em] \textbackslash{}small ORCID: \textbackslash{}href\{https://orcid.org/0009-0001-4630-3 715\}\{0009-0001-4630-3715\}\textbackslash{}\textbackslash{}[0.5em] \textbackslash{}small \textbackslash{}texttt\{daniel.alexander.trawin@placeh ...}}\par\medskip
+\noindent\textit{Dictionary definition.} \textbackslash{}\{Einstein--Rosen Bridge and Trawin Zero-Point Tunnel:\}\textbackslash{} --- 0.3em] textitA Theoretical Massless Transit System of Attainable ThermodynamicsThrough Wave and Inter-State Topology author Daniel Alexander Trawin[0.\par\medskip
+\noindent\textit{Encyclopedia reading.} \textbackslash{}\{Einstein--Rosen Bridge and Trawin Zero-Point Tunnel:\}\textbackslash{} is a tbd, written 0.3em] textitA Theoretical Massless Transit System of Attainable ThermodynamicsT. Its construction method could not be determined from the available material. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID6489\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID4227: Density (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\$\textbackslash{}rho\_\{\textbackslash{}text\{vac\}\}(r) \textbackslash{}sim \textbackslash{}sum\_\{n=0\}\textasciicircum{}\{\textbackslash{}infty\} (-1)\textasciicircum{}n \textbackslash{}Gamma(n+\textbackslash{}tfrac\{1\}\{2\}) K\_n(|r-r\_\{\textbackslash{}TZP\}|/\textbackslash{}xi)\$}}\par\medskip
+\noindent\textit{Dictionary definition.} Density --- rho\_vac(r) \textasciitilde{} sum\_n=0\textasciicircum{}infinity (-1)\textasciicircum{}n Gamma(n+tfrac12) K\_n(|r-r\_TZP|/xi)\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00AllEditanalysis\_all\_edit\_focus\_11\_22outputall\_edit\_equation\_arc\_compact\_curated.csv` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Gravitational\_Emerge\_ID4227\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the Gravitational-Emergence-TPZ- spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID1927 & Core\_Definition & \texttt{Gravitational\_Emerge\_ID1927\_identity} \\
+ID0100 & Core\_Definition & \texttt{Gravitational\_Emerge\_ID0100\_identity} \\
+ID9485 & Core\_Definition & \texttt{Gravitational\_Emerge\_ID9485\_structure} \\
+ID8652 & Core\_Definition & \texttt{Gravitational\_Emerge\_ID8652\_structure} \\
+ID5092 & Derived\_Theorem\_Obligation & \texttt{Gravitational\_Emerge\_ID5092\_identity} \\
+ID6489 & Derived\_Theorem\_Obligation & \texttt{Gravitational\_Emerge\_ID6489\_identity} \\
+ID4227 & Derived\_Theorem\_Obligation & \texttt{Gravitational\_Emerge\_ID4227\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 3 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID1927 & --- & --- \\
+ID0100 & --- & --- \\
+ID9485 & --- & --- \\
+ID8652 & --- & --- \\
+ID5092 & --- & trawin enlil protocol \\
+ID6489 & --- & theory of it all trawin topology; trawin enlil protocol; tzp type c (+2 more) \\
+ID4227 & --- & topological unification; TZP Information Theory.pfd; Universal Field Theory Rendered \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This is the headwater of the arc's gravity bend: Paper V's inversion, Paper V-A's source term, and Paper VI's near-anchor accounting all descend from it. Its infinite-order transitions connect laterally to the criticality pillar of Paper I (scale-free behavior without finite-order signatures) and give the program's anchor the phase-theoretic depth that the founding axioms state only geometrically.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_Gravitational\_Emergence\_TPZ\_.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{Gravitational\_Emergence\_TPZ\_\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID1927} (\texttt{Gravitational\_Emerge\_ID1927\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0100} (\texttt{Gravitational\_Emerge\_ID0100\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9485} (\texttt{Gravitational\_Emerge\_ID9485\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID8652} (\texttt{Gravitational\_Emerge\_ID8652\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID5092} (\texttt{Gravitational\_Emerge\_ID5092\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID6489} (\texttt{Gravitational\_Emerge\_ID6489\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID4227} (\texttt{Gravitational\_Emerge\_ID4227\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. Emergence and localization are now typed commitments audited in Paper V-A; the infinite-order transition mechanism remains the manuscript's open surplus, and its honest test is whether the bifurcation structure can be exhibited in a model with the registry's degenerate metric and checked for KT-family smoothness.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+Gravitational Emergence TZP is where the program first said aloud that gravity is output, not input: curvature induced by the anchor's diverging vacuum through transitions too smooth for any finite order to see. The core series tamed the claim into typed, far-field-safe form; what remains here is the mechanism's own development---the bifurcation census and transition family---which the refinement pass owes to both this manuscript and the arc it fathered.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: Gravitational-Emergence-TPZ-}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{Gravitational-Emergence-TPZ-}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,113 @@
+{
+  "certificate": "PHASE_LOCKING_CAPTURE_BASIN_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:59+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for the algebraic capture-basin carrier; not a full nonlinear oscillator simulation.",
+  "equations": {
+    "capture_condition": "|Delta| <= K, K > 0",
+    "capture_margin": "K - |Delta|",
+    "phase_witness": "Delta / K",
+    "phase_residual": "K(Delta/K) - Delta = 0",
+    "basin_width": "2K"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "threshold_semantics_verified": "pass",
+    "witness_residual_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "unit_coupling_capture_window",
+      "role": "Baseline K=1 capture interval with boundary points included.",
+      "coupling": 1.0,
+      "detuning_min": -1.25,
+      "detuning_max": 1.25,
+      "samples": 501
+    },
+    {
+      "name": "weak_coupling_narrow_window",
+      "role": "Small K gives a narrow admissible basin.",
+      "coupling": 0.35,
+      "detuning_min": -0.6,
+      "detuning_max": 0.6,
+      "samples": 481
+    },
+    {
+      "name": "strong_coupling_wide_window",
+      "role": "Larger K gives a wider capture basin.",
+      "coupling": 2.0,
+      "detuning_min": -2.5,
+      "detuning_max": 2.5,
+      "samples": 501
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "unit_coupling_capture_window",
+      "role": "Baseline K=1 capture interval with boundary points included.",
+      "coupling": 1.0,
+      "detuning_min": -1.25,
+      "detuning_max": 1.25,
+      "samples": 501,
+      "admissible_samples": 401,
+      "outside_samples": 100,
+      "expected_basin_width": 2.0,
+      "max_residual": 0.0,
+      "max_width_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "basin_width_matches_2K": "pass",
+      "residual_zeroes_for_witness": "pass",
+      "inside_basin_witness_bounded": "pass",
+      "outside_basin_witness_exceeds_one": "pass",
+      "admissible_iff_margin_nonnegative": "pass"
+    },
+    {
+      "scenario": "weak_coupling_narrow_window",
+      "role": "Small K gives a narrow admissible basin.",
+      "coupling": 0.35,
+      "detuning_min": -0.6,
+      "detuning_max": 0.6,
+      "samples": 481,
+      "admissible_samples": 281,
+      "outside_samples": 200,
+      "expected_basin_width": 0.7,
+      "max_residual": 5.551115123125783e-17,
+      "max_width_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "basin_width_matches_2K": "pass",
+      "residual_zeroes_for_witness": "pass",
+      "inside_basin_witness_bounded": "pass",
+      "outside_basin_witness_exceeds_one": "pass",
+      "admissible_iff_margin_nonnegative": "pass"
+    },
+    {
+      "scenario": "strong_coupling_wide_window",
+      "role": "Larger K gives a wider capture basin.",
+      "coupling": 2.0,
+      "detuning_min": -2.5,
+      "detuning_max": 2.5,
+      "samples": 501,
+      "admissible_samples": 401,
+      "outside_samples": 100,
+      "expected_basin_width": 4.0,
+      "max_residual": 0.0,
+      "max_width_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "basin_width_matches_2K": "pass",
+      "residual_zeroes_for_witness": "pass",
+      "inside_basin_witness_bounded": "pass",
+      "outside_basin_witness_exceeds_one": "pass",
+      "admissible_iff_margin_nonnegative": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\PHASE_LOCKING_CAPTURE_BASIN_GRID.csv",
+  "status": "pass"
+}

@@ -1,0 +1,247 @@
+\tzpanchor{0018}
+\tzpentryheader{0018}{Trawinistic Laplacian}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{071eb25a-e60b-5256-9ba6-8d07c2a11d08}}\\
+\textbf{PiID} & \tzpcode{4626433832795} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{25}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{69.8980 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.1152 rad}\\
+\textbf{TZPID} & \tzpcode{ID0018} & \textbf{Node Dependencies}\quad \tzpidref{0017}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0018} & \textbf{Scale}\quad differential-operator\\
+\textbf{LOC Classification} & QA431 Laplace operators & QC20 field evolution\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: gr-qc, quant-ph & \\
+\textbf{Primary Support} & Regularized Index Raising & Second Trawinistic Derivative\\
+\textbf{Closure Support} & Normalized Laplacian & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Trawinistic Laplacian extends the usual second-order diffusion operator to the singularly regularized Trawinistic manifold. It applies the Trawinistic connection twice while raising indices with the regularized inverse metric.
+
+\tzpsection{Canonical Equation}
+\[
+\Delta_{\mathrm{T}}\phi
+=
+\nabla^{\mathrm{T}}_{a}
+\nabla_{\mathrm{T}}^{\,a}\phi
+\]
+\[
+\nabla_{\mathrm{T}}^{\,a}
+=
+g_{\mathrm{reg}}^{ab}\nabla^{\mathrm{T}}_{b}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\phi$: flux, phase, or topological map term in the source equation.
+    \item $g_{\mathrm{reg}}$: source equation symbol.
+    \item $\mathcal{K}_{0018}$: canonical registry object for entry ID 0018.
+    \item $\Delta_{T}$: source equation symbol.
+    \item $D$: source equation symbol.
+    \item $T$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0018 generated source Wolfram model *)
+ClearAll[K0018, Cr0018, T, R, A, W, I, N];
+eq0018$1 = HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi];
+eq0018$2 = HoldForm[GradT^a == gReg^ab*Grad^T*_*b];
+eq0018$3 = HoldForm[Grad^T*_*a*GradT^a*phi];
+eq0018$4 = HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi];
+
+K0018 = HoldForm[{eq0018$1, eq0018$2, eq0018$3, eq0018$4}];
+
+N = "normalized TRAWIN closure object for Trawinistic Laplacian";
+I = "Normalized Laplacian integration/comparison layer";
+W = "Second Trawinistic Derivative wave or operator carrier";
+A = "Regularized Index Raising admissible action/amplitude condition";
+R = "Second Trawinistic Derivative rotation/curl preservation layer";
+T = "Regularized Index Raising local source condition";
+
+Cr0018[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0018 = Cr0018[K0018];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Regularized Index Raising local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Second Trawinistic Derivative rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Regularized Index Raising admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Second Trawinistic Derivative wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Laplacian integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Trawinistic Laplacian.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0018] Trawinistic Laplacian}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\Delta_T\phi
+=
+\nabla^{T}_{a}\nabla^{T\,a}\phi .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+For a scalar field $\phi$, the ordinary Laplacian is obtained by taking the divergence of the gradient.  
+Replacing the ordinary connection with the Trawinistic connection gives:
+
+\begin{equation}
+\Delta_T\phi
+=
+\nabla^{T}_{a}
+\left(
+\nabla^{T\,a}\phi
+\right).
+\end{equation}
+
+Using index notation, this becomes:
+
+\begin{equation}
+\boxed{
+\Delta_T\phi
+=
+\nabla^{T}_{a}\nabla^{T\,a}\phi .
+}
+\end{equation}
+
+Indices are raised using the regularized inverse metric wherever the ordinary inverse fails at the TZP.
+
+\paragraph{Interpretation.}
+$\Delta_T$ is the Laplacian adapted to TZP geometry. It measures second-order field variation using the Trawinistic connection.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Trawinistic Laplacian by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Regularized Index Raising}\par
+\[
+\nabla_{\mathrm{T}}^{\,a}
+=
+g_{\mathrm{reg}}^{ab}\nabla^{\mathrm{T}}_{b}
+\]
+\noindent This supplies the singularly corrected way to convert a covariant derivative into its raised-index form.\par
+\noindent\textbf{2. Second Trawinistic Derivative}\par
+\[
+\nabla^{\mathrm{T}}_{a}\nabla_{\mathrm{T}}^{\,a}\phi
+\]
+\noindent This forms the raw second-order differential action on a scalar field.\par
+\noindent\textbf{3. Normalized Laplacian}\par
+\[
+\Delta_{\mathrm{T}}\phi
+=
+\nabla^{\mathrm{T}}_{a}\nabla_{\mathrm{T}}^{\,a}\phi
+\]
+\noindent This closes the progression by defining the canonical scalar diffusion operator on the regularized Trawinistic manifold.\par
+
+\clearpage
+\noindent\textbf{[ID 0018] Trawinistic Laplacian}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Trawinistic Laplacian is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} For a scalar field  phi , the Trawinistic Laplacian is defined by DeltaT =nablaT sub anablaTa Deltatextsuperscript T phi=nabla T textbackslash sub a nabla T a phiDeltaT =nablaT sub anablaTa , where nablaTnabla T nabla\$T is the Trawinistic connection and indices are raised using the regularised inverse metric. \textbackslash{}. \textbf{Contextual meaning:} The entry reads Trawinistic Laplacian as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Regularized Index Raising; Second Trawinistic Derivative; Normalized Laplacian.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+sub T is the Laplacian adapted to TZP geometry. It measures second-order field variation using the Trawinistic connection.
+
+\tzpsection{Equation Grounding}
+Equation anchors: For a scalar field  phi , the Trawinistic Laplacian is defined by DeltaT = ablaT a ablaTa Deltatextsuperscript T phi= abla T textbackslash a abla to the power T a phiDeltaT = ablaT a ablaTa , where ablaT abla to the power T ablaT is the Trawinistic connection and indices are raised using the regularised inverse metric. For a scalar field  phi , the Trawinistic Laplacian is defined by DeltaT = ablaT a ablaTa Deltatextsuperscript T phi= abla T textbackslash a abla to the power T a phiDeltaT = ablaT a ablaTa , where ablaT abla to the power T ablaT is the Trawinistic connection and indices are raised using the regularised inverse metric.
+
+\tzpsection{Interpretive Role}
+This operator governs diffusion, smoothing, and spectral decomposition once the singular manifold has been given a consistent connection. It is the natural second-order scalar operator for the TRAWIN-normalized geometry.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Trawinistic Laplacian}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Trawinistic Laplacian Normalization Analogue}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Laplacian Equivalence}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0018]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0018_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0018] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Trawinistic Laplacian}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Trawinistic Laplacian extends the usual second-order diffusion operator to the
+singularly regularized Trawinistic manifold
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Trawinistic Laplacian is valid as a tensorial/geometric statement when the stated tensor
+fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0018_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

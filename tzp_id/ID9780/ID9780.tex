@@ -1,0 +1,17 @@
+\section*{ID9780: Helicity-Preserving Symmetries and Time-Reversal: Q(-T)}
+\paragraph{Metadata.}
+PiID: 2205750596834 | RTEID: RTE:P37977.9119:T6.0273 | UUID: 9a90c615-249e-57f6-85ce-93bb445c3482
+
+\paragraph{Canonical Statement.}
+For example, a harmonic oscillator \$q(t)=A\textbackslash{}cos(\textbackslash{}omega t+\textbackslash{}phi)\$, under time reversal becomes \$q(-t)=A\textbackslash{}cos(\textbackslash{}omega t-\textbackslash{}phi)\$, differing only by a phase shift. Thus \$\textbackslash{}Theta\$ maps solutions to solutions. In code form: \textbackslash{}begin\{verbatim\} InverseFrameDragging[Φ\_ac(t,r,θ,φ), ω] := Module[\{T,R,Φ\_rev\}, T = AntiUnitary[t -> -t]; R = RotationMatrix[-ω*(t - t0)]; Φ\_rev = T[R[Φ\_ac(t,r,θ,φ)]]; Assert[ForwardPropagate[Φ\_rev,ω,Δt] == Φ\_ac(0,r,θ,φ)]; Φ\_rev ]; \textbackslash{}end\{verbatim\} This ensures the reversed field \$\textbackslash{}Phi\_\{\textbackslash{}rm rev\}\$ evolves to reproduce the original, confirming \$\textbackslash{}Theta\$ is the true inverse.
+
+\paragraph{Canonical Equation.}
+\[
+q(-t)=A\cos(\omega t-\phi)
+\]
+
+\paragraph{Dictionary.}
+For example, a harmonic oscillator q(t)=Acos(ω t+φ), under time reversal becomes q(-t)=Acos(ω t-φ), differing only by a phase shift.
+
+\paragraph{Encyclopedia.}
+Helicity-Preserving Symmetries and Time-Reversal: Q(-T) is an algebraic definition, written q(-t)=Acos(ω t-φ). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from ω, φ, A, defining q(-t). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

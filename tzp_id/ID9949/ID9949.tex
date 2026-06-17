@@ -1,0 +1,17 @@
+\section*{ID9949: Definition of S\textasciicircum{}ij}
+\paragraph{Metadata.}
+PiID: 8461012648369 | RTEID: RTE:P38634.1764:T0.8254 | UUID: a420b2c0-a173-5831-a495-7dabe5abc389
+
+\paragraph{Canonical Statement.}
+erfect fluid ansatz) For completeness include a general matter stress–energy contribution to be added to the EM piece T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}\_\{\textbackslash{}rm matter\} = \textbackslash{}rho\textbackslash{},u\textasciicircum{}\textbackslash{}mu u\textasciicircum{}\textbackslash{}nu + p\textbackslash{},h\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} + q\textasciicircum{}\{\textbackslash{}mu\}u\textasciicircum{}\{\textbackslash{}nu\} + q\textasciicircum{}\{\textbackslash{}nu\}u\textasciicircum{}\{\textbackslash{}mu\} + \textbackslash{}pi\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}, with \$h\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}=g\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}+u\textasciicircum{}\{\textbackslash{}mu\}u\textasciicircum{}\{\textbackslash{}nu\}\$ and constraints \$u\_\textbackslash{}mu q\textasciicircum{}\textbackslash{}mu =0\$, \$u\_\textbackslash{}mu\textbackslash{}pi\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}=0\$, \$\textbackslash{}pi\textasciicircum{}\{\textbackslash{}mu\}\{\}\_\{\textbackslash{}mu\}=0\$. Use your gyro 4-velocity \$u\textasciicircum{}\textbackslash{}mu\$ from your notes to build this part. 7. Eigen-decomposition and principal pressures To find principal pressures and principal axes, perform the eigen-decomposition of the spatial tensor \$S\textasciicircum{}i\{\}\_j\$: • Raise an index: \$S\textasciicircum{}i\{\}j = \textbackslash{}gamma\textasciicircum{}\{ik\}S\{kj\}\$. • Solve \$S\textasciicircum{}i\{\}\_j v\textasciicircum{}j = p v\textasciicircum{}i\$ for eigenvalues \$p\$ (principal pressures) and eigenvectors \$v\textasciicircum{}i\$ (principal axes). If a timelike eigenvector of \$T\textasciicircum{}\{\textbackslash{}mu\}\{\}\_\{\textbackslash{}nu\}\$ exists, its eigenvalue is the negative of the energy density in that eigenframe. 8. SymPy / CAS implementation recipe Below is a compact SymPy-like pseudocode you can paste into a notebook and adapt to your coordinate choices and \$A\_\{\textbackslash{}rm total\}\$. \# pseudocode / SymPy-style (adapt names for your environment) from sympy import symbols, Fu
+
+\paragraph{Canonical Equation.}
+\[
+S^i{}j = \gamma^{ik}S{kj}
+\]
+
+\paragraph{Dictionary.}
+Definition of S\textasciicircum{}ij — S\textasciicircum{}ij = γ\textasciicircum{}ikSkj
+
+\paragraph{Encyclopedia.}
+Definition of S\textasciicircum{}ij is an algebraic definition, written S\textasciicircum{}ij = γ\textasciicircum{}ikSkj. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from γ, k, S, j, defining S\textasciicircum{}ij. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

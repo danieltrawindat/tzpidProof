@@ -1,0 +1,17 @@
+\section*{ID6406: Signal Processing Recipe (How to Get \textbackslash{}(s(t)\textbackslash{}) from EEG): X(t)}
+\paragraph{Metadata.}
+PiID: 5085048608250 | RTEID: RTE:P24875.9206:T3.2888 | UUID: b74d2823-107c-5d61-8e4a-e7b362dccc55
+
+\paragraph{Canonical Statement.}
+1. Acquire raw EEG/MEG trace \textbackslash{}(x(t)\textbackslash{}). 2. Bandpass filter into bands (e.g., 1–4 Hz delta, 8–12 Hz alpha, 30–80 Hz gamma) using zero-phase filter. 3. Compute analytic signal via Hilbert transform: \textbackslash{}(a\_b(t)e\textasciicircum{}\{i\textbackslash{}Phi\_b(t)\} = \textbackslash{}mathcal H\textbackslash{}\{x\_b(t)\textbackslash{}\}\textbackslash{}). - amplitude envelope \textbackslash{}(a\_b(t)=|\textbackslash{}mathcal H\textbackslash{}\{x\_b\textbackslash{}\}|\textbackslash{}), - instantaneous phase \textbackslash{}(\textbackslash{}Phi\_b(t)\textbackslash{}). 4. Use \textbackslash{}(a\_b(t)\textbackslash{}) to modulate amplitude/breathing; use \textbackslash{}(\textbackslash{}Phi\_b(t)\textbackslash{}) to phase-couple. 5. Optionally compute cross-frequency coupling metrics (e.g., modulation index) between driving and resulting \textbackslash{}(I(t)\textbackslash{}).
+
+\paragraph{Canonical Equation.}
+\[
+x(t)
+\]
+
+\paragraph{Dictionary.}
+Signal Processing Recipe (How to Get \textbackslash{}(s(t)\textbackslash{}) from EEG): X(t) — x(t)
+
+\paragraph{Encyclopedia.}
+Signal Processing Recipe (How to Get \textbackslash{}(s(t)\textbackslash{}) from EEG): X(t) is a symbolic expression, written x(t). It introduces a symbol or relation used elsewhere in the framework. It is built from x. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

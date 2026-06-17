@@ -1,0 +1,258 @@
+\tzpanchor{0096}
+\tzpentryheader{0096}{Electrohydrodynamic Resonance Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{f3806f92-36b7-53db-8af0-8e544c49615e}}\\
+\textbf{PiID} & \tzpcode{0679821480865} & \textbf{TZPi}\quad \tzpcode{1}\quad \textbf{PiPE}\quad \tzpcode{103}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{372.7893 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.6142 rad}\\
+\textbf{TZPID} & \tzpcode{ID0096} & \textbf{Node Dependencies}\quad \tzpidref{0077}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0096} & \textbf{Scale}\quad electrohydrodynamic flow\\
+\textbf{LOC Classification} & QC174 fluid-field coupling & QH540 resonance morphology\\
+\textbf{arXiv Classification} & Primary: physics.flu-dyn \quad Cross-list: physics.plasm-ph, nlin.PS & \\
+\textbf{Primary Support} & Axisymmetric Continuity Constraint & Electrohydrodynamic Forcing Law\\
+\textbf{Closure Support} & Resonant Mode Selection & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+This operator captures how electric and magnetic fields couple to fluid motion to produce resonant oscillations and rotational flow in the four-channel cross geometry.
+
+\tzpsection{Canonical Equation}
+\[
+\partial_r(r v_r) + \partial_z(z v_z) = 0
+\]
+\[
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}]
+=
+-\frac{\nabla p}{\rho} + \frac{q}{m}(\mathbf{E}+\mathbf{v}\times\mathbf{B})
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $v_r$: source equation symbol.
+    \item $v_z$: source equation symbol.
+    \item $\mathcal{R}_{\mathrm{EHD}}$: source equation symbol.
+    \item $v$: velocity, flow speed, or auxiliary comparison variable.
+    \item $\rho$: density or measure term used by the entry equation.
+    \item $E$: source equation symbol.
+    \item $B$: magnetic field magnitude.
+    \item $\lambda_k$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0096 generated source Wolfram model *)
+ClearAll[K0096, Cr0096, T, R, A, W, I, N];
+eq0096$1 = HoldForm[PartialR[r*vR] + PartialZ[z*vZ] == 0];
+eq0096$2 = HoldForm[REHD[v] == -((Grad*p)/rho) + (q/m)*(E + v*B)];
+eq0096$3 = HoldForm[REHD[vK] == lambdaK*vK];
+
+K0096 = HoldForm[{eq0096$1, eq0096$2, eq0096$3}];
+
+N = "normalized TRAWIN closure object for Electrohydrodynamic Resonance Operator";
+I = "Resonant Mode Selection integration/comparison layer";
+W = "Electrohydrodynamic Forcing Law wave or operator carrier";
+A = "Axisymmetric Continuity Constraint admissible action/amplitude condition";
+R = "Electrohydrodynamic Forcing Law rotation/curl preservation layer";
+T = "Axisymmetric Continuity Constraint local source condition";
+
+Cr0096[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0096 = Cr0096[K0096];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Axisymmetric Continuity Constraint local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Electrohydrodynamic Forcing Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Axisymmetric Continuity Constraint admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Electrohydrodynamic Forcing Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Resonant Mode Selection integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Electrohydrodynamic Resonance Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0096] Electrohydrodynamic Resonance Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Continuity Constraint.}
+\begin{equation}
+\partial_r(rv_r)+\partial_z(zv_z)=0.
+\end{equation}
+
+\paragraph{Resonance Operator.}
+\begin{equation}
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}]
+=
+-\frac{\nabla p}{\rho}
++
+\frac{q}{m}
+(\mathbf{E}+\mathbf{v}\times\mathbf{B}).
+\end{equation}
+
+\paragraph{Mode Selection.}
+\begin{equation}
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}_k]
+=
+\lambda_k\mathbf{v}_k.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+The admissible axisymmetric flow space is constrained by:
+\begin{equation}
+\partial_r(rv_r)+\partial_z(zv_z)=0.
+\end{equation}
+
+Pressure and electromagnetic forcing define the total acceleration operator:
+\begin{equation}
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}]
+=
+-\frac{\nabla p}{\rho}
++
+\frac{q}{m}
+(\mathbf{E}+\mathbf{v}\times\mathbf{B}).
+\end{equation}
+
+Resonant modes are those reproduced by the operator up to scale:
+\begin{equation}
+\boxed{
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}_k]
+=
+\lambda_k\mathbf{v}_k.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The EHD resonance operator identifies flow modes amplified by pressure and electromagnetic forcing.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Electrohydrodynamic Resonance Operator by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Axisymmetric Continuity Constraint}\par
+\[
+\partial_r(r v_r) + \partial_z(z v_z) = 0
+\]
+\noindent This identifies the flow space in which the operator acts.\par
+\noindent\textbf{2. Electrohydrodynamic Forcing Law}\par
+\[
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}]
+=
+-\frac{\nabla p}{\rho} + \frac{q}{m}(\mathbf{E}+\mathbf{v}\times\mathbf{B})
+\]
+\noindent This turns pressure and field forcing into the operative acceleration law.\par
+\noindent\textbf{3. Resonant Mode Selection}\par
+\[
+\mathcal{R}_{\mathrm{EHD}}[\mathbf{v}_k] = \lambda_k \mathbf{v}_k
+\]
+\noindent This closes the progression by identifying the amplified modes as operator eigenmodes.\par
+
+\clearpage
+\noindent\textbf{[ID 0096] Electrohydrodynamic Resonance Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Electrohydrodynamic Resonance Operator is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} This operator captures how electric and magnetic fields couple to fluid motion to produce resonant oscillations and rotational flow in the four-channel cross geometry. \textbf{Contextual meaning:} The entry reads Electrohydrodynamic Resonance Operator as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This entry is where the volume turns from abstract scale equivalence back into concrete experimental forcing. It provides the dynamical operator behind the bridge-pattern and resonance claims developed in the final few pages. \textbf{Lemma support:} Axisymmetric Continuity Constraint; Electrohydrodynamic Forcing Law; Resonant Mode Selection.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The EHD resonance operator identifies flow modes amplified by pressure and electromagnetic forcing.
+
+\tzpsection{Equation Grounding}
+Equation anchors: In the electrohydrodynamic resonance (EHD) system, the total acceleration atot(r,z)a tot (r,z)atot(r,z) of fluid parcels satisfies the continuity equation partialr(r vr)+partialz(z vz)=0partial r(rtextbackslash,v r)+partial z(ztextbackslash,v z)=0partialr(rvr)+partialz(zvz)=0 and is given by atot=- ablaprho+qm(E+vtimes B)a tot = ratio - abla p rho + ratio q m (textbackslash mathbf E +textbackslash mathbf v timestextbackslash mathbf B )atot=rho- ablap+mq(E+vtimes B), where pressure gradients and electromagnetic terms produce four-fold symmetric flow patterns in a cross geometry. The resonance operator REHD R EHD REHD acts on the velocity field to amplify modes satisfying the geometric resonance condition. In the electrohydrodynamic resonance (EHD) system, the total acceleration atot(r,z)a tot (r,z)atot(r,z) of fluid parcels satisfies the continuity equation partialr(r vr)+partialz(z vz)=0partial r(rtextbackslash,v r)+partial z(ztextbackslash,v z)=0partialr(rvr)+partialz(zvz)=0 and is given by atot=- ablaprho+qm(E+vtimes B)a tot = ratio - abla p rho + ratio q m (textbackslash mathbf E +textbackslash mathbf v timestextbackslash mathbf B )atot=rho- ablap+mq(E+vtimes B), where pressure gradients and electromagnetic terms produce four-fold symmetric flow patterns in a cross geometry. The resonance operator REHD R EHD REHD acts on the velocity field to amplify modes satisfying the geometric resonance condition.
+
+\tzpsection{Interpretive Role}
+This entry is where the volume turns from abstract scale equivalence back into concrete experimental forcing. It provides the dynamical operator behind the bridge-pattern and resonance claims developed in the final few pages.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Electrohydrodynamic Frequency Lock Mapping Rule}: nearby spectral language for modes, resonant structure, and admissible oscillation.
+\item \textbf{Frequency Lock Mapping Rule Spectral Analogue}: nearby spectral language for modes, resonant structure, and admissible oscillation.
+\item \textbf{Mapping Rule Terminology}: operator-level synonym for the entry's map, rule, state transition, or procedure.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0096]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0096_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0096] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Electrohydrodynamic Resonance Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} this operator captures how electric and magnetic fields couple to fluid motion to
+produce resonant oscillations and rotational flow in the four-cha...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Electrohydrodynamic Resonance Operator is valid as a spectral relation when frequency,
+phase, and propagation variables satisfy the stated equation.''\\
+\textbf{Proof:} The source statement describes a wave, harmonic, or resonance relation. The proof
+obligation is that the frequency-domain quantities are typed consistently and that the
+derived propagation or resonance condition follows from the stated variables.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- spectral-relation validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0096_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

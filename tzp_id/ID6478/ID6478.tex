@@ -1,0 +1,17 @@
+\section*{ID6478: EEG-Driven Breathing Simulation (Synthetic EEG): I(t)}
+\paragraph{Metadata.}
+PiID: 6139539846833 | RTEID: RTE:P25155.5126:T3.7494 | UUID: 38ffe0ba-f327-5e94-8cb5-f944f2e41de0
+
+\paragraph{Canonical Statement.}
+\#\#\# (e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6\textbackslash{}sin(2\textbackslash{}pi 10t) + 0.3\textbackslash{}sin(2\textbackslash{}pi 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}(\textbackslash{}sigma\_r(t)=\textbackslash{}sigma\_0 + \textbackslash{}kappa\textbackslash{}cdot\textbackslash{}text\{Env\}\_\textbackslash{}alpha(t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}). - Produced plots: - Time series |I(t)| vs alpha envelope: **/mnt/data/cymatic\_expanded/I\_t\_eeg\_driven.png** - Coherence between |I(t)| and alpha envelope: **/mnt/data/cymatic\_expanded/coherence\_I\_alpha.png** - **Observations:** bursts in |I(t)| align with peaks of the alpha envelope; coherence plot shows elevated coherence at frequencies corresponding to the modulation (visible in the figure). This demonstrates the gating/entrainment mechanism you hypothesized.
+
+\paragraph{Canonical Equation.}
+\[
+I(t)
+\]
+
+\paragraph{Dictionary.}
+(e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6 (2 10t) + 0.3 (2 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}( \_r(t)= \_0 + \_ (t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}) [ID6478]
+
+\paragraph{Encyclopedia.}
+EEG-Driven Breathing Simulation (Synthetic EEG): I(t) is a symbolic expression, written I(t). It introduces a symbol or relation used elsewhere in the framework. It is built from I. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

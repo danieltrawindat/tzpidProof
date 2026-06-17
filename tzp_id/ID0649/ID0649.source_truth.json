@@ -1,0 +1,395 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:36:06.907350+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0649",
+    "uuid": "35e731e0-b4ac-5c9c-8ba9-279625694def",
+    "registry_id": "registry_id_0649",
+    "canonical_title": "SS304L TORUS CORE GEOMETRY \\& STRESS-LOADING",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0649/ID0649.TEX",
+      "json": "D:/TZPID/TZPID/ID0649/ID0649.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0649/ID0649.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records ss304l torus core geometry \\& stress-loading through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "sigma\\_\\{ij\\} = frac\\{E\\}\\{1+nu\\} left( epsilon\\_\\{ij\\} + frac\\{nu\\}\\{1-2nu\\} delta\\_\\{ij\\}epsilon\\_\\{kk\\} right) + G\\_\\{munu\\}(text\\{Metric Drag\\})"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\tzpfitmath{\\left\\langle\\phi^2\\right\\rangle = \\int_{0}^{\\omega_{\\mathrm{cut}}} \\frac{\\hbar}{2\\omega} \\eta(\\omega) \\,\\mathrm{d}\\omega.}",
+      "\\frac{\\hbar}{2\\omega}.",
+      "\\frac{\\hbar}{2\\omega}\\eta(\\omega)."
+    ],
+    "source_section_latex": "\\[\n\\tzpfitmath{\\left\\langle\\phi^2\\right\\rangle = \\int_{0}^{\\omega_{\\mathrm{cut}}} \\frac{\\hbar}{2\\omega} \\eta(\\omega) \\,\\mathrm{d}\\omega.}\n\\]\n\\[\n\\frac{\\hbar}{2\\omega}.\n\\]\n\\[\n\\frac{\\hbar}{2\\omega}\\eta(\\omega).\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Geometric Constraint",
+      "formula_latex_blocks": [
+        "\\tzpfitmath{\\left\\langle\\phi^2\\right\\rangle = \\int_{0}^{\\omega_{\\mathrm{cut}}} \\frac{\\hbar}{2\\omega} \\eta(\\omega) \\,\\mathrm{d}\\omega.}"
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Support Relation",
+      "formula_latex_blocks": [
+        "\\frac{\\hbar}{2\\omega}."
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "\\frac{\\hbar}{2\\omega}\\eta(\\omega)."
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0649}$",
+        "description": "canonical registry object for entry ID 0649."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0649}$",
+        "name": "canonical registry object for entry ID 0649.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\tzpfitmath$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\langle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rangle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{cut}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta(\\omega)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a(\\omega)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "SS304L TORUS CORE GEOMETRY \\\\& STRESS-LOADING\nCanonical operator translation\neq0649_1 = HoldForm[(^2 == Integrate0^(omegacut) (hbar)/(2omega) (omega) domega.)];\neq0649_2 = HoldForm[(hbar)/(2omega)];\neq0649_3 = HoldForm[(hbar)/(2omega)(omega)];\n\nTRAWIN closure composition\nTRAWINClosure0649[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0649 := HoldForm[{eq0649_1, eq0649_2, eq0649_3}];\nResult0649 := TRAWINClosure0649[K0649];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\tzpfitmath{\\left\\langle\\phi^2\\right\\rangle = \\int_{0}^{\\omega_{\\mathrm{cut}}} \\frac{\\hbar}{2\\omega} \\eta(\\omega) \\,\\mathrm{d}\\omega.}",
+          "normalized_latex": "TZPFitMath[Inner[phi^2]==Integral0^(omegaCut)((hbar)/(2*omega))*eta[omega]*domega]",
+          "wolfram_input": "TZPFitMath[Inner[phi^2]==Integral0^(omegaCut)((hbar)/(2*omega))*eta[omega]*domega]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\tzpfitmath normalized to TZPFitMath[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPFitMath[Inner[phi^2] == Integral0^omegaCut*(hbar/(2*omega))*eta[omega]*domega]]",
+          "texform_roundtrip": "\\text{TZPFitMath}\\left(\\text{Inner}\\left[\\phi ^2\\right]=\\frac{\\text{domega} \\text{hbar} \\eta (\\omega ) \\text{Integral0}^{\\text{omegaCut}}}{2 \\omega }\\right)",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{\\hbar}{2\\omega}.",
+          "normalized_latex": "((hbar)/(2*omega))",
+          "wolfram_input": "((hbar)/(2*omega))",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[hbar/(2*omega)]",
+          "texform_roundtrip": "\\frac{\\text{hbar}}{2 \\omega }",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{\\hbar}{2\\omega}\\eta(\\omega).",
+          "normalized_latex": "((hbar)/(2*omega))eta[omega]",
+          "wolfram_input": "((hbar)/(2*omega))eta[omega]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(hbar/(2*omega))*eta[omega]]",
+          "texform_roundtrip": "\\frac{\\text{hbar} \\eta (\\omega )}{2 \\omega }",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0649 generated source-truth Wolfram model *)\nClearAll[K0649, TRAWINClosure0649];\neq0649$1 = HoldForm[TZPFitMath[Inner[phi^2] == Integral0^omegaCut*(hbar/(2*omega))*eta[omega]*domega]];\neq0649$2 = HoldForm[hbar/(2*omega)];\neq0649$3 = HoldForm[(hbar/(2*omega))*eta[omega]];\nK0649 = HoldForm[{eq0649$1, eq0649$2, eq0649$3}];\nTRAWINClosure0649[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0649 = TRAWINClosure0649[K0649];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\left\\langle\\phi^2\\right\\rangle\n=\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\frac{\\hbar}{2\\omega}\n\\eta(\\omega)\n\\,\\mathrm{d}\\omega .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFor a quantum field mode of frequency $\\omega$, the vacuum fluctuation contribution scales as:\n\n\\begin{equation}\n\\frac{\\hbar}{2\\omega}.\n\\end{equation}\n\nThe spectral density index $\\eta(\\omega)$ weights the contribution of each frequency mode:\n\n\\begin{equation}\n\\frac{\\hbar}{2\\omega}\\eta(\\omega).\n\\end{equation}\n\nIntegrating over allowed frequencies from $0$ to the cutoff $\\omega_{\\mathrm{cut}}$ gives the total zero-point fluctuation variance:\n\n\\begin{equation}\n\\boxed{\n\\left\\langle\\phi^2\\right\\rangle\n=\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\frac{\\hbar}{2\\omega}\n\\eta(\\omega)\n\\,\\mathrm{d}\\omega .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nZero-point fluctuations are represented as the weighted variance of field amplitudes over the allowed frequency spectrum.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0649/ID0649.source_truth.json",
+    "entry_id": "ID0649",
+    "registry_id": "registry_id_0649",
+    "canonical_title": "SS304L TORUS CORE GEOMETRY \\& STRESS-LOADING",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0649/ID0649.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "35e731e0-b4ac-5c9c-8ba9-279625694def",
+    "RTEID": "RTE:P2493.0286:T4.1077",
+    "poloidal_theta_rad": "2493.0286",
+    "toroidal_phi_rad": "4.1077",
+    "rteid_source": "manifest",
+    "PiID": "2146844090122",
+    "TZPi": "4",
+    "PiPE_position": "656",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\tzpfitmath{\\left\\langle\\phi^2\\right\\rangle = \\int_{0}^{\\omega_{\\mathrm{cut}}} \\frac{\\hbar}{2\\omega} \\eta(\\omega) \\,\\mathrm{d}\\omega.}",
+        "numeric_atoms": [
+          "2",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "tzpfitmath",
+          "langle",
+          "phi",
+          "rangle",
+          "int",
+          "omega",
+          "hbar",
+          "eta"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0649\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SS304L TORUS CORE GEOMETRY \\\\& STRESS-LOADING\", \"latex\" -> \"\\\\tzpfitmath{\\\\left\\\\langle\\\\phi^2\\\\right\\\\rangle = \\\\int_{0}^{\\\\omega_{\\\\mathrm{cut}}} \\\\frac{\\\\hbar}{2\\\\omega} \\\\eta(\\\\omega) \\\\,\\\\mathrm{d}\\\\omega.}\", \"numericAtoms\" -> {2, 0}, \"symbolicTokens\" -> {\"tzpfitmath\", \"langle\", \"phi\", \"rangle\", \"int\", \"omega\", \"hbar\", \"eta\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\frac{\\hbar}{2\\omega}.",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "hbar",
+          "omega"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0649\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SS304L TORUS CORE GEOMETRY \\\\& STRESS-LOADING\", \"latex\" -> \"\\\\frac{\\\\hbar}{2\\\\omega}.\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"hbar\", \"omega\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\frac{\\hbar}{2\\omega}\\eta(\\omega).",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "hbar",
+          "omega",
+          "eta"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0649\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"SS304L TORUS CORE GEOMETRY \\\\& STRESS-LOADING\", \"latex\" -> \"\\\\frac{\\\\hbar}{2\\\\omega}\\\\eta(\\\\omega).\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"hbar\", \"omega\", \"eta\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

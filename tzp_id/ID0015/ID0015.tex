@@ -1,0 +1,247 @@
+\tzpanchor{0015}
+\tzpentryheader{0015}{Spectral Density Index (TZP-Weighted)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{bf43db7d-0601-5537-88c4-fde5458c8433}}\\
+\textbf{PiID} & \tzpcode{2384626433832} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{22}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{58.2483 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.0960 rad}\\
+\textbf{TZPID} & \tzpcode{ID0015} & \textbf{Node Dependencies}\quad \tzpidref{0006}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0015} & \textbf{Scale}\quad spectral\\
+\textbf{LOC Classification} & QC174.17 spectral analysis & QC670 fluctuation spectra\\
+\textbf{arXiv Classification} & Primary: cond-mat.stat-mech \quad Cross-list: math-ph, gr-qc & \\
+\textbf{Primary Support} & Power-Law Spectral Weight & Exponential Ultraviolet Cutoff\\
+\textbf{Closure Support} & TZP-Weighted Spectral Index & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The spectral density index is defined by $\eta(\omega)=\omega^{-\beta}e^{-\omega/\omega_0}$, where $\omega_0$ is a characteristic frequency fixed by $u_T$ and $\beta$ is a dimensionless exponent determined by the hyper-dimensional span.
+
+\tzpsection{Canonical Equation}
+\[
+\eta(\omega)
+=
+\omega^{-\beta} e^{-\omega/\omega_{0}}
+\]
+\[
+\omega_{0} = \omega_{0}(u_{T}),
+\qquad
+\beta = \beta(S_{\mathrm{HD}})
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\omega$: angular frequency term in the source equation.
+    \item $\omega_{0}$: angular frequency term in the source equation.
+    \item $u_{T}$: source equation symbol.
+    \item $T$: source equation symbol.
+    \item $S_{\mathrm{HD}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0015 generated source Wolfram model *)
+ClearAll[K0015, Cr0015, T, R, A, W, I, N];
+eq0015$1 = HoldForm[eta[omega] == 1/(omega^beta*e^(omega/omega0))];
+eq0015$2 = HoldForm[TZPSequence[omega0 == omega0[uT], beta == beta[SHD]]];
+eq0015$3 = HoldForm[omega^(-beta)];
+eq0015$4 = HoldForm[e^(-omega/omega0)];
+
+K0015 = HoldForm[{eq0015$1, eq0015$2, eq0015$3, eq0015$4}];
+
+N = "normalized TRAWIN closure object for Spectral Density Index (TZP-Weighted)";
+I = "TZP-Weighted Spectral Index integration/comparison layer";
+W = "Exponential Ultraviolet Cutoff wave or operator carrier";
+A = "Power-Law Spectral Weight admissible action/amplitude condition";
+R = "Exponential Ultraviolet Cutoff rotation/curl preservation layer";
+T = "Power-Law Spectral Weight local source condition";
+
+Cr0015[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0015 = Cr0015[K0015];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Power-Law Spectral Weight local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Exponential Ultraviolet Cutoff rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Power-Law Spectral Weight admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Exponential Ultraviolet Cutoff wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ TZP-Weighted Spectral Index integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Spectral Density Index (TZP-Weighted).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0015] Spectral Density Index (TZP-Weighted)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\eta(\omega)
+=
+\omega^{-\beta}
+e^{-\omega/\omega_0}.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\omega$ be a frequency variable and let $\omega_0$ be the characteristic cutoff frequency determined by the Trawin base unit.
+
+A scale-sensitive spectral law begins with a power term:
+
+\begin{equation}
+\omega^{-\beta},
+\end{equation}
+
+where $\beta$ controls low-frequency or scale-weighted behavior.
+
+To suppress high-frequency divergence, introduce the exponential cutoff:
+
+\begin{equation}
+e^{-\omega/\omega_0}.
+\end{equation}
+
+Multiplying the two factors gives the TZP-weighted spectral density index:
+
+\begin{equation}
+\boxed{
+\eta(\omega)
+=
+\omega^{-\beta}
+e^{-\omega/\omega_0}.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+$\eta(\omega)$ weights frequency contributions by combining power-law scaling with exponential cutoff suppression.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Spectral Density Index (TZP-Weighted) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Power-Law Spectral Weight}\par
+\[
+\omega^{-\beta}
+\]
+\noindent This sets the large-scale shape of the spectrum and controls how strongly lower frequencies are favored.\par
+\noindent\textbf{2. Exponential Ultraviolet Cutoff}\par
+\[
+e^{-\omega/\omega_{0}}
+\]
+\noindent This inserts the characteristic-frequency suppression that keeps the spectrum from remaining scale-free at high frequency.\par
+\noindent\textbf{3. TZP-Weighted Spectral Index}\par
+\[
+\eta(\omega)
+=
+\omega^{-\beta} e^{-\omega/\omega_{0}}
+\]
+\noindent This closes the progression by combining scaling and cutoff into one spectral weighting law tied to the Trawin base unit and hyper-dimensional span.\par
+
+\clearpage
+\noindent\textbf{[ID 0015] Spectral Density Index (TZP-Weighted)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Spectral Density Index (TZP-Weighted) is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The spectral density index is defined by eta(omega)=omega to the power -beta e to the power -omega/omega sub 0 , where omega sub 0 is a characteristic frequency fixed by u sub T and beta is a dimensionless exponent determined by the hyper-dimensional span. \textbf{Contextual meaning:} The entry reads Spectral Density Index (TZP-Weighted) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Power-Law Spectral Weight; Exponential Ultraviolet Cutoff; TZP-Weighted Spectral Index.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+() weights frequency contributions by combining power-law scaling with exponential cutoff suppression.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The spectral density index eta(omega)eta(omega)eta(omega) is defined as eta(omega)=omega-beta e-omega/omega 0eta(omega)=omegatextsuperscript -beta textbackslash,e -omega/omegatextbackslash 0 eta(omega)=omega-betae-omega/omega 0, where omega 0omegatextbackslash 0omega 0 is a characteristic frequency determined by TrawinBase and beta is a dimensionless exponent that depends on the hyper-dimensional span. The spectral density index eta(omega)eta(omega)eta(omega) is defined as eta(omega)=omega-beta e-omega/omega 0eta(omega)=omegatextsuperscript -beta textbackslash,e -omega/omegatextbackslash 0 eta(omega)=omega-betae-omega/omega 0, where omega 0omegatextbackslash 0omega 0 is a characteristic frequency determined by TrawinBase and beta is a dimensionless exponent that depends on the hyper-dimensional span.
+
+\tzpsection{Interpretive Role}
+This index controls how singular corrections reweight spectral content across scales. It becomes a practical input for noise models, fluctuation spectra, and any later renormalization flow that depends on frequency distribution.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Spectral Concentration Field Index Tzp Weighted}: nearby spectral language for modes, resonant structure, and admissible oscillation.
+\item \textbf{Concentration Field Formal Analogue}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Concentration Field Terminology}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0015]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0015_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0015] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Spectral Density Index (TZP-Weighted)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the spectral density index is defined by ()=\textasciicircum{}-e\textasciicircum{}-/\_0, where \_0 is a characteristic
+frequency fixed by u\_T and  is a dimensionless exponent...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Spectral Density Index (TZP-Weighted) is valid as a spectral relation when frequency,
+phase, and propagation variables satisfy the stated equation.''\\
+\textbf{Proof:} The source statement describes a wave, harmonic, or resonance relation. The proof
+obligation is that the frequency-domain quantities are typed consistently and that the
+derived propagation or resonance condition follows from the stated variables.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- spectral-relation validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0015_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

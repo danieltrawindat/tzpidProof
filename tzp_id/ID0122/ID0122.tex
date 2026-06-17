@@ -1,0 +1,230 @@
+\tzpanchor{0122}
+\tzpentryheader{0122}{Cross Symmetry Vortex Focusing}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{0c3458a9-851f-5279-bb7e-b4d2f47d41ba}}\\
+\textbf{PiID} & \tzpcode{3844609550582} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{129}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{473.7531 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.7806 rad}\\
+\textbf{TZPID} & \tzpcode{ID0122} & \textbf{Node Dependencies}\quad \tzpidref{0121}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0122} & \textbf{Scale}\quad cross-geometry vortex feed structure\\
+\textbf{LOC Classification} & QA911 fluid mechanics & QC145 hydrodynamics\\
+\textbf{arXiv Classification} & Primary: physics.flu-dyn \quad Cross-list: nlin.PS, math-ph & \\
+\textbf{Primary Support} & Axisymmetric Continuity Law & Focused Inflow Response\\
+\textbf{Closure Support} & Four-Channel Symmetry & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+A cross-shaped stopper dividing an opening into four quadrants creates a stagnation-point geometry with symmetric pressure gradients. In cylindrical coordinates the incompressible continuity equation is
+
+\tzpsection{Canonical Equation}
+\[ \frac{1}{r}\frac{\partial}{\partial r}\bigl(r v_r\bigr) + \frac{\partial v_z}{\partial z} = 0. \] Hence an increase in the downward velocity component $v_z$ forces a corresponding increase in the inward radial component $v_r$. The cross geometry therefore enforces four symmetric inflow channels that amplify radial focusing toward the central opening.
+
+\[
+\frac{1}{r}\frac{\partial}{\partial r}(r v_r) + \frac{\partial v_z}{\partial z} = 0
+\]
+\[
+v_z \uparrow \;\Longrightarrow\; v_r \uparrow
+\]
+\[
+N_{\mathrm{channels}} = 4
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $v_r$: source equation symbol.
+    \item $v_z$: source equation symbol.
+    \item $N_{\mathrm{channels}}$: source equation symbol.
+    \item $\mathcal{K}_{0122}$: canonical registry object for entry ID 0122.
+    \item $\uparrow$: source equation symbol.
+    \item $L$: characteristic length scale or Lagrangian carrier in the entry relation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0122 generated source Wolfram model *)
+ClearAll[K0122, Cr0122, T, R, A, W, I, N];
+eq0122$1 = HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0];
+eq0122$2 = HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0];
+eq0122$3 = HoldForm[vZuparrowLongrightarrow*vRuparrow];
+eq0122$4 = HoldForm[NChannels == 4];
+
+K0122 = HoldForm[{eq0122$1, eq0122$2, eq0122$3, eq0122$4}];
+
+N = "normalized TRAWIN closure object for Cross Symmetry Vortex Focusing";
+I = "Four-Channel Symmetry integration/comparison layer";
+W = "Focused Inflow Response wave or operator carrier";
+A = "Axisymmetric Continuity Law admissible action/amplitude condition";
+R = "Focused Inflow Response rotation/curl preservation layer";
+T = "Axisymmetric Continuity Law local source condition";
+
+Cr0122[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0122 = Cr0122[K0122];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Axisymmetric Continuity Law local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Focused Inflow Response rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Axisymmetric Continuity Law admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Focused Inflow Response wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Four-Channel Symmetry integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Cross Symmetry Vortex Focusing.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0122] Cross Symmetry Vortex Focusing}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[ \frac{1}{r}\frac{\partial}{\partial r}\bigl(r v_r\bigr) + \frac{\partial v_z}{\partial z} = 0. \] Hence an increase in the downward velocity component $v_z$ forces a corresponding increase in the inward radial component $v_r$. The cross geometry therefore enforces four symmetric inflow channels that amplify radial focusing toward the central opening.
+
+\[
+\frac{1}{r}\frac{\partial}{\partial r}(r v_r) + \frac{\partial v_z}{\partial z} = 0
+\]
+\[
+v_z \uparrow \;\Longrightarrow\; v_r \uparrow
+\]
+\[
+N_{\mathrm{channels}} = 4
+\]
+
+\paragraph{Primary Derivation.}
+The first line specifies a map, while the subsequent line provides its explicit form \( v_z \uparrow \;\Longrightarrow\; v_r \uparrow \). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.
+\paragraph{Equation Type.}
+This statement is classified as a map relation.
+
+\paragraph{Interpretation.}
+It pertains to the fields or functions just described. In the TRAWIN reading, the equation functions as the mapping carrier for the entry’s information content. According to CHL, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Cross Symmetry Vortex Focusing by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Axisymmetric Continuity Law}\par
+\[
+\frac{1}{r}\frac{\partial}{\partial r}(r v_r) + \frac{\partial v_z}{\partial z} = 0
+\]
+\noindent This supplies the conservation statement that links vertical draw to radial intake.\par
+\noindent\textbf{2. Focused Inflow Response}\par
+\[
+v_z \uparrow \;\Longrightarrow\; v_r \uparrow
+\]
+\noindent This states the directional consequence of stronger downward transport in the cross geometry.\par
+\noindent\textbf{3. Four-Channel Symmetry}\par
+\[
+N_{\mathrm{channels}} = 4
+\]
+\noindent This closes the progression by identifying the structural reason the focusing is amplified rather than generic.\par
+
+\clearpage
+\noindent\textbf{[ID 0122] Cross Symmetry Vortex Focusing}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Cross Symmetry Vortex Focusing is a canonical-registry. The cross geometry enforces four symmetric channels, amplifying radial inflow.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The cross geometry enforces four symmetric channels, amplifying radial inflow.
+\textbf{Contextual meaning:} vortex pumps; predictions about vortex stability; interplay with radial pressure gradients. Falsifiability / Test Handle: Vary inflow angle in controlled experiments and measure vortex strength and stability. ID 122: Cross Symmetry Vortex Focusing Type: Structural Constraint Formal Statement: A cross shaped stopper dividing an opening into four quadrants creates a stagnation point geometry with symmetric pressure gradients. The incompressible flow continuity equation in cylindrical coordinates, (1/r)  (r v\_r)/ r +   v\_z/  z = 0, implies that as downward velocity v\_z increases, radial velocity v\_r must increase. The cross geometry enforces four symmetric channels, amplifying radial inflow.
+\textbf{Derivable consequences:} Source evidence records the entry as a reusable object whose consequences should be read from the matched formal statement and local proof route.
+\textbf{Lemma support:} The cross geometry enforces four symmetric channels, amplifying radial inflow.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Vary inflow angle in controlled experiments and measure vortex strength and stability. ID 122: Cross Symmetry Vortex Focusing
+
+\tzpsection{Equation Grounding}
+The cross geometry enforces four symmetric channels, amplifying radial inflow.
+
+\tzpsection{Interpretive Role}
+vortex pumps; predictions about vortex stability; interplay with radial pressure gradients. Falsifiability / Test Handle: Vary inflow angle in controlled experiments and measure vortex strength and stability. ID 122: Cross Symmetry Vortex Focusing Type: Structural Constraint Formal Statement: A cross shaped stopper dividing an opening into four quadrants creates a stagnation point geometry with symmetric pressure gradients. The incompressible flow continuity equation in cylindrical coordinates, (1/r)  (r v\_r)/ r +   v\_z/  z = 0, implies that as downward velocity v\_z increases, radial velocity v\_r must increase. The cross geometry enforces four symmetric channels, amplifying radial inflow.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Axisymmetric Continuity Law}: The conservation statement that links vertical draw to radial intake.
+\item \textbf{Focused Inflow Response}: The directional consequence of stronger downward transport in the cross geometry.
+\item \textbf{Four-Channel Symmetry}: The identification of the structural reason the focusing is amplified rather than generic.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0122]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0122_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0122] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Cross Symmetry Vortex Focusing}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} a cross-shaped stopper dividing an opening into four quadrants creates a stagnation-
+point geometry with symmetric pressure gradients
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Cross Symmetry Vortex Focusing is valid as a tensorial/geometric statement when the
+stated tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0122_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

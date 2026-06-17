@@ -1,0 +1,17 @@
+\section*{ID6578: Relation: δ\_l,m(r)}
+\paragraph{Metadata.}
+PiID: 8989893582116 | RTEID: RTE:P25543.8348:T4.3893 | UUID: fd8417ca-56d5-519d-80ba-8a7962e65d31
+
+\paragraph{Canonical Statement.}
+How you can use this on real cosmic maps (DESI/Euclid/etc.) - Replace the synthetic `psi` with your observed field: - For density: make a HEALPix map of overdensity \textbackslash{}(\textbackslash{}delta(\textbackslash{}theta,\textbackslash{}phi; z)\textbackslash{}) on redshift shells and pass that map into `compute\_alm` to get \textbackslash{}(\textbackslash{}delta\_\{l,m\}(r)\textbackslash{}). - For velocity: if you have a reconstructed peculiar velocity field on shells, interpolate its eastward/northward components into the same theta/phi grid and feed them to `compute\_winding\_number` and `compute\_vorticity`. - For large datasets use higher `n\_theta`/`n\_phi` and increase `lmax`. The quadrature here is direct and accurate if the grid is sufficiently dense relative to lmax (Nyquist-like rule of thumb: n\_theta \textasciitilde{} 2*lmax, n\_phi \textasciitilde{} 4*lmax). - For real HEALPix files you can map HEALPix pixel centers to (theta,phi) and plug values directly into `compute\_alm` without regridding.
+
+\paragraph{Canonical Equation.}
+\[
+\delta_{l,m}(r)
+\]
+
+\paragraph{Dictionary.}
+Relation: δ\_l,m(r) — δ\_l,m(r)
+
+\paragraph{Encyclopedia.}
+Relation: δ\_l,m(r) is a symbolic expression, written δ\_l,m(r). It introduces a symbol or relation used elsewhere in the framework. It is built from l, m, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

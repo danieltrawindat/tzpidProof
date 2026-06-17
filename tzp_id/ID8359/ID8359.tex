@@ -1,0 +1,17 @@
+\section*{ID8359: Numerical Example You Can Implement Immediately: s\_R(t)}
+\paragraph{Metadata.}
+PiID: 4033751117354 | RTEID: RTE:P32459.8533:T3.2184 | UUID: 96993b38-43ce-52de-b32c-9f92b5dfb64c
+
+\paragraph{Canonical Statement.}
+\#\#\# D — Numerical example you can implement immediately Using the \textbackslash{}(B=10\textbackslash{}) Hz example: - \textbackslash{}(f\_A'=64.0\textbackslash{}) Hz (left), \textbackslash{}(f\_B'=54.0\textbackslash{}) Hz (right). - Bridge: \textbackslash{}(f\_\{\textbackslash{}text\{bridge\}\} = f\_B' \textbackslash{}cdot 32/27 = 64.0\textbackslash{}) Hz (coincides with \textbackslash{}(f\_A'\textbackslash{})). - Signals (sample code-ready form): - Left channel: \textbackslash{}(s\_L(t)=\textbackslash{}sin(2\textbackslash{}pi\textbackslash{}cdot 64.0\textbackslash{},t)\textbackslash{}). - Right channel: \textbackslash{}(s\_R(t)=\textbackslash{}sin(2\textbackslash{}pi\textbackslash{}cdot 54.0\textbackslash{},t)\textbackslash{}). - Add small bridge pulse at \textbackslash{}(t\_0\textbackslash{}): \textbackslash{}(s\_\{\textbackslash{}text\{bridge\}\}(t) = 0.25\textbackslash{}cdot g(t)\textbackslash{}sin(2\textbackslash{}pi\textbackslash{}cdot 64.0\textbackslash{},t + \textbackslash{}pi)\textbackslash{}) with \textbackslash{}(\textbackslash{}sigma=0.05\textbackslash{}) s (50 ms), amplitude 0.25 relative to carriers. Insert at a few spaced \textbackslash{}(t\_0\textbackslash{})s to create a series of narrow seams.
+
+\paragraph{Canonical Equation.}
+\[
+s_R(t)=\sin(2\pi\cdot 54.0\,t)
+\]
+
+\paragraph{Dictionary.}
+Numerical Example You Can Implement Immediately: s\_R(t) — s\_R(t)=sin(2π· 54.0 t)
+
+\paragraph{Encyclopedia.}
+Numerical Example You Can Implement Immediately: s\_R(t) is an algebraic definition, written s\_R(t)=sin(2π· 54.0 t). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from π, defining s\_R(t). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

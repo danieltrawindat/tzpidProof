@@ -1,0 +1,17 @@
+\section*{ID9662: Relation: ψ\_n Arrow sqrtI\_target e\textasciicircum{}iarg(ψ\_n)}
+\paragraph{Metadata.}
+PiID: 9984345225161 | RTEID: RTE:P37519.6917:T5.2722 | UUID: a5e36ba8-3d1d-5a5f-b117-210d1eddbd87
+
+\paragraph{Canonical Statement.}
+t intensity distribution into the required input phase pattern constitutes an inverse problem. The Gerchberg-Saxton algorithm provides an iterative solution by alternately enforcing constraints in real space and Fourier space. The algorithm proceeds as follows. Initialize a complex field \$\textbackslash{}psi\_0 = \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}phi\_0\}\$ with the target intensity and random phase. Then iterate: \textbackslash{}begin\{enumerate\}[label=(\textbackslash{}arabic*)] \textbackslash{}item Apply forward propagation: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n = \textbackslash{}mathcal\{P\}[\textbackslash{}psi\_n]\$ where \$\textbackslash{}mathcal\{P\}\$ represents the helical propagator \textbackslash{}item Enforce target intensity constraint: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n \textbackslash{}leftarrow \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}arg(\textbackslash{}tilde\{\textbackslash{}psi\}\_n)\}\$ \textbackslash{}item Apply inverse propagation: \$\textbackslash{}psi\_\{n+1\} = \textbackslash{}mathcal\{P\}\textasciicircum{}\{-1\}[\textbackslash{}tilde\{\textbackslash{}psi\}\_n]\$ \textbackslash{}item Enforce input domain constraints as needed \textbackslash{}end\{enumerate\} Convergence is monitored through the error metric: \textbackslash{}begin\{equation\} \textbackslash{}epsilon\_n = \textbackslash{}frac\{\textbackslash{}|\textbackslash{},|\textbackslash{}mathcal\{P\}[\textbackslash{}psi\_n]|\textasciicircum{}2 - I\_\{\textbackslash{}text\{target\}\}\textbackslash{}|\_2\}\{\textbackslash{}|I\_\{\textbackslash{}text\{target\}\}\textbackslash{}|\_2\} \textbackslash{}end\{equation\} Iteration continues until \$\textbackslash{}epsilon\_n\$ falls below a specified tolerance or a maximum iteration count is reached. The final phase pattern \$\textbackslash{}arg(\textbackslash{}psi\_\{\textbackslash{}infty\})\$ provides the
+
+\paragraph{Canonical Equation.}
+\[
+\tilde{\psi}_n \leftarrow \sqrt{I_{\text{target}}} e^{i\arg(\tilde{\psi}_n)}
+\]
+
+\paragraph{Dictionary.}
+Relation: ψ\_n Arrow sqrtI\_target e\textasciicircum{}iarg(ψ\_n) — ψ\_n arrow sqrtI\_target e\textasciicircum{}iarg(ψ\_n)
+
+\paragraph{Encyclopedia.}
+Relation: ψ\_n Arrow sqrtI\_target e\textasciicircum{}iarg(ψ\_n) is a symbolic expression, written ψ\_n arrow sqrtI\_target e\textasciicircum{}iarg(ψ\_n). It introduces a symbol or relation used elsewhere in the framework. It is built from ψ, n, I\_. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

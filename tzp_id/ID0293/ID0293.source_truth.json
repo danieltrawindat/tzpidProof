@@ -1,0 +1,364 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:51:28.712289+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0293",
+    "uuid": "15708457-03fb-5f6d-a7c5-92f652caf331",
+    "registry_id": "registry_id_0293",
+    "canonical_title": "Opposing Field Regions Correlation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0293/ID0293.TEX",
+      "json": "D:/TZPID/TZPID/ID0293/ID0293.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0293/ID0293.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "In the gyromagnetic correlation matrix, regions of opposing fields---pressed magnet anti-alignment in the laboratory and inner/outer core opposition in planets---show a correlation coefficient of 0.95.",
+    "technical_interpretation": "In the gyromagnetic correlation matrix, regions of opposing fields---pressed magnet anti-alignment in the laboratory and inner/outer core opposition in planets---show a correlation coefficient of 0.95."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+      "C_{\\lambda i,\\lambda j}=C_{ij}"
+    ],
+    "source_section_latex": "\\[\nC_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}\n\\]\n\\[\nC_{\\lambda i,\\lambda j}=C_{ij}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Diagnostic Definition",
+      "formula_latex_blocks": [
+        "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}"
+      ],
+      "interpretive_role": "This defines the scalar diagnostic or conversion quantity named by the title."
+    },
+    {
+      "step": 2,
+      "component_title": "Scaling Relation",
+      "formula_latex_blocks": [
+        "C_{\\lambda i,\\lambda j}=C_{ij}"
+      ],
+      "interpretive_role": "This elevates the quantity into a comparative scaling or correlation law."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Regime",
+      "formula_latex_blocks": [
+        "\\|C\\|_{F}<\\infty"
+      ],
+      "interpretive_role": "This closes the entry by normalizing the diagnostic against a stated reference regime."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0293}$",
+        "description": "canonical registry object for entry ID 0293."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0293}$",
+        "name": "canonical registry object for entry ID 0293.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\sigma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\infty$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{ij}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C_{\\lambda i,\\lambda j}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$v(x_i,x_j)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Opposing Field Regions Correlation\nCanonical operator translation\neq0293_1 = HoldForm[Cij == (cov(x_i,x_j))/(_i_j)];\neq0293_2 = HoldForm[Clambda i,lambda j==Cij];\n\nTRAWIN closure composition\nTRAWINClosure0293[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0293 := HoldForm[{eq0293_1, eq0293_2}];\nResult0293 := TRAWINClosure0293[K0293];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+          "normalized_latex": "CIj==(Tuple[cov[xI,xJ]]/(sigmaIsigmaJ))",
+          "wolfram_input": "CIj==(Tuple[cov[xI,xJ]]/(sigmaIsigmaJ))",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CIj == Tuple[cov[xI, xJ]]/sigmaIsigmaJ]",
+          "texform_roundtrip": "\\text{CIj}=\\frac{\\text{Tuple}(\\text{cov}(\\text{xI},\\text{xJ}))}{\\text{sigmaIsigmaJ}}",
+          "messages": []
+        },
+        {
+          "latex": "C_{\\lambda i,\\lambda j}=C_{ij}",
+          "normalized_latex": "CLambdailambdaj==CIj",
+          "wolfram_input": "CLambdailambdaj==CIj",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CLambdailambdaj == CIj]",
+          "texform_roundtrip": "\\text{CLambdailambdaj}=\\text{CIj}",
+          "messages": []
+        },
+        {
+          "latex": "\\|C\\|_{F}<\\infty",
+          "normalized_latex": "CF<Infinity",
+          "wolfram_input": "CF<Infinity",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[CF < Infinity]",
+          "texform_roundtrip": "\\text{CF}<\\infty",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0293 generated source-truth Wolfram model *)\nClearAll[K0293, TRAWINClosure0293];\neq0293$1 = HoldForm[CIj == Tuple[cov[xI, xJ]]/sigmaIsigmaJ];\neq0293$2 = HoldForm[CLambdailambdaj == CIj];\neq0293$3 = HoldForm[CF < Infinity];\nK0293 = HoldForm[{eq0293$1, eq0293$2, eq0293$3}];\nTRAWINClosure0293[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0293 = TRAWINClosure0293[K0293];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equations.}\n\\begin{equation}\n\\mathcal{L}_{X_H}\\omega=0.\n\\end{equation}\n\n\\begin{equation}\n\\phi_t^{*}\\omega=\\omega.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\omega$ be the symplectic form and $X_H$ the Hamiltonian vector field.  \nHamiltonian flow preserves the symplectic form when:\n\n\\begin{equation}\n\\mathcal{L}_{X_H}\\omega=0.\n\\end{equation}\n\nIntegrating the infinitesimal flow produces the global preservation law:\n\n\\begin{equation}\n\\boxed{\n\\phi_t^{*}\\omega=\\omega.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nAdmissible Hamiltonian evolution preserves phase-space topology and Liouville structure.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0293/ID0293.source_truth.json",
+    "entry_id": "ID0293",
+    "registry_id": "registry_id_0293",
+    "canonical_title": "Opposing Field Regions Correlation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0293/ID0293.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "15708457-03fb-5f6d-a7c5-92f652caf331",
+    "RTEID": "RTE:P1137.7841:T1.8747",
+    "poloidal_theta_rad": "1137.7841",
+    "toroidal_phi_rad": "1.8747",
+    "rteid_source": "manifest",
+    "PiID": "9141273724587",
+    "TZPi": "3",
+    "PiPE_position": "300",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "C_{ij} = \\frac{\\operatorname{cov}(x_i,x_j)}{\\sigma_i\\sigma_j}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "sigma",
+          "C",
+          "ij",
+          "x",
+          "i",
+          "j"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0293\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Opposing Field Regions Correlation\", \"latex\" -> \"C_{ij} = \\\\frac{\\\\operatorname{cov}(x_i,x_j)}{\\\\sigma_i\\\\sigma_j}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"sigma\", \"C\", \"ij\", \"x\", \"i\", \"j\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "C_{\\lambda i,\\lambda j}=C_{ij}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "lambda",
+          "C",
+          "i",
+          "j",
+          "ij"
+        ],
+        "candidate_wolfram_input": "HoldForm[C$lambda$i$lambda$j==C$ij]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0293\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"Opposing Field Regions Correlation\", \"latex\" -> \"C_{\\\\lambda i,\\\\lambda j}=C_{ij}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"lambda\", \"C\", \"i\", \"j\", \"ij\"}, \"candidateWolframInput\" -> \"HoldForm[C$lambda$i$lambda$j==C$ij]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

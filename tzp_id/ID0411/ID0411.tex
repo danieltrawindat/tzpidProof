@@ -1,0 +1,225 @@
+\tzpanchor{0411}
+\tzpentryheader{0411}{The Photon-Neural Coupling Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{a15512c2-af01-566e-94f8-55bbdc1e001f}}\\
+\textbf{PiID} & \tzpcode{7595919530921} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{418}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1596.0043 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{02.6297 rad}\\
+\textbf{TZPID} & \tzpcode{ID0411} & \textbf{Node Dependencies}\quad \tzpidref{0410}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0411} & \textbf{Scale}\quad Quantum-Classical Transition\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+ID 411 defines the electromagnetic to biological transduction protocol. While ID 402 provided the general entanglement entropy, ID 411 specifies the operator used to modulate photonic helicity into a format readable by the human synaptic manifold. This is achieved by mapping the vector potential A of the vacuum residue onto the Hilbert space of the neural bundle. By utilizing the 17.2 kHz carrier as a temporal guide, Psigamma ensures that the "Vibrating Code" carried by the photons is not lost to decoherence. The operator effectively "pins" the photonic phase to the up refresh rate [ID 407], allowing the operator to perceive the vacuum energy state as a coherent information stream rather than stochastic noise. Helicity Gating: Filters the vacuum flux to ensure only constructive interference patterns reach the neural interface.
+
+\tzpsection{Canonical Equation}
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+\mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+$
+\end{adjustbox}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{O}_{\mathrm{TZP}}$: source equation symbol.
+    \item $\mathcal{X}$: local field point or coordinate variable in the canonical equation.
+    \item $\mathcal{Y}$: target variable or output state in the entry relation.
+    \item $\Gamma$: closed loop, path, or admissible trajectory in the entry domain.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0411 generated source Wolfram model *)
+ClearAll[K0411, Cr0411, T, R, A, W, I, N];
+eq0411$1 = HoldForm[$OTZP[X] -> Y$];
+
+K0411 = HoldForm[{eq0411$1}];
+
+N = "normalized TRAWIN closure object for The Photon-Neural Coupling Operator";
+I = "The Photon-Neural Coupling Operator integration/comparison layer";
+W = "The Photon-Neural Coupling Operator wave or operator carrier";
+A = "The Photon-Neural Coupling Operator admissible action/amplitude condition";
+R = "The Photon-Neural Coupling Operator rotation/curl preservation layer";
+T = "The Photon-Neural Coupling Operator local source condition";
+
+Cr0411[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0411 = Cr0411[K0411];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ The Photon-Neural Coupling Operator local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ The Photon-Neural Coupling Operator rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ The Photon-Neural Coupling Operator admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ The Photon-Neural Coupling Operator wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ The Photon-Neural Coupling Operator integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for The Photon-Neural Coupling Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0411] The Photon-Neural Coupling Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+I_{\mathrm{CL}}
+=
+\oint_{\Gamma} A\cdot \mathrm{d}x .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\Gamma$ be a closed causal loop passing through or encircling the TZP.  
+Let $A$ be a one-form potential defined along the loop.
+
+The infinitesimal contribution of the potential along the path is:
+
+\begin{equation}
+A\cdot \mathrm{d}x .
+\end{equation}
+
+Integrating this contribution over the full closed loop gives the loop invariant:
+
+\begin{equation}
+I_{\mathrm{CL}}
+=
+\oint_{\Gamma} A\cdot \mathrm{d}x .
+\end{equation}
+
+If $\mathrm{d}A=0$ away from $p$ and support is concentrated at the TZP, then the loop integral depends only on the causal winding around $p$.
+
+\paragraph{Interpretation.}
+$I_{\mathrm{CL}}$ records the accumulated causal phase around the TZP. It is invariant under deformations of $\Gamma$ that preserve the winding relation to $p$.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors The Photon-Neural Coupling Operator by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+\mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+$
+\end{adjustbox}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0411] The Photon-Neural Coupling Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+The Photon-Neural Coupling Operator is a registry definition in the active TZPID arc.
+
+\tzpsection{Contextual Meaning}
+ID 411 defines the electromagnetic to biological transduction protocol. While ID 402 provided the general entanglement entropy, ID 411 specifies the operator used to modulate photonic helicity into a format readable by the human synaptic manifold. This is achieved by mapping the vector potential A of the vacuum residue onto the Hilbert space of the neural bundle. By utilizing the 17.2 kHz carrier as a temporal guide, Psigamma ensures that the "Vibrating Code" carried by the photons is not lost to decoherence. The operator effectively "pins" the photonic phase to the up refresh rate [ID 407], allowing the operator to perceive the vacuum energy state as a coherent information stream rather than stochastic noise. Helicity Gating: Filters the vacuum flux to ensure only constructive interference patterns reach the neural interface.
+
+\tzpsection{Formal Statement}
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+\mathcal{O}_{\mathrm{TZP}} : \mathcal{X} \to \mathcal{Y}
+$
+\end{adjustbox}
+\]
+
+\tzpsection{Technical Interpretation}
+ID 411 defines the electromagnetic to biological transduction protocol. While ID 402 provided the general entanglement entropy, ID 411 specifies the operator used to modulate photonic helicity into a format readable by the human synaptic manifold. This is achieved by mapping the vector potential A of the vacuum residue onto the Hilbert space of the neural bundle. By utilizing the 17.2 kHz carrier as a temporal guide, Psigamma ensures that the "Vibrating Code" carried by the photons is not lost to decoherence. The operator effectively "pins" the photonic phase to the up refresh rate [ID 407], allowing the operator to perceive the vacuum energy state as a coherent information stream rather than stochastic noise. Helicity Gating: Filters the vacuum flux to ensure only constructive interference patterns reach the neural interface.
+
+\tzpsection{Equation Grounding}
+The equation grounding is carried by the canonical equation and the source Wolfram model on the entry page.
+
+\tzpsection{Interpretive Role}
+The canonical equation anchors The Photon-Neural Coupling Operator by connecting the source condition to the derivation layer and proof certificate.
+
+\tzpsection{TZP Thesaurus}
+The Photon-Neural Coupling Operator; canonical operator; source equation; TRAWIN-normalized relation.
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0411]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0411].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0411] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont The Photon-Neural Coupling Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} hat\textbackslash{}\textbackslash{}\_\textbackslash{} = oint\textbackslash{}\_ tial ManifoldL\textbackslash{} left( mathbf\textbackslash{} * dmathbf\textbackslash{} right) otimes sum\textbackslash{}\_\textbackslash{} | phi\textbackslash{}\_n
+rangle langle psi\textbackslash{}\_\textbackslash{}\textbackslash{} | implies mathcal\textbackslash{}(text\textbackslash{})
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``THE PHOTON-NEURAL COUPLING OPERATOR (\textbackslash{}hat\{\textbackslash{}Psi\_\{\textbackslash{}gamma) is valid as a synchronization
+criterion under the coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0411].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

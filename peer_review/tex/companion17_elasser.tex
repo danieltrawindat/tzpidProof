@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={The Elsasser Attractor as Actively Maintained Gyromagnetic State},pdfsubject={TZPID Companion Spine Series, Paper C17},pdfkeywords={TZPID, Elasser}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Elsasser Attractor as Actively Maintained Gyromagnetic State\\[0.6em]
+\large TZPID Companion Spine Series, Paper C17 of XXVII\\
+\normalsize Cross-scale rotational persistence beyond passive remnants}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion develops the corpus's source treatment of the Elsasser attractor: persistent rotational structure as an actively maintained gyromagnetic state rather than a passive remnant of initial conditions.
+The source manuscript's stated thesis: ``This manuscript develops a cross-scale framework in which persistent rotational structure is treated as an actively maintained gyromagnetic state rather than a purely passive remnant of initial conditions. The model is organized around three components: (i) a shared geometric phase space for laboratory and astrophysical rotating systems, (ii) an Elsasser attractor manifold with characteristic Lambda \textasciitilde{} O(1), and (iii) scal\,\ldots'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID0500, ID9086, ID9087, ID9084, ID2269, ID8826, ID9081) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the source manuscript behind Paper IV's balance point: the attractor given its own full development.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Core Paper IV consumed the Elsasser attractor as a registry node; this companion is the manuscript where it lives. The treatment's thesis inverts a default assumption of astrophysics: persistent rotational structure---planetary spins, stellar rotation, disk coherence---is conventionally a remnant, angular momentum inherited from formation and slowly spent. The gyromagnetic alternative holds that it is \emph{maintained}: an actively sustained state, organized around an attractor manifold with characteristic dimensionless parameter $\Lambda \sim O(1)$, toward which rotating magnetized systems relax and at which they are held by the magnetic--Coriolis balance.
+
+The model is organized around three components, each with registry anchors developed in the chain below. A shared geometric phase space puts laboratory and astrophysical rotating systems on one footing---the precondition for the program's functor discipline (Paper IV's lab-to-astro maps). The Elsasser attractor manifold itself carries the relaxation dynamics $\dot{\Lambda} = -\kappa(\Lambda - 1) + \chi\,\delta S(t)$: deviations decay, fluctuations perturb, the balance point endures. And the scaling laws ($\mu = kMR^2\Omega$ and kin) export the balance across scales, explaining why dynamo experiments at metre scale and planetary cores at megametre scale sit on the same $\Lambda \approx 1$ surface.
+
+The companion's distinctive contributions beyond Paper IV's consumption are the alignment sidecars---exact correspondences between Elsasser structure and DAANSsphere geometry, including the biological-density functor of the registry chain---and the axiomatized universality statement, with equipartition tolerance $|E_B - E_{\mathrm{rot}}| < \epsilon$ implying $\Lambda \sim 1$.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID0500} \to \text{ID9086} \to \text{ID9087} \to \text{ID9084} \\
+\to \text{ID2269} \to \text{ID8826} \to \text{ID9081}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID0500: Self-Sustaining Dynamo Ignition (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle Equipartition \textbackslash{}to self-sustaining dynamo \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} This entry develops cantor pairing \& deterministic addressing inside the quantum-classical transition arc of the directory.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Canonical Definition is localized within the quantum- classical transition arc of the directory. R: Support Relation preserves the operative relation that cantor pairing \& deterministic addressing requires. A: Closure Relation fixes the admissible closure condition for the entry. W: CANTOR PAIRING \& DETERMINISTIC AD- DRESSING is rendered as a reusable operator-level state- ment. I: The informational content of cantor pairing \& determin- istic addressing is retained rather than flattened. N: CANTOR PAIRING \& DETERMINISTIC ADDRESS- ING closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID0500\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID9086: Definition of mu (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{mu=kMR2Omega\textbackslash{}mu}}\par\medskip
+\noindent\textit{Dictionary definition.} Consequences: Predicts conservation of linking during reconnection; supports invariance of helicity ratio; guides design of laboratory experiments to emulate astrophysical processes; contributes to energy cascades.\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of mu is an algebraic definition, written mu=kMR2Omegamu. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from mu, k, M, R, defining mu. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID9086\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9087: Definition of k,M,R\textasciicircum{}2,Omegamu (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{k,M,R\textasciicircum{}2,\textbackslash{}Omegamu=kMR2Omega,}}\par\medskip
+\noindent\textit{Dictionary definition.} Predicts conservation of linking during reconnection; supports invariance of helicity ratio; guides design of laboratory experiments to emulate astrophysical processes; contributes to energy cascades.\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of k,M,R\textasciicircum{}2,Omegamu is an algebraic definition, written k,M,R\textasciicircum{}2,Omegamu=kMR2Omega. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from k, M, R, defining k,M,R\textasciicircum{}2,Omegamu. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID9087\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID9084: Definition of Lk (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{Lk=14piC1C2(r1r2)(dr1x}}\par\medskip
+\noindent\textit{Dictionary definition.} Definition of Lk --- Lk=14piC1C2(r1r2)(dr1x\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of Lk is an algebraic definition, written Lk=14piC1C2(r1r2)(dr1x. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from C, r, defining Lk. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID9084\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID2269: First Exact Alignment Sidecar - Elasser and DAANS Entrainment (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}displaystyle \textbackslash{}rho\_\{\textbackslash{}mathrm\{bio\}\}=\textbackslash{}mathcal\{E\}(\textbackslash{}rho\_\{\textbackslash{}m athrm\{med\}\})}}\par\medskip
+\noindent\textit{Dictionary definition.} This sidecar tests whether the first academic locator rows are actually ready to attach to source truth IDs (rho\_bio)\par\medskip
+\noindent\textit{Encyclopedia reading.} This sidecar tests whether the first academic locator rows are actually ready to attach to source truth IDs. It deliberately promotes nothing yet. Wolfram detected: True Version banner: Wolfram Language 14.3.0 Engine for Microsoft Windows (64 bit) Formula specific validation: not claimed
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID2269\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID8826: UNIVERSAL ELSASSER CRITICALITY (AXIOM 3) Canonical Statutory Formula (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{|E\_B - E\_\{rot\}| < \textbackslash{}epsilon \textbackslash{}implies \textbackslash{}Lambda \textbackslash{}sim \textbackslash{}mathcal\{O\}(1)}}\par\medskip
+\noindent\textit{Dictionary definition.} UNIVERSAL ELSASSER CRITICALITY (AXIOM 3) Canonical Statutory Formula: \$ E\_B - E\_rot < O(1)\$ Formal Technical Dissertation: Axiom stating that systems self-organize toward an Elsasser number of unity, where magnetic energy density E\_B balances rotational energy density E\_rot.\par\medskip
+\noindent\textit{Encyclopedia reading.} UNIVERSAL ELSASSER CRITICALITY (AXIOM 3) Canonical Statutory Formula is a scaling / order-of-magnitude relation, written |E\_B - E\_rot| < epsilon => Lambda \textasciitilde{} O(1). It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from epsilon, Lambda, E\_B, E\_rot, O. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID8826\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID9081: Relation: Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1 (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{Lambda\_crit\textasciitilde{}=1\textbackslash{}Lambda\_\{\textbackslash{}text\{crit\}\}\textbackslash{}appr ox1Lambda\_crit\textasciitilde{}=1}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1 --- Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1 is a scaling / order-of-magnitude relation, written Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1Lambda\_crit\textasciitilde{}=1. It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from c, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{Elasser\_ID9081\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the Elasser spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID0500 & Core\_Definition & \texttt{Elasser\_ID0500\_identity} \\
+ID9086 & Core\_Definition & \texttt{Elasser\_ID9086\_identity} \\
+ID9087 & Core\_Definition & \texttt{Elasser\_ID9087\_identity} \\
+ID9084 & Core\_Definition & \texttt{Elasser\_ID9084\_identity} \\
+ID2269 & Derived\_Theorem\_Obligation & \texttt{Elasser\_ID2269\_identity} \\
+ID8826 & Derived\_Theorem\_Obligation & \texttt{Elasser\_ID8826\_threshold} \\
+ID9081 & Derived\_Theorem\_Obligation & \texttt{Elasser\_ID9081\_structure} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 0 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID0500 & --- & --- \\
+ID9086 & --- & --- \\
+ID9087 & --- & --- \\
+ID9084 & --- & --- \\
+ID2269 & --- & --- \\
+ID8826 & --- & --- \\
+ID9081 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This is Paper IV's source layer: the attractor, equipartition, and scaling entries that paper consumed trace here, and the pre-Isabelle proof order it declared (gyromagnetic before phase-locking) makes this companion logically upstream of Paper II's celestial captures as well. The DAANSsphere alignment sidecar ties the attractor to the enclosure lattice, anticipating the toroidal habitat of C16 and C18.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_Elasser.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{Elasser\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID0500} (\texttt{Elasser\_ID0500\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9086} (\texttt{Elasser\_ID9086\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9087} (\texttt{Elasser\_ID9087\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9084} (\texttt{Elasser\_ID9084\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID2269} (\texttt{Elasser\_ID2269\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID8826} (\texttt{Elasser\_ID8826\_threshold}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9081} (\texttt{Elasser\_ID9081\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. Maintained-versus-remnant is decidable: maintained rotation predicts relaxation back to the attractor after perturbation and correlated magnetic-rotational evolution, while remnants spin down monotonically; long-baseline rotation data adjudicates.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+The Elsasser companion gives the program's movement engine its own manuscript: rotation as a maintained state, held at a universal balance by relaxation dynamics, exported across scales by typed scaling laws. Its refinement targets are observational---perturbation-recovery signatures, cross-scale residuals about $\Lambda = 1$---and its conceptual gift to the arc is the active-maintenance inversion that Papers IV and V generalize into the accumulation principle.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: Elasser}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{Elasser}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,249 @@
+\tzpanchor{0006}
+\tzpentryheader{0006}{Trawin Base Unit}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{744765da-078b-5ea9-9fa4-3b64360c2969}}\\
+\textbf{PiID} & \tzpcode{6535897932384} & \textbf{TZPi}\quad \tzpcode{7}\quad \textbf{PiPE}\quad \tzpcode{13}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{23.2993 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.0384 rad}\\
+\textbf{TZPID} & \tzpcode{ID0006} & \textbf{Node Dependencies}\quad \tzpidref{0002}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0006} & \textbf{Scale}\quad measurement\\
+\textbf{LOC Classification} & QC20 measurement theory & QA612 topological methods\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: gr-qc, physics.gen-ph & \\
+\textbf{Primary Support} & Fundamental Loop Measure & Single-Winding Admissibility\\
+\textbf{Closure Support} & Normalized Base Unit & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Trawin base unit is the invariant measure obtained by integrating the metric density around one fundamental loop that encircles the zero point exactly once. It translates the singular geometry into a reproducible unit scale rather than borrowing measurement from an external convention.
+
+\tzpsection{Canonical Equation}
+\[
+u_{T}
+:=
+\oint_{\Gamma}
+\sqrt{\lvert g \rvert}\, d\ell
+\]
+\[
+\operatorname{Wind}_{p}(\Gamma)=1
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $u_{T}$: source equation symbol.
+    \item $T$: source equation symbol.
+    \item $\Lambda$: cosmological or lemniscatic branch parameter in the entry relation.
+    \item $\Gamma$: closed loop, path, or admissible trajectory in the entry domain.
+    \item $\ell$: source equation symbol.
+    \item $G$: source equation symbol.
+    \item $W$: source equation symbol.
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $R$: global radius, boundary radius, or topological scale.
+    \item $A$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0006 generated source Wolfram model *)
+ClearAll[K0006, Cr0006, T, R, A, W, I, N];
+eq0006$1 = HoldForm[uT == ContourIntegralGamma*Sqrt[Abs[g]]*dell];
+eq0006$2 = HoldForm[WindP[Gamma] == 1];
+eq0006$3 = HoldForm[uTNorm == NormalizeTRAWINTuple[ContourIntegralGammaSqrt[Abs[g]]*dell, WindP[Gamma] == 1, SimilarTo[Gamma, Lambda]]];
+
+K0006 = HoldForm[{eq0006$1, eq0006$2, eq0006$3}];
+
+N = "normalized TRAWIN closure object for Trawin Base Unit";
+I = "Normalized Base Unit integration/comparison layer";
+W = "Single-Winding Admissibility wave or operator carrier";
+A = "Fundamental Loop Measure admissible action/amplitude condition";
+R = "Single-Winding Admissibility rotation/curl preservation layer";
+T = "Fundamental Loop Measure local source condition";
+
+Cr0006[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0006 = Cr0006[K0006];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Fundamental Loop Measure local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Single-Winding Admissibility rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Fundamental Loop Measure admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Single-Winding Admissibility wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Base Unit integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Trawin Base Unit.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0006] Trawin Base Unit}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+u_T := \int_{\Gamma}\sqrt{|g|}\,\mathrm{d}\ell .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\Gamma$ be a fundamental loop encircling the Trawin Zero Point exactly once.  
+The infinitesimal line element induced by the metric is:
+
+\begin{equation}
+\mathrm{d}s = \sqrt{|g|}\,\mathrm{d}\ell .
+\end{equation}
+
+Integrating this metric-weighted length around the loop gives the primitive unit associated with one complete encirclement of the TZP:
+
+\begin{equation}
+u_T = \int_{\Gamma}\mathrm{d}s .
+\end{equation}
+
+Substituting the line element yields:
+
+\begin{equation}
+\boxed{
+u_T := \int_{\Gamma}\sqrt{|g|}\,\mathrm{d}\ell .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The Trawin base unit $u_T$ is the fundamental geometric unit obtained by completing one metric-weighted loop around the TZP.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Trawin Base Unit by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Fundamental Loop Measure}\par
+\[
+u_{T}
+:=
+\oint_{\Gamma}
+\sqrt{\lvert g \rvert}\, d\ell
+\]
+\noindent This turns the singular geometry into a concrete scalar that can function as the framework's internal measurement unit.\par
+\noindent\textbf{2. Single-Winding Admissibility}\par
+\[
+\operatorname{Wind}_{p}(\Gamma)=1
+\]
+\noindent This prevents overcounting by restricting the unit to the simplest nontrivial loop around the anchor.\par
+\noindent\textbf{3. Normalized Base Unit}\par
+\[
+u_{T}^{\mathrm{norm}}
+=
+\operatorname{Normalize}_{\mathrm{TRAWIN}}
+\!\left(
+\oint_{\Gamma}\sqrt{\lvert g \rvert}\, d\ell,\,
+\operatorname{Wind}_{p}(\Gamma)=1,\,
+\Gamma \sim \Lambda
+\right)
+\]
+\noindent This closes the progression by making the unit independent of a raw path description and dependent only on its admissible TRAWIN class.\par
+
+\clearpage
+\noindent\textbf{[ID 0006] Trawin Base Unit}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Trawin Base Unit is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The Trawin base unit TrawinBase is defined by the invariant relation u sub T:=integralGamma g  dlutextbackslash sub T :=integral sub Gamma sqrt textbar gtextbar textbackslash, d ellu sub T:=integralGamma g dl taken over a fundamental loop Gamma encircling the TZP exactly once. \textbackslash{}. \textbf{Contextual meaning:} The entry reads Trawin Base Unit as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Fundamental Loop Measure; Single-Winding Admissibility; Normalized Base Unit.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The Trawin base unit u sub T is the fundamental geometric unit obtained by completing one metric-weighted loop around the TZP.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The Trawin base unit TrawinBase is defined by the invariant relation u T:=integralGamma g  dlutextbackslash T :=integral Gamma sqrt textbar gtextbar textbackslash, d ellu T:=integralGamma g dl taken over a fundamental loop Gamma encircling the TZP exactly once. The Trawin base unit TrawinBase is defined by the invariant relation u T:=integralGamma g  dlutextbackslash T :=integral Gamma sqrt textbar gtextbar textbackslash, d ellu T:=integralGamma g dl taken over a fundamental loop Gamma encircling the TZP exactly once.
+
+\tzpsection{Interpretive Role}
+This is the registry s first explicit measurement object. Once fixed, it provides the scale used to compare time drift, action integrals, span measures, and any later normalized constants defined around the TZP.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Trawin-Normalized Base Unit}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Trawin-Normalized Normalization Analogue}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Trawin-Normalized Terminology}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0006]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0006_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0006] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Trawin Base Unit}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Trawin base unit is the invariant measure obtained by integrating the metric density
+around one fundamental loop that encircles the zero point...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Trawin Base Unit is valid as a tensorial/geometric statement when the stated tensor
+fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0006_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

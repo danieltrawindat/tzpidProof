@@ -1,0 +1,71 @@
+{
+  "project": "TZPID Proof Pipeline",
+  "creator": "Daniel Alexander Trawin",
+  "creator_orcid": "0009-0001-4630-3715",
+  "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+  "generated_date": "2026-06-11",
+  "profile_scope": "Lean/Rocq secondary proof-profile lane for spine/vector-calculus carriers plus legacy all-ID mirror check.",
+  "primary_lane": "Isabelle/HOL",
+  "secondary_lanes": [
+    "Lean 4.28.0",
+    "Rocq/Coq 9.0.1"
+  ],
+  "artifacts": {
+    "lean_profile": "TZPIDProofProfile.lean",
+    "rocq_profile": "TZPIDProofProfile.v",
+    "legacy_lean_all_ids": "TZPIDAllIDs.lean",
+    "legacy_rocq_all_ids": "TZPIDAllIDs.v"
+  },
+  "tool_versions": {
+    "lean": "Lean (version 4.28.0, x86_64-w64-windows-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+    "rocq_coqc": "The Rocq Prover, version 9.0.1 compiled with OCaml 4.14.2"
+  },
+  "environment_notes": {
+    "rocq_library_path": "ROCQLIB must be set to D:\\01Tools\\Coq\\Rocq-Platform~9.0~2025.08\\lib\\coq for this local installation.",
+    "rocq_default_issue": "The shell environment pointed ROCQLIB at lib\\rocq-core, where Init/Prelude.vo was not present."
+  },
+  "checks": [
+    {
+      "name": "lean_profile",
+      "command": "D:\\01Tools\\Lean\\lean-4.28.0-windows\\bin\\lean.exe D:\\TZPIDProof\\tzpid_proof\\lean_rocq_gold_spine\\TZPIDProofProfile.lean",
+      "status": "pass",
+      "exit_code": 0
+    },
+    {
+      "name": "rocq_profile",
+      "command": "$env:ROCQLIB='D:\\01Tools\\Coq\\Rocq-Platform~9.0~2025.08\\lib\\coq'; D:\\01Tools\\Coq\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe D:\\TZPIDProof\\tzpid_proof\\lean_rocq_gold_spine\\TZPIDProofProfile.v",
+      "status": "pass",
+      "exit_code": 0
+    },
+    {
+      "name": "legacy_lean_all_ids",
+      "command": "D:\\01Tools\\Lean\\lean-4.28.0-windows\\bin\\lean.exe D:\\TZPIDProof\\tzpid_proof\\lean_rocq_gold_spine\\TZPIDAllIDs.lean",
+      "status": "pass",
+      "exit_code": 0
+    },
+    {
+      "name": "legacy_rocq_all_ids",
+      "command": "$env:ROCQLIB='D:\\01Tools\\Coq\\Rocq-Platform~9.0~2025.08\\lib\\coq'; D:\\01Tools\\Coq\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe D:\\TZPIDProof\\tzpid_proof\\lean_rocq_gold_spine\\TZPIDAllIDs.v",
+      "status": "pass_with_warnings",
+      "exit_code": 0,
+      "warnings": [
+        "Rocq warned that large nat literals are interpreted via Nat.of_num_uint to avoid stack overflow."
+      ]
+    }
+  ],
+  "profile_contracts_mirrored": [
+    "spine_backbone_count",
+    "mixed_partials_zero_curl",
+    "green_rectangle_constant_curl",
+    "incompressible_from_opposite_partials",
+    "helicity_density_zero_when_b_zero",
+    "uniform_helicity_integral_zero_density",
+    "elsasser_balance_consumed",
+    "opposite_twist_torsion_zero",
+    "flux_multiple_is_quantized",
+    "quantized_circulation_is_winding_index",
+    "proof_profile_spine_count",
+    "proof_profile_has_secondary_lanes"
+  ],
+  "interpretation": "Lean and Rocq now participate in the proof profile as checked portability lanes for the finite carrier shape. They do not replace the Isabelle/HOL development as the primary formal lane."
+}

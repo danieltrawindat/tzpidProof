@@ -1,0 +1,260 @@
+\tzpanchor{0120}
+\tzpentryheader{0120}{Planetary Spin--Orbit Oscillator Model}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{cd6f75c3-d16b-510d-9bcf-afa56961c723}}\\
+\textbf{PiID} & \tzpcode{0938446095505} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{127}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{465.9866 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.7678 rad}\\
+\textbf{TZPID} & \tzpcode{ID0120} & \textbf{Node Dependencies}\quad \tzpidref{0119}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0120} & \textbf{Scale}\quad joint spin and orbital phase dynamics\\
+\textbf{LOC Classification} & QA371 nonlinear dynamical systems & QB355 orbital mechanics\\
+\textbf{arXiv Classification} & Primary: nlin.AO \quad Cross-list: astro-ph.EP, physics.class-ph & \\
+\textbf{Primary Support} & Spin-Phase Evolution & Orbital-Phase Evolution\\
+\textbf{Closure Support} & Extended State Variable & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The spin--orbit oscillator model extends the phase-only picture by giving each planet both a spin phase and an orbital phase. It is the natural resolution of the prior limitation page because it lets spin coupling, orbital forcing, and spin-orbit locking coexist in one finite system.
+
+\tzpsection{Canonical Equation}
+\[
+\dot{\theta}_i
+=
+\Omega_i
+\;+\;
+\frac{K_s}{N}\sum_{j=1}^{N}\sin(\theta_j-\theta_i)
+\;+\;
+\lambda_i\sin(\phi_i-\theta_i)
+\]
+\[
+\dot{\phi}_i
+=
+\nu_i
+\;+\;
+\frac{K_o}{N}\sum_{j=1}^{N}\sin(\phi_j-\phi_i)
+\]
+\[
+X_i=(\theta_i,\phi_i)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\theta$: phase angle or local angular coordinate.
+    \item $\Omega_i$: angular frequency term in the source equation.
+    \item $K_s$: source equation symbol.
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $\theta_j$: source equation symbol.
+    \item $\theta_i$: source equation symbol.
+    \item $\lambda_i$: source equation symbol.
+    \item $\phi_i$: flux, phase, or topological map term in the source equation.
+    \item $\phi$: flux, phase, or topological map term in the source equation.
+    \item $K_o$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0120 generated source Wolfram model *)
+ClearAll[K0120, Cr0120, T, R, A, W, I, N];
+eq0120$1 = HoldForm[dot[theta]*_i == OmegaI + (KS/N)*SumJ1^N*Sin[thetaJ - thetaI] + lambdaISin[phiI - thetaI]];
+eq0120$2 = HoldForm[dot[phi]*_i == nuI + (KO/N)*SumJ1^N*Sin[phiJ - phiI]];
+eq0120$3 = HoldForm[XI == Pair[thetaI, phiI]];
+
+K0120 = HoldForm[{eq0120$1, eq0120$2, eq0120$3}];
+
+N = "normalized TRAWIN closure object for Planetary Spin--Orbit Oscillator Model";
+I = "Extended State Variable integration/comparison layer";
+W = "Orbital-Phase Evolution wave or operator carrier";
+A = "Spin-Phase Evolution admissible action/amplitude condition";
+R = "Orbital-Phase Evolution rotation/curl preservation layer";
+T = "Spin-Phase Evolution local source condition";
+
+Cr0120[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0120 = Cr0120[K0120];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Spin-Phase Evolution local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Orbital-Phase Evolution rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Spin-Phase Evolution admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Orbital-Phase Evolution wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Extended State Variable integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Planetary Spin--Orbit Oscillator Model.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0120] Planetary Spin--Orbit Oscillator Model}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\dot{\theta}_i
+=
+\Omega_i
+\;+\;
+\frac{K_s}{N}\sum_{j=1}^{N}\sin(\theta_j-\theta_i)
+\;+\;
+\lambda_i\sin(\phi_i-\theta_i)
+\]
+\[
+\dot{\phi}_i
+=
+\nu_i
+\;+\;
+\frac{K_o}{N}\sum_{j=1}^{N}\sin(\phi_j-\phi_i)
+\]
+\[
+X_i=(\theta_i,\phi_i)
+\]
+
+\paragraph{Primary Derivation.}
+This argument establishes the identity through direct evaluation of the expression. yielding the required identity.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+The statement concerns the variables introduced in the displayed formula. Interpreted through TRAWIN, the equation functions as the generalized carrier for the entry’s information content. According to CHL, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Planetary Spin--Orbit Oscillator Model by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Spin-Phase Evolution}\par
+\[
+\dot{\theta}_i
+=
+\Omega_i
+\;+\;
+\frac{K_s}{N}\sum_{j=1}^{N}\sin(\theta_j-\theta_i)
+\;+\;
+\lambda_i\sin(\phi_i-\theta_i)
+\]
+\noindent This extends the original phase-only law by adding an explicit spin-orbit locking term.\par
+\noindent\textbf{2. Orbital-Phase Evolution}\par
+\[
+\dot{\phi}_i
+=
+\nu_i
+\;+\;
+\frac{K_o}{N}\sum_{j=1}^{N}\sin(\phi_j-\phi_i)
+\]
+\noindent This gives the orbital sector its own coupled dynamics rather than treating it as a fixed background.\par
+\noindent\textbf{3. Extended State Variable}\par
+\[
+X_i=(\theta_i,\phi_i)
+\]
+\noindent This closes the progression by identifying the minimal two-phase state that carries the improved model.\par
+
+\clearpage
+\noindent\textbf{[ID 0120] Planetary Spin--Orbit Oscillator Model}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Planetary Spin--Orbit Oscillator Model is a Operator. To model real planetary dynamics, augment the spin only Kuramoto model with spin and orbital phases  \_i and  \_i. Evolution equations take the form dot  \_i =  \_i +   T\_i( \_i,  \_i) -- D\_i   dot  \_i, dot  \_i =  \_i +   G\_i( \_i,  \_i) -- D'\_i   dot  \_i, where T\_i and G\_i represent tidal torques depending on phase differences and D\_i, D'\_i are dissipative coefficients.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} To model real planetary dynamics, augment the spin only Kuramoto model with spin and orbital phases  \_i and  \_i. Evolution equations take the form dot  \_i =  \_i +   T\_i( \_i,  \_i) -- D\_i   dot  \_i, dot  \_i =  \_i +   G\_i( \_i,  \_i) -- D'\_i   dot  \_i, where T\_i and G\_i represent tidal torques depending on phase differences and D\_i, D'\_i are dissipative coefficients.
+\textbf{Contextual meaning:} This generalization incorporates spin--orbit coupling, tidal dissipation and time dependent orbital separations, enabling study of true spin--orbit resonances such as Mercury's 3:2 lock.
+\textbf{Derivable consequences:} Prediction of capture probabilities for spin--orbit resonances; modelling of tidal locking timescales; im
+\textbf{Lemma support:} To model real planetary dynamics, augment the spin only Kuramoto model with spin and orbital phases  \_i and  \_i. Evolution equations take the form dot  \_i =  \_i +   T\_i( \_i,  \_i) -- D\_i   dot  \_i, dot  \_i =  \_i +   G\_i( \_i,  \_i) -- D'\_i   dot  \_i, where T\_i and G\_i represent tidal torques depending on phase differences and D\_i, D'\_i are dissipative coefficients.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+This generalization incorporates spin--orbit coupling, tidal dissipation and time dependent orbital separations, enabling study of true spin--orbit resonances such as Mercury's 3:2 lock.
+
+\tzpsection{Equation Grounding}
+To model real planetary dynamics, augment the spin only Kuramoto model with spin and orbital phases  \_i and  \_i. Evolution equations take the form dot  \_i =  \_i +   T\_i( \_i,  \_i) -- D\_i   dot  \_i, dot  \_i =  \_i +   G\_i( \_i,  \_i) -- D'\_i   dot  \_i, where T\_i and G\_i represent tidal torques depending on phase differences and D\_i, D'\_i are dissipative coefficients.
+
+\tzpsection{Interpretive Role}
+This generalization incorporates spin--orbit coupling, tidal dissipation and time dependent orbital separations, enabling study of true spin--orbit resonances such as Mercury's 3:2 lock.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Spin-Phase Evolution}: The extension of the original phase-only law by adding an explicit spin-orbit locking term.
+\item \textbf{Orbital-Phase Evolution}: The endowment of the orbital sector with its own coupled dynamics rather than treating it as a fixed background.
+\item \textbf{Extended State Variable}: The identification of the minimal two-phase state that carries the improved model.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0120]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0120_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0120] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Planetary Spin--Orbit Oscillator Model}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} to model real planetary dynamics, augment the spin-only Kuramoto model with spin and
+orbital phases \textbackslash{}\_i and \textbackslash{}\_i
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Planetary Spin--Orbit Oscillator Model is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0120_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

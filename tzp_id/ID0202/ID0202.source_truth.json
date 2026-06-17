@@ -1,0 +1,575 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:02.978009+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0202",
+    "uuid": "f707c466-7381-50fb-9dd2-2a4b349b3f4d",
+    "registry_id": "registry_id_0202",
+    "canonical_title": "Cymatic Field Restructuring Chain",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0202/ID0202.TEX",
+      "json": "D:/TZPID/TZPID/ID0202/ID0202.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0202/ID0202.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The Cymatic Field Restructuring Chain receives the CymaticMasterEquation source as its governing restructuring law: a Lindblad quantum sector, acoustic coupling Hamiltonian, and nonlinear field transport equation.",
+    "technical_interpretation": "This entry identifies the causal chain by which cymatic (sound) waves reorganize magnetic fields."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\rho=-\\frac{i}{\\hbar}[H_{\\mathrm{eff}}[\\Phi],\\rho]+\\sum_k\\gamma_k\\!\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)\n$\n\\end{adjustbox}",
+      "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nH_{\\mathrm{eff}}[\\Phi]=H_0+\\int d^3r\\,\\Phi(\\mathbf{r},t)\\,\\Psi^\\dagger(\\mathbf{r})\\Psi(\\mathbf{r})\n$\n\\end{adjustbox}",
+      "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\Phi+\\nabla\\!\\cdot(\\mathbf{v}\\Phi)=\\nabla\\!\\cdot\\!\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)+\\Phi(\\mu-\\Phi^2)(1-\\Phi^2)+\\mathrm{Tr}\\!\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)\n$\n\\end{adjustbox}"
+    ],
+    "source_section_latex": "\\[\n\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\rho=-\\frac{i}{\\hbar}[H_{\\mathrm{eff}}[\\Phi],\\rho]+\\sum_k\\gamma_k\\!\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)\n$\n\\end{adjustbox}\n\\]\n\\[\n\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nH_{\\mathrm{eff}}[\\Phi]=H_0+\\int d^3r\\,\\Phi(\\mathbf{r},t)\\,\\Psi^\\dagger(\\mathbf{r})\\Psi(\\mathbf{r})\n$\n\\end{adjustbox}\n\\]\n\\[\n\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\Phi+\\nabla\\!\\cdot(\\mathbf{v}\\Phi)=\\nabla\\!\\cdot\\!\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)+\\Phi(\\mu-\\Phi^2)(1-\\Phi^2)+\\mathrm{Tr}\\!\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)\n$\n\\end{adjustbox}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Quantum Master Evolution",
+      "formula_latex_blocks": [
+        "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\rho=-\\frac{i}{\\hbar}[H_{\\mathrm{eff}}[\\Phi],\\rho]+\\sum_k\\gamma_k\\!\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)\n$\n\\end{adjustbox}"
+      ],
+      "interpretive_role": "This records the source density-matrix evolution with Hamiltonian and dissipative sectors."
+    },
+    {
+      "step": 2,
+      "component_title": "Acoustic Effective Hamiltonian",
+      "formula_latex_blocks": [
+        "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nH_{\\mathrm{eff}}[\\Phi]=H_0+\\int d^3r\\,\\Phi(\\mathbf{r},t)\\,\\Psi^\\dagger(\\mathbf{r})\\Psi(\\mathbf{r})\n$\n\\end{adjustbox}"
+      ],
+      "interpretive_role": "This places the acoustic field directly inside the effective Hamiltonian."
+    },
+    {
+      "step": 3,
+      "component_title": "Nonlinear Field Transport",
+      "formula_latex_blocks": [
+        "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\Phi+\\nabla\\!\\cdot(\\mathbf{v}\\Phi)=\\nabla\\!\\cdot\\!\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)+\\Phi(\\mu-\\Phi^2)(1-\\Phi^2)+\\mathrm{Tr}\\!\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)\n$\n\\end{adjustbox}"
+      ],
+      "interpretive_role": "This closes the support chain with diffusion, reaction, and quantum back-reaction terms."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\delta(x,x')$",
+        "description": "point-source delta term that anchors the Green-function response."
+      },
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      },
+      {
+        "symbol": "$\\Psi$",
+        "description": "wavefunction or state carrier for the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\delta(x,x')$",
+        "name": "point-source delta term that anchors the Green-function response.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Psi$",
+        "name": "wavefunction or state carrier for the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\begin$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\linewidth$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\displaystyle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\gamma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\end$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Phi(\\mathbf{r},t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\dagger(\\mathbf{r})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Psi(\\mathbf{r})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot(\\mathbf{v}\\Phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Phi(\\mu-\\Phi^2)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{eff}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(\\mathbf{r},t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$r(\\mathbf{r})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(\\mathbf{r})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\mathbf{v}\\Phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(\\mu-\\Phi^2)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Cymatic Field Restructuring Chain\nCanonical operator translation\neq0202_1 = HoldForm[D_trho==-(i)/(hbar)[Heff[Phi],rho]+Sum_k_k(L_krho L_k^dagger-(1)/(2)\\(L_k^dagger L_k,rho\\))];\neq0202_2 = HoldForm[Heff[Phi]==H_0+Integrate d^3r Phi((r),t) Psi^dagger((r))Psi((r))];\neq0202_3 = HoldForm[D_tPhi+Grad((v)Phi)==Grad(D[Phi,GradPhi]GradPhi)+Phi(mu-Phi^2)(1-Phi^2)+Tr(rho (DiracDelta H)/(DiracDeltaPhi))];\n\nTRAWIN closure composition\nTRAWINClosure0202[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0202 := HoldForm[{eq0202_1, eq0202_2, eq0202_3}];\nResult0202 := TRAWINClosure0202[K0202];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\rho=-\\frac{i}{\\hbar}[H_{\\mathrm{eff}}[\\Phi],\\rho]+\\sum_k\\gamma_k\\!\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)\n$\n\\end{adjustbox}",
+          "normalized_latex": "$PartialTrho==-((i)/(hbar))[HEff[Phi],rho]+SumKgammaK[LKrho*LK^Dagger-((1)/(2))List[LK^Dagger*LK,rho]]$",
+          "wolfram_input": "$PartialTrho==-((i)/(hbar))[HEff[Phi],rho]+SumKgammaK[LKrho*LK^Dagger-((1)/(2))List[LK^Dagger*LK,rho]]$",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[$PartialTrho == -(i/hbar)[HEff[Phi], rho] + SumKgammaK[LKrho*LK^Dagger - (1/2)*{LK^Dagger*LK, rho}]*$]",
+          "texform_roundtrip": "\\text{$\\$$PartialTrho}=\\$ \\text{SumKgammaK}\\left(\\left\\{\\text{LKrho} \\text{LK}^{\\text{Dagger}}-\\frac{\\text{LK}^{\\text{Dagger}+1}}{2},\\text{LKrho} \\text{LK}^{\\text{Dagger}}-\\frac{\\rho }{2}\\right\\}\\right)-\\frac{i}{\\text{hbar}}(\\text{HEff}(\\text{Phi}),\\rho )",
+          "messages": []
+        },
+        {
+          "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nH_{\\mathrm{eff}}[\\Phi]=H_0+\\int d^3r\\,\\Phi(\\mathbf{r},t)\\,\\Psi^\\dagger(\\mathbf{r})\\Psi(\\mathbf{r})\n$\n\\end{adjustbox}",
+          "normalized_latex": "$HEff[Phi]==H0+Integral*d^3*r*Phi[r,t]*Psi^Dagger[r]Psi[r]$",
+          "wolfram_input": "$HEff[Phi]==H0+Integral*d^3*r*Phi[r,t]*Psi^Dagger[r]Psi[r]$",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[$HEff[Phi] == H0 + Integral*d^3*r*Phi[r, t]*Psi^Dagger[r]*Psi[r]*$]",
+          "texform_roundtrip": "\\text{$\\$$HEff}(\\text{Phi})=d^3 \\text{Integral} r \\$ \\text{Psi}(r) \\text{Psi}^{\\text{Dagger}(r)} \\text{Phi}(r,t)+\\text{H0}",
+          "messages": []
+        },
+        {
+          "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\Phi+\\nabla\\!\\cdot(\\mathbf{v}\\Phi)=\\nabla\\!\\cdot\\!\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)+\\Phi(\\mu-\\Phi^2)(1-\\Phi^2)+\\mathrm{Tr}\\!\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)\n$\n\\end{adjustbox}",
+          "normalized_latex": "$PartialTPhi+Grad*(vPhi)==Grad*Tuple[D[Phi,GradPhi]GradPhi]+Phi[mu-Phi^2](1-Phi^2)+Tr[rho[(DiracDelta*H)/(DiracDeltaPhi)]]$",
+          "wolfram_input": "$PartialTPhi+Grad*(vPhi)==Grad*Tuple[D[Phi,GradPhi]GradPhi]+Phi[mu-Phi^2](1-Phi^2)+Tr[rho[(DiracDelta*H)/(DiracDeltaPhi)]]$",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[$PartialTPhi + Grad*vPhi == Grad*Tuple[D[Phi, GradPhi]*GradPhi] + Phi[mu - Phi^2]*(1 - Phi^2) + Tr[rho[(DiracDelta*H)/DiracDeltaPhi]]*$]",
+          "texform_roundtrip": "\\text{Grad} \\text{vPhi}+\\text{$\\$$PartialTPhi}=\\$ \\text{Tr}\\left[\\rho \\left(\\frac{\\text{DiracDelta} H}{\\text{DiracDeltaPhi}}\\right)\\right]+\\text{Grad} \\text{Tuple}(0)+\\left(1-\\text{Phi}^2\\right) \\text{Phi}\\left(\\mu -\\text{Phi}^2\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0202 generated source-truth Wolfram model *)\nClearAll[K0202, TRAWINClosure0202];\neq0202$1 = HoldForm[$PartialTrho == -(i/hbar)[HEff[Phi], rho] + SumKgammaK[LKrho*LK^Dagger - (1/2)*{LK^Dagger*LK, rho}]*$];\neq0202$2 = HoldForm[$HEff[Phi] == H0 + Integral*d^3*r*Phi[r, t]*Psi^Dagger[r]*Psi[r]*$];\neq0202$3 = HoldForm[$PartialTPhi + Grad*vPhi == Grad*Tuple[D[Phi, GradPhi]*GradPhi] + Phi[mu - Phi^2]*(1 - Phi^2) + Tr[rho[(DiracDelta*H)/DiracDeltaPhi]]*$];\nK0202 = HoldForm[{eq0202$1, eq0202$2, eq0202$3}];\nTRAWINClosure0202[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0202 = TRAWINClosure0202[K0202];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Statement.}\nFor any closed loop $\\GammaLoop$ encircling the TZP in $M$, there exists a homotopy deforming $\\GammaLoop$ into a lemniscate whose self-intersection occurs at $p$.\n\n\\paragraph{Primary Derivation.}\nLet $\\GammaLoop:S^1\\to M$ be a closed loop surrounding $p$. Since $p$ is the limiting degeneracy point, paths enclosing $p$ may be continuously deformed while preserving their winding relation to $p$.\n\nIntroduce a homotopy:\n\n\\begin{equation}\nH:S^1\\times[0,1]\\to M .\n\\end{equation}\n\nAt $s=0$, the homotopy recovers the original loop:\n\n\\begin{equation}\nH(\\theta,0)=\\GammaLoop(\\theta).\n\\end{equation}\n\nAt $s=1$, the loop is deformed into a figure-eight curve:\n\n\\begin{equation}\nH(\\theta,1)=\\Lambda(\\theta),\n\\end{equation}\n\nwhere $\\Lambda$ is a lemniscatic curve satisfying:\n\n\\begin{equation}\n\\Lambda(\\theta_1)=\\Lambda(\\theta_2)=p,\n\\qquad\n\\theta_1\\neq\\theta_2 .\n\\end{equation}\n\nThus the self-intersection of the limiting loop is identified with the TZP.\n\n\\paragraph{Interpretation.}\nThe lemniscate is the canonical shape of TZP recurrence: two lobes, one crossing, one central point. This turns the zero point into a geometric crossing rather than a simple endpoint.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0202/ID0202.source_truth.json",
+    "entry_id": "ID0202",
+    "registry_id": "registry_id_0202",
+    "canonical_title": "Cymatic Field Restructuring Chain",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0202/ID0202.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "f707c466-7381-50fb-9dd2-2a4b349b3f4d",
+    "RTEID": "RTE:P784.4109:T1.2925",
+    "poloidal_theta_rad": "784.4109",
+    "toroidal_phi_rad": "1.2925",
+    "rteid_source": "manifest",
+    "PiID": "2881097566593",
+    "TZPi": "7",
+    "PiPE_position": "209",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\rho=-\\frac{i}{\\hbar}[H_{\\mathrm{eff}}[\\Phi],\\rho]+\\sum_k\\gamma_k\\!\\left(L_k\\rho L_k^\\dagger-\\frac{1}{2}\\{L_k^\\dagger L_k,\\rho\\}\\right)\n$\n\\end{adjustbox}",
+        "numeric_atoms": [
+          "1/2",
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "linewidth",
+          "displaystyle",
+          "partial",
+          "rho",
+          "hbar",
+          "Phi",
+          "sum",
+          "gamma",
+          "dagger",
+          "max",
+          "width",
+          "t",
+          "H",
+          "k",
+          "L"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0202\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cymatic Field Restructuring Chain\", \"latex\" -> \"\\\\begin{adjustbox}{max width=\\\\linewidth}\\n$\\\\displaystyle\\n\\\\partial_t\\\\rho=-\\\\frac{i}{\\\\hbar}[H_{\\\\mathrm{eff}}[\\\\Phi],\\\\rho]+\\\\sum_k\\\\gamma_k\\\\!\\\\left(L_k\\\\rho L_k^\\\\dagger-\\\\frac{1}{2}\\\\{L_k^\\\\dagger L_k,\\\\rho\\\\}\\\\right)\\n$\\n\\\\end{adjustbox}\", \"numericAtoms\" -> {1/2, 1, 2}, \"symbolicTokens\" -> {\"linewidth\", \"displaystyle\", \"partial\", \"rho\", \"hbar\", \"Phi\", \"sum\", \"gamma\", \"dagger\", \"max\", \"width\", \"t\", \"H\", \"k\", \"L\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nH_{\\mathrm{eff}}[\\Phi]=H_0+\\int d^3r\\,\\Phi(\\mathbf{r},t)\\,\\Psi^\\dagger(\\mathbf{r})\\Psi(\\mathbf{r})\n$\n\\end{adjustbox}",
+        "numeric_atoms": [
+          "0",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "linewidth",
+          "displaystyle",
+          "Phi",
+          "int",
+          "mathbf",
+          "Psi",
+          "dagger",
+          "max",
+          "width",
+          "H",
+          "d",
+          "r",
+          "t"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0202\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cymatic Field Restructuring Chain\", \"latex\" -> \"\\\\begin{adjustbox}{max width=\\\\linewidth}\\n$\\\\displaystyle\\nH_{\\\\mathrm{eff}}[\\\\Phi]=H_0+\\\\int d^3r\\\\,\\\\Phi(\\\\mathbf{r},t)\\\\,\\\\Psi^\\\\dagger(\\\\mathbf{r})\\\\Psi(\\\\mathbf{r})\\n$\\n\\\\end{adjustbox}\", \"numericAtoms\" -> {0, 3}, \"symbolicTokens\" -> {\"linewidth\", \"displaystyle\", \"Phi\", \"int\", \"mathbf\", \"Psi\", \"dagger\", \"max\", \"width\", \"H\", \"d\", \"r\", \"t\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\partial_t\\Phi+\\nabla\\!\\cdot(\\mathbf{v}\\Phi)=\\nabla\\!\\cdot\\!\\left(D[\\Phi,\\nabla\\Phi]\\nabla\\Phi\\right)+\\Phi(\\mu-\\Phi^2)(1-\\Phi^2)+\\mathrm{Tr}\\!\\left(\\rho\\,\\frac{\\delta H}{\\delta\\Phi}\\right)\n$\n\\end{adjustbox}",
+        "numeric_atoms": [
+          "2",
+          "1"
+        ],
+        "symbolic_tokens": [
+          "linewidth",
+          "displaystyle",
+          "partial",
+          "Phi",
+          "nabla",
+          "mathbf",
+          "mu",
+          "rho",
+          "delta",
+          "max",
+          "width",
+          "t",
+          "D"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0202\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cymatic Field Restructuring Chain\", \"latex\" -> \"\\\\begin{adjustbox}{max width=\\\\linewidth}\\n$\\\\displaystyle\\n\\\\partial_t\\\\Phi+\\\\nabla\\\\!\\\\cdot(\\\\mathbf{v}\\\\Phi)=\\\\nabla\\\\!\\\\cdot\\\\!\\\\left(D[\\\\Phi,\\\\nabla\\\\Phi]\\\\nabla\\\\Phi\\\\right)+\\\\Phi(\\\\mu-\\\\Phi^2)(1-\\\\Phi^2)+\\\\mathrm{Tr}\\\\!\\\\left(\\\\rho\\\\,\\\\frac{\\\\delta H}{\\\\delta\\\\Phi}\\\\right)\\n$\\n\\\\end{adjustbox}\", \"numericAtoms\" -> {2, 1}, \"symbolicTokens\" -> {\"linewidth\", \"displaystyle\", \"partial\", \"Phi\", \"nabla\", \"mathbf\", \"mu\", \"rho\", \"delta\", \"max\", \"width\", \"t\", \"D\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

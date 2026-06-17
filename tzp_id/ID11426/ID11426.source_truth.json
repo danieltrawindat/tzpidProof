@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11426",
+    "uuid": "f2722717-eb02-5807-821f-e50bf0086f74",
+    "registry_id": "registry_id_11426",
+    "piid": "PiID-11426-s4s5-mix",
+    "canonical_title": "Occupancy Equivalent Frequency Ratio",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11426\\ID11426.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "For an n-dimensional hypervolume fraction phi_i, inverse-radius frequency gives equivalent frequency ratio phi_i to the minus one over n.",
+    "technical_interpretation": "This stores the frequency side of the equivalent occupancy-radius conversion.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\frac{\\omega_i}{\\omega}=\\phi_i^{-1/n}"
+    ],
+    "source_section_latex": "\\frac{\\omega_i}{\\omega}=\\phi_i^{-1/n}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Occupancy Equivalent Frequency Ratio",
+          "wolfram": "omegaRatio == phi_i^(-1/n)",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Scaling_Law",
+    "obligation_role": "Occupancy_Interface",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11426",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

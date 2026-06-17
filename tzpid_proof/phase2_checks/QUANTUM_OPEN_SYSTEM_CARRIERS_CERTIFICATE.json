@@ -1,0 +1,83 @@
+{
+  "certificate": "QUANTUM_OPEN_SYSTEM_CARRIERS_CERTIFICATE",
+  "generated_utc": "2026-06-09T00:00:00Z",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "isabelle_theory": "isabelle_tzpid/TZPID_QuantumOpenSystem_Carriers.thy",
+  "source_batch": "Quantum/open-system batch 007",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "density_trace_one",
+      "value": 1.0,
+      "expected": 1.0,
+      "pass": true
+    },
+    {
+      "name": "column_stochastic_trace_preserving",
+      "value": 1.0,
+      "expected": 1.0,
+      "pass": true
+    },
+    {
+      "name": "channel_output_trace_matches_sum",
+      "value": 1.0,
+      "expected": 1.0,
+      "pass": true
+    },
+    {
+      "name": "measurement_zero_weight_recovers_prior",
+      "value": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "name": "measurement_unit_weight_recovers_outcome",
+      "value": 0.9,
+      "expected": 0.9,
+      "pass": true
+    },
+    {
+      "name": "commutator_residual_antisymmetric",
+      "value": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "name": "noise_denominator_positive",
+      "value": 10.0,
+      "expected": 10.0,
+      "pass": true
+    },
+    {
+      "name": "noise_spectrum_uses_denominator",
+      "value": 0.4,
+      "expected": 0.4,
+      "pass": true
+    },
+    {
+      "name": "trace_distance_identical_zero",
+      "value": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "name": "quantum_thermo_balance_zero",
+      "value": 0.0,
+      "expected": 0.0,
+      "pass": true
+    }
+  ],
+  "parameters": {
+    "p0": 0.35,
+    "p1": 0.65,
+    "channel": [
+      0.8,
+      0.2,
+      0.1,
+      0.9
+    ],
+    "frequency": 3.0,
+    "amplitude": 2.0
+  }
+}

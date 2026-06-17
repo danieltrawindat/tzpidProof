@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11218",
+    "uuid": "e91f0ee8-765e-57e5-a3c0-a37a8919a3f5",
+    "registry_id": "registry_ID11218",
+    "canonical_title": "Phone2 CMBEmergenceTheorem — Coupling Operator Module Quadrupole Moment"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_009",
+    "anchor_title": "CMBEmergenceTheorem",
+    "anchor_source_file": "UnificationComparison.txt",
+    "anchor_line_number": "999",
+    "mapping_method": "nearest_same_source",
+    "line_distance": "557"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_009 CMBEmergenceTheorem, extracted from UnificationComparison.txt line 442, with canonical equation $coupling_operator = Module[{quadrupole_moment},$.",
+    "technical_interpretation": "ID11218 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 442. Equation grounding: coupling_operator = Module[{quadrupole_moment},"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "coupling_operator = Module[{quadrupole_moment},"
+    ],
+    "source_section_latex": "\\[\ncoupling_operator = Module[{quadrupole_moment},\n\\]",
+    "wolfram_form_hint": "coupling_operator = Module[{quadrupole_moment},"
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "UnificationComparison.txt line 442",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=1680; anchor=PHONE2_ANCHOR_009 CMBEmergenceTheorem; domain=quantum_entanglement; mapping=nearest_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_009 CMBEmergenceTheorem. Source: UnificationComparison.txt line 442.",
+    "encyclopedia": "ID11218 supports theorem anchor PHONE2_ANCHOR_009 CMBEmergenceTheorem. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_same_source against source UnificationComparison.txt line 442. Equation grounding: coupling_operator = Module[{quadrupole_moment},",
+    "source_file": "UnificationComparison.txt",
+    "line_number": "442",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_fragment_carrier_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "fragment_carrier",
+      "wolfram_candidate": "Phone2EquationCarrier[\"ID11218\", <|\"canonical\" -> \"coupling_operator = Module[{quadrupole_moment},\", \"rescueClass\" -> \"hard_fragment\"|>]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_fragment_carrier_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11218",
+    "title": "Phone2 CMBEmergenceTheorem — Coupling Operator Module Quadrupole Moment",
+    "uuid": "e91f0ee8-765e-57e5-a3c0-a37a8919a3f5",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43561.9853:T2.6617",
+    "poloidal_theta_rad": "43561.9853",
+    "toroidal_phi_rad": "2.6617",
+    "rteid_source": "computed",
+    "PiID": "5856407826484",
+    "TZPi": "7",
+    "PiPE_position": "11225"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

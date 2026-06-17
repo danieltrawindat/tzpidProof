@@ -1,0 +1,17 @@
+\section*{ID10262: Adjoint Functor Reconstruction}
+\paragraph{Metadata.}
+PiID: 7365949563051 | RTEID: RTE:P39849.6250:T2.8281 | UUID: 38c7b856-bedb-53a6-ac02-84c91fe14c23
+
+\paragraph{Canonical Statement.}
+\textbackslash{}begin\{algorithm\} \textbackslash{}caption\{Reverse Harmonic Decomposition via Adjoint Functor\} \textbackslash{}begin\{algorithmic\} \textbackslash{}STATE \$\textbackslash{}mathcal\{R\}: \textbackslash{}cat\{Spec\}\_\{\textbackslash{}text\{obs\}\} \textbackslash{}rightarrow \textbackslash{}cat\{Field\}\_\{\textbackslash{}text\{phys\}\}\$ defined by: \textbackslash{}STATE \$\textbackslash{}mathcal\{R\}(S\_\{\textbackslash{}text\{obs\}\}) = \textbackslash{}arg\textbackslash{}min\_\{\textbackslash{}Psi\_0\} \textbackslash{}left\textbackslash{}|\textbackslash{}mathcal\{F\}(\textbackslash{}Psi\_0) - S\_\{\textbackslash{}text\{obs\}\}\textbackslash{}right\textbackslash{}|\_\{\textbackslash{}mathcal\{H\}\}\textasciicircum{}2\$ \textbackslash{}STATE subject to: \$\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{total\}\}[\textbackslash{}Psi\_0] = \textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{obs\}\}\$ (helicity constraint) \textbackslash{}FOR\{each resonance \$\textbackslash{}omega\_i \textbackslash{}in S\_\{\textbackslash{}text\{obs\}\}\$\} \textbackslash{}STATE \$\textbackslash{}\{n\_i, l\_i, m\_i\textbackslash{}\} \textbackslash{}leftarrow \textbackslash{}SphericalHarmonicY\textasciicircum{}\{-1\}[S\_\{\textbackslash{}text\{obs\}\}(\textbackslash{}omega\_i)]\$ \textbackslash{}STATE \$m\_\{KK\}\textasciicircum{}\{(i)\} \textbackslash{}leftarrow (\textbackslash{}omega\_i - \textbackslash{}omega\_\{\textbackslash{}text\{uncoupled\}\})/\textbackslash{}omega\_\{KK\}\$ \textbackslash{}STATE \$\textbackslash{}mathcal\{A\}\_i \textbackslash{}leftarrow \textbackslash{}sqrt\{2\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{obs\}\}/(\textbackslash{}omega\_i Q\_i V\_i)\}\$ \textbackslash{}ENDFOR \textbackslash{}RETURN \$\textbackslash{}Psi\_0 = \textbackslash{}sum\_i \textbackslash{}mathcal\{A\}\_i \textbackslash{}cdot \textbackslash{}text\{EigenMode\}[n\_i, l\_i, m\_i] \textbackslash{}cdot e\textasciicircum{}\{2\textbackslash{}pi i m\_\{KK\}\textasciicircum{}\{(i)\} z/R\_\{KK\}\}\$ \textbackslash{}end\{algorithmic\} \textbackslash{}end\{algorithm\}
+
+\paragraph{Canonical Equation.}
+\[
+m_{KK}^{(i)} \leftarrow (\omega_i - \omega_{\text{uncoupled}})/\omega_{KK}
+\]
+
+\paragraph{Dictionary.}
+Adjoint Functor Reconstruction — m\_KK\textasciicircum{}(i) arrow (ω\_i - ω\_uncoupled)/ω\_KK
+
+\paragraph{Encyclopedia.}
+Adjoint Functor Reconstruction is a symbolic expression, written m\_KK\textasciicircum{}(i) arrow (ω\_i - ω\_uncoupled)/ω\_KK. It introduces a symbol or relation used elsewhere in the framework. It is built from m\_KK, K. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

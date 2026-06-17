@@ -1,0 +1,372 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:46:10.372709+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0228",
+    "uuid": "e16bd4f8-0570-5711-9600-ada3a7853215",
+    "registry_id": "registry_id_0228",
+    "canonical_title": "Hyperspherical Zero-Point Vacuum Axiom",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0228/ID0228.TEX",
+      "json": "D:/TZPID/TZPID/ID0228/ID0228.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0228/ID0228.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The universe originates from a primordial zero-point field with hyperspherical topology in which every point oscillates in perfect phase coherence; in this state, signals propagate instantaneously and the usual speed of light c is effectively zero.",
+    "technical_interpretation": "The universe originates from a primordial zero-point field with hyperspherical topology in which every point oscillates in perfect phase coherence; in this state, signals propagate instantaneously and the usual speed of light c is effectively zero."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "mathcal{V}_{\\mathrm{TZP}} \\cong S^3",
+      "phi(x)=\\phi_0\\ \\text{for all}\\ x\\in S^3"
+    ],
+    "source_section_latex": "\\[\nmathcal{V}_{\\mathrm{TZP}} \\cong S^3\n\\]\n\\[\nphi(x)=\\phi_0\\ \\text{for all}\\ x\\in S^3\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Hyperspherical Vacuum",
+      "formula_latex_blocks": [
+        "mathcal{V}_{\\mathrm{TZP}} \\cong S^3"
+      ],
+      "interpretive_role": "This fixes the hyperspherical topology of the primordial vacuum sector."
+    },
+    {
+      "step": 2,
+      "component_title": "Phase Coherence",
+      "formula_latex_blocks": [
+        "phi(x)=\\phi_0\\ \\text{for all}\\ x\\in S^3"
+      ],
+      "interpretive_role": "This identifies the perfectly coherent phase condition across the vacuum."
+    },
+    {
+      "step": 3,
+      "component_title": "Vanishing Signal Speed",
+      "formula_latex_blocks": [
+        "c_{\\mathrm{eff}} = 0"
+      ],
+      "interpretive_role": "This closes the axiom with the vanishing effective propagation speed claimed by the entry."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\cong$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Z$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Hyperspherical Zero-Point Vacuum Axiom\nCanonical operator translation\neq0228_1 = HoldForm[mathcal(V)TZP S^3];\neq0228_2 = HoldForm[phi(x)==_0\\ for all\\ x S^3];\n\nTRAWIN closure composition\nTRAWINClosure0228[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0228 := HoldForm[{eq0228_1, eq0228_2}];\nResult0228 := TRAWINClosure0228[K0228];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "mathcal{V}_{\\mathrm{TZP}} \\cong S^3",
+          "normalized_latex": "mathcal[V]_(TZP)cong*S^3",
+          "wolfram_input": "mathcal[V]_(TZP)cong*S^3",
+          "normalization_notes": [
+            "mathrm unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[mathcal[V]*_*TZP*cong*S^3]",
+          "texform_roundtrip": "\\_ \\text{cong} S^3 \\text{TZP} \\text{mathcal}(V)",
+          "messages": []
+        },
+        {
+          "latex": "phi(x)=\\phi_0\\ \\text{for all}\\ x\\in S^3",
+          "normalized_latex": "phi(x)=\\phi_0 \\text{for all} x\\in S^3",
+          "wolfram_input": "Element[phi[x]==phi0*x,S^3]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[phi[x] == phi0*x, S^3]]",
+          "texform_roundtrip": "\\phi (x)=\\text{phi0} x\\in S^3",
+          "messages": []
+        },
+        {
+          "latex": "c_{\\mathrm{eff}} = 0",
+          "normalized_latex": "cEff==0",
+          "wolfram_input": "cEff==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[cEff == 0]",
+          "texform_roundtrip": "\\text{cEff}=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0228 generated source-truth Wolfram model *)\nClearAll[K0228, TRAWINClosure0228];\neq0228$1 = HoldForm[mathcal[V]*_*TZP*cong*S^3];\neq0228$2 = HoldForm[Element[phi[x] == phi0*x, S^3]];\neq0228$3 = HoldForm[cEff == 0];\nK0228 = HoldForm[{eq0228$1, eq0228$2, eq0228$3}];\nTRAWINClosure0228[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0228 = TRAWINClosure0228[K0228];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Statement.}\n\nThe hyperspherical zero-point vacuum axiom treats the primordial TZP vacuum as a coherent \\(S^3\\) state with no effective signal propagation before symmetry breaking.\n\n\\paragraph{Primary Derivation.}\n\nLet the vacuum carrier be modeled by the three-sphere\n\\[\n\\mathcal{V}_{\\mathrm{TZP}}\\cong S^3.\n\\]\nA maximally coherent vacuum phase is represented by a constant phase field\n\\[\n\\phi(x)=\\phi_0,\\qquad x\\in S^3.\n\\]\nSince the phase is constant, its intrinsic gradient vanishes:\n\\[\n\\nabla_{S^3}\\phi=0.\n\\]\nThe corresponding pre-differentiated propagation speed is taken to be\n\\[\nc_{\\mathrm{eff}}=0.\n\\]\nAfter perturbation, the first admissible departure from perfect coherence may be represented by\n\\[\n\\phi(x,t)=\\phi_0+\\varepsilon\\,Y_{\\ell m}(x)e^{i\\omega t}.\n\\]\n\n\\paragraph{Wolfram Form.}\n\\begin{verbatim}\nVTZP = Sphere[3];\nphi[x_] := phi0;\nGradS3[phi[x]] == 0;\nceff == 0;\nphiPerturbed[x_, t_] := phi0 + eps*Y[l, m][x]*Exp[I*omega*t];\n\\end{verbatim}\n\n\\paragraph{Interpretation.}\n\nID 0228 establishes the vacuum as a hyperspherical coherent state. Signal, phase variation, and mode structure enter only after perturbation breaks the perfectly uniform \\(S^3\\) condition.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0228/ID0228.source_truth.json",
+    "entry_id": "ID0228",
+    "registry_id": "registry_id_0228",
+    "canonical_title": "Hyperspherical Zero-Point Vacuum Axiom",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0228/ID0228.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "e16bd4f8-0570-5711-9600-ada3a7853215",
+    "RTEID": "RTE:P885.3746:T1.4588",
+    "poloidal_theta_rad": "885.3746",
+    "toroidal_phi_rad": "1.4588",
+    "rteid_source": "manifest",
+    "PiID": "2337867831652",
+    "TZPi": "7",
+    "PiPE_position": "235",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "mathcal{V}_{\\mathrm{TZP}} \\cong S^3",
+        "numeric_atoms": [
+          "3"
+        ],
+        "symbolic_tokens": [
+          "cong",
+          "mathcal",
+          "V",
+          "S"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0228\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Hyperspherical Zero-Point Vacuum Axiom\", \"latex\" -> \"mathcal{V}_{\\\\mathrm{TZP}} \\\\cong S^3\", \"numericAtoms\" -> {3}, \"symbolicTokens\" -> {\"cong\", \"mathcal\", \"V\", \"S\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "phi(x)=\\phi_0\\ \\text{for all}\\ x\\in S^3",
+        "numeric_atoms": [
+          "0",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "phi",
+          "in",
+          "x",
+          "S"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0228\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Hyperspherical Zero-Point Vacuum Axiom\", \"latex\" -> \"phi(x)=\\\\phi_0\\\\ \\\\text{for all}\\\\ x\\\\in S^3\", \"numericAtoms\" -> {0, 3}, \"symbolicTokens\" -> {\"phi\", \"in\", \"x\", \"S\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

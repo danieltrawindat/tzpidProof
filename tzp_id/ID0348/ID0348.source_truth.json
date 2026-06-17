@@ -1,0 +1,463 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T20:47:30.641610+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0348",
+    "uuid": "dedb4d07-a367-53fc-893b-7240dc79c293",
+    "registry_id": "registry_id_0348",
+    "canonical_title": "Quantum Tag Injection and Entanglement Tracking Protocol",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0348/ID0348.TEX",
+      "json": "D:/TZPID/TZPID/ID0348/ID0348.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0348/ID0348.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Prepare an entangled pair of particles (Alice and Bob). Introduce Alice into a neural or metamaterial system such that she interacts electromagnetically but retains entanglement with Bob. As Alice traverses the system, measure Bob to infer Alice's state evolution. Map each measurement to a DAANSphere address and record the sequence. This sequence encodes the path taken by Alice.",
+    "technical_interpretation": "Prepare an entangled pair of particles (Alice and Bob). Introduce Alice into a neural or metamaterial system such that she interacts electromagnetically but retains entanglement with Bob. As Alice traverses the system, measure Bob to infer Alice's state evolution. Map each measurement to a DAANSphere address and record the sequence. This sequence encodes the path taken by Alice."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}",
+      "dim(H_{\\mathrm{spatial}}) = 153{,}600"
+    ],
+    "source_section_latex": "\\[\nH_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}\n\\]\n\\[\ndim(H_{\\mathrm{spatial}}) = 153{,}600\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Carrier Map",
+      "formula_latex_blocks": [
+        "H_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}"
+      ],
+      "interpretive_role": "This names the entry as an actual map between carrier domains rather than a loose metaphor."
+    },
+    {
+      "step": 2,
+      "component_title": "Composable Action",
+      "formula_latex_blocks": [
+        "dim(H_{\\mathrm{spatial}}) = 153{,}600"
+      ],
+      "interpretive_role": "This inserts the map into the ordered TRAWIN chain and makes composition explicit."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Output",
+      "formula_latex_blocks": [
+        "dim(H_{\\mathrm{OAM}}) = 2 m_{\\max} + 1"
+      ],
+      "interpretive_role": "This closes the entry by requiring that the output land in the admissible target class."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$H_{\\mathrm{total}}$",
+        "description": "total quantum state space."
+      },
+      {
+        "symbol": "$H_{\\mathrm{spatial}}$",
+        "description": "spatial address-state factor."
+      },
+      {
+        "symbol": "$H_{\\mathrm{OAM}}$",
+        "description": "orbital-angular-momentum factor."
+      },
+      {
+        "symbol": "$H_{\\mathrm{polarization}}$",
+        "description": "polarization-state factor."
+      },
+      {
+        "symbol": "$H_{\\mathrm{frequency}}$",
+        "description": "frequency-spectrum factor."
+      },
+      {
+        "symbol": "$m_{\\max}$",
+        "description": "maximum retained orbital-angular-momentum mode index."
+      },
+      {
+        "symbol": "$\\mathcal{K}_{0348}$",
+        "description": "canonical registry object for entry ID 0348."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0348}$",
+        "name": "canonical registry object for entry ID 0348.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\otimes$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\max$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{total}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{spatial}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{OAM}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{polarization}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{frequency}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$m(H_{spatial})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$m(H_{OAM})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Quantum Tag Injection and Entanglement Tracking Protocol\nCanonical operator translation\neq0348_1 = HoldForm[Htotal == Hspatial HOAM Hpolarization Hfrequency];\neq0348_2 = HoldForm[dim(Hspatial) == 153(,)600];\n\nTRAWIN closure composition\nTRAWINClosure0348[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0348 := HoldForm[{eq0348_1, eq0348_2}];\nResult0348 := TRAWINClosure0348[K0348];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "H_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}",
+          "normalized_latex": "HTotal==HSpatial*TensorProduct*HOAM*TensorProduct*HPolarization*TensorProduct*HFrequency",
+          "wolfram_input": "HTotal==HSpatial*TensorProduct*HOAM*TensorProduct*HPolarization*TensorProduct*HFrequency",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HTotal == HSpatial*TensorProduct*HOAM*TensorProduct*HPolarization*TensorProduct*HFrequency]",
+          "texform_roundtrip": "\\text{HTotal}=\\text{HFrequency} \\text{HOAM} \\text{HPolarization} \\text{HSpatial} \\text{TensorProduct}^3",
+          "messages": []
+        },
+        {
+          "latex": "dim(H_{\\mathrm{spatial}}) = 153{,}600",
+          "normalized_latex": "dim[HSpatial]==153*Tuple[,]600",
+          "wolfram_input": "Dim[HSpatial] == 153600",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers",
+            "entry-specific Wolfram override applied",
+            "override_source=entry_specific_salvage",
+            "override_reason=Repair escaped comma digit group."
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Dim[HSpatial] == 153600]",
+          "texform_roundtrip": "\\text{Dim}(\\text{HSpatial})=153600",
+          "messages": []
+        },
+        {
+          "latex": "dim(H_{\\mathrm{OAM}}) = 2 m_{\\max} + 1",
+          "normalized_latex": "dim[HOAM]==2*mMax+1",
+          "wolfram_input": "dim[HOAM]==2*mMax+1",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[dim[HOAM] == 2*mMax + 1]",
+          "texform_roundtrip": "\\dim (\\text{HOAM})=2 \\text{mMax}+1",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0348 generated source-truth Wolfram model *)\nClearAll[K0348, TRAWINClosure0348];\neq0348$1 = HoldForm[HTotal == HSpatial*TensorProduct*HOAM*TensorProduct*HPolarization*TensorProduct*HFrequency];\neq0348$2 = HoldForm[Dim[HSpatial] == 153600];\neq0348$3 = HoldForm[dim[HOAM] == 2*mMax + 1];\nK0348 = HoldForm[{eq0348$1, eq0348$2, eq0348$3}];\nTRAWINClosure0348[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0348 = TRAWINClosure0348[K0348];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nH_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}\n\\]\n\\[\n\\dim(H_{\\mathrm{spatial}})=153{,}600\n\\]\n\n\\paragraph{Primary Derivation.}\nThe recovered source passage defines the total state space as a tensor product of spatial address, orbital-angular-momentum, polarization, and frequency factors. The spatial factor is indexed by the 153,600 address states recorded for this protocol.\n\n\\paragraph{Interpretation.}\nThis validates the state-space decomposition used by the tag representation. It does not by itself establish entanglement preservation or a tracking measurement protocol.\n% END TZP DERIVATION LAYER"
+  },
+  "publication_overrides": {
+    "dictionary_latex": "\\begingroup\\small\n\\tzpsection{Definition}\nA tensor-product decomposition of the total quantum state space into spatial, orbital-angular-momentum, polarization, and frequency factors.\n\n\\tzpsection{Contextual Meaning}\nThe entry assigns distinct state-space coordinates to the degrees of freedom used by the tagging protocol.\n\n\\tzpsection{Formal Statement}\n\\[\nH_{\\mathrm{total}}=H_{\\mathrm{spatial}}\\otimes H_{\\mathrm{OAM}}\\otimes H_{\\mathrm{polarization}}\\otimes H_{\\mathrm{frequency}}\n\\]\n\n\\tzpsection{Derivable Consequences}\nState preparation and tracking can be expressed componentwise on the four tensor factors.\n\n\\tzpsection{Lemma Support}\nThe approved alignment validates the tensor-product relation and its four named factors.\n\n\\tzpsection{Technical Interpretation}\nThe equation declares the product structure required to index independent tag-bearing degrees of freedom.\n\n\\tzpsection{Equation Grounding}\n\\(H_{\\mathrm{total}}\\) is the total state space; the remaining \\(H\\)-terms are its spatial, OAM, polarization, and frequency factors.\n\n\\tzpsection{Interpretive Role}\nThis entry establishes the state-space carrier used by the later tracking progression.\n\n\\tzpsection{TZP Thesaurus}\nHilbert space; tensor product; spatial factor; orbital angular momentum; polarization; frequency factor.\n\\endgroup",
+    "dictionary_sections": {
+      "definition": "Quantum tag injection is represented by a tensor-product organization of total state space. The equation separates spatial address, orbital-angular-momentum, polarization, and frequency degrees of freedom.",
+      "contextual_meaning": "The protocol does not store information in one undifferentiated variable. Location, orbital structure, polarization, and spectral information contribute distinct factors, allowing a tracking operation to interrogate a component while referring to the composite state.",
+      "formal_statement_latex": "\\[\nH_{\\mathrm{total}}=H_{\\mathrm{spatial}}\\otimes H_{\\mathrm{OAM}}\\otimes H_{\\mathrm{polarization}}\\otimes H_{\\mathrm{frequency}}\n\\]",
+      "derivable_consequences": "A total state can be indexed by labels on each factor, distinguishing component operations from full-system operations. A mode cutoff such as \\(m_{\\max}\\) requires its own displayed support.",
+      "lemma_support": "The approved alignment validates the tensor-product decomposition and identifies its total and constituent spaces. The approved \\(m_{\\max}\\) term is not inferred from the canonical block alone.",
+      "technical_interpretation": "The tensor product declares coordinate architecture for tagging and tracking, leaving preparation, coupling, and measurement dynamics to later relations.",
+      "equation_grounding": "\\(H_{\\mathrm{total}}\\) is total quantum state space; \\(H_{\\mathrm{spatial}}\\) is the spatial address-state factor; \\(H_{\\mathrm{OAM}}\\) is the orbital-angular-momentum factor; \\(H_{\\mathrm{polarization}}\\) is the polarization-state factor; and \\(H_{\\mathrm{frequency}}\\) is the frequency-spectrum factor.",
+      "interpretive_role": "This entry establishes the state-space carrier used to organize tagged information for subsequent tracking equations.",
+      "tzp_thesaurus": [
+        {
+          "term": "Tensor-Product State Space",
+          "meaning": "A composite space assembled from separately identifiable physical degrees of freedom."
+        },
+        {
+          "term": "Orbital-Angular-Momentum Factor",
+          "meaning": "The factor carrying mode information associated with orbital angular momentum."
+        },
+        {
+          "term": "Address-State Factor",
+          "meaning": "The spatial factor used to assign or track a location-indexed component."
+        }
+      ]
+    },
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 219,
+      "applied_at": "20260524_214627"
+    },
+    "equation_support_summary": "The tensor-product equation establishes the composite carrier space, while the support layer records the stated spatial addressing scale."
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-24",
+    "review_status": "approved_for_symbol_key_equation_grounding_and_derivation_repair",
+    "method": "formula-normalized raw export alignment followed by manual review",
+    "approved_claims": [
+      {
+        "formula_latex": "H_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}",
+        "role": "tensor-product quantum state-space decomposition",
+        "symbol_definitions": {
+          "H_{\\mathrm{total}}": "total quantum state space",
+          "H_{\\mathrm{spatial}}": "spatial address-state factor",
+          "H_{\\mathrm{OAM}}": "orbital-angular-momentum factor",
+          "H_{\\mathrm{polarization}}": "polarization-state factor",
+          "H_{\\mathrm{frequency}}": "frequency-spectrum factor",
+          "m_{\\max}": "maximum retained orbital-angular-momentum mode index"
+        },
+        "source_path": "D:/Conversation/OpenAI_Exports_textplus/conversations-002.json",
+        "source_record": "conversation_15:c506605e-7624-4352-8679-e0d96b2cc77c",
+        "alignment_status": "exact_equation_candidate",
+        "alignment_score": 0.9703
+      }
+    ],
+    "limitation": "The aligned source validates the Hilbert-space decomposition and component roles; it does not independently validate entanglement retention or the tracking protocol."
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0348/ID0348.source_truth.json",
+    "entry_id": "ID0348",
+    "registry_id": "registry_id_0348",
+    "canonical_title": "Quantum Tag Injection and Entanglement Tracking Protocol",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0348/ID0348.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "dedb4d07-a367-53fc-893b-7240dc79c293",
+    "RTEID": "RTE:P1351.3613:T2.2266",
+    "poloidal_theta_rad": "1351.3613",
+    "toroidal_phi_rad": "2.2266",
+    "rteid_source": "manifest",
+    "PiID": "3678925903600",
+    "TZPi": "5",
+    "PiPE_position": "355",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "H_{\\mathrm{total}} = H_{\\mathrm{spatial}} \\otimes H_{\\mathrm{OAM}} \\otimes H_{\\mathrm{polarization}} \\otimes H_{\\mathrm{frequency}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "otimes",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0348\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum Tag Injection and Entanglement Tracking Protocol\", \"latex\" -> \"H_{\\\\mathrm{total}} = H_{\\\\mathrm{spatial}} \\\\otimes H_{\\\\mathrm{OAM}} \\\\otimes H_{\\\\mathrm{polarization}} \\\\otimes H_{\\\\mathrm{frequency}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"otimes\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "dim(H_{\\mathrm{spatial}}) = 153{,}600",
+        "numeric_atoms": [
+          "153",
+          "600"
+        ],
+        "symbolic_tokens": [
+          "dim",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0348\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum Tag Injection and Entanglement Tracking Protocol\", \"latex\" -> \"dim(H_{\\\\mathrm{spatial}}) = 153{,}600\", \"numericAtoms\" -> {153, 600}, \"symbolicTokens\" -> {\"dim\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

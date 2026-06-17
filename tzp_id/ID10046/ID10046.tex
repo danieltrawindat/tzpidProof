@@ -1,0 +1,17 @@
+\section*{ID10046: Relation: F(x,t) := A(x,t) P(x,t)}
+\paragraph{Metadata.}
+PiID: 6563443480396 | RTEID: RTE:P39010.8490:T1.4460 | UUID: b2aafa16-4499-5c46-8046-c07a24c5c8bf
+
+\paragraph{Canonical Statement.}
+: \$A(x,t)\textbackslash{}big(\textbackslash{}nabla\textasciicircum{}2 - \textbackslash{}frac\{1\}\{c\textasciicircum{}2\}\textbackslash{}partial\_t\textasciicircum{}2\textbackslash{}int ρ\textbackslash{},dV\textbackslash{}big)\$. • Take the curl of that: \$\textbackslash{}nabla\textbackslash{}times [A(\textbackslash{}cdot)(W(I[ρ]))]\$. • Finally, take the time derivative of that curl: \$\textbackslash{}partial\_t\{\textbackslash{}nabla\textbackslash{}times [A\textbackslash{},W(I[ρ])]\}\$. • Set the result equal to \$N\$. In a slightly more readable form, one can introduce an intermediate field quantity to track the steps. Let: • \$Q(x,t) := I[ρ] = \textbackslash{}int \textbackslash{}rho(x,t)\textbackslash{},dV\$, a scalar field (or global scalar if truly integrated over all space). • \$P(x,t) := W[Q] = \textbackslash{}nabla\textasciicircum{}2 Q - \textbackslash{}frac\{1\}\{c\textasciicircum{}2\}\textbackslash{}partial\_t\textasciicircum{}2 Q\$, another scalar representing the propagated effect of the source. • \$\textbackslash{}mathbf\{F\}(x,t) := A(x,t)\textbackslash{},P(x,t)\$, a weighted scalar field. If needed, we could consider \$\textbackslash{}mathbf\{F\}\$ as a vector by \$A\$ being scalar and \$P\$ scalar, their product is scalar; but here we treat it as input to curl, so implicitly we might consider \$A P\$ as multiplying an identity vector field or something. More rigorously, one might embed \$P\$ in a vector potential form \$\textbackslash{}mathbf\{F\} = ∇\textbackslash{}Phi\$ or similar, but for now consider \$\textbackslash{}mathbf\{F\} = (0,0,A\textbackslash{},P)\$ just to feed something into a curl. • \$\textbackslash{}mathbf\{G\}(x,t) := R[\textbackslash{}mathbf\{F\}] = \textbackslash{}nabla\textbackslash{}ti
+
+\paragraph{Canonical Equation.}
+\[
+\mathbf{F}(x,t) := A(x,t)\,P(x,t)
+\]
+
+\paragraph{Dictionary.}
+Relation: F(x,t) := A(x,t) P(x,t) — F(x,t) := A(x,t) P(x,t)
+
+\paragraph{Encyclopedia.}
+Relation: F(x,t) := A(x,t) P(x,t) is an algebraic definition, written F(x,t) := A(x,t) P(x,t). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from F, x, A, P. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

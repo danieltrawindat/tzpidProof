@@ -1,0 +1,17 @@
+\section*{ID9948: Definition of n\textasciicircum{}μ n\_μ}
+\paragraph{Metadata.}
+PiID: 5846101264836 | RTEID: RTE:P38630.2932:T0.8190 | UUID: 89cdafce-f79f-5d6f-9cfa-9d494c5fea69
+
+\paragraph{Canonical Statement.}
+es are • \$T\textasciicircum{}\{00\}\_\{\textbackslash{}rm EM\}\$ (energy density as coordinate-time components), • \$T\textasciicircum{}\{0i\}\{\textbackslash{}rm EM\}=T\textasciicircum{}\{i0\}\{\textbackslash{}rm EM\}\$ (energy flux / momentum density), • \$T\textasciicircum{}\{ij\}\_\{\textbackslash{}rm EM\}\$ (spatial stresses). Coordinate formulas to compute programmatically: For each component compute T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}\_\{\textbackslash{}rm EM\} = \textbackslash{}sum\_\{\textbackslash{}alpha,\textbackslash{}beta,\textbackslash{}rho\}\textbackslash{},g\textasciicircum{}\{\textbackslash{}mu\textbackslash{}alpha\}g\textasciicircum{}\{\textbackslash{}nu\textbackslash{}beta\}F\_\{\textbackslash{}alpha\textbackslash{}rho\}F\_\{\textbackslash{}beta\}\{\}\textasciicircum{}\{\textbackslash{}rho\} - \textbackslash{}tfrac\{1\}\{4\}g\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}\textbackslash{}sum\_\{\textbackslash{}alpha,\textbackslash{}beta\} F\_\{\textbackslash{}alpha\textbackslash{}beta\}F\textasciicircum{}\{\textbackslash{}alpha\textbackslash{}beta\}. (Implement as tensor contractions in your CAS.) 4. 3+1 (observer) decomposition — formulas Choose an observer with unit timelike 4-vector \$n\textasciicircum{}\textbackslash{}mu\$ (normalized \$n\textasciicircum{}\textbackslash{}mu n\_\textbackslash{}mu = -1\$). Define spatial projector \textbackslash{}gamma\_\{\textbackslash{}mu\textbackslash{}nu\} = g\_\{\textbackslash{}mu\textbackslash{}nu\} + n\_\textbackslash{}mu n\_\textbackslash{}nu. Measured fields are: • Energy density (observed by \$n\$): \textbackslash{}mathcal\{E\} = n\_\textbackslash{}mu n\_\textbackslash{}nu T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}. • Momentum density (3-vector): S\_i = -\textbackslash{}gamma\_\{i\textbackslash{}mu\} n\_\textbackslash{}nu T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}. • Spatial stress (3×3 tensor): S\_\{ij\} = \textbackslash{}gamma\_\{i\textbackslash{}mu\}\textbackslash{}gamma\_\{j\textbackslash{}nu\} T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}. Note: raising an index with the spatial metric gives \$S\textasciicircum{}i\{\}j = \textbackslash{}gamma\textasciicircum{}\{ik\} S\{kj\}\$ for eigen-decomposition. Implement these contractions symbolically once \$T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}\$ is known. 5.
+
+\paragraph{Canonical Equation.}
+\[
+n^\mu n_\mu = -1
+\]
+
+\paragraph{Dictionary.}
+Definition of n\textasciicircum{}μ n\_μ — n\textasciicircum{}μ n\_μ = -1
+
+\paragraph{Encyclopedia.}
+Definition of n\textasciicircum{}μ n\_μ is an algebraic definition, written n\textasciicircum{}μ n\_μ = -1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

@@ -1,0 +1,357 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:32.097416+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0208",
+    "uuid": "fd0632a6-99da-5bc8-b7c7-2118d16ac947",
+    "registry_id": "registry_id_0208",
+    "canonical_title": "Acoustic Frame-Dragging Metric",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0208/ID0208.TEX",
+      "json": "D:/TZPID/TZPID/ID0208/ID0208.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0208/ID0208.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Rotation drags the inertial frame, effectively warping spacetime for sound waves.",
+    "technical_interpretation": "Rotation drags the inertial frame, effectively warping spacetime for sound waves."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "g_{00} = -\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)",
+      "g_{0i} = -(\\omega \\times r)_i"
+    ],
+    "source_section_latex": "\\[\ng_{00} = -\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)\n\\]\n\\[\ng_{0i} = -(\\omega \\times r)_i\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Dragged Metric",
+      "formula_latex_blocks": [
+        "g_{00} = -\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)"
+      ],
+      "interpretive_role": "This fixes the dragged temporal component of the effective metric."
+    },
+    {
+      "step": 2,
+      "component_title": "Mixed Component",
+      "formula_latex_blocks": [
+        "g_{0i} = -(\\omega \\times r)_i"
+      ],
+      "interpretive_role": "This resolves the off-diagonal rotational mixing induced by the gyroscopic frame."
+    },
+    {
+      "step": 3,
+      "component_title": "Wave Law",
+      "formula_latex_blocks": [
+        "Box_g \\phi = 0"
+      ],
+      "interpretive_role": "This closes the entry with the curved-space acoustic wave equation."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0208}$",
+        "description": "canonical registry object for entry ID 0208."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0208}$",
+        "name": "canonical registry object for entry ID 0208.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Acoustic Frame-Dragging Metric\nCanonical operator translation\neq0208_1 = HoldForm[g00 == -(c^2 - omega * r ^2)];\neq0208_2 = HoldForm[g0i == -(omega * r)_i];\n\nTRAWIN closure composition\nTRAWINClosure0208[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0208 := HoldForm[{eq0208_1, eq0208_2}];\nResult0208 := TRAWINClosure0208[K0208];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "g_{00} = -\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)",
+          "normalized_latex": "g00==-(c^2-Abs[omega*r]^2)",
+          "wolfram_input": "g00==-(c^2-Abs[omega*r]^2)",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[g00 == -(c^2 - Abs[omega*r]^2)]",
+          "texform_roundtrip": "\\text{g00}=| \\omega  r| ^2-c^2",
+          "messages": []
+        },
+        {
+          "latex": "g_{0i} = -(\\omega \\times r)_i",
+          "normalized_latex": "g0*i==-(omega*r)_i",
+          "wolfram_input": "g0*i==-(omega*r)_i",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[g0*i == (-(omega*r))*_i]",
+          "texform_roundtrip": "\\text{g0} i=\\text{$\\_$i} (-\\omega ) r",
+          "messages": []
+        },
+        {
+          "latex": "Box_g \\phi = 0",
+          "normalized_latex": "BoxG*phi==0",
+          "wolfram_input": "BoxG*phi==0",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BoxG*phi == 0]",
+          "texform_roundtrip": "\\text{BoxG} \\phi =0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0208 generated source-truth Wolfram model *)\nClearAll[K0208, TRAWINClosure0208];\neq0208$1 = HoldForm[g00 == -(c^2 - Abs[omega*r]^2)];\neq0208$2 = HoldForm[g0*i == (-(omega*r))*_i];\neq0208$3 = HoldForm[BoxG*phi == 0];\nK0208 = HoldForm[{eq0208$1, eq0208$2, eq0208$3}];\nTRAWINClosure0208[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0208 = TRAWINClosure0208[K0208];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nK_{\\mathrm{NL}}\n=\n\\frac{\\left\\lVert \\nabla^{2}\\varphi\\right\\rVert}\n{\\left\\lVert \\nabla\\varphi\\right\\rVert^{2}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\varphi$ be a scalar field on the Trawinistic manifold.  \nThe first-order variation of the field is measured by the gradient:\n\n\\begin{equation}\n\\nabla\\varphi .\n\\end{equation}\n\nThe second-order curvature or bending of the field is measured by:\n\n\\begin{equation}\n\\nabla^2\\varphi .\n\\end{equation}\n\nA dimensionless measure of non-linearity should compare second-order deformation against the square of first-order variation. Therefore define:\n\n\\begin{equation}\nK_{\\mathrm{NL}}\n=\n\\frac{\\text{second-order field deformation}}\n{\\text{first-order field variation squared}} .\n\\end{equation}\n\nSubstituting the appropriate differential norms gives:\n\n\\begin{equation}\n\\boxed{\nK_{\\mathrm{NL}}\n=\n\\frac{\\left\\lVert \\nabla^{2}\\varphi\\right\\rVert}\n{\\left\\lVert \\nabla\\varphi\\right\\rVert^{2}} .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\n$K_{\\mathrm{NL}}$ measures how sharply a field bends relative to its local rate of change. Large values indicate strong nonlinear behavior near the TZP.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0208/ID0208.source_truth.json",
+    "entry_id": "ID0208",
+    "registry_id": "registry_id_0208",
+    "canonical_title": "Acoustic Frame-Dragging Metric",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0208/ID0208.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "fd0632a6-99da-5bc8-b7c7-2118d16ac947",
+    "RTEID": "RTE:P807.7102:T1.3309",
+    "poloidal_theta_rad": "807.7102",
+    "toroidal_phi_rad": "1.3309",
+    "rteid_source": "manifest",
+    "PiID": "7566593344612",
+    "TZPi": "3",
+    "PiPE_position": "215",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "g_{00} = -\\left(c^2 - \\lvert \\omega \\times r \\rvert^2\\right)",
+        "numeric_atoms": [
+          "00",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "lvert",
+          "omega",
+          "rvert",
+          "g",
+          "c",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0208\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Acoustic Frame-Dragging Metric\", \"latex\" -> \"g_{00} = -\\\\left(c^2 - \\\\lvert \\\\omega \\\\times r \\\\rvert^2\\\\right)\", \"numericAtoms\" -> {00, 2}, \"symbolicTokens\" -> {\"lvert\", \"omega\", \"rvert\", \"g\", \"c\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "g_{0i} = -(\\omega \\times r)_i",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "omega",
+          "g",
+          "i",
+          "r"
+        ],
+        "candidate_wolfram_input": "HoldForm[g$n0i == -(omega * r)$i]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0208\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Acoustic Frame-Dragging Metric\", \"latex\" -> \"g_{0i} = -(\\\\omega \\\\times r)_i\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"omega\", \"g\", \"i\", \"r\"}, \"candidateWolframInput\" -> \"HoldForm[g$n0i == -(omega * r)$i]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

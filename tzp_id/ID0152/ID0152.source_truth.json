@@ -1,0 +1,405 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:39:58.862929+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0152",
+    "uuid": "0898bb63-62a9-5100-9ac3-b4b2c0f5030c",
+    "registry_id": "registry_id_0152",
+    "canonical_title": "Matter Stress--Energy Contribution",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0152/ID0152.TEX",
+      "json": "D:/TZPID/TZPID/ID0152/ID0152.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0152/ID0152.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory.",
+    "technical_interpretation": "Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "T_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)",
+      "\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]",
+      "p_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]"
+    ],
+    "source_section_latex": "\\[\nT_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)\n\\]\n\\[\n\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]\n\\]\n\\[\np_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Matter Tensor Form",
+      "formula_latex_blocks": [
+        "T_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)"
+      ],
+      "interpretive_role": "This fixes the macroscopic form of the matter source."
+    },
+    {
+      "step": 2,
+      "component_title": "Density Trace",
+      "formula_latex_blocks": [
+        "\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]"
+      ],
+      "interpretive_role": "This extracts the effective energy density from the internal operator state."
+    },
+    {
+      "step": 3,
+      "component_title": "Pressure Trace",
+      "formula_latex_blocks": [
+        "p_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]"
+      ],
+      "interpretive_role": "This closes the progression by defining the isotropic pressure contribution."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rho_{eff}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rho_{matrix}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{i=1}^{3}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T_{matter}^{\\mu\\nu}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{TRAWIN}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Matter Stress--Energy Contribution\nCanonical operator translation\neq0152_1 = HoldForm[Tmatter^(mu) == diag( rhoeffc^2,\\ peff,\\ peff,\\ peff )];\neq0152_2 = HoldForm[rhoeff == Tr[rhomatrix(H)TRAWIN]];\neq0152_3 = HoldForm[peff == -(1)/(3)Sumi==1^(3)Tr[rhomatrixP_i]];\n\nTRAWIN closure composition\nTRAWINClosure0152[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0152 := HoldForm[{eq0152_1, eq0152_2, eq0152_3}];\nResult0152 := TRAWINClosure0152[K0152];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "T_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)",
+          "normalized_latex": "TMatter^(munu)==diagTuple[rhoEffc^2,pEff,pEff,pEff]",
+          "wolfram_input": "TMatter^(munu)==diagTuple[rhoEffc^2,pEff,pEff,pEff]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TMatter^munu == diagTuple[rhoEffc^2, pEff, pEff, pEff]]",
+          "texform_roundtrip": "\\text{TMatter}^{\\text{munu}}=\\text{diagTuple}\\left(\\text{rhoEffc}^2,\\text{pEff},\\text{pEff},\\text{pEff}\\right)",
+          "messages": []
+        },
+        {
+          "latex": "\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]",
+          "normalized_latex": "rhoEff==Tr[rhoMatrixHTRAWIN]",
+          "wolfram_input": "rhoEff==Tr[rhoMatrixHTRAWIN]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rhoEff == Tr[rhoMatrixHTRAWIN]]",
+          "texform_roundtrip": "\\text{rhoEff}=\\text{Tr}[\\text{rhoMatrixHTRAWIN}]",
+          "messages": []
+        },
+        {
+          "latex": "p_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]",
+          "normalized_latex": "pEff==-((1)/(3))SumI1^(3)Tr[rhoMatrixPI]",
+          "wolfram_input": "pEff==-((1)/(3))SumI1^(3)Tr[rhoMatrixPI]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[pEff == (-(1/3))*SumI1^3*Tr[rhoMatrixPI]]",
+          "texform_roundtrip": "\\text{pEff}=-\\frac{1}{3} \\text{SumI1}^3 \\text{Tr}[\\text{rhoMatrixPI}]",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0152 generated source-truth Wolfram model *)\nClearAll[K0152, TRAWINClosure0152];\neq0152$1 = HoldForm[TMatter^munu == diagTuple[rhoEffc^2, pEff, pEff, pEff]];\neq0152$2 = HoldForm[rhoEff == Tr[rhoMatrixHTRAWIN]];\neq0152$3 = HoldForm[pEff == (-(1/3))*SumI1^3*Tr[rhoMatrixPI]];\nK0152 = HoldForm[{eq0152$1, eq0152$2, eq0152$3}];\nTRAWINClosure0152[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0152 = TRAWINClosure0152[K0152];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nT_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)\n\\]\n\\[\n\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]\n\\]\n\\[\np_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]\n\\]\n\n\\paragraph{Primary Derivation.}\nThe relation is obtained through direct evaluation of the expression. yielding the required identity.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe statement concerns the variables introduced in the displayed formula. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0152/ID0152.source_truth.json",
+    "entry_id": "ID0152",
+    "registry_id": "registry_id_0152",
+    "canonical_title": "Matter Stress--Energy Contribution",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0152/ID0152.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "0898bb63-62a9-5100-9ac3-b4b2c0f5030c",
+    "RTEID": "RTE:P590.2498:T0.9726",
+    "poloidal_theta_rad": "590.2498",
+    "toroidal_phi_rad": "0.9726",
+    "rteid_source": "manifest",
+    "PiID": "1117450284102",
+    "TZPi": "0",
+    "PiPE_position": "159",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "T_{\\mathrm{matter}}^{\\mu\\nu}\n=\n\\operatorname{diag}\\!\\left(\n\\rho_{\\mathrm{eff}}c^2,\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}},\\ p_{\\mathrm{eff}}\n\\right)",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "nu",
+          "rho",
+          "T",
+          "c",
+          "p"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0152\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Matter Stress--Energy Contribution\", \"latex\" -> \"T_{\\\\mathrm{matter}}^{\\\\mu\\\\nu}\\n=\\n\\\\operatorname{diag}\\\\!\\\\left(\\n\\\\rho_{\\\\mathrm{eff}}c^2,\\\\ p_{\\\\mathrm{eff}},\\\\ p_{\\\\mathrm{eff}},\\\\ p_{\\\\mathrm{eff}}\\n\\\\right)\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"mu\", \"nu\", \"rho\", \"T\", \"c\", \"p\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\rho_{\\mathrm{eff}}\n=\n\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}\\mathcal{H}_{\\mathrm{TRAWIN}}\\right]",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "rho"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0152\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Matter Stress--Energy Contribution\", \"latex\" -> \"\\\\rho_{\\\\mathrm{eff}}\\n=\\n\\\\operatorname{Tr}\\\\!\\\\left[\\\\rho_{\\\\mathrm{matrix}}\\\\mathcal{H}_{\\\\mathrm{TRAWIN}}\\\\right]\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"rho\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "p_{\\mathrm{eff}}\n=\n-\\frac{1}{3}\\sum_{i=1}^{3}\\operatorname{Tr}\\!\\left[\\rho_{\\mathrm{matrix}}P_i\\right]",
+        "numeric_atoms": [
+          "1/3",
+          "1",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "sum",
+          "rho",
+          "p",
+          "i",
+          "P"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0152\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Matter Stress--Energy Contribution\", \"latex\" -> \"p_{\\\\mathrm{eff}}\\n=\\n-\\\\frac{1}{3}\\\\sum_{i=1}^{3}\\\\operatorname{Tr}\\\\!\\\\left[\\\\rho_{\\\\mathrm{matrix}}P_i\\\\right]\", \"numericAtoms\" -> {1/3, 1, 3}, \"symbolicTokens\" -> {\"sum\", \"rho\", \"p\", \"i\", \"P\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

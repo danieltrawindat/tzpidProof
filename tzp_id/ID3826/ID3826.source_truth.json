@@ -1,0 +1,1194 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-04T17:23:49.617994+00:00",
+    "non_destructive": false,
+    "source": "tier_a_filled_naming_worklist",
+    "content_cleanup_at": "2026-06-04T17:25:53.286300+00:00"
+  },
+  "identity": {
+    "tzpid": "ID3826",
+    "uuid": "544b840a-850d-50e2-b7c8-205deb7efd90",
+    "registry_id": "registry_id_3826",
+    "piid": "PiID-3826-64c71500c5c4",
+    "piid_short": "PiID-3826",
+    "canonical_title": "Gyromagnetic Pressure Definition",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID3826/ID3826.TEX",
+      "json": "D:/TZPID/TZPID/ID3826/ID3826.JSON",
+      "source_truth": "D:/TZPID/TZPID/ID3826/ID3826.source_truth.json",
+      "id_system": "D:/TZPIDProof/tzp_id/ID3826/ID3826.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "QC - Physics: waves, acoustics, and fluid dynamics",
+    "arxiv_class": "physics.flu-dyn",
+    "arxiv_secondary_classes": [
+      "math.AP",
+      "nlin.PS"
+    ],
+    "category": "equation-source-intake",
+    "discipline": "physics",
+    "classification_method": "deterministic_keyword_heuristic_requires_review",
+    "piid_metadata": {
+      "piid": "PiID-3826-64c71500c5c4",
+      "piid_short": "PiID-3826",
+      "volume_family": "post-denary-intake-39",
+      "local_sequence": "26",
+      "method": "deterministic_uuid5_from_tzpid_title_equation"
+    }
+  },
+  "theory": {
+    "canonical_statement": "ID3826 records Gyromagnetic Pressure Definition as a source-extracted canonical equation.",
+    "technical_interpretation": "The entry preserves the equation exactly as extracted from `D:\\00_Engine\\CSV\\refactored_derivations.tex` for registry alignment and later derivation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ..."
+    ],
+    "source_section_latex": "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ..."
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "canonical_equation_symbols": [
+      {
+        "symbol": "$\\section$",
+        "description": "LaTeX command “\\section” (operator or named function)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\section` extracted from the canonical equation.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_notes": "Multi-letter command; meaning depends on local usage.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$A$",
+        "description": "Magnetic vector potential, amplitude, or area",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "vector potential, amplitude, or coefficient in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Analysis$",
+        "description": "Descriptive label “Analysis” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Analysis` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$B$",
+        "description": "Magnetic field (magnetic flux density)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "magnetic field or magnetic induction variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "In this magnetics-heavy corpus, B is almost always the magnetic field.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$BExternal$",
+        "description": "Descriptive label “BExternal” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `BExternal` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Bdipole$",
+        "description": "Descriptive label “Bdipole” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Bdipole` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Bgyro$",
+        "description": "Descriptive label “Bgyro” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Bgyro` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$E$",
+        "description": "Electric field or energy",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "electric field variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$EquationsOfMotion$",
+        "description": "Descriptive label “EquationsOfMotion” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `EquationsOfMotion` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$F$",
+        "description": "Force or field-strength tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `F` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$H$",
+        "description": "Hamiltonian or magnetic field intensity",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "Hamiltonian, helicity, or energy-like functional symbol in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$HBar$",
+        "description": "Descriptive label “HBar” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `HBar` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Hamilton$",
+        "description": "Descriptive label “Hamilton” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Hamilton` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Hamiltonian$",
+        "description": "Descriptive label “Hamiltonian” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Hamiltonian` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Hcouple$",
+        "description": "Descriptive label “Hcouple” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Hcouple` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$I$",
+        "description": "Electric current, moment of inertia, or identity/information",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "inertia, information, or integral quantity in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Infinity$",
+        "description": "Descriptive label “Infinity” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Infinity` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Instanton$",
+        "description": "Descriptive label “Instanton” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Instanton` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$InverseMetric$",
+        "description": "Descriptive label “InverseMetric” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `InverseMetric` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$J$",
+        "description": "Current density or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `J` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Jgyro$",
+        "description": "Descriptive label “Jgyro” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Jgyro` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$L$",
+        "description": "Lagrangian, length, or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "length, Lagrangian, or angular momentum term in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Lambda$",
+        "description": "Descriptive label “Lambda” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Lambda` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Lgyro$",
+        "description": "Descriptive label “Lgyro” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Lgyro` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$M$",
+        "description": "Mass or magnetization",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "manifold, mass, magnetic, or index label in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Module$",
+        "description": "Non-mathematical word swept in during extraction (not a symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Module` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Safe to ignore or delete from the key.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Mu0$",
+        "description": "Symbol “Mu0” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Mu0` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$MuB$",
+        "description": "Descriptive label “MuB” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `MuB` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$MuEff$",
+        "description": "Descriptive label “MuEff” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `MuEff` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$N$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `N` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Norm$",
+        "description": "Descriptive label “Norm” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Norm` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$O$",
+        "description": "Order symbol or a generic operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `O` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$P$",
+        "description": "Pressure, power, or momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "period or pitch parameter in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Pi$",
+        "description": "Symbol “Pi” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Pi` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$PoissonBracket$",
+        "description": "Descriptive label “PoissonBracket” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `PoissonBracket` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Psi$",
+        "description": "Descriptive label “Psi” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Psi` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Quantum$",
+        "description": "Quantum qualifier / label",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Quantum` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$S$",
+        "description": "Action or entropy",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `S` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Sum$",
+        "description": "Descriptive label “Sum” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Sum` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$T$",
+        "description": "Temperature, period, kinetic energy, or stress tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "time, transformation, or operator label in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$This$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `This` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Tkin$",
+        "description": "Descriptive label “Tkin” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Tkin` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$U$",
+        "description": "Potential energy or unitary operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `U` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$UTunnel$",
+        "description": "Descriptive label “UTunnel” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `UTunnel` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Umag$",
+        "description": "Descriptive label “Umag” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Umag` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Uquant$",
+        "description": "Descriptive label “Uquant” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Uquant` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$V$",
+        "description": "Volume or potential",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "volume or integration domain in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$VolumeIntegral$",
+        "description": "Descriptive label “VolumeIntegral” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `VolumeIntegral` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$and$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `and` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$appendix$",
+        "description": "Descriptive label “appendix” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `appendix` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$b$",
+        "description": "Impact parameter, width, or coefficient",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `b` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$c$",
+        "description": "Speed of light in vacuum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave speed or speed-of-light scale in the canonical equation.",
+        "meaning_source": "Fundamental constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$coupling$",
+        "description": "Coupling qualifier / label",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `coupling` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$description$",
+        "description": "Descriptive label “description” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `description` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$develops$",
+        "description": "Descriptive label “develops” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `develops` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$equations$",
+        "description": "Descriptive label “equations” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `equations` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$f$",
+        "description": "Frequency or a generic function",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `f` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$field$",
+        "description": "Field qualifier / label",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `field` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$gfactor$",
+        "description": "Descriptive label “gfactor” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `gfactor` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$gy$",
+        "description": "Symbol “gy” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `gy` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$k$",
+        "description": "Wavenumber or mode/summation index",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave number or mode index in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$n$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "integer mode index in the canonical equation.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$n_n$",
+        "description": "Integer index, mode number, or number density",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `n_n` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$of$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `of` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$omega$",
+        "description": "Descriptive label “omega” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `omega` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$part$",
+        "description": "Descriptive label “part” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `part` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$quantum$",
+        "description": "Quantum qualifier / label",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `quantum` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$r$",
+        "description": "Radial coordinate / position magnitude",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "radial coordinate or position vector in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$r_cm$",
+        "description": "Radial coordinate / position magnitude",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `r_cm` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$r_obs$",
+        "description": "Radial coordinate / position magnitude",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `r_obs` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$the$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `the` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$theoretic$",
+        "description": "Descriptive label “theoretic” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `theoretic` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$v$",
+        "description": "Velocity or speed",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `v` appearing in the canonical equation for Gyromagnetic Pressure Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$y$",
+        "description": "Spatial coordinate (y-axis)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate or compact dimension variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      }
+    ],
+    "extraction_method": "Wolfram Engine string-symbol extraction merged with source LaTeX symbol list",
+    "wolfram_engine": {
+      "tool": "wolframscript",
+      "commands": [
+        "\\end",
+        "\\section"
+      ],
+      "variables": [
+        "Psi",
+        "Pi",
+        "Module",
+        "Tkin",
+        "Umag",
+        "Uquant",
+        "Hcouple",
+        "InverseMetric",
+        "MuEff",
+        "BExternal",
+        "r_cm",
+        "Mu0",
+        "VolumeIntegral",
+        "Norm",
+        "Bdipole",
+        "Bgyro",
+        "r",
+        "V",
+        "Sum",
+        "HBar",
+        "omega",
+        "n",
+        "n_n",
+        "Infinity",
+        "UTunnel",
+        "d",
+        "gfactor",
+        "MuB",
+        "Lgyro",
+        "Lambda",
+        "coupling",
+        "A",
+        "r_obs",
+        "Jgyro",
+        "Hamilton",
+        "s",
+        "equations",
+        "EquationsOfMotion",
+        "PoissonBracket",
+        "F",
+        "Hamiltonian",
+        "Quantum",
+        "and",
+        "Instanton",
+        "Analysis",
+        "This",
+        "part",
+        "of",
+        "the",
+        "appendix",
+        "develops",
+        "quantum",
+        "field",
+        "theoretic",
+        "description",
+        "gy"
+      ],
+      "constructs": []
+    }
+  },
+  "source_evidence": {
+    "source_kind": "text_source",
+    "source_short": "D:\\00_Engine\\CSV\\refactored_derivations.tex",
+    "source_path": "D:\\00_Engine\\CSV\\refactored_derivations.tex",
+    "new_id_score": "100",
+    "title_method": "derived",
+    "title_review_flag": "False",
+    "promotion_status_before_apply": "awaiting_author_title_assignment"
+  },
+  "verification_handles": {
+    "formal_status": "source-equation-recorded",
+    "claim_strength": "source-equation-intake",
+    "equation_quality_status": "source_equation_present",
+    "equation_quality_flags": [],
+    "artifacts": {}
+  },
+  "audit": {
+    "created_by": "scripts/apply_tier_a_filled_names_to_tzpid_folders.py",
+    "created_at": "2026-06-04T17:23:49.617994+00:00",
+    "write_policy": "create_new_entry_folder_or_skip_existing_unless_overwrite",
+    "unrealized_section_cleanup": {
+      "removed_sections": [
+        "wolfram_form",
+        "derivation_layer",
+        "proof_support"
+      ],
+      "reason": "no generated Wolfram, derivation, or proof artifact is included until real source-backed content exists"
+    },
+    "wolfram_symbol_key_enrichment": {
+      "updated_at": "2026-06-04T17:33:39.584064+00:00",
+      "symbol_count": 74,
+      "method": "wolframscript_extract_commands_variables_constructs"
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID3826/ID3826.source_truth.json",
+    "entry_id": "ID3826",
+    "registry_id": "registry_id_3826",
+    "canonical_title": "Gyromagnetic Pressure Definition",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID3826/ID3826.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "544b840a-850d-50e2-b7c8-205deb7efd90",
+    "RTEID": "RTE:P14857.2077:T5.6306",
+    "poloidal_theta_rad": "14857.2077",
+    "toroidal_phi_rad": "5.6306",
+    "rteid_source": "computed",
+    "PiID": "9130203303801",
+    "TZPi": "3",
+    "PiPE_position": "3833",
+    "loc_class": "QC - Physics: waves, acoustics, and fluid dynamics",
+    "arxiv_class": "physics.flu-dyn"
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...",
+          "normalized_latex": "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID3826\", 1, \"\\\\[Psi]_, \\\\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\\\[Pi] . InverseMetric[\\\\[Psi]] . \\\\[Pi]; Umag = -MuEff[\\\\[Psi]] . BExternal[r_cm[\\\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\\\[Psi]]]; Hcouple = (gfactor MuB/\\\\[HBar]) Lgyro[\\\\[Psi]] . MuEff[\\\\[Psi]] + \\\\[Lambda]coupling A[r_obs] . Jgyro[\\\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\\\[Psi], \\\\[Pi]]]; \\\\end{implementation} \\\\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID3826 minted source-truth Wolfram carrier model *)\nClearAll[K3826, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq3826$1 = HoldForm[TZPIDCanonicalLatex[\"ID3826\", 1, \"\\\\[Psi]_, \\\\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\\\[Pi] . InverseMetric[\\\\[Psi]] . \\\\[Pi]; Umag = -MuEff[\\\\[Psi]] . BExternal[r_cm[\\\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\\\[Psi]]]; Hcouple = (gfactor MuB/\\\\[HBar]) Lgyro[\\\\[Psi]] . MuEff[\\\\[Psi]] + \\\\[Lambda]coupling A[r_obs] . Jgyro[\\\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\\\[Psi], \\\\[Pi]]]; \\\\end{implementation} \\\\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...\"]];\nK3826 = HoldForm[{eq3826$1}];\nTZPIDCanonicalCarrier[\"ID3826\"] = <|\"id\" -> \"ID3826\", \"title\" -> \"Gyromagnetic Pressure Definition\", \"blocks\" -> K3826|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\[Psi]_, \\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\[Pi] . InverseMetric[\\[Psi]] . \\[Pi]; Umag = -MuEff[\\[Psi]] . BExternal[r_cm[\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\[Psi]]]; Hcouple = (gfactor MuB/\\[HBar]) Lgyro[\\[Psi]] . MuEff[\\[Psi]] + \\[Lambda]coupling A[r_obs] . Jgyro[\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\[Psi], \\[Pi]]]; \\end{implementation} \\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...",
+        "numeric_atoms": [
+          "1",
+          "2",
+          "8"
+        ],
+        "symbolic_tokens": [
+          "section",
+          "Psi",
+          "Pi",
+          "Module",
+          "Tkin",
+          "Umag",
+          "Uquant",
+          "Hcouple",
+          "InverseMetric",
+          "MuEff",
+          "BExternal",
+          "r",
+          "cm",
+          "Mu0",
+          "VolumeIntegral",
+          "Norm",
+          "Bdipole",
+          "Bgyro",
+          "V",
+          "Sum",
+          "HBar",
+          "omega",
+          "n",
+          "Infinity",
+          "UTunnel",
+          "d",
+          "gfactor",
+          "MuB",
+          "Lgyro",
+          "Lambda",
+          "coupling",
+          "A",
+          "obs",
+          "Jgyro",
+          "Hamilton",
+          "s",
+          "equations",
+          "EquationsOfMotion",
+          "F",
+          "PoissonBracket",
+          "Hamiltonian",
+          "This",
+          "part",
+          "of",
+          "appendix",
+          "develops",
+          "quantum",
+          "field",
+          "theoretic",
+          "description",
+          "gy"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "code_fragment_or_placeholder",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID3826\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Pressure Definition\", \"latex\" -> \"\\\\[Psi]_, \\\\[Pi]_] := Module[{Tkin, Umag, Uquant, Hcouple}, Tkin = 1/2 \\\\[Pi] . InverseMetric[\\\\[Psi]] . \\\\[Pi]; Umag = -MuEff[\\\\[Psi]] . BExternal[r_cm[\\\\[Psi]]] + (Mu0/(8 Pi)) VolumeIntegral[(Norm[Bdipole]^2 + Norm[Bgyro]^2), {r, V}]; Uquant = Sum[\\\\[HBar] omega[n] (n_n + 1/2), {n, 1, Infinity}] + UTunnel[d[\\\\[Psi]]]; Hcouple = (gfactor MuB/\\\\[HBar]) Lgyro[\\\\[Psi]] . MuEff[\\\\[Psi]] + \\\\[Lambda]coupling A[r_obs] . Jgyro[\\\\[Psi]]; Tkin + Umag + Uquant + Hcouple ]; (* Hamilton's equations *) EquationsOfMotion[F_] := PoissonBracket[F, Hamiltonian[\\\\[Psi], \\\\[Pi]]]; \\\\end{implementation} \\\\section{Quantum and Instanton Analysis} This part of the appendix develops the quantum field theoretic description of the gy ...\", \"numericAtoms\" -> {1, 2, 8}, \"symbolicTokens\" -> {\"section\", \"Psi\", \"Pi\", \"Module\", \"Tkin\", \"Umag\", \"Uquant\", \"Hcouple\", \"InverseMetric\", \"MuEff\", \"BExternal\", \"r\", \"cm\", \"Mu0\", \"VolumeIntegral\", \"Norm\", \"Bdipole\", \"Bgyro\", \"V\", \"Sum\", \"HBar\", \"omega\", \"n\", \"Infinity\", \"UTunnel\", \"d\", \"gfactor\", \"MuB\", \"Lgyro\", \"Lambda\", \"coupling\", \"A\", \"obs\", \"Jgyro\", \"Hamilton\", \"s\", \"equations\", \"EquationsOfMotion\", \"F\", \"PoissonBracket\", \"Hamiltonian\", \"This\", \"part\", \"of\", \"appendix\", \"develops\", \"quantum\", \"field\", \"theoretic\", \"description\", \"gy\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"code_fragment_or_placeholder\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

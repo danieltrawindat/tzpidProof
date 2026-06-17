@@ -1,0 +1,264 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={Musical Holonomy: The Pythagorean Comma as Hopf Holonomy and the Golden Ratio as the Fixed Point of the Flip},pdfsubject={TZPID Gold Spine Series, Paper III, DOI: 10.5281/zenodo.20630831},pdfkeywords={Pythagorean comma, holonomy, Hopf fibration, golden ratio, crystallographic restriction, quasicrystals, TZPID, DOI 10.5281/zenodo.20630831}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Musical Holonomy: The Pythagorean Comma as Hopf Holonomy of the Hyperspherical Enclosure, and the Golden Ratio as the Fixed Point of the Flip\\[0.6em]
+\large TZPID Gold Spine Series, Paper III of VIII}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20630831}{10.5281/zenodo.20630831}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Papers I and II established the stage (nested hyperspherical enclosures) and the mechanism (phase locking onto rational frequency ratios). This paper exhibits the framework's arithmetic signature in the oldest exact measurement tradition humanity possesses. Two results are developed. First, the Pythagorean comma---the exact rational excess $\gamma = 531441/524288 \approx 1.0136433$ by which twelve perfect fifths overshoot seven octaves---is identified as a \emph{holonomy}: a residual rotation produced by traversing a closed loop. On the octave-reduced pitch circle the non-closure angle is $\theta_\gamma = 2\pi(12\log_2(3/2) - 7) = 0.122836$ rad, and by the geometric-phase relation $\theta_\gamma = \oint A = \iint K\, dA = \Omega$ this equals an enclosed solid angle: $0.9775\%$ of the full sphere. Lifted through the Hopf map $h: S^3 \to S^2$, the comma is the fiber rotation $\Delta\chi = \Omega$ accumulated by a loop that closes in the bulk enclosure but fails to close on the observable boundary; the bulk reads the boundary excess $\gamma$ as the reciprocal deficit $\omega_{\mathrm{bulk}} = 1/\gamma = 524288/531441$. The 53-fifth near-closure (defect 3.615 cents) confirms the prediction that better rational approximations shrink but never eliminate the holonomy. Second, the crystallographic restriction theorem is shown to place the golden ratio $\varphi$ at the exact watershed of the reciprocal flip $r \mapsto 1/r$: five-fold symmetry is forbidden to periodic lattices because $2\cos(72^\circ) = 1/\varphi$ is irrational, and $\varphi$ is the unique positive fixed point of the flip ($1/\varphi = \varphi - 1$), the most irrational number, and by KAM theory the last orbit to lock. Rational ratios close under the flip and lock (crystals, resonances, consonance); the golden fixed point never closes and yields only aperiodic scale-invariant order (quasicrystals, $\varphi$-inflation). The comma and the golden ratio are thus the two boundary markers of the locking mechanism of Paper II: the residue of rational closure and the fixed point where closure becomes impossible.
+\end{abstract}
+
+\section{Introduction: why music belongs in a theory of everything}
+\label{sec:intro}
+
+Music theory is not being used here as metaphor. The frequency ratios of just intonation are among the oldest exactly measured quantities in science, and the Pythagorean comma is among the oldest exactly \emph{computed} discrepancies---known for over two millennia as a rational number, $531441/524288$, with no measurement error whatsoever. If a unified framework claims that observable physics is the boundary phenomenology of a curved, bounded bulk (Paper I), and that boundary dynamics selects rational frequency ratios by phase locking (Paper II), then that framework owes an account of the most famous rational-ratio system ever constructed: the circle of fifths. This paper provides the account, and extracts from it two exact structural constants of the series---the comma $\gamma$ as the holonomy of the enclosure, and the golden ratio $\varphi$ as the fixed point of its reciprocal flip.
+
+The music theory is stated exactly at the outset, because precision here is load-bearing. The \emph{perfect fifth} is the ratio $3/2$ ($\approx 1.5$); it is the generator of the circle of fifths. The \emph{Pythagorean major third} is $81/64$ (four fifths up, two octaves down: $(3/2)^4/2^2$); the \emph{Pythagorean minor third} is $32/27 = 2^5/3^3$---the bridging ratio of registry entries ID0097 and ID0130, encountered in Papers I and II. A ``third'' is never $3/2$; $3/2$ is the fifth, and the comma below is built purely from stacking that fifth.
+
+Section~\ref{sec:comma} computes the comma and identifies it as a holonomy. Section~\ref{sec:curvature} converts the holonomy to curvature and solid angle. Section~\ref{sec:hopf} lifts the construction through the Hopf map and states the reciprocal flip exactly. Section~\ref{sec:fiftythree} adds the 53-fifth refinement as a second data point. Section~\ref{sec:fifth} proves the golden-ratio watershed via the crystallographic restriction. Section~\ref{sec:engine} derives the mode-selection engine (instability plus cutoff) that links both results back to the pillars of Paper I. Sections~\ref{sec:registry} and \ref{sec:demarcation} give registry anchors, demarcation, and predictions.
+
+\section{The comma is a failure of a closed loop to close}
+\label{sec:comma}
+
+Stack twelve perfect fifths and compare with seven octaves:
+\begin{equation}
+\left(\frac{3}{2}\right)^{12} = \frac{531441}{4096} = 129.74633\ldots, \qquad 2^7 = 128,
+\end{equation}
+\begin{equation}
+\gamma \;=\; \frac{(3/2)^{12}}{2^7} \;=\; \frac{3^{12}}{2^{19}} \;=\; \frac{531441}{524288} \;=\; 1.0136433\ldots
+\label{eq:comma}
+\end{equation}
+This is registry entry ID10786 (Derived\_Theorem\_Obligation), certified exactly by the Wolfram guardrail \texttt{comma\_exact}. In the logarithmic (cents) measure,
+\begin{equation}
+c_\gamma = 1200 \log_2 \gamma = 23.460\ \text{cents}.
+\end{equation}
+
+The structure of the discrepancy is what matters. Because $\gcd(7,12) = 1$, the circle of fifths visits all twelve pitch \emph{classes} and returns to the starting pitch class---but a sliver $0.01955$ octave higher. The loop closes in pitch-class space and fails to close in pitch space by exactly $\gamma$. A residual transformation produced by traversing a closed loop is, by definition, a \emph{holonomy}. The comma is therefore not a tuning nuisance; it is a geometric invariant of the loop, and the first task of the framework is to say \emph{of what geometry}.
+
+\begin{remark}
+No finite stack of fifths ever equals a stack of octaves: $\log_2(3/2)$ is irrational, so $(3/2)^m = 2^n$ has no integer solutions. The number 12 is distinguished only as the denominator of the best small rational approximation $7/12 \approx \log_2(3/2)$; the next convergent is $31/53$. This observation drives both the 53-tone refinement of Section~\ref{sec:fiftythree} and---in its extreme form---the golden-ratio watershed of Section~\ref{sec:fifth}, since $\varphi$ is the number \emph{worst} approximated by rationals.
+\end{remark}
+
+\section{Holonomy equals curvature: the comma as enclosed solid angle}
+\label{sec:curvature}
+
+Place the twelve pitch classes on the octave-reduced pitch circle, of circumference one octave ($2\pi$). Each fifth advances the phase by $2\pi \log_2(3/2)$. After twelve fifths and seven octave reductions the net non-closing rotation is
+\begin{equation}
+\theta_\gamma = 2\pi\big(12 \log_2(3/2) - 7\big) = 2\pi \times 0.0195501 = 0.122836\ \text{rad} = 7.038^\circ.
+\label{eq:theta}
+\end{equation}
+By the geometric-phase relation of Berry (registry ID0068, with the Trawinistic winding and causal-loop machinery of ID0020 and ID0011), the holonomy of a closed loop equals the curvature it encloses---the Gauss--Bonnet/Berry identity
+\begin{equation}
+\theta_\gamma = \oint_\Gamma A = \iint_S K\, dA = \Omega.
+\label{eq:gaussbonnet}
+\end{equation}
+For a unit two-sphere the enclosed curvature \emph{is} the enclosed solid angle, so
+\begin{equation}
+\Omega = 0.122836\ \mathrm{sr} = 0.9775\%\ \text{of the full sphere } (4\pi).
+\end{equation}
+
+The interpretive claim of the spine follows: \emph{the Pythagorean comma is the curvature signal of the space the tones live on}. A flat (Euclidean) pitch line would close perfectly; the comma is the audible proof that the loop bounds curvature. On a flat space, holonomy vanishes identically; the measured non-closure \eqref{eq:theta} is exactly the kind of quantity a physicist computes when diagnosing curvature with parallel transport---performed here, unknowingly, by every tuner since antiquity.
+
+\section{The Hopf lift: the outward dimensional flip}
+\label{sec:hopf}
+
+\subsection{The enclosure and its fibration}
+
+The enclosure of Paper I is $S^3$. It fibers over the observable boundary two-sphere by the Hopf map $h: S^3 \to S^2$ with circle fibers $S^1$, and the defining holonomy property is: \emph{a loop traversed in the base $S^2$ enclosing solid angle $\Omega$ lifts to a path in the bulk $S^3$ whose endpoints differ by a fiber rotation $\Delta\chi = \Omega$}. This is registry entry ID10790 (Derived\_Theorem\_Obligation), certified as \texttt{inverse\_outward\_flip}, and it is the same $S^3 \to S^2$ projection family that the gyromagnetic registry uses to block flat dipole collapse (ID10130, Paper IV).
+
+Read in both directions:
+\begin{itemize}
+\item \textbf{Outward (bulk $\to$ boundary).} A cycle that closes in the higher-dimensional enclosure $S^3$ projects to a cycle on the boundary $S^2$ that fails to close by $\Omega$. The circle of fifths is the audible shadow of a closed geodesic in the bulk; the comma is its Hopf phase, $\Delta\chi = \Omega = \theta_\gamma = 0.12284$ rad.
+\item \textbf{Inward (boundary $\to$ bulk).} What we hear---a one-dimensional multiplicative frequency excess $\gamma > 1$---is the lower-dimensional projection of a fiber rotation in the bulk.
+\end{itemize}
+
+\subsection{The flip stated exactly}
+
+The dimensional ascent is the composition
+\begin{equation}
+\underbrace{\gamma}_{\text{1-D ratio, excess}>1}
+\;\xrightarrow{\ \log,\ \text{lift}\ }\;
+\underbrace{\theta_\gamma = 2\pi\log_2\gamma}_{\text{2-D boundary phase}}
+\;\xrightarrow{\ \text{Hopf}\ }\;
+\underbrace{\Delta\chi = \Omega}_{\text{3-D bulk holonomy}},
+\end{equation}
+and the descent is its inverse: the bulk frequency presents on the boundary as the \emph{reciprocal} comma,
+\begin{equation}
+\omega_{\mathrm{bulk}} = \frac{1}{\gamma} = \frac{524288}{531441} = 0.9865404 \qquad (\text{a deficit of } {-23.460}\ \text{cents}).
+\label{eq:flip}
+\end{equation}
+The thing the enclosure \emph{is} ($\omega_{\mathrm{bulk}}$, a deficit, pointing outward and up a dimension) and the thing we \emph{hear} ($\gamma$, an excess, pointing inward and down a dimension) are exact reciprocals. The inversion $r \mapsto 1/r$ \emph{is} the dimensional flip across the Hopf projection. This is the precise content of the reciprocal-flip thread tabulated in Paper I: the fifth ascending/descending ($3/2 \leftrightarrow 2/3$, ID6583), the avalanche/cascade exponents ($3/2 \leftrightarrow 2/3$, ID10792), orbital conjugates ($p{:}q \leftrightarrow q{:}p$, ID0143), and the comma pair ($\gamma \leftrightarrow 1/\gamma$, ID10786/ID10790) are four boundary readings of one bulk--boundary inversion.
+
+\subsection{What tempering really does}
+
+Equal temperament absorbs the comma by flattening each fifth by $c_\gamma / 12 = 1.955$ cents---forcing the boundary loop to close by \emph{spending} the curvature uniformly around the loop. In the enclosure picture, 12-TET is the choice of a flat connection on the boundary that hides the bulk holonomy; the comma is the curvature paid to flatten it. The holonomy does not vanish; it is redistributed. This is, exactly, the musician's version of choosing a gauge.
+
+\section{The second data point: 53 fifths}
+\label{sec:fiftythree}
+
+The next strong rational approximant to $\log_2(3/2)$ is $31/53$. Stacking 53 perfect fifths against 31 octaves gives
+\begin{equation}
+\gamma_{53} = \frac{(3/2)^{53}}{2^{31}},
+\end{equation}
+still open---irrationality guarantees non-closure---but with a much smaller defect:
+\begin{align}
+c_{53} &= 1200 \log_2 \gamma_{53} \approx 3.615\ \text{cents},\\
+\theta_{53} &= 2\pi\big(53\log_2(3/2) - 31\big) \approx 0.01893\ \text{rad},\\
+\Omega_{53}/4\pi &\approx 0.1506\%\ \text{of the sphere}.
+\end{align}
+The 12-fifth loop is the audible defect (23.460 cents); the 53-fifth loop is the near-closure refinement (3.615 cents), the basis of 53-tone equal temperament. This is exactly what the enclosure picture predicts: \emph{better rational approximations do not remove the holonomy; they only make a longer loop whose projected boundary defect is smaller}. The holonomy is structural, not an artifact of the choice of 12. Within the series' verification pipeline the 53-fifth computation is retained as a computed comparison datum in the Wolfram certificate.
+
+\section{The fifth is the flip: crystals, the golden ratio, and the watershed}
+\label{sec:fifth}
+
+\subsection{The crystallographic restriction, evaluated}
+
+The second half of this paper makes exact the claim that \emph{crystals do not form ``in the fifth'' because that is the flip}. A periodic lattice can carry an $n$-fold rotation only if, written in a lattice basis, the rotation matrix has integer trace:
+\begin{equation}
+2\cos\!\left(\frac{2\pi}{n}\right) \in \mathbb{Z}.
+\label{eq:restriction}
+\end{equation}
+Evaluating:
+\begin{equation}
+\begin{array}{llll}
+n = 1: & +2 \quad & n = 2: & -2 \\
+n = 3: & -1 & n = 4: & 0 \\
+n = 6: & +1 & & \text{(all integers $\to$ lock $\to$ crystal allowed)}
+\end{array}
+\end{equation}
+\begin{equation}
+n = 5: \quad 2\cos(72^\circ) = \frac{\sqrt{5} - 1}{2} = \frac{1}{\varphi} = \varphi - 1 = 0.618034\ldots \quad \text{(irrational $\to$ forbidden)}.
+\label{eq:five}
+\end{equation}
+The obstruction to five-fold crystals is \emph{exactly the golden ratio}.
+
+\subsection{The golden ratio is the fixed point of the flip}
+
+The flip $r \mapsto 1/r$ sends $\varphi \mapsto 1/\varphi = \varphi - 1$: the golden ratio is the unique positive number whose reciprocal is itself minus one ($\varphi^2 = \varphi + 1$). It is, in the precise continued-fraction sense, the \emph{most irrational} number---its expansion is $[1; 1, 1, 1, \ldots]$, the slowest-converging of all continued fractions, hence the hardest number to approximate by any rational $p/q$. By the KAM theorem it is therefore the last orbit to phase-lock under perturbation: the maximally non-resonant ratio, the frequency ratio farthest from every Arnold tongue of Paper II.
+
+\begin{table}[ht]
+\centering
+\caption{Two regimes of one flip.}
+\label{tab:regimes}
+\begin{tabularx}{\textwidth}{@{}p{4.0cm}XX@{}}
+\toprule
+Ratio & Flip behaviour & Outcome \\
+\midrule
+Rational $p/q$ (2-, 3-, 4-, 6-fold; the fifth $3{:}2$ as a lock) & $r \mapsto 1/r$ closes into a periodic cycle & Locks: crystals form, resonances capture, consonance, Arnold tongues \\
+\addlinespace
+Golden $\varphi$ (5-fold) & $r \mapsto 1/r$ lands on its self-similar fixed point ($1/\varphi = \varphi - 1$); never closes & Does not periodically lock: only aperiodic, scale-invariant quasicrystal order (Penrose tilings, $\varphi$-inflation) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Five-fold symmetry is thus the \emph{watershed}: the exact value of the reciprocal flip at which commensurate locking gives way to incommensurate scale invariance (Table~\ref{tab:regimes}). Crystals do not form there because the flip never lands on a periodic lock---it lands on the golden fixed point, which is maximally un-lockable. Nature's compromise at the watershed is the quasicrystal: aperiodic, diffraction-sharp, $\varphi$-inflationary, and scale-invariant---the spatial twin of the log-periodic discrete scale invariance seen in critical systems (Paper I, Pillar 3).
+
+\subsection{Why this unifies the spine}
+
+Four connections close the loop with the rest of the series. (i) \emph{Synchronization} (Paper II): rationals lock---resonances, crystals, consonance---while $\varphi$ resists (KAM-stable); the crystallographic restriction is the spatial version of the orbital rational ladder, the same rule in a different arena. (ii) \emph{The comma}: the circle of fifths fails to close because $\log_2(3/2)$ is irrational; the golden ratio is the extreme of that non-closure, the place where the flip is purely self-similar. (iii) \emph{Scale invariance} (Paper I, Pillars 2--3): the golden, five-fold regime is scale-invariant by $\varphi$-inflation---exactly the projection signature the enclosure imprints. (iv) \emph{Crystals as memory}: a crystal is a frozen rational eigenmode---a lock that won the free-energy competition $F[\rho] = \int (a\rho^2 + b\rho^3 + c\rho^4 + \kappa|\nabla\rho|^2)\, d^3x$, its minima the lattice eigenmodes (Landau/phase-field theory). The forbidden five-fold is the eigenmode the flip refuses to freeze.
+
+\section{The nondimensional engine: instability plus cutoff}
+\label{sec:engine}
+
+The mechanism that selects modes in every pillar of Paper I can now be stated as a single engine: \emph{instability amplifies a band; a cutoff halts the cascade; the survivor is a repeated geometry}.
+
+For bedforms, the Shields parameter
+\begin{equation}
+\theta = \frac{\tau}{(\rho_s - \rho_f)\, g\, d}
+\end{equation}
+must sit in a narrow window $\theta_{\mathrm{crit}} < \theta < \theta_{\mathrm{sheet}}$ (below: no motion; above: sheet flow), and the selected ripple wavelength $\lambda \approx C\, d\, \mathrm{Re}^{1/2}$ drops out of linear stability of the bed--flow coupling. For cosmic structure the Jeans criterion
+\begin{equation}
+\lambda_J = c_s \sqrt{\frac{\pi}{G\rho}}
+\end{equation}
+plays the identical role---below $\lambda_J$ pressure damps, above it gravity grows. Term by term: shear $\leftrightarrow$ expansion, viscosity $\leftrightarrow$ pressure, Shields window $\leftrightarrow$ Jeans criterion, ripple wavelength $\leftrightarrow$ filament scale. What recurs across sand, water, cloud, and cosmos is not a single exponent but the \emph{mechanism}; and on a curved enclosure the surviving modes are the $S^3$ Laplacian eigenmodes
+\begin{equation}
+\lambda_n = \frac{n(n+2)}{R^2},
+\end{equation}
+which project as Bessel-like radial bands under the Hopf map. Pillars 1 and 2 of Paper I are thereby \emph{derived} from instability theory rather than asserted: the enclosure supplies the spectrum, the instability window selects from it, and the projection delivers it to the boundary media we measure.
+
+\section{Registry anchors}
+\label{sec:registry}
+
+The constructions of this paper are anchored in the canonical registry as follows. The comma and temperament family: ID8648 ($81/80$, the syntonic comma) and ID8647 ($2^{3/12}$, the tempered third). The harmonic-ratio backbone: ID1835 (``The 1.185 Bridge''), ID0130 (bridging frequency ratio), and ID0882 (TZP harmonic lattice constant). The disharmony--hypersphere link, named in the registry itself: ID1473 (``TZP Hyperspherical Disharmony Model of Matter''). The holonomy machinery: ID0068 (Berry and geometric phases), ID0020 (Trawinistic winding number, $w = \frac{1}{2\pi}\oint_\Gamma \nabla\theta \cdot d\ell$), and ID0011 (causal loop invariant, $I_{\mathrm{CL}} = \oint_\Gamma A \cdot dx$ with $dA = 0$ away from the anchor point). The five equations registered from this construction are:
+\begin{align}
+&\gamma = \frac{(3/2)^{12}}{2^7} = \frac{3^{12}}{2^{19}} = \frac{531441}{524288} \quad \text{(the comma)},\\
+&c_\gamma = 1200\log_2\gamma = 23.460\ \text{cents},\\
+&\theta_\gamma = 2\pi\big(12\log_2(3/2) - 7\big) = 0.122836\ \text{rad} = \Omega \quad \text{(comma = holonomy = solid angle)},\\
+&\Omega = \oint A = \iint K\, dA \quad \text{(Gauss--Bonnet / Berry)},\\
+&\Delta\chi_{\mathrm{Hopf}} = \Omega, \qquad \omega_{\mathrm{bulk}} = 1/\gamma \quad \text{(Hopf lift; the inverse outward flip)},
+\end{align}
+minted as ID10786--ID10790 and tied into the nested-hypersphere spine of Paper I.
+
+\section{Demarcation and predictions}
+\label{sec:demarcation}
+
+\textbf{Established mathematics and physics:} the exact arithmetic of the comma; the holonomy--curvature identity (Gauss--Bonnet, Berry); the Hopf fibration and its solid-angle holonomy; the crystallographic restriction theorem and Eq.~\eqref{eq:five}; $\varphi$ as most-irrational and KAM-stable; quasicrystals and $\varphi$-inflation; Shields and Jeans mode selection; the $S^3$ Laplacian spectrum. Every numbered equation in Sections~\ref{sec:comma}--\ref{sec:engine} is either an exact rational identity or standard differential geometry.
+
+\textbf{Framework synthesis (the falsifiable surplus):} the \emph{same} flip $r \mapsto 1/r$ runs through music (comma), criticality ($3/2 \leftrightarrow 2/3$), orbits ($p{:}q$), and crystals (lock versus golden), with five-fold $\varphi$ as its self-similar fixed point---all faces of the projected hyperspherical enclosure. Distinct predictions follow. (i) Systems tuned continuously through frequency-ratio space should show locking plateaus at rationals, scale-invariant (log-periodic) response at golden-ratio irrationals, and a measurable holonomy residue when driven around closed loops in parameter space. (ii) The holonomy residue should scale with the loop's enclosed area in ratio space exactly as \eqref{eq:gaussbonnet} demands, and refine---never vanish---under better rational approximants, as the 53-fifth datum confirms in the musical case. (iii) Where the enclosure picture holds, the boundary excess and bulk deficit must appear as exact reciprocals, Eq.~\eqref{eq:flip}; any measured asymmetry breaks the Hopf identification.
+
+\section{Conclusion: the signature read, the engine needed}
+\label{sec:conclusion}
+
+The series now possesses its two exact structural constants. The comma $\gamma = 531441/524288$ is the holonomy of the enclosure: the residue by which rational locking, iterated around a closed loop, fails to close, equal to an enclosed solid angle and lifted by the Hopf map to a bulk fiber rotation whose boundary reading is the reciprocal deficit $1/\gamma$. The golden ratio $\varphi$ is the fixed point of that same reciprocal flip: the unique ratio that cannot lock at all, marking the exact watershed between the commensurate regime (crystals, resonances, consonance) and the scale-invariant regime (quasicrystals, criticality, projection).
+
+What the argument still lacks is force. Papers I--III concern kinematics: spectra, locks, holonomies. Nothing yet moves. Paper IV supplies the engine---the gyromagnetic movement mechanism, in which rotation is generated as accumulated electromagnetic torque, organized by magnetic helicity, balanced at the Elsasser attractor, and driven through the same cavity modes and phase-lock thresholds assembled here. The holonomy of this paper will reappear there in physical form: as the topological invariant that constrains how helical fields move through the nested enclosure.
+
+\begin{thebibliography}{15}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine1} Trawin, D. A., \emph{The Pythagorean Comma as the Hopf Holonomy of the Hyperspherical Enclosure}, TZPIDProof archive, \texttt{TZPID\_PYTHAGOREAN\_COMMA\_HOLONOMY.md} (2026).
+
+\bibitem{spine2} Trawin, D. A., \emph{The Fifth Is the Flip---Crystals, the Golden Ratio, and the Locking--Scale-Invariance Watershed}, TZPIDProof archive, \texttt{TZPID\_THE\_FIFTH\_IS\_THE\_FLIP.md} (2026).
+
+\bibitem{paper1} Trawin, D. A., \emph{Nested Hyperspherical Enclosures}, TZPID Gold Spine Series, Paper I (2026).
+
+\bibitem{paper2} Trawin, D. A., \emph{Phase Locking and Resonance Ratio-Selection on the Bounded Enclosure}, TZPID Gold Spine Series, Paper II (2026).
+
+\bibitem{berry} Berry, M. V., \emph{Quantal phase factors accompanying adiabatic changes}, Proc.\ R.\ Soc.\ Lond.\ A \textbf{392}, 45 (1984).
+
+\bibitem{hopf} Hopf, H., \emph{Uber die Abbildungen der dreidimensionalen Sphare auf die Kugelflache}, Math.\ Ann.\ \textbf{104}, 637 (1931).
+
+\bibitem{barbour} Barbour, J. M., \emph{Tuning and Temperament: A Historical Survey}, Michigan State College Press (1951).
+
+\bibitem{shechtman} Shechtman, D., Blech, I., Gratias, D., and Cahn, J. W., \emph{Metallic phase with long-range orientational order and no translational symmetry}, Phys.\ Rev.\ Lett.\ \textbf{53}, 1951 (1984).
+
+\bibitem{penrose} Penrose, R., \emph{The role of aesthetics in pure and applied mathematical research}, Bull.\ Inst.\ Math.\ Appl.\ \textbf{10}, 266 (1974).
+
+\bibitem{kam} Kolmogorov, A. N., \emph{On conservation of conditionally periodic motions for a small change in Hamilton's function}, Dokl.\ Akad.\ Nauk SSSR \textbf{98}, 527 (1954); Arnold, V. I., Moser, J., subsequent developments.
+
+\bibitem{coxeter} Coxeter, H. S. M., \emph{Introduction to Geometry}, Wiley (1961). Crystallographic restriction theorem.
+
+\bibitem{shields} Shields, A., \emph{Anwendung der Ahnlichkeitsmechanik und der Turbulenzforschung auf die Geschiebebewegung}, Mitteilungen der Preussischen Versuchsanstalt fur Wasserbau und Schiffbau (1936).
+
+\bibitem{jeans} Jeans, J. H., \emph{The stability of a spherical nebula}, Phil.\ Trans.\ R.\ Soc.\ Lond.\ A \textbf{199}, 1 (1902).
+
+\bibitem{chaikin} Chaikin, P. M., and Lubensky, T. C., \emph{Principles of Condensed Matter Physics}, Cambridge University Press (1995). Landau free-energy crystallization.
+
+\end{thebibliography}
+
+\end{document}

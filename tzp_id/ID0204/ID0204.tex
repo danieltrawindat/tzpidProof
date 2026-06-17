@@ -1,0 +1,210 @@
+\tzpanchor{0204}
+\tzpentryheader{0204}{Kaluza--Klein Metric Ansatz}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{7daaa87a-54b6-53d5-827c-512bd3fac83f}}\\
+\textbf{PiID} & \tzpcode{8109756659334} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{211}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{792.1773 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.3053 rad}\\
+\textbf{TZPID} & \tzpcode{ID0204} & \textbf{Node Dependencies}\quad \tzpidref{0203}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0204} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Five-Dimensional Metric Ansatz & Geometric Gauge Content\\
+\textbf{Closure Support} &  & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The five-dimensional metric is decomposed into a four-dimensional metric and a compact coordinate whose off-diagonal term carries the electromagnetic potential.
+
+\tzpsection{Canonical Equation}
+\[
+ds^2_{(5)} = g^{(4)}_{\mu\nu}\,dx^{\mu}dx^{\nu} + \phi^2\!\left(dy + A_{\mu}dx^{\mu}\right)^2
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\phi$: scalar field scaling the compact-direction contribution.
+    \item $A_{\mu}$: electromagnetic potential emerging from the higher-dimensional metric.
+    \item $ds^2_{(5)}$: five-dimensional metric interval in the compactified ansatz.
+    \item $g^{(4)}_{\mu\nu}$: four-dimensional metric sector.
+    \item $y$: compactified extra coordinate.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0204 generated source Wolfram model *)
+ClearAll[K0204, Cr0204, T, R, A, W, I, N];
+eq0204$1 = HoldForm[ds5Squared == g4munu*dxmu*dxnu + phi^2*(dy + Amu*dxmu)^2];
+eq0204$2 = HoldForm[g5AB -> Tuple[g4munu, Amu, phi]];
+
+K0204 = HoldForm[{eq0204$1, eq0204$2}];
+
+N = "normalized TRAWIN closure object for Kaluza--Klein Metric Ansatz";
+I = "Kaluza--Klein Metric Ansatz integration/comparison layer";
+W = "Geometric Gauge Content wave or operator carrier";
+A = "Five-Dimensional Metric Ansatz admissible action/amplitude condition";
+R = "Geometric Gauge Content rotation/curl preservation layer";
+T = "Five-Dimensional Metric Ansatz local source condition";
+
+Cr0204[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0204 = Cr0204[K0204];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Five-Dimensional Metric Ansatz local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Geometric Gauge Content rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Five-Dimensional Metric Ansatz admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Geometric Gauge Content wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Kaluza--Klein Metric Ansatz integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Kaluza--Klein Metric Ansatz.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0204] Kaluza--Klein Metric Ansatz}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+ds^2_{(5)} = g^{(4)}_{\mu\nu}\,dx^{\mu}dx^{\nu} + \phi^2\!\left(dy + A_{\mu}dx^{\mu}\right)^2.
+\]
+\paragraph{Source-Grounded Reading.}
+The compact coordinate $y$ enters only through the one-form $dy+A_{\mu}dx^{\mu}$. Expanding its square exhibits the cross term $2\phi^2 A_{\mu}\,dy\,dx^{\mu}$, so the vector potential is carried by the mixed compact--four-dimensional metric component.
+\[
+\phi^2\left(dy+A_{\mu}dx^{\mu}\right)^2=\phi^2dy^2+2\phi^2A_{\mu}\,dy\,dx^{\mu}+\phi^2A_{\mu}A_{\nu}\,dx^{\mu}dx^{\nu}.
+\]
+\paragraph{Interpretation.}
+This repairs the entry as a Kaluza--Klein metric decomposition; it does not reuse the unrelated metric-degeneracy derivation previously attached to ID 0204.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The compact one-form expands into a mixed \(dy\,dx^{\mu}\) contribution, formally locating \(A_{\mu}\) in the off-diagonal part of the five-dimensional metric.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Five-Dimensional Metric Ansatz}\par
+\[
+ds^2_{(5)} = g^{(4)}_{\mu\nu}\,dx^{\mu}dx^{\nu} + \phi^2\!\left(dy + A_{\mu}dx^{\mu}\right)^2
+\]
+\noindent The source-backed metric separates four-dimensional geometry from the compact-direction contribution.\par
+\noindent\textbf{2. Geometric Gauge Content}\par
+\[
+g^{(5)}_{AB}\;\longrightarrow\;\left(g^{(4)}_{\mu\nu},A_{\mu},\phi\right)
+\]
+\noindent The off-diagonal metric content is interpreted as the gauge potential associated with the compact coordinate.\par
+
+\clearpage
+\noindent\textbf{[ID 0204] Kaluza--Klein Metric Ansatz}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+The Kaluza--Klein metric ansatz is a five-dimensional geometric decomposition in which a four-dimensional spacetime metric is augmented by one compact coordinate. In the sourced form, the compact contribution is carried by the one-form \(dy+A_{\mu}dx^{\mu}\).
+
+\tzpsection{Contextual Meaning}
+
+The entry organizes gravitation and gauge structure inside a single higher-dimensional metric description. The source identifies \(y\) as compactified and states that \(A_{\mu}\) emerges as an electromagnetic potential, so the gauge field is not appended as unrelated data but read from the mixed metric content.
+
+\tzpsection{Formal Statement}
+
+\[
+ds^2_{(5)}=g^{(4)}_{\mu\nu}\,dx^{\mu}dx^{\nu}+\phi^2\!\left(dy+A_{\mu}dx^{\mu}\right)^2
+\]
+
+\tzpsection{Derivable Consequences}
+
+Expanding the compact term produces \(\phi^2dy^2+2\phi^2A_{\mu}\,dy\,dx^{\mu}+\phi^2A_{\mu}A_{\nu}\,dx^{\mu}dx^{\nu}\). The cross term supplies the explicit mathematical location of the geometric gauge contribution.
+
+\tzpsection{Lemma Support}
+
+The retrieved source gives the five-dimensional metric formula, names the extra coordinate \(y\) as compactified, and identifies \(A_{\mu}\) as the emerging electromagnetic potential. It also describes the gauge potential as arising from off-diagonal metric components.
+
+\tzpsection{Technical Interpretation}
+
+This is a decomposition rule for the modeled geometry. It establishes the formal placement of the compact scalar and gauge potential in the metric; it does not by itself demonstrate a measured extra dimension or a realized electromagnetic unification.
+
+\tzpsection{Equation Grounding}
+
+\(ds^2_{(5)}\) is the five-dimensional interval; \(g^{(4)}_{\mu\nu}\) is the four-dimensional metric sector; \(y\) is the compact coordinate; \(A_{\mu}\) is the electromagnetic-potential term; and \(\phi\) scales the compact-direction contribution.
+
+\tzpsection{Interpretive Role}
+
+This entry introduces the compact geometric carrier needed by later mode and resonance entries: the extra-dimensional sector is made mathematically explicit before its indexed excitations are compared with acoustic modes.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Compact Coordinate}: The additional coordinate identified by the source as compactified. \enspace\textbullet\enspace \textbf{Gauge Potential}: The vector-potential contribution read from mixed higher-dimensional metric components. \enspace\textbullet\enspace \textbf{Metric Ansatz}: An assumed geometric form that fixes the fields and sectors being modeled.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0204].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0204] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Kaluza--Klein Metric Ansatz}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} The sourced metric ansatz is
+\[
+ds^2_{(5)}=g^{(4)}_{\mu\nu}\,dx^{\mu}dx^{\nu}+\phi^2\!\left(dy+A_{\mu}dx^{\mu}\right)^2.
+\]
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} The gauge-potential contribution occurs in a compact--four-dimensional mixed metric term.\\
+\textbf{Proof:} Algebraic expansion of the square gives \(\phi^2dy^2+2\phi^2A_{\mu}\,dy\,dx^{\mu}+\phi^2A_{\mu}A_{\nu}\,dx^{\mu}dx^{\nu}\). Hence the mixed term is proportional to \(A_{\mu}\).\\
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal consequence of the sourced ansatz\\
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL obligation\\
+\textbf{Physical Status:} THEORETICAL -- compact-dimension realization remains model-dependent
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0204].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

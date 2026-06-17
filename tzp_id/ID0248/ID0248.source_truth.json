@@ -1,0 +1,363 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:47:47.990129+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0248",
+    "uuid": "1e85a598-1d0c-5e4b-a307-0a9a5d62ff88",
+    "registry_id": "registry_id_0248",
+    "canonical_title": "Furiene--TZP Energy Extraction Protocol",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0248/ID0248.TEX",
+      "json": "D:/TZPID/TZPID/ID0248/ID0248.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0248/ID0248.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The Furiene--TZP protocol couples cymatic resonance, pi-kissing topology and the TZP emergence operator to extract coherent vacuum energy; it requires (i) acoustic driving at 432 Hz, (ii) a DAANSphere metamaterial with pi-kissing topology, and (iii) synchronization of quantum and classical modes.",
+    "technical_interpretation": "The Furiene--TZP protocol couples cymatic resonance, pi-kissing topology and the TZP emergence operator to extract coherent vacuum energy; it requires (i) acoustic driving at 432 Hz, (ii) a DAANSphere metamaterial with pi-kissing topology, and (iii) synchronization of quantum and classical modes."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "f_{\\mathrm{drive}}=432\\,\\mathrm{Hz}",
+      "\\mathcal{K}_{\\pi}(\\mathcal{M}_{\\mathrm{DAANS}})=1"
+    ],
+    "source_section_latex": "\\[\nf_{\\mathrm{drive}}=432\\,\\mathrm{Hz}\n\\]\n\\[\n\\mathcal{K}_{\\pi}(\\mathcal{M}_{\\mathrm{DAANS}})=1\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Unified Density",
+      "formula_latex_blocks": [
+        "f_{\\mathrm{drive}}=432\\,\\mathrm{Hz}"
+      ],
+      "interpretive_role": "This gathers the sectors that the tertiary arc is trying to hold in one variational frame."
+    },
+    {
+      "step": 2,
+      "component_title": "Euler-Lagrange Flow",
+      "formula_latex_blocks": [
+        "\\mathcal{K}_{\\pi}(\\mathcal{M}_{\\mathrm{DAANS}})=1"
+      ],
+      "interpretive_role": "This turns the density into an actual field law rather than a formal sum."
+    },
+    {
+      "step": 3,
+      "component_title": "Stationary Closure",
+      "formula_latex_blocks": [
+        "E_{\\mathrm{coh}}=\\eta_{\\mathrm{sync}}\\hbar\\omega N_{\\mathrm{mode}}"
+      ],
+      "interpretive_role": "This closes the entry by imposing stationary admissibility on the total action."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0248}$",
+        "description": "canonical registry object for entry ID 0248."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0248}$",
+        "name": "canonical registry object for entry ID 0248.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\eta_{sync}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$K_{\\pi}(M_{DAANS})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E_{coh}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N_{mode}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Furiene--TZP Energy Extraction Protocol\nCanonical operator translation\neq0248_1 = HoldForm[fdrive==432 Hz];\neq0248_2 = HoldForm[(K)((M)DAANS)==1];\n\nTRAWIN closure composition\nTRAWINClosure0248[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0248 := HoldForm[{eq0248_1, eq0248_2}];\nResult0248 := TRAWINClosure0248[K0248];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "f_{\\mathrm{drive}}=432\\,\\mathrm{Hz}",
+          "normalized_latex": "fDrive==432*Hz",
+          "wolfram_input": "fDrive==432*Hz",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[fDrive == 432*Hz]",
+          "texform_roundtrip": "\\text{fDrive}=432 \\text{Hz}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{K}_{\\pi}(\\mathcal{M}_{\\mathrm{DAANS}})=1",
+          "normalized_latex": "KPi[MDAANS]==1",
+          "wolfram_input": "KPi[MDAANS]==1",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[KPi[MDAANS] == 1]",
+          "texform_roundtrip": "\\text{KPi}(\\text{MDAANS})=1",
+          "messages": []
+        },
+        {
+          "latex": "E_{\\mathrm{coh}}=\\eta_{\\mathrm{sync}}\\hbar\\omega N_{\\mathrm{mode}}",
+          "normalized_latex": "ECoh==etaSynchbaromega*NMode",
+          "wolfram_input": "ECoh==etaSynchbaromega*NMode",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ECoh == etaSynchbaromega*NMode]",
+          "texform_roundtrip": "\\text{ECoh}=\\text{etaSynchbaromega} \\text{NMode}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0248 generated source-truth Wolfram model *)\nClearAll[K0248, TRAWINClosure0248];\neq0248$1 = HoldForm[fDrive == 432*Hz];\neq0248$2 = HoldForm[KPi[MDAANS] == 1];\neq0248$3 = HoldForm[ECoh == etaSynchbaromega*NMode];\nK0248 = HoldForm[{eq0248$1, eq0248$2, eq0248$3}];\nTRAWINClosure0248[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0248 = TRAWINClosure0248[K0248];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\exists D\n\\quad\\text{such that}\\quad\nP(D\\mid H)\\neq P(D\\mid \\neg H).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nA hypothesis $H$ is falsifiable only if there exists some possible observation $D$ that would distinguish $H$ from its negation.\n\nIf every possible observation had equal probability under both $H$ and $\\neg H$, then no data could discriminate between them:\n\n\\begin{equation}\nP(D\\mid H)=P(D\\mid \\neg H)\n\\quad\n\\text{for all }D .\n\\end{equation}\n\nTherefore, falsifiability requires at least one possible discriminating datum:\n\n\\begin{equation}\n\\boxed{\n\\exists D\n\\quad\\text{such that}\\quad\nP(D\\mid H)\\neq P(D\\mid \\neg H).\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nA Trawinistic hypothesis must produce at least one observational consequence that differs from its negation.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0248/ID0248.source_truth.json",
+    "entry_id": "ID0248",
+    "registry_id": "registry_id_0248",
+    "canonical_title": "Furiene--TZP Energy Extraction Protocol",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0248/ID0248.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "1e85a598-1d0c-5e4b-a307-0a9a5d62ff88",
+    "RTEID": "RTE:P963.0391:T1.5868",
+    "poloidal_theta_rad": "963.0391",
+    "toroidal_phi_rad": "1.5868",
+    "rteid_source": "manifest",
+    "PiID": "9145648566923",
+    "TZPi": "8",
+    "PiPE_position": "255",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "f_{\\mathrm{drive}}=432\\,\\mathrm{Hz}",
+        "numeric_atoms": [
+          "432"
+        ],
+        "symbolic_tokens": [
+          "f"
+        ],
+        "candidate_wolfram_input": "HoldForm[f$drive==432Hz]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0248\", 1, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Furiene--TZP Energy Extraction Protocol\", \"latex\" -> \"f_{\\\\mathrm{drive}}=432\\\\,\\\\mathrm{Hz}\", \"numericAtoms\" -> {432}, \"symbolicTokens\" -> {\"f\"}, \"candidateWolframInput\" -> \"HoldForm[f$drive==432Hz]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\mathcal{K}_{\\pi}(\\mathcal{M}_{\\mathrm{DAANS}})=1",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "Pi"
+        ],
+        "candidate_wolfram_input": "HoldForm[calK$Pi[calM$DAANS]==1]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0248\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Furiene--TZP Energy Extraction Protocol\", \"latex\" -> \"\\\\mathcal{K}_{\\\\pi}(\\\\mathcal{M}_{\\\\mathrm{DAANS}})=1\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"Pi\"}, \"candidateWolframInput\" -> \"HoldForm[calK$Pi[calM$DAANS]==1]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

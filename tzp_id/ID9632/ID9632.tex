@@ -1,0 +1,17 @@
+\section*{ID9632: Definition of ⟨ A, B ⟩}
+\paragraph{Metadata.}
+PiID: 9716465143840 | RTEID: RTE:P37403.1951:T5.0803 | UUID: 2a3459fd-c4b2-578c-85d1-9be6eceaf6ce
+
+\paragraph{Canonical Statement.}
+continued fraction expansions of these six angles. The continued fraction representation provides a sequence of integers that encode irrational values with controllable precision. Multiply each continued fraction coefficient by \$\textbackslash{}pi\textasciicircum{}\{p/2\}\$ where \$p\$ is the desired precision, then extract integer digits in base \$\textbackslash{}lfloor \textbackslash{}pi \textbackslash{}rfloor = 3\$. This produces a sequence of digits that appears random but is deterministically generated from the blob structure. \textbackslash{}paragraph\{Phase Three: Cantor Pairing Cascade\} Apply the Cantor pairing function recursively to the digit sequence. The Cantor pairing function \$\textbackslash{}langle a, b \textbackslash{}rangle = 2\textasciicircum{}\{a+b\} + 2\textasciicircum{}b - 1\$ provides a bijection from \$\textbackslash{}mathbb\{N\} \textbackslash{}times \textbackslash{}mathbb\{N\}\$ to \$\textbackslash{}mathbb\{N\}\$. Partition the digit sequence into pairs and apply the pairing function, then recursively pair the results until a single integer remains. Take this value modulo 153,600 and add one to obtain an address in the range \$[1, 153600]\$. \textbackslash{}paragraph\{Phase Four: Tesseract Vertex Mapping\} Extract the lower four bits of the Cantor-encoded integer to select one of 16 tesseract vertices. This provides a coarse localization in four-dime
+
+\paragraph{Canonical Equation.}
+\[
+\langle a, b \rangle = 2^{a+b} + 2^b - 1
+\]
+
+\paragraph{Dictionary.}
+Definition of ⟨ A, B ⟩ — ⟨ a, b ⟩ = 2\textasciicircum{}a+b + 2\textasciicircum{}b - 1
+
+\paragraph{Encyclopedia.}
+Definition of ⟨ A, B ⟩ is an expectation / trace over state, written ⟨ a, b ⟩ = 2\textasciicircum{}a+b + 2\textasciicircum{}b - 1. It is computed as an expectation value or trace over a quantum state, producing an observable. It is built from a, b, defining ⟨ a, b ⟩. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

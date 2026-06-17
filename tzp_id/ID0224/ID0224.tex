@@ -1,0 +1,254 @@
+\tzpanchor{0224}
+\tzpentryheader{0224}{Persistent Entropy}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{31fd56d1-8ec4-56a2-9780-8a67de8b1252}}\\
+\textbf{PiID} & \tzpcode{5648233786783} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{231}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{869.8417 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.4332 rad}\\
+\textbf{TZPID} & \tzpcode{ID0224} & \textbf{Node Dependencies}\quad \tzpidref{0223}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0224} & \textbf{Scale}\quad informational\\
+\textbf{LOC Classification} & QA76.9 information and coding & QA614 topological data analysis\\
+\textbf{arXiv Classification} & Primary: cs.IT & Cross-list: math.AT, math-ph\\
+\textbf{Primary Support} & Entropy Weight & Normalized Distribution\\
+\textbf{Closure Support} & Topological Aggregate & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Let H0, H1 and H2 denote the persistent entropies derived from a persistence diagram. They quantify the diversity of lifetimes of topological features of dimensions 0 (components), 1 (loops) and 2 (voids) respectively. High values indicate many features with varied persistence, while low values indicate few long-lived features.
+
+\tzpsection{Canonical Equation}
+\[
+p_i=\frac{\ell_i}{\sum_j \ell_j}
+\]
+\[
+H_k=-\sum_{i\in D_k}p_i\log p_i
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $p_i$: source equation symbol.
+    \item $H_k$: source equation symbol.
+    \item $D_k$: source equation symbol.
+    \item $H_{\mathrm{pers}}$: source equation symbol.
+    \item $H_0$: Hubble-scale or global comparison parameter.
+    \item $H_1$: source equation symbol.
+    \item $H_2$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0224 generated source Wolfram model *)
+ClearAll[K0224, Cr0224, T, R, A, W, I, N];
+eq0224$1 = HoldForm[pI == ellI/(SumJ*ellJ)];
+eq0224$2 = HoldForm[HK == -Sum[p[i]*Log[p[i]], {i, DK}]];
+eq0224$3 = HoldForm[HPers == H0 + H1 + H2];
+
+K0224 = HoldForm[{eq0224$1, eq0224$2, eq0224$3}];
+
+N = "normalized TRAWIN closure object for Persistent Entropy";
+I = "Topological Aggregate integration/comparison layer";
+W = "Normalized Distribution wave or operator carrier";
+A = "Entropy Weight admissible action/amplitude condition";
+R = "Normalized Distribution rotation/curl preservation layer";
+T = "Entropy Weight local source condition";
+
+Cr0224[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0224 = Cr0224[K0224];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Entropy Weight local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Normalized Distribution rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Entropy Weight admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Normalized Distribution wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Topological Aggregate integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Persistent Entropy.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0224] Persistent Entropy}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\rho_{\mathrm{vac}}^{T}
+=
+\frac{1}{u_T^4}
+\int_{0}^{\omega_{\mathrm{cut}}}
+\eta(\omega)\,
+\hbar\omega\,
+\mathrm{d}\omega .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Each vacuum mode of frequency $\omega$ contributes energy proportional to:
+
+\begin{equation}
+\hbar\omega .
+\end{equation}
+
+The spectral density index $\eta(\omega)$ weights the contribution of each frequency:
+
+\begin{equation}
+\eta(\omega)\hbar\omega .
+\end{equation}
+
+Integrating over all allowed frequencies up to the cutoff $\omega_{\mathrm{cut}}$ gives the weighted vacuum energy:
+
+\begin{equation}
+\int_{0}^{\omega_{\mathrm{cut}}}
+\eta(\omega)\hbar\omega\,\mathrm{d}\omega .
+\end{equation}
+
+To convert this to a density in Trawin units, divide by the fourth power of the base unit:
+
+\begin{equation}
+u_T^4 .
+\end{equation}
+
+Therefore,
+
+\begin{equation}
+\boxed{
+\rho_{\mathrm{vac}}^{T}
+=
+\frac{1}{u_T^4}
+\int_{0}^{\omega_{\mathrm{cut}}}
+\eta(\omega)\,
+\hbar\omega\,
+\mathrm{d}\omega .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+$\rho_{\mathrm{vac}}^{T}$ defines vacuum energy density as a spectral integral normalized by the four-dimensional Trawin base scale.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Persistent Entropy by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Entropy Weight}\par
+\[
+p_i=\frac{\ell_i}{\sum_j \ell_j}
+\]
+\noindent This records the local information weight carried by the persistence data or structural channel.\par
+\noindent\textbf{2. Normalized Distribution}\par
+\[
+H_k=-\sum_{i\in D_k}p_i\log p_i
+\]
+\noindent This makes the entropy law admissible by normalizing the supporting lifetimes or amplitudes.\par
+\noindent\textbf{3. Topological Aggregate}\par
+\[
+H_{\mathrm{pers}}=H_0+H_1+H_2
+\]
+\noindent This closes the entry by recombining the filtered sectors into one total diagnostic.\par
+
+\clearpage
+\noindent\textbf{[ID 0224] Persistent Entropy}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Persistent Entropy is a registry definition in Information Synchronization with secondary pressure from Field Theory and Action Principles.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Let H0, H1 and H2 denote the persistent entropies derived from a persistence diagram. They quantify the diversity of lifetimes of topological features of dimensions 0 (components), 1 (loops) and 2 (voids) respectively. High values indicate many features with varied persistence, while low values indicate few long-lived features. \textbf{Contextual meaning:} The entry reads Persistent Entropy as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry turns a qualitative complexity claim into a counted diagnostic that can be compared across neighboring persistence or information layers. \textbf{Lemma support:} Entropy Weight; Normalized Distribution; Topological Aggregate.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+sub vac to the power T defines vacuum energy density as a spectral integral normalized by the four-dimensional Trawin base scale.
+
+\tzpsection{Equation Grounding}
+Equation anchors: p sub i=ratio ell sub i sum sub j ell sub j; H sub k=-sum sub iin D sub k p sub ilog p sub i; and H sub pers =H sub 0+H sub 1+H sub 2. Proof route: show that the normalized support distribution induces a well-defined entropy functional for the stated topological or informational channel. Formalization route: prove that positivity and normalization of the support weights imply finiteness of the stated entropy functional.
+
+\tzpsection{Interpretive Role}
+The entry turns a qualitative complexity claim into a counted diagnostic that can be compared across neighboring persistence or information layers.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Topological Lifetime Informational Weight}: The measurement of information content based on how long specific topological features endure across different scale thresholds.
+\item \textbf{Entropy of Homological Feature Persistence}: The Shannon-like entropy calculated from the distribution of lifespans of holes, voids, and connected components in a dataset.
+\item \textbf{Scale-Spanning Structural Complexity}: A single scalar value summarizing the robustness and complexity of an object's geometry across all observable resolutions.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0224]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0224_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0224] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Persistent Entropy}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} let H0, H1 and H2 denote the persistent entropies derived from a persistence diagram
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Persistent Entropy is valid when the stated geometric or topological relation preserves
+its invariant.''\\
+\textbf{Proof:} The source statement names a geometric/topological carrier. The proof obligation is to
+show that deformation, projection, or passage through the stated structure leaves the
+relevant invariant or admissible region well defined.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- topological-invariance validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0224_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

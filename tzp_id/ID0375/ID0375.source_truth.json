@@ -1,0 +1,421 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:58:08.628945+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0375",
+    "uuid": "7c10e7d8-64de-5fab-a5a1-e6390aa7ccdb",
+    "registry_id": "registry_id_0375",
+    "canonical_title": "Spherical Harmonic Expansion",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0375/ID0375.TEX",
+      "json": "D:/TZPID/TZPID/ID0375/ID0375.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0375/ID0375.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The radial and tangential components of the magnetic field inside the sphere expand as sums of spherical harmonics with radial functions chosen to satisfy the interior equations and boundary conditions.",
+    "technical_interpretation": "The radial and tangential components of the magnetic field inside the sphere expand as sums of spherical harmonics with radial functions chosen to satisfy the interior equations and boundary conditions."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "B(r,\\theta,\\phi)=\\sum_{\\ell=0}^{\\infty}\\sum_{m=-\\ell}^{\\ell} a_{\\ell m}(r)\\,Y_{\\ell}^{m}(\\theta,\\phi)",
+      "a_{\\ell m}(r)=\\int_{S^2} B(r,\\theta,\\phi)\\,\\overline{Y_{\\ell}^{m}(\\theta,\\phi)}\\,d\\Omega"
+    ],
+    "source_section_latex": "\\[\nB(r,\\theta,\\phi)=\\sum_{\\ell=0}^{\\infty}\\sum_{m=-\\ell}^{\\ell} a_{\\ell m}(r)\\,Y_{\\ell}^{m}(\\theta,\\phi)\n\\]\n\\[\na_{\\ell m}(r)=\\int_{S^2} B(r,\\theta,\\phi)\\,\\overline{Y_{\\ell}^{m}(\\theta,\\phi)}\\,d\\Omega\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Field Expansion",
+      "formula_latex_blocks": [
+        "B(r,\\theta,\\phi)=\\sum_{\\ell=0}^{\\infty}\\sum_{m=-\\ell}^{\\ell} a_{\\ell m}(r)\\,Y_{\\ell}^{m}(\\theta,\\phi)"
+      ],
+      "interpretive_role": "This fixes the angular decomposition of the carrier field into spherical harmonics."
+    },
+    {
+      "step": 2,
+      "component_title": "Modal Coefficients",
+      "formula_latex_blocks": [
+        "a_{\\ell m}(r)=\\int_{S^2} B(r,\\theta,\\phi)\\,\\overline{Y_{\\ell}^{m}(\\theta,\\phi)}\\,d\\Omega"
+      ],
+      "interpretive_role": "This extracts the radial mode coefficients from the angular field profile."
+    },
+    {
+      "step": 3,
+      "component_title": "Angular Basis",
+      "formula_latex_blocks": [
+        "int_{S^2}Y_{\\ell}^{m}\\overline{Y_{\\ell'}^{m'}}\\,d\\Omega=\\delta_{\\ell\\ell'}\\delta_{mm'}"
+      ],
+      "interpretive_role": "This closes the entry with the orthogonality law that makes the modal decomposition admissible."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{\\ell=0}^{\\infty}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{m=-\\ell}^{\\ell}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\ell$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{S^2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\overline$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\delta_{\\ell\\ell'}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\delta_{mm'}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B(r,\\theta,\\phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Y_{\\ell}^{m}(\\theta,\\phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Y_{\\ell}^{m}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Y_{\\ell'}^{m'}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a_{\\ell m}(r)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Spherical Harmonic Expansion\nCanonical operator translation\neq0375_1 = HoldForm[B(r,,)==Sum==0^(Infinity)Summ==-^() a m(r) Y^(m)(,)];\neq0375_2 = HoldForm[a m(r)==IntegrateS^2 B(r,,) (Y^(m)(,)) dOmega];\n\nTRAWIN closure composition\nTRAWINClosure0375[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0375 := HoldForm[{eq0375_1, eq0375_2}];\nResult0375 := TRAWINClosure0375[K0375];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "B(r,\\theta,\\phi)=\\sum_{\\ell=0}^{\\infty}\\sum_{m=-\\ell}^{\\ell} a_{\\ell m}(r)\\,Y_{\\ell}^{m}(\\theta,\\phi)",
+          "normalized_latex": "B[r,theta,phi]==SumEll0^(Infinity)SumMell^(ell)aEllm[r]*YEll^(m)Pair[theta,phi]",
+          "wolfram_input": "B[r,theta,phi]==SumEll0^(Infinity)SumMell^(ell)aEllm[r]*YEll^(m)Pair[theta,phi]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B[r, theta, phi] == SumEll0^Infinity*SumMell^ell*aEllm[r]*YEll^m*Pair[theta, phi]]",
+          "texform_roundtrip": "B(r,\\theta ,\\phi )=\\text{Indeterminate}",
+          "messages": []
+        },
+        {
+          "latex": "a_{\\ell m}(r)=\\int_{S^2} B(r,\\theta,\\phi)\\,\\overline{Y_{\\ell}^{m}(\\theta,\\phi)}\\,d\\Omega",
+          "normalized_latex": "aEllm[r]==IntegralS2*B[r,theta,phi]overline[YEll^(m)Pair[theta,phi]]dOmega",
+          "wolfram_input": "aEllm[r]==IntegralS2*B[r,theta,phi]overline[YEll^(m)Pair[theta,phi]]dOmega",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[aEllm[r] == IntegralS2*B[r, theta, phi]*overline[YEll^m*Pair[theta, phi]]*dOmega]",
+          "texform_roundtrip": "\\text{aEllm}(r)=\\text{dOmega} \\text{IntegralS2} B(r,\\theta ,\\phi ) \\text{overline}\\left(\\text{YEll}^m \\text{Pair}(\\theta ,\\phi )\\right)",
+          "messages": []
+        },
+        {
+          "latex": "int_{S^2}Y_{\\ell}^{m}\\overline{Y_{\\ell'}^{m'}}\\,d\\Omega=\\delta_{\\ell\\ell'}\\delta_{mm'}",
+          "normalized_latex": "intS2*YEll^(m)overline[YEll^(m')]dOmega==DiracDeltaEllellDiracDeltaMm",
+          "wolfram_input": "intS2*YEll^(m)overline[YEll^(m')]dOmega==DiracDeltaEllellDiracDeltaMm",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[intS2*YEll^m*overline[YEll^Derivative[1][m]]*dOmega == DiracDeltaEllellDiracDeltaMm]",
+          "texform_roundtrip": "\\text{dOmega} \\text{intS2} \\text{YEll}^m \\text{overline}\\left(\\text{YEll}^{m'}\\right)=\\text{DiracDeltaEllellDiracDeltaMm}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0375 generated source-truth Wolfram model *)\nClearAll[K0375, TRAWINClosure0375];\neq0375$1 = HoldForm[B[r, theta, phi] == SumEll0^Infinity*SumMell^ell*aEllm[r]*YEll^m*Pair[theta, phi]];\neq0375$2 = HoldForm[aEllm[r] == IntegralS2*B[r, theta, phi]*overline[YEll^m*Pair[theta, phi]]*dOmega];\neq0375$3 = HoldForm[intS2*YEll^m*overline[YEll^Derivative[1][m]]*dOmega == DiracDeltaEllellDiracDeltaMm];\nK0375 = HoldForm[{eq0375$1, eq0375$2, eq0375$3}];\nTRAWINClosure0375[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0375 = TRAWINClosure0375[K0375];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equations.}\n\\begin{equation}\n\\Delta U = Q+W .\n\\end{equation}\n\n\\begin{equation}\n\\Delta S\n\\geq\n\\frac{Q}{T_{\\mathrm{eff}}}\n+\n\\Sigma_{\\mathrm{TZP}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nThe first-law balance writes the change in internal energy as heat plus work:\n\\begin{equation}\n\\Delta U=Q+W .\n\\end{equation}\n\nEntropy change is bounded below by heat exchange over an effective temperature:\n\\begin{equation}\n\\Delta S\\geq \\frac{Q}{T_{\\mathrm{eff}}}.\n\\end{equation}\n\nThe TRAWIN correction includes an irreducible zero-point contribution $\\Sigma_{\\mathrm{TZP}}$, producing\n\\begin{equation}\n\\boxed{\n\\Delta S\n\\geq\n\\frac{Q}{T_{\\mathrm{eff}}}\n+\n\\Sigma_{\\mathrm{TZP}} .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nQuantum thermodynamics links energy balance, entropy production, effective temperature, and zero-point correction.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0375/ID0375.source_truth.json",
+    "entry_id": "ID0375",
+    "registry_id": "registry_id_0375",
+    "canonical_title": "Spherical Harmonic Expansion",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0375/ID0375.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7c10e7d8-64de-5fab-a5a1-e6390aa7ccdb",
+    "RTEID": "RTE:P1456.2083:T2.3994",
+    "poloidal_theta_rad": "1456.2083",
+    "toroidal_phi_rad": "2.3994",
+    "rteid_source": "manifest",
+    "PiID": "4665213841469",
+    "TZPi": "3",
+    "PiPE_position": "382",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "B(r,\\theta,\\phi)=\\sum_{\\ell=0}^{\\infty}\\sum_{m=-\\ell}^{\\ell} a_{\\ell m}(r)\\,Y_{\\ell}^{m}(\\theta,\\phi)",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "phi",
+          "sum",
+          "ell",
+          "B",
+          "r",
+          "m",
+          "a",
+          "Y"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0375\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Spherical Harmonic Expansion\", \"latex\" -> \"B(r,\\\\theta,\\\\phi)=\\\\sum_{\\\\ell=0}^{\\\\infty}\\\\sum_{m=-\\\\ell}^{\\\\ell} a_{\\\\ell m}(r)\\\\,Y_{\\\\ell}^{m}(\\\\theta,\\\\phi)\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"theta\", \"phi\", \"sum\", \"ell\", \"B\", \"r\", \"m\", \"a\", \"Y\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "a_{\\ell m}(r)=\\int_{S^2} B(r,\\theta,\\phi)\\,\\overline{Y_{\\ell}^{m}(\\theta,\\phi)}\\,d\\Omega",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "ell",
+          "int",
+          "theta",
+          "phi",
+          "overline",
+          "Omega",
+          "a",
+          "m",
+          "r",
+          "S",
+          "B",
+          "Y",
+          "d"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0375\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Spherical Harmonic Expansion\", \"latex\" -> \"a_{\\\\ell m}(r)=\\\\int_{S^2} B(r,\\\\theta,\\\\phi)\\\\,\\\\overline{Y_{\\\\ell}^{m}(\\\\theta,\\\\phi)}\\\\,d\\\\Omega\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"ell\", \"int\", \"theta\", \"phi\", \"overline\", \"Omega\", \"a\", \"m\", \"r\", \"S\", \"B\", \"Y\", \"d\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,226 @@
+\tzpanchor{0117}
+\tzpentryheader{0117}{Spin-Coherence Order Parameter}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{53c3c0cf-601b-54c8-b821-de82139c09d8}}\\
+\textbf{PiID} & \tzpcode{6470938446095} & \textbf{TZPi}\quad \tzpcode{8}\quad \textbf{PiPE}\quad \tzpcode{124}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{454.3370 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.7486 rad}\\
+\textbf{TZPID} & \tzpcode{ID0117} & \textbf{Node Dependencies}\quad \tzpidref{0116}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0117} & \textbf{Scale}\quad ensemble phase coherence\\
+\textbf{LOC Classification} & QA371 nonlinear oscillators & QA276 statistical analysis\\
+\textbf{arXiv Classification} & Primary: nlin.AO \quad Cross-list: cond-mat.stat-mech, astro-ph.EP & \\
+\textbf{Primary Support} & Complex Mean Phase & Coherence Magnitude\\
+\textbf{Closure Support} & Collective Phase & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+This order parameter quantifies how aligned the planetary spins become under the Kuramoto model.
+
+\tzpsection{Canonical Equation}
+\[
+r e^{i\psi} = \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}
+\]
+\[
+r = \left|\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right|
+\]
+\[
+\psi = \arg\!\left(\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $\theta_j$: source equation symbol.
+    \item $e_T$: exponential damping factor encoding potential-induced suppression.
+    \item $\psi$: source equation symbol.
+    \item $\theta$: phase angle or local angular coordinate.
+    \item $\arg$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0117 generated source Wolfram model *)
+ClearAll[K0117, Cr0117, T, R, A, W, I, N];
+eq0117$1 = HoldForm[r*Exp[I*psi] == (1/N)*SumJ1^N*Exp[I*thetaJ]];
+eq0117$2 = HoldForm[r == Abs[(1/N)*SumJ1^N*Exp[I*thetaJ]]];
+eq0117$3 = HoldForm[psi == arg[(1/N)*SumJ1^N*Exp[I*thetaJ]]];
+
+K0117 = HoldForm[{eq0117$1, eq0117$2, eq0117$3}];
+
+N = "normalized TRAWIN closure object for Spin-Coherence Order Parameter";
+I = "Collective Phase integration/comparison layer";
+W = "Coherence Magnitude wave or operator carrier";
+A = "Complex Mean Phase admissible action/amplitude condition";
+R = "Coherence Magnitude rotation/curl preservation layer";
+T = "Complex Mean Phase local source condition";
+
+Cr0117[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0117 = Cr0117[K0117];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Complex Mean Phase local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Coherence Magnitude rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Complex Mean Phase admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Coherence Magnitude wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Collective Phase integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Spin-Coherence Order Parameter.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0117] Spin-Coherence Order Parameter}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+r e^{i\psi} = \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}
+\]
+\[
+r = \left|\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right|
+\]
+\[
+\psi = \arg\!\left(\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right)
+\]
+
+\paragraph{Primary Derivation.}
+This argument establishes the identity through direct evaluation of the expression. which confirms the stated equality.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+It pertains to the fields or functions just described. Within the TRAWIN framework, the equation functions as the generalized carrier for the entry’s information content. Within the CHL view, the derivation provides a certificate connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Spin-Coherence Order Parameter by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Complex Mean Phase}\par
+\[
+r e^{i\psi} = \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}
+\]
+\noindent This packages all planetary phases into one complex mean.\par
+\noindent\textbf{2. Coherence Magnitude}\par
+\[
+r = \left|\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right|
+\]
+\noindent This extracts the degree of alignment from that complex mean.\par
+\noindent\textbf{3. Collective Phase}\par
+\[
+\psi = \arg\!\left(\frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}\right)
+\]
+\noindent This closes the progression by recovering the shared mean angle of the ensemble.\par
+
+\clearpage
+\noindent\textbf{[ID 0117] Spin-Coherence Order Parameter}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Spin-Coherence Order Parameter is a Operator. Define the coherence measure r(k ) = (1/N)   | \_\{j=1\}\textasciicircum{}\{N\} exp(i  \_j(t))|.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Define the coherence measure r(k ) = (1/N)   | \_\{j=1\}\textasciicircum{}\{N\} exp(i  \_j(t))|.
+\textbf{Contextual meaning:} This order parameter quantifies how aligned the planetary spins become under the Kuramoto model.
+\textbf{Derivable consequences:} Source evidence records the entry as a reusable object whose consequences should be read from the matched formal statement and local proof route.
+\textbf{Lemma support:} Define the coherence measure r(k ) = (1/N)   | \_\{j=1\}\textasciicircum{}\{N\} exp(i  \_j(t))|.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+This order parameter quantifies how aligned the planetary spins become under the Kuramoto model.
+
+\tzpsection{Equation Grounding}
+Define the coherence measure r(k ) = (1/N)   | \_\{j=1\}\textasciicircum{}\{N\} exp(i  \_j(t))|.
+
+\tzpsection{Interpretive Role}
+This order parameter quantifies how aligned the planetary spins become under the Kuramoto model.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Complex Mean Phase}: The packaging of all planetary phases into one complex mean.
+\item \textbf{Coherence Magnitude}: The extraction of the degree of alignment from that complex mean.
+\item \textbf{Collective Phase}: The recovery of the shared mean angle of the ensemble.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0117]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0117_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0117] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Spin-Coherence Order Parameter}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} this order parameter quantifies how aligned the planetary spins become under the
+Kuramoto model
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Spin-Coherence Order Parameter is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0117_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

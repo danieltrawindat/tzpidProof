@@ -1,0 +1,393 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:45:35.840929+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0221",
+    "uuid": "37c8ef6e-4d86-558b-86c6-5b790219bcbc",
+    "registry_id": "registry_id_0221",
+    "canonical_title": "Hamiltonian-Induced Quantum Bifurcation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0221/ID0221.TEX",
+      "json": "D:/TZPID/TZPID/ID0221/ID0221.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0221/ID0221.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "For a unidirectional Hamiltonian H = hbar omega J\\_z and projection operators Pi\\_+/- = (+/- sigma\\_z)/2, the quantum bifurcation tensor is defined as B\\_+/-(t) = Tr(Pi\\_+/- U\\_t rho\\_0 U\\_t\\ensuremath{^\\dagger}) where U\\_t = exp(-i H t/hbar).",
+    "technical_interpretation": "For a unidirectional Hamiltonian H = hbar omega J\\_z and projection operators Pi\\_± = (± sigma\\_z)/2, the quantum bifurcation tensor is defined as B\\_±(t) = Tr(Pi\\_± U\\_t rho\\_0 U\\_t†) where U\\_t = exp(-i H t/hbar)."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H=\\hbar\\omega J_z",
+      "U_t=\\exp\\left(-\\frac{iHt}{\\hbar}\\right)"
+    ],
+    "source_section_latex": "\\[\nH=\\hbar\\omega J_z\n\\]\n\\[\nU_t=\\exp\\left(-\\frac{iHt}{\\hbar}\\right)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Energy Generator",
+      "formula_latex_blocks": [
+        "H=\\hbar\\omega J_z"
+      ],
+      "interpretive_role": "This gathers the free, interaction, and bridge sectors into one energy generator."
+    },
+    {
+      "step": 2,
+      "component_title": "State Evolution",
+      "formula_latex_blocks": [
+        "U_t=\\exp\\left(-\\frac{iHt}{\\hbar}\\right)"
+      ],
+      "interpretive_role": "This promotes the generator into the actual carrier of admissible state evolution."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Constraint",
+      "formula_latex_blocks": [
+        "B_{\\pm}(t)=\\operatorname{Tr}\\!\\left(\\Pi_{\\pm}U_t\\rho_0U_t^{\\dagger}\\right)"
+      ],
+      "interpretive_role": "This closes the entry by requiring compatibility with the normalization operator."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\exp$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(-\\frac{iHt}{\\hbar}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pm$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\Pi_{\\pm}U_t\\rho_0U_t^{\\dagger}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$U$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{\\pm}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(-\\frac{iHt}{\\hbar}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\Pi_{\\pm}U_t\\rho_0U_t^{\\dagger}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Hamiltonian-Induced Quantum Bifurcation\nCanonical operator translation\neq0221_1 = HoldForm[H==hbaromega J_z];\neq0221_2 = HoldForm[U_t==Exp(-(iHt)/(hbar))];\n\nTRAWIN closure composition\nTRAWINClosure0221[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0221 := HoldForm[{eq0221_1, eq0221_2}];\nResult0221 := TRAWINClosure0221[K0221];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "H=\\hbar\\omega J_z",
+          "normalized_latex": "H==hbaromega*JZ",
+          "wolfram_input": "H==hbaromega*JZ",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[H == hbaromega*JZ]",
+          "texform_roundtrip": "H=\\text{hbaromega} \\text{JZ}",
+          "messages": []
+        },
+        {
+          "latex": "U_t=\\exp\\left(-\\frac{iHt}{\\hbar}\\right)",
+          "normalized_latex": "UT==exp[-((iHt)/(hbar))]",
+          "wolfram_input": "UT==exp[-((iHt)/(hbar))]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[UT == exp[-(iHt/hbar)]]",
+          "texform_roundtrip": "\\text{UT}=\\exp \\left(-\\frac{\\text{iHt}}{\\text{hbar}}\\right)",
+          "messages": []
+        },
+        {
+          "latex": "B_{\\pm}(t)=\\operatorname{Tr}\\!\\left(\\Pi_{\\pm}U_t\\rho_0U_t^{\\dagger}\\right)",
+          "normalized_latex": "BPlusMinus[t]==Tr[PiPlusMinusUTrho0*U_t^(Dagger)]",
+          "wolfram_input": "BPlusMinus[t]==Tr[PiPlusMinusUTrho0*U_t^(Dagger)]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BPlusMinus[t] == Tr[PiPlusMinusUTrho0*(U_t)^Dagger]]",
+          "texform_roundtrip": "\\text{BPlusMinus}(t)=\\text{Tr}\\left[\\text{PiPlusMinusUTrho0} \\text{U$\\_$t}{}^{\\text{Dagger}}\\right]",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0221 generated source-truth Wolfram model *)\nClearAll[K0221, TRAWINClosure0221];\neq0221$1 = HoldForm[H == hbaromega*JZ];\neq0221$2 = HoldForm[UT == exp[-(iHt/hbar)]];\neq0221$3 = HoldForm[BPlusMinus[t] == Tr[PiPlusMinusUTrho0*(U_t)^Dagger]];\nK0221 = HoldForm[{eq0221$1, eq0221$2, eq0221$3}];\nTRAWINClosure0221[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0221 = TRAWINClosure0221[K0221];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right]\n\\in\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $F$ be the curvature two-form of a principal $U(1)$ bundle over the punctured manifold $M\\setminus\\{p\\}$.\n\nFor a $U(1)$ bundle, the first characteristic class is obtained by normalizing curvature by $2\\pi$:\n\n\\begin{equation}\n\\frac{1}{2\\pi}F .\n\\end{equation}\n\nTaking the cohomology class gives:\n\n\\begin{equation}\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right].\n\\end{equation}\n\nSince the TZP is removed from the base space, the class naturally lives in:\n\n\\begin{equation}\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n\\end{equation}\n\nThus,\n\n\\begin{equation}\n\\boxed{\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right]\n\\in\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Trawin characteristic class records the topological charge generated by removing the TZP from the manifold.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0221/ID0221.source_truth.json",
+    "entry_id": "ID0221",
+    "registry_id": "registry_id_0221",
+    "canonical_title": "Hamiltonian-Induced Quantum Bifurcation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0221/ID0221.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "37c8ef6e-4d86-558b-86c6-5b790219bcbc",
+    "RTEID": "RTE:P858.1921:T1.4140",
+    "poloidal_theta_rad": "858.1921",
+    "toroidal_phi_rad": "1.4140",
+    "rteid_source": "manifest",
+    "PiID": "8475648233786",
+    "TZPi": "8",
+    "PiPE_position": "228",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "H=\\hbar\\omega J_z",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "hbar",
+          "omega",
+          "H",
+          "J",
+          "z"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0221\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Hamiltonian-Induced Quantum Bifurcation\", \"latex\" -> \"H=\\\\hbar\\\\omega J_z\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"hbar\", \"omega\", \"H\", \"J\", \"z\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "U_t=\\exp\\left(-\\frac{iHt}{\\hbar}\\right)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "exp",
+          "hbar",
+          "U",
+          "t"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0221\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Hamiltonian-Induced Quantum Bifurcation\", \"latex\" -> \"U_t=\\\\exp\\\\left(-\\\\frac{iHt}{\\\\hbar}\\\\right)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"exp\", \"hbar\", \"U\", \"t\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

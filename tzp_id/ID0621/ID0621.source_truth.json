@@ -1,0 +1,396 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:18:57.660883+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0621",
+    "uuid": "d0f20b0c-fae4-55c3-9ea0-de7e7defcf22",
+    "registry_id": "registry_id_0621",
+    "canonical_title": "MAGNETIC FIELD RAMP-UP",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0621/ID0621.TEX",
+      "json": "D:/TZPID/TZPID/ID0621/ID0621.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0621/ID0621.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records magnetic field ramp-up through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "B(t) = int\\_0\\textasciicircum{}t dot\\{B\\} \\{ramp\\} dt implies B \\{target\\} approximately 0.1 text\\{ Tesla\\}"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "c_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z}).",
+      "\\frac{1}{2\\pi}F.",
+      "c_T = \\left[ \\frac{1}{2\\pi}F \\right]."
+    ],
+    "source_section_latex": "\\[\nc_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z}).\n\\]\n\\[\n\\frac{1}{2\\pi}F.\n\\]\n\\[\nc_T = \\left[ \\frac{1}{2\\pi}F \\right].\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Aggregate Relation",
+      "formula_latex_blocks": [
+        "c_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z})."
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Support Relation",
+      "formula_latex_blocks": [
+        "\\frac{1}{2\\pi}F."
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "c_T = \\left[ \\frac{1}{2\\pi}F \\right]."
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0621}$",
+        "description": "canonical registry object for entry ID 0621."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0621}$",
+        "name": "canonical registry object for entry ID 0621.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\setminus$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbb$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Z$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "MAGNETIC FIELD RAMP-UP\nCanonical operator translation\neq0621_1 = HoldForm[c_T == [ (1)/(2)F ] H^2(M\\(p\\),(Z))];\neq0621_2 = HoldForm[(1)/(2)F];\neq0621_3 = HoldForm[c_T == [ (1)/(2)F ]];\n\nTRAWIN closure composition\nTRAWINClosure0621[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0621 := HoldForm[{eq0621_1, eq0621_2, eq0621_3}];\nResult0621 := TRAWINClosure0621[K0621];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "c_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z}).",
+          "normalized_latex": "c_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z}).",
+          "wolfram_input": "Element[cT==TZPGroup[((1)/(2*Pi))F],H^2*Tuple[MsetminusList[p],Z]]",
+          "normalization_notes": [
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[cT == TZPGroup[(1/(2*Pi))*F], H^2*Tuple[MsetminusList[p], Z]]]",
+          "texform_roundtrip": "\\text{cT}=\\text{TZPGroup}\\left(\\frac{F}{2 \\pi }\\right)\\in H^2 \\text{Tuple}(\\text{MsetminusList}(p),Z)",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{1}{2\\pi}F.",
+          "normalized_latex": "((1)/(2*Pi))F",
+          "wolfram_input": "((1)/(2*Pi))F",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(1/(2*Pi))*F]",
+          "texform_roundtrip": "\\frac{F}{2 \\pi }",
+          "messages": []
+        },
+        {
+          "latex": "c_T = \\left[ \\frac{1}{2\\pi}F \\right].",
+          "normalized_latex": "cT==TZPGroup[((1)/(2*Pi))F]",
+          "wolfram_input": "cT==TZPGroup[((1)/(2*Pi))F]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[cT == TZPGroup[(1/(2*Pi))*F]]",
+          "texform_roundtrip": "\\text{cT}=\\text{TZPGroup}\\left(\\frac{F}{2 \\pi }\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0621 generated source-truth Wolfram model *)\nClearAll[K0621, TRAWINClosure0621];\neq0621$1 = HoldForm[Element[cT == TZPGroup[(1/(2*Pi))*F], H^2*Tuple[MsetminusList[p], Z]]];\neq0621$2 = HoldForm[(1/(2*Pi))*F];\neq0621$3 = HoldForm[cT == TZPGroup[(1/(2*Pi))*F]];\nK0621 = HoldForm[{eq0621$1, eq0621$2, eq0621$3}];\nTRAWINClosure0621[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0621 = TRAWINClosure0621[K0621];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right]\n\\in\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $F$ be the curvature two-form of a principal $U(1)$ bundle over the punctured manifold $M\\setminus\\{p\\}$.\n\nFor a $U(1)$ bundle, the first characteristic class is obtained by normalizing curvature by $2\\pi$:\n\n\\begin{equation}\n\\frac{1}{2\\pi}F .\n\\end{equation}\n\nTaking the cohomology class gives:\n\n\\begin{equation}\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right].\n\\end{equation}\n\nSince the TZP is removed from the base space, the class naturally lives in:\n\n\\begin{equation}\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n\\end{equation}\n\nThus,\n\n\\begin{equation}\n\\boxed{\nc_T\n=\n\\left[\n\\frac{1}{2\\pi}F\n\\right]\n\\in\nH^2(M\\setminus\\{p\\},\\mathbb{Z}) .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Trawin characteristic class records the topological charge generated by removing the TZP from the manifold.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0621/ID0621.source_truth.json",
+    "entry_id": "ID0621",
+    "registry_id": "registry_id_0621",
+    "canonical_title": "MAGNETIC FIELD RAMP-UP",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0621/ID0621.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "d0f20b0c-fae4-55c3-9ea0-de7e7defcf22",
+    "RTEID": "RTE:P2388.1816:T3.9350",
+    "poloidal_theta_rad": "2388.1816",
+    "toroidal_phi_rad": "3.9350",
+    "rteid_source": "manifest",
+    "PiID": "7857713427577",
+    "TZPi": "3",
+    "PiPE_position": "628",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "c_T = \\left[ \\frac{1}{2\\pi}F \\right] \\in H^2(M\\setminus\\{p\\},\\mathbb{Z}).",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "in",
+          "setminus",
+          "mathbb",
+          "c",
+          "T",
+          "F",
+          "H",
+          "M",
+          "p"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0621\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"MAGNETIC FIELD RAMP-UP\", \"latex\" -> \"c_T = \\\\left[ \\\\frac{1}{2\\\\pi}F \\\\right] \\\\in H^2(M\\\\setminus\\\\{p\\\\},\\\\mathbb{Z}).\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"Pi\", \"in\", \"setminus\", \"mathbb\", \"c\", \"T\", \"F\", \"H\", \"M\", \"p\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\frac{1}{2\\pi}F.",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "F"
+        ],
+        "candidate_wolfram_input": "HoldForm[((1)/(2Pi))F]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0621\", 2, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"MAGNETIC FIELD RAMP-UP\", \"latex\" -> \"\\\\frac{1}{2\\\\pi}F.\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"Pi\", \"F\"}, \"candidateWolframInput\" -> \"HoldForm[((1)/(2Pi))F]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "c_T = \\left[ \\frac{1}{2\\pi}F \\right].",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "c",
+          "T",
+          "F"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0621\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"MAGNETIC FIELD RAMP-UP\", \"latex\" -> \"c_T = \\\\left[ \\\\frac{1}{2\\\\pi}F \\\\right].\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"Pi\", \"c\", \"T\", \"F\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

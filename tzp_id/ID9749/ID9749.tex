@@ -1,0 +1,17 @@
+\section*{ID9749: Cohomological Exactness and Hodge Decomposition: Δ}
+\paragraph{Metadata.}
+PiID: 5706587488225 | RTEID: RTE:P37857.5320:T5.8289 | UUID: b58c0668-045e-5c84-bdcd-64f8ec1e8807
+
+\paragraph{Canonical Statement.}
+[ \textbackslash{}Omega\textasciicircum{}0(M)\textbackslash{}xrightarrow\{d\} \textbackslash{}Omega\textasciicircum{}1(M)\textbackslash{}xrightarrow\{d\}\textbackslash{}Omega\textasciicircum{}2(M)\textbackslash{}xrightarrow\{d\}\textbackslash{}Omega\textasciicircum{}3(M), \textbackslash{}] with adjoint sequence via codifferentials \$\textbackslash{}delta = \textbackslash{}pm\textbackslash{}star d\textbackslash{}star\$. Exactness (\$\textbackslash{}ker d\_k=\textbackslash{}mathrm\{im\}\textbackslash{},d\_\{k-1\}\$, \$\textbackslash{}ker\textbackslash{}delta\_k=\textbackslash{}mathrm\{im\}\textbackslash{},\textbackslash{}delta\_\{k+1\}\$) yields the Hodge decomposition: for any \$k\$-form \$\textbackslash{}omega\$, \textbackslash{}[ \textbackslash{}omega = d\textbackslash{}alpha + \textbackslash{}delta\textbackslash{}beta + \textbackslash{}mathcal\{H\}\textasciicircum{}k,\textbackslash{}quad \textbackslash{}Delta\textbackslash{}mathcal\{H\}\textasciicircum{}k=0. \textbackslash{}] In our case, \$\textbackslash{}mathbf\{B\}\$ is a 2-form and \$\textbackslash{}mathbf\{A\}\$ a 1-form. In Coulomb gauge, we invert \$d\textbackslash{}mathbf\{A\}=\textbackslash{}mathbf\{B\}\$ by using \$\textbackslash{}delta\$. Concretely, \textbackslash{}[ \textbackslash{}mathbf\{A\} = \textbackslash{}delta(\textbackslash{}Delta\textasciicircum{}\{-1\}\textbackslash{}mathbf\{B\}), \textbackslash{}] with \$\textbackslash{}Delta = d\textbackslash{}delta + \textbackslash{}delta d\$. In code: \textbackslash{}begin\{verbatim\} InverseDifferentialForm[ω\_k\_, k\_] := PseudoInverse[ExteriorDerivative[k], Method -> "HodgeLaplacian"] @ ω\_k \textbackslash{}end\{verbatim\} This provides a unique (up to gauge) \$\textbackslash{}mathbf\{A\}\$ for any closed \$\textbackslash{}mathbf\{B\}\$.
+
+\paragraph{Canonical Equation.}
+\[
+\Delta = d\delta + \delta d
+\]
+
+\paragraph{Dictionary.}
+Cohomological Exactness and Hodge Decomposition: Δ — Δ = dδ + δ d
+
+\paragraph{Encyclopedia.}
+Cohomological Exactness and Hodge Decomposition: Δ is an algebraic definition, written Δ = dδ + δ d. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from δ, defining Δ. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

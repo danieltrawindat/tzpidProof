@@ -1,0 +1,99 @@
+{
+  "certificate": "GEOMETRY_CURVATURE_CARRIERS_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:58+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Representative numerical certificate for geometry/curvature carrier algebra; the universal contracts are checked in Isabelle/HOL.",
+  "equations": {
+    "curvature_response": "observed = coupling * curvature",
+    "response_residual": "observed - coupling*curvature = 0",
+    "nonnegative_response": "coupling >= 0 and curvature >= 0 imply response >= 0",
+    "manifold_closeout": "curvature - curvature = 0"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "curvature_coupling_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "unit_curvature_response",
+      "role": "Unit coupling and positive curvature.",
+      "coupling": 1.0,
+      "curvature": 2.5
+    },
+    {
+      "name": "zero_curvature_boundary",
+      "role": "Zero curvature boundary still closes the residual.",
+      "coupling": 3.0,
+      "curvature": 0.0
+    },
+    {
+      "name": "large_coupling_positive_response",
+      "role": "Larger coupling produces a nonnegative proportional response.",
+      "coupling": 12.0,
+      "curvature": 0.125
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "unit_curvature_response",
+      "role": "Unit coupling and positive curvature.",
+      "tolerance": 2.5e-12,
+      "status": "pass",
+      "response_residual_zero": "pass",
+      "response_nonnegative": 1,
+      "coupling_margin_nonnegative": "pass",
+      "curvature_margin_nonnegative": "pass",
+      "manifold_closeout_residual_zero": "pass",
+      "coupling": 1.0,
+      "curvature": 2.5,
+      "observed": 2.5,
+      "response": 2.5,
+      "response_residual": 0.0,
+      "coupling_margin": 1.0,
+      "curvature_margin": 2.5,
+      "manifold_closeout_residual": 0.0
+    },
+    {
+      "scenario": "zero_curvature_boundary",
+      "role": "Zero curvature boundary still closes the residual.",
+      "tolerance": 1e-12,
+      "status": "pass",
+      "response_residual_zero": "pass",
+      "response_nonnegative": 1,
+      "coupling_margin_nonnegative": "pass",
+      "curvature_margin_nonnegative": "pass",
+      "manifold_closeout_residual_zero": "pass",
+      "coupling": 3.0,
+      "curvature": 0.0,
+      "observed": 0.0,
+      "response": 0.0,
+      "response_residual": 0.0,
+      "coupling_margin": 3.0,
+      "curvature_margin": 0.0,
+      "manifold_closeout_residual": 0.0
+    },
+    {
+      "scenario": "large_coupling_positive_response",
+      "role": "Larger coupling produces a nonnegative proportional response.",
+      "tolerance": 1.5e-12,
+      "status": "pass",
+      "response_residual_zero": "pass",
+      "response_nonnegative": 1,
+      "coupling_margin_nonnegative": "pass",
+      "curvature_margin_nonnegative": "pass",
+      "manifold_closeout_residual_zero": "pass",
+      "coupling": 12.0,
+      "curvature": 0.125,
+      "observed": 1.5,
+      "response": 1.5,
+      "response_residual": 0.0,
+      "coupling_margin": 12.0,
+      "curvature_margin": 0.125,
+      "manifold_closeout_residual": 0.0
+    }
+  ],
+  "grid_csv": "phase2_checks\\GEOMETRY_CURVATURE_CARRIERS_GRID.csv",
+  "status": "pass"
+}

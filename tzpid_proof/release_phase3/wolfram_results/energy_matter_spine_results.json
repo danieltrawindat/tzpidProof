@@ -1,0 +1,27 @@
+[
+	{
+		"id":"ID10165",
+		"check":"em_regularization_finite",
+		"status":"pass",
+		"engine":"WolframScript",
+		"naive_integral":"Integrate[k, {k, 0, Infinity}, Assumptions -> k >= 0]",
+		"regularized_integral":"Lambda^2",
+		"notes":"A simple exponential regulator makes the vacuum-mode integral finite while the naive integral is divergent."
+	},
+	{
+		"id":"ID0188",
+		"check":"em_creation_threshold",
+		"status":"pass",
+		"engine":"WolframScript",
+		"normalized_result":"True",
+		"notes":"The matter-onset switch is active exactly under the pressure-threshold assumption."
+	},
+	{
+		"id":"ID2846",
+		"check":"em_mass_energy_identity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_substitution":"0",
+		"notes":"The mass-energy identity has zero residual under E -> m c^2."
+	}
+]

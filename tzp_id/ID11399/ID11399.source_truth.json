@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11399",
+    "uuid": "49852864-d07e-593d-84e6-e1548ee60fff",
+    "registry_id": "registry_id_11399",
+    "piid": "PiID-11399-portal-equilibrium",
+    "canonical_title": "Portal Gravity Force Component",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11399\\ID11399.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The gravity component in the portal force model is mass times gravitational acceleration.",
+    "technical_interpretation": "This is a standard component of the portal force-vector model. It is a modeling carrier, not a new gravitational law.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F_{g}=mg"
+    ],
+    "source_section_latex": "F_{g}=mg"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Portal Gravity Force Component",
+          "wolfram": "Fg == m*g",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Portal_Force_Component",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11399",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

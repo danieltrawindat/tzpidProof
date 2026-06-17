@@ -1,0 +1,66 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Lean/Rocq/Coq generated build artifacts
+*.olean
+*.ilean
+*.vo
+*.vos
+*.vok
+*.glob
+*.aux
+.lia.cache
+
+# LaTeX generated build artifacts
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Secrets / private machine state
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets/
+private/
+
+# Local model/cache material. Keep scripts and reports, but do not commit model
+# weights or vendor caches accidentally.
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+models/
+ollama/
+.cache/
+
+# Temporary render/check artifacts
+*_page1.png
+*_page6.png
+*_source_theory_page.png
+tmp/
+temp/
+
+# Keep proof/certificate data files, including .h5/.hdf5 and .zip archives,
+# unless a later release pass intentionally moves them to external storage.

@@ -1,0 +1,793 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-04T17:24:07.078099+00:00",
+    "non_destructive": false,
+    "source": "tier_a_filled_naming_worklist",
+    "content_cleanup_at": "2026-06-04T17:25:57.340297+00:00"
+  },
+  "identity": {
+    "tzpid": "ID5816",
+    "uuid": "52e94c66-e12e-5c12-a344-e351d92098d1",
+    "registry_id": "registry_id_5816",
+    "piid": "PiID-5816-564ba6c4ac63",
+    "piid_short": "PiID-5816",
+    "canonical_title": "Unifiedfieldsolver Potential Energy Definition",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID5816/ID5816.TEX",
+      "json": "D:/TZPID/TZPID/ID5816/ID5816.JSON",
+      "source_truth": "D:/TZPID/TZPID/ID5816/ID5816.source_truth.json",
+      "id_system": "D:/TZPIDProof/tzp_id/ID5816/ID5816.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "QC - Physics: plasma and electromagnetic fields",
+    "arxiv_class": "physics.plasm-ph",
+    "arxiv_secondary_classes": [
+      "astro-ph.SR",
+      "math-ph"
+    ],
+    "category": "equation-source-intake",
+    "discipline": "physics",
+    "classification_method": "deterministic_keyword_heuristic_requires_review",
+    "piid_metadata": {
+      "piid": "PiID-5816-564ba6c4ac63",
+      "piid_short": "PiID-5816",
+      "volume_family": "post-denary-intake-59",
+      "local_sequence": "16",
+      "method": "deterministic_uuid5_from_tzpid_title_equation"
+    }
+  },
+  "theory": {
+    "canonical_statement": "ID5816 records Unifiedfieldsolver Potential Energy Definition as a source-extracted canonical equation.",
+    "technical_interpretation": "The entry preserves the equation exactly as extracted from `00_Engine\\Lemma-Maker\\Prism\\unified_field_theory_paper_centerpetal.tex` for registry alignment and later derivation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}"
+    ],
+    "source_section_latex": "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}"
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "canonical_equation_symbols": [
+      {
+        "symbol": "$\\Association$",
+        "description": "LaTeX command “\\Association” (operator or named function)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\Association` extracted from the canonical equation.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_notes": "Multi-letter command; meaning depends on local usage.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\FiberBundle$",
+        "description": "LaTeX command “\\FiberBundle” (operator or named function)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\FiberBundle` extracted from the canonical equation.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_notes": "Multi-letter command; meaning depends on local usage.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\Module$",
+        "description": "Non-mathematical word swept in during extraction (not a symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\Module` extracted from the canonical equation.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Safe to ignore or delete from the key.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\mathbb$",
+        "description": "Blackboard-bold set symbol (ℤ/ℝ/ℂ …)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\mathbb` extracted from the canonical equation.",
+        "meaning_source": "Set symbol",
+        "meaning_confidence": "low",
+        "meaning_notes": "Specific set lost in extraction.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\omega$",
+        "description": "Angular frequency",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "angular frequency parameter in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\to$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\to` extracted from the canonical equation.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$A$",
+        "description": "Magnetic vector potential, amplitude, or area",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "vector potential, amplitude, or coefficient in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Amplitude$",
+        "description": "Descriptive label “Amplitude” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Amplitude` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$B$",
+        "description": "Magnetic field (magnetic flux density)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "magnetic field or magnetic induction variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "In this magnetics-heavy corpus, B is almost always the magnetic field.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Base$",
+        "description": "Descriptive label “Base” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Base` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$BoundaryConditions$",
+        "description": "Descriptive label “BoundaryConditions” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `BoundaryConditions` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$C$",
+        "description": "Capacitance or a constant of integration",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `C` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$D$",
+        "description": "Electric displacement field or diffusion coefficient",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `D` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$E$",
+        "description": "Electric field",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "electric field variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$EulerLagrange$",
+        "description": "Descriptive label “EulerLagrange” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `EulerLagrange` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Evolution$",
+        "description": "Descriptive label “Evolution” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Evolution` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$F$",
+        "description": "Force or field-strength tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `F` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Fiber$",
+        "description": "Descriptive label “Fiber” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Fiber` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Frequency$",
+        "description": "Descriptive label “Frequency” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Frequency` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$H$",
+        "description": "Hamiltonian",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "Hamiltonian, helicity, or energy-like functional symbol in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Helicity$",
+        "description": "Descriptive label “Helicity” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Helicity` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$L$",
+        "description": "Lagrangian, length, or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "length, Lagrangian, or angular momentum term in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$LagrangianDensity$",
+        "description": "Descriptive label “LagrangianDensity” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `LagrangianDensity` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$LegendreTransform$",
+        "description": "Descriptive label “LegendreTransform” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `LegendreTransform` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$M$",
+        "description": "Mass or magnetization",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "manifold, mass, magnetic, or index label in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$N$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `N` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$NDSolveValue$",
+        "description": "Descriptive label “NDSolveValue” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `NDSolveValue` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$O$",
+        "description": "Order symbol or a generic operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `O` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Observables$",
+        "description": "Descriptive label “Observables” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Observables` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$R$",
+        "description": "Radius, curvature scalar, or resistance",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "radius, scale, or characteristic length in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$S$",
+        "description": "Action or entropy",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `S` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$SO$",
+        "description": "Symbol “SO” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `SO` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$SU$",
+        "description": "Symbol “SU” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `SU` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$T$",
+        "description": "Temperature, period, kinetic energy, or stress tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "time, transformation, or operator label in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$U$",
+        "description": "Potential energy or unitary operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `U` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$UnifiedFieldSolver$",
+        "description": "Descriptive label “UnifiedFieldSolver” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `UnifiedFieldSolver` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$V$",
+        "description": "Volume or potential",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "volume or integration domain in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$b$",
+        "description": "Impact parameter, width, or coefficient",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `b` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$c$",
+        "description": "Speed of light in vacuum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave speed or speed-of-light scale in the canonical equation.",
+        "meaning_source": "Fundamental constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$f$",
+        "description": "Frequency or a generic function",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `f` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$v$",
+        "description": "Velocity or speed",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `v` appearing in the canonical equation for Unifiedfieldsolver Potential Energy Definition.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$y$",
+        "description": "Spatial coordinate (y-axis)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate or compact dimension variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\times$",
+        "description": "Vector cross product (or multiplication)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "cross-product or multiplication marker.",
+        "meaning_source": "Operation marker",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      }
+    ],
+    "extraction_method": "Wolfram Engine string-symbol extraction merged with source LaTeX symbol list",
+    "wolfram_engine": {
+      "tool": "wolframscript",
+      "commands": [
+        "\\begin",
+        "\\text",
+        "\\Module",
+        "\\left",
+        "\\mathcal",
+        "\\FiberBundle",
+        "\\to",
+        "\\times",
+        "\\mathbb",
+        "\\Association",
+        "\\omega",
+        "\\end",
+        "\\right"
+      ],
+      "variables": [
+        "UnifiedFieldSolver",
+        "M",
+        "L",
+        "H",
+        "Evolution",
+        "Observables",
+        "Base",
+        "SO",
+        "R",
+        "Fiber",
+        "U",
+        "SU",
+        "LagrangianDensity",
+        "LegendreTransform",
+        "NDSolveValue",
+        "EulerLagrange",
+        "BoundaryConditions",
+        "Helicity",
+        "Frequency",
+        "Amplitude",
+        "A"
+      ],
+      "constructs": [
+        "\\times"
+      ]
+    }
+  },
+  "source_evidence": {
+    "source_kind": "text_source",
+    "source_short": "00_Engine\\Lemma-Maker\\Prism\\unified_field_theory_paper_centerpetal.tex",
+    "source_path": "D:\\00_Engine\\Lemma-Maker\\Prism\\unified_field_theory_paper_centerpetal.tex",
+    "new_id_score": "100",
+    "title_method": "derived",
+    "title_review_flag": "False",
+    "promotion_status_before_apply": "awaiting_author_title_assignment"
+  },
+  "verification_handles": {
+    "formal_status": "source-equation-recorded",
+    "claim_strength": "source-equation-intake",
+    "equation_quality_status": "source_equation_present",
+    "equation_quality_flags": [],
+    "artifacts": {}
+  },
+  "audit": {
+    "created_by": "scripts/apply_tier_a_filled_names_to_tzpid_folders.py",
+    "created_at": "2026-06-04T17:24:07.078099+00:00",
+    "write_policy": "create_new_entry_folder_or_skip_existing_unless_overwrite",
+    "unrealized_section_cleanup": {
+      "removed_sections": [
+        "wolfram_form",
+        "derivation_layer",
+        "proof_support"
+      ],
+      "reason": "no generated Wolfram, derivation, or proof artifact is included until real source-backed content exists"
+    },
+    "wolfram_symbol_key_enrichment": {
+      "updated_at": "2026-06-04T17:33:41.065814+00:00",
+      "symbol_count": 43,
+      "method": "wolframscript_extract_commands_variables_constructs"
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID5816/ID5816.source_truth.json",
+    "entry_id": "ID5816",
+    "registry_id": "registry_id_5816",
+    "canonical_title": "Unifiedfieldsolver Potential Energy Definition",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID5816/ID5816.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "52e94c66-e12e-5c12-a344-e351d92098d1",
+    "RTEID": "RTE:P22584.8196:T5.7969",
+    "poloidal_theta_rad": "22584.8196",
+    "toroidal_phi_rad": "5.7969",
+    "rteid_source": "computed",
+    "PiID": "2690496520985",
+    "TZPi": "6",
+    "PiPE_position": "5823",
+    "loc_class": "QC - Physics: plasma and electromagnetic fields",
+    "arxiv_class": "physics.plasm-ph"
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}",
+          "normalized_latex": "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID5816\", 1, \"\\\\begin{equation} \\\\text{UnifiedFieldSolver} := \\\\Module\\\\left[\\\\begin{aligned} &\\\\{\\\\mathcal{M}, \\\\mathcal{L}, \\\\mathcal{H}, \\\\text{Evolution}, \\\\text{Observables}\\\\}, \\\\\\\\ &\\\\mathcal{M} = \\\\FiberBundle[\\\\text{Base} \\\\to SO(3) \\\\times \\\\mathbb{R}^3, \\\\text{Fiber} \\\\to U(1) \\\\times SU(2)]; \\\\\\\\ &\\\\mathcal{L} = \\\\text{LagrangianDensity}[\\\\mathcal{M}]; \\\\\\\\ &\\\\mathcal{H} = \\\\text{LegendreTransform}[\\\\mathcal{L}]; \\\\\\\\ &\\\\text{Evolution} = \\\\text{NDSolveValue}[\\\\text{EulerLagrange}[\\\\mathcal{L}], \\\\text{BoundaryConditions}]; \\\\\\\\ &\\\\text{Observables} = \\\\Association[\\\\text{Helicity} \\\\to \\\\mathcal{H}, \\\\text{Frequency} \\\\to \\\\omega, \\\\text{Amplitude} \\\\to A] \\\\end{aligned}\\\\right] \\\\end{equation}\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID5816 minted source-truth Wolfram carrier model *)\nClearAll[K5816, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq5816$1 = HoldForm[TZPIDCanonicalLatex[\"ID5816\", 1, \"\\\\begin{equation} \\\\text{UnifiedFieldSolver} := \\\\Module\\\\left[\\\\begin{aligned} &\\\\{\\\\mathcal{M}, \\\\mathcal{L}, \\\\mathcal{H}, \\\\text{Evolution}, \\\\text{Observables}\\\\}, \\\\\\\\ &\\\\mathcal{M} = \\\\FiberBundle[\\\\text{Base} \\\\to SO(3) \\\\times \\\\mathbb{R}^3, \\\\text{Fiber} \\\\to U(1) \\\\times SU(2)]; \\\\\\\\ &\\\\mathcal{L} = \\\\text{LagrangianDensity}[\\\\mathcal{M}]; \\\\\\\\ &\\\\mathcal{H} = \\\\text{LegendreTransform}[\\\\mathcal{L}]; \\\\\\\\ &\\\\text{Evolution} = \\\\text{NDSolveValue}[\\\\text{EulerLagrange}[\\\\mathcal{L}], \\\\text{BoundaryConditions}]; \\\\\\\\ &\\\\text{Observables} = \\\\Association[\\\\text{Helicity} \\\\to \\\\mathcal{H}, \\\\text{Frequency} \\\\to \\\\omega, \\\\text{Amplitude} \\\\to A] \\\\end{aligned}\\\\right] \\\\end{equation}\"]];\nK5816 = HoldForm[{eq5816$1}];\nTZPIDCanonicalCarrier[\"ID5816\"] = <|\"id\" -> \"ID5816\", \"title\" -> \"Unifiedfieldsolver Potential Energy Definition\", \"blocks\" -> K5816|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\begin{equation} \\text{UnifiedFieldSolver} := \\Module\\left[\\begin{aligned} &\\{\\mathcal{M}, \\mathcal{L}, \\mathcal{H}, \\text{Evolution}, \\text{Observables}\\}, \\\\ &\\mathcal{M} = \\FiberBundle[\\text{Base} \\to SO(3) \\times \\mathbb{R}^3, \\text{Fiber} \\to U(1) \\times SU(2)]; \\\\ &\\mathcal{L} = \\text{LagrangianDensity}[\\mathcal{M}]; \\\\ &\\mathcal{H} = \\text{LegendreTransform}[\\mathcal{L}]; \\\\ &\\text{Evolution} = \\text{NDSolveValue}[\\text{EulerLagrange}[\\mathcal{L}], \\text{BoundaryConditions}]; \\\\ &\\text{Observables} = \\Association[\\text{Helicity} \\to \\mathcal{H}, \\text{Frequency} \\to \\omega, \\text{Amplitude} \\to A] \\end{aligned}\\right] \\end{equation}",
+        "numeric_atoms": [
+          "3",
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Module",
+          "FiberBundle",
+          "mathbb",
+          "Association",
+          "omega",
+          "SO",
+          "U",
+          "SU",
+          "A"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID5816\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Unifiedfieldsolver Potential Energy Definition\", \"latex\" -> \"\\\\begin{equation} \\\\text{UnifiedFieldSolver} := \\\\Module\\\\left[\\\\begin{aligned} &\\\\{\\\\mathcal{M}, \\\\mathcal{L}, \\\\mathcal{H}, \\\\text{Evolution}, \\\\text{Observables}\\\\}, \\\\\\\\ &\\\\mathcal{M} = \\\\FiberBundle[\\\\text{Base} \\\\to SO(3) \\\\times \\\\mathbb{R}^3, \\\\text{Fiber} \\\\to U(1) \\\\times SU(2)]; \\\\\\\\ &\\\\mathcal{L} = \\\\text{LagrangianDensity}[\\\\mathcal{M}]; \\\\\\\\ &\\\\mathcal{H} = \\\\text{LegendreTransform}[\\\\mathcal{L}]; \\\\\\\\ &\\\\text{Evolution} = \\\\text{NDSolveValue}[\\\\text{EulerLagrange}[\\\\mathcal{L}], \\\\text{BoundaryConditions}]; \\\\\\\\ &\\\\text{Observables} = \\\\Association[\\\\text{Helicity} \\\\to \\\\mathcal{H}, \\\\text{Frequency} \\\\to \\\\omega, \\\\text{Amplitude} \\\\to A] \\\\end{aligned}\\\\right] \\\\end{equation}\", \"numericAtoms\" -> {3, 1, 2}, \"symbolicTokens\" -> {\"Module\", \"FiberBundle\", \"mathbb\", \"Association\", \"omega\", \"SO\", \"U\", \"SU\", \"A\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black]{hyperref}
+\hypersetup{
+  pdfauthor={Daniel Alexander Trawin},
+  pdfcreator={Trawin, Daniel Alexander},
+  pdftitle={The Spartan Dawn Test},
+  pdfsubject={TZPID Gold Spine Series II, Paper XII},
+  pdfkeywords={TZPID, Spartan Dawn Test, breathing hypersphere, CMB, BAO, supernovae, DOI:10.5281/zenodo.20723423}
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\LCDM}{$\Lambda$CDM}
+\newcommand{\OmK}{\Omega_K}
+\newcommand{\Mpc}{\mathrm{Mpc}}
+\newcommand{\Gpc}{\mathrm{Gpc}}
+\title{The Spartan Dawn Test:\\ Breathing Hypersphere versus the Static Cosmos against CMB, BAO, and Supernovae\\[0.6em]
+\large TZPID Gold Spine Series II, Paper XII of XX}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20723423}{10.5281/zenodo.20723423}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We confront the hyperspherical breathing-enclosure hypothesis with real cosmological data and let it fight for its life. The data are the Planck 2018 acoustic scale $100\theta_\star = 1.04109$, twelve DESI~DR2 baryon-acoustic-oscillation distances over $0.295 \le z \le 2.330$, and a Pantheon$^+$ supernova shape prior $\Omega_m = 0.334 \pm 0.018$, with the sound horizon fixed at the first-principles value of Paper XI, $r_d = 147.09\ \Mpc$. Four models are fit by $\chi^2$ minimization: flat \LCDM, closed \LCDM, flat $w_0w_a$CDM, and closed breathing $w_0w_a$CDM. The static closed hypersphere is rejected: given curvature as the only added freedom, the fit drifts to $\OmK = +0.004$ (faintly open) and the Akaike criterion does not justify the parameter ($\Delta\mathrm{AIC} = +0.31$). The breathing models are strongly favoured ($\Delta\chi^2 = -8.6$ and $-9.1$), recovering an evolving equation of state $w_0 \approx -0.6$, $w_a \approx -1.4$ crossing $w=-1$ near $z \approx 0.5$---the DESI evolving-dark-energy preference. The hypersphere is permitted but not forced: even the best closed fit pins $|\OmK| \lesssim 0.005$, $R_c \gtrsim 60\ \Gpc$. The honest verdict: the data do not kill the hot Big Bang---the sound-first ruler of Paper XI requires it---but they kill the static closed cosmos and wound the constant cosmological constant. Expansion-as-outward-motion is dethroned by duality: the atemporal breathing reading $H_0 = \dot R/R$ reproduces every distance. This is the empirical trial of ID10871, whose breathing term $F(a)$ now fits real data better than flat \LCDM, leaving the derivation of $F(a)$ (Papers XVI--XVII) as the central open obligation.
+\end{abstract}
+\section{Introduction: a child left in the wild}
+A hypothesis earns the right to be taken seriously by surviving contact with data it did not choose. The breathing-enclosure cosmology---in which the observed three-space is a closed $S^3$ whose radius $R(t)$ breathes, $H_0 = \dot R/R$ (ID10867)---makes claims the distance ladder can adjudicate. We fit it adversarially against flat \LCDM\ and the naive static closed universe, using an information criterion that penalizes added parameters. One version dies, another thrives, and the hot Big Bang turns out to be required by the framework's own first principle.
+\section{Two lenses on one observation}
+The temporal lens treats expansion as recession through time, $D_C(z) = c\int_0^z dz'/H(z')$. The atemporal hyperspherical lens treats redshift as a pure radius ratio $1+z = R_0/R$ and distances as fixed chords on $S^3$: $D_M(z) = R_0 \sin\chi(z)$, $H_0 = \dot R_0/R_0$.
+\begin{remark}[Duality]
+The two lenses are mathematically identical; no distance measurement distinguishes motion-through-time from geometric breathing. What data \emph{can} measure is the sign of curvature, through the $\sin\chi$ (closed), $\chi$ (flat), or $\sinh\chi$ (open) radial map. The framework's ontological claim costs nothing; the empirical question is whether the breathing is constant ($\Lambda$) or dynamic, and whether the enclosure curves closed.
+\end{remark}
+\section{Models and distance engine}
+With $E^2(z) = \Omega_r(1+z)^4 + \Omega_m(1+z)^3 + \OmK(1+z)^2 + \Omega_X F(z)$ and
+\begin{equation}
+F(z) = (1+z)^{3(1+w_0+w_a)}e^{-3 w_a z/(1+z)}, \qquad w(a) = w_0 + w_a(1-a),
+\end{equation}
+the curvature-aware distances are $D_M = (c/H_0\sqrt{|\OmK|})\sin(\sqrt{|\OmK|}\,H_0 D_C/c)$ for $\OmK<0$, $D_H = c/H(z)$, $D_V = (z D_M^2 D_H)^{1/3}$. The four models are nested: flat \LCDM, closed \LCDM, flat $w_0w_a$CDM, closed breathing.
+\section{Data and fit}
+Fifteen data points: twelve DESI~DR2 BAO distances ($D_M/r_d$, $D_H/r_d$, $D_V/r_d$ across BGS, LRG, ELG, QSO, Ly$\alpha$), the Planck acoustic scale $100\theta_\star = 1.04109 \pm 0.00030$, and the Pantheon$^+$ prior $\Omega_m = 0.334 \pm 0.018$; $r_d = 147.09\ \Mpc$ fixed. Minimization is by Nelder--Mead; $\mathrm{AIC} = \chi^2 + 2k$.
+\begin{table}[ht]\centering
+\caption{Four-model fit to fifteen real data points.}
+\label{tab:fit}
+\begin{tabular}{lrcrl}
+\toprule
+Model & $\chi^2$ & $k$ & $\Delta\mathrm{AIC}$ & Best fit \\
+\midrule
+A\quad flat \LCDM & $16.13$ & 2 & $0.00$ & $H_0 = 68.8,\ \Omega_m = 0.298$ \\
+B\quad closed \LCDM & $14.44$ & 3 & $+0.31$ & $\OmK = +0.004$ \\
+C\quad flat $w_0w_a$CDM & $7.51$ & 4 & $-4.62$ & $w_0 = -0.61,\ w_a = -1.36$ \\
+D\quad closed breathing & $7.05$ & 5 & $-3.08$ & $\OmK = -0.005,\ w_0 = -0.56,\ w_a = -1.37$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{What died, and what survived}
+\begin{proposition}[Static curvature is rejected]
+Given curvature as the only added freedom (Model B), the fit prefers $\OmK = +0.004$---faintly open, the wrong sign for a closed hypersphere---and the Akaike criterion ($+0.31$) does not justify the parameter. Curvature alone cannot shift the acoustic scale, the BAO ruler, and the supernova distances together without breaking one.
+\end{proposition}
+\begin{proposition}[Breathing is favoured]
+Allowing $w$ to evolve (Models C, D) improves the fit by $\Delta\chi^2 \approx -9$ for two parameters, with $w(a)$ crossing $-1$ near $z \approx 0.5$. The recovered $w_0 \approx -0.6$, $w_a \approx -1.4$ coincides with DESI~DR2, an external result not tuned to.
+\end{proposition}
+\begin{remark}[Hypersphere permitted, not forced]
+Model D attains the best raw $\chi^2$ but pins $|\OmK| \approx 0.005$, $R_c \gtrsim 60\ \Gpc$. A $3$-sphere this vast looks locally flat.
+\end{remark}
+\section{On killing the Big Bang}
+A careless reading takes the breathing hypersphere to abolish the hot Big Bang. The sound-first ruler of Paper XI requires a hot, dense, ringing photon--baryon plasma; without it there is no sound horizon and the percent-level success of Paper XI evaporates. Sound-before-light is the hot beginning's confirmation, not its removal. What the test kills is the static closed universe and the constant cosmological constant; what it reinterprets, by duality, is expansion-as-outward-motion. The surviving picture: the beginning was sound, expansion is geometric breathing of a vast nearly-flat enclosure, and the dark-energy pressure evolves.
+\section{Demarcation}
+\textbf{Established physics:} the FLRW distance--redshift relations; the closed-geometry $\sin\chi$ map; the DESI~DR2 BAO measurements; the Planck acoustic scale; the Pantheon$^+$ constraint; the DESI evolving-dark-energy preference at $2.8$--$4.2\sigma$; flatness bounds $|\OmK| \lesssim 0.002$.
+
+\textbf{Framework synthesis:} the identification of the FLRW scale factor with a physical $S^3$ radius; the reading of the favoured dynamical dark energy as the enclosure's breathing pressure $F(a)$ (ID10871); and the duality claim permitting the atemporal ontology at no statistical cost.
+
+\textbf{Predictions:} (i) the $\sin\chi$ signature in high-$z$ angular-diameter distances as future BAO push $|\OmK|$ below $10^{-3}$; (ii) redshift drift $\dot z = (1+z)H_0 - H(z)$, distinct from flat \LCDM, within ELT/SKA reach; (iii) a correlation between the $H_0$ tension and the $\Lambda$ anomaly if both are readouts of one breathing radius.
+\section{Limits of the construction}
+This is a compressed-statistics test---BAO summary distances, one CMB acoustic anchor, a supernova shape prior---not a full CMB-likelihood chain. It ranks the models and rejects static curvature; it is not a Boltzmann-code joint fit. The favoured improvement is carried by $F(a)$, not by $\OmK$, which the data hold near zero, so the curvature claim remains permitted-but-unconstrained. And $F(a)$ is here fitted, not derived: converting that accommodation into a prediction is the obligation discharged in Papers XVI--XVII.
+\section{Conclusion: the survivor and its sword}
+Left in the wild, the static closed hypersphere died and the breathing one returned at dawn, carrying DESI's evolving-dark-energy result as its sword. The data kill the static cosmos and the constant $\Lambda$, and leave the breathing enclosure permitted, favoured in its dynamical form, and vast if curved at all. Paper XIII computes the geometry behind the survivor and extracts from it a measurement of the spatial dimension itself.
+\begin{thebibliography}{9}
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry}, TZPIDProof archive (2026).
+\bibitem{paperXI} Trawin, D. A., \emph{Sound Before Light}, TZPID Gold Spine Series II, Paper XI (2026).
+\bibitem{planck} Planck Collaboration, \emph{Planck 2018 results. VI}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020). arXiv:1807.06209.
+\bibitem{desi} DESI Collaboration, \emph{DESI DR2 Results II} (2025). arXiv:2503.14738.
+\bibitem{pantheon} Brout, D., et al., \emph{The Pantheon$^+$ Analysis}, Astrophys.\ J.\ \textbf{938}, 110 (2022).
+\bibitem{divalentino} Di Valentino, E., Melchiorri, A., Silk, J., \emph{Planck evidence for a closed Universe}, Nat.\ Astron.\ \textbf{4}, 196 (2020). arXiv:1911.02087.
+\bibitem{linder} Linder, E. V., \emph{Exploring the expansion history of the universe}, Phys.\ Rev.\ Lett.\ \textbf{90}, 091301 (2003).
+\bibitem{akaike} Akaike, H., \emph{A new look at the statistical model identification}, IEEE Trans.\ Autom.\ Control \textbf{19}, 716 (1974).
+\end{thebibliography}
+\end{document}

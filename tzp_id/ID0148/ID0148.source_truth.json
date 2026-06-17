@@ -1,0 +1,423 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:39:38.923579+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0148",
+    "uuid": "aedb7b37-6bc8-5cf4-81fe-4f81732b3912",
+    "registry_id": "registry_id_0148",
+    "canonical_title": "Phase Twist-Induced Domain Wall",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0148/ID0148.TEX",
+      "json": "D:/TZPID/TZPID/ID0148/ID0148.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0148/ID0148.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Introducing a smooth phase ramp over the Gaussian window creates a domain wall connecting two frequency states. The ramp carries a non-trivial winding number, forming a topological defect that cannot be removed by local perturbations.",
+    "technical_interpretation": "Introducing a smooth phase ramp over the Gaussian window creates a domain wall connecting two frequency states. The ramp carries a non-trivial winding number, forming a topological defect that cannot be removed by local perturbations."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]",
+      "\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi",
+      "\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx"
+    ],
+    "source_section_latex": "\\[\n\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]\n\\]\n\\[\n\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi\n\\]\n\\[\n\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Wall Phase Profile",
+      "formula_latex_blocks": [
+        "\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]"
+      ],
+      "interpretive_role": "This defines the smooth transition between the two local phase sectors."
+    },
+    {
+      "step": 2,
+      "component_title": "Net Phase Jump",
+      "formula_latex_blocks": [
+        "\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi"
+      ],
+      "interpretive_role": "This states the nontrivial jump carried by the wall."
+    },
+    {
+      "step": 3,
+      "component_title": "Wall Winding",
+      "formula_latex_blocks": [
+        "\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx"
+      ],
+      "interpretive_role": "This closes the progression by turning the seam into a quantifiable topological object."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\phi(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tanh$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi(+\\infty)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi(-\\infty)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nu_{wall}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(+\\infty)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(-\\infty)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Phase Twist-Induced Domain Wall\nCanonical operator translation\neq0148_1 = HoldForm[(x)==[(1+((x-x_0)/w))/(2)]];\neq0148_2 = HoldForm[Delta == (+Infinity)-(-Infinity)==];\neq0148_3 = HoldForm[==(1)/(2)Integrate D_x dx];\n\nTRAWIN closure composition\nTRAWINClosure0148[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0148 := HoldForm[{eq0148_1, eq0148_2, eq0148_3}];\nResult0148 := TRAWINClosure0148[K0148];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]",
+          "normalized_latex": "phi[x]==Pi[((1+tanh[(x-x0)/w])/(2))]",
+          "wolfram_input": "phi[x]==Pi[((1+tanh[(x-x0)/w])/(2))]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[phi[x] == Pi[(1 + tanh[(x - x0)/w])/2]]",
+          "texform_roundtrip": "\\phi (x)=\\pi \\left(\\frac{1}{2} \\left(\\tanh \\left(\\frac{x-\\text{x0}}{w}\\right)+1\\right)\\right)",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi",
+          "normalized_latex": "Deltaphi==phi[+Infinity]-phi[-Infinity]==Pi",
+          "wolfram_input": "Deltaphi==phi[+Infinity]-phi[-Infinity]==Pi",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Deltaphi == phi[Plus[Infinity]] - phi[-Infinity] == Pi]",
+          "texform_roundtrip": "\\text{Deltaphi}=\\phi (\\infty )-\\phi (-\\infty )=\\pi",
+          "messages": []
+        },
+        {
+          "latex": "\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx",
+          "normalized_latex": "nuWall==((1)/(2*Pi))Integral*PartialXphi*dx",
+          "wolfram_input": "nuWall==((1)/(2*Pi))Integral*PartialXphi*dx",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[nuWall == (1/(2*Pi))*Integral*PartialXphi*dx]",
+          "texform_roundtrip": "\\text{nuWall}=\\frac{\\text{dx} \\text{Integral} \\text{PartialXphi}}{2 \\pi }",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0148 generated source-truth Wolfram model *)\nClearAll[K0148, TRAWINClosure0148];\neq0148$1 = HoldForm[phi[x] == Pi[(1 + tanh[(x - x0)/w])/2]];\neq0148$2 = HoldForm[Deltaphi == phi[Plus[Infinity]] - phi[-Infinity] == Pi];\neq0148$3 = HoldForm[nuWall == (1/(2*Pi))*Integral*PartialXphi*dx];\nK0148 = HoldForm[{eq0148$1, eq0148$2, eq0148$3}];\nTRAWINClosure0148[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0148 = TRAWINClosure0148[K0148];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]\n\\]\n\\[\n\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi\n\\]\n\\[\n\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx\n\\]\n\n\\paragraph{Primary Derivation.}\nThe relation is obtained by differentiating and applying the relevant definitions. yielding the required identity.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. In CHL terms, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0148/ID0148.source_truth.json",
+    "entry_id": "ID0148",
+    "registry_id": "registry_id_0148",
+    "canonical_title": "Phase Twist-Induced Domain Wall",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0148/ID0148.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "aedb7b37-6bc8-5cf4-81fe-4f81732b3912",
+    "RTEID": "RTE:P574.7169:T0.9470",
+    "poloidal_theta_rad": "574.7169",
+    "toroidal_phi_rad": "0.9470",
+    "rteid_source": "manifest",
+    "PiID": "2848111745028",
+    "TZPi": "1",
+    "PiPE_position": "155",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\phi(x)=\\pi\\left[\\frac{1+\\tanh((x-x_0)/w)}{2}\\right]",
+        "numeric_atoms": [
+          "1",
+          "0",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "phi",
+          "Pi",
+          "tanh",
+          "x"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0148\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phase Twist-Induced Domain Wall\", \"latex\" -> \"\\\\phi(x)=\\\\pi\\\\left[\\\\frac{1+\\\\tanh((x-x_0)/w)}{2}\\\\right]\", \"numericAtoms\" -> {1, 0, 2}, \"symbolicTokens\" -> {\"phi\", \"Pi\", \"tanh\", \"x\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Delta\\phi = \\phi(+\\infty)-\\phi(-\\infty)=\\pi",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "Delta",
+          "phi",
+          "Pi"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0148\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phase Twist-Induced Domain Wall\", \"latex\" -> \"\\\\Delta\\\\phi = \\\\phi(+\\\\infty)-\\\\phi(-\\\\infty)=\\\\pi\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"Delta\", \"phi\", \"Pi\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\nu_{\\mathrm{wall}}=\\frac{1}{2\\pi}\\int \\partial_x\\phi\\,dx",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "nu",
+          "Pi",
+          "int",
+          "partial",
+          "phi",
+          "x",
+          "dx"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0148\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phase Twist-Induced Domain Wall\", \"latex\" -> \"\\\\nu_{\\\\mathrm{wall}}=\\\\frac{1}{2\\\\pi}\\\\int \\\\partial_x\\\\phi\\\\,dx\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"nu\", \"Pi\", \"int\", \"partial\", \"phi\", \"x\", \"dx\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

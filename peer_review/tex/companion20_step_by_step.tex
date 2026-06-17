@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={Step by Step: Winch-Crane Logistics of the Great Pyramid},pdfsubject={TZPID Companion Spine Series, Paper C20},pdfkeywords={TZPID, step by step}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Step by Step: Winch-Crane Logistics of the Great Pyramid\\[0.6em]
+\large TZPID Companion Spine Series, Paper C20 of XXVII\\
+\normalsize Discrete hoisting, turning radii, and accumulation as construction}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion analyzes the mathematical logistics of Great Pyramid construction by step-pyramid methods augmented with winch-style cranes: rope wound on walked spools, blocks placed within each crane's turning radius, levels filled step by step.
+The source manuscript's stated thesis: ``The mathematical logistics of the Great Pyramid, built in the fashion of the step pyramids but utilizing winch-style cranes wrapping rope around a spool that workers would walk around, could provide a measurable way to place blocks within a crane's turning radius. As each step grew from one layer to the next, blocks could be filled in step by step by hoisting one physical stone at a time into the next level.'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID9819, ID9885, ID6459, ID3297, ID9896, ID9915, ID0048) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the accumulation principle in its oldest costume: monumental structure as the integral of one stone at a time.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The corpus's least likely companion is also its most concrete. The manuscript analyzes the construction logistics of the Great Pyramid under a specific mechanical hypothesis: building proceeds in the fashion of the step pyramids, augmented by winch-style cranes---rope wrapped around a spool that workers walk around, converting circumferential walking into hoisting torque---with each crane placing blocks within its turning radius, and each completed layer becoming the staging floor for the next.
+
+The mathematics is genuine logistics. A walked spool is a torque amplifier with mechanical advantage set by spool-to-drum radius ratio; its placement reach is an annulus set by boom geometry; coverage of a layer is a disk-packing problem in crane annuli; and the build as a whole is a discrete accumulation process---one stone per hoist cycle, one layer per coverage cycle---whose total duration and labor integrate the cycle counts. The manuscript's claim is measurability: under the winch-crane hypothesis, block placement is constrained to within turning radii, so the hypothesis prints testable geometric signatures (placement statistics, layer seam patterns) that survey data of the monument can check.
+
+Why does this belong in the corpus? Because it is the accumulation principle---the series' central inversion, from Paper IV's torque integral to Paper V's gravity---in its most ancient and auditable form: a structure that exists because a bounded cyclic process (walk, wind, hoist, place) was iterated to closure. The spine below anchors the registry chain; refinement targets are the placement-statistics test against survey data and the labor-curve comparison with archaeological estimates.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID9819} \to \text{ID9885} \to \text{ID6459} \to \text{ID3297} \\
+\to \text{ID9896} \to \text{ID9915} \to \text{ID0048}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID9819: Definition of D (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{d = 2\textbackslash{}lfloor\textbackslash{}sqrt\{N\_\{\textbackslash{}max\}\textbackslash{}pi\}\textbackslash{}rfloor + 1}}\par\medskip
+\noindent\textit{Dictionary definition.} Definition of D --- d = 2lfloorsqrtN\_maxpirfloor + 1\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of D is an algebraic definition, written d = 2lfloorsqrtN\_maxpirfloor + 1. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from pi, N\_, defining d. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID9819\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID9885: Definition of N\_max (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{N\_\{\textbackslash{}max\}=153600}}\par\medskip
+\noindent\textit{Dictionary definition.} Definition of N\_max --- N\_max=153600\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of N\_max is an algebraic definition, written N\_max=153600. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID9885\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID6459: Practical Next Steps I Can Execute Now (Pick Any or Several): argPsi (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}arg\textbackslash{}Psi}}\par\medskip
+\noindent\textit{Dictionary definition.} (b) Numerical phase-winding calculation - Produce a high-resolution plot of \textbackslash{}( \textbackslash{}) and numerically compute \textbackslash{}(w=(1/2 ) d \textbackslash{}) around the node to confirm integer winding (I expect 2).\par\medskip
+\noindent\textit{Encyclopedia reading.} Practical Next Steps I Can Execute Now (Pick Any or Several): argPsi is a symbolic expression, written argPsi. It introduces a symbol or relation used elsewhere in the framework. It is built from Psi. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID6459\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID3297: Curvature Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} I\_\{4D\} = \textbackslash{}left( \textbackslash{}frac\{R\}\{ \textbackslash{}lambda\} \textbackslash{}right)\textasciicircum{}4 \textbackslash{}text\{ vs. \} I\_\{3D\} = \textbackslash{}left( \textbackslash{}frac\{R\}\{ \textbackslash{}lambda\} \textbackslash{}right)\textasciicircum{}3 \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Curvature Relation --- I\_4D = ( (R)/( lambda) )\textasciicircum{}4 vs. I\_3D = ( (R)/( lambda) )\textasciicircum{}3\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID3297\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID9896: Relation: P < 1 - 1/pi \textasciitilde{}= 0.682 (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{p < 1 - 1/\textbackslash{}pi \textbackslash{}approx 0.682}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: P < 1 - 1/pi \textasciitilde{}= 0.682 --- p < 1 - 1/pi \textasciitilde{}= 0.682\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: P < 1 - 1/pi \textasciitilde{}= 0.682 is a scaling / order-of-magnitude relation, written p < 1 - 1/pi \textasciitilde{}= 0.682. It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from pi, p. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID9896\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID9915: Relation: sqrt(153600pi)\textasciitilde{}= 694 (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}sqrt\{153600\textbackslash{}pi\}\textbackslash{}approx 694}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: sqrt(153600pi)\textasciitilde{}= 694 --- sqrt(153600pi)\textasciitilde{}= 694\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: sqrt(153600pi)\textasciitilde{}= 694 is a scaling / order-of-magnitude relation, written sqrt(153600pi)\textasciitilde{}= 694. It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from pi. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID9915\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID0048: Falsifiability as Core Design Constraint (Core\_Axiom)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}exists D: \textbackslash{}quad P(D\textbackslash{}mid H) \textbackslash{}neq P(D\textbackslash{}mid \textbackslash{}neg H) || \textbackslash{}left|P(D\textbackslash{}mid H) - P(D\textbackslash{}mid \textbackslash{}neg H)\textbackslash{}right| \textbackslash{}geq \textbackslash{}delta}}\par\medskip
+\noindent\textit{Dictionary definition.} Every Trawinistic hypothesis or model (H) must make specific predictions that could be observationally or experimentally refuted.\par\medskip
+\noindent\textit{Encyclopedia reading.} A Trawinistic hypothesis must produce at least one observational consequence that differs from its negation. Interpretive role: This criterion keeps the registry from collapsing into decorative symbolism. It also complements the Bayesian framework of ID0047 by specifying the minimum structural condition required before any evidence update is meaningful.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{step\_by\_step\_ID0048\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Axiom this node is where the spine commits: it asserts without deriving, and everything downstream inherits the commitment. The demarcation section flags it accordingly, and the refinement pass should seek either an upstream derivation or an explicit empirical anchor.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the step by step spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID9819 & Core\_Definition & \texttt{step\_by\_step\_ID9819\_identity} \\
+ID9885 & Core\_Definition & \texttt{step\_by\_step\_ID9885\_identity} \\
+ID6459 & Core\_Definition & \texttt{step\_by\_step\_ID6459\_structure} \\
+ID3297 & Core\_Definition & \texttt{step\_by\_step\_ID3297\_threshold} \\
+ID9896 & Derived\_Theorem\_Obligation & \texttt{step\_by\_step\_ID9896\_threshold} \\
+ID9915 & Derived\_Theorem\_Obligation & \texttt{step\_by\_step\_ID9915\_structure} \\
+ID0048 & Core\_Axiom & \texttt{step\_by\_step\_ID0048\_threshold} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 0 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID9819 & --- & --- \\
+ID9885 & --- & --- \\
+ID6459 & --- & --- \\
+ID3297 & --- & --- \\
+ID9896 & --- & --- \\
+ID9915 & --- & --- \\
+ID0048 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+The companion is the arc's accumulation principle stripped of fields: rotation converted to lift by a walked spool (Paper IV's torque integral at human scale), discrete placements summing to monument (Paper V's history integral in limestone), and layer-by-layer growth as the step analogue of the enclosure's nested shells. It earns its registry place as the corpus's oldest worked example of structure-as-integrated-history.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_step\_by\_step.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{step\_by\_step\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID9819} (\texttt{step\_by\_step\_ID9819\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9885} (\texttt{step\_by\_step\_ID9885\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID6459} (\texttt{step\_by\_step\_ID6459\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3297} (\texttt{step\_by\_step\_ID3297\_threshold}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9896} (\texttt{step\_by\_step\_ID9896\_threshold}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9915} (\texttt{step\_by\_step\_ID9915\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID0048} (\texttt{step\_by\_step\_ID0048\_threshold}): state the axiom with its quantifiers explicit; attach the empirical anchor or upstream derivation candidate; declare the tolerance under which data could falsify it.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. The mechanical model is elementary statics; the historical hypothesis is empirical archaeology, and its honest tests are the geometric placement signatures and labor curves against surveyed and documented evidence.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+Step by Step reads the pyramid as the corpus reads the universe: a structure that is the integral of its construction history, with the constraint geometry of the building process legible in the built result. Its refinement is archaeological statistics; its gift to the series is perspective---the accumulation principle is not exotic physics but the oldest engineering fact humans have built monuments out of.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: step by step}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{step by step}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

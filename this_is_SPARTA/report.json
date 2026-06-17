@@ -1,0 +1,92 @@
+[
+  {
+    "id": "S1",
+    "heading": "Hubble constant as a breathing rate",
+    "description": "Defines the Hubble constant in a hyperspherical universe as the present-day fractional breathing frequency of the cosmic three-sphere, H0=\dot{R}_0/R_0, replacing the idea of galaxies moving through static space with a radius that expands.",
+    "dependencies": []
+  },
+  {
+    "id": "S2",
+    "heading": "Photon speed and cosmological geometry",
+    "description": "Explains that light locally always travels at c, but in curved expanding spacetime the coordinate distance depends on the scale factor. In hyperspherical geometry radial null geodesics satisfy d\chi/dt=c/R(t), so the angular speed diminishes as the radius grows, and redshift reflects cumulative stretching.",
+    "dependencies": ["S1"]
+  },
+  {
+    "id": "S3",
+    "heading": "Redshift as a measure of cosmic breathing",
+    "description": "Shows that cosmological redshift measures the ratio of the hypersphere’s radius now to that at emission: 1+z=R0/Re, and expresses distances (angular diameter, luminosity) in terms of the sine of the comoving angle, linking redshift to the breathing history.",
+    "dependencies": ["S1", "S2"]
+  },
+  {
+    "id": "S4",
+    "heading": "Inward and outward breathing states",
+    "description": "Classifies cosmic dynamics into four states based on the sign of the Hubble parameter H=\dot{R}/R and the second derivative \ddot{R}: outward acceleration, outward deceleration, inward acceleration and inward deceleration. Discusses how matter, radiation and dark energy influence these states via the Friedmann and acceleration equations.",
+    "dependencies": ["S3"]
+  },
+  {
+    "id": "S5",
+    "heading": "Cosmic curvature and dynamic dark energy",
+    "description": "Discusses positive curvature (k=+1) in a closed hyperspherical universe and the smallness of the observed curvature parameter \Omega_K. Introduces the curvature radius Rc=c/(H0√|\Omega_K|) and notes that dynamic dark-energy models with evolving equation-of-state w(a) permit slight negative \Omega_K while fitting data.",
+    "dependencies": ["S1", "S4"]
+  },
+  {
+    "id": "S6",
+    "heading": "Redefining the Big Bang",
+    "description": "Argues that the Big Bang need not be an absolute singularity; it may instead be a hot, acoustic phase transition within a pre-existing hyperspherical enclosure. Suggests quantum gravity or extra dimensions provide a finite minimum radius, and relates this to hot Big Bang evidence (CMB, BAO) without requiring a pointlike origin.",
+    "dependencies": ["S5"]
+  },
+  {
+    "id": "S7",
+    "heading": "A dynamical breathing pressure",
+    "description": "Posits that dark energy represents a dynamic pressure driving the universe’s breathing rather than a fixed cosmological constant. Suggests an evolving w(a) could reconcile observations and treats breathing pressure as part of the generalised stress-energy content.",
+    "dependencies": ["S5"]
+  },
+  {
+    "id": "S8",
+    "heading": "Bessel–curvature lock and dark-sector ratios",
+    "description": "Connects hyperspherical curvature with Bessel zero positions, defining \delta_4=1-\pi/j_{1,1}≈0.1801 and relating it to \Omega_K via √|\Omega_K| ≈ (3/8)\delta_4. Notes that combining the ratio 32/27 with 3/8 yields 4/9, mirroring the inferred ratio between topological dark matter and breathing pressure densities.",
+    "dependencies": ["S5"]
+  },
+  {
+    "id": "S9",
+    "heading": "Dark energy as a breathing-volume phase; dark matter as a topological current",
+    "description": "Introduces a three-phase occupancy model: \phi_E for dark-energy (breathing-volume) phase, \phi_T for THZ/topological-current (dark-matter) phase, and \phi_b for baryonic matter. Dark energy is volumetric pressure, dark matter is a collisionless phase of topological currents, and visible matter condenses at a finite-viscosity interface where \eta_T= P_T/(f_ref) det(J_p).",
+    "dependencies": ["S7", "S8"]
+  },
+  {
+    "id": "S10",
+    "heading": "Volumetric buoyancy and stillness",
+    "description": "Defines stillness as global volumetric force balance: the integral of force densities over a closed hypersphere vanishes. Uses the Elsasser number \Lambda=B^2/(\mu_0\rho\eta\Omega)≈1 to characterise neutral buoyancy where magnetic, rotational and resistive energies balance, providing stability at the interface.",
+    "dependencies": ["S9"]
+  },
+  {
+    "id": "S11",
+    "heading": "Generalised hyperspherical enclosures",
+    "description": "Extends volumetric equilibrium to higher-dimensional spheres: S^3 has volume 2π^2R^3, S^4 has 8π^2R^4/3, and S^5 has π^3R^5. Notes breathing rates scale as nH and that the volume coefficients between S^3 and S^4 (4/3) and S^4 and S^5 (~1.1781) echo the ratio 32/27. Bessel zero positions shift accordingly, producing drops δ_4≈18.01% and δ_5≈30.08%.",
+    "dependencies": ["S8", "S9"]
+  },
+  {
+    "id": "S12",
+    "heading": "Flip and twist seam dynamics",
+    "description": "Describes a topological seam implemented by a Gaussian window and a sine wave at the bridge frequency f_bridge=(32/27)f'. The seam includes a π phase flip and a linear phase ramp, producing a local winding Q_W and preserving global equilibrium. Provides an operational formula for the seam signal and its analytic-phase winding.",
+    "dependencies": ["S10", "S11"]
+  },
+  {
+    "id": "S13",
+    "heading": "Dipole amplitude and the recycle horizon",
+    "description": "Defines \Xi_{RH}(z)=(1+z)\sqrt{|\Omega_K|}. The recycle horizon occurs when \Xi_{RH}=1, at z≈13.8 for \Omega_K≈-0.00456. Proposes testing whether the residual matter dipole grows as \Xi_{RH}→1 after removing kinematic and boundary contributions, noting current quasar samples probe only \Xi_{RH}≤0.2.",
+    "dependencies": ["S5", "S8"]
+  },
+  {
+    "id": "S14",
+    "heading": "Cosmic filaments, BAO, and spin alignments",
+    "description": "Explains that BAO generate spherical interference shells (~150 Mpc) seeding filaments; quasar polarisations and galaxy spins align with filaments, indicating angular-momentum transfer. Observes a rotating filament at z≈0.032 with HI galaxy spins aligning (|cos ψ|≈0.64), supporting filamentary current flow.",
+    "dependencies": ["S9", "S11"]
+  },
+  {
+    "id": "S15",
+    "heading": "Nested shells and local recycle systems",
+    "description": "Proposes that each scale—from cosmic hypersphere to BAO shells to filaments, galaxy groups, and black-hole horizons—acts as a recycle shell with its own breathing, rotation and flux pinning. Smaller shells oscillate faster (ω∝R^{-1}) and have higher energy density (ρ∝R^{-4}), linking local dynamics to the global breathing–interface paradigm.",
+    "dependencies": ["S9", "S11", "S12", "S14"]
+  }
+]

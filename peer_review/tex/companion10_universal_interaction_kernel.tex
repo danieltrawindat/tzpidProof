@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={The Universal Interaction Kernel},pdfsubject={TZPID Companion Spine Series, Paper C10},pdfkeywords={TZPID, universal interaction kernel}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Universal Interaction Kernel\\[0.6em]
+\large TZPID Companion Spine Series, Paper C10 of XXVII\\
+\normalsize Gaussian radial kernels as the common form of smooth decaying interaction}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion isolates the corpus's most portable mathematical object: the Gaussian radial kernel as the common, tractable form for interactions that decay smoothly with distance in an underlying metric space.
+The source manuscript's stated thesis: ``Many scientific systems can be described by interactions that decay smoothly with distance in an underlying metric space. A common and mathematically tractable form is the Gaussian radial kernel.'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID10136, ID3362, ID9591, ID0481, ID6732, ID0412, ID9337) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the corpus's lemma library: the kernel calculus that its smoothing, injection, and coupling arguments share.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Beneath the corpus's diversity runs one recurring mathematical organism: the Gaussian radial kernel, $K(x, y) \propto \exp(-d(x,y)^2/2\sigma^2)$, the common and tractable form for interactions that decay smoothly with distance in a metric space. This companion treats the kernel as an object of study in its own right---its closure properties, its spectral representation, its behaviour under composition and limit---so that the corpus's many kernel appearances can cite one typed treatment rather than re-derive ad hoc.
+
+The appearances are everywhere once named. The injection primitive of companion C9 is the kernel read as pulse; the Well of companion C7 is the kernel read as potential; the seam operator of C12 is the kernel windowing a phase flip; the large-number smoothing of core Papers V--VI is kernel convolution in disguise; and the causal accumulation kernel of Papers V--VII is the kernel's one-sided temporal cousin, normalized and past-directed. In each case the kernel contributes the same three gifts: positivity (no spurious oscillation), rapid decay (no long-range surprise), and closed-form Fourier behaviour (Gaussians map to Gaussians, making every spectral argument explicit).
+
+The spine below anchors the kernel's registry chain. As the corpus's most conventional companion, its refinement targets are correspondingly clean: state the kernel lemmas once at full rigor, then re-point every consuming spine at the typed versions.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID10136} \to \text{ID3362} \to \text{ID9591} \to \text{ID0481} \\
+\to \text{ID6732} \to \text{ID0412} \to \text{ID9337}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID10136: Universal Dipole Constraint: U(d) (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{U(d) = \textbackslash{}frac\{3\textbackslash{}mu\_0 \textbackslash{}mu\textasciicircum{}2\}\{2\textbackslash{}pi d\textasciicircum{}4\} \textbackslash{}to \textbackslash{}infty \textbackslash{}quad \textbackslash{}text\{as\} \textbackslash{}quad d \textbackslash{}to 0}}\par\medskip
+\noindent\textit{Dictionary definition.} The foundation of Trawin Topology rests on a rigorous mathematical result: opposing magnetic dipoles under spatial compression cannot annihilate because their interaction energy diverges\par\medskip
+\noindent\textit{Encyclopedia reading.} Universal Dipole Constraint: U(d) is an algebraic definition, written U(d) = (3mu\_0 mu\textasciicircum{}2)/(2pi d\textasciicircum{}4) -> infinity as d -> 0. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from mu, pi, defining U(d). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID10136\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID3362: Fiber Field Strength Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} \textbackslash{}text\{Fiber\}[x] = \textbackslash{}mathcal\{H\}\_\{ \textbackslash{}text\{ionic\}\} \textbackslash{}oplus \textbackslash{}mathcal\{H\}\_\{ \textbackslash{}text\{microtubule\}\} \textbackslash{}oplus \textbackslash{}mathcal\{H\}\_\{ \textbackslash{}text\{synaptic\}\} \textbackslash{}oplus \textbackslash{}mathcal\{H\}\_\{ \textbackslash{}text\{myelin\}\} \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Fiber Field Strength Relation --- Fiber[x] = H\_ ionic oplus H\_ microtubule oplus H\_ synaptic oplus H\_ myelin\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID3362\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9591: Mathematical Kernel: K\_info (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}mathcal\{K\}\_\{\textbackslash{}text\{info\}\} = (\textbackslash{}Phi\_\{\textbackslash{}text\{phase\}\},\textbackslash{},\textbackslash{}tau\_\{\textbackslash{}text\{topo\} \},\textbackslash{},\textbackslash{}Pi\_\{\textbackslash{}text\{holo\}\}),}}\par\medskip
+\noindent\textit{Dictionary definition.} A minimal Information Synchronization Kernel'' can be viewed as a triplet where Phi\_phase captures phase coherence, tau\_topo encodes topological entanglement, and Pi\_holo describes a holographic projection from higher--dimensional data down to the observable domain.\par\medskip
+\noindent\textit{Encyclopedia reading.} Mathematical Kernel: K\_info is an algebraic definition, written K\_info = (Phi\_phase, tau\_topo, Pi\_holo). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID9591\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID0481: Natural Three-Qubit Gate Implementation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle \textbackslash{}text\{cents\} = \textbackslash{}cdots \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 481 formalizes the inherent multi qubit processing of the Tripartite architecture.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Aggregate Relation is localized within the manifold and metric dynamics arc of the directory. R: Aggregate Relation preserves the operative relation that quantum process tomography (qpt) requires. A: Closure Relation fixes the admissible closure condition for the entry. W: QUANTUM PROCESS TOMOGRAPHY (QPT) is rendered as a reusable operator-level statement. I: The informational content of quantum process tomogra- phy (qpt) is retained rather than flattened. N: QUANTUM PROCESS TOMOGRAPHY (QPT) closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID0481\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID6732: Quick Qualitative Reading (How the Pieces Correspond): 2pi/7 (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{2\textbackslash{}pi/7}}\par\medskip
+\noindent\textit{Dictionary definition.} Quick Qualitative Reading (How the Pieces Correspond): 2pi/7 --- 2pi/7\par\medskip
+\noindent\textit{Encyclopedia reading.} Quick Qualitative Reading (How the Pieces Correspond): 2pi/7 is a symbolic expression, written 2pi/7. It introduces a symbol or relation used elsewhere in the framework. It is built from pi. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID6732\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID0412: The Electron-Neural Exchange Operator (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle \textbackslash{}mathcal\{O\}\_\{\textbackslash{}mathrm\{TZP\}\} : \textbackslash{}mathcal\{X\} \textbackslash{}to \textbackslash{}mathcal\{Y\} \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 412 establishes the exchange interaction between the localized electron spins of the reactor's ferrite core and the biological spin density of the operator's neural architecture.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Carrier Map is localized within the manifold and metric dynamics arc of the directory. R: Composable Action preserves the operative relation that the cooper pair transduction operator (hatt cp) requires. A: Normalized Output fixes the admissible closure condi- tion for the entry. W: THE COOPER PAIR TRANSDUCTION OPERATOR (hatT CP) is rendered as a reusable operator-level state- ment. I: The informational content of the cooper pair transduc- tion operator (hatt cp) is retained rather than flattened. N: THE COOPER PAIR TRANSDUCTION OPERATOR (hatT CP) closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID0412\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID9337: Definition of Phi++Phi (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{Phi++Phi=0 Lambda\textasciitilde{}}}\par\medskip
+\noindent\textit{Dictionary definition.} Definition of Phi++Phi --- Phi++Phi=0 Lambda\textasciitilde{}\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of Phi++Phi is an algebraic definition, written Phi++Phi=0 Lambda\textasciitilde{}. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{universal\_interactio\_ID9337\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the universal interaction kernel spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID10136 & Core\_Definition & \texttt{universal\_interactio\_ID10136\_identity} \\
+ID3362 & Core\_Definition & \texttt{universal\_interactio\_ID3362\_identity} \\
+ID9591 & Core\_Definition & \texttt{universal\_interactio\_ID9591\_identity} \\
+ID0481 & Core\_Definition & \texttt{universal\_interactio\_ID0481\_identity} \\
+ID6732 & Core\_Definition & \texttt{universal\_interactio\_ID6732\_structure} \\
+ID0412 & Core\_Definition & \texttt{universal\_interactio\_ID0412\_identity} \\
+ID9337 & Core\_Definition & \texttt{universal\_interactio\_ID9337\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 1 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID10136 & --- & --- \\
+ID3362 & --- & --- \\
+ID9591 & --- & --- \\
+ID0481 & --- & algebraic signal geometric enforcement; trawin zero point quantum field theory \\
+ID6732 & --- & --- \\
+ID0412 & --- & --- \\
+ID9337 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This companion services the whole corpus but three sites especially: the temporal accumulation kernels of core Papers V--VII (the Gaussian's exponential cousin, whose normalization and causality guardrails become instances of kernel lemmas); the smoothing arguments that turn particle charges into geometry (kernel convolution against counting measures); and the signal group C9--C13, whose every windowed operation is a kernel multiplication. It is deliberately the corpus's least speculative paper: pure mathematics in service of typed reuse.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_universal\_interaction\_kernel.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{universal\_interaction\_kernel\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID10136} (\texttt{universal\_interactio\_ID10136\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3362} (\texttt{universal\_interactio\_ID3362\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9591} (\texttt{universal\_interactio\_ID9591\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0481} (\texttt{universal\_interactio\_ID0481\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID6732} (\texttt{universal\_interactio\_ID6732\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0412} (\texttt{universal\_interactio\_ID0412\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9337} (\texttt{universal\_interactio\_ID9337\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. Nothing here is conjectural; the only program-level claim is architectural---that one typed kernel treatment can service every consuming spine---and its test is whether the refinement pass actually discharges consumer obligations against these lemmas.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+The universal interaction kernel is the corpus's quiet workhorse given its own bench. One typed treatment of Gaussian radial structure---positivity, decay, spectral closure, composition---redeems dozens of scattered appearances across the program. The refinement pass should complete the inversion of dependency: spines cite lemmas, lemmas cite proofs, and the kernel becomes the corpus's first fully discharged mathematical layer.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: universal interaction kernel}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{universal interaction kernel}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

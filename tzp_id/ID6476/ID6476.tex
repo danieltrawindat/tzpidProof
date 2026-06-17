@@ -1,0 +1,17 @@
+\section*{ID6476: EEG-Driven Breathing Simulation (Synthetic EEG): S(t)}
+\paragraph{Metadata.}
+PiID: 5461395398468 | RTEID: RTE:P25147.7462:T3.7366 | UUID: 9b1bbe25-3753-566e-93e0-b87128ceba90
+
+\paragraph{Canonical Statement.}
+\#\#\# (e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6\textbackslash{}sin(2\textbackslash{}pi 10t) + 0.3\textbackslash{}sin(2\textbackslash{}pi 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}(\textbackslash{}sigma\_r(t)=\textbackslash{}sigma\_0 + \textbackslash{}kappa\textbackslash{}cdot\textbackslash{}text\{Env\}\_\textbackslash{}alpha(t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}). - Produced plots: - Time series |I(t)| vs alpha envelope: **/mnt/data/cymatic\_expanded/I\_t\_eeg\_driven.png** - Coherence between |I(t)| and alpha envelope: **/mnt/data/cymatic\_expanded/coherence\_I\_alpha.png** - **Observations:** bursts in |I(t)| align with peaks of the alpha envelope; coherence plot shows elevated coherence at frequencies corresponding to the modulation (visible in the figure). This demonstrates the gating/entrainment mechanism you hypothesized.
+
+\paragraph{Canonical Equation.}
+\[
+s(t)=0.6\sin(2\pi 10t) + 0.3\sin(2\pi 2t)
+\]
+
+\paragraph{Dictionary.}
+(e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6 (2 10t) + 0.3 (2 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}( \_r(t)= \_0 + \_ (t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}).
+
+\paragraph{Encyclopedia.}
+EEG-Driven Breathing Simulation (Synthetic EEG): S(t) is an algebraic definition, written s(t)=0.6sin(2π 10t) + 0.3sin(2π 2t). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from π, defining s(t). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

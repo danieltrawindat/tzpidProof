@@ -1,0 +1,396 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:58:23.319505+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0378",
+    "uuid": "038a03af-07c0-5b88-8ad2-0656f9e512d7",
+    "registry_id": "registry_id_0378",
+    "canonical_title": "Frame-Dragging Metric Correction",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0378/ID0378.TEX",
+      "json": "D:/TZPID/TZPID/ID0378/ID0378.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0378/ID0378.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "At high angular velocity, spacetime acquires a Kerr-like metric whose correction tensor depends on the square of the cross product of the angular velocity and position.",
+    "technical_interpretation": "At high angular velocity, spacetime acquires a Kerr-like metric whose correction tensor depends on the square of the cross product of the angular velocity and position."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "ds^{2}=g_{\\mu\\nu}dx^{\\mu}dx^{\\nu}+2g_{t\\phi}\\,dt\\,d\\phi",
+      "g_{t\\phi}\\approx-\\frac{2GJ}{c^{3}r}\\sin^{2}\\theta"
+    ],
+    "source_section_latex": "\\[\nds^{2}=g_{\\mu\\nu}dx^{\\mu}dx^{\\nu}+2g_{t\\phi}\\,dt\\,d\\phi\n\\]\n\\[\ng_{t\\phi}\\approx-\\frac{2GJ}{c^{3}r}\\sin^{2}\\theta\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Kerr-like Metric",
+      "formula_latex_blocks": [
+        "ds^{2}=g_{\\mu\\nu}dx^{\\mu}dx^{\\nu}+2g_{t\\phi}\\,dt\\,d\\phi"
+      ],
+      "interpretive_role": "This fixes the Kerr-like rotating correction to the background metric."
+    },
+    {
+      "step": 2,
+      "component_title": "Rotation Tensor",
+      "formula_latex_blocks": [
+        "g_{t\\phi}\\approx-\\frac{2GJ}{c^{3}r}\\sin^{2}\\theta"
+      ],
+      "interpretive_role": "This states the explicit rotation-induced correction tensor in block form."
+    },
+    {
+      "step": 3,
+      "component_title": "Mixed Components",
+      "formula_latex_blocks": [
+        "\\Omega_{\\mathrm{LT}}=\\frac{2GJ}{c^{2}r^{3}}"
+      ],
+      "interpretive_role": "This closes the entry by extracting the mixed time-space frame-dragging components from the rotating metric."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0378}$",
+        "description": "canonical registry object for entry ID 0378."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0378}$",
+        "name": "canonical registry object for entry ID 0378.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sin^{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Omega_{LT}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Frame-Dragging Metric Correction\nCanonical operator translation\neq0378_1 = HoldForm[ds^(2)==gmu^(mu)dx^()+2gt dt d];\neq0378_2 = HoldForm[gt ~== -(2GJ)(c^(3)r)Sin^(2)];\n\nTRAWIN closure composition\nTRAWINClosure0378[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0378 := HoldForm[{eq0378_1, eq0378_2}];\nResult0378 := TRAWINClosure0378[K0378];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "ds^{2}=g_{\\mu\\nu}dx^{\\mu}dx^{\\nu}+2g_{t\\phi}\\,dt\\,d\\phi",
+          "normalized_latex": "ds2==gMunudxmudxnu+2*gTphi*dt*dphi",
+          "wolfram_input": "ds2==gMunudxmudxnu+2*gTphi*dt*dphi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ds2 == gMunudxmudxnu + 2*gTphi*dt*dphi]",
+          "texform_roundtrip": "\\text{ds2}=2 \\text{dphi} \\text{dt} \\text{gTphi}+\\text{gMunudxmudxnu}",
+          "messages": []
+        },
+        {
+          "latex": "g_{t\\phi}\\approx-\\frac{2GJ}{c^{3}r}\\sin^{2}\\theta",
+          "normalized_latex": "gTphi==-((2*G*J)/(c^3*r))Sin^(2)theta",
+          "wolfram_input": "gTphi==-((2*G*J)/(c^3*r))Sin^(2)theta",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[gTphi == (-((2*G*J)/(c^3*r)))*Sin^2*theta]",
+          "texform_roundtrip": "\\text{gTphi}=-\\frac{2 G J \\text{Sin}^2 \\theta }{c^3 r}",
+          "messages": []
+        },
+        {
+          "latex": "\\Omega_{\\mathrm{LT}}=\\frac{2GJ}{c^{2}r^{3}}",
+          "normalized_latex": "OmegaLT==((2*G*J)/(c^2*r^3))",
+          "wolfram_input": "OmegaLT==((2*G*J)/(c^2*r^3))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[OmegaLT == (2*G*J)/(c^2*r^3)]",
+          "texform_roundtrip": "\\text{OmegaLT}=\\frac{2 G J}{c^2 r^3}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0378 generated source-truth Wolfram model *)\nClearAll[K0378, TRAWINClosure0378];\neq0378$1 = HoldForm[ds2 == gMunudxmudxnu + 2*gTphi*dt*dphi];\neq0378$2 = HoldForm[gTphi == (-((2*G*J)/(c^3*r)))*Sin^2*theta];\neq0378$3 = HoldForm[OmegaLT == (2*G*J)/(c^2*r^3)];\nK0378 = HoldForm[{eq0378$1, eq0378$2, eq0378$3}];\nTRAWINClosure0378[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0378 = TRAWINClosure0378[K0378];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\langle O(x)O(0)\\rangle\n\\sim\n|x|^{-2+\\eta}.\n\\end{equation}\n\n\\paragraph{Exponent Dependence.}\n\\begin{equation}\n\\eta=\\eta(d_{\\mathrm{eff}},\\mathrm{TZP}).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nAt a quantum critical point, correlation length diverges and the system loses a preferred length scale.  \nAn observable $O(x)$ therefore has a scale-free two-point function:\n\\begin{equation}\n\\langle O(x)O(0)\\rangle\n\\sim\n|x|^{-\\Delta}.\n\\end{equation}\n\nWith anomalous exponent $\\Delta=2-\\eta$, this becomes\n\\begin{equation}\n\\boxed{\n\\langle O(x)O(0)\\rangle\n\\sim\n|x|^{-2+\\eta}.\n}\n\\end{equation}\n\nIn the TRAWIN setting,\n\\begin{equation}\n\\eta=\\eta(d_{\\mathrm{eff}},\\mathrm{TZP}).\n\\end{equation}\n\n\\paragraph{Interpretation.}\nQuantum criticality is detected through power-law correlations whose exponents may depend on effective dimension and TZP deformation.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "analogue-physics model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0378/ID0378.source_truth.json",
+    "entry_id": "ID0378",
+    "registry_id": "registry_id_0378",
+    "canonical_title": "Frame-Dragging Metric Correction",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0378/ID0378.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "038a03af-07c0-5b88-8ad2-0656f9e512d7",
+    "RTEID": "RTE:P1467.8579:T2.4186",
+    "poloidal_theta_rad": "1467.8579",
+    "toroidal_phi_rad": "2.4186",
+    "rteid_source": "manifest",
+    "PiID": "5213841469519",
+    "TZPi": "1",
+    "PiPE_position": "385",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "ds^{2}=g_{\\mu\\nu}dx^{\\mu}dx^{\\nu}+2g_{t\\phi}\\,dt\\,d\\phi",
+        "numeric_atoms": [
+          "2",
+          "+2"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "nu",
+          "phi",
+          "ds",
+          "g",
+          "dx",
+          "t",
+          "dt",
+          "d"
+        ],
+        "candidate_wolfram_input": "HoldForm[ds^(2)==g$munudx^(mu)dx^(nu)+2g$tphidtdphi]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0378\", 1, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Frame-Dragging Metric Correction\", \"latex\" -> \"ds^{2}=g_{\\\\mu\\\\nu}dx^{\\\\mu}dx^{\\\\nu}+2g_{t\\\\phi}\\\\,dt\\\\,d\\\\phi\", \"numericAtoms\" -> {2, +2}, \"symbolicTokens\" -> {\"mu\", \"nu\", \"phi\", \"ds\", \"g\", \"dx\", \"t\", \"dt\", \"d\"}, \"candidateWolframInput\" -> \"HoldForm[ds^(2)==g$munudx^(mu)dx^(nu)+2g$tphidtdphi]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "g_{t\\phi}\\approx-\\frac{2GJ}{c^{3}r}\\sin^{2}\\theta",
+        "numeric_atoms": [
+          "2",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "phi",
+          "sin",
+          "theta",
+          "g",
+          "t",
+          "c",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0378\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Frame-Dragging Metric Correction\", \"latex\" -> \"g_{t\\\\phi}\\\\approx-\\\\frac{2GJ}{c^{3}r}\\\\sin^{2}\\\\theta\", \"numericAtoms\" -> {2, 3}, \"symbolicTokens\" -> {\"phi\", \"sin\", \"theta\", \"g\", \"t\", \"c\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

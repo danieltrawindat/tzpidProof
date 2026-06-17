@@ -1,0 +1,107 @@
+{
+  "source_hdf5": "delta_alpha_phase5_vector_calculus.h5",
+  "attrs": {
+    "angular_mode_m": 1,
+    "creator": "Daniel Alexander Trawin",
+    "curl_definition": "∇ × ∇Δα (expected 0 except singularity)",
+    "delta": 0.18010602113350746,
+    "description": "Δα phase gradient, vector calculus, curl (vorticity), and gyromagnetic correspondence",
+    "gradient_definition": "grad(Δα)",
+    "j11": 3.83170597,
+    "orcid": "https://orcid.org/0009-0001-4630-3715",
+    "physical_interpretation": "curl reveals topological vorticity core",
+    "project": "TZPID Phase5 Vector Calculus Bridge",
+    "role": "Creator / Founder",
+    "scale": 10.0
+  },
+  "curl_max_abs": 1.7713830402499298e-11,
+  "curl_std": 3.081535060467766e-13,
+  "curl_mean_abs": 3.8295963709217287e-14,
+  "grad_mag_min": 4.9249913249414705,
+  "grad_mag_max": 625.7790253828456,
+  "grad_mag_mean": 6.870104262258603,
+  "grad_mag_std": 30.819026051394665,
+  "psi_unit_norm_mean_abs_error": 3.038333473703858e-17,
+  "psi_unit_norm_max_abs_error": 2.220446049250313e-16,
+  "lz_std": 2.317575256303825e-13,
+  "lz_mean_abs_from_one": 1.6666656966344215e-07,
+  "delta": 0.18010602113350746,
+  "delta_contract_holds": true,
+  "curl_near_zero_contract_holds": true,
+  "psi_unit_norm_contract_holds": true,
+  "lz_correspondence_contract_holds": true,
+  "datasets": [
+    {
+      "dataset": "field/Delta_alpha",
+      "shape": "400x400",
+      "min": -2.9201865275817758,
+      "max": 9.257327654294413,
+      "mean": 3.7433806807634435,
+      "std": 2.2801198010937336,
+      "max_abs": 9.257327654294413
+    },
+    {
+      "dataset": "field/Lz",
+      "shape": "400x400",
+      "min": 0.9999998333326641,
+      "max": 0.9999998333338168,
+      "mean": 0.9999998333334305,
+      "std": 2.317575256303825e-13,
+      "max_abs": 0.9999998333338168
+    },
+    {
+      "dataset": "field/psi_real",
+      "shape": "400x400",
+      "min": -0.9999999999298849,
+      "max": 0.9999999999298849,
+      "mean": -4.5474735088646414e-17,
+      "std": 0.7071067811865476,
+      "max_abs": 0.9999999999298849
+    },
+    {
+      "dataset": "field/psi_imag",
+      "shape": "400x400",
+      "min": -0.9999999999298849,
+      "max": 0.9999999999298849,
+      "mean": -1.1368683772161604e-17,
+      "std": 0.7071067811865476,
+      "max_abs": 0.9999999999298849
+    },
+    {
+      "dataset": "vector/grad_x",
+      "shape": "400x400",
+      "min": -205.0683500237744,
+      "max": 205.068350023772,
+      "mean": 1.8189894035458566e-16,
+      "std": 4.126946189076651,
+      "max_abs": 205.0683500237744
+    },
+    {
+      "dataset": "vector/grad_y",
+      "shape": "400x400",
+      "min": -73.94114516856834,
+      "max": 625.7599790257286,
+      "mean": 1.5668693359779098,
+      "std": 31.26537917517209,
+      "max_abs": 625.7599790257286
+    },
+    {
+      "dataset": "vector/curl_z",
+      "shape": "400x400",
+      "min": -1.7713830402499298e-11,
+      "max": 1.523847714679505e-11,
+      "mean": 1.939082575064255e-17,
+      "std": 3.081535060467766e-13,
+      "max_abs": 1.7713830402499298e-11
+    },
+    {
+      "dataset": "grid/R",
+      "shape": "400x400",
+      "min": 0.003544394893165573,
+      "max": 1.4142135623730951,
+      "mean": 0.7671116615165193,
+      "std": 0.2855661972017094,
+      "max_abs": 1.4142135623730951
+    }
+  ]
+}

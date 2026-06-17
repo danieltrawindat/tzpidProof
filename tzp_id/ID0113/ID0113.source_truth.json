@@ -1,0 +1,411 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:36:47.436967+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0113",
+    "uuid": "7dcfd1cf-a209-5c44-b8f9-2f044c317273",
+    "registry_id": "registry_id_0113",
+    "canonical_title": "Helical Spacetime Embedding Axiom",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0113/ID0113.TEX",
+      "json": "D:/TZPID/TZPID/ID0113/ID0113.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0113/ID0113.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Physical information carriers occupy the helical manifold $M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}$ embedded in $\\mathbb{R}^3$ with logarithmic-helical parametrization $\\gamma(\\theta) = (a e^{b\\theta}\\cos\\theta,\\; a e^{b\\theta}\\sin\\theta,\\; c\\theta)$. The radial exponent is fixed by $b = 2\\ln\\phi/\\pi$.",
+    "technical_interpretation": "Physical information carriers occupy the helical manifold $M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}$ embedded in $\\mathbb{R}^3$ with logarithmic-helical parametrization $\\gamma(\\theta) = (a e^{b\\theta}\\cos\\theta,\\; a e^{b\\theta}\\sin\\theta,\\; c\\theta)$. The radial exponent is fixed by $b = 2\\ln\\phi/\\pi$."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}",
+      "\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)",
+      "\\beta = \\frac{2\\log \\phi}{\\pi}"
+    ],
+    "source_section_latex": "\\[\nM_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}\n\\]\n\\[\n\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)\n\\]\n\\[\n\\beta = \\frac{2\\log \\phi}{\\pi}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Carrier Manifold",
+      "formula_latex_blocks": [
+        "M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}"
+      ],
+      "interpretive_role": "This specifies the minimal topology needed for periodic phase and unbounded propagation to coexist."
+    },
+    {
+      "step": 2,
+      "component_title": "Embedded Helical Curve",
+      "formula_latex_blocks": [
+        "\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)"
+      ],
+      "interpretive_role": "This gives the explicit geometric realization of the carrier."
+    },
+    {
+      "step": 3,
+      "component_title": "Fixed Growth Exponent",
+      "formula_latex_blocks": [
+        "\\beta = \\frac{2\\log \\phi}{\\pi}"
+      ],
+      "interpretive_role": "This closes the progression by tying the embedding to the same invariant ratio extracted in the prior entry."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbb$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\gamma(\\theta)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\beta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\log$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M_{helix}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$a(\\theta)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Helical Spacetime Embedding Axiom\nCanonical operator translation\neq0113_1 = HoldForm[Mhelix == S^1 * (R)];\neq0113_2 = HoldForm[()== ( a e^( )Cos,\\ a e^( )Sin,\\ c )];\neq0113_3 = HoldForm[== (2 )/()];\n\nTRAWIN closure composition\nTRAWINClosure0113[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0113 := HoldForm[{eq0113_1, eq0113_2, eq0113_3}];\nResult0113 := TRAWINClosure0113[K0113];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}",
+          "normalized_latex": "MHelix==S^1*R",
+          "wolfram_input": "MHelix==S^1*R",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathbb unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[MHelix == S^1*R]",
+          "texform_roundtrip": "\\text{MHelix}=R S",
+          "messages": []
+        },
+        {
+          "latex": "\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)",
+          "normalized_latex": "gamma[theta]==Tuple[a*Exp[beta*theta]Costheta,a*Exp[beta*theta]Sintheta,ctheta]",
+          "wolfram_input": "gamma[theta]==Tuple[a*Exp[beta*theta]Costheta,a*Exp[beta*theta]Sintheta,ctheta]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[gamma[theta] == Tuple[a*Exp[beta*theta]*Costheta, a*Exp[beta*theta]*Sintheta, ctheta]]",
+          "texform_roundtrip": "\\gamma (\\theta )=\\text{Tuple}\\left(a \\text{Costheta} e^{\\beta  \\theta },a \\text{Sintheta} e^{\\beta  \\theta },\\text{ctheta}\\right)",
+          "messages": []
+        },
+        {
+          "latex": "\\beta = \\frac{2\\log \\phi}{\\pi}",
+          "normalized_latex": "beta==((2*log*phi)/(Pi))",
+          "wolfram_input": "beta==((2*log*phi)/(Pi))",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[beta == (2*log*phi)/Pi]",
+          "texform_roundtrip": "\\beta =\\frac{2 \\phi  \\log }{\\pi }",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0113 generated source-truth Wolfram model *)\nClearAll[K0113, TRAWINClosure0113];\neq0113$1 = HoldForm[MHelix == S^1*R];\neq0113$2 = HoldForm[gamma[theta] == Tuple[a*Exp[beta*theta]*Costheta, a*Exp[beta*theta]*Sintheta, ctheta]];\neq0113$3 = HoldForm[beta == (2*log*phi)/Pi];\nK0113 = HoldForm[{eq0113$1, eq0113$2, eq0113$3}];\nTRAWINClosure0113[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0113 = TRAWINClosure0113[K0113];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nM_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}\n\\]\n\\[\n\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)\n\\]\n\\[\n\\beta = \\frac{2\\log \\phi}{\\pi}\n\\]\n\n\\paragraph{Primary Derivation.}\nThe first line specifies a map, while the subsequent line provides its explicit form \\( \\gamma(\\theta)= \\). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.\n\\paragraph{Equation Type.}\nThis statement is classified as a map relation.\n\n\\paragraph{Interpretation.}\nThe statement concerns the variables introduced in the displayed formula. From the TRAWIN perspective, the equation functions as the mapping carrier for the entry’s information content. Within the CHL view, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0113/ID0113.source_truth.json",
+    "entry_id": "ID0113",
+    "registry_id": "registry_id_0113",
+    "canonical_title": "Helical Spacetime Embedding Axiom",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0113/ID0113.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7dcfd1cf-a209-5c44-b8f9-2f044c317273",
+    "RTEID": "RTE:P438.8041:T0.7230",
+    "poloidal_theta_rad": "438.8041",
+    "toroidal_phi_rad": "0.7230",
+    "rteid_source": "manifest",
+    "PiID": "2306647093844",
+    "TZPi": "7",
+    "PiPE_position": "120",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "M_{\\mathrm{helix}} = S^1 \\times \\mathbb{R}",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "mathbb",
+          "M",
+          "S"
+        ],
+        "candidate_wolfram_input": "HoldForm[M$helix == S^1 * bbR]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0113\", 1, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Helical Spacetime Embedding Axiom\", \"latex\" -> \"M_{\\\\mathrm{helix}} = S^1 \\\\times \\\\mathbb{R}\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"mathbb\", \"M\", \"S\"}, \"candidateWolframInput\" -> \"HoldForm[M$helix == S^1 * bbR]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\gamma(\\theta)=\n\\left(\na e^{\\beta \\theta}\\cos\\theta,\\ \na e^{\\beta \\theta}\\sin\\theta,\\ \nc\\theta\n\\right)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "gamma",
+          "theta",
+          "beta",
+          "cos",
+          "sin",
+          "a",
+          "e",
+          "c"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0113\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Helical Spacetime Embedding Axiom\", \"latex\" -> \"\\\\gamma(\\\\theta)=\\n\\\\left(\\na e^{\\\\beta \\\\theta}\\\\cos\\\\theta,\\\\ \\na e^{\\\\beta \\\\theta}\\\\sin\\\\theta,\\\\ \\nc\\\\theta\\n\\\\right)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"gamma\", \"theta\", \"beta\", \"cos\", \"sin\", \"a\", \"e\", \"c\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\beta = \\frac{2\\log \\phi}{\\pi}",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "beta",
+          "log",
+          "phi",
+          "Pi"
+        ],
+        "candidate_wolfram_input": "HoldForm[beta == ((2Log phi)/(Pi))]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0113\", 3, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Helical Spacetime Embedding Axiom\", \"latex\" -> \"\\\\beta = \\\\frac{2\\\\log \\\\phi}{\\\\pi}\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"beta\", \"log\", \"phi\", \"Pi\"}, \"candidateWolframInput\" -> \"HoldForm[beta == ((2Log phi)/(Pi))]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

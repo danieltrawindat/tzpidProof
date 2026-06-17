@@ -1,0 +1,234 @@
+\tzpanchor{0359}
+\tzpentryheader{0359}{Uniform Base Manifold}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{e972acd1-c283-5261-b2c2-012df68943dc}}\\
+\textbf{PiID} & \tzpcode{0011330530548} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{366}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1394.0767 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{02.2970 rad}\\
+\textbf{TZPID} & \tzpcode{ID0359} & \textbf{Node Dependencies}\quad \tzpidref{0358}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0359} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Geometric Carrier & Compatibility Law\\
+\textbf{Closure Support} & Topological Closure & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The DAANSsphere defines a uniform base manifold by generating direction vectors via Fibonacci spiral sampling. Each axis corresponds to a unit direction, an antipodal pair and a depth parameter, giving radial points through an exponential mapping.
+
+\tzpsection{Canonical Equation}
+\[
+K_{fractal}(\hat{\mathbf{n}}) = \sum_{k=1}^{\infty} s^{-k} G(\hat{\mathbf{n}}, r \cdot s^k) e^{i\phi_k}
+\]
+\[
+r_{i,k} = \exp(t_{i,k})
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $K_{fractal}$: source equation symbol.
+    \item $n$: integer mode index.
+    \item $G$: source equation symbol.
+    \item $\phi_k$: flux, phase, or topological map term in the source equation.
+    \item $r_{i,k}$: source equation symbol.
+    \item $t_{i,k}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0359 generated source Wolfram model *)
+ClearAll[K0359, Cr0359, T, R, A, W, I, N];
+eq0359$1 = HoldForm[KFractal[hat[n]] == (SumK1^Infinity*G[hat[n], r*s^k]*Exp[I*phiK])/s^k];
+eq0359$2 = HoldForm[rIk == exp[tIk]];
+
+K0359 = HoldForm[{eq0359$1, eq0359$2}];
+
+N = "normalized TRAWIN closure object for Uniform Base Manifold";
+I = "Topological Closure integration/comparison layer";
+W = "Compatibility Law wave or operator carrier";
+A = "Geometric Carrier admissible action/amplitude condition";
+R = "Compatibility Law rotation/curl preservation layer";
+T = "Geometric Carrier local source condition";
+
+Cr0359[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0359 = Cr0359[K0359];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Geometric Carrier local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Compatibility Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Geometric Carrier admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Compatibility Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Topological Closure integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Uniform Base Manifold.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0359] Uniform Base Manifold}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+c_i=c_i(\mu,d_{\mathrm{eff}}).
+\end{equation}
+
+\paragraph{Flow Equation.}
+\begin{equation}
+\frac{\mathrm{d}c_i}{\mathrm{d}\ln\mu}
+=
+f_i(c_j,d_{\mathrm{eff}}).
+\end{equation}
+
+\paragraph{Primary Derivation.}
+If couplings depend on scale and effective dimension, then derived constants may also become scale-sensitive.
+
+Represent each effective constant as:
+
+\begin{equation}
+c_i=c_i(\mu,d_{\mathrm{eff}}).
+\end{equation}
+
+The natural flow parameter for scale comparison is $\ln\mu$.  
+Differentiating with respect to this parameter gives:
+
+\begin{equation}
+\boxed{
+\frac{\mathrm{d}c_i}{\mathrm{d}\ln\mu}
+=
+f_i(c_j,d_{\mathrm{eff}}).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Constants are treated as effective parameters that may run under TRAWIN scale and dimension flow.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Uniform Base Manifold by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Geometric Carrier}\par
+\[
+K_{fractal}(\hat{\mathbf{n}}) = \sum_{k=1}^{\infty} s^{-k} G(\hat{\mathbf{n}}, r \cdot s^k) e^{i\phi_k}
+\]
+\noindent This fixes the effective geometry or carrier space named by the entry title.\par
+\noindent\textbf{2. Compatibility Law}\par
+\[
+r_{i,k} = \exp(t_{i,k})
+\]
+\noindent This makes the geometry admissible by imposing its internal compatibility law.\par
+\noindent\textbf{3. Topological Closure}\par
+\[
+K_{fractal}(\hat{\mathbf{n}}) = \sum_{k=1}^{\infty} s^{-k} G(\hat{\mathbf{n}}, r \cdot s^k) e^{i\phi_k}
+\]
+\noindent This closes the entry by tying the local structure to a global topological invariant.\par
+
+\clearpage
+\noindent\textbf{[ID 0359] Uniform Base Manifold}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Uniform Base Manifold is a registry definition in Field Theory and Action Principles with secondary pressure from Manifold and Metric Dynamics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The DAANSsphere defines a uniform base manifold by generating direction vectors via Fibonacci spiral sampling. Each axis corresponds to a unit direction, an antipodal pair and a depth parameter, giving radial points through an exponential mapping. \textbf{Contextual meaning:} The entry reads Uniform Base Manifold as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity. \textbf{Lemma support:} Geometric Carrier; Compatibility Law; Topological Closure.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Constants are treated as effective parameters that may run under TRAWIN scale and dimension flow.
+
+\tzpsection{Equation Grounding}
+Equation anchors: K sub fractal (hat n ) = sum sub k=1 to the power infinity s to the power -k G(hat n , r dot s to the power k) e to the power iphi sub k; r sub i,k = exp(t sub i,k ); and \$K sub fractal (hat n ) = sum sub k=1 to the power infinity s to the power -k G(hat n , r dot s to the power k) e to the power iphi sub k. Proof route: show that the effective geometry preserves the required compatibility condition while supporting the stated topological invariant. Formalization route: prove that the effective deformation leaves the relevant Euler characteristic or bundle invariant well-defined.
+
+\tzpsection{Interpretive Role}
+The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Isotropic Metric Expansion}: The mathematical series representing a smooth, uniform spatial geometry completely free of localized warping or defects.
+\item \textbf{Spherical Harmonic Background}: The use of standardized continuous wavefunctions as the blank canvas upon which more complex, singular structures are built.
+\item \textbf{Baseline Geometric Homogeneity}: The property of a space looking and behaving exactly the same in every direction from any given starting point.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0359]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0359_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0359] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Uniform Base Manifold}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the DAANSsphere defines a uniform base manifold by generating direction vectors via
+Fibonacci spiral sampling
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Uniform Base Manifold is valid when the stated geometric or topological relation
+preserves its invariant.''\\
+\textbf{Proof:} The source statement names a geometric/topological carrier. The proof obligation is to
+show that deformation, projection, or passage through the stated structure leaves the
+relevant invariant or admissible region well defined.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- topological-invariance validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0359_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

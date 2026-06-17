@@ -1,0 +1,26 @@
+[
+	{
+		"name":"enclosure_spectrum_is_jl_zeros",
+		"status":"computed",
+		"result":"{{3.1415926936762399298`8., 6.2831853082284243438`8., 9.4247779609028887011`8., 12.5663706143904784861`8.}, {4.4934094728317066987`8., 7.725251837357371664`8., 10.9041216594978089267`8., 14.0661939128500493579`8.}, {5.7634577646057430684`8., 9.0950113306952032658`8., 12.3229409706078722524`8., 15.5146030108988825874`8.}, {6.9879317104682185005`8., 10.4171185475119346286`8., 13.6980231532764670837`8., 16.9236212852223111544`8.}}",
+		"note":"Spherical-cavity acoustic eigenvalues k_ln*R are the zeros of j_l."
+	},
+	{
+		"name":"j0_harmonic_ladder",
+		"status":"pass",
+		"result":"j0 zeros = n*Pi to <1e-6",
+		"note":"The l=0 acoustic ladder is exactly harmonic (n*Pi), as in a 1-D resonator."
+	},
+	{
+		"name":"bao_first_node_equals_fundamental_mode",
+		"status":"pass",
+		"result":"k1*rs = 3.14159 ; first j0 zero = 3.1415927",
+		"note":"BAO first node (k r_s = Pi) coincides with the fundamental enclosure mode."
+	},
+	{
+		"name":"bao_scales",
+		"status":"computed",
+		"result":"k1=0.0213641 Mpc^-1 ; dk=0.0427282 Mpc^-1 ; bump=147.05 Mpc (~99.6 h^-1 Mpc)",
+		"note":"Matches the observed ~100 h^-1 Mpc BAO feature in galaxy clustering."
+	}
+]

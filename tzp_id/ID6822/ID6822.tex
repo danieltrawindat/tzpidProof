@@ -1,0 +1,17 @@
+\section*{ID6822: Spherical-Bessel Transform (SBT) of the Density Field: δ\_ell M(k)}
+\paragraph{Metadata.}
+PiID: 1818528624085 | RTEID: RTE:P26491.3410:T5.9505 | UUID: a5119be1-7b26-57f8-a2f3-ec73aa757ba6
+
+\paragraph{Canonical Statement.}
+\#\#\# A. Spherical-Bessel transform (SBT) of the density field Given a 3D density field \textbackslash{}(\textbackslash{}delta(\textbackslash{}mathbf\{x\})\textbackslash{}): 1. Choose a center (e.g., observer or box center) and compute \textbackslash{}(\textbackslash{}delta(r,\textbackslash{}hat n)\textbackslash{}). 2. Compute coefficients \textbackslash{}[ \textbackslash{}delta\_\{\textbackslash{}ell m\}(k) = \textbackslash{}int d\textbackslash{}Omega \textbackslash{}int\_0\textasciicircum{}\textbackslash{}infty r\textasciicircum{}2 dr\textbackslash{}; \textbackslash{}delta(r,\textbackslash{}hat n)\textbackslash{}, j\_\textbackslash{}ell(kr)\textbackslash{}, Y\_\textbackslash{}ell\textasciicircum{}\{m*\}(\textbackslash{}hat n). \textbackslash{}tag\{4\} \textbackslash{}] Numerically: discretize k on a grid or use orthogonal SBT routines (many libraries have SBT / Hankel transform utilities). 3. Compute power \textbackslash{}(P\_\textbackslash{}ell(k)=\textbackslash{}frac\{1\}\{2\textbackslash{}ell+1\}\textbackslash{}sum\_m |\textbackslash{}delta\_\{\textbackslash{}ell m\}(k)|\textasciicircum{}2\textbackslash{}). Strong power in particular \textbackslash{}((\textbackslash{}ell,k)\textbackslash{}) bands indicates modes likely to seed filaments at scale \textbackslash{}(\textasciitilde{}1/k\textbackslash{}).
+
+\paragraph{Canonical Equation.}
+\[
+\delta_{\ell m}(k) = \int d\Omega \int_0^\infty r^2 dr\; \delta(r,\hat n)\, j_\ell(kr)\, Y_\ell^{m*}(\hat n). \tag{4}
+\]
+
+\paragraph{Dictionary.}
+Spherical-Bessel Transform (SBT) of the Density Field: δ\_ell M(k) — δ\_ℓ m(k) = ∫ dΩ ∫\_0\textasciicircum{}∞ r\textasciicircum{}2 dr δ(r,hat n) j\_ℓ(kr) Y\_ℓ\textasciicircum{}m*(hat n). tag4
+
+\paragraph{Encyclopedia.}
+Spherical-Bessel Transform (SBT) of the Density Field: δ\_ell M(k) is an integral expression, written δ\_ℓ m(k) = ∫ dΩ ∫\_0\textasciicircum{}∞ r\textasciicircum{}2 dr δ(r,hat n) j\_ℓ(kr) Y\_ℓ\textasciicircum{}m*(hat n). tag4. It is obtained by integrating over a domain, accumulating contributions across the region of interest. It is built from Ω, δ, ell, r, n, j, defining δ\_ℓ m(k). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

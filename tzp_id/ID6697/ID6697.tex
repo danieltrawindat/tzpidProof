@@ -1,0 +1,17 @@
+\section*{ID6697: How to Use This to Correlate Your Photos with the Generated Vortex Images: a\_ell m\textasciicircum{}PSF}
+\paragraph{Metadata.}
+PiID: 5019567302292 | RTEID: RTE:P26005.9383:T5.1507 | UUID: 866bcbfd-2b0d-57cc-9ec4-20e84675ad93
+
+\paragraph{Canonical Statement.}
+**B. Build a model PSF (Airy × spike pattern) and spherical-harmonic projection** 1. Model PSF as \textbackslash{}[ \textbackslash{}text\{PSF\}(\textbackslash{}theta,\textbackslash{}phi) \textbackslash{}approx \textbackslash{}left|\textbackslash{}frac\{2J\_1(\textbackslash{}alpha)\}\{\textbackslash{}alpha\}\textbackslash{}right|\textasciicircum{}2 \textbackslash{};+\textbackslash{}; \textbackslash{}sum\_k A\_k\textbackslash{}, \textbackslash{}mathrm\{sinc\}(\textbackslash{}dots)\textbackslash{},\textbackslash{}cos(m\_k\textbackslash{}phi+\textbackslash{}phi\_k), \textbackslash{}] where the second term models vanes (sinc in radial coordinate, cos in angle). 2. Project the PSF onto spherical harmonics: \textbackslash{}[ a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\} = \textbackslash{}int\_\{S\textasciicircum{}2\} \textbackslash{}text\{PSF\}(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}, Y\_\textbackslash{}ell\textasciicircum{}\{m*\}(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}, d\textbackslash{}Omega. \textbackslash{}] 3. Similarly project your vortex model \textbackslash{}(\textbackslash{}Psi(\textbackslash{}theta,\textbackslash{}phi)\textbackslash{}) and compute cross-correlation in spectral space: \textbackslash{}[ C\_\{\textbackslash{}ell m\} = \textbackslash{}frac\{a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\} \textbackslash{}; a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}Psi *\}\}\{\textbackslash{}sqrt\{\textbackslash{}sum |a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\}|\textasciicircum{}2\textbackslash{},\textbackslash{}sum |a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}Psi\}|\textasciicircum{}2\}\}. \textbackslash{}] High \textbackslash{}(C\_\{\textbackslash{}ell m\}\textbackslash{}) for a band of \textbackslash{}(m\textbackslash{}) indicates those angular modes are common to both images (optical spike pattern and vortex arm structure).
+
+\paragraph{Canonical Equation.}
+\[
+a_{\ell m}^{\text{PSF}} = \int_{S^2} \text{PSF}(\theta,\phi)\, Y_\ell^{m*}(\theta,\phi)\, d\Omega.
+\]
+
+\paragraph{Dictionary.}
+Relation: a\_ℓ m\textasciicircum{}PSF = ∫\_S\textasciicircum{}2 PSF(θ,φ) Y\_ℓ\textasciicircum{}m*(θ,φ) dΩ.
+
+\paragraph{Encyclopedia.}
+How to Use This to Correlate Your Photos with the Generated Vortex Images: a\_ell m\textasciicircum{}PSF is an integral expression, written a\_ℓ m\textasciicircum{}PSF = ∫\_S\textasciicircum{}2 PSF(θ,φ) Y\_ℓ\textasciicircum{}m*(θ,φ) dΩ.. It is obtained by integrating over a domain, accumulating contributions across the region of interest. It is built from θ, φ, ell, Ω, S, Y, defining a\_ℓ m\textasciicircum{}PSF. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

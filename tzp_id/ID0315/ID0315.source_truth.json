@@ -1,0 +1,520 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T20:47:10.301061+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0315",
+    "uuid": "cb1af9aa-8fc4-54d0-9877-c338d30e0131",
+    "registry_id": "registry_id_0315",
+    "canonical_title": "Adjoint Functor Correspondence for Reverse Harmonics",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0315/ID0315.TEX",
+      "json": "D:/TZPID/TZPID/ID0315/ID0315.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0315/ID0315.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "There exists a forward harmonic decomposition functor",
+    "technical_interpretation": "There exists a forward harmonic decomposition functor \\[ F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}} \\] and a right adjoint reconstruction functor \\[ R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}} \\] such that \\[ \\operatorname{Hom}_{\\mathsf{Spec}}(F(X),Y) \\cong \\operatorname{Hom}_{\\mathsf{Field}}(X,R(Y)) \\] naturally in $X$ and $Y$."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}}",
+      "R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}}",
+      "\\operatorname{Hom}_{\\mathsf{Spec}}(F(X),Y) \\cong \\operatorname{Hom}_{\\mathsf{Field}}(X,R(Y))",
+      "\\mathcal{F}\\dashv\\mathcal{G}",
+      "\\operatorname{Hom}_{\\mathcal{B}}(\\mathcal{F}a,b)\\cong\\operatorname{Hom}_{\\mathcal{A}}(a,\\mathcal{G}b)"
+    ],
+    "source_section_latex": "\\[ F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}} \\] and a right adjoint reconstruction functor \\[ R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}} \\] such that \\[ \\operatorname{Hom}_{\\mathsf{Spec}}(F(X),Y) \\cong \\operatorname{Hom}_{\\mathsf{Field}}(X,R(Y)) \\] naturally in $X$ and $Y$.\n\n\\[\n\\mathcal{F}\\dashv\\mathcal{G}\n\\]\n\\[\n\\operatorname{Hom}_{\\mathcal{B}}(\\mathcal{F}a,b)\\cong\\operatorname{Hom}_{\\mathcal{A}}(a,\\mathcal{G}b)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Mode Quantization",
+      "formula_latex_blocks": [
+        "\\mathcal{F}\\dashv\\mathcal{G}"
+      ],
+      "interpretive_role": "This fixes the quantized carrier mode indexed by the bounded geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Dispersion Law",
+      "formula_latex_blocks": [
+        "\\operatorname{Hom}_{\\mathcal{B}}(\\mathcal{F}a,b)\\cong\\operatorname{Hom}_{\\mathcal{A}}(a,\\mathcal{G}b)"
+      ],
+      "interpretive_role": "This turns the mode index into an actual propagation or resonance law."
+    },
+    {
+      "step": 3,
+      "component_title": "Boundary Condition",
+      "formula_latex_blocks": [
+        "\\epsilon_{\\mathcal{F}a}\\circ\\mathcal{F}(\\eta_a)=\\operatorname{id}_{\\mathcal{F}a}"
+      ],
+      "interpretive_role": "This closes the progression by enforcing the boundary or nodal condition that makes the pattern admissible."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0315}$",
+        "description": "canonical registry object for entry ID 0315."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0315}$",
+        "name": "canonical registry object for entry ID 0315.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mathsf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cong$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\dashvG$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\congHom_{A}(a,Gb)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\epsilon_{Fa}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\circF(\\eta_a)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(X)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Y$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$X$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R(Y)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(\\eta_a)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$m_{B}(Fa,b)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$m_{A}(a,Gb)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Adjoint Functor Correspondence for Reverse Harmonics\nCanonical operator translation\neq0315_1 = HoldForm[F:(Field)phys -> (Spec)obs];\neq0315_2 = HoldForm[R:(Spec)obs -> (Field)phys];\neq0315_3 = HoldForm[Hom_((Spec))(F(X),Y) Hom_((Field))(X,R(Y))];\neq0315_4 = HoldForm[(F)(G)];\n\nTRAWIN closure composition\nTRAWINClosure0315[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0315 := HoldForm[{eq0315_1, eq0315_2, eq0315_3, eq0315_4}];\nResult0315 := TRAWINClosure0315[K0315];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}}",
+          "normalized_latex": "F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}}",
+          "wolfram_input": "F[mathsfFieldphys] -> mathsfSpecobs",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[mathsfFieldphys] -> mathsfSpecobs]",
+          "texform_roundtrip": "F(\\text{mathsfFieldphys})\\to \\text{mathsfSpecobs}",
+          "messages": []
+        },
+        {
+          "latex": "R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}}",
+          "normalized_latex": "R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}}",
+          "wolfram_input": "R[mathsfSpecobs] -> mathsfFieldphys",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[R[mathsfSpecobs] -> mathsfFieldphys]",
+          "texform_roundtrip": "R(\\text{mathsfSpecobs})\\to \\text{mathsfFieldphys}",
+          "messages": []
+        },
+        {
+          "latex": "\\operatorname{Hom}_{\\mathsf{Spec}}(F(X),Y) \\cong \\operatorname{Hom}_{\\mathsf{Field}}(X,R(Y))",
+          "normalized_latex": "HomMathsfspec)Tuple[F[X],Y]cong*HomMathsffield)Tuple[X,R[Y]]",
+          "wolfram_input": "HomSpec[F[X], Y] == HomField[X, R[Y]]",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "entry-specific Wolfram override applied",
+            "override_source=entry_specific_salvage",
+            "override_reason=Recover Hom isomorphism after mathsf/operatorname damage."
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HomSpec[F[X], Y] == HomField[X, R[Y]]]",
+          "texform_roundtrip": "\\text{HomSpec}(F(X),Y)=\\text{HomField}(X,R(Y))",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{F}\\dashv\\mathcal{G}",
+          "normalized_latex": "FdashvG",
+          "wolfram_input": "FdashvG",
+          "normalization_notes": [
+            "mathcal unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[FdashvG]",
+          "texform_roundtrip": "\\text{FdashvG}",
+          "messages": []
+        },
+        {
+          "latex": "\\operatorname{Hom}_{\\mathcal{B}}(\\mathcal{F}a,b)\\cong\\operatorname{Hom}_{\\mathcal{A}}(a,\\mathcal{G}b)",
+          "normalized_latex": "HomB[Fa,b]congHomA[a,Gb]",
+          "wolfram_input": "HomB[Fa,b]congHomA[a,Gb]",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HomB[Fa, b]*congHomA[a, Gb]]",
+          "texform_roundtrip": "\\text{congHomA}(a,\\text{Gb}) \\text{HomB}(\\text{Fa},b)",
+          "messages": []
+        },
+        {
+          "latex": "\\epsilon_{\\mathcal{F}a}\\circ\\mathcal{F}(\\eta_a)=\\operatorname{id}_{\\mathcal{F}a}",
+          "normalized_latex": "epsilonFaCircleF[etaA]==idFa",
+          "wolfram_input": "epsilonFaCircleF[etaA]==idFa",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[epsilonFaCircleF[etaA] == idFa]",
+          "texform_roundtrip": "\\text{epsilonFaCircleF}(\\text{etaA})=\\text{idFa}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0315 generated source-truth Wolfram model *)\nClearAll[K0315, TRAWINClosure0315];\neq0315$1 = HoldForm[F[mathsfFieldphys] -> mathsfSpecobs];\neq0315$2 = HoldForm[R[mathsfSpecobs] -> mathsfFieldphys];\neq0315$3 = HoldForm[HomSpec[F[X], Y] == HomField[X, R[Y]]];\neq0315$4 = HoldForm[FdashvG];\neq0315$5 = HoldForm[HomB[Fa, b]*congHomA[a, Gb]];\neq0315$6 = HoldForm[epsilonFaCircleF[etaA] == idFa];\nK0315 = HoldForm[{eq0315$1, eq0315$2, eq0315$3, eq0315$4, eq0315$5, eq0315$6}];\nTRAWINClosure0315[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0315 = TRAWINClosure0315[K0315];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\eta(\\omega)\n=\n\\omega^{-\\beta}\ne^{-\\omega/\\omega_0}.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\omega$ be a frequency variable and let $\\omega_0$ be the characteristic cutoff frequency determined by the Trawin base unit.\n\nA scale-sensitive spectral law begins with a power term:\n\n\\begin{equation}\n\\omega^{-\\beta},\n\\end{equation}\n\nwhere $\\beta$ controls low-frequency or scale-weighted behavior.\n\nTo suppress high-frequency divergence, introduce the exponential cutoff:\n\n\\begin{equation}\ne^{-\\omega/\\omega_0}.\n\\end{equation}\n\nMultiplying the two factors gives the TZP-weighted spectral density index:\n\n\\begin{equation}\n\\boxed{\n\\eta(\\omega)\n=\n\\omega^{-\\beta}\ne^{-\\omega/\\omega_0}.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\n$\\eta(\\omega)$ weights frequency contributions by combining power-law scaling with exponential cutoff suppression.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0315/ID0315.source_truth.json",
+    "entry_id": "ID0315",
+    "registry_id": "registry_id_0315",
+    "canonical_title": "Adjoint Functor Correspondence for Reverse Harmonics",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0315/ID0315.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "cb1af9aa-8fc4-54d0-9877-c338d30e0131",
+    "RTEID": "RTE:P1223.2150:T2.0155",
+    "poloidal_theta_rad": "1223.2150",
+    "toroidal_phi_rad": "2.0155",
+    "rteid_source": "manifest",
+    "PiID": "5881748815209",
+    "TZPi": "8",
+    "PiPE_position": "322",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "F:\\mathsf{Field}_{\\mathrm{phys}}\\to \\mathsf{Spec}_{\\mathrm{obs}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathsf",
+          "F"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0315\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Adjoint Functor Correspondence for Reverse Harmonics\", \"latex\" -> \"F:\\\\mathsf{Field}_{\\\\mathrm{phys}}\\\\to \\\\mathsf{Spec}_{\\\\mathrm{obs}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathsf\", \"F\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "R:\\mathsf{Spec}_{\\mathrm{obs}}\\to \\mathsf{Field}_{\\mathrm{phys}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathsf",
+          "R"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0315\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Adjoint Functor Correspondence for Reverse Harmonics\", \"latex\" -> \"R:\\\\mathsf{Spec}_{\\\\mathrm{obs}}\\\\to \\\\mathsf{Field}_{\\\\mathrm{phys}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathsf\", \"R\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\operatorname{Hom}_{\\mathsf{Spec}}(F(X),Y) \\cong \\operatorname{Hom}_{\\mathsf{Field}}(X,R(Y))",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathsf",
+          "cong",
+          "F",
+          "X",
+          "Y",
+          "R"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0315\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Adjoint Functor Correspondence for Reverse Harmonics\", \"latex\" -> \"\\\\operatorname{Hom}_{\\\\mathsf{Spec}}(F(X),Y) \\\\cong \\\\operatorname{Hom}_{\\\\mathsf{Field}}(X,R(Y))\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathsf\", \"cong\", \"F\", \"X\", \"Y\", \"R\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "\\mathcal{F}\\dashv\\mathcal{G}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "dashv"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0315\", 4, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Adjoint Functor Correspondence for Reverse Harmonics\", \"latex\" -> \"\\\\mathcal{F}\\\\dashv\\\\mathcal{G}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"dashv\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 5,
+        "latex": "\\operatorname{Hom}_{\\mathcal{B}}(\\mathcal{F}a,b)\\cong\\operatorname{Hom}_{\\mathcal{A}}(a,\\mathcal{G}b)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "cong",
+          "a",
+          "b"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0315\", 5, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Adjoint Functor Correspondence for Reverse Harmonics\", \"latex\" -> \"\\\\operatorname{Hom}_{\\\\mathcal{B}}(\\\\mathcal{F}a,b)\\\\cong\\\\operatorname{Hom}_{\\\\mathcal{A}}(a,\\\\mathcal{G}b)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"cong\", \"a\", \"b\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 5,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={The Volumetric Buoyancy-Occupancy Interface Model},pdfsubject={TZPID Gold Spine Series II, Paper XVI of XX, DOI 10.5281/zenodo.20725670}]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Els}{\Lambda_{\mathrm{E}}}
+\newcommand{\hbb}{\ensuremath{\mathchar'26\mkern-9mu h}}
+\title{The Volumetric Buoyancy--Occupancy Interface Model:\\ A Three-Phase Picture of the Dark Sector, with Falsifiable Threads and Honest Limits\\[0.6em]
+\large TZPID Gold Spine Series II, Paper XVI of XX}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20725670}{10.5281/zenodo.20725670}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Paper XII left the dark-energy term favoured but un-derived. This paper builds the mechanical model from which that term is meant to come, and marks the boundary between what the model earns and what it asserts. We formalize a three-phase occupancy field in which ordinary matter is the finite-viscosity interface condensate between a topological-current phase (candidate dark matter) and a breathing-volume phase (candidate dark energy), with constraint $\phi_b + \phi_T + \phi_E = 1$ and effective volumes $V_i = \int_{S^3}\phi_i\,dV$. Matter forms as the $\operatorname{sech}^2$ domain wall between immiscible phases, and the enclosure seeks global volumetric equilibrium $\int_V[\,\mathbf{J}\times\mathbf{B} - \rho\,\bm{\Omega}\times\mathbf{v} + \rho\,\mathbf{g}_{\mathrm{eff}} + \nabla P_E + \mathbf{f}_{\mathrm{int}} - \nabla\!\cdot\bm{\tau}\,]\,dV = 0$, balanced at Elsasser criticality $\Els = B^2/(\mu_0\rho\eta\Omega) \approx 1$. The model's strength is that it trades metaphor for handles: the Elsasser number, magnetic-helicity conservation $H_M = \int_V \mathbf{A}\cdot\mathbf{B}\,dV$, the Hodge decomposition as a substance-versus-residual diagnostic, and the domain-wall soliton are each established physics. We isolate the two falsifiable threads---the $\Els \approx 1$ attractor, testable now against dynamos, and the conjecture that the breathing pressure $\nabla P_E$ derives $w(a)$---and state the limits without softening: a symbol collision on $\Lambda$, an $R^{-4}$ scaling that is radiation-like rather than dark-energy-like, an unmet set of dark-matter bars (rotation curves, the Bullet cluster, the CMB third peak), and a near-tautological global balance law. The model is retained on that footing, and the $\nabla P_E \to w(a)$ thread is discharged in Paper XVII.
+\end{abstract}
+\section{Introduction: from a favoured term to a mechanism}
+The Spartan Dawn test favoured a dynamical dark-energy term $F(a)$ but supplied no mechanism; it fitted the equation of state rather than predicting it. A mechanism is owed. This paper assembles one from physical handles rather than metaphor, and spends as much effort marking the model's limits as stating its content. The result is not a finished theory of the dark sector but a structured proposal with two falsifiable exposures and four explicit weaknesses.
+\section{The three-phase construction}
+Let $\phi_b, \phi_T, \phi_E$ be the occupancy fractions of ordinary matter, the topological-current phase, and the breathing-volume phase, with
+\begin{equation}
+\phi_b + \phi_T + \phi_E = 1, \qquad V_i(t) = \int_{S^3}\phi_i\,dV.
+\end{equation}
+The phases are immiscible (a quartic exclusion energy $\mathcal{U} = \sum_{i<j}\chi_{ij}\phi_i\phi_j$), and ordinary matter forms as the interfacial domain wall $\phi_b(s) \propto \operatorname{sech}^2(s/\ell)$, the standard kink, with $s = 0$ the interface. Globally the enclosure seeks volumetric equilibrium,
+\begin{equation}
+\int_V\!\left[\mathbf{J}\times\mathbf{B} - \rho\,\bm{\Omega}\times\mathbf{v} + \rho\,\mathbf{g}_{\mathrm{eff}} + \nabla P_E + \mathbf{f}_{\mathrm{int}} - \nabla\!\cdot\bm{\tau}\right]dV = 0,
+\label{eq:vol}
+\end{equation}
+``locally twisting, globally balanced.'' Ordinary matter is the visible film where the topological-current drive and the breathing-volume pressure cannot co-occupy a state channel.
+\section{The two falsifiable handles}
+\begin{proposition}[Elsasser attractor]
+The dimensionless Elsasser number $\Els = B^2/(\mu_0\rho\eta\Omega)$ has an empirical attractor $\Els \approx 1$ for active dynamos, observed in the band $0.1 < \Els < 10$, giving the equilibrium field $B_\star = \sqrt{\mu_0\rho\eta\Omega}$. This is testable now: rotating conductive systems---laboratory dynamos, planetary cores, stars---should self-organize toward $\Els \approx 1$.
+\end{proposition}
+\begin{conjecture}[Breathing pressure yields the equation of state]
+If the breathing pressure gradient $\nabla P_E$ in Eq.~\eqref{eq:vol} can be derived from the nested-enclosure dynamics, it should yield $w(a)$. The target is $w_0 \approx -0.6$, $w_a \approx -1.4$ (Paper XII). Deriving these, rather than fitting them, converts the model from accommodation to prediction.
+\end{conjecture}
+The Hodge decomposition $\omega = d\alpha + \delta\beta + H_k$ with inversion $A = \delta(\Delta^{-1}B)$ is a genuine diagnostic: it separates an observed field into gradient, curl, and topological-residue parts, posing the operational question ``is the dark component a missing substance or a topological residual?'' Magnetic helicity $H_M = \int_V \mathbf{A}\cdot\mathbf{B}\,dV$ supplies a conserved invariant, conjecturally combined as $H_M + \lambda_g^{-1}H_{\mathrm{ac}} = $ const, the recycling law.
+\section{Honest limits}
+\begin{remark}[Symbol collision]
+The Elsasser number $\Els \approx 1$ and the cosmological constant $\Lambda \approx 10^{-52}\,\mathrm{m}^{-2}$ are unrelated quantities sharing a glyph. A dynamo-balance result says nothing about dark energy; the shared symbol must never be read as an identification.
+\end{remark}
+\begin{remark}[$R^{-4}$ is radiation-like]
+The nested-mode density $\rho_n \sim R_n^{-4}$ is the dilution law of radiation, the opposite of dark energy's near-constant density ($w \approx -1$, Paper XII). The $R^{-4}$ law is correct for the vacuum-mode density $\rho_\Lambda = \hbb c/R^4$ only because there $R$ is one fixed, enormous radius---not a shrinking shell. Conflating the two is the model's most seductive error.
+\end{remark}
+\begin{remark}[Dark-matter bars unmet]
+A topological-current dark matter must reproduce flat rotation curves, the collisionless Bullet-cluster separation, the CMB third-peak baryon-to-dark ratio, and structure growth. Until $\phi_T$ clears those bars, it is a name, not a model.
+\end{remark}
+\begin{remark}[Near-tautology]
+Volumetric equilibrium $\int_{S^3}\mathbf{F}\,dV = 0$ on a boundaryless manifold is essentially momentum conservation---true but almost free. Predictive content must come from the terms of Eq.~\eqref{eq:vol}, not from the fact that they sum to zero.
+\end{remark}
+\section{Verification status and demarcation}
+The components are independently established: the Elsasser number and its $\approx 1$ attractor (magnetohydrodynamics); magnetic-helicity conservation (ideal MHD); the Hodge decomposition (differential topology); the $\operatorname{sech}^2$ kink ($\phi^4$ theory). What is not verified is the assembly into a model of the dark sector---the hypothesis, not a checked result.
+
+\textbf{Established physics:} the Elsasser number and the dynamo band; magnetic-helicity conservation; the Hodge decomposition; the domain-wall profile.
+
+\textbf{Framework synthesis:} the three-phase occupancy assignment; the volumetric-equilibrium master equation \eqref{eq:vol}; and Elsasser criticality as the interface's neutral-buoyancy attractor.
+
+\textbf{Predictions:} (i) rotating conductive systems converge to $\Els \approx 1$; (ii) matter-forming regions sit at finite-viscosity neutral-buoyancy shells; (iii) high-field systems should show a reduced apparent dark-matter requirement through magnetic/topological stress.
+\section{Limits of the construction}
+Beyond the four remarks, the model's largest debt is predictive: it organizes the dark sector rather than computing any dark-sector observable. The Elsasser thread concerns dynamos, not cosmology directly; the dark-matter assignment is unbacked by the four bars; and the breathing-pressure thread is, at this paper's close, still a conjecture. The model is retained as a scaffold with two exposures, not an established account. Its honesty is its present virtue: every component is established, every assembly claim is flagged, and the one assembly claim that can be made to compute---the dark-energy equation of state---is handed to Paper XVII.
+\section{Conclusion: a scaffold with two exposures}
+The Volumetric Buoyancy--Occupancy model is the most mechanistically complete version of the dark-sector picture in the series, because it trades metaphor for handles---Elsasser balance, helicity conservation, Hodge diagnostics, domain-wall condensation. Its value is concentrated in two falsifiable threads and bounded by four explicit limits. The thread that matters most is Conjecture~3.2: that the breathing pressure $\nabla P_E$ can derive the dark-energy equation of state the Spartan Dawn fit could only accommodate. Paper XVII takes that thread to its end.
+\begin{thebibliography}{9}
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry}, TZPIDProof archive (2026).
+\bibitem{paper4} Trawin, D. A., \emph{Gyromagnetic Movement and the Elsasser Attractor}, TZPID Gold Spine Series, Paper IV (2026).
+\bibitem{spartan} Trawin, D. A., \emph{The Spartan Dawn Test}, TZPID Gold Spine Series II, Paper XII (2026).
+\bibitem{wa} Trawin, D. A., \emph{Deriving the Dark-Energy Equation of State}, TZPID Gold Spine Series II, Paper XVII (2026).
+\bibitem{elsasser} Elsasser, W. M., \emph{The hydromagnetic equations}, Phys.\ Rev.\ \textbf{79}, 183 (1950).
+\bibitem{moffatt} Moffatt, H. K., \emph{Magnetic Field Generation in Electrically Conducting Fluids}, Cambridge (1978).
+\bibitem{taylor} Taylor, J. B., \emph{Relaxation of toroidal plasma}, Phys.\ Rev.\ Lett.\ \textbf{33}, 1139 (1974).
+\bibitem{vilenkin} Vilenkin, A., Shellard, E. P. S., \emph{Cosmic Strings and Other Topological Defects}, Cambridge (1994).
+\bibitem{clowe} Clowe, D., et al., \emph{A direct empirical proof of dark matter}, Astrophys.\ J.\ Lett.\ \textbf{648}, L109 (2006).
+\bibitem{rubin} Rubin, V. C., Ford, W. K., \emph{Rotation of the Andromeda nebula}, Astrophys.\ J.\ \textbf{159}, 379 (1970).
+\end{thebibliography}
+\end{document}

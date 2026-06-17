@@ -1,0 +1,148 @@
+{
+  "certificate": "HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:49:12+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python + numpy",
+  "claim_boundary": "Planck 2018 compressed distance-prior likelihood, not the full Planck likelihood.",
+  "source": {
+    "arxiv": "1808.05724",
+    "url": "https://arxiv.org/abs/1808.05724",
+    "eprint_url": "https://arxiv.org/e-print/1808.05724",
+    "source_tar_sha256": "9a01121d3a36ff2fd00b39023906e030a4044b9581a5596b7c0e7b535ec4a110",
+    "tex_sha256": "b63854bd0fd48bd80d6bff224be64b3ab0bb0b8a730486da04bf2fc2883e2888"
+  },
+  "planck_distance_prior": {
+    "vector_order": [
+      "R",
+      "l_A",
+      "Omega_b h^2"
+    ],
+    "mean": [
+      1.750235,
+      301.4707,
+      0.02235976
+    ],
+    "inverse_covariance": [
+      [
+        94392.3971,
+        -1360.4913,
+        1664517.2916
+      ],
+      [
+        -1360.4913,
+        161.4349,
+        3671.618
+      ],
+      [
+        1664517.2916,
+        3671.618,
+        79719182.5162
+      ]
+    ],
+    "min_inverse_covariance_eigenvalue": 126.5594530897572,
+    "max_inverse_covariance_eigenvalue": 79753963.409895
+  },
+  "checks": {
+    "downloaded_arxiv_source": "pass",
+    "tex_literals_match_distance_prior_values": "pass",
+    "inverse_covariance_positive_definite": "pass",
+    "finite_distance_prior_chi2": "pass",
+    "scenario_distance_priors_computed": "computed"
+  },
+  "tex_checks": {
+    "all_expected_literals_found": true,
+    "literal_checks": {
+      "r": true,
+      "la": true,
+      "omegabh2": true,
+      "invcov_00": true,
+      "invcov_11": true,
+      "invcov_22": true
+    }
+  },
+  "scenario_results": [
+    {
+      "name": "planck_lambda_cdm_flat",
+      "role": "Locked flat LambdaCDM reference from the CPL scaffold.",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_K": 0.0,
+      "w0": -1.0,
+      "wa": 0.0,
+      "omega_b_h2": 0.02235976,
+      "z_star": 1091.9300319105655,
+      "R": 1.7494952432107556,
+      "l_A": 302.2629213146494,
+      "omega_b_h2_vector": 0.02235976,
+      "delta_R": -0.0007397567892444279,
+      "delta_l_A": 0.7922213146493959,
+      "delta_omega_b_h2": 0.0,
+      "chi2": 102.96519216814607,
+      "dof": 3,
+      "status": "computed"
+    },
+    {
+      "name": "closed_breathing_lambda_cdm",
+      "role": "Closed-enclosure LambdaCDM carrier with small negative curvature.",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_K": -0.001,
+      "w0": -1.0,
+      "wa": 0.0,
+      "omega_b_h2": 0.02235976,
+      "z_star": 1091.9300319105655,
+      "R": 1.7470852010873719,
+      "l_A": 301.8464184389003,
+      "omega_b_h2_vector": 0.02235976,
+      "delta_R": -0.003149798912628121,
+      "delta_l_A": 0.3757184389002646,
+      "delta_omega_b_h2": 0.0,
+      "chi2": 26.94545388298913,
+      "dof": 3,
+      "status": "computed"
+    },
+    {
+      "name": "observed_summary_best_fit",
+      "role": "Best-fit summary point from the observed-summary residual certificate.",
+      "H0": 69.15456889642843,
+      "Omega_m": 0.315,
+      "Omega_K": 0.001,
+      "w0": -0.838,
+      "wa": -0.6295493277788298,
+      "omega_b_h2": 0.02235976,
+      "z_star": 1092.5716918077408,
+      "R": 1.7525999695110823,
+      "l_A": 299.0394813663873,
+      "omega_b_h2_vector": 0.02235976,
+      "delta_R": 0.0023649695110823377,
+      "delta_l_A": -2.4312186336127297,
+      "delta_omega_b_h2": 0.0,
+      "chi2": 970.3862241501002,
+      "dof": 3,
+      "status": "computed"
+    },
+    {
+      "name": "shoes_h0_lambda_cdm_flat",
+      "role": "Local-distance-ladder H0 point with flat LambdaCDM background.",
+      "H0": 73.04,
+      "Omega_m": 0.315,
+      "Omega_K": 0.0,
+      "w0": -1.0,
+      "wa": 0.0,
+      "omega_b_h2": 0.02235976,
+      "z_star": 1093.9981557074514,
+      "R": 1.7507457884047812,
+      "l_A": 291.12747636912275,
+      "omega_b_h2_vector": 0.02235976,
+      "delta_R": 0.0005107884047812483,
+      "delta_l_A": -10.343223630877276,
+      "delta_omega_b_h2": 0.0,
+      "chi2": 17285.0729982045,
+      "dof": 3,
+      "status": "computed"
+    }
+  ],
+  "best_scenario_by_chi2": "closed_breathing_lambda_cdm",
+  "overall_status": "pass"
+}

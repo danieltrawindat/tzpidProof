@@ -1,0 +1,353 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:29:00.595611+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0018",
+    "uuid": "071eb25a-e60b-5256-9ba6-8d07c2a11d08",
+    "registry_id": "registry_id_0018",
+    "canonical_title": "Trawinistic Laplacian",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0018/ID0018.TEX",
+      "json": "D:/TZPID/TZPID/ID0018/ID0018.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0018/ID0018.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The Trawinistic Laplacian extends the usual second-order diffusion operator to the singularly regularized Trawinistic manifold. It applies the Trawinistic connection twice while raising indices with the regularized inverse metric.",
+    "technical_interpretation": "For a scalar field ϕ\\phiϕ, the Trawinistic Laplacian is defined by $\\Delta$Tϕ=$\\nabla$T\\_a$\\nabla$Taϕ\\Delta\\textsuperscript{\\{\\text\\{T\\}\\}\\phi=\\nabla}\\{\\text\\{T\\}\\}\\textbackslash\\_\\{a\\}\\nabla\\^{}\\{\\text\\{T\\}a\\}\\phi$\\Delta$Tϕ=$\\nabla$T\\_a$\\nabla$Taϕ, where $\\nabla$T\\nabla\\^{}\\{\\text\\{T\\}\\}\\nabla$T is the Trawinistic connection and indices are raised using the regularised inverse metric.\\\\\\"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\Delta_{\\mathrm{T}}\\phi\n=\n\\nabla^{\\mathrm{T}}_{a}\n\\nabla_{\\mathrm{T}}^{\\,a}\\phi",
+      "\\nabla_{\\mathrm{T}}^{\\,a}\n=\ng_{\\mathrm{reg}}^{ab}\\nabla^{\\mathrm{T}}_{b}"
+    ],
+    "source_section_latex": "\\[\n\\Delta_{\\mathrm{T}}\\phi\n=\n\\nabla^{\\mathrm{T}}_{a}\n\\nabla_{\\mathrm{T}}^{\\,a}\\phi\n\\]\n\\[\n\\nabla_{\\mathrm{T}}^{\\,a}\n=\ng_{\\mathrm{reg}}^{ab}\\nabla^{\\mathrm{T}}_{b}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Regularized Index Raising",
+      "formula_latex_blocks": [
+        "\\nabla_{\\mathrm{T}}^{\\,a}\n=\ng_{\\mathrm{reg}}^{ab}\\nabla^{\\mathrm{T}}_{b}"
+      ],
+      "interpretive_role": "This supplies the singularly corrected way to convert a covariant derivative into its raised-index form."
+    },
+    {
+      "step": 2,
+      "component_title": "Second Trawinistic Derivative",
+      "formula_latex_blocks": [
+        "\\nabla^{\\mathrm{T}}_{a}\\nabla_{\\mathrm{T}}^{\\,a}\\phi"
+      ],
+      "interpretive_role": "This forms the raw second-order differential action on a scalar field."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Laplacian",
+      "formula_latex_blocks": [
+        "\\Delta_{\\mathrm{T}}\\phi\n=\n\\nabla^{\\mathrm{T}}_{a}\\nabla_{\\mathrm{T}}^{\\,a}\\phi"
+      ],
+      "interpretive_role": "This closes the progression by defining the canonical scalar diffusion operator on the regularized Trawinistic manifold."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0018}$",
+        "description": "canonical registry object for entry ID 0018."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0018}$",
+        "name": "canonical registry object for entry ID 0018.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Delta_{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla^{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla_{T}^{\\,a}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "DeltaT[phi_] := TrawinCovD[a][TrawinCovD[-a][phi]]",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\Delta_{\\mathrm{T}}\\phi\n=\n\\nabla^{\\mathrm{T}}_{a}\n\\nabla_{\\mathrm{T}}^{\\,a}\\phi",
+          "normalized_latex": "DeltaTphi==Grad^(T)_(a)GradT^(a)phi",
+          "wolfram_input": "DeltaTphi==Grad^(T)_(a)GradT^(a)phi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi]",
+          "texform_roundtrip": "\\text{DeltaTphi}=\\_ a \\phi  \\text{GradT}^a \\text{Grad}^T",
+          "messages": []
+        },
+        {
+          "latex": "\\nabla_{\\mathrm{T}}^{\\,a}\n=\ng_{\\mathrm{reg}}^{ab}\\nabla^{\\mathrm{T}}_{b}",
+          "normalized_latex": "GradT^(a)==gReg^(ab)Grad^(T)_(b)",
+          "wolfram_input": "GradT^(a)==gReg^(ab)Grad^(T)_(b)",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[GradT^a == gReg^ab*Grad^T*_*b]",
+          "texform_roundtrip": "\\text{GradT}^a=\\_ b \\text{gReg}^{\\text{ab}} \\text{Grad}^T",
+          "messages": []
+        },
+        {
+          "latex": "\\nabla^{\\mathrm{T}}_{a}\\nabla_{\\mathrm{T}}^{\\,a}\\phi",
+          "normalized_latex": "Grad^(T)_(a)GradT^(a)phi",
+          "wolfram_input": "Grad^(T)_(a)GradT^(a)phi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Grad^T*_*a*GradT^a*phi]",
+          "texform_roundtrip": "\\_ a \\phi  \\text{GradT}^a \\text{Grad}^T",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta_{\\mathrm{T}}\\phi\n=\n\\nabla^{\\mathrm{T}}_{a}\\nabla_{\\mathrm{T}}^{\\,a}\\phi",
+          "normalized_latex": "DeltaTphi==Grad^(T)_(a)GradT^(a)phi",
+          "wolfram_input": "DeltaTphi==Grad^(T)_(a)GradT^(a)phi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi]",
+          "texform_roundtrip": "\\text{DeltaTphi}=\\_ a \\phi  \\text{GradT}^a \\text{Grad}^T",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0018 generated source-truth Wolfram model *)\nClearAll[K0018, TRAWINClosure0018];\neq0018$1 = HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi];\neq0018$2 = HoldForm[GradT^a == gReg^ab*Grad^T*_*b];\neq0018$3 = HoldForm[Grad^T*_*a*GradT^a*phi];\neq0018$4 = HoldForm[DeltaTphi == Grad^T*_*a*GradT^a*phi];\nK0018 = HoldForm[{eq0018$1, eq0018$2, eq0018$3, eq0018$4}];\nTRAWINClosure0018[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0018 = TRAWINClosure0018[K0018];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\\nabla^{T\\,a}\\phi .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFor a scalar field $\\phi$, the ordinary Laplacian is obtained by taking the divergence of the gradient.  \nReplacing the ordinary connection with the Trawinistic connection gives:\n\n\\begin{equation}\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\n\\left(\n\\nabla^{T\\,a}\\phi\n\\right).\n\\end{equation}\n\nUsing index notation, this becomes:\n\n\\begin{equation}\n\\boxed{\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\\nabla^{T\\,a}\\phi .\n}\n\\end{equation}\n\nIndices are raised using the regularized inverse metric wherever the ordinary inverse fails at the TZP.\n\n\\paragraph{Interpretation.}\n$\\Delta_T$ is the Laplacian adapted to TZP geometry. It measures second-order field variation using the Trawinistic connection.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:49+00:00",
+        "id": "ID0018",
+        "title": "Trawinistic Laplacian",
+        "canonical_claim": "The Trawinistic Laplacian extends the usual second-order diffusion operator to the singularly regularized Trawinistic manifold. It applies the Trawinistic connection twice while raising indices with the regularized inverse metric.",
+        "proof_lane": "L1 Source-traceable statement",
+        "exact_language": "This source (Pseudoinversion of Degenerate Metrics) supports the mathematical structure (pseudoinverse Laplacian) by showing that The authors develop pseudoinverse techniques to define differential operators on manifolds with degenerate metrics.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Pseudoinversion of Degenerate Metrics",
+        "url": "https://bec.uac.bj/uploads/publication/506a2bfe350502ec426335c90696d491.pdf",
+        "doi_or_arxiv": "",
+        "source_type": "peer‑reviewed journal article",
+        "relevance": "The authors develop pseudoinverse techniques to define differential operators on manifolds with degenerate metrics. Since the inverse metric is not available at the zero point, the Laplacian must be defined using a pseudoinverse of the metric. This supports the definition of the Trawinistic Laplacian.",
+        "supported_component": "mathematical structure (pseudoinverse Laplacian)",
+        "confidence": "high",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:49+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0018/ID0018.source_truth.json",
+    "entry_id": "ID0018",
+    "registry_id": "registry_id_0018",
+    "canonical_title": "Trawinistic Laplacian",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0018/ID0018.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "071eb25a-e60b-5256-9ba6-8d07c2a11d08",
+    "RTEID": "RTE:P69.8980:T0.1152",
+    "poloidal_theta_rad": "69.8980",
+    "toroidal_phi_rad": "0.1152",
+    "rteid_source": "manifest",
+    "PiID": "4626433832795",
+    "TZPi": "3",
+    "PiPE_position": "25",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

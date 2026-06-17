@@ -1,0 +1,124 @@
+[
+	{
+		"id":"ID7733",
+		"check":"hs_enclosure_eigenfreq",
+		"status":"pass",
+		"engine":"WolframScript",
+		"spherical_bessel_j0_pi":"0",
+		"frequency_residual":"0",
+		"notes":"Spherical enclosure j0 first-node check: SphericalBesselJ[0, pi] is numerically zero, and omega = c x\/R has zero residual after substitution."
+	},
+	{
+		"id":"ID7259",
+		"check":"hs_filament_scale",
+		"status":"pass",
+		"engine":"WolframScript",
+		"node_residual":"0",
+		"notes":"The first node of the BAO standing-wave surrogate satisfies k r_s = pi, so characteristic spacing scales with the sound horizon r_s."
+	},
+	{
+		"id":"ID6583",
+		"check":"hs_ratio_scale_free",
+		"status":"pass",
+		"engine":"WolframScript",
+		"ratio_value":"1.18518518518518518518518518518518518519`20.",
+		"scale_residual":"0",
+		"notes":"The registry ratio 32\/27 is dimensionless and unchanged by common length rescaling."
+	},
+	{
+		"id":"ID0256",
+		"check":"hs_projection_ladder",
+		"status":"pass",
+		"engine":"WolframScript",
+		"ladder_ratios":"{1, 2, 3, 4, 5}",
+		"notes":"The harmonic ladder f_n = n f_1 preserves integer mode ratios under common projection rescaling."
+	},
+	{
+		"id":"ID0104",
+		"check":"hs_holographic_count",
+		"status":"pass",
+		"engine":"WolframScript",
+		"entropy_residual":"0",
+		"notes":"The holographic entropy-area relation S_A = Area\/(4G) has zero residual after direct substitution."
+	},
+	{
+		"id":"ID10786",
+		"check":"comma_exact",
+		"status":"pass",
+		"engine":"WolframScript",
+		"gamma":"531441\/524288",
+		"notes":"The Pythagorean comma is exactly (3\/2)^12 \/ 2^7 = 531441\/524288."
+	},
+	{
+		"id":"ID10787",
+		"check":"comma_cents",
+		"status":"pass",
+		"engine":"WolframScript",
+		"cents":"23.46001038464901293384079284855772612562`12.",
+		"notes":"The Pythagorean comma is 1200 log2(gamma) = 23.460010 cents."
+	},
+	{
+		"id":"ID10788",
+		"check":"comma_hopf_holonomy",
+		"status":"pass",
+		"engine":"WolframScript",
+		"theta_gamma":"0.1228363271292559975263093254876734283`14.",
+		"sphere_fraction_percent":"0.97750043269370887224336636868990566324`12.",
+		"holonomy_residual":"0",
+		"notes":"The circle-of-fifths residual phase theta_gamma is the holonomy solid angle Omega."
+	},
+	{
+		"id":"ID10790",
+		"check":"inverse_outward_flip",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_substitution":"0",
+		"omega_bulk":"0.98654036854514423990621724706975939003`14.",
+		"notes":"The heard comma excess and the bulk ratio are exact reciprocals: gamma*(1\/gamma)=1."
+	},
+	{
+		"id":"comparison_53_fifths",
+		"check":"comma_53_near_closure",
+		"status":"pass",
+		"engine":"WolframScript",
+		"gamma53":"1.00209031404108617259142983161734423516`14.",
+		"cents53":"3.61504586553314045779683508112995711382`12.",
+		"theta53":"0.01892833588924844933075895702397360087`14.",
+		"sphere_fraction53_percent":"0.15062691106388085240820146171374820842`12.",
+		"notes":"53 perfect fifths against 31 octaves gives a smaller nonzero holonomy defect than the 12-fifth comma."
+	},
+	{
+		"id":"ID0395",
+		"check":"crit_universal_exponent",
+		"status":"pass",
+		"engine":"WolframScript",
+		"tau":"3\/2",
+		"residual_after_substitution":"0",
+		"notes":"The mean-field avalanche-size exponent is tau = 3\/2."
+	},
+	{
+		"id":"ID0470",
+		"check":"crit_cascade_intensity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"cascade_exponent":"-1\/2",
+		"residual_after_substitution":"0",
+		"notes":"With tau = 3\/2, cascade intensity exponent 1-tau equals -1\/2."
+	},
+	{
+		"id":"ID10791",
+		"check":"crit_crackling_relation",
+		"status":"pass",
+		"engine":"WolframScript",
+		"crackling_value":"2",
+		"notes":"With alpha = 2 and tau = 3\/2, the crackling relation gives 1\/(sigma nu z) = 2."
+	},
+	{
+		"id":"ID10792",
+		"check":"crit_reciprocal_duality",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_substitution":"0",
+		"notes":"The avalanche\/cascade pair is reciprocal: (3\/2)*(2\/3)=1."
+	}
+]

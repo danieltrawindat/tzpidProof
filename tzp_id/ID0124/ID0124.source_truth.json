@@ -1,0 +1,420 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:37:42.068397+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0124",
+    "uuid": "7f8c674f-a2fa-57d7-861a-151c3510cf47",
+    "registry_id": "registry_id_0124",
+    "canonical_title": "Pull Strength Scaling Law",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0124/ID0124.TEX",
+      "json": "D:/TZPID/TZPID/ID0124/ID0124.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0124/ID0124.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The pull strength in a cross-geometry vortex scales as",
+    "technical_interpretation": "The pull strength in a cross-geometry vortex scales as \\[ \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}, \\] where $A_{\\mathrm{cross}}$ is the cross-arm area and $A_{\\mathrm{hole}}$ is the area of the central opening."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2},",
+      "\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}",
+      "A_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}",
+      "\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}"
+    ],
+    "source_section_latex": "\\[ \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}, \\] where $A_{\\mathrm{cross}}$ is the cross-arm area and $A_{\\mathrm{hole}}$ is the area of the central opening.\n\n\\[\n\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}\n\\]\n\\[\nA_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\n\\]\n\\[\n\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Pull Gain Law",
+      "formula_latex_blocks": [
+        "\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}"
+      ],
+      "interpretive_role": "This states the main amplification rule for the focused vortex geometry."
+    },
+    {
+      "step": 2,
+      "component_title": "Area Ratio Variable",
+      "formula_latex_blocks": [
+        "A_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}"
+      ],
+      "interpretive_role": "This isolates the governing dimensionless geometry parameter."
+    },
+    {
+      "step": 3,
+      "component_title": "Exponent Form",
+      "formula_latex_blocks": [
+        "\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}"
+      ],
+      "interpretive_role": "This closes the progression by restating the law in pure ratio form, ready for comparison and design."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0124}$",
+        "description": "canonical registry object for entry ID 0124."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0124}$",
+        "name": "canonical registry object for entry ID 0124.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\left(\\frac{A_{cross}}{A_{hole}}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Pi_{pull}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{cross}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{hole}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{ratio}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{ratio}^{3/2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\frac{A_{cross}}{A_{hole}}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Pull Strength Scaling Law\nCanonical operator translation\neq0124_1 = HoldForm[((Across)(Ahole))^(3/2),];\neq0124_2 = HoldForm[== ((Across)(Ahole))^(3/2)];\neq0124_3 = HoldForm[Aratio == (Across)(Ahole)];\neq0124_4 = HoldForm[== Aratio^(3/2)];\n\nTRAWIN closure composition\nTRAWINClosure0124[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0124 := HoldForm[{eq0124_1, eq0124_2, eq0124_3, eq0124_4}];\nResult0124 := TRAWINClosure0124[K0124];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2},",
+          "normalized_latex": "(((ACross)/(AHole)))^(3/2)",
+          "wolfram_input": "(((ACross)/(AHole)))^(3/2)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(ACross/AHole)^(3/2)]",
+          "texform_roundtrip": "\\left(\\frac{\\text{ACross}}{\\text{AHole}}\\right)^{3/2}",
+          "messages": []
+        },
+        {
+          "latex": "\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}",
+          "normalized_latex": "PiPull==(((ACross)/(AHole)))^(3/2)",
+          "wolfram_input": "PiPull==(((ACross)/(AHole)))^(3/2)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PiPull == (ACross/AHole)^(3/2)]",
+          "texform_roundtrip": "\\text{PiPull}=\\left(\\frac{\\text{ACross}}{\\text{AHole}}\\right)^{3/2}",
+          "messages": []
+        },
+        {
+          "latex": "A_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}",
+          "normalized_latex": "ARatio==((ACross)/(AHole))",
+          "wolfram_input": "ARatio==((ACross)/(AHole))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ARatio == ACross/AHole]",
+          "texform_roundtrip": "\\text{ARatio}=\\frac{\\text{ACross}}{\\text{AHole}}",
+          "messages": []
+        },
+        {
+          "latex": "\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}",
+          "normalized_latex": "PiPull==ARatio^(3/2)",
+          "wolfram_input": "PiPull==ARatio^(3/2)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PiPull == ARatio^(3/2)]",
+          "texform_roundtrip": "\\text{PiPull}=\\text{ARatio}^{3/2}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0124 generated source-truth Wolfram model *)\nClearAll[K0124, TRAWINClosure0124];\neq0124$1 = HoldForm[(ACross/AHole)^(3/2)];\neq0124$2 = HoldForm[PiPull == (ACross/AHole)^(3/2)];\neq0124$3 = HoldForm[ARatio == ACross/AHole];\neq0124$4 = HoldForm[PiPull == ARatio^(3/2)];\nK0124 = HoldForm[{eq0124$1, eq0124$2, eq0124$3, eq0124$4}];\nTRAWINClosure0124[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0124 = TRAWINClosure0124[K0124];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[ \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}, \\] where $A_{\\mathrm{cross}}$ is the cross-arm area and $A_{\\mathrm{hole}}$ is the area of the central opening.\n\n\\[\n\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}\n\\]\n\\[\nA_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\n\\]\n\\[\n\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}\n\\]\n\n\\paragraph{Primary Derivation.}\nOne can verify the equality by differentiating and applying the relevant definitions. which confirms the stated equality.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. Within the TRAWIN framework, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0124/ID0124.source_truth.json",
+    "entry_id": "ID0124",
+    "registry_id": "registry_id_0124",
+    "canonical_title": "Pull Strength Scaling Law",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0124/ID0124.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7f8c674f-a2fa-57d7-861a-151c3510cf47",
+    "RTEID": "RTE:P481.5195:T0.7934",
+    "poloidal_theta_rad": "481.5195",
+    "toroidal_phi_rad": "0.7934",
+    "rteid_source": "manifest",
+    "PiID": "4460955058223",
+    "TZPi": "5",
+    "PiPE_position": "131",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2},",
+        "numeric_atoms": [
+          "3",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "A"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0124\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Pull Strength Scaling Law\", \"latex\" -> \"\\\\left(\\\\frac{A_{\\\\mathrm{cross}}}{A_{\\\\mathrm{hole}}}\\\\right)^{3/2},\", \"numericAtoms\" -> {3, 2}, \"symbolicTokens\" -> {\"A\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Pi_{\\mathrm{pull}} = \\left(\\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}\\right)^{3/2}",
+        "numeric_atoms": [
+          "3",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "A"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0124\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Pull Strength Scaling Law\", \"latex\" -> \"\\\\Pi_{\\\\mathrm{pull}} = \\\\left(\\\\frac{A_{\\\\mathrm{cross}}}{A_{\\\\mathrm{hole}}}\\\\right)^{3/2}\", \"numericAtoms\" -> {3, 2}, \"symbolicTokens\" -> {\"Pi\", \"A\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "A_{\\mathrm{ratio}} = \\frac{A_{\\mathrm{cross}}}{A_{\\mathrm{hole}}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "A"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0124\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Pull Strength Scaling Law\", \"latex\" -> \"A_{\\\\mathrm{ratio}} = \\\\frac{A_{\\\\mathrm{cross}}}{A_{\\\\mathrm{hole}}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"A\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "\\Pi_{\\mathrm{pull}} = A_{\\mathrm{ratio}}^{3/2}",
+        "numeric_atoms": [
+          "3",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Pi",
+          "A"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0124\", 4, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Pull Strength Scaling Law\", \"latex\" -> \"\\\\Pi_{\\\\mathrm{pull}} = A_{\\\\mathrm{ratio}}^{3/2}\", \"numericAtoms\" -> {3, 2}, \"symbolicTokens\" -> {\"Pi\", \"A\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 4,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

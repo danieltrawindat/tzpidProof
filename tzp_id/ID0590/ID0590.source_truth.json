@@ -1,0 +1,410 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:15:55.549824+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0590",
+    "uuid": "43fca527-fcc7-5347-b84b-e99c7f445e4b",
+    "registry_id": "registry_id_0590",
+    "canonical_title": "17.2 kHz ACOUSTIC CARRIER SYNCHRONIZATION",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0590/ID0590.TEX",
+      "json": "D:/TZPID/TZPID/ID0590/ID0590.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0590/ID0590.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "f\\_\\{carrier\\} = frac\\{v\\_s\\}\\{lambda\\} approximately 17.2 text\\{ kHz\\} implies text\\{Phase-Lock with \\} hat\\{Gamma\\} \\{up\\}",
+    "technical_interpretation": "f\\_\\{carrier\\} = frac\\{v\\_s\\}\\{lambda\\} approximately 17.2 text\\{ kHz\\} implies text\\{Phase-Lock with \\} hat\\{Gamma\\} \\{up\\}"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "f_{carrier} = \\frac{v_{\\mathrm{s}}}{\\lambda} \\approx 17.2 \\text{ kHz} \\implies \\text{Phase-Lock } \\mathrm{hat}{\\mathrm{Gamma}} {up}",
+      "mathcal{J}_{\\mathrm{out}} = \\mathcal{T}_{\\mathrm{TZP}}\\!\\left(\\mathcal{K}_{\\mathrm{TZP}}\\right)"
+    ],
+    "source_section_latex": "\\[\nf_{carrier} = \\frac{v_{\\mathrm{s}}}{\\lambda} \\approx 17.2 \\text{ kHz} \\implies \\text{Phase-Lock } \\mathrm{hat}{\\mathrm{Gamma}} {up}\n\\]\n\\[\nmathcal{J}_{\\mathrm{out}} = \\mathcal{T}_{\\mathrm{TZP}}\\!\\left(\\mathcal{K}_{\\mathrm{TZP}}\\right)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Scaling Law",
+      "formula_latex_blocks": [
+        "f_{carrier} = \\frac{v_{\\mathrm{s}}}{\\lambda} \\approx 17.2 \\text{ kHz} \\implies \\text{Phase-Lock } \\mathrm{hat}{\\mathrm{Gamma}} {up}"
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Support Relation",
+      "formula_latex_blocks": [
+        "mathcal{J}_{\\mathrm{out}} = \\mathcal{T}_{\\mathrm{TZP}}\\!\\left(\\mathcal{K}_{\\mathrm{TZP}}\\right)"
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "mathcal{A}_{\\mathrm{adm}}\\!\\left(\\mathcal{J}_{\\mathrm{out}}\\right)=1"
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0590}$",
+        "description": "canonical registry object for entry ID 0590."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0590}$",
+        "name": "canonical registry object for entry ID 0590.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\lambda$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\implies$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(K_{TZP}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(J_{out}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T_{TZP}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$K_{TZP}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J_{out}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(K_{TZP}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(J_{out}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "17.2 kHz ACOUSTIC CARRIER SYNCHRONIZATION\nCanonical operator translation\neq0590_1 = HoldForm[fcarrier == (vs)(lambda) ~== 17.2 kHz Phase-Lock hat(Gamma) (up)];\neq0590_2 = HoldForm[mathcal(J)out == (T)TZP((K)TZP)];\n\nTRAWIN closure composition\nTRAWINClosure0590[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0590 := HoldForm[{eq0590_1, eq0590_2}];\nResult0590 := TRAWINClosure0590[K0590];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "f_{carrier} = \\frac{v_{\\mathrm{s}}}{\\lambda} \\approx 17.2 \\text{ kHz} \\implies \\text{Phase-Lock } \\mathrm{hat}{\\mathrm{Gamma}} {up}",
+          "normalized_latex": "fCarrier==((vS)/(lambda))==17.2implies*hat[Gamma](up)",
+          "wolfram_input": "fCarrier==((vS)/(lambda))==17.2implies*hat[Gamma](up)",
+          "normalization_notes": [
+            "text prose removed from Wolfram parse",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[fCarrier == vS/lambda == 17.2*implies*hat[Gamma]*up]",
+          "texform_roundtrip": "\\text{fCarrier}=\\frac{\\text{vS}}{\\lambda }=17.2 \\text{implies} \\text{up} \\text{hat}(\\text{Gamma})",
+          "messages": []
+        },
+        {
+          "latex": "mathcal{J}_{\\mathrm{out}} = \\mathcal{T}_{\\mathrm{TZP}}\\!\\left(\\mathcal{K}_{\\mathrm{TZP}}\\right)",
+          "normalized_latex": "mathcal[J]_(out)==TTZP[KTZP]",
+          "wolfram_input": "mathcal[J]_(out)==TTZP[KTZP]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[mathcal[J]*_*out == TTZP[KTZP]]",
+          "texform_roundtrip": "\\_ \\text{out} \\text{mathcal}(J)=\\text{TTZP}(\\text{KTZP})",
+          "messages": []
+        },
+        {
+          "latex": "mathcal{A}_{\\mathrm{adm}}\\!\\left(\\mathcal{J}_{\\mathrm{out}}\\right)=1",
+          "normalized_latex": "mathcal[A]_(adm)(JOut)==1",
+          "wolfram_input": "mathcal[A]_(adm)(JOut)==1",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[mathcal[A]*_*adm*JOut == 1]",
+          "texform_roundtrip": "\\_ \\text{adm} \\text{JOut} \\text{mathcal}(A)=1",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0590 generated source-truth Wolfram model *)\nClearAll[K0590, TRAWINClosure0590];\neq0590$1 = HoldForm[fCarrier == vS/lambda == 17.2*implies*hat[Gamma]*up];\neq0590$2 = HoldForm[mathcal[J]*_*out == TTZP[KTZP]];\neq0590$3 = HoldForm[mathcal[A]*_*adm*JOut == 1];\nK0590 = HoldForm[{eq0590$1, eq0590$2, eq0590$3}];\nTRAWINClosure0590[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0590 = TRAWINClosure0590[K0590];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Invariant Matching Condition.}\n\\begin{equation}\n\\Pi_k^{\\mathrm{lab}}\n=\n\\Pi_k^{\\mathrm{astro}} .\n\\end{equation}\n\n\\paragraph{Scale Equivalence Map.}\n\\begin{equation}\nF_{\\mathrm{scale}}:\n\\mathcal{S}_{\\mathrm{lab}}\n\\longrightarrow\n\\mathcal{S}_{\\mathrm{astro}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\Pi_k$ denote a dimensionless invariant governing a dynamical system.  \nLaboratory and astrophysical systems are structurally comparable only when their governing invariant sets match:\n\\begin{equation}\n\\Pi_k^{\\mathrm{lab}}\n=\n\\Pi_k^{\\mathrm{astro}} .\n\\end{equation}\n\nA scale map then translates the laboratory realization into the astrophysical realization:\n\\begin{equation}\nF_{\\mathrm{scale}}:\n\\mathcal{S}_{\\mathrm{lab}}\n\\to\n\\mathcal{S}_{\\mathrm{astro}} .\n\\end{equation}\n\nThus,\n\\begin{equation}\n\\boxed{\n\\Xi_{\\mathrm{eq}}\n=\n\\mathrm{NormalizeTRAWIN}\n\\left(\n\\mathcal{S}_{\\mathrm{lab}},\n\\mathcal{S}_{\\mathrm{astro}},\nF_{\\mathrm{scale}},\n\\Pi_k\n\\right).\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nLaboratory demonstrations become structurally meaningful for astrophysical systems only when the scale map preserves the relevant dimensionless invariants.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0590/ID0590.source_truth.json",
+    "entry_id": "ID0590",
+    "registry_id": "registry_id_0590",
+    "canonical_title": "17.2 kHz ACOUSTIC CARRIER SYNCHRONIZATION",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0590/ID0590.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "43fca527-fcc7-5347-b84b-e99c7f445e4b",
+    "RTEID": "RTE:P2267.8017:T3.7366",
+    "poloidal_theta_rad": "2267.8017",
+    "toroidal_phi_rad": "3.7366",
+    "rteid_source": "manifest",
+    "PiID": "7669405132000",
+    "TZPi": "5",
+    "PiPE_position": "597",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "f_{carrier} = \\frac{v_{\\mathrm{s}}}{\\lambda} \\approx 17.2 \\text{ kHz} \\implies \\text{Phase-Lock } \\mathrm{hat}{\\mathrm{Gamma}} {up}",
+        "numeric_atoms": [
+          "17.2"
+        ],
+        "symbolic_tokens": [
+          "lambda",
+          "implies",
+          "f",
+          "carrier",
+          "v",
+          "up"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0590\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"17.2 kHz ACOUSTIC CARRIER SYNCHRONIZATION\", \"latex\" -> \"f_{carrier} = \\\\frac{v_{\\\\mathrm{s}}}{\\\\lambda} \\\\approx 17.2 \\\\text{ kHz} \\\\implies \\\\text{Phase-Lock } \\\\mathrm{hat}{\\\\mathrm{Gamma}} {up}\", \"numericAtoms\" -> {17.2}, \"symbolicTokens\" -> {\"lambda\", \"implies\", \"f\", \"carrier\", \"v\", \"up\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "mathcal{J}_{\\mathrm{out}} = \\mathcal{T}_{\\mathrm{TZP}}\\!\\left(\\mathcal{K}_{\\mathrm{TZP}}\\right)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathcal",
+          "J"
+        ],
+        "candidate_wolfram_input": "HoldForm[mathcal[J]$out == calT$TZP[calK$TZP]]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0590\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"17.2 kHz ACOUSTIC CARRIER SYNCHRONIZATION\", \"latex\" -> \"mathcal{J}_{\\\\mathrm{out}} = \\\\mathcal{T}_{\\\\mathrm{TZP}}\\\\!\\\\left(\\\\mathcal{K}_{\\\\mathrm{TZP}}\\\\right)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathcal\", \"J\"}, \"candidateWolframInput\" -> \"HoldForm[mathcal[J]$out == calT$TZP[calK$TZP]]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

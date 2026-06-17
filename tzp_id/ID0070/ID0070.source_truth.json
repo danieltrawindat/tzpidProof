@@ -1,0 +1,387 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:33:17.079666+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0070",
+    "uuid": "7a88e214-d0d9-5aaf-a824-07a5c02605c7",
+    "registry_id": "registry_id_0070",
+    "canonical_title": "Quantum Information Units",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0070/ID0070.TEX",
+      "json": "D:/TZPID/TZPID/ID0070/ID0070.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0070/ID0070.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "A quantum information unit (qunit) in the Trawinistic framework is defined as a minimal Hilbert space of dimension ddd associated with a quantum subsystem; its implementation may be qubit (d=2d=2d=2) or higher-dimensional, with states encoded in curvature-protected degrees of freedom.",
+    "technical_interpretation": "A quantum information unit (qunit) in the Trawinistic framework is defined as a minimal Hilbert space of dimension ddd associated with a quantum subsystem; its implementation may be qubit (d=2d=2d=2) or higher-dimensional, with states encoded in curvature-protected degrees of freedom."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{H}_{\\mathrm{qunit}} \\cong \\mathbb{C}^{d}",
+      "\\dim \\mathcal{H}_{\\mathrm{qunit}} = d"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{H}_{\\mathrm{qunit}} \\cong \\mathbb{C}^{d}\n\\]\n\\[\n\\dim \\mathcal{H}_{\\mathrm{qunit}} = d\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Local Subsystem",
+      "formula_latex_blocks": [
+        "\\mathcal{H}_{\\mathrm{qunit}}"
+      ],
+      "interpretive_role": "This identifies the finite subsystem used to store quantum information."
+    },
+    {
+      "step": 2,
+      "component_title": "Dimensional Invariant",
+      "formula_latex_blocks": [
+        "\\dim \\mathcal{H}_{\\mathrm{qunit}} = d"
+      ],
+      "interpretive_role": "This fixes the information capacity of the unit."
+    },
+    {
+      "step": 3,
+      "component_title": "Canonical Model Space",
+      "formula_latex_blocks": [
+        "\\mathcal{H}_{\\mathrm{qunit}} \\cong \\mathbb{C}^{d}"
+      ],
+      "interpretive_role": "This closes the progression by identifying the standard finite-dimensional realization of the unit."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0070}$",
+        "description": "canonical registry object for entry ID 0070."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0070}$",
+        "name": "canonical registry object for entry ID 0070.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\cong$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbb$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\dim$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{qunit}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Quantum Information Units\nCanonical operator translation\neq0070_1 = HoldForm[(H)qunit (C)^(d)];\neq0070_2 = HoldForm[(H)qunit == d];\n\nTRAWIN closure composition\nTRAWINClosure0070[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0070 := HoldForm[{eq0070_1, eq0070_2}];\nResult0070 := TRAWINClosure0070[K0070];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{H}_{\\mathrm{qunit}} \\cong \\mathbb{C}^{d}",
+          "normalized_latex": "HQunitcong*C^(d)",
+          "wolfram_input": "HQunitcong*C^(d)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "mathbb unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HQunitcong*C^d]",
+          "texform_roundtrip": "\\text{HQunitcong} C^d",
+          "messages": []
+        },
+        {
+          "latex": "\\dim \\mathcal{H}_{\\mathrm{qunit}} = d",
+          "normalized_latex": "Dim*HQunit==d",
+          "wolfram_input": "Dim*HQunit==d",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Dim*HQunit == d]",
+          "texform_roundtrip": "\\text{Dim} \\text{HQunit}=d",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{H}_{\\mathrm{qunit}}",
+          "normalized_latex": "HQunit",
+          "wolfram_input": "HQunit",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HQunit]",
+          "texform_roundtrip": "\\text{HQunit}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0070 generated source-truth Wolfram model *)\nClearAll[K0070, TRAWINClosure0070];\neq0070$1 = HoldForm[HQunitcong*C^d];\neq0070$2 = HoldForm[Dim*HQunit == d];\neq0070$3 = HoldForm[HQunit];\nK0070 = HoldForm[{eq0070$1, eq0070$2, eq0070$3}];\nTRAWINClosure0070[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0070 = TRAWINClosure0070[K0070];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nm_A = gv.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nGauge field interacting with scalar vacuum acquires mass.\n\nThus:\n\\begin{equation}\n\\boxed{\nm_A = gv.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nGauge symmetry breaking generates massive vector bosons.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "id": "ID0070",
+        "title": "Quantum Information Units",
+        "canonical_claim": "A quantum information unit (qunit) in the Trawinistic framework is defined as a minimal Hilbert space of dimension ddd associated with a quantum subsystem; its implementation may be qubit (d=2d=2d=2) or higher-dimensional, with states encoded in curvature-protected degrees of freedom.",
+        "proof_lane": "L1 Source-traceable statement",
+        "exact_language": "This source (Qudits and High‑Dimensional Quantum Computing) supports the definition (qudit/qunit) by showing that The article states that a qudit is a quantum version of d‑ary digits whose state can be described by a vector in a d‑dimensional Hilbert space.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Qudits and High‑Dimensional Quantum Computing",
+        "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.589504/full",
+        "doi_or_arxiv": "10.3389/fphy.2020.589504",
+        "source_type": "peer‑reviewed article",
+        "relevance": "The article states that a qudit is a quantum version of d‑ary digits whose state can be described by a vector in a d‑dimensional Hilbert space. The space is spanned by a set of orthonormal basis vectors, and qudits can replace qubits as basic computational elements. This supports defining quantum information units (qunits) as d‑dimensional Hilbert spaces.",
+        "supported_component": "definition (qudit/qunit)",
+        "confidence": "medium",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0070/ID0070.source_truth.json",
+    "entry_id": "ID0070",
+    "registry_id": "registry_id_0070",
+    "canonical_title": "Quantum Information Units",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0070/ID0070.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7a88e214-d0d9-5aaf-a824-07a5c02605c7",
+    "RTEID": "RTE:P271.8255:T0.4479",
+    "poloidal_theta_rad": "271.8255",
+    "toroidal_phi_rad": "0.4479",
+    "rteid_source": "manifest",
+    "PiID": "0628620899862",
+    "TZPi": "0",
+    "PiPE_position": "77",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\mathcal{H}_{\\mathrm{qunit}} \\cong \\mathbb{C}^{d}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "cong",
+          "mathbb",
+          "d"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0070\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum Information Units\", \"latex\" -> \"\\\\mathcal{H}_{\\\\mathrm{qunit}} \\\\cong \\\\mathbb{C}^{d}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"cong\", \"mathbb\", \"d\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\dim \\mathcal{H}_{\\mathrm{qunit}} = d",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "dim",
+          "d"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0070\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum Information Units\", \"latex\" -> \"\\\\dim \\\\mathcal{H}_{\\\\mathrm{qunit}} = d\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"dim\", \"d\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

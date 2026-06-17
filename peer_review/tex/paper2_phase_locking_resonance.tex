@@ -1,0 +1,304 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={Phase Locking and Resonance Ratio-Selection on the Bounded Enclosure},pdfsubject={TZPID Gold Spine Series, Paper II, DOI: 10.5281/zenodo.20630626},pdfkeywords={Kuramoto, phase locking, spin-orbit resonance, cavity quantization, rational ratios, TZPID, DOI 10.5281/zenodo.20630626}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Phase Locking and Resonance Ratio-Selection on the Bounded Enclosure\\[0.6em]
+\large TZPID Gold Spine Series, Paper II of VIII}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20630626}{10.5281/zenodo.20630626}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Paper I of this series assembled four observational pillars on one geometric stage---nested hyperspherical enclosures---and noted that three of the pillars \emph{observe} rational frequency ratios and scale invariance without explaining them. The present paper supplies the missing dynamical mechanism. The argument is a single causal chain: cavity boundary conditions produce allowed modes; coupling among those modes produces entrainment; entrainment above threshold produces phase locking; phase locking realized celestially is spin--orbit and orbital resonance; the captured states are rational ratios such as $3{:}2$ and $2{:}1$; and the failure of repeated rational locking to close exactly is the comma and reciprocal flip developed in Paper III. Each link is anchored to the TZPID canonical registry: the Well/Wall/Wave cavity selector $J_m(k_{mn}R) = 0$ (ID0252, ID0261, ID7732), the master synchronization functional $\mathcal{S}_{\mathrm{sync}}$ (ID0105), the Kuramoto model and its order parameter (ID0115, ID0117), the two-oscillator locking threshold $K \geq |\omega_1 - \omega_2|$ (ID9513), the spin--orbit resonance proposition with tidal dissipation (ID0143, ID1171, ID9955), the beat-window and bridging-ratio constructions (ID0099, ID0097), and the comma chain (ID10786, ID10790, ID10792). Nine Wolfram-checkable relations certify the arithmetic and dynamical guardrails, including the order-parameter bounds $0 \leq r \leq 1$, the locking threshold, the $3/2 \leftrightarrow 2/3$ reciprocity, the cavity harmonic $2{:}1$, and the exactness of the comma. We argue that phase locking on a bounded enclosure is the generator of every rational ratio exhibited by the spine series, state the demarcation between established nonlinear dynamics and the framework hypothesis, and prepare the gyromagnetic dependency layer required by Paper IV.
+\end{abstract}
+
+\section{Introduction: from observation to mechanism}
+\label{sec:intro}
+
+Paper I closed with a question: if the enclosure's boundary quantizes the world into countable oscillators, what law decides which ratios those oscillators lock to, and why are the survivors rational? The question matters because rational ratios appear throughout the spine series in places that have no obvious business agreeing with one another. The Pythagorean comma is built from stacked $3/2$ fifths; the avalanche--cascade duality is $3/2 \leftrightarrow 2/3$; Mercury rotates exactly three times for every two orbits; the Galilean moons Io, Europa, and Ganymede sit in a $1{:}2{:}4$ Laplace chain; bedforms on two planets select discrete wavelength rungs separated by forbidden gaps.
+
+The thesis of this paper is that one mechanism produces all of these: \emph{a wave bounded by an enclosure becomes a discrete set of oscillators, and coupled, dissipative oscillators phase-lock onto rational frequency ratios}. Kuramoto synchronization, mean-motion orbital resonance, and tidal locking are the same physics in three costumes. The enclosure plays the indispensable first role---without a boundary there is no discreteness, and without discreteness there is nothing to lock.
+
+Read as a chain:
+\begin{equation*}
+\begin{gathered}
+\text{cavity boundary} \to \text{allowed modes} \to \text{entrainment} \to \text{phase lock} \\
+\to \text{orbital resonance} \to \text{rational } p/q \to \text{comma / flip}.
+\end{gathered}
+\end{equation*}
+Within the spine architecture this paper is a vertebra of the nested-hypersphere spine of Paper I (its fourth pillar, developed in full), and simultaneously a free-standing focused spine whose obligations are consumed by the Isabelle and Wolfram pipelines. Sections~\ref{sec:cavity}--\ref{sec:comma} walk the chain link by link; Section~\ref{sec:gyro} prepares the dependency on the movement mechanism of Paper IV; Section~\ref{sec:wolfram} records the machine-checked guardrails; Section~\ref{sec:demarcation} states the demarcation and predictions.
+
+\section{Link 1: the cavity selects the modes}
+\label{sec:cavity}
+
+\subsection{Well, Wall, Wave}
+
+The registry's Well/Wall/Wave cavity selector (ID0252) states that a bounded two-dimensional drum admits only harmonic Bessel standing waves:
+\begin{equation}
+u_{mn}(r,\theta) = J_m(k_{mn} r)\, e^{im\theta}, \qquad J_m(k_{mn} R) = 0.
+\label{eq:cavity}
+\end{equation}
+The boundary condition is everything: of the continuum of conceivable wavenumbers, only those whose Bessel zeros land on the wall survive. ID0261 records the quantization consequence numerically: the surviving radii stand in fixed irrational-free relations, e.g.\ $R/r \approx 2.46$ for the first interior node of the fundamental. ID7732 supplies the spherical generalization $Y_{\ell m}(\theta, \phi)$, lifting the drum to the spherical enclosures of Paper I. In one dimension the same logic gives the registry's discrete spectrum (ID0201)
+\begin{equation}
+f_n = \frac{n\, v_A}{2\pi R}, \qquad n \in \mathbb{N}_{>0},
+\end{equation}
+a perfect harmonic ladder whose adjacent rungs stand in ratios $2{:}1$, $3{:}2$, $4{:}3$, \dots---already the intervals of the musical scale, before any dynamics has acted.
+
+\begin{remark}
+This is the precise sense in which the enclosure ``makes the world discrete.'' A continuum of frequencies cannot phase-lock; a countable ladder can. The cavity is therefore logically prior to every synchronization phenomenon in this paper, exactly as the enclosure of Paper I is logically prior to its four pillars.
+\end{remark}
+
+\subsection{The variational target}
+
+The master synchronization functional (ID0105, Principle) gathers the whole mechanism into one action-like object:
+\begin{equation}
+\mathcal{S}_{\mathrm{sync}}[\rho, \theta, \Phi] = \int_{\mathcal{M}} \Big( \alpha\, |\nabla\theta|^2 + \beta\, D(\rho \,\Vert\, \sigma) + \gamma\, |\Phi_{\mathrm{bulk}} - \Phi_{\mathrm{bdy}}|^2 \Big)\, d\mu, \qquad \delta \mathcal{S}_{\mathrm{sync}} = 0.
+\label{eq:sync}
+\end{equation}
+The three penalty terms are the paper in miniature: phase gradients (misalignment among oscillators), relative entropy against a reference state (disorder), and bulk--boundary mismatch (failure of the interior and the surface of the enclosure to agree). Synchronization is the variational minimum of \eqref{eq:sync}; everything that follows is the explicit dynamics by which the minimum is approached.
+
+\section{Link 2: coupling produces entrainment and lock}
+\label{sec:kuramoto}
+
+\subsection{The Kuramoto ensemble}
+
+ID0115 (Definition) realizes the cavity's countable oscillators as a finite Kuramoto system, in its registry form a planetary spin model:
+\begin{equation}
+\dot{\theta}_i = \omega_i + \frac{K}{N}\sum_{j=1}^{N} A_{ij}\sin(\theta_j - \theta_i), \qquad
+A_{ij} = \frac{\sqrt{m_i m_j}}{|a_i - a_j|}, \qquad N = 8,
+\label{eq:kuramoto}
+\end{equation}
+with gravitationally weighted coupling. Coherence is measured by the order parameter (ID0117, Definition)
+\begin{equation}
+r\, e^{i\psi} = \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j}, \qquad
+r = \left| \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j} \right|, \qquad
+\psi = \arg\!\left( \frac{1}{N}\sum_{j=1}^{N} e^{i\theta_j} \right),
+\label{eq:order}
+\end{equation}
+with $r = 0$ incoherent and $r = 1$ fully locked. The Wolfram certificate verifies the bound $0 \leq r \leq 1$ for any finite ensemble.
+
+\subsection{The locking threshold}
+
+The decisive quantitative statement is ID9513 (Definition): two coupled oscillators of natural frequencies $\omega_1, \omega_2$ can phase-lock precisely when the coupling defeats the detuning,
+\begin{equation}
+K \geq |\omega_1 - \omega_2|.
+\label{eq:threshold}
+\end{equation}
+Below threshold the phase difference drifts; above it the difference is captured and held. Relation \eqref{eq:threshold} is certified as \texttt{phase\_lock\_threshold}. The statement is the content of the Adler equation: writing $\chi = \theta_2 - \theta_1$ for the phase difference and $\Delta\omega = \omega_2 - \omega_1$ for the detuning, the two-oscillator reduction of \eqref{eq:kuramoto} is
+\begin{equation}
+\dot{\chi} = \Delta\omega - K\sin\chi,
+\label{eq:adler}
+\end{equation}
+which has fixed points iff $|\Delta\omega/K| \leq 1$, i.e.\ iff \eqref{eq:threshold} holds. At threshold the stable and unstable fixed points are born in a saddle-node bifurcation at $\chi^\ast = \pi/2$; above threshold the locked phase lag is $\chi^\ast = \arcsin(\Delta\omega/K)$. The lock is therefore not a resonance in the linear sense---no amplitude divergence is involved---but a topological capture: the flow on the phase circle acquires a fixed point, and once captured the system cannot drift without crossing the unstable point. This is the microscopic prototype of every capture in the series, from Mercury's spin to the registry's beat windows. In the full ensemble the same competition appears as a critical coupling $K_c$ above which $r$ rises from zero---the synchronization phase transition. The registry's parameter-sweep entry (ID0144) prescribes the numerical protocol: sweep $K_0 \in [K_{\min}, K_{\max}]$, record $r(t; K_0)$, and identify frequency clusters $\Omega_{\mathrm{cluster}}(K_0) = \{\dot{\theta}_j : |\dot{\theta}_j - \dot{\theta}_k| < \varepsilon\}$, capturing partial synchronization en route to full lock.
+
+\subsection{Entrainment as controlled descent}
+
+The registry's DAANS entrainment entries close the dynamical loop. ID9492 (Definition) declares the entrainment state space---phase, orientation, polarization, and mode amplitudes, $\psi = (\theta, \phi, \varepsilon, \text{amplitudes}) \in S^2 \times T^2 \times \mathbb{R}$---and ID9494 (Definition) the control law: a negative-gradient flow chosen so that a Lyapunov function $V$ obeys $\dot{V} \leq -\alpha V$. The certificate \texttt{entrainment\_lyapunov\_descent} verifies $\dot{V} = -\|\nabla V\|^2 \leq 0$: entrainment is not accidental but the generic endpoint of dissipative descent, exactly as the variational form \eqref{eq:sync} requires.
+
+\section{Link 3: the celestial realization}
+\label{sec:celestial}
+
+\subsection{Spin--orbit resonance is Kuramoto locking}
+
+The registry asserts the identification directly. The spin--orbit oscillator model (ID0120, Definition) couples spin phases $\theta_i$ and orbital phases $\phi_i$ in one system,
+\begin{equation}
+\dot{\theta}_i = \Omega_i + \frac{K_s}{N}\sum_{j=1}^{N}\sin(\theta_j - \theta_i) + \lambda_i \sin(\phi_i - \theta_i), \qquad
+\dot{\phi}_i = \nu_i + \frac{K_o}{N}\sum_{j=1}^{N}\sin(\phi_j - \phi_i),
+\label{eq:spinorbit}
+\end{equation}
+and the orbital metronome law (ID9955, Law) adds dissipation:
+\begin{equation}
+\dot{\phi}_i = \Omega_i + \sum_{j \neq i} K^{(O)}_{ij} \sin(\phi_j - \phi_i) + \Lambda_i.
+\end{equation}
+The resonant-angle coupling of celestial mechanics, $\sin(k_1\phi_1 - k_2\phi_2)$ (ID7437), is term-for-term a Kuramoto interaction: mean-motion resonances \emph{are} phase locks of celestial oscillators. Tidal torque (ID1171),
+\begin{equation}
+\tau_{\mathrm{tidal}}(\omega, \Omega) = \frac{1}{I}\sum_{n=1}^{N} J_n(ne)^2 \sin\big(2(\omega - n\Omega)\big),
+\end{equation}
+supplies the dissipation that pulls spin toward orbit, playing the role of the Lyapunov descent of Section~\ref{sec:kuramoto}.
+
+\subsection{The captured states are rational}
+
+The spin--orbit resonance proposition (ID0143, Proposition) states the outcome for the cleanest natural example:
+\begin{equation}
+\frac{\Omega_{\mathrm{spin}}}{\Omega_{\mathrm{orb}}} = \frac{3}{2}, \qquad
+\tau_{\mathrm{tidal}} \propto -\gamma\, \sin(2\theta - 3M), \qquad
+\dot{\theta} = \Omega_{\mathrm{spin}} + \tau_{\mathrm{tidal}},
+\label{eq:mercury}
+\end{equation}
+Mercury's $3{:}2$ lock: the planet's spin is captured by the term $\sin(2\theta - 3M)$, whose vanishing time-average requires exactly the rational ratio $3/2$. The general selection rule is rationality itself: locked states satisfy $\Omega_{\mathrm{spin}}/\Omega_{\mathrm{orbit}} = p/q$ with small integers $p, q$---the Moon's $1{:}1$, Mercury's $3{:}2$, the Laplace $1{:}2{:}4$ chain---drawn from a discrete ladder of allowed ratios (ID7904). The certificate \texttt{spin\_orbit\_3\_2\_reciprocal} records that the $3/2$ lock carries its reciprocal descent $2/3$, the first appearance in this paper of the flip that Paper III will geometrize.
+
+\begin{remark}
+Why rationals? A lock is a closed orbit in the phase difference; closure requires commensurability; commensurability is rationality. Irrational ratios cannot close and so cannot lock---a fact whose extreme case, the golden ratio as the \emph{most} irrational and hence last-to-lock ratio (KAM theory), becomes the watershed of Paper III. The rationality of locked states is thus not an empirical accident but a theorem of the mechanism.
+\end{remark}
+
+\subsection{Arnold tongues and the width of capture}
+
+The classical theory makes the selection rule quantitative in a way the spine exploits. For a periodically driven oscillator, each rational ratio $p/q$ owns a wedge-shaped region of parameter space---an Arnold tongue---inside which the system locks to that ratio; the tongue rooted at $p/q$ has width scaling like $K^q$ in the coupling $K$, so low-order rationals ($1{:}1$, $2{:}1$, $3{:}2$) command the widest capture zones, while high-order rationals own vanishingly thin slivers. As coupling grows, the tongues widen and the locked portion of the frequency axis grows toward full measure: the devil's staircase. Three consequences matter for the series. First, the \emph{hierarchy of observed locks}---why nature exhibits $1{:}1$, $3{:}2$, and $2{:}1$ rather than $17{:}11$---is exactly the hierarchy of tongue widths; the rational ladder of ID7904 inherits its population statistics from this geometry. Second, the \emph{boundary between locking and drift} is sharp and measurable, which is what makes the predictions of Section~\ref{sec:demarcation} falsifiable rather than rhetorical. Third, the \emph{unlockable extreme} is distinguished: the ratio farthest from every tongue root in the continued-fraction sense is the golden ratio, the last invariant circle to be destroyed under increasing perturbation (KAM). The enclosure thus comes equipped not only with a mechanism that selects rationals but with a precise ranking of which rationals it selects first---and a unique fixed point it can never capture. Both facts become structural in Paper III: the wide-tongue fifth $3/2$ generates the comma, and the tongue-free golden ratio marks the watershed where locking gives way to scale invariance.
+
+\section{Link 4: beats, bridges, and the approach to the comma}
+\label{sec:comma}
+
+\subsection{Beat windows}
+
+Two nearby locked frequencies do not merely coexist; they interfere on a slow envelope. ID0099 gives the beat waveform and its discrete coupling windows:
+\begin{equation}
+\psi_{\mathrm{beat}}(t) = 2\cos\big(\pi(f_2 - f_1)t\big)\,\sin\big(\pi(f_1 + f_2)t\big), \qquad
+t_n = \frac{n}{2\Delta f},
+\label{eq:beat}
+\end{equation}
+with $\Delta f = |f_2 - f_1|$ (for the registry's worked $440/446$ Hz pair, $t_n = n/12$). The envelope nodes are equally spaced: certificate \texttt{beat\_window\_spacing}. Beats are how a discrete spectrum talks to itself---the enclosure's modes generate their own slower clock.
+
+\subsection{The bridging ratio}
+
+The flip--twist bridge (ID0097; companion ID0130) promotes the beat construction to a design rule built on the Pythagorean minor third:
+\begin{equation}
+f_{\mathrm{bridge}} = \frac{32}{27}\, f_0, \qquad
+\Psi_{\mathrm{bridge}}(t) = G_\sigma(t)\Big[ \cos(2\pi f_1 t) - \cos(2\pi f_2 t + \theta) \Big],
+\label{eq:bridge}
+\end{equation}
+a Gaussian-windowed, phase-flipped insertion that creates controlled local cancellations. The ratio $32/27 = 2^5/3^3$ is composed entirely of the octave prime 2 and the fifth prime 3---it lives on the same rational lattice the locking mechanism populates---and its reciprocal identity $(32/27) \cdot (27/32) = 1$ is certified as \texttt{bridge\_ratio\_reciprocal}. This is the frequency-axis ratio that Paper I's second pillar advanced as the cymatic prediction.
+
+\subsection{The comma: locking cannot close}
+
+The chain terminates at the three comma entries, developed geometrically in Paper III but stated here as the mechanism's own boundary. Repeated $3{:}2$ locking fails to close exactly (ID10786):
+\begin{equation}
+\gamma = \frac{(3/2)^{12}}{2^7} = \frac{3^{12}}{2^{19}} = \frac{531441}{524288} \approx 1.0136433,
+\label{eq:comma}
+\end{equation}
+certified exactly as \texttt{comma\_exact}. The bulk reads the boundary excess as a reciprocal deficit (ID10790),
+\begin{equation}
+\Delta\chi_{\mathrm{Hopf}} = \Omega, \qquad \omega_{\mathrm{bulk}} = \frac{1}{\gamma} = \frac{524288}{531441},
+\end{equation}
+certified as \texttt{inverse\_outward\_flip}; and criticality mirrors the same map (ID10792),
+\begin{equation}
+\tau_{\mathrm{avalanche}} = \frac{3}{2} \quad \Longleftrightarrow \quad \frac{1}{\tau} = \frac{2}{3} = \tau_{\mathrm{cascade}},
+\end{equation}
+certified as \texttt{crit\_reciprocal\_duality}. The mechanism of this paper thus produces both halves of the spine's signature: the rational locks (the ratios) \emph{and} the exact measure of their failure to close (the comma)---the residue that Paper III identifies as the holonomy of the enclosure.
+
+\section{The curated registry chain}
+\label{sec:chain}
+
+Table~\ref{tab:chain} assembles the vertebra in proof order, with obligation roles and verification status as consumed by the formal pipeline.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{The phase-locking vertebra: curated registry chain.}
+\label{tab:chain}
+\begin{tabular}{llll}
+\toprule
+ID & Role in the vertebra & Obligation & Verification \\
+\midrule
+ID0252 & Well/Wall/Wave cavity selector & Definition & pass: cavity\_harmonic\_2\_1 \\
+ID0261 & Bessel standing-wave quantization & Definition & covered: cavity\_bessel\_boundary \\
+ID7732 & Spherical enclosure eigenmodes & Definition & structural \\
+ID0105 & Master synchronization functional & Principle & structural obligation \\
+ID0115 & Kuramoto planetary spin model & Definition & covered: phase\_lock\_threshold \\
+ID0117 & Order parameter $r e^{i\psi}$ & Definition & pass: order\_parameter\_bounds \\
+ID9513 & Lock threshold $K \geq |\omega_1 - \omega_2|$ & Definition & pass: phase\_lock\_threshold \\
+ID0120 & Spin--orbit oscillator model & Definition & model obligation \\
+ID0144 & Partial-synchronization sweep & Definition & computational sweep \\
+ID0143 & Spin--orbit $3{:}2$ resonance & Proposition & pass: spin\_orbit\_3\_2\_reciprocal \\
+ID9955 & Orbital metronome law & Law & covered: phase\_lock\_threshold \\
+ID9492 & DAANS entrainment state space & Definition & structural \\
+ID9494 & DAANS entrainment control law & Definition & pass: lyapunov\_descent \\
+ID0099 & Beat windows & Core\_Definition & pass: beat\_window\_spacing \\
+ID0097 & Flip--twist bridge $32/27$ & Core\_Definition & pass: bridge\_ratio\_reciprocal \\
+ID10786 & Comma loop $\gamma$ & Derived\_Theorem & pass: comma\_exact \\
+ID10790 & Hopf inverse flip $1/\gamma$ & Derived\_Theorem & pass: inverse\_outward\_flip \\
+ID10792 & Criticality mirror $3/2 \leftrightarrow 2/3$ & Derived\_Theorem & pass: crit\_reciprocal\_duality \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The proof-ordered insertion into the nested-hypersphere spine of Paper I reads
+\begin{equation*}
+\begin{gathered}
+\text{ID0252} \to \text{ID0261} \to \text{ID7732} \to \text{ID0105} \to \text{ID0115} \to \text{ID0117} \to \text{ID9513} \\
+\to \text{ID0143} \to \text{ID9955} \to \text{ID0097} \to \text{ID10786} \to \text{ID10790} \to \text{ID10792}.
+\end{gathered}
+\end{equation*}
+
+\section{The gyromagnetic dependency layer}
+\label{sec:gyro}
+
+One dependency must be declared before the formal export of this vertebra. The locking mechanism explains \emph{which} states are captured, but presupposes systems that rotate and a drive that forces them. The registry's gyromagnetic movement extraction---the subject of Paper IV---supplies both: rotation as accumulated electromagnetic torque, magnetic helicity as the conserved movement invariant, the Elsasser attractor $\Lambda \approx 1$ as the cross-scale balance point, and the magnetoacoustic gateway $\delta\Lambda(\omega) = \alpha U(\omega)/(\kappa + i\omega)$ by which cavity modes (ID0252) drive gyromagnetic states toward the phase-lock thresholds (ID9513) and rational captures (ID0143) of this paper. The pre-Isabelle proof order is
+\begin{equation*}
+\begin{gathered}
+\text{ID10146} \to \text{ID0037} \to \text{ID0087} \to \text{ID0038} \to \text{ID0039} \to \text{ID0044} \\
+\to \text{ID0089} \to \text{ID0090} \to \text{ID0252} \to \text{ID9513} \to \text{ID0143},
+\end{gathered}
+\end{equation*}
+typing the moving gyromagnetic system and its invariants first, then proving the lock and rational-selection obligations. This ordering keeps the series' formal pipeline sane: Paper IV is logically upstream of the celestial realizations used here, even though the locking mathematics is self-contained.
+
+\section{Machine-checked guardrails}
+\label{sec:wolfram}
+
+The Wolfram certificate and Isabelle focus theory cover nine relations: the Kuramoto order-parameter bound $0 \leq r \leq 1$; the phase-lock threshold $K \geq |\omega_1-\omega_2|$; the $3/2$ spin--orbit lock and its $2/3$ reciprocal descent; the cavity harmonic $f_2/f_1 = 2$ with reciprocal $1/2$; the Bessel boundary condition at allowed roots; the Lyapunov descent relation $\dot{V} = -\|\nabla V\|^2 \leq 0$; beat-window spacing $1/(2\Delta f)$; the bridge-ratio reciprocal identity $(32/27)(27/32)=1$; and the comma exactness of Eq.~\eqref{eq:comma}. Items (i)--(vi) certify the dynamics; (vii)--(ix) certify the arithmetic the dynamics feeds into Paper III. The release artifacts preserve the exact machine identifiers for these checks.
+
+\section{Demarcation and predictions}
+\label{sec:demarcation}
+
+\textbf{Established physics:} Kuramoto synchronization and its order-parameter transition; the two-oscillator locking condition; mean-motion and spin--orbit resonance, including Mercury's $3{:}2$ capture and tidal dissipation; cavity mode quantization; beat interference. All are standard nonlinear dynamics and celestial mechanics, independently citable.
+
+\textbf{Framework hypothesis:} that these locks are the dynamical selection rule of one and the same nested hyperspherical enclosure---so that the rational ratios in music (the comma's $3/2$), criticality ($3/2 \leftrightarrow 2/3$), and orbits ($p{:}q$) share a single generator. The hypothesis is testable: the locked ratios observed across independent systems should populate the same discrete ladder (ID7904), with reciprocal pairs appearing as conjugate states; and the $32/27$ bridging ratio should govern pattern transitions on driven enclosure analogues, as predicted in Paper I.
+
+Three further predictions are specific to this vertebra. (i) \emph{Partial-synchronization structure:} the sweep protocol of ID0144 applied to solar-system spin data should reveal frequency clusters at rational ratios beyond the known resonances, with cluster boundaries at the threshold \eqref{eq:threshold}. (ii) \emph{Beat-window timing:} coupling events in driven two-frequency systems should concentrate at the discrete windows $t_n = n/(2\Delta f)$ of Eq.~\eqref{eq:beat}. (iii) \emph{Reciprocal conjugacy:} wherever a $p{:}q$ lock is observed, perturbation should reveal the conjugate $q{:}p$ state as the adjacent capture, the dynamical face of the flip.
+
+\section{Conclusion: the mechanism in hand}
+\label{sec:conclusion}
+
+The chain is complete. The enclosure's wall makes the spectrum discrete (ID0252, ID0261, ID7732); the synchronization functional declares the target (ID0105); Kuramoto coupling and Lyapunov descent reach it (ID0115, ID0117, ID9513, ID9494); the heavens realize it with tidal dissipation capturing rational ratios (ID0120, ID9955, ID7437, ID1171, ID0143); and the captured rationals, stacked, fail to close by exactly the comma (ID10786), whose bulk reading is the reciprocal flip (ID10790, ID10792).
+
+What remains is to understand the failure itself. Twelve perfect fifths overshoot seven octaves by $\gamma = 531441/524288$---not approximately, but exactly, and the excess is not a tuning nuisance to be tempered away. Paper III will show that the comma is a holonomy: the curvature signal of the space the tones live on, equal to an enclosed solid angle on the enclosure, lifted through the Hopf map from the boundary we hear to the bulk we inhabit. The mechanism of this paper produces the ratios; the geometry of the next explains their residue.
+
+\begin{thebibliography}{16}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Phase-Locking and Resonance Ratio-Selection Spine}, TZPIDProof archive, \texttt{TZPID\_PHASE\_LOCKING\_RESONANCE\_SPINE.md} (2026).
+
+\bibitem{paper1} Trawin, D. A., \emph{Nested Hyperspherical Enclosures: Acoustic, Projective, Critical, and Synchronization Evidence for a Bounded Cosmology}, TZPID Gold Spine Series, Paper I (2026).
+
+\bibitem{kuramoto} Kuramoto, Y., \emph{Chemical Oscillations, Waves, and Turbulence}, Springer (1984).
+
+\bibitem{strogatz} Strogatz, S. H., \emph{From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators}, Physica D \textbf{143}, 1 (2000).
+
+\bibitem{acebron} Acebron, J. A., et al., \emph{The Kuramoto model: A simple paradigm for synchronization phenomena}, Rev.\ Mod.\ Phys.\ \textbf{77}, 137 (2005).
+
+\bibitem{goldreich} Goldreich, P., and Peale, S., \emph{Spin-orbit coupling in the solar system}, Astron.\ J.\ \textbf{71}, 425 (1966).
+
+\bibitem{murray} Murray, C. D., and Dermott, S. F., \emph{Solar System Dynamics}, Cambridge University Press (1999).
+
+\bibitem{correia} Correia, A. C. M., and Laskar, J., \emph{Mercury's capture into the 3/2 spin-orbit resonance as a result of its chaotic dynamics}, Nature \textbf{429}, 848 (2004).
+
+\bibitem{pikovsky} Pikovsky, A., Rosenblum, M., and Kurths, J., \emph{Synchronization: A Universal Concept in Nonlinear Sciences}, Cambridge University Press (2001).
+
+\bibitem{arnold} Arnold, V. I., \emph{Small denominators. I. Mapping the circle onto itself}, Izv.\ Akad.\ Nauk SSSR Ser.\ Mat.\ \textbf{25}, 21 (1961).
+
+\bibitem{adler} Adler, R., \emph{A study of locking phenomena in oscillators}, Proc.\ IRE \textbf{34}, 351 (1946).
+
+\bibitem{jensen} Jensen, M. H., Bak, P., and Bohr, T., \emph{Complete devil's staircase, fractal dimension, and universality of mode-locking structure in the circle map}, Phys.\ Rev.\ Lett.\ \textbf{50}, 1637 (1983).
+
+\end{thebibliography}
+
+\end{document}

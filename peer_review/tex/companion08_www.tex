@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={WWW Updated: Scale-Dependent Phase Law and Coherence Breaking},pdfsubject={TZPID Companion Spine Series, Paper C8},pdfkeywords={TZPID, www}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{WWW Updated: Scale-Dependent Phase Law and Coherence Breaking\\[0.6em]
+\large TZPID Companion Spine Series, Paper C8 of XXVII\\
+\normalsize The second-generation Well-Wall-Wave formulation}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion documents the substantial update to Well-Wall-Wave theory: a scale-dependent phase law replacing constant-wavenumber assumptions, coherence-breaking dynamics imported from the THZ framework, and toroidal-constraint hypotheses promoted to explicit testable terms.
+The source manuscript's stated thesis: ``This manuscript is a substantial update to earlier Well-Wall-Wave (WWW) formulations. The new version differs by (i) replacing constant wave number assumptions with a scaledependent phase law, (ii) integrating coherence-breaking ideas from the THZ framework into a compact dynamical interpretation, and (iii) incorporating toroidal-constraint hypotheses from gyromagnetic validation notes as explicit, testable terms.'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID7842, ID6430, ID3339, ID6366, ID9518, ID9955, ID3340) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the corpus's demonstration of its own refinement discipline: a spine revising its predecessor under stated pressures.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Scientific frameworks earn trust by how they revise. This companion is the corpus's clearest exhibit: a second-generation Well-Wall-Wave formulation that differs from its predecessor (companion C7) in three declared ways, each responding to an identified weakness.
+
+First, the constant-wavenumber assumption is replaced by a scale-dependent phase law. The original model's Bessel waves carried a single $k$; the update lets the effective wavenumber run with radius, which is both more honest to the underlying physics (media gradients bend dispersion) and more predictive (the running is itself a measurable function). Second, coherence-breaking ideas from the THZ framework are integrated into a compact dynamical interpretation: stable shells are not eternal but persist while mode coherence persists, acquiring lifetimes and decay channels---the avalanche/criticality physics of core Paper I entering orbital theory. Third, the toroidal-constraint hypotheses from the gyromagnetic validation notes (companion C18) are incorporated as explicit, testable terms rather than background assumptions, tying shell stability to the toroidal topology that Papers IV and VIII make fundamental.
+
+The spine below anchors the updated formulation. Read together with C7, the pair demonstrates the program's intended lifecycle: concept-anchored backbone, identified weaknesses, typed revision---with the registry preserving both generations so that the revision itself is auditable.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID7842} \to \text{ID6430} \to \text{ID3339} \to \text{ID6366} \\
+\to \text{ID9518} \to \text{ID9955} \to \text{ID3340}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID7842: Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): P(t,x) (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{p(t,\textbackslash{}mathbf\{x\})}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: p(t,x)\par\medskip
+\noindent\textit{Encyclopedia reading.} Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): P(t,x) is a symbolic expression, written p(t,x). It introduces a symbol or relation used elsewhere in the framework. It is built from p, x. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID7842\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID6430: Step 2 --- Wave Equation Admits Lemniscate Solutions: Psi\_2,1 (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}Psi\_\{2,1\}=A\textbackslash{}cos(2\textbackslash{}phi)\textbackslash{}cos(\textbackslash{}theta)e\textasciicircum{}\{-i\textbackslash{}omega t\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: Psi\_2,1=Acos(2phi)cos(theta)e\textasciicircum{}-iomega t\par\medskip
+\noindent\textit{Encyclopedia reading.} Step 2 --- Wave Equation Admits Lemniscate Solutions: Psi\_2,1 is a fourier/spectral transform, written Psi\_2,1=Acos(2phi)cos(theta)e\textasciicircum{}-iomega t. It maps the quantity into the frequency or spectral domain, exposing its harmonic content. It is built from phi, theta, omega, A, defining Psi\_2,1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID6430\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID3339: Voxels Number Density Laplacian Operator (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} N\_\{ \textbackslash{}text\{voxels\}\} = \textbackslash{}left( \textbackslash{}frac\{0.1 \textbackslash{}text\{ m\}\}\{ \textbackslash{}Delta r\} \textbackslash{}right)\textasciicircum{}3 \textbackslash{}approx (5.6 \textbackslash{}times 10\textasciicircum{}5)\textasciicircum{}3 \textbackslash{}approx 1.7 \textbackslash{}times 10\textasciicircum{}\{17\} \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Voxels Number Density Laplacian Operator --- N\_ voxels = ( (0.1 m)/( Delta r) )\textasciicircum{}3 \textasciitilde{}= (5.6 x 10\textasciicircum{}5)\textasciicircum{}3 \textasciitilde{}= 1.7 x 10\textasciicircum{}17\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID3339\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID6366: Technical Summary (What's in the File) (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{r\textasciicircum{}\{|\textbackslash{}ell|\} e\textasciicircum{}\{i\textbackslash{}ell\textbackslash{}theta\} e\textasciicircum{}\{-r\textasciicircum{}2/2\textbackslash{}sigma\textasciicircum{}2\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Technical Summary (What's in the File) --- r\textasciicircum{}|l| e\textasciicircum{}iltheta e\textasciicircum{}-r\textasciicircum{}2/2sigma\textasciicircum{}2\par\medskip
+\noindent\textit{Encyclopedia reading.} Technical Summary (What's in the File) is an exponential / gaussian profile, written r\textasciicircum{}|l| e\textasciicircum{}iltheta e\textasciicircum{}-r\textasciicircum{}2/2sigma\textasciicircum{}2. It describes an exponential or Gaussian profile characterizing localized or decaying behaviour. It is built from ell, theta, sigma, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID6366\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\subsection{ID9518: Synchronization: Kuramoto Networks and Phase Coherence: \textasciitilde{} 1/r\textasciicircum{}p (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}sim 1/r\textasciicircum{}p}}\par\medskip
+\noindent\textit{Dictionary definition.} Synchronization: Kuramoto Networks and Phase Coherence: \textasciitilde{} 1/r\textasciicircum{}p --- \textasciitilde{} 1/r\textasciicircum{}p\par\medskip
+\noindent\textit{Encyclopedia reading.} Synchronization: Kuramoto Networks and Phase Coherence: \textasciitilde{} 1/r\textasciicircum{}p is a scaling / order-of-magnitude relation, written \textasciitilde{} 1/r\textasciicircum{}p. It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from r, p. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID9518\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID9955: Orbital Metronome Synchronization and Kuramoto--DAT Coupling: phi\_i (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}dot\{\textbackslash{}phi\}\_i = \textbackslash{}Omega\_i + \textbackslash{}sum\_\{j\textbackslash{}neq i\} K\textasciicircum{}\{(O)\}\_\{ij\} \textbackslash{}sin(\textbackslash{}phi\_j - \textbackslash{}phi\_i) + \textbackslash{}Lambda\_i,}}\par\medskip
+\noindent\textit{Dictionary definition.} Let phi\_i denote the orbital phase of body i and Omega\_i its natural mean motion.\par\medskip
+\noindent\textit{Encyclopedia reading.} Orbital Metronome Synchronization and Kuramoto--DAT Coupling: phi\_i is a series / summation, written phi\_i = Omega\_i + sum\_jneq i K\textasciicircum{}(O)\_ij sin(phi\_j - phi\_i) + Lambda\_i. It is expressed as a sum or series over modes or indices, superposing discrete contributions. It is built from j, K, O, defining phi\_i. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID9955\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID3340: Frobenius Field Strength Relation (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} F\_\{ \textbackslash{}text\{Frobenius\}\} = \textbackslash{}frac\{| \textbackslash{}text\{Tr\}[ \textbackslash{}mathbf\{B\}\_\{ \textbackslash{}text\{original\}\}\textasciicircum{} \textbackslash{}dagger \textbackslash{}mathbf\{B\}\_\{ \textbackslash{}text\{recovered\}\}]|\}\{ \textbackslash{}| \textbackslash{}mathbf\{B\}\_\{ \textbackslash{}text\{original\}\} \textbackslash{}|\_F \textbackslash{}| \textbackslash{}mathbf\{B\}\_\{ \textbackslash{}text\{recovered\}\} \textbackslash{}|\_F\} \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Frobenius Field Strength Relation --- F\_ Frobenius = frac| Tr[ B\_ original\textasciicircum{}  B\_ recovered]| | B\_ original |\_F | B\_ recovered |\_F\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{www\_ID3340\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the www spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID7842 & Core\_Definition & \texttt{www\_ID7842\_structure} \\
+ID6430 & Derived\_Theorem\_Obligation & \texttt{www\_ID6430\_identity} \\
+ID3339 & Derived\_Theorem\_Obligation & \texttt{www\_ID3339\_threshold} \\
+ID6366 & Derived\_Theorem\_Obligation & \texttt{www\_ID6366\_structure} \\
+ID9518 & Derived\_Theorem\_Obligation & \texttt{www\_ID9518\_structure} \\
+ID9955 & Derived\_Theorem\_Obligation & \texttt{www\_ID9955\_identity} \\
+ID3340 & Derived\_Theorem\_Obligation & \texttt{www\_ID3340\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 1 appear in core-series spines and 1 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID7842 & --- & --- \\
+ID6430 & --- & --- \\
+ID3339 & --- & --- \\
+ID6366 & --- & hms tzp \\
+ID9518 & --- & --- \\
+ID9955 & II (Phase Locking) & --- \\
+ID3340 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+The update threads three core papers into the original WWW: the running phase law echoes Paper I's projection (scale-covariance made explicit), coherence breaking imports Paper I's criticality pillar into shell dynamics, and the toroidal constraints anticipate Paper VIII's torus-assembled unified charge. It also exhibits the duplicate-as-regression-test discipline that the Einstein Focus companion documents: C7 and C8 must agree where they overlap, and their declared differences are the testable content.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_www.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{www\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID7842} (\texttt{www\_ID7842\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID6430} (\texttt{www\_ID6430\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID3339} (\texttt{www\_ID3339\_threshold}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID6366} (\texttt{www\_ID6366\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9518} (\texttt{www\_ID9518\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9955} (\texttt{www\_ID9955\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID3340} (\texttt{www\_ID3340\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. Each of the three updates is individually falsifiable: a measured shell system with constant effective wavenumber, lifetime statistics inconsistent with coherence-breaking forms, or shell stability indifferent to toroidal constraint terms would strike the corresponding revision.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+WWW-updated is less a new theory than a worked example of the program revising itself in public: three weaknesses named, three repairs typed, both generations retained for audit. Its refinement target is the joint fit---running phase law, coherence lifetimes, toroidal terms---against the same exoplanetary architectures that test its predecessor, with the difference between generations as the measurable stake.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: www}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{www}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,579 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:46:15.285954+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0229",
+    "uuid": "8a228d07-1705-570b-bb65-3bed7ea4d046",
+    "registry_id": "registry_id_0229",
+    "canonical_title": "Disharmonic Fold Operator",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0229/ID0229.TEX",
+      "json": "D:/TZPID/TZPID/ID0229/ID0229.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0229/ID0229.id_system.json"
+    },
+    "source_attested_title": "Disharmonic Drop Operator",
+    "title_decision": "Publication title renamed by author approval on 2026-05-26; source-attested title retained as provenance."
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "A local disharmonic fold is observed on an effective two-dimensional projected hypersurface derived from an unconstrained four-dimensional radial field; the projection selects a cylindrical zeroth-order Bessel profile.",
+    "technical_interpretation": "The source-recorded localized disturbance is completed here by an author-specified projection rule. This is an explicit model constraint, not the assertion that a literal coordinate slice of every isotropic four-dimensional solution changes its Bessel order."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{L}_4 u_4=0,\\qquad \\mathcal{L}_4=\\partial_r^2+\\frac{3}{r}\\partial_r+k^2,\\qquad u_4(r)\\propto\\frac{J_1(k r)}{k r}",
+      "\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad \\mathcal{L}_2=\\partial_r^2+\\frac{1}{r}\\partial_r+k^2",
+      "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t),\\qquad k r_0=2.4048255577\\ldots"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{L}_4 u_4=0,\\qquad u_4(r)\\propto\\frac{J_1(k r)}{k r}\n\\]\n\\[\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad \\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)\n\\]\n\\[\nJ_0(k r_0)=0,\\qquad k r_0=2.4048255577\\ldots\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Unconstrained 4D Radial Mode",
+      "formula_latex_blocks": [
+        "\\left(\\partial_r^2+\\frac{3}{r}\\partial_r+k^2\\right)u_4(r)=0",
+        "u_4(r)\\propto\\frac{J_1(k r)}{k r},\\qquad k r^{(4)}_0\\approx3.8317059702"
+      ],
+      "interpretive_role": "The isotropic four-spatial-dimensional carrier supplies the higher-dimensional radial origin of the event."
+    },
+    {
+      "step": 2,
+      "component_title": "Effective Hypersurface Projection",
+      "formula_latex_blocks": [
+        "\\mathsf{P}_{4\\to2}:\\left(\\partial_r^2+\\frac{3}{r}\\partial_r+k^2\\right)\\rightsquigarrow\\left(\\partial_r^2+\\frac{1}{r}\\partial_r+k^2\\right)"
+      ],
+      "interpretive_role": "The declared geometric constraint selects the effective two-dimensional radial sector used by the observed disturbance."
+    },
+    {
+      "step": 3,
+      "component_title": "Projected Fold and Nodal Scale",
+      "formula_latex_blocks": [
+        "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)",
+        "J_0(k r_0)=0,\\qquad k r_0\\approx2.4048255577"
+      ],
+      "interpretive_role": "The projected mode gives the node value recorded by the resonance metric without misidentifying it as spherical Bessel j-zero."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\delta(x,x')$",
+        "description": "point-source delta term that anchors the Green-function response."
+      },
+      {
+        "symbol": "$\\Psi$",
+        "description": "wavefunction or state carrier for the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\delta(x,x')$",
+        "name": "point-source delta term that anchors the Green-function response.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Psi$",
+        "name": "wavefunction or state carrier for the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Psi(r,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\epsilon$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cos(\\omega t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi(r,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lim_{r\\to\\infty}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(r,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$s(\\omega t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Disharmonic Drop Operator\nCanonical operator translation\neq0229_1 = HoldForm[Psi(r,t)==Psi_0+ j_0(kr)Cos(omega t)];\neq0229_2 = HoldForm[DiracDelta(r,t)== j_0(kr)Cos(omega t)];\n\nTRAWIN closure composition\nTRAWINClosure0229[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0229 := HoldForm[{eq0229_1, eq0229_2}];\nResult0229 := TRAWINClosure0229[K0229];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "u_4(r)\\propto\\frac{J_1(k r)}{k r}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[u4[r] == BesselJ[1, k*r]/(k*r)]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[P4to2[L4] == L2]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[deltaPhiProjected[r, t] == epsilon*BesselJ[0, k*r]*Cos[omega*t]]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "J_0(k r_0)=0\\Longrightarrow k r_0\\approx2.4048255577",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[k*r0 == BesselJZero[0, 1]]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        }
+      ],
+      "status": "source_aligned_review_repaired",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0229 author-projected source-truth Wolfram model *)\nClearAll[K0229, Cr0229, T, R, A, W, I, N, P4to2, L4, L2];\neq0229$1 = HoldForm[u4[r] == BesselJ[1, k*r]/(k*r)];\neq0229$2 = HoldForm[P4to2[L4] == L2];\neq0229$3 = HoldForm[deltaPhiProjected[r, t] == epsilon*BesselJ[0, k*r]*Cos[omega*t]];\neq0229$4 = HoldForm[k*r0 == BesselJZero[0, 1]];\nK0229 = HoldForm[{eq0229$1, eq0229$2, eq0229$3, eq0229$4}];\nCr0229[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];\nResult0229 = Cr0229[K0229];",
+    "legacy_existing_from_tex": "Disharmonic Drop Operator\nCanonical operator translation\neq0229_1 = HoldForm[Psi(r,t)==Psi_0+ j_0(kr)Cos(omega t)];\neq0229_2 = HoldForm[DiracDelta(r,t)== j_0(kr)Cos(omega t)];\n\nTRAWIN closure composition\nTRAWINClosure0229[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0229 := HoldForm[{eq0229_1, eq0229_2}];\nResult0229 := TRAWINClosure0229[K0229];",
+    "existing_from_tex_status": "legacy_provenance_superseded_by_repaired_audit"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Unconstrained Four-Dimensional Mode.}\nFor a radially symmetric field on a four-spatial-dimensional slice,\n\\[\n\\mathcal{L}_4u_4=\\left(\\partial_r^2+\\frac{3}{r}\\partial_r+k^2\\right)u_4=0,\\qquad u_4(r)\\propto\\frac{J_1(k r)}{k r}.\n\\]\nIts first boundary node satisfies \\(J_1(k r^{(4)}_0)=0\\), hence \\(k r^{(4)}_0\\approx3.8317059702\\).\n\\paragraph{Hypersurface Projection Rule.}\nIntroduce the model constraint \\(\\mathsf{P}_{4\\to2}\\) selecting the effective two-dimensional longitudinal sector:\n\\[\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2=\\partial_r^2+\\frac{1}{r}\\partial_r+k^2.\n\\]\nThe projected localized fold therefore obeys\n\\[\n\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t),\\qquad J_0(k r_0)=0,\\quad k r_0\\approx2.4048255577.\n\\]\n\\paragraph{Interpretation.}\nThe higher-dimensional event remains hyperspherical in origin; its printed nodal metric is the effective projected observation selected by the declared constraint. This completes the node convention as a model-conditional extension of the sourced entry.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "source_repair_review": {
+    "status": "projection_model_approved_for_production",
+    "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+    "page": 129,
+    "basis": "The extracted source supplies the radial disturbance and node value near 2.405 under its source-attested Drop Operator title; the author-approved Fold Operator title and P4to2 effective projection supply the cylindrical J_0 interpretation that makes that value consistent."
+  },
+  "review_source_enrichment": {
+    "review_status": "approved_under_author_projection_model",
+    "method": "equation-aligned source evidence plus author-specified P4to2 geometric constraint",
+    "review_claims": [
+      {
+        "formula_latex": "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)",
+        "symbol_definitions": {
+          "u_4(r)": "unconstrained four-dimensional radial carrier field",
+          "\\mathcal{L}_4,\\mathcal{L}_2": "four-dimensional and projected two-dimensional radial Helmholtz operators",
+          "\\mathsf{P}_{4\\to2}": "declared hypersurface projection selecting the effective two-dimensional radial sector",
+          "\\delta\\phi_{\\mathrm{proj}}(r,t)": "projected local phase-deviation field",
+          "\\varepsilon": "small phase-deviation amplitude",
+          "\\omega": "angular frequency of the projected oscillation",
+          "J_1(k r)/(k r)": "regular unconstrained four-dimensional radial profile",
+          "J_0(k r)": "cylindrical zeroth-order Bessel profile on the effective projected slice",
+          "k": "radial wavenumber of the projected disturbance",
+          "r_0": "first-node radius of the projected Bessel profile"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 129
+      }
+    ]
+  },
+  "review_publication_overrides": {
+    "dictionary_sections": {
+      "definition": "The disharmonic fold operator is a localized departure from coherent background behavior observed in an effective two-dimensional hypersurface sector. Its projected radial component is modeled by the ordinary zeroth-order Bessel profile \\(J_0(k r)\\), while its higher-dimensional carrier begins as an unconstrained four-dimensional radial wave.",
+      "contextual_meaning": "The entry keeps the disturbance hyperspherical in origin without forcing its observable node metric to be a four-dimensional boundary zero. An explicit projection constraint \\(\\mathsf{P}_{4\\to2}\\) selects the two-dimensional longitudinal observation sector, where concentric radial rings naturally carry the required \\(J_0\\) node.",
+      "formal_statement_latex": "\\[\nu_4(r)\\propto\\frac{J_1(k r)}{k r},\\qquad\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad\n\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)\n\\]\n\\[\nJ_0(k r_0)=0,\\qquad k r_0\\approx2.4048255577\n\\]",
+      "derivable_consequences": "The unconstrained four-dimensional mode has first boundary zero at \\(k r\\approx3.8317059702\\), whereas the projected two-dimensional mode has first zero at \\(k r\\approx2.4048255577\\). The projection rule therefore converts a higher-dimensional origin into the nodal scale recorded for the localized fold.",
+      "lemma_support": "The retrieved source supplies the local disturbance and records its node near 2.405. The hypersurface-projection derivation is an author-specified model extension: it resolves the previously inconsistent spherical notation by making the displayed node explicitly cylindrical \\(J_0\\) in the projected sector.",
+      "technical_interpretation": "This is a controlled dimensional-reduction model. The operator \\(\\mathsf{P}_{4\\to2}\\) must be understood as a declared effective constraint or observation rule, not merely as evaluation of an isotropic four-dimensional solution on a plane. Under that rule, the radial equations and node values are consistent.",
+      "equation_grounding": "\\(u_4\\) is the unconstrained four-dimensional radial carrier; \\(\\mathsf{P}_{4\\to2}\\) is the effective projection constraint; \\(\\delta\\phi_{\\mathrm{proj}}\\) is the observed local phase deviation; \\(J_0\\) is the projected cylindrical Bessel profile; and \\(r_0\\) is its first-node radius.",
+      "interpretive_role": "This entry links the higher-dimensional metric arc to a measurable projected resonance scale: the field event may originate in the hyperspherical sector while the recorded nodal pattern is evaluated in its effective planar observation layer.",
+      "tzp_thesaurus": [
+        {
+          "term": "Disharmonic Fold",
+          "meaning": "A local departure from harmonic coherence represented as a structured disturbance."
+        },
+        {
+          "term": "Hypersurface Projection",
+          "meaning": "The effective dimensional-reduction constraint selecting the observed radial sector."
+        },
+        {
+          "term": "First Node",
+          "meaning": "The first radius at which the projected ordinary Bessel profile reaches zero."
+        }
+      ]
+    },
+    "equation_support_summary": "The explicit projection \\(\\mathsf{P}_{4\\to2}\\) maps the four-dimensional radial carrier to an effective two-dimensional disturbance profile, for which \\(J_0(k r_0)=0\\) gives \\(k r_0\\approx2.4048255577\\).",
+    "proof_latex": "\\textbf{Statement:} Under the declared projection constraint,\n\\[\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad \\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t).\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} The effective projected profile realizes the recorded first-node scale.\\\\\n\\textbf{Proof:} The regular 4D radial Helmholtz solution is proportional to \\(J_1(k r)/(k r)\\). By the stated model constraint, the observed sector obeys the 2D radial operator and has regular solution \\(J_0(k r)\\). Hence \\(J_0(k r_0)=0\\) gives \\(k r_0=2.4048255577\\ldots\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE UNDER PROJECTION CONSTRAINT}\\\\\n\\textbf{Formal Status:} THEORETICAL -- author-approved geometric extension in the production source truth\\\\\n\\textbf{Physical Status:} THEORETICAL -- projected realization remains to be tested",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_review_candidate",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 313,
+      "applied_at": "20260526_123821"
+    }
+  },
+  "node_convention_review": {
+    "status": "resolved_by_approved_author_projection_model",
+    "source_recorded_claim": "hyperspherical disturbance with first observed node near k r = 2.405",
+    "verified_relations": [
+      "The regular unconstrained 4D radial mode is proportional to BesselJ[1, k r]/(k r) and has first boundary zero approximately 3.8317059702.",
+      "The effective projected 2D radial mode is BesselJ[0, k r] and has first zero approximately 2.4048255577."
+    ],
+    "model_condition": "P4to2 is an explicit effective radial-sector projection/constraint; it is not inferred from literal coordinate restriction alone.",
+    "required_decision": "Approved by author for production inclusion on 2026-05-26."
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "The disharmonic fold operator is a localized departure from coherent background behavior observed in an effective two-dimensional hypersurface sector. Its projected radial component is modeled by the ordinary zeroth-order Bessel profile \\(J_0(k r)\\), while its higher-dimensional carrier begins as an unconstrained four-dimensional radial wave.",
+      "contextual_meaning": "The entry keeps the disturbance hyperspherical in origin without forcing its observable node metric to be a four-dimensional boundary zero. An explicit projection constraint \\(\\mathsf{P}_{4\\to2}\\) selects the two-dimensional longitudinal observation sector, where concentric radial rings naturally carry the required \\(J_0\\) node.",
+      "formal_statement_latex": "\\[\nu_4(r)\\propto\\frac{J_1(k r)}{k r},\\qquad\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad\n\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)\n\\]\n\\[\nJ_0(k r_0)=0,\\qquad k r_0\\approx2.4048255577\n\\]",
+      "derivable_consequences": "The unconstrained four-dimensional mode has first boundary zero at \\(k r\\approx3.8317059702\\), whereas the projected two-dimensional mode has first zero at \\(k r\\approx2.4048255577\\). The projection rule therefore converts a higher-dimensional origin into the nodal scale recorded for the localized fold.",
+      "lemma_support": "The retrieved source supplies the local disturbance and records its node near 2.405. The hypersurface-projection derivation is an author-specified model extension: it resolves the previously inconsistent spherical notation by making the displayed node explicitly cylindrical \\(J_0\\) in the projected sector.",
+      "technical_interpretation": "This is a controlled dimensional-reduction model. The operator \\(\\mathsf{P}_{4\\to2}\\) must be understood as a declared effective constraint or observation rule, not merely as evaluation of an isotropic four-dimensional solution on a plane. Under that rule, the radial equations and node values are consistent.",
+      "equation_grounding": "\\(u_4\\) is the unconstrained four-dimensional radial carrier; \\(\\mathsf{P}_{4\\to2}\\) is the effective projection constraint; \\(\\delta\\phi_{\\mathrm{proj}}\\) is the observed local phase deviation; \\(J_0\\) is the projected cylindrical Bessel profile; and \\(r_0\\) is its first-node radius.",
+      "interpretive_role": "This entry links the higher-dimensional metric arc to a measurable projected resonance scale: the field event may originate in the hyperspherical sector while the recorded nodal pattern is evaluated in its effective planar observation layer.",
+      "tzp_thesaurus": [
+        {
+          "term": "Disharmonic Fold",
+          "meaning": "A local departure from harmonic coherence represented as a structured disturbance."
+        },
+        {
+          "term": "Hypersurface Projection",
+          "meaning": "The effective dimensional-reduction constraint selecting the observed radial sector."
+        },
+        {
+          "term": "First Node",
+          "meaning": "The first radius at which the projected ordinary Bessel profile reaches zero."
+        }
+      ]
+    },
+    "equation_support_summary": "The explicit projection \\(\\mathsf{P}_{4\\to2}\\) maps the four-dimensional radial carrier to an effective two-dimensional disturbance profile, for which \\(J_0(k r_0)=0\\) gives \\(k r_0\\approx2.4048255577\\).",
+    "proof_latex": "\\textbf{Statement:} Under the declared projection constraint,\n\\[\n\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad \\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t).\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} The effective projected profile realizes the recorded first-node scale.\\\\\n\\textbf{Proof:} The regular 4D radial Helmholtz solution is proportional to \\(J_1(k r)/(k r)\\). By the stated model constraint, the observed sector obeys the 2D radial operator and has regular solution \\(J_0(k r)\\). Hence \\(J_0(k r_0)=0\\) gives \\(k r_0=2.4048255577\\ldots\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE UNDER PROJECTION CONSTRAINT}\\\\\n\\textbf{Formal Status:} THEORETICAL -- author-approved geometric extension in the production source truth\\\\\n\\textbf{Physical Status:} THEORETICAL -- projected realization remains to be tested",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 313,
+      "applied_at": "20260526_123821",
+      "approved_at": "2026-05-26",
+      "approval_note": "User approved promotion on 2026-05-26; ID0229 canonical publication title renamed to Disharmonic Fold Operator."
+    }
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-26",
+    "review_status": "approved_for_symbol_key_and_equation_grounding",
+    "method": "equation-aligned source evidence plus author-specified P4to2 geometric constraint; followed by rendered-page user approval",
+    "approved_claims": [
+      {
+        "formula_latex": "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t)",
+        "symbol_definitions": {
+          "u_4(r)": "unconstrained four-dimensional radial carrier field",
+          "\\mathcal{L}_4,\\mathcal{L}_2": "four-dimensional and projected two-dimensional radial Helmholtz operators",
+          "\\mathsf{P}_{4\\to2}": "declared hypersurface projection selecting the effective two-dimensional radial sector",
+          "\\delta\\phi_{\\mathrm{proj}}(r,t)": "projected local phase-deviation field",
+          "\\varepsilon": "small phase-deviation amplitude",
+          "\\omega": "angular frequency of the projected oscillation",
+          "J_1(k r)/(k r)": "regular unconstrained four-dimensional radial profile",
+          "J_0(k r)": "cylindrical zeroth-order Bessel profile on the effective projected slice",
+          "k": "radial wavenumber of the projected disturbance",
+          "r_0": "first-node radius of the projected Bessel profile"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 129
+      }
+    ],
+    "approval_note": "User approved promotion on 2026-05-26; ID0229 canonical publication title renamed to Disharmonic Fold Operator.",
+    "limitation": "Approved meanings and formal consequences are limited to the displayed relations; physical realization and unshown coupling claims remain model-conditional."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0229/ID0229.source_truth.json",
+    "entry_id": "ID0229",
+    "registry_id": "registry_id_0229",
+    "canonical_title": "Disharmonic Fold Operator",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0229/ID0229.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "8a228d07-1705-570b-bb65-3bed7ea4d046",
+    "RTEID": "RTE:P889.2579:T1.4652",
+    "poloidal_theta_rad": "889.2579",
+    "toroidal_phi_rad": "1.4652",
+    "rteid_source": "manifest",
+    "PiID": "3378678316527",
+    "TZPi": "8",
+    "PiPE_position": "236",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\mathcal{L}_4 u_4=0,\\qquad \\mathcal{L}_4=\\partial_r^2+\\frac{3}{r}\\partial_r+k^2,\\qquad u_4(r)\\propto\\frac{J_1(k r)}{k r}",
+        "numeric_atoms": [
+          "4",
+          "0",
+          "2",
+          "3",
+          "1"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "propto",
+          "u",
+          "r",
+          "k"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0229\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Disharmonic Fold Operator\", \"latex\" -> \"\\\\mathcal{L}_4 u_4=0,\\\\qquad \\\\mathcal{L}_4=\\\\partial_r^2+\\\\frac{3}{r}\\\\partial_r+k^2,\\\\qquad u_4(r)\\\\propto\\\\frac{J_1(k r)}{k r}\", \"numericAtoms\" -> {4, 0, 2, 3, 1}, \"symbolicTokens\" -> {\"partial\", \"propto\", \"u\", \"r\", \"k\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\mathsf{P}_{4\\to2}:\\mathcal{L}_4\\rightsquigarrow\\mathcal{L}_2,\\qquad \\mathcal{L}_2=\\partial_r^2+\\frac{1}{r}\\partial_r+k^2",
+        "numeric_atoms": [
+          "4",
+          "2",
+          "1"
+        ],
+        "symbolic_tokens": [
+          "mathsf",
+          "rightsquigarrow",
+          "partial",
+          "r",
+          "k"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0229\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Disharmonic Fold Operator\", \"latex\" -> \"\\\\mathsf{P}_{4\\\\to2}:\\\\mathcal{L}_4\\\\rightsquigarrow\\\\mathcal{L}_2,\\\\qquad \\\\mathcal{L}_2=\\\\partial_r^2+\\\\frac{1}{r}\\\\partial_r+k^2\", \"numericAtoms\" -> {4, 2, 1}, \"symbolicTokens\" -> {\"mathsf\", \"rightsquigarrow\", \"partial\", \"r\", \"k\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\delta\\phi_{\\mathrm{proj}}(r,t)=\\varepsilon J_0(k r)\\cos(\\omega t),\\qquad k r_0=2.4048255577\\ldots",
+        "numeric_atoms": [
+          "0",
+          "2.4048255577"
+        ],
+        "symbolic_tokens": [
+          "delta",
+          "phi",
+          "epsilon",
+          "cos",
+          "omega",
+          "ldots",
+          "r",
+          "t",
+          "J",
+          "k"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0229\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Disharmonic Fold Operator\", \"latex\" -> \"\\\\delta\\\\phi_{\\\\mathrm{proj}}(r,t)=\\\\varepsilon J_0(k r)\\\\cos(\\\\omega t),\\\\qquad k r_0=2.4048255577\\\\ldots\", \"numericAtoms\" -> {0, 2.4048255577}, \"symbolicTokens\" -> {\"delta\", \"phi\", \"epsilon\", \"cos\", \"omega\", \"ldots\", \"r\", \"t\", \"J\", \"k\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

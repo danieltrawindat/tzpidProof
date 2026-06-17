@@ -1,0 +1,254 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={The Einstein Focus: Typed Obligations for the TZP-Modified Field Equations and the Cosmological-Constant Handoff},pdfsubject={TZPID Gold Spine Series, Einstein Focus Companion, DOI: 10.5281/zenodo.20631847},pdfkeywords={Einstein equations, cosmological constant, TZP, typed obligations, Isabelle, Wolfram verification, TZPID, DOI 10.5281/zenodo.20631847}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Einstein Focus: Typed Obligations for the TZP-Modified Field Equations and the Cosmological-Constant Handoff\\[0.6em]
+\large TZPID Gold Spine Series, Einstein Focus Companion (Paper V-A)}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20631847}{10.5281/zenodo.20631847}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion paper isolates and develops the registry's Einstein focus layer: the six typed obligations that promote the TZPID program's cosmological-constant and modified-Einstein entries into machine-checkable form. The six focus identifiers are ID0335, the localized source modification $R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} + \Phi^{\mathrm{TZP}}_{\mu\nu}$ with the far-field condition $\Phi^{\mathrm{TZP}}_{\mu\nu} \to 0$; ID0400 and its normalized duplicate ID1392, the cosmological-constant master equation $\rho_\Lambda = (\hbar c/R^4)(\Phi_0/\Phi_{\mathrm{total}}) \sim H_0^2 \approx 6 \times 10^{-10}$ J\,m$^{-3}$; ID0167, the unified Einstein--Yang--Mills--quantum field equation $G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T^{\mathrm{tot}}_{\mu\nu}$ with five-sector source and joint conservation; ID0394, the TZP bridge--tunnel vacuum stress tensor $T^{\mathrm{TZP}}_{\mu\nu} = \rho_{\mathrm{vac}} u_\mu u_\nu + p_{\mathrm{vac}} g_{\mu\nu}$ with Bessel-modulated profile $\rho_{\mathrm{vac}}(r) \sim J_0(kr)^{-1}$; and ID0958, the unified operator action whose effective form carries a position-dependent $\Lambda_{\mathrm{eff}}(r)$ under the layered Lagrangian $\mathcal{L}_U$. We walk each obligation, report the WolframScript verification record---including the instructive \emph{needs-normalization} finding that $\rho_\Lambda \sim H_0^2$ requires the explicit conversion factor $3c^2/(8\pi G)$ before it is dimensionally an energy density, and its repaired passing form $\rho_{\mathrm{crit}} = \frac{3c^2}{8\pi G}H_0^2$---and exhibit the typed Isabelle skeleton (\texttt{TZPID\_Einstein\_Focus.thy}) that renders the layer formal. The paper serves as the proof-level companion to Paper V (which uses this layer as its relativistic roof) and Paper VIII (which reads the master equation cosmologically as the breathing enclosure).
+\end{abstract}
+
+\section{Introduction: why a focus layer}
+\label{sec:intro}
+
+The TZPID registry contains upward of ten thousand equation-bearing entries. The gold-spine methodology of this series curates them into seven-node chains; but chains alone do not make a proof pipeline. Between the informal registry and the formal theorem prover sits the \emph{focus layer}: a small set of entries promoted to typed obligations, each given a declared role, explicit types, and a computational certificate. This companion paper documents the most consequential of these layers---the Einstein focus---which carries the program's contact with general relativity and with the measured cosmological constant.
+
+The focus discipline addresses the two standard failure modes of unification frameworks. The first is \emph{vagueness}: claims that gesture at Einstein's equations without committing to where, exactly, the new physics enters. The focus layer commits: one source term ($\Phi^{\mathrm{TZP}}_{\mu\nu}$), one vanishing condition (far from the TZP), one master density formula, one total-source closure, one vacuum tensor, one effective action---six entries, each falsifiable in its role. The second failure mode is \emph{dimensional sleight of hand}: order-of-magnitude coincidences presented as derivations. Here the layer polices itself: as Section~\ref{sec:wolfram} reports, the verification engine flagged the registry's own shorthand $\rho_\Lambda \sim H_0^2$ as \texttt{needs\_normalization}---$H_0^2$ is not an energy density until multiplied by $3c^2/(8\pi G)$---and the repaired statement was then certified. This is the type of internal correction that a peer-review-facing proof pipeline should make explicit.
+
+Section~\ref{sec:obligations} develops the six obligations. Section~\ref{sec:wolfram} reports the verification record. Section~\ref{sec:isabelle} exhibits the typed skeleton. Section~\ref{sec:series} locates the layer in the series; Section~\ref{sec:demarcation} states demarcation and targets.
+
+\section{The six obligations}
+\label{sec:obligations}
+
+Table~\ref{tab:roles} lists the layer's contents before the detailed walk-through; the source hints recorded with the obligations tie each entry to its manuscript ancestry in the Zenodo corpus and the consolidated TeX volumes.
+
+\begin{table}[H]
+\centering
+\small
+\caption{The Einstein focus layer at a glance.}
+\label{tab:roles}
+\begin{tabular}{llp{6.8cm}}
+\toprule
+ID & Declared role & Content \\
+\midrule
+ID0335 & Modified\_Einstein\_Source\_Equation & Einstein equations + localized TZP source; far-field vanishing \\
+ID0400 & Cosmological\_Constant\_Master\_Equation & $\rho_\Lambda = (\hbar c/R^4)(\Phi_0/\Phi_{\mathrm{total}})$ \\
+ID1392 & Cosmological\_Constant\_Normalized\_Duplicate & agreement obligation with ID0400 \\
+ID0167 & Unified\_Einstein\_Total\_Stress\_Energy & five-sector $T^{\mathrm{tot}}_{\mu\nu}$, joint conservation \\
+ID0394 & TZP\_Vacuum\_Stress\_Energy\_Tensor & perfect fluid with $J_0(kr)^{-1}$ profile \\
+ID0958 & Unified\_Operator\_Action\_Effective\_Einstein & $\Lambda_{\mathrm{eff}}(r)$ under layered $\mathcal{L}_U$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{ID0335: the modified field equations}
+
+The layer's anchor is the gravitational-emergence modification to the Einstein equations:
+\begin{equation}
+R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} + \Phi^{\mathrm{TZP}}_{\mu\nu},
+\qquad \Phi^{\mathrm{TZP}}_{\mu\nu} \to 0 \quad \text{far from the TZP}.
+\label{eq:modeinstein}
+\end{equation}
+Role: \texttt{Modified\_Einstein\_Source\_Equation}. Two commitments are made at once. Geometrically, the left side is untouched: the framework does not deform the Einstein tensor, the connection, or the action of diffeomorphisms. The novelty is confined to a source term, so the modification lives in the same logical slot as a matter field---it can be bounded, screened, and tested like one. Localization is the second commitment: $\Phi^{\mathrm{TZP}}_{\mu\nu}$ is supported at and near the Trawin Zero Point, the registry's degenerate metric anchor ($\det g|_p = 0$, founding entries ID0000--ID0005), and must vanish in the asymptotic regime. General relativity is therefore recovered exactly in the far field---not approximately, but identically---which is the relativistic form of the recovery guardrails that protect every spine in this series.
+
+\subsection{ID0400 and ID1392: the cosmological-constant master equation}
+
+The master equation fixes the vacuum energy density by the enclosure radius:
+\begin{equation}
+\rho_\Lambda = \frac{\hbar c}{R^4}\, \frac{\Phi_0}{\Phi_{\mathrm{total}}} \;\sim\; H_0^2 \;\approx\; 6 \times 10^{-10}\ \mathrm{J\,m^{-3}}.
+\label{eq:master}
+\end{equation}
+Role: cosmological-constant master equation, with ID1392 carried as the normalized duplicate. The registry deliberately retains the duplicate so that the proof layer can require the two statements to agree, a consistency check rather than redundancy. The structure of \eqref{eq:master} is a dimensional theorem plus a geometric claim. The dimensional theorem: $\hbar c / R^4$ has energy-density dimensions for any length $R$, and with the flux fraction $\Phi_0/\Phi_{\mathrm{total}}$ dimensionless the left side is well-formed (certified; Section~\ref{sec:wolfram}). The geometric claim: the relevant $R$ is the \emph{physical radius of the cosmological enclosure}, which makes the coincidence $\rho_\Lambda \sim H_0^2$ automatic---both sides are readouts of one radius, the thesis Paper VIII develops as the breathing enclosure. Numerically, \eqref{eq:master} is checked in Paper VIII against both ends of the Hubble tension: $\Lambda = 3\Omega_\Lambda H_0^2/c^2 = 1.09$--$1.30 \times 10^{-52}$ m$^{-2}$, $\rho_\Lambda = 5.3$--$6.3 \times 10^{-10}$ J\,m$^{-3}$, bracketing the registry's $6 \times 10^{-10}$.
+
+\subsection{ID0167: the unified total stress-energy}
+
+The unified field equation closes all interaction sectors into one conserved source:
+\begin{equation}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}\, T^{\mathrm{tot}}_{\mu\nu}, \qquad
+T^{\mathrm{tot}}_{\mu\nu} = T^{\mathrm{grav}}_{\mu\nu} + T^{\mathrm{EM}}_{\mu\nu} + T^{\mathrm{weak}}_{\mu\nu} + T^{\mathrm{strong}}_{\mu\nu} + T^{\mathrm{vac}}_{\mu\nu}, \qquad
+\nabla^\nu T^{\mathrm{tot}}_{\mu\nu} = 0.
+\label{eq:unified}
+\end{equation}
+Role: \texttt{Unified\_Einstein\_Total\_Stress\_Energy}. The five-sector decomposition is the bookkeeping frame for the entire series: Paper VI adds its entropy-fold residual inside $T^{\mathrm{tot}}$, Paper VII transfers energy from $T^{\mathrm{vac}}$ into the matter sectors at the creation threshold, and Paper VIII's topological charge couples the sectors that \eqref{eq:unified} merely adds. The joint conservation law is the obligation's teeth: any proposed sector exchange (creation, residual accumulation, helicity transfer) must conserve the total, which is exactly the audit Paper VI's subtraction performs.
+
+\subsection{ID0394: the TZP vacuum stress tensor}
+
+The vacuum sector is given perfect-fluid form with a Bessel-modulated radial profile:
+\begin{equation}
+T^{\mathrm{TZP}}_{\mu\nu} = \rho_{\mathrm{vac}}\, u_\mu u_\nu + p_{\mathrm{vac}}\, g_{\mu\nu}, \qquad
+\rho_{\mathrm{vac}}(r) \sim J_0(kr)^{-1}.
+\label{eq:vacstress}
+\end{equation}
+Role: \texttt{TZP\_Vacuum\_Stress\_Energy\_Tensor}; the registry names it the bridge--tunnel energy-momentum tensor. The perfect-fluid form keeps the vacuum inside standard relativistic hydrodynamics; the profile is the framework's fingerprint. $J_0(kr)^{-1}$ diverges at the zeros of $J_0$---precisely the enclosure's acoustic nodes (Paper I's $k r_s = n\pi$ ladder)---so the vacuum density is structured by the same spherical-cavity spectrum that organizes the BAO, the Well/Wall/Wave selector, and the half-Bessel energetics of Paper VI. The bridge--tunnel reading: between nodes the vacuum is quiescent; at nodes it concentrates, and those concentrations are the channels through which the TZP source term of \eqref{eq:modeinstein} communicates with the far field.
+
+\subsection{ID0958: the unified operator action}
+
+The layer closes with the effective action that generates the modified equations:
+\begin{equation}
+\left( \nabla^2 - \frac{1}{c^2}\partial_t^2 \right) A = N_\rho, \qquad
+R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} + \Lambda_{\mathrm{eff}}(r)\, g_{\mu\nu} = \frac{8\pi G}{c^4} \langle T_{\mu\nu} \rangle_{\mathrm{TZP}},
+\label{eq:operator}
+\end{equation}
+\begin{equation}
+\mathcal{L}_U = \frac{c^4}{16\pi G} R[g] + \mathcal{L}_{\mathrm{QFT}}[\Psi, A_\mu] + \mathcal{L}_{\mathrm{topo}}[A_\mu] + \mathcal{L}_{\mathrm{info}}[\Phi].
+\label{eq:lagrangian}
+\end{equation}
+Role: \texttt{Unified\_Operator\_Action\_Effective\_Einstein}. Three features matter. The wave operator with source $N_\rho$ ties the action to the propagating fields of the registry's operator calculus. The cosmological term is promoted to a \emph{function} $\Lambda_{\mathrm{eff}}(r)$: the constant $\Lambda$ of \eqref{eq:modeinstein} is its asymptotic value, while near the TZP the effective term tracks the $J_0$ structure of \eqref{eq:vacstress}---which is how one object can be both the measured cosmological constant and a local bridge--tunnel profile. And the layered Lagrangian \eqref{eq:lagrangian} declares the sector inventory matching \eqref{eq:unified}: Einstein--Hilbert, quantum fields, topological (the Chern--Simons sector of Paper VIII), and informational.
+
+\section{The verification record}
+\label{sec:wolfram}
+
+The WolframScript certificate (\texttt{einstein\_focus\_results.json}) records the following checks.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Einstein focus: computational verification record.}
+\label{tab:wolfram}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.25cm}lX@{}}
+\toprule
+ID & Check & Status & Finding \\
+\midrule
+ID0335 & Far-field GR limit & pass & $\Phi^{\mathrm{TZP}}_{\mu\nu} \to 0$: residual exactly $0$; classical source recovered \\
+ID0400 & Density dimensions & pass & $\hbar c/R^4$ carries $\mathrm{M\,L^{-1}\,T^{-2}}$ (J\,m$^{-3}$) \\
+ID0400 & Hubble-square check & needs norm. & $H_0^2$ alone is $\mathrm{T^{-2}}$, not an energy density \\
+ID0400 & Critical-density repair & pass & $\rho_{\mathrm{crit}} = \frac{3c^2}{8\pi G} H_0^2$ restores J\,m$^{-3}$ \\
+ID1392 & Duplicate agreement & pass & normalized duplicate agrees with master \\
+ID0167 & Total conservation & pass & five-sector sum conserved under $\nabla^\nu$ \\
+ID0394 & Perfect-fluid form & pass & tensor form and signature verified \\
+ID0958 & Lambda asymptotics & pass & $\Lambda_{\mathrm{eff}}(r) \to \Lambda$ in far field \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The \texttt{needs\_normalization} row deserves emphasis precisely because it is not a pass. The registry's shorthand $\rho_\Lambda \sim H_0^2$---ubiquitous in the cosmology literature---fails strict dimensional typing: $H_0^2$ has dimensions $\mathrm{T^{-2}}$, and the proof layer demands the explicit conversion factor before accepting the claim, namely the critical-density form
+\begin{equation}
+\rho_{\mathrm{crit}} = \frac{3 c^2}{8\pi G}\, H_0^2,
+\label{eq:critdensity}
+\end{equation}
+which carries $\mathrm{J\,m^{-3}}$ and passes. The episode is small but methodologically central: the pipeline retains the failed shorthand and the repaired statement together. Where the informal registry says ``of order $H_0^2$,'' the formal layer says ``equal to $\frac{3c^2}{8\pi G}H_0^2$ times an $O(1)$ fraction''---and it is the latter statement that Papers V and VIII consume.
+
+\section{The typed Isabelle skeleton}
+\label{sec:isabelle}
+
+The focus theory \texttt{TZPID\_Einstein\_Focus.thy} (mirrored in the release tree, with computational checks in \texttt{TZPID\_Einstein\_Computational\_Checks.thy}) declares the six obligations as a datatype,
+\begin{equation*}
+\texttt{Focus\_ID0335} \mid \texttt{Focus\_ID0400} \mid \texttt{Focus\_ID1392} \mid \texttt{Focus\_ID0167} \mid \texttt{Focus\_ID0394} \mid \texttt{Focus\_ID0958},
+\end{equation*}
+over a vocabulary of declared scalar, radius, flux, Hubble-scale, tensor-source, spacetime-region, asymptotic-regime, field-equation, cosmological-fraction, pressure-density, four-velocity, radial-profile, and Lagrangian-density types. The same theory declares constants for the dark-energy density, cosmic radius, flux ratio, Hubble scale, dark-energy fraction, critical-density conversion factor, observed dark-energy density, and the ID0400 tolerance interval.
+
+The typing is the point. In the informal registry, $\rho_\Lambda$, $R$, $H_0$, and $\Phi_0/\Phi_{\mathrm{total}}$ are symbols in prose; in the focus theory they are terms of distinct types, and a statement like \eqref{eq:master} only type-checks when every conversion factor is explicit---which is how the \texttt{needs\_normalization} finding of Section~\ref{sec:wolfram} becomes a permanent structural constraint rather than a one-time correction. The declared tolerance interval formalizes the ``$\sim$'' of the master equation as a bounded obligation rather than an unfalsifiable approximation: the observed dark-energy density must land within the declared tolerance of the radius-locked prediction, or the obligation fails.
+
+\section{Worked consequences of the master equation}
+\label{sec:worked}
+
+The master equation \eqref{eq:master} is short enough to carry through several consequences explicitly; doing so shows how tightly the layer constrains the framework.
+
+\textbf{Solving for the radius.} Inverting \eqref{eq:master} with the observed $\rho_\Lambda = 6 \times 10^{-10}$ J\,m$^{-3}$ and unit flux fraction gives the effective cutoff radius $R_\Lambda = (\hbar c / \rho_\Lambda)^{1/4} \approx 85$--$88\ \mu$m: the dark-energy length. The layer therefore predicts \emph{structure} in gravity at the sub-millimetre scale---not a generic Yukawa deviation, but the scale at which the vacuum's mode census saturates. Torsion-balance tests of the inverse-square law already operate at exactly this length; the framework's exposure here is immediate and ongoing.
+
+\textbf{The flux fraction as the one free number.} With $R$ fixed by the dark-energy length, the fraction $\Phi_0/\Phi_{\mathrm{total}}$ is the layer's only adjustable quantity, and refinement target (ii) of Section~\ref{sec:demarcation} proposes deriving it from the enclosure mode census. The constraint is sharp: the fraction must be dimensionless, bounded by unity, and reproduce $\rho_\Lambda$ within the declared tolerance once $R$ is identified with the enclosure radius hierarchy of Paper VIII. A derived fraction outside that tolerance would falsify the master equation in its stated form.
+
+\textbf{Consistency with the Friedmann sector.} Substituting the repaired critical-density form \eqref{eq:critdensity} into the dark-energy fraction $\Omega_\Lambda = \rho_\Lambda / \rho_{\mathrm{crit}}$ and using the Paper VIII values gives $\Omega_\Lambda \approx 0.68$--$0.70$, in agreement with the measured dark-energy fraction---a consistency check rather than a fit, since both inputs were fixed independently. The layer thus threads three independently measured numbers ($H_0$, $\rho_\Lambda$, $\Omega_\Lambda$) through one typed equation with one bounded fraction.
+
+\textbf{What a position-dependent $\Lambda_{\mathrm{eff}}$ must not do.} The promotion of $\Lambda$ to $\Lambda_{\mathrm{eff}}(r)$ in \eqref{eq:operator} is strongly constrained by observation: solar-system and binary-pulsar dynamics leave very little room for local variation of the effective cosmological term at astrophysical densities. The layer satisfies this through the far-field obligation---$\Lambda_{\mathrm{eff}}(r) \to \Lambda$ away from the TZP anchor with the $J_0$ structure confined to the bridge--tunnel nodes---but the refinement target (iv) demands the falloff be stated at a rate, not merely asserted, so the constraint becomes numerical.
+
+\section{Position in the series}
+\label{sec:series}
+
+The Einstein focus is consumed twice in the core arc. Paper V uses it as the relativistic roof over the accumulated-force chain: the far-field condition of \eqref{eq:modeinstein} is the Einstein-level twin of the $\alpha \to 0$ Newtonian recovery guardrail, and the five-sector closure \eqref{eq:unified} is the ledger inside which the accumulated stress correction and the Paper VI residual must fit. Paper VIII uses it cosmologically: the master equation \eqref{eq:master}, read with $R$ as the breathing enclosure radius, becomes the two-readouts thesis---$\Lambda$ as tension, $H_0$ as breathing rate---with the $10^{123}$ hierarchy bracketed by the registry's Planck-radius and Hubble-radius evaluations of the same $\hbar c/R^4$ curve (ID2462/ID2453).
+
+The layer also disciplines the companion corpus. Several Zenodo spines (gravitational emergence, universal field theory, emergent curvature, the topological unification papers) advance claims that terminate on modified Einstein equations; the focus layer is the single formal gate through which all of them must pass, ensuring that ``modifies Einstein's equations'' means, in every case, the same six typed commitments documented here. Source hints preserved in the obligations record tie the layer to its document ancestry: the Gravitational-Emergence-TZP, Universal Field Theory Rendered, and TZP quantum field theory manuscripts, and the consolidated TeX volumes.
+
+\section{The gate in operation: a worked passage}
+\label{sec:gate}
+
+To make concrete the claim that the focus layer disciplines the companion corpus, consider how a representative companion spine---the Gravitational Emergence manuscript, whose abstract asserts that the TZP ``acts as a fundamental source of gravitational field emergence through infinite-order phase transitions''---passes through the gate.
+
+Step one: \emph{locate the contact equation}. The manuscript's field-equation claims are mapped onto ID0335; its vacuum-divergence language ($\rho_{\mathrm{vac}} \to \infty$ at the TZP) onto ID0394's $J_0(kr)^{-1}$ profile, which diverges at nodes but is integrable across them; its emergence thesis onto the source-term reading rather than a left-side modification. Any claim in the manuscript that cannot be expressed in these slots is, by construction, outside the program's Einstein contract and must be either reformulated or flagged as exceeding the layer.
+
+Step two: \emph{inherit the guardrails}. Once mapped, the manuscript's claims are automatically subject to the far-field obligation (its emergent field must reduce to general relativity away from the anchor), the conservation obligation (its source must fit inside the five-sector total), and the dimensional typing (its densities must carry J\,m$^{-3}$ with explicit conversions). The companion paper does not need to re-derive these constraints; it cites the layer.
+
+Step three: \emph{return the surplus}. Whatever the manuscript proves beyond the layer---here, the infinite-order phase-transition structure of the source---returns to the registry as candidate refinement of the layer itself, on the same footing as targets (i)--(iv) of Section~\ref{sec:demarcation}. The gate is thus bidirectional: it constrains the corpus downward and accumulates refinements upward.
+
+The same three steps apply, with different contact equations, to the universal-field-theory, emergent-curvature, and topological-unification companions. The practical effect for a referee is a guarantee of non-proliferation: however many manuscripts the corpus contains, the program maintains exactly one set of commitments about Einstein's equations, documented here, and every companion claim about gravitation is reducible to---or explicitly flagged as exceeding---these six obligations.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarcation}
+
+\textbf{Established physics:} the Einstein field equations with cosmological constant; perfect-fluid stress tensors; the critical-density conversion \eqref{eq:critdensity}; dimensional analysis as implemented in the verification engine; the measured values $H_0 = 67.4$--$73.5$ km\,s$^{-1}$\,Mpc$^{-1}$ and $\rho_\Lambda \approx 6 \times 10^{-10}$ J\,m$^{-3}$.
+
+\textbf{Framework commitments:} the TZP source term and its localization (\eqref{eq:modeinstein}); the radius-locked master equation \eqref{eq:master} with dimensionless flux fraction; the $J_0^{-1}$ bridge--tunnel profile \eqref{eq:vacstress}; the position-dependent $\Lambda_{\mathrm{eff}}(r)$ \eqref{eq:operator}; and the sector inventory \eqref{eq:lagrangian}.
+
+\textbf{Refinement targets} for the next pipeline pass: (i) promote the \texttt{needs\_normalization} repair into the master entry itself, retiring the shorthand; (ii) derive the flux fraction $\Phi_0/\Phi_{\mathrm{total}}$ from the enclosure mode census rather than declaring it, which would turn \eqref{eq:master} from a one-parameter fit into a prediction; (iii) close the conservation proof for \eqref{eq:unified} in the presence of the Paper VI residual term, i.e.\ verify $\nabla^\nu(T^{\mathrm{tot}}_{\mu\nu} + \frac{c^4}{8\pi G \ell_P^2}\Sigma^{\mathrm{half}}_{\mu\nu}) = 0$ using the transversality of the entropy-fold construction; and (iv) state the far-field falloff rate of $\Phi^{\mathrm{TZP}}_{\mu\nu}$ explicitly, so that solar-system ephemerides bound it the way they bound any fifth-force profile.
+
+\section{Observational crosswalk}
+\label{sec:crosswalk}
+
+Each obligation surfaces in a distinct observational channel; the layer is therefore testable obligation by obligation rather than only as a package. ID0335's source term is bounded by everything that bounds anomalous stress-energy: solar-system ephemerides, lunar laser ranging, and binary-pulsar timing all constrain $\Phi^{\mathrm{TZP}}_{\mu\nu}$'s far-field tail, and refinement target (iv) will convert those constraints into a falloff-rate exclusion plot. ID0400/ID1392 face the dark-energy measurements directly: the tolerance obligation is squeezed from one side by CMB-calibrated $\rho_\Lambda$ and from the other by sub-millimetre gravity at the $85$--$88\ \mu$m dark-energy length. ID0167's five-sector conservation is exercised by any claimed energy nonconservation anomaly; conversely, every confirmed conservation test tightens the room available to the Paper VI residual inside the total. ID0394's $J_0^{-1}$ profile predicts spatial structure in vacuum stress tied to enclosure nodes---the cosmological version is the stacked-survey search at the $j_{1,1}/\pi$ offset described in Paper VI, and the laboratory version is Casimir-type metrology inside spherical cavities, where the node geometry is engineerable. ID0958's $\Lambda_{\mathrm{eff}}(r)$ is constrained jointly by all of the above plus the redshift-drift and $\sin\chi$ signatures of Paper VIII's closed model, since a radially structured effective term feeds the Friedmann sector at second order. The layer's six commitments thus map onto at least five independent observational programs, none of which requires new physics to execute---only existing instruments pointed at typed predictions.
+
+\section{Methodological note: duplicates, tolerances, and the ethics of shorthand}
+\label{sec:method}
+
+Three small design decisions in this layer carry general lessons for formalizing a large informal corpus, and are recorded here because the companion papers inherit them.
+
+\emph{Deliberate duplicates.} ID1392 duplicates ID0400 by design. In an informally grown registry, important equations recur in different documents with different normalizations; the usual cleanup instinct is to deduplicate. The focus layer instead \emph{types the duplicate} and adds an agreement obligation: the two entries must remain consistent under every future edit. Duplication thereby becomes a regression test. The companion corpus applies the same pattern wherever a Zenodo manuscript restates a registry equation.
+
+\emph{Declared tolerances.} The constant \texttt{ID0400\_Density\_Tolerance} converts the master equation's ``$\approx$'' into an interval the proof assistant can check. This is the difference between a coincidence and a claim: ``$\rho_\Lambda \approx 6 \times 10^{-10}$'' is rhetoric until the tolerance is declared, after which it is a pass/fail obligation that future measurements (or future derivations of the flux fraction) can break. Every numerical ``$\approx$'' in the companion corpus is scheduled for the same promotion.
+
+\emph{Shorthand has a cost.} The \texttt{needs\_normalization} record is retained permanently rather than silently repaired, for two reasons. Epistemically, it documents that the literature's own shorthand ($\rho_\Lambda \sim H_0^2$) fails strict typing---a useful caution wherever that shorthand travels. Practically, it marks the exact location where a conversion factor enters the chain, so that any downstream consumer, including Paper VIII's two-readouts argument, cites the typed form. A formal pipeline that keeps such repairs visible encourages later users to ask for types rather than rely on prose equivalence.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The series' core papers were written outward from observation; this companion was written outward from the proof assistant, and the difference in texture is intentional. Where Papers I--VIII argue, this paper inventories: roles, types, tolerances, statuses. Both registers are necessary: the narrative supplies the scientific thesis, while the inventory supplies the audit trail. The Einstein focus is the place in the program where the two registers meet under the most scrutiny, because the equations being typed are not the framework's own---they are the field equations the rest of physics already trusts, and the program's claim to conservatism is only as good as this layer's checks.
+
+Six obligations, one gate. The Einstein focus layer is where the TZPID program states its contract with general relativity: geometry untouched, novelty confined to a localized source that vanishes far from the anchor, the cosmological constant locked to a radius with every conversion factor typed and checked, the vacuum structured by the enclosure's own Bessel spectrum, and the whole generated by a layered action whose sectors the rest of the series populates. The layer's most instructive artifact is its one non-pass: the pipeline's refusal to accept $\rho_\Lambda \sim H_0^2$ without $3c^2/(8\pi G)$ demonstrates that the verification rules bind the program itself. Papers V and VIII stand on this layer; the companion corpus passes through it; and the refinement targets above define how to make the contract stricter still.
+
+\begin{thebibliography}{10}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{focus} Trawin, D. A., \emph{TZPID Einstein Focus Obligations}, TZPIDProof archive, \texttt{einstein\_gravity\_focus/} (\texttt{TZPID\_Einstein\_Focus.thy}, \texttt{einstein\_focus\_results.json}) (2026).
+
+\bibitem{paper5} Trawin, D. A., \emph{Gravity as an Accumulated Force}, TZPID Gold Spine Series, Paper V (2026).
+
+\bibitem{paper8} Trawin, D. A., \emph{Topological Unification and the Breathing Enclosure}, TZPID Gold Spine Series, Paper VIII (2026).
+
+\bibitem{sources} Trawin, D. A., \emph{Gravitational-Emergence-TZP}; \emph{Universal Field Theory Rendered}; \emph{Trawin Zero Point Quantum Field Theory}, Zenodo manuscripts (2026).
+
+\bibitem{einstein} Einstein, A., \emph{Die Feldgleichungen der Gravitation}, Sitzungsber.\ Preuss.\ Akad.\ Wiss.\ (1915), 844; \emph{Kosmologische Betrachtungen zur allgemeinen Relativitatstheorie} (1917).
+
+\bibitem{planck} Planck Collaboration, \emph{Planck 2018 results. VI. Cosmological parameters}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020).
+
+\bibitem{weinberg} Weinberg, S., \emph{The cosmological constant problem}, Rev.\ Mod.\ Phys.\ \textbf{61}, 1 (1989).
+
+\bibitem{isabelle} Nipkow, T., Paulson, L. C., and Wenzel, M., \emph{Isabelle/HOL: A Proof Assistant for Higher-Order Logic}, Springer (2002).
+
+\end{thebibliography}
+
+\end{document}

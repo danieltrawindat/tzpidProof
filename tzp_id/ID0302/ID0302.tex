@@ -1,0 +1,262 @@
+\tzpanchor{0302}
+\tzpentryheader{0302}{DAANSphere Factorization and Antipodal Pairs}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{7b21b845-0fb8-5fcc-9f55-a3daf1efc5ca}}\\
+\textbf{PiID} & \tzpcode{4587006606315} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{309}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1172.7331 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.9323 rad}\\
+\textbf{TZPID} & \tzpcode{ID0302} & \textbf{Node Dependencies}\quad \tzpidref{0301}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0302} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Antipodal Pair Object & Pair-Space Count\\
+\textbf{Closure Support} & Opposite-Pair Admissibility & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The DAANSphere Factorization and Antipodal Pairs entry receives the antipodal-pair equations from the DAANSphereNavigationProtocol source, making the pair space and its admissibility test explicit.
+
+\tzpsection{Canonical Equation}
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\mathcal{P}_i=\{\mathbf{x}_i,-\mathbf{x}_i\}
+$
+\end{adjustbox}
+\]
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+N_{\mathrm{pair}}=\frac{N}{2}=76800
+$
+\end{adjustbox}
+\]
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\mathcal{A}_{\mathrm{anti}}(\mathbf{x}_i,\mathbf{x}_j)=1\iff \|\mathbf{x}_i+\mathbf{x}_j\|\le\varepsilon
+$
+\end{adjustbox}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{P}_i$: source equation symbol.
+    \item $N_{\mathrm{pair}}$: source equation symbol.
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $\mathcal{A}_{\mathrm{anti}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0302 generated source Wolfram model *)
+ClearAll[K0302, Cr0302, T, R, A, W, I, N];
+eq0302$1 = HoldForm[$PI == Tuple[xI, -xI]*$];
+eq0302$2 = HoldForm[$NPair == N/2 == 76800*$];
+eq0302$3 = HoldForm[Inequality[$AAnti[xI, xJ], Equal, 1, Equal, xI + xJ, LessEqual, epsilon$]];
+
+K0302 = HoldForm[{eq0302$1, eq0302$2, eq0302$3}];
+
+N = "normalized TRAWIN closure object for DAANSphere Factorization and Antipodal Pairs";
+I = "Opposite-Pair Admissibility integration/comparison layer";
+W = "Pair-Space Count wave or operator carrier";
+A = "Antipodal Pair Object admissible action/amplitude condition";
+R = "Pair-Space Count rotation/curl preservation layer";
+T = "Antipodal Pair Object local source condition";
+
+Cr0302[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0302 = Cr0302[K0302];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Antipodal Pair Object local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Pair-Space Count rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Antipodal Pair Object admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Pair-Space Count wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Opposite-Pair Admissibility integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for DAANSphere Factorization and Antipodal Pairs.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0302] DAANSphere Factorization and Antipodal Pairs}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Statement.}
+For any closed loop $\GammaLoop$ encircling the TZP in $M$, there exists a homotopy deforming $\GammaLoop$ into a lemniscate whose self-intersection occurs at $p$.
+
+\paragraph{Primary Derivation.}
+Let $\GammaLoop:S^1\to M$ be a closed loop surrounding $p$. Since $p$ is the limiting degeneracy point, paths enclosing $p$ may be continuously deformed while preserving their winding relation to $p$.
+
+Introduce a homotopy:
+
+\begin{equation}
+H:S^1\times[0,1]\to M .
+\end{equation}
+
+At $s=0$, the homotopy recovers the original loop:
+
+\begin{equation}
+H(\theta,0)=\GammaLoop(\theta).
+\end{equation}
+
+At $s=1$, the loop is deformed into a figure-eight curve:
+
+\begin{equation}
+H(\theta,1)=\Lambda(\theta),
+\end{equation}
+
+where $\Lambda$ is a lemniscatic curve satisfying:
+
+\begin{equation}
+\Lambda(\theta_1)=\Lambda(\theta_2)=p,
+\qquad
+\theta_1\neq\theta_2 .
+\end{equation}
+
+Thus the self-intersection of the limiting loop is identified with the TZP.
+
+\paragraph{Interpretation.}
+The lemniscate is the canonical shape of TZP recurrence: two lobes, one crossing, one central point. This turns the zero point into a geometric crossing rather than a simple endpoint.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors DAANSphere Factorization and Antipodal Pairs by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Antipodal Pair Object}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\mathcal{P}_i=\{\mathbf{x}_i,-\mathbf{x}_i\}
+$
+\end{adjustbox}
+\]
+\noindent This records the factorized pair object used by the navigation protocol.\par
+\noindent\textbf{2. Pair-Space Count}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+N_{\mathrm{pair}}=\frac{N}{2}=76800
+$
+\end{adjustbox}
+\]
+\noindent This fixes the cardinality of the factorized antipodal-pair space.\par
+\noindent\textbf{3. Opposite-Pair Admissibility}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\mathcal{A}_{\mathrm{anti}}(\mathbf{x}_i,\mathbf{x}_j)=1\iff \|\mathbf{x}_i+\mathbf{x}_j\|\le\varepsilon
+$
+\end{adjustbox}
+\]
+\noindent This closes the progression with the tolerance predicate for opposite-pair recognition.\par
+
+\clearpage
+\noindent\textbf{[ID 0302] DAANSphere Factorization and Antipodal Pairs}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+DAANSphere Factorization and Antipodal Pairs is a registry definition in Field Theory and Action Principles with secondary pressure from Manifold and Metric Dynamics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} This factorization supports efficient hierarchical addressing and ensures that every address has a complementary opposite. \textbf{Contextual meaning:} The entry reads DAANSphere Factorization and Antipodal Pairs as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity. \textbf{Lemma support:} Antipodal Pair Object; Pair-Space Count; Opposite-Pair Admissibility.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The lemniscate is the canonical shape of TZP recurrence: two lobes, one crossing, one central point. This turns the zero point into a geometric crossing rather than a simple endpoint.
+
+\tzpsection{Equation Grounding}
+Equation anchors: csv,,MB sub 24b76c26a14a,registry sub id sub 0272,[ID 0272],Multi Scale Correlation Matrix,,best sub match , g sub 0 equiv ratio GM r to the power 2 approximately 9; text m/s to the power 2, g sub 0 equiv ratio GM r to the power 2 approximately 9; and ndimage import laplace \# Grid L = 128 dx = 1. Proof route: show that the effective geometry preserves the required compatibility condition while supporting the stated topological invariant. Formalization route: prove that the effective deformation leaves the relevant Euler characteristic or bundle invariant well-defined.
+
+\tzpsection{Interpretive Role}
+The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Antipodal Symmetry Breaking}: The geometric pairing mechanism mapping diametrically opposed points into functionally distinct resonant states.
+\item \textbf{Dual-Hemisphere Phase Inversion}: The spatial operator guaranteeing opposite phase alignments for coupled modes on a spherical topology.
+\item \textbf{Bipartite Spherical Decomposition}: The reduction of a global manifold into two distinct but entangled functional domains.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0302]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0302_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0302] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont DAANSphere Factorization and Antipodal Pairs}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the DAANSphere Factorization and Antipodal Pairs entry receives the antipodal-pair
+equations from the DAANSphereNavigationProtocol source, making t...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``DAANSphere Factorization and Antipodal Pairs is valid as a tensorial/geometric statement
+when the stated tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0302_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

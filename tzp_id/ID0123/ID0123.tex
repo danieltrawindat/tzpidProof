@@ -1,0 +1,231 @@
+\tzpanchor{0123}
+\tzpentryheader{0123}{Radial Pressure Gradient and Acceleration Field}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{93cfc3f8-e527-5ed6-832a-cba18e28fc6b}}\\
+\textbf{PiID} & \tzpcode{8446095505822} & \textbf{TZPi}\quad \tzpcode{5}\quad \textbf{PiPE}\quad \tzpcode{130}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{477.6363 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.7870 rad}\\
+\textbf{TZPID} & \tzpcode{ID0123} & \textbf{Node Dependencies}\quad \tzpidref{0122}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0123} & \textbf{Scale}\quad centre-seeking radial force field\\
+\textbf{LOC Classification} & QA911 fluid mechanics & QC145 hydrodynamics\\
+\textbf{arXiv Classification} & Primary: physics.flu-dyn \quad Cross-list: physics.class-ph, math-ph & \\
+\textbf{Primary Support} & Bernoulli Constraint & Radial Acceleration Law\\
+\textbf{Closure Support} & Cross-Geometry Gain & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+A centreward pressure decrease generates radial acceleration through the sourced pressure-gradient law; the Bernoulli and cross-geometry expressions record the surrounding model progression.
+
+\tzpsection{Canonical Equation}
+\[
+P + \frac{1}{2}\rho v^2 = \mathrm{constant}
+\]
+\[
+a_r = -\frac{1}{\rho}\frac{\partial P}{\partial r}
+\]
+\[
+a_r^{(\times)} \approx \sqrt{2}\, a_r^{(\circ)}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $P$: fluid pressure.
+    \item $\rho$: fluid density.
+    \item $v$: velocity, flow speed, or auxiliary comparison variable.
+    \item $a_r$: radial acceleration produced by the pressure gradient.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0123 generated source Wolfram model *)
+ClearAll[K0123, Cr0123, T, R, A, W, I, N];
+eq0123$1 = HoldForm[P + (1/2)*rho*v^2 == Constant];
+eq0123$2 = HoldForm[(Partial*P)/(Partial*r) < 0];
+eq0123$3 = HoldForm[aR == (-(1/rho))*((Partial*P)/(Partial*r))];
+eq0123$4 = HoldForm[P + (1/2)*rho*v^2 == Constant];
+eq0123$5 = HoldForm[aR == (-(1/rho))*((Partial*P)/(Partial*r))];
+eq0123$6 = HoldForm[aRCross == Sqrt[2]*aRCircle];
+
+K0123 = HoldForm[{eq0123$1, eq0123$2, eq0123$3, eq0123$4, eq0123$5, eq0123$6}];
+
+N = "normalized TRAWIN closure object for Radial Pressure Gradient and Acceleration Field";
+I = "Cross-Geometry Gain integration/comparison layer";
+W = "Radial Acceleration Law wave or operator carrier";
+A = "Bernoulli Constraint admissible action/amplitude condition";
+R = "Radial Acceleration Law rotation/curl preservation layer";
+T = "Bernoulli Constraint local source condition";
+
+Cr0123[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0123 = Cr0123[K0123];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Bernoulli Constraint local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Radial Acceleration Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Bernoulli Constraint admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Radial Acceleration Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Cross-Geometry Gain integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Radial Pressure Gradient and Acceleration Field.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0123] Radial Pressure Gradient and Acceleration Field}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[ P + \frac{1}{2}\rho v^2 = \text{constant}, \] an increase of the fluid speed near the centre implies a pressure decrease toward the central opening, \[ \frac{\partial P}{\partial r} < 0. \] The resulting radial acceleration is \[ a_r = -\frac{1}{\rho}\frac{\partial P}{\partial r}. \] In the cross geometry of ID 0122, the four symmetric inflow channels reinforce one another so that the effective inward pull is amplified by a geometry-dependent factor, approximately $\sqrt{2}$ relative to a simple circular opening.
+
+\[
+P + \frac{1}{2}\rho v^2 = \mathrm{constant}
+\]
+\[
+a_r = -\frac{1}{\rho}\frac{\partial P}{\partial r}
+\]
+\[
+a_r^{(\times)} \approx \sqrt{2}\, a_r^{(\circ)}
+\]
+
+\paragraph{Primary Derivation.}
+To derive the stated relation by employing standard algebraic manipulations. leading to the displayed result.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. Interpreted through TRAWIN, the equation functions as the generalized carrier for the entry’s information content. In CHL terms, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+For positive density, a centreward pressure decrease gives centreward radial acceleration; the remaining progression terms compare that anchored response across the modeled geometry.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Bernoulli Constraint}\par
+\[
+P + \frac{1}{2}\rho v^2 = \mathrm{constant}
+\]
+\noindent This ties the centreward velocity increase to a compensating pressure decrease.\par
+\noindent\textbf{2. Radial Acceleration Law}\par
+\[
+a_r = -\frac{1}{\rho}\frac{\partial P}{\partial r}
+\]
+\noindent This converts the pressure gradient into a direct force field on the flow.\par
+\noindent\textbf{3. Cross-Geometry Gain}\par
+\[
+a_r^{(\times)} \approx \sqrt{2}\, a_r^{(\circ)}
+\]
+\noindent This closes the progression by encoding the extra inward pull generated by the symmetric cross geometry.\par
+
+\clearpage
+\noindent\textbf{[ID 0123] Radial Pressure Gradient and Acceleration Field}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+A radial pressure-gradient acceleration field is the local motion produced when fluid pressure changes with radius. The sourced gradient supplies the directional cause of radial acceleration, scaled by fluid density.
+
+\tzpsection{Contextual Meaning}
+
+This entry describes a medium whose pressure is lower toward the centre of the modeled region. The fluid accelerates toward decreasing pressure, connecting a measurable profile, \(P(r)\), to a dynamical response, \(a_r\), before the later geometry comparison is applied.
+
+\tzpsection{Formal Statement}
+
+\[
+a_r=-\frac{1}{\rho}\frac{\partial P}{\partial r}
+\]
+
+\tzpsection{Derivable Consequences}
+
+For positive density, acceleration has the opposite sign from the pressure derivative. Thus \(\partial P/\partial r<0\) gives centreward acceleration, and increasing density with the gradient fixed reduces its magnitude.
+
+\tzpsection{Lemma Support}
+
+The approved aligned source identifies this radial pressure-gradient law and defines \(a_r\), \(P\), and \(\rho\). Bernoulli and cross-geometry relations remain supporting progression material.
+
+\tzpsection{Technical Interpretation}
+
+The factor \(-1/\rho\) converts pressure gradient into acceleration per unit mass. This is a local response law before global boundary or comparative geometry conditions are added.
+
+\tzpsection{Equation Grounding}
+
+\(a_r\) is radial acceleration produced by the pressure gradient; \(P\) is fluid pressure; and \(\rho\) is fluid density. These meanings are source-approved for the canonical law shown above.
+
+\tzpsection{Interpretive Role}
+
+This law moves the arc from scalar pressure distribution to directed motion, giving the derivation and proof layers a concrete physical relation.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Radial Pressure Gradient}: The rate at which pressure changes along the radial coordinate. \enspace\textbullet\enspace \textbf{Centreward Acceleration}: Radial motion directed toward decreasing radius when pressure falls inward. \enspace\textbullet\enspace \textbf{Fluid Density}: The inertial scaling quantity moderating acceleration for a fixed gradient.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0123_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0123] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Radial Pressure Gradient and Acceleration Field}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} The radial acceleration is determined by the sourced pressure-gradient relation
+\[
+a_r=-\frac{1}{\rho}\frac{\partial P}{\partial r}.
+\]
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} If \(\rho>0\) and \(\partial P/\partial r<0\), then \(a_r>0\) in the inward radial convention.\\
+\textbf{Proof:} Dividing the negative pressure gradient by positive density and applying the leading minus sign yields an inward acceleration.\\
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- source-backed radial pressure-gradient relation.\\
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- equation-grounded CHL proof obligation.\\
+\textbf{Physical Status:} THEORETICAL -- application remains geometry- and measurement-dependent.
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0123_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

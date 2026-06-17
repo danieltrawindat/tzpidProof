@@ -1,0 +1,302 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={Gravity as an Accumulated Force: From Mass-Transport History to the Emergent Poisson Closure},pdfsubject={TZPID Gold Spine Series, Paper V, DOI: 10.5281/zenodo.20631100},pdfkeywords={emergent gravity, accumulated force, modified Einstein equations, Poisson equation, atomic gravitational charge, periodic table, TZPID, DOI 10.5281/zenodo.20631100}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Gravity as an Accumulated Force: From Mass-Transport History to the Emergent Poisson Closure\\[0.6em]
+\large TZPID Gold Spine Series, Paper V of VIII}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20631100}{10.5281/zenodo.20631100}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Paper IV established the accumulation principle for rotation: angular velocity as the integral of electromagnetic torque history. This paper generalizes the principle to gravitation. The thesis of the gravity gold spine is that gravity is recovered not as a fundamental field but as the accumulated, integrated response of mass-energy transport, with the Newtonian field emerging as the far-field limit of an accumulated-force correction. The spine is a seven-node registry chain: the accumulated mass functional $M_{\mathrm{acc}}$ (ID7216) sources a correction to the Newtonian acceleration baseline $\mathbf{a}_{\mathrm{N}}$ (ID7215), giving the modified law $\mathbf{a} = \mathbf{a}_{\mathrm{N}}\big(1 + \alpha\, M_{\mathrm{acc}}/M_\oplus^{(0)}\big)$ (ID7214); the same accumulation appears in the stress sector as $\delta T_{ij} = \alpha\, (G M_{\mathrm{acc}}/R^3)\, \hat{n}_i \hat{n}_j$ (ID7311), assembling the effective stress-energy $T^{\mathrm{eff}}_{ij} = T^{\mathrm{N}}_{ij} + \delta T_{ij}$ (ID7314); an emergent potential $\Phi(x,t)$ (ID7577) then closes on the observable Poisson equation $\nabla^2\Phi = 4\pi G_{\mathrm{eff}}\,\rho$ (ID1816). Three Wolfram-certified guardrails protect the construction: Newtonian recovery as $\alpha \to 0$, vanishing of the stress correction in the same limit, and dimensional balance of the emergent Poisson closure. The Einstein-level completion is supplied by the registry's Einstein focus layer: the modified field equations $R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} + \Phi^{\mathrm{TZP}}_{\mu\nu}$ with $\Phi^{\mathrm{TZP}}_{\mu\nu} \to 0$ far from the Trawin Zero Point (ID0335), the unified total stress-energy closure (ID0167), the TZP vacuum stress tensor (ID0394), and the cosmological-constant master equation $\rho_\Lambda = (\hbar c/R^4)(\Phi_0/\Phi_{\mathrm{total}}) \sim H_0^2$ (ID0400/ID1392) that Paper VIII will read as the breathing enclosure. The result is a falsifiable layering: standard gravitation exactly recovered at $\alpha \to 0$, with a secular accumulated correction $g_{\mathrm{acc}}/g_{\mathrm{Newton}} = 1 + \alpha t + \beta t^2$ as the measurable surplus.
+\end{abstract}
+
+\section{Introduction: the accumulation principle meets geometry}
+\label{sec:intro}
+
+The deepest habit of post-Newtonian physics is to treat gravity as fundamental: a field (or a geometry) given with the universe, to which matter responds. The TZPID gravity spine inverts the habit. Gravity, on this account, is \emph{accumulated}: the integrated response of mass-energy transport history, exactly as Paper IV's rotation was the integrated response of torque history, $\omega(t) = \omega(0) + I_T^{-1}\int_0^t \tau_{\mathrm{em}}\,dt'$. The Newtonian field is not the starting point but the far-field limit---what accumulation looks like when the history is old, smooth, and large.
+
+Three features make this more than a rhetorical inversion. First, the spine is \emph{conservative by construction}: a single dimensionless dial $\alpha$ controls the entire departure from standard gravitation, and every guardrail proves exact Newtonian recovery at $\alpha \to 0$. The framework does not modify gravity where gravity is tested; it adds a layer where gravity is untested---in the secular, history-dependent regime. Second, the spine is \emph{structured as a proof chain}, seven registry nodes each carrying a typed obligation consumed by the Isabelle focus theory \texttt{TZPID\_Gravity\_Focus.thy} and the Wolfram certificate \texttt{gravity\_spine\_checks.wl}. Third, the spine is \emph{closed by observables}: its terminal node is not an interpretation but the Poisson equation, the workhorse of every gravitational measurement from laboratory Cavendish to galactic rotation.
+
+Section~\ref{sec:chain} walks the seven-node chain. Section~\ref{sec:einstein} supplies the Einstein-level completion from the registry's Einstein focus layer. Section~\ref{sec:guardrails} records the machine-checked guardrails. Section~\ref{sec:largenumber} develops the smoothing argument by which accumulated particle-level charges become smooth geometry. Section~\ref{sec:demarcation} states demarcation and the experimental program. Throughout, the accumulated-force correction should be read with Paper IV's observable bridge (ID10264) in mind: the prediction $g_{\mathrm{acc}}/g_{\mathrm{Newton}} = 1 + \alpha t + \beta t^2$ already sits in the gyromagnetic observable suite, and the present paper gives it its gravitational home.
+
+\section{The seven-node spine}
+\label{sec:chain}
+
+The curated chain is
+\begin{equation*}
+\text{ID7216} \to \text{ID7215} \to \text{ID7214} \to \text{ID7311} \to \text{ID7314} \to \text{ID7577} \to \text{ID1816},
+\end{equation*}
+source functional to observable closure. We take the nodes in order.
+
+\subsection{ID7216: the accumulated mass functional (Core\_Definition)}
+
+The source of the correction is the accumulated mass functional $M_{\mathrm{acc}}$: a history integral over mass-energy transport through the region of interest, normalized against a reference epoch mass $M_\oplus^{(0)}$. Where Newtonian theory reads only the instantaneous mass distribution $\rho(\mathbf{x}, t)$, the accumulation framework also reads how much transport the region has hosted---the gravitational analogue of Paper IV's torque history integral. $M_{\mathrm{acc}}$ is the only new primitive the spine introduces; everything downstream is built from it and from standard objects.
+
+\subsection{ID7215: the Newtonian baseline (Core\_Definition)}
+
+The baseline acceleration $\mathbf{a}_{\mathrm{N}}$ is exactly the textbook field of the instantaneous distribution,
+\begin{equation}
+\mathbf{a}_{\mathrm{N}}(\mathbf{x}) = -\nabla \Phi_{\mathrm{N}}(\mathbf{x}), \qquad \nabla^2 \Phi_{\mathrm{N}} = 4\pi G \rho.
+\end{equation}
+Declaring the baseline as its own registry node is a methodological choice with teeth: the spine's claims are always expressed \emph{relative to} the baseline, so every prediction is automatically a differential measurement against standard gravity.
+
+\subsection{ID7214: the accumulated-force law (Derived\_Theorem\_Obligation)}
+
+The central dynamical statement:
+\begin{equation}
+\mathbf{a} = \mathbf{a}_{\mathrm{N}} \left( 1 + \alpha\, \frac{M_{\mathrm{acc}}}{M_\oplus^{(0)}} \right),
+\label{eq:accforce}
+\end{equation}
+a multiplicative correction proportional to accumulated transport, with $\alpha$ dimensionless and small. Equation \eqref{eq:accforce} has the same logical shape as the Elsasser relaxation of Paper IV: a baseline plus a history-sourced departure. Its first guardrail is immediate: $\mathbf{a} \to \mathbf{a}_{\mathrm{N}}$ as $\alpha \to 0$ (certified as \texttt{grav\_newtonian\_recovery}).
+
+\subsection{ID7311 and ID7314: the stress sector (Derived\_Theorem\_Obligations)}
+
+If acceleration is corrected, stress must be corrected consistently. The accumulated stress correction is
+\begin{equation}
+\delta T_{ij} = \alpha\, \frac{G M_{\mathrm{acc}}}{R^3}\, \hat{n}_i \hat{n}_j,
+\label{eq:stress}
+\end{equation}
+an anisotropic rank-one addition along the unit direction $\hat{n}$, scaling as $G M_{\mathrm{acc}}/R^3$ (the natural tidal scale built from the accumulated source). The effective stress-energy is then assembled (ID7314):
+\begin{equation}
+T^{\mathrm{eff}}_{ij} = T^{\mathrm{N}}_{ij} + \delta T_{ij},
+\label{eq:teff}
+\end{equation}
+and the second guardrail certifies $\delta T_{ij} \to 0$, hence $T^{\mathrm{eff}}_{ij} \to T^{\mathrm{N}}_{ij}$, as $\alpha \to 0$ (\texttt{grav\_stress\_vanishes}). The decomposition \eqref{eq:teff} is the template Paper VI will refine: there, the added term becomes a Bessel-mode entropy-fold residual, and the subtraction $T^{\mathrm{eff}} - T^{\mathrm{N}}$ becomes the measurable target.
+
+\subsection{ID7577: the emergent potential (Derived\_Theorem\_Obligation)}
+
+The corrected stress sources an emergent gravitational field $\Phi(x, t)$---``emergent'' in the precise sense that it is constructed from the accumulation data rather than postulated. $\Phi$ carries the time dependence inherited from $M_{\mathrm{acc}}$: where Newtonian potentials change only because masses move, the emergent potential also changes because history accrues. This is the node at which the framework's secular predictions live.
+
+\subsection{ID1816: the Poisson closure (Derived\_Theorem\_Obligation)}
+
+The chain terminates on the observable:
+\begin{equation}
+\nabla^2 \Phi = 4\pi G_{\mathrm{eff}}\, \rho(\mathbf{x}),
+\label{eq:poisson}
+\end{equation}
+the Poisson equation with an effective coupling $G_{\mathrm{eff}}$ absorbing the accumulated correction. The third guardrail (\texttt{grav\_poisson\_dim\_balance}) certifies the dimensional balance $[\nabla^2\Phi] = [4\pi G\rho]$. Node ID1816 is deliberately shared: it is also the terminal node of the energy-to-matter spine (Paper VII), where \emph{created} matter sources the same closure. The two spines meet at the same equation from opposite directions---gravity reading existing matter, creation writing new matter---which is what makes the bridge layer of Paper VI necessary and falsifiable.
+
+\section{The Einstein-level completion}
+\label{sec:einstein}
+
+The Newtonian chain of Section~\ref{sec:chain} has a relativistic roof, supplied by the registry's Einstein focus layer (the \texttt{einstein\_gravity\_focus} obligations, typed for Isabelle as \texttt{TZPID\_Einstein\_Focus.thy}).
+
+\subsection{Modified field equations (ID0335)}
+
+The gravitational-emergence modification to the Einstein equations reads
+\begin{equation}
+R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} + \Phi^{\mathrm{TZP}}_{\mu\nu},
+\qquad \Phi^{\mathrm{TZP}}_{\mu\nu} \to 0 \quad \text{far from the TZP},
+\label{eq:modeinstein}
+\end{equation}
+standard general relativity plus a source term localized to the Trawin Zero Point---the registry's central singular anchor, at which the metric degenerates (the registry's founding axioms ID0000--ID0005) and from which the accumulation corrections radiate. The far-field condition in \eqref{eq:modeinstein} is the relativistic form of the spine's conservatism: away from the anchor, Einstein is exact.
+
+\subsection{Unified total stress-energy (ID0167)}
+
+The unified field equation closes all interaction sectors into one conserved source:
+\begin{equation}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}\, T^{\mathrm{tot}}_{\mu\nu}, \qquad
+T^{\mathrm{tot}}_{\mu\nu} = T^{\mathrm{grav}}_{\mu\nu} + T^{\mathrm{EM}}_{\mu\nu} + T^{\mathrm{weak}}_{\mu\nu} + T^{\mathrm{strong}}_{\mu\nu} + T^{\mathrm{vac}}_{\mu\nu}, \qquad
+\nabla^\nu T^{\mathrm{tot}}_{\mu\nu} = 0.
+\label{eq:unified}
+\end{equation}
+Equation \eqref{eq:unified} is the bookkeeping frame for the whole second half of the series: Paper VI adds its residual to $T^{\mathrm{tot}}$, Paper VII moves energy between $T^{\mathrm{vac}}$ and the matter sectors, and Paper VIII unifies the sectors topologically.
+
+\subsection{The TZP vacuum stress tensor (ID0394)}
+
+The vacuum sector takes perfect-fluid form with a Bessel-modulated radial profile,
+\begin{equation}
+T^{\mathrm{TZP}}_{\mu\nu} = \rho_{\mathrm{vac}}\, u_\mu u_\nu + p_{\mathrm{vac}}\, g_{\mu\nu}, \qquad
+\rho_{\mathrm{vac}}(r) \sim J_0(kr)^{-1},
+\label{eq:vacstress}
+\end{equation}
+the bridge--tunnel energy-momentum tensor. The $J_0$ profile is not decoration: it is the same spherical-enclosure mode structure that organized Paper I's acoustics and will organize Paper VI's residual---the vacuum knows the enclosure's spectrum.
+
+\subsection{The cosmological-constant master equation (ID0400, ID1392)}
+
+The layer's most consequential entry fixes the vacuum energy density by the enclosure radius:
+\begin{equation}
+\rho_\Lambda = \frac{\hbar c}{R^4}\, \frac{\Phi_0}{\Phi_{\mathrm{total}}} \;\sim\; H_0^2 \;\approx\; 6 \times 10^{-10}\ \mathrm{J\,m^{-3}},
+\label{eq:lambdamaster}
+\end{equation}
+with the unified-operator action (ID0958) supplying the effective form
+\begin{equation}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu}
++ \Lambda_{\mathrm{eff}}(r) g_{\mu\nu}
+= \frac{8\pi G}{c^4}\langle T_{\mu\nu}\rangle_{\mathrm{TZP}},
+\label{eq:effectiveeinstein}
+\end{equation}
+under the layered Lagrangian
+\begin{equation}
+\mathcal{L}_U =
+\frac{c^4}{16\pi G}R[g]
++ \mathcal{L}_{\mathrm{QFT}}
++ \mathcal{L}_{\mathrm{topo}}
++ \mathcal{L}_{\mathrm{info}}.
+\label{eq:layeredlagrangian}
+\end{equation}
+Equation \eqref{eq:lambdamaster} makes the famous coincidence $\rho_\Lambda \sim H_0^2$ automatic---both quantities are readouts of the same radius $R$---and is developed in full as the closing argument of Paper VIII.
+
+\section{Machine-checked guardrails}
+\label{sec:guardrails}
+
+The Wolfram certificate \texttt{gravity\_spine\_checks.wl} and the Isabelle focus theories verify:
+\begin{enumerate}
+\item \texttt{grav\_newtonian\_recovery}: $\mathbf{a} \to \mathbf{a}_{\mathrm{N}}$ as $\alpha \to 0$; the accumulated correction vanishes and Newtonian acceleration is recovered exactly.
+\item \texttt{grav\_stress\_vanishes}: $\delta T_{ij} \to 0$ as $\alpha \to 0$, hence $T^{\mathrm{eff}}_{ij} \to T^{\mathrm{N}}_{ij}$; the effective stress reduces to Newtonian stress in the far field.
+\item \texttt{grav\_poisson\_dim\_balance}: $[\nabla^2\Phi] = [4\pi G\rho]$; the emergent closure is dimensionally exact.
+\end{enumerate}
+The Einstein focus layer adds the typed obligations of Section~\ref{sec:einstein}: the modified Einstein source equation, the unified total stress-energy equation, the TZP vacuum stress tensor, and the cosmological-constant master equation. Computational results are recorded in \texttt{einstein\_focus\_results.json}. The guardrail discipline mirrors Papers II and IV: the framework's novel claims are isolated behind limits in which the standard theory is provably recovered.
+
+\section{From particle charges to smooth geometry}
+\label{sec:largenumber}
+
+A consistency question remains: gravity as accumulated \emph{response} must still look like smooth geometry at scale. The registry's Planck-charge accounting (developed fully in Paper VI's source layer) supplies the answer. Assign each body the dimensionless gravitational charge
+\begin{equation}
+q_g = \frac{m}{m_P}, \qquad \alpha_G = q_g(X)\, q_g(Y),
+\label{eq:planckcharge}
+\end{equation}
+with $m_P$ the Planck mass, so that $q_g(X) q_g(Y) = G m_X m_Y / (\hbar c)$ reproduces the gravitational coupling exactly. At isotope level,
+\begin{equation}
+q_g(Z,N) =
+\frac{Z m_p + N m_n + Z m_e - E_{\mathrm{bind}}/c^2}{m_P},
+\label{eq:isotopecharge}
+\end{equation}
+ordinary mass-energy accounting to binding-energy precision. For a periodic-table element using average atomic weight $A_r(Z)$, the corresponding average atomic gravitational charge is
+\begin{equation}
+\langle q_g\rangle_Z = A_r(Z)\frac{m_u}{m_P},
+\label{eq:periodiccharge}
+\end{equation}
+where $m_u$ is the atomic mass unit. Table~\ref{tab:periodiccharge} gives the sample confirmation layer from the project notes. It shows that the Planck-scaled source rises monotonically with ordinary accumulated particle content; it does not by itself prove the half-Bessel entropy mechanism, but it fixes the standard mass ledger that any residual must survive after subtraction.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Periodic-table mass accounting for the average atomic gravitational charge. Bracketed mass numbers are used for elements without a stable natural standard atomic weight.}
+\label{tab:periodiccharge}
+\begin{tabular}{lrrr}
+\toprule
+Element & Atomic number $Z$ & Atomic weight or mass number & $\langle q_g\rangle_Z$ \\
+\midrule
+H  & 1   & 1.008     & $7.69067\times 10^{-20}$ \\
+He & 2   & 4.002602  & $3.05384\times 10^{-19}$ \\
+C  & 6   & 12.011    & $9.16395\times 10^{-19}$ \\
+O  & 8   & 15.999    & $1.22066\times 10^{-18}$ \\
+Fe & 26  & 55.845    & $4.26077\times 10^{-18}$ \\
+Au & 79  & 196.96657 & $1.50278\times 10^{-17}$ \\
+Pb & 82  & 207.2     & $1.58086\times 10^{-17}$ \\
+U  & 92  & 238.02891 & $1.81607\times 10^{-17}$ \\
+Og & 118 & [294]     & $2.24311\times 10^{-17}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Summing over $N$ constituents,
+\begin{equation}
+Q_g = \sum_i q_{g,i}, \qquad \sigma_{\bar{q}} \sim \frac{\sigma_q}{\sqrt{N}},
+\label{eq:smoothing}
+\end{equation}
+the variance of the mean charge shrinks as $1/N$ (certified as \texttt{large\_number\_smoothing}). For macroscopic bodies $N \sim 10^{50}$, and the accumulated particle-level response becomes geometry smooth to one part in $10^{25}$: \emph{gravity as accumulated force becomes gravity as geometry by the law of large numbers}. The smoothing argument explains why the accumulation layer is invisible to classical tests---and why its detection requires the differential, secular experiments of Section~\ref{sec:demarcation} rather than improved versions of classical ones.
+
+\section{The accumulation kernel and its limits}
+\label{sec:kernel}
+
+Although the gravity spine states $M_{\mathrm{acc}}$ abstractly, its downstream consumers (Paper VI) fix the form the accumulation must take: a causal convolution. Writing the accumulated source generically as
+\begin{equation}
+M_{\mathrm{acc}}(t) = \int_{-\infty}^{t} K(t, \tau)\, \dot{m}(\tau)\, d\tau, \qquad
+K(t,\tau) = \tau_{\mathrm{dec}}^{-1}\, e^{-(t-\tau)/\tau_{\mathrm{dec}}}\, \Theta(t - \tau),
+\label{eq:kernel}
+\end{equation}
+with $\dot{m}$ the transport rate and $\tau_{\mathrm{dec}}$ a decay time, three structural properties follow, each of which becomes a guardrail downstream. \emph{Causality:} the step function $\Theta(t-\tau)$ ensures only the past contributes; the field remembers, but does not anticipate. \emph{Normalization:} $\int_0^\infty K\, ds = 1$, so a steady transport rate yields a bounded correction---accumulation saturates rather than diverging (the kernel-normalization certificate of Paper VI). \emph{Two regimes:} for histories short compared with $\tau_{\mathrm{dec}}$ the correction grows linearly, $1 + \alpha t$, while curvature of the history contributes the quadratic term---which is exactly the observable form $g_{\mathrm{acc}}/g_{\mathrm{Newton}} = 1 + \alpha t + \beta t^2$ of the ID10264 suite. The Newtonian limit is thus doubly protected: $\alpha \to 0$ kills the coupling, and $\tau_{\mathrm{dec}} \to 0$ collapses the kernel to a delta function, reducing accumulated response to instantaneous response.
+
+The kernel also fixes the relation between this paper and its neighbours precisely. Paper IV used the same mathematics with torque as the transported quantity, Eq.~\eqref{eq:accforce} playing the role of the angular-velocity integral; Paper VI will use the same kernel with the entropy-fold stress as integrand, $G_{\mathrm{acc}} = \frac{8\pi G}{c^4}\int K\, T_{\mathrm{eff}}\, d\tau$; and Paper VII's creation threshold is the statement that one particular accumulated quantity---vacuum pressure---crosses a critical value. One kernel, four integrands: rotation, gravity, curvature, matter.
+
+\section{Relation to other emergent-gravity programs}
+\label{sec:related}
+
+The claim that gravity is not fundamental has respectable modern company, and locating the spine against it sharpens what is and is not being proposed. Jacobson's thermodynamic derivation obtains the Einstein equation as an equation of state from horizon entropy; Verlinde's entropic gravity reads Newtonian force from information gradients on holographic screens. The TZPID spine shares with these the direction of explanation---geometry as the macroscopic record of something more primitive---but differs in three commitments. First, the primitive is \emph{transport history}, not entropy or information per se: the accumulation functional \eqref{eq:kernel} is dynamical bookkeeping, applicable wherever mass-energy moves, without thermodynamic assumptions. Second, the framework is \emph{conservative by certificate}: its guardrails are machine-checked recovery theorems, so the proposal is structured as standard gravity plus a bounded, parameterized layer rather than a rederivation of gravity from scratch. Third, it is \emph{integrated upward}: the same accumulation principle is already in use elsewhere in the series (rotation in Paper IV, curvature residual in Paper VI, matter creation in Paper VII), so the gravitational claim is one face of a single mechanism rather than a stand-alone reinterpretation---and it inherits falsifiability from every other face. A bound on $\alpha$ from gravimetry constrains the same parameter family that the gyromagnetic observable suite and the residual subtraction of Paper VI constrain; the program stands or falls jointly.
+
+It is equally important to state what the spine does \emph{not} claim. It does not modify the inverse-square law at any fixed time (the correction in \eqref{eq:accforce} is a multiplicative factor on the full Newtonian field, not a change of its $r$-dependence); it does not introduce a fifth force with new charge assignments (the smoothing argument of Section~\ref{sec:largenumber} keeps composition-dependence at the binding-energy level of ordinary mass accounting); and it does not touch the conservation law $\nabla^\nu T^{\mathrm{tot}}_{\mu\nu} = 0$, which Eq.~\eqref{eq:unified} retains exactly. The entire novel content lives in the history dependence---which is precisely the axis classical tests of gravity were never designed to probe.
+
+\section{Demarcation and the experimental program}
+\label{sec:demarcation}
+
+\subsection{Demarcation}
+
+\textbf{Established physics:} Newtonian gravitation and the Poisson equation; general relativity and its conservation law $\nabla^\nu T_{\mu\nu} = 0$; perfect-fluid vacuum stress; the dimensional analysis of \eqref{eq:poisson}; the statistics of \eqref{eq:smoothing}.
+
+\textbf{Framework hypotheses:} the existence and dynamics of $M_{\mathrm{acc}}$ (ID7216); the accumulated-force law \eqref{eq:accforce} with $\alpha \neq 0$; the anisotropic stress correction \eqref{eq:stress}; the TZP source term in \eqref{eq:modeinstein}; and the radius-locked vacuum density \eqref{eq:lambdamaster}.
+
+\subsection{The experimental program}
+
+The layering makes the program differential and secular. (i) \emph{Laboratory:} the accumulated-field observable $g_{\mathrm{acc}}/g_{\mathrm{Newton}} = 1 + \alpha t + \beta t^2$ (ID10264) predicts a slow drift of measured local gravity relative to the Newtonian expectation in systems hosting large sustained mass-energy transport; co-located gravimeters bracketing high-throughput transport systems bound $\alpha$ directly. (ii) \emph{Orbital:} Eq.~\eqref{eq:accforce} predicts that bodies with markedly different transport histories but identical instantaneous masses fall differently at the $\alpha M_{\mathrm{acc}}/M^{(0)}$ level---an equivalence-principle test indexed by history rather than composition. (iii) \emph{Stress anisotropy:} the rank-one form \eqref{eq:stress} predicts a specific quadrupolar signature aligned with the transport direction $\hat{n}$, distinguishable from isotropic systematics. (iv) \emph{Null results are informative:} every bound on $\alpha$ propagates through \eqref{eq:teff}--\eqref{eq:poisson} into a bound on $G_{\mathrm{eff}} - G$, and through Paper VI into a bound on the curvature residual.
+
+\section{A worked bounding exercise}
+\label{sec:worked}
+
+To make the program concrete, consider the simplest laboratory bound. Absolute atom-interferometric and superconducting gravimeters track local $g \approx 9.81$ m\,s$^{-2}$ at fractional precisions of order $10^{-9}$ over multi-year baselines, after subtraction of tidal, hydrological, and polar-motion signals. Suppose a co-located mass-transport system (a pumped-storage reservoir, a high-throughput pipeline, an accelerator beam dump) hosts integrated transport $\Delta m$ over time $T$, giving an accumulated fraction $f = \Delta m / M^{(0)}$ relative to the reference mass of the sourcing region. The accumulated-force law \eqref{eq:accforce} predicts a differential drift between a gravimeter bracketing the transport corridor and a control instrument outside it:
+\begin{equation}
+\frac{\delta g}{g} \;=\; \alpha\, f \;+\; \mathcal{O}(\alpha \beta f^2),
+\label{eq:bound}
+\end{equation}
+linear in the accumulated fraction at leading order. A null differential at the $10^{-9}$ level over a campaign with $f \sim 10^{-12}$ (a realistic integrated-transport fraction for engineered systems against a regional reference mass) bounds $\alpha \lesssim 10^{3}$; the bound strengthens linearly with $f$, and planetary-scale natural transport systems (mantle convection, with $f$ integrated over geological time) tighten it by many further orders provided the reference epoch can be controlled. Two features of \eqref{eq:bound} matter more than today's numerical bound. First, the observable is \emph{differential}: common-mode systematics (instrument drift, regional hydrology) cancel between bracketing and control instruments, which is what makes a secular search feasible at all. Second, the bound is \emph{portable}: the same $\alpha$ enters the stress anisotropy \eqref{eq:stress}, the gyromagnetic accumulated-field suite of Paper IV, and the residual decomposition of Paper VI, so independent experimental communities constrain a single shared parameter rather than disconnected effects. A framework whose novel parameter can be attacked simultaneously from gravimetry, rotation experiments, and curvature-residual accounting is in the strongest falsifiable position the series can offer.
+
+The same exercise run in reverse sets the discovery threshold: for the drift term $\alpha t$ of the ID10264 observable to be detectable at $10^{-9}$ per decade, the product of coupling and accumulated fraction must satisfy $\alpha f \gtrsim 10^{-9}$. The framework makes no advance commitment to the magnitude of $\alpha$; what it commits to is the \emph{structure}---linearity in $f$, causality and saturation of the kernel \eqref{eq:kernel}, rank-one stress anisotropy along $\hat{n}$---and structure is what the certified guardrails pin down independently of magnitude.
+
+\section{Conclusion: the field that remembers}
+\label{sec:conclusion}
+
+The gravity spine replaces a postulate with a history. The accumulated mass functional sources a one-parameter correction to Newtonian acceleration \eqref{eq:accforce}; consistency propagates the correction into stress \eqref{eq:stress}--\eqref{eq:teff}; an emergent potential carries it; and the Poisson closure \eqref{eq:poisson} returns it to the laboratory. Above the chain stands the Einstein focus layer: standard field equations modified only at the TZP anchor \eqref{eq:modeinstein}, all sectors conserved jointly \eqref{eq:unified}, the vacuum carrying the enclosure's Bessel profile \eqref{eq:vacstress}, and the cosmological constant locked to the enclosure radius \eqref{eq:lambdamaster}. Three certified limits guarantee that nothing already tested has been touched.
+
+But the chain, as it stands, has a seam. Between the gravity that \emph{reads} matter (this paper) and the matter that \emph{is created} to be read (Paper VII) there must be an accounting layer that says precisely what new source, if any, survives after ordinary mass-energy is subtracted. The registry's answer is a narrow, falsifiable residual mechanism---a hyperspherical half-Bessel mode drop whose entropy-fold correction accumulates causally into curvature beyond matter-only stress-energy. That residual bridge is Paper VI.
+
+\begin{thebibliography}{13}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID New Gold Spines: Gravity as an Accumulated Force}, TZPIDProof archive, \texttt{TZPID\_GOLD\_SPINES\_NEW.md} (2026).
+
+\bibitem{einsteinfocus} Trawin, D. A., \emph{TZPID Einstein Focus Obligations}, TZPIDProof archive, \texttt{einstein\_gravity\_focus/} (2026).
+
+\bibitem{paper4} Trawin, D. A., \emph{The Gyromagnetic Movement Mechanism}, TZPID Gold Spine Series, Paper IV (2026).
+
+\bibitem{paper6} Trawin, D. A., \emph{The Bessel Residual Bridge}, TZPID Gold Spine Series, Paper VI (2026).
+
+\bibitem{newton} Newton, I., \emph{Philosophiae Naturalis Principia Mathematica} (1687).
+
+\bibitem{einstein} Einstein, A., \emph{Die Feldgleichungen der Gravitation}, Sitzungsber.\ Preuss.\ Akad.\ Wiss.\ (1915), 844.
+
+\bibitem{verlinde} Verlinde, E., \emph{On the origin of gravity and the laws of Newton}, JHEP \textbf{2011}, 29 (2011). Emergent-gravity comparison point.
+
+\bibitem{jacobson} Jacobson, T., \emph{Thermodynamics of spacetime: the Einstein equation of state}, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+
+\bibitem{will} Will, C. M., \emph{The confrontation between general relativity and experiment}, Living Rev.\ Relativ.\ \textbf{17}, 4 (2014).
+
+\bibitem{adelberger} Adelberger, E. G., et al., \emph{Torsion balance experiments: a low-energy frontier of particle physics}, Prog.\ Part.\ Nucl.\ Phys.\ \textbf{62}, 102 (2009).
+
+\bibitem{planck} Planck Collaboration, \emph{Planck 2018 results. VI. Cosmological parameters}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020).
+
+\end{thebibliography}
+
+\end{document}

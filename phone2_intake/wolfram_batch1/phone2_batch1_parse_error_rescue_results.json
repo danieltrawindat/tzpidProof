@@ -1,0 +1,352 @@
+{
+	"generated_utc":"2026-06-11T06:33:40Z",
+	"total":31,
+	"status_counts":{
+		"wolfram_rescue_equation_parse_verified":14,
+		"wolfram_symbolic_carrier_verified":8,
+		"wolfram_fragment_carrier_verified":9
+	},
+	"results":[
+		{
+			"id":"ID10873",
+			"title":"Phone2 Category Type Theory Morphisms Cobordisms M 1 M 2 W D+1 W M 1 M 2",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"Morphisms → Cobordisms[(M_1, M_2) ↦ W^{d+1}: ∂W = M_1 ⊔ M̄_2]",
+			"previous_wolfram_candidate":"Morphisms -> Cobordisms[(M$1, M$2) -> W^{d+1}: dW == M$1 + M̄_2]",
+			"rescue_wolfram_candidate":"Phone2Relation[Morphisms, \"Cobordisms[(M$1, M$2) -> W^{d+1}: dW == M$1 + MBar2]\"]"
+		},
+		{
+			"id":"ID10875",
+			"title":"Phone2 Category Type Theory SheafCondition F Presheaf F U Lim V Cover U F V",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"SheafCondition → ∀F: Presheaf, F(U) ≅ lim_{V∈Cover(U)} F(V)",
+			"previous_wolfram_candidate":"SheafCondition -> : Presheaf, F(U) == lim_{V∈Cover(U)} F(V)",
+			"rescue_wolfram_candidate":"Phone2Relation[SheafCondition, \": Presheaf, F(U) == lim_{V in Cover(U)} F(V)\"]"
+		},
+		{
+			"id":"ID10878",
+			"title":"Phone2 Category Type Theory P M T - M 0 Λ 2 Exp -λ \/ 2 Sum C I I",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"P[|M_T - M_0| > λ] <= 2*Exp[-λ²\/(2*Sum[c_i², {i}])],",
+			"previous_wolfram_candidate":"P[|M$T - M$0| > lambda] <= 2*Exp[-lambda^2\/(2*Sum[c$i^2, {i}])]",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10878\", <|\"canonical\" -> \"P[|M_T - M_0| > λ] <= 2*Exp[-λ²\/(2*Sum[c_i², {i}])],\", \"previousCandidate\" -> \"P[|M$T - M$0| > lambda] <= 2*Exp[-lambda^2\/(2*Sum[c$i^2, {i}])]\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID10894",
+			"title":"Phone2 Category Type Theory Init I Threads Queue I",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"Init == ∀ i ∈ Threads: queue[i] = ⟨⟩,",
+			"previous_wolfram_candidate":"Init == ∈ Threads: queue[i] = ⟨⟩",
+			"rescue_wolfram_candidate":"Init == in Threads: queue[i] = EmptyQueue[]"
+		},
+		{
+			"id":"ID10895",
+			"title":"Phone2 Category Type Theory Next I J Threads Task Tasks",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"Next == ∃ i,j ∈ Threads, task ∈ Tasks:",
+			"previous_wolfram_candidate":"Next == j ∈ Threads, task ∈ Tasks:",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10895\", <|\"canonical\" -> \"Next == ∃ i,j ∈ Threads, task ∈ Tasks:\", \"previousCandidate\" -> \"Next == j ∈ Threads, task ∈ Tasks:\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID10901",
+			"title":"Phone2 Category Type Theory Objects Thread I I 1",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"Objects → {Thread[i] | i ∈ {1",
+			"previous_wolfram_candidate":"Objects -> {Thread[i] | i ∈ {1",
+			"rescue_wolfram_candidate":"Rule[Objects, Phone2Expression[\"{Thread[i] | i in {1\"]]"
+		},
+		{
+			"id":"ID10903",
+			"title":"Phone2 Category Type Theory F T C Cores T T T C",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"f[T] = {c ∈ Cores | ∃t ∈ T: t ⊆ c},",
+			"previous_wolfram_candidate":"f[T] == {c ∈ Cores | ∈ T: t ⊆ c}",
+			"rescue_wolfram_candidate":"f[T] == {c in Cores | in T: t SubsetEqual c}"
+		},
+		{
+			"id":"ID10907",
+			"title":"Phone2 Category Type Theory InterferenceFreedom I J Statement S J In C J",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"InterferenceFreedom := ∀ i ≠ j, ∀ statement s_j in C_j:",
+			"previous_wolfram_candidate":"InterferenceFreedom := ≠ j, s$j in C$j:",
+			"rescue_wolfram_candidate":"SetDelayed[InterferenceFreedom, Phone2Predicate[\"!= j, s$j in C$j:\"]]"
+		},
+		{
+			"id":"ID10954",
+			"title":"Phone2 Category Type Theory IntraSocket Latency 10ns",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"IntraSocket → Latency[~10ns],",
+			"previous_wolfram_candidate":"IntraSocket -> Latency[~10ns]",
+			"rescue_wolfram_candidate":"Rule[IntraSocket, Phone2Expression[\"Latency[Quantity[10, \\\"Nanoseconds\\\"]]\"]]"
+		},
+		{
+			"id":"ID10955",
+			"title":"Phone2 Category Type Theory InterSocket Latency 100ns",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"InterSocket → Latency[~100ns],",
+			"previous_wolfram_candidate":"InterSocket -> Latency[~100ns]",
+			"rescue_wolfram_candidate":"Rule[InterSocket, Phone2Expression[\"Latency[Quantity[100, \\\"Nanoseconds\\\"]]\"]]"
+		},
+		{
+			"id":"ID10956",
+			"title":"Phone2 Category Type Theory RemoteMemory Latency 300ns",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"RemoteMemory → Latency[~300ns]",
+			"previous_wolfram_candidate":"RemoteMemory -> Latency[~300ns]",
+			"rescue_wolfram_candidate":"Rule[RemoteMemory, Phone2Expression[\"Latency[Quantity[300, \\\"Nanoseconds\\\"]]\"]]"
+		},
+		{
+			"id":"ID10957",
+			"title":"Phone2 Category Type Theory X I C X J C Compatible C C I J CommunicatingPairs",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"x[i,c] * x[j,c'] <= Compatible[c,c'], ∀(i,j) ∈ CommunicatingPairs",
+			"previous_wolfram_candidate":"x[i,c] * x[j,c'] <= Compatible[c,c'], ∀(i,j) ∈ CommunicatingPairs",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10957\", <|\"canonical\" -> \"x[i,c] * x[j,c'] <= Compatible[c,c'], ∀(i,j) ∈ CommunicatingPairs\", \"previousCandidate\" -> \"x[i,c] * x[j,c'] <= Compatible[c,c'], ∀(i,j) ∈ CommunicatingPairs\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID10971",
+			"title":"Phone2 Category Type Theory Tree 2 L+1 K + 2 L",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"tree[[2^(l+1)*k + 2^l]] =",
+			"previous_wolfram_candidate":"tree[[2^(l+1)*k + 2^l]] ==",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10971\", <|\"canonical\" -> \"tree[[2^(l+1)*k + 2^l]] =\", \"previousCandidate\" -> \"tree[[2^(l+1)*k + 2^l]] ==\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID10979",
+			"title":"Phone2 Category Type Theory C I Max E Φ Ball I Bin J - E Φ Ball I Bin K",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"c_i = Max[|E[Φ | ball i → bin j] - E[Φ | ball i → bin k]|]",
+			"previous_wolfram_candidate":"c$i == Max[|E[Phi | ball i -> bin j] - E[Phi | ball i -> bin k]|]",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10979\", <|\"canonical\" -> \"c_i = Max[|E[Φ | ball i → bin j] - E[Φ | ball i → bin k]|]\", \"previousCandidate\" -> \"c$i == Max[|E[Phi | ball i -> bin j] - E[Phi | ball i -> bin k]|]\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID10984",
+			"title":"Phone2 Category Type Theory InvariantPreservation I S I In C I",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"InvariantPreservation := ∀ i, ∀ s_i in C_i:",
+			"previous_wolfram_candidate":"InvariantPreservation := _i in C$i:",
+			"rescue_wolfram_candidate":"SetDelayed[InvariantPreservation, Phone2Predicate[\"_i in C$i:\"]]"
+		},
+		{
+			"id":"ID10998",
+			"title":"Phone2 Category Type Theory N K K Morphisms IteratedTransformations",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"n == k_, k_Morphisms[IteratedTransformations]",
+			"previous_wolfram_candidate":"n == k_, k$Morphisms[IteratedTransformations]",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10998\", <|\"canonical\" -> \"n == k_, k_Morphisms[IteratedTransformations]\", \"previousCandidate\" -> \"n == k_, k$Morphisms[IteratedTransformations]\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID10999",
+			"title":"Phone2 Category Type Theory Morphisms Hom Thread I Thread J WorkPacket Τ Ij",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"Morphisms → Hom(Thread[i], Thread[j]) = WorkPacket[τ_ij],",
+			"previous_wolfram_candidate":"Morphisms -> Hom(Thread[i], Thread[j]) == WorkPacket[tau$ij]",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID10999\", <|\"canonical\" -> \"Morphisms → Hom(Thread[i], Thread[j]) = WorkPacket[τ_ij],\", \"previousCandidate\" -> \"Morphisms -> Hom(Thread[i], Thread[j]) == WorkPacket[tau$ij]\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID11000",
+			"title":"Phone2 Category Type Theory Composition Async Hom J K Hom I J Hom I K",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"Composition → ∘_async: Hom(j,k) ⊗_⊕ Hom(i,j) → Hom(i,k)",
+			"previous_wolfram_candidate":"Composition -> @*_async: Hom(j,k) CircleTimes$CirclePlus Hom(i,j) -> Hom(i,k)",
+			"rescue_wolfram_candidate":"Phone2Relation[Composition, \"@*_async: Hom(j,k) CircleTimes$CirclePlus Hom(i,j) -> Hom(i,k)\"]"
+		},
+		{
+			"id":"ID11003",
+			"title":"Phone2 Category Type Theory B Bottom",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"{b = bottom",
+			"previous_wolfram_candidate":"{b == bottom",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11003\", <|\"canonical\" -> \"{b = bottom\", \"previousCandidate\" -> \"{b == bottom\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11004",
+			"title":"Phone2 Category Type Theory Get T Top",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"get[], t = top",
+			"previous_wolfram_candidate":"get[], t == top",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11004\", <|\"canonical\" -> \"get[], t = top\", \"previousCandidate\" -> \"get[], t == top\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID11005",
+			"title":"Phone2 Category Type Theory decrementAndGet T Top",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"decrementAndGet[], t = top",
+			"previous_wolfram_candidate":"decrementAndGet[], t == top",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11005\", <|\"canonical\" -> \"decrementAndGet[], t = top\", \"previousCandidate\" -> \"decrementAndGet[], t == top\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID11006",
+			"title":"Phone2 Category Type Theory T Top",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"{t = top",
+			"previous_wolfram_candidate":"{t == top",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11006\", <|\"canonical\" -> \"{t = top\", \"previousCandidate\" -> \"{t == top\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11007",
+			"title":"Phone2 Category Type Theory Get B Bottom",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_symbolic_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"get[], b = bottom",
+			"previous_wolfram_candidate":"get[], b == bottom",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11007\", <|\"canonical\" -> \"get[], b = bottom\", \"previousCandidate\" -> \"get[], b == bottom\", \"rescueClass\" -> \"equation_candidate\"|>]"
+		},
+		{
+			"id":"ID11009",
+			"title":"Phone2 Category Type Theory G C C C Threads C",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"equation_candidate",
+			"canonical_equation":"g[C] = ⋃_{c ∈ C} Threads(c),",
+			"previous_wolfram_candidate":"g[C] == ⋃_{c ∈ C} Threads(c)",
+			"rescue_wolfram_candidate":"g[C] == Union_{c in C} Threads(c)"
+		},
+		{
+			"id":"ID11014",
+			"title":"Phone2 Category Type Theory LocalCorrectness Thread I",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"LocalCorrectness := ∀ thread_i:",
+			"previous_wolfram_candidate":"LocalCorrectness := _i:",
+			"rescue_wolfram_candidate":"SetDelayed[LocalCorrectness, Phone2Predicate[\"_i:\"]]"
+		},
+		{
+			"id":"ID11016",
+			"title":"Phone2 Category Type Theory Push I Task",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"Push[i, task] ==",
+			"previous_wolfram_candidate":"Push[i, task] ==",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11016\", <|\"canonical\" -> \"Push[i, task] ==\", \"previousCandidate\" -> \"Push[i, task] ==\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11019",
+			"title":"Phone2 Category Type Theory Steal I J",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"Steal[i, j] ==",
+			"previous_wolfram_candidate":"Steal[i, j] ==",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11019\", <|\"canonical\" -> \"Steal[i, j] ==\", \"previousCandidate\" -> \"Steal[i, j] ==\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11034",
+			"title":"Phone2 Category Type Theory SplitArchitectureFunctorialityTheorem",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"SplitArchitectureFunctorialityTheorem :=",
+			"previous_wolfram_candidate":"SplitArchitectureFunctorialityTheorem :=",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11034\", <|\"canonical\" -> \"SplitArchitectureFunctorialityTheorem :=\", \"previousCandidate\" -> \"SplitArchitectureFunctorialityTheorem :=\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11046",
+			"title":"Phone2 Category Type Theory Neuron Neuron",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"{neuronᵢ, neuronⱼ} →",
+			"previous_wolfram_candidate":"{neuronᵢ, neuronⱼ} ->",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11046\", <|\"canonical\" -> \"{neuronᵢ, neuronⱼ} →\", \"previousCandidate\" -> \"{neuronᵢ, neuronⱼ} ->\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		},
+		{
+			"id":"ID11049",
+			"title":"Phone2 Category Type Theory I",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_rescue_equation_parse_verified",
+			"message":"rescued equation candidate parsed under HoldComplete",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"i → <|",
+			"previous_wolfram_candidate":"i -> <|",
+			"rescue_wolfram_candidate":"Rule[i, Phone2Expression[\"<|\"]]"
+		},
+		{
+			"id":"ID11115",
+			"title":"Phone2 Category Type Theory Eigenvalues Measurement",
+			"previous_status":"wolfram_parse_error",
+			"rescue_status":"wolfram_fragment_carrier_verified",
+			"message":"carrier parsed under HoldComplete; not a complete semantic equation proof",
+			"rescue_class":"fragment_carrier",
+			"canonical_equation":"Eigenvalues[measurement] →",
+			"previous_wolfram_candidate":"Eigenvalues[measurement] ->",
+			"rescue_wolfram_candidate":"Phone2EquationCarrier[\"ID11115\", <|\"canonical\" -> \"Eigenvalues[measurement] →\", \"previousCandidate\" -> \"Eigenvalues[measurement] ->\", \"rescueClass\" -> \"fragment_carrier\"|>]"
+		}
+	]
+}

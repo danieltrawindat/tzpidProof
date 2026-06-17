@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11397",
+    "uuid": "fcfb8ac9-790a-5b15-8754-4b91008c4709",
+    "registry_id": "registry_id_11397",
+    "piid": "PiID-11397-portal-breathing",
+    "canonical_title": "Total Stress-Energy Phase Decomposition",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11397\\ID11397.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The effective total stress-energy is decomposed into ordinary, topological-current, breathing, and interface contributions.",
+    "technical_interpretation": "This provides the conservative carrier form for unifying ordinary matter, dark/topological current, breathing pressure, and interface stress.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "T^{\\mathrm{total}}_{\\mu\\nu}=T^{b}_{\\mu\\nu}+T^{T}_{\\mu\\nu}+T^{E}_{\\mu\\nu}+T^{\\mathrm{interface}}_{\\mu\\nu}"
+    ],
+    "source_section_latex": "T^{\\mathrm{total}}_{\\mu\\nu}=T^{b}_{\\mu\\nu}+T^{T}_{\\mu\\nu}+T^{E}_{\\mu\\nu}+T^{\\mathrm{interface}}_{\\mu\\nu}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Total Stress-Energy Phase Decomposition",
+          "wolfram": "Ttotal == Tb + Tt + Te + Ti",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Stress_Energy_Carrier",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11397",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

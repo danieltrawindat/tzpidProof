@@ -1,0 +1,439 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:27.149431+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0207",
+    "uuid": "bcec169a-98f5-5847-aeb1-08b61169c38e",
+    "registry_id": "registry_id_0207",
+    "canonical_title": "Helicity Transfer Constraint",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0207/ID0207.TEX",
+      "json": "D:/TZPID/TZPID/ID0207/ID0207.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0207/ID0207.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "In the coupled phonon--magnon system, the total helicity H\\_total = H\\_acoustic + H\\_magnetic is conserved.",
+    "technical_interpretation": "In the coupled phonon--magnon system, the total helicity H\\_total = H\\_acoustic + H\\_magnetic is conserved."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H_{\\mathrm{total}} = H_{\\mathrm{acoustic}} + H_{\\mathrm{magnetic}}",
+      "\\partial_t H_{\\mathrm{total}} = 0"
+    ],
+    "source_section_latex": "\\[\nH_{\\mathrm{total}} = H_{\\mathrm{acoustic}} + H_{\\mathrm{magnetic}}\n\\]\n\\[\n\\partial_t H_{\\mathrm{total}} = 0\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Total Helicity Accounting",
+      "formula_latex_blocks": [
+        "H_{\\mathrm{total}} = H_{\\mathrm{acoustic}} + H_{\\mathrm{magnetic}}"
+      ],
+      "interpretive_role": "The coupled phonon--magnon system carries a total helicity composed of acoustic and magnetic contributions."
+    },
+    {
+      "step": 2,
+      "component_title": "Conserved Transfer",
+      "formula_latex_blocks": [
+        "\\partial_t H_{\\mathrm{total}}=0",
+        "\\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}"
+      ],
+      "interpretive_role": "Under the stated conservation law, exchange in one channel is balanced by the other."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0207}$",
+        "description": "canonical registry object for entry ID 0207."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0207}$",
+        "name": "canonical registry object for entry ID 0207.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{total}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{acoustic}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{magnetic}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Helicity Transfer Constraint\nCanonical operator translation\neq0207_1 = HoldForm[Htotal == Hacoustic + Hmagnetic];\neq0207_2 = HoldForm[partial_t Htotal == 0];\n\nTRAWIN closure composition\nTRAWINClosure0207[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0207 := HoldForm[{eq0207_1, eq0207_2}];\nResult0207 := TRAWINClosure0207[K0207];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "H_{\\mathrm{total}} = H_{\\mathrm{acoustic}} + H_{\\mathrm{magnetic}}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HTotal == HAcoustic + HMagnetic]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "\\partial_t H_{\\mathrm{total}}=0",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[D[HTotal, t] == 0]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        }
+      ],
+      "status": "source_aligned_review_repaired",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0207 generated source-truth Wolfram model *)\nClearAll[K0207, TRAWINClosure0207];\neq0207$1 = HoldForm[HTotal == HAcoustic + HMagnetic];\neq0207$2 = HoldForm[partialT*HTotal == 0];\neq0207$3 = HoldForm[Element[sigmaZ^helicity, {Plus[1], -1}]];\nK0207 = HoldForm[{eq0207$1, eq0207$2, eq0207$3}];\nTRAWINClosure0207[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0207 = TRAWINClosure0207[K0207];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nH_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}},\\qquad \\partial_t H_{\\mathrm{total}}=0.\n\\]\n\\paragraph{Conservation Derivation.}\nDifferentiate the total-helicity decomposition with respect to time:\n\\[\n\\partial_t H_{\\mathrm{total}}=\\partial_t H_{\\mathrm{acoustic}}+\\partial_t H_{\\mathrm{magnetic}}.\n\\]\nApplying the stated conservation constraint gives\n\\[\n0=\\partial_t H_{\\mathrm{acoustic}}+\\partial_t H_{\\mathrm{magnetic}},\\qquad \\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}.\n\\]\n\\paragraph{Interpretation.}\nWithin the coupled model, helicity can be transferred between acoustic and magnetic channels while the total remains invariant.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "review_source_enrichment": {
+    "review_status": "candidate_for_symbol_key_and_equation_grounding",
+    "method": "equation-aligned PDF evidence followed by manual review draft",
+    "review_claims": [
+      {
+        "formula_latex": "H_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}}",
+        "symbol_definitions": {
+          "H_{\\mathrm{total}}": "total helicity conserved in the coupled phonon--magnon system",
+          "H_{\\mathrm{acoustic}}": "acoustic-channel helicity contribution",
+          "H_{\\mathrm{magnetic}}": "magnetic-channel helicity contribution"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 120
+      }
+    ]
+  },
+  "review_publication_overrides": {
+    "dictionary_sections": {
+      "definition": "A helicity transfer constraint is a conservation law for a coupled phonon--magnon system. It states that acoustic and magnetic contributions may exchange helicity while their combined total remains fixed.",
+      "contextual_meaning": "In this entry helicity measures twistedness or linking carried by the coupled channels. A change in the acoustic portion is therefore paired with an opposing change in the magnetic portion, rather than interpreted as new helicity being created by the interaction.",
+      "formal_statement_latex": "\\[\nH_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}},\\qquad\n\\partial_t H_{\\mathrm{total}}=0\n\\]",
+      "derivable_consequences": "Differentiating the sum gives \\(\\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}\\) under the conservation condition. The sourced text further identifies controlled opposite-helicity acoustic vortices as a route for testing compensating magnetic-helicity change.",
+      "lemma_support": "The aligned source names this entry as a conservation law, gives the sum \\(H_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}}\\), and states that coupling transfers helicity between sound and magnetic fields without creating or destroying it.",
+      "technical_interpretation": "The equation is an accounting constraint on internal transfer, not by itself an energy-conversion efficiency law. It fixes an invariant quantity against which a phonon--magnon interaction model can be checked.",
+      "equation_grounding": "\\(H_{\\mathrm{total}}\\) is total helicity of the coupled system; \\(H_{\\mathrm{acoustic}}\\) is the acoustic-channel contribution; and \\(H_{\\mathrm{magnetic}}\\) is the magnetic-channel contribution. The derivative equality expresses the stated conservation.",
+      "interpretive_role": "This entry carries the tertiary arc from coupling mechanisms to a topological invariant: exchange may occur, but the conserved combined helicity restricts admissible transfer histories.",
+      "tzp_thesaurus": [
+        {
+          "term": "Helicity",
+          "meaning": "A measure of twistedness or linking carried by a field configuration."
+        },
+        {
+          "term": "Helicity Transfer",
+          "meaning": "Redistribution of helicity between acoustic and magnetic channels under coupling."
+        },
+        {
+          "term": "Conservation Constraint",
+          "meaning": "A relation requiring the combined helicity to remain invariant during transfer."
+        }
+      ]
+    },
+    "equation_support_summary": "The conserved-sum relation makes any acoustic helicity transfer compensating: within the coupled model, its time variation is balanced by the magnetic helicity variation.",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_review_candidate",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 257,
+      "applied_at": "20260525_010314"
+    },
+    "proof_latex": "\\textbf{Statement:} Within the stated coupled system,\n\\[\nH_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}},\\qquad \\partial_t H_{\\mathrm{total}}=0.\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} Conservation of total helicity entails balanced transfer between the acoustic and magnetic channels.\\\\\n\\textbf{Proof:} Differentiation of the additive decomposition yields \\(\\partial_t H_{\\mathrm{total}}=\\partial_t H_{\\mathrm{acoustic}}+\\partial_t H_{\\mathrm{magnetic}}\\). Substitution of the sourced conservation condition gives \\(\\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE} --- formal conservation consequence under the stated model\\\\\n\\textbf{Formal Status:} \\ensuremath{\\checkmark}\\ THEORETICAL -- source-backed CHL obligation\\\\\n\\textbf{Physical Status:} THEORETICAL -- empirical realization remains model-dependent"
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "A helicity transfer constraint is a conservation law for a coupled phonon--magnon system. It states that acoustic and magnetic contributions may exchange helicity while their combined total remains fixed.",
+      "contextual_meaning": "In this entry helicity measures twistedness or linking carried by the coupled channels. A change in the acoustic portion is therefore paired with an opposing change in the magnetic portion, rather than interpreted as new helicity being created by the interaction.",
+      "formal_statement_latex": "\\[\nH_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}},\\qquad\n\\partial_t H_{\\mathrm{total}}=0\n\\]",
+      "derivable_consequences": "Differentiating the sum gives \\(\\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}\\) under the conservation condition. The sourced text further identifies controlled opposite-helicity acoustic vortices as a route for testing compensating magnetic-helicity change.",
+      "lemma_support": "The aligned source names this entry as a conservation law, gives the sum \\(H_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}}\\), and states that coupling transfers helicity between sound and magnetic fields without creating or destroying it.",
+      "technical_interpretation": "The equation is an accounting constraint on internal transfer, not by itself an energy-conversion efficiency law. It fixes an invariant quantity against which a phonon--magnon interaction model can be checked.",
+      "equation_grounding": "\\(H_{\\mathrm{total}}\\) is total helicity of the coupled system; \\(H_{\\mathrm{acoustic}}\\) is the acoustic-channel contribution; and \\(H_{\\mathrm{magnetic}}\\) is the magnetic-channel contribution. The derivative equality expresses the stated conservation.",
+      "interpretive_role": "This entry carries the tertiary arc from coupling mechanisms to a topological invariant: exchange may occur, but the conserved combined helicity restricts admissible transfer histories.",
+      "tzp_thesaurus": [
+        {
+          "term": "Helicity",
+          "meaning": "A measure of twistedness or linking carried by a field configuration."
+        },
+        {
+          "term": "Helicity Transfer",
+          "meaning": "Redistribution of helicity between acoustic and magnetic channels under coupling."
+        },
+        {
+          "term": "Conservation Constraint",
+          "meaning": "A relation requiring the combined helicity to remain invariant during transfer."
+        }
+      ]
+    },
+    "equation_support_summary": "The conserved-sum relation makes any acoustic helicity transfer compensating: within the coupled model, its time variation is balanced by the magnetic helicity variation.",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 257,
+      "applied_at": "20260525_010314",
+      "approved_at": "2026-05-25",
+      "approval_note": "User approved rendered locked-layout review excerpt."
+    },
+    "proof_latex": "\\textbf{Statement:} Within the stated coupled system,\n\\[\nH_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}},\\qquad \\partial_t H_{\\mathrm{total}}=0.\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} Conservation of total helicity entails balanced transfer between the acoustic and magnetic channels.\\\\\n\\textbf{Proof:} Differentiation of the additive decomposition yields \\(\\partial_t H_{\\mathrm{total}}=\\partial_t H_{\\mathrm{acoustic}}+\\partial_t H_{\\mathrm{magnetic}}\\). Substitution of the sourced conservation condition gives \\(\\partial_t H_{\\mathrm{acoustic}}=-\\partial_t H_{\\mathrm{magnetic}}\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE} --- formal conservation consequence under the stated model\\\\\n\\textbf{Formal Status:} \\ensuremath{\\checkmark}\\ THEORETICAL -- source-backed CHL obligation\\\\\n\\textbf{Physical Status:} THEORETICAL -- empirical realization remains model-dependent"
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-25",
+    "review_status": "approved_for_symbol_key_and_equation_grounding",
+    "method": "equation-aligned source evidence followed by rendered-page user approval",
+    "approved_claims": [
+      {
+        "formula_latex": "H_{\\mathrm{total}}=H_{\\mathrm{acoustic}}+H_{\\mathrm{magnetic}}",
+        "symbol_definitions": {
+          "H_{\\mathrm{total}}": "total helicity conserved in the coupled phonon--magnon system",
+          "H_{\\mathrm{acoustic}}": "acoustic-channel helicity contribution",
+          "H_{\\mathrm{magnetic}}": "magnetic-channel helicity contribution"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 120
+      }
+    ],
+    "approval_note": "User approved rendered locked-layout review excerpt.",
+    "limitation": "Approved meanings and formal consequences are limited to the displayed relations; physical realization and unshown coupling claims remain model-conditional."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0207/ID0207.source_truth.json",
+    "entry_id": "ID0207",
+    "registry_id": "registry_id_0207",
+    "canonical_title": "Helicity Transfer Constraint",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0207/ID0207.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "bcec169a-98f5-5847-aeb1-08b61169c38e",
+    "RTEID": "RTE:P803.8270:T1.3245",
+    "poloidal_theta_rad": "803.8270",
+    "toroidal_phi_rad": "1.3245",
+    "rteid_source": "manifest",
+    "PiID": "9756659334461",
+    "TZPi": "9",
+    "PiPE_position": "214",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "H_{\\mathrm{total}} = H_{\\mathrm{acoustic}} + H_{\\mathrm{magnetic}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "H"
+        ],
+        "candidate_wolfram_input": "HoldForm[H$total == H$acoustic + H$magnetic]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0207\", 1, <|\"kind\" -> \"symbolic\", \"title\" -> \"Helicity Transfer Constraint\", \"latex\" -> \"H_{\\\\mathrm{total}} = H_{\\\\mathrm{acoustic}} + H_{\\\\mathrm{magnetic}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"H\"}, \"candidateWolframInput\" -> \"HoldForm[H$total == H$acoustic + H$magnetic]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\partial_t H_{\\mathrm{total}} = 0",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "t",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0207\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Helicity Transfer Constraint\", \"latex\" -> \"\\\\partial_t H_{\\\\mathrm{total}} = 0\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"partial\", \"t\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

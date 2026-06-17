@@ -1,0 +1,400 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:23:00.835756+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0640",
+    "uuid": "cecb81c2-18f7-5650-82e3-fa53c7628e6a",
+    "registry_id": "registry_id_0640",
+    "canonical_title": "Kuramoto Planetary Spin Model",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0640/ID0640.TEX",
+      "json": "D:/TZPID/TZPID/ID0640/ID0640.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0640/ID0640.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records kuramoto planetary spin model through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "Theta = pi/2"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\Lambda_{\\mathrm{crit}}\\approx 1.",
+      "\\Lambda = \\frac{\\mathbf{B}^2} {\\rho\\,\\mu\\,\\Omega^2},",
+      "\\mathbf{B}^2 \\sim \\rho\\,\\mu\\,\\Omega^2."
+    ],
+    "source_section_latex": "\\[\n\\Lambda_{\\mathrm{crit}}\\approx 1.\n\\]\n\\[\n\\Lambda = \\frac{\\mathbf{B}^2} {\\rho\\,\\mu\\,\\Omega^2},\n\\]\n\\[\n\\mathbf{B}^2 \\sim \\rho\\,\\mu\\,\\Omega^2.\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Kuramoto Phase Flow",
+      "formula_latex_blocks": [
+        "\\Lambda_{\\mathrm{crit}}\\approx 1."
+      ],
+      "interpretive_role": "This fixes the Kuramoto phase flow that governs the coupled planetary spin ensemble."
+    },
+    {
+      "step": 2,
+      "component_title": "Planetary Coupling",
+      "formula_latex_blocks": [
+        "\\Lambda = \\frac{\\mathbf{B}^2} {\\rho\\,\\mu\\,\\Omega^2},"
+      ],
+      "interpretive_role": "This turns the coupled phase ensemble into an explicit complex synchronization order parameter."
+    },
+    {
+      "step": 3,
+      "component_title": "Synchronization Closure",
+      "formula_latex_blocks": [
+        "\\mathbf{B}^2 \\sim \\rho\\,\\mu\\,\\Omega^2."
+      ],
+      "interpretive_role": "This closes the entry by requiring admissibility of the synchronized order-parameter state."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\Lambda$",
+        "description": "lemniscatic representative or canonical branch object."
+      },
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      },
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\Lambda$",
+        "name": "lemniscatic representative or canonical branch object.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Lambda_{crit}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Kuramoto Planetary Spin Model\nCanonical operator translation\neq0640_1 = HoldForm[Lambdacrit ~== 1];\neq0640_2 = HoldForm[Lambda == ((B)^2) (rho mu Omega^2),];\neq0640_3 = HoldForm[(B)^2 ~ rho mu Omega^2];\n\nTRAWIN closure composition\nTRAWINClosure0640[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0640 := HoldForm[{eq0640_1, eq0640_2, eq0640_3}];\nResult0640 := TRAWINClosure0640[K0640];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\Lambda_{\\mathrm{crit}}\\approx 1.",
+          "normalized_latex": "LambdaCrit==1",
+          "wolfram_input": "LambdaCrit==1",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[LambdaCrit == 1]",
+          "texform_roundtrip": "\\text{LambdaCrit}=1",
+          "messages": []
+        },
+        {
+          "latex": "\\Lambda = \\frac{\\mathbf{B}^2} {\\rho\\,\\mu\\,\\Omega^2},",
+          "normalized_latex": "Lambda==((B^2)/(rho*mu*Omega^2))",
+          "wolfram_input": "Lambda==((B^2)/(rho*mu*Omega^2))",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathbf unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Lambda == B^2/(rho*mu*Omega^2)]",
+          "texform_roundtrip": "\\text{Lambda}=\\frac{B^2}{\\mu  \\text{Omega}^2 \\rho }",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{B}^2 \\sim \\rho\\,\\mu\\,\\Omega^2.",
+          "normalized_latex": "\\mathbf{B}^2 \\sim \\rho \\mu \\Omega^2.",
+          "wolfram_input": "SimilarTo[B^2,rho*mu*Omega^2]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\sim normalized to SimilarTo[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[SimilarTo[B^2, rho*mu*Omega^2]]",
+          "texform_roundtrip": "\\text{SimilarTo}\\left(B^2,\\mu  \\text{Omega}^2 \\rho \\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0640 generated source-truth Wolfram model *)\nClearAll[K0640, TRAWINClosure0640];\neq0640$1 = HoldForm[LambdaCrit == 1];\neq0640$2 = HoldForm[Lambda == B^2/(rho*mu*Omega^2)];\neq0640$3 = HoldForm[SimilarTo[B^2, rho*mu*Omega^2]];\nK0640 = HoldForm[{eq0640$1, eq0640$2, eq0640$3}];\nTRAWINClosure0640[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0640 = TRAWINClosure0640[K0640];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\Lambda_{\\mathrm{crit}}\\approx 1 .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFrom the Elsasser parameter,\n\n\\begin{equation}\n\\Lambda\n=\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2},\n\\end{equation}\n\ncriticality occurs when magnetic and rotational terms are balanced.\n\nBalance means the numerator and denominator are of the same order:\n\n\\begin{equation}\n\\mathbf{B}^2\n\\sim\n\\rho\\,\\mu\\,\\Omega^2 .\n\\end{equation}\n\nTherefore,\n\n\\begin{equation}\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2}\n\\sim\n1 .\n\\end{equation}\n\nThus,\n\n\\begin{equation}\n\\boxed{\n\\Lambda_{\\mathrm{crit}}\\approx 1 .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe critical Elsasser value marks a universal balance architecture across scales: the point where magnetic organization and rotational inertia enter comparable strength.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0640/ID0640.source_truth.json",
+    "entry_id": "ID0640",
+    "registry_id": "registry_id_0640",
+    "canonical_title": "Kuramoto Planetary Spin Model",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0640/ID0640.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "cecb81c2-18f7-5650-82e3-fa53c7628e6a",
+    "RTEID": "RTE:P2461.9628:T4.0566",
+    "poloidal_theta_rad": "2461.9628",
+    "toroidal_phi_rad": "4.0566",
+    "rteid_source": "manifest",
+    "PiID": "7363717872146",
+    "TZPi": "7",
+    "PiPE_position": "647",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\Lambda_{\\mathrm{crit}}\\approx 1.",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "Lambda"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0640\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Kuramoto Planetary Spin Model\", \"latex\" -> \"\\\\Lambda_{\\\\mathrm{crit}}\\\\approx 1.\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"Lambda\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Lambda = \\frac{\\mathbf{B}^2} {\\rho\\,\\mu\\,\\Omega^2},",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Lambda",
+          "mathbf",
+          "rho",
+          "mu",
+          "Omega"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0640\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Kuramoto Planetary Spin Model\", \"latex\" -> \"\\\\Lambda = \\\\frac{\\\\mathbf{B}^2} {\\\\rho\\\\,\\\\mu\\\\,\\\\Omega^2},\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"Lambda\", \"mathbf\", \"rho\", \"mu\", \"Omega\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\mathbf{B}^2 \\sim \\rho\\,\\mu\\,\\Omega^2.",
+        "numeric_atoms": [
+          "2"
+        ],
+        "symbolic_tokens": [
+          "mathbf",
+          "rho",
+          "mu",
+          "Omega"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0640\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Kuramoto Planetary Spin Model\", \"latex\" -> \"\\\\mathbf{B}^2 \\\\sim \\\\rho\\\\,\\\\mu\\\\,\\\\Omega^2.\", \"numericAtoms\" -> {2}, \"symbolicTokens\" -> {\"mathbf\", \"rho\", \"mu\", \"Omega\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

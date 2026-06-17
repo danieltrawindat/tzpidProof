@@ -1,0 +1,241 @@
+\tzpanchor{0059}
+\tzpentryheader{0059}{Scale Dependence of Physical Constants}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{3bb3f032-f803-5faa-8686-ead5a7b2fed9}}\\
+\textbf{PiID} & \tzpcode{4592307816406} & \textbf{TZPi}\quad \tzpcode{7}\quad \textbf{PiPE}\quad \tzpcode{66}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{229.1101 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.3775 rad}\\
+\textbf{TZPID} & \tzpcode{ID0059} & \textbf{Node Dependencies}\quad \tzpidref{0046}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0059} & \textbf{Scale}\quad effective constants\\
+\textbf{LOC Classification} & QC20 running constants & QC174 scale-dependent effective theory\\
+\textbf{arXiv Classification} & Primary: hep-th \quad Cross-list: gr-qc, physics.gen-ph & \\
+\textbf{Primary Support} & Effective Constant Family & Logarithmic Running Variable\\
+\textbf{Closure Support} & Constant-Flow Equation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Fundamental constants such as coupling strengths are not truly constant but run with scale due to quantum and geometric effects; their evolution ties to renormalisation flow.
+
+\tzpsection{Canonical Equation}
+\[
+\frac{dc_{i}}{d\ln\mu}
+=
+f_{i}\!\left(c_{j},d_{\mathrm{eff}}\right)
+\]
+\[
+c_{i} = c_{i}(\mu,d_{\mathrm{eff}})
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mu$: source equation symbol.
+    \item $f_{i}$: source equation symbol.
+    \item $c_{j}$: source equation symbol.
+    \item $d_{\mathrm{eff}}$: source equation symbol.
+    \item $c_{i}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0059 generated source Wolfram model *)
+ClearAll[K0059, Cr0059, T, R, A, W, I, N];
+eq0059$1 = HoldForm[dcI/dlnmu == fIPair[cJ, dEff]];
+eq0059$2 = HoldForm[cI == cI[mu, dEff]];
+eq0059$3 = HoldForm[lnmu];
+
+K0059 = HoldForm[{eq0059$1, eq0059$2, eq0059$3}];
+
+N = "normalized TRAWIN closure object for Scale Dependence of Physical Constants";
+I = "Constant-Flow Equation integration/comparison layer";
+W = "Logarithmic Running Variable wave or operator carrier";
+A = "Effective Constant Family admissible action/amplitude condition";
+R = "Logarithmic Running Variable rotation/curl preservation layer";
+T = "Effective Constant Family local source condition";
+
+Cr0059[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0059 = Cr0059[K0059];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Effective Constant Family local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Logarithmic Running Variable rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Effective Constant Family admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Logarithmic Running Variable wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Constant-Flow Equation integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Scale Dependence of Physical Constants.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0059] Scale Dependence of Physical Constants}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+c_i=c_i(\mu,d_{\mathrm{eff}}).
+\end{equation}
+
+\paragraph{Flow Equation.}
+\begin{equation}
+\frac{\mathrm{d}c_i}{\mathrm{d}\ln\mu}
+=
+f_i(c_j,d_{\mathrm{eff}}).
+\end{equation}
+
+\paragraph{Primary Derivation.}
+If couplings depend on scale and effective dimension, then derived constants may also become scale-sensitive.
+
+Represent each effective constant as:
+
+\begin{equation}
+c_i=c_i(\mu,d_{\mathrm{eff}}).
+\end{equation}
+
+The natural flow parameter for scale comparison is $\ln\mu$.  
+Differentiating with respect to this parameter gives:
+
+\begin{equation}
+\boxed{
+\frac{\mathrm{d}c_i}{\mathrm{d}\ln\mu}
+=
+f_i(c_j,d_{\mathrm{eff}}).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Constants are treated as effective parameters that may run under TRAWIN scale and dimension flow.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Scale Dependence of Physical Constants by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Effective Constant Family}\par
+\[
+c_{i} = c_{i}(\mu,d_{\mathrm{eff}})
+\]
+\noindent This identifies the constants as scale- and dimension-sensitive quantities.\par
+\noindent\textbf{2. Logarithmic Running Variable}\par
+\[
+\ln\mu
+\]
+\noindent This is the natural flow parameter for comparing changes across many decades of scale.\par
+\noindent\textbf{3. Constant-Flow Equation}\par
+\[
+\frac{dc_{i}}{d\ln\mu}
+=
+f_{i}\!\left(c_{j},d_{\mathrm{eff}}\right)
+\]
+\noindent This closes the progression by giving explicit evolution laws for the effective constants.\par
+
+\clearpage
+\noindent\textbf{[ID 0059] Scale Dependence of Physical Constants}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Scale Dependence of Physical Constants is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Fundamental constants such as coupling strengths are not truly constant but run with scale due to quantum and geometric effects; their evolution ties to renormalisation flow. \textbf{Contextual meaning:} The entry reads Scale Dependence of Physical Constants as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This entry is the natural completion of the renormalization tranche. It says that once scale and effective dimension are allowed to run, the supposedly fixed constants of the theory must be reinterpreted as evolving effective parameters. \textbf{Lemma support:} Effective Constant Family; Logarithmic Running Variable; Constant-Flow Equation.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Constants are treated as effective parameters that may run under TRAWIN scale and dimension flow.
+
+\tzpsection{Equation Grounding}
+Equation anchors: Physical constants cic ici in the Trawinistic framework are functions of scale mu and effective dimension dimu2061efftextbackslash dim eff dimeff; specifically, dcidlnu2061mu=fi(cj,dimu2061eff)ratio d c i d textbackslash lnmu = f i(c j,textbackslash dim eff )dlnmudci=fi(cj,dimeff), where functions fif ifi encode curvature and zero-point contributions. Physical constants cic ici in the Trawinistic framework are functions of scale mu and effective dimension dimu2061efftextbackslash dim eff dimeff; specifically, dcidlnu2061mu=fi(cj,dimu2061eff)ratio d c i d textbackslash lnmu = f i(c j,textbackslash dim eff )dlnmudci=fi(cj,dimeff), where functions fif ifi encode curvature and zero-point contributions.
+
+\tzpsection{Interpretive Role}
+This entry is the natural completion of the renormalization tranche. It says that once scale and effective dimension are allowed to run, the supposedly fixed constants of the theory must be reinterpreted as evolving effective parameters.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Scale Dependence Physical Constants}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Scale Dependence Physical Normalization Analogue}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Constants Equivalence}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0059]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0059_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0059] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Scale Dependence of Physical Constants}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} fundamental constants such as coupling strengths are not truly constant but run with
+scale due to quantum and geometric effects; their evolution ti...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Scale Dependence of Physical Constants is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0059_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11405",
+    "uuid": "7d680626-af0c-57fb-a03f-29d82d98c7c3",
+    "registry_id": "registry_id_11405",
+    "piid": "PiID-11405-portal-equilibrium",
+    "canonical_title": "Portal Phi Force Ratio",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11405\\ID11405.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The portal analysis tracks the ratio of surface-tension force to inertial force as a candidate convergence toward the golden ratio.",
+    "technical_interpretation": "This stores the diagnostic used to test whether the equilibrium data approaches the golden ratio. The convergence claim remains empirical until backed by measured data.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\phi_{\\mathrm{ratio}}=\\frac{F_{s}}{F_{i}}"
+    ],
+    "source_section_latex": "\\phi_{\\mathrm{ratio}}=\\frac{F_{s}}{F_{i}}"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Portal Phi Force Ratio",
+          "wolfram": "phiRatio == Fs/Fi",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Diagnostic_Definition",
+    "obligation_role": "Portal_Phi_Diagnostic",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11405",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

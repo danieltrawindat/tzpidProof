@@ -1,0 +1,465 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:51.881970+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0212",
+    "uuid": "5b4e404d-0db2-5997-a556-9dcab8344d31",
+    "registry_id": "registry_id_0212",
+    "canonical_title": "Gyromagnetic Bessel Interference Operator",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0212/ID0212.TEX",
+      "json": "D:/TZPID/TZPID/ID0212/ID0212.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0212/ID0212.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The unified propulsion field is defined by the tensor product of a Bessel-function interference pattern and a gyromagnetic field:",
+    "technical_interpretation": "The unified propulsion field is defined by the tensor product of a Bessel-function interference pattern and a gyromagnetic field: \\[ F(r,\\theta,\\varphi,t) = \\left[ \\sum_{n=0}^{\\infty} J_{n+1/2}(k r)e^{i n \\theta} \\right] \\otimes \\left[ \\mathrm{ConstrainedDipole}(\\theta,\\varphi)\\, \\mathrm{GyroscopicPrecession}(\\omega_{\\mathrm{gyro}} t) \\right]. \\]"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F(r,\\theta,\\varphi,t) = \\left[ \\sum_{n=0}^{\\infty} J_{n+1/2}(k r)e^{i n \\theta} \\right] \\otimes \\left[ \\mathrm{ConstrainedDipole}(\\theta,\\varphi)\\, \\mathrm{GyroscopicPrecession}(\\omega_{\\mathrm{gyro}} t) \\right].",
+      "F(r,\\theta,\\varphi,t)=B(r,\\theta)\\otimes G(\\theta,\\varphi,t)",
+      "B(r,\\theta)=\\sum_{n=0}^{\\infty}J_{n+1/2}(k r)e^{i n\\theta}"
+    ],
+    "source_section_latex": "\\[ F(r,\\theta,\\varphi,t) = \\left[ \\sum_{n=0}^{\\infty} J_{n+1/2}(k r)e^{i n \\theta} \\right] \\otimes \\left[ \\mathrm{ConstrainedDipole}(\\theta,\\varphi)\\, \\mathrm{GyroscopicPrecession}(\\omega_{\\mathrm{gyro}} t) \\right]. \\]\n\n\\[\nF(r,\\theta,\\varphi,t)=B(r,\\theta)\\otimes G(\\theta,\\varphi,t)\n\\]\n\\[\nB(r,\\theta)=\\sum_{n=0}^{\\infty}J_{n+1/2}(k r)e^{i n\\theta}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Unified Field",
+      "formula_latex_blocks": [
+        "F(r,\\theta,\\varphi,t)=B(r,\\theta)\\otimes G(\\theta,\\varphi,t)"
+      ],
+      "interpretive_role": "This restores the sourced tensor-product structure of the unified propulsion field."
+    },
+    {
+      "step": 2,
+      "component_title": "Bessel Interference",
+      "formula_latex_blocks": [
+        "B(r,\\theta)=\\sum_{n=0}^{\\infty}J_{n+1/2}(k r)e^{i n\\theta}"
+      ],
+      "interpretive_role": "This isolates the Bessel interference factor named by the operator."
+    },
+    {
+      "step": 3,
+      "component_title": "Gyromagnetic Carrier",
+      "formula_latex_blocks": [
+        "G(\\theta,\\varphi,t)=D(\\theta,\\varphi)R_{\\mathrm{gyro}}(\\omega_{\\mathrm{gyro}}t)"
+      ],
+      "interpretive_role": "This closes the entry by pairing the Bessel factor with the rotating constrained-dipole carrier."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\varphi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{n=0}^{\\infty}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\otimes$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{gyro}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F(r,\\theta,\\varphi,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J_{n+1/2}(k r)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B(r,\\theta)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G(\\theta,\\varphi,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D(\\theta,\\varphi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{gyro}(\\omega_{gyro}t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$e(\\theta,\\varphi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$n(\\omega_{gyro} t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Gyromagnetic Bessel Interference Operator\nCanonical operator translation\neq0212_1 = HoldForm[F(r,,,t) == [ Sumn==0^(Infinity) Jn+1/2(k r)e^(i n ) ] [ ConstrainedDipole(,) GyroscopicPrecession(omegagyro t) ]];\neq0212_2 = HoldForm[F(r,,,t)==B(r,) G(,,t)];\neq0212_3 = HoldForm[B(r,)==Sumn==0^(Infinity)Jn+1/2(k r)e^(i n)];\n\nTRAWIN closure composition\nTRAWINClosure0212[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0212 := HoldForm[{eq0212_1, eq0212_2, eq0212_3}];\nResult0212 := TRAWINClosure0212[K0212];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "F(r,\\theta,\\varphi,t) = \\left[ \\sum_{n=0}^{\\infty} J_{n+1/2}(k r)e^{i n \\theta} \\right] \\otimes \\left[ \\mathrm{ConstrainedDipole}(\\theta,\\varphi)\\, \\mathrm{GyroscopicPrecession}(\\omega_{\\mathrm{gyro}} t) \\right].",
+          "normalized_latex": "F[r,theta,phi,t]==TZPGroup[SumN0^(Infinity)JN12[k*r]Exp[I*ntheta]]*TensorProduct[ConstrainedDipole[theta,phi]*GyroscopicPrecession[omegaGyro*t]]",
+          "wolfram_input": "F[r,theta,phi,t]==TZPGroup[SumN0^(Infinity)JN12[k*r]Exp[I*ntheta]]*TensorProduct[ConstrainedDipole[theta,phi]*GyroscopicPrecession[omegaGyro*t]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[r, theta, phi, t] == TZPGroup[SumN0^Infinity*JN12[k*r]*Exp[I*ntheta]]*TensorProduct[ConstrainedDipole[theta, phi]*GyroscopicPrecession[omegaGyro*t]]]",
+          "texform_roundtrip": "F(r,\\theta ,\\phi ,t)=\\text{TZPGroup}(\\text{Indeterminate}) \\text{GyroscopicPrecession}(\\text{omegaGyro} t) \\text{ConstrainedDipole}(\\theta ,\\phi )",
+          "messages": []
+        },
+        {
+          "latex": "F(r,\\theta,\\varphi,t)=B(r,\\theta)\\otimes G(\\theta,\\varphi,t)",
+          "normalized_latex": "F[r,theta,phi,t]==B[r,theta]TensorProduct*G[theta,phi,t]",
+          "wolfram_input": "F[r,theta,phi,t]==B[r,theta]TensorProduct*G[theta,phi,t]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F[r, theta, phi, t] == B[r, theta]*TensorProduct*G[theta, phi, t]]",
+          "texform_roundtrip": "F(r,\\theta ,\\phi ,t)=\\text{TensorProduct} B(r,\\theta ) G(\\theta ,\\phi ,t)",
+          "messages": []
+        },
+        {
+          "latex": "B(r,\\theta)=\\sum_{n=0}^{\\infty}J_{n+1/2}(k r)e^{i n\\theta}",
+          "normalized_latex": "B[r,theta]==SumN0^(Infinity)JN12[k*r]Exp[I*ntheta]",
+          "wolfram_input": "B[r,theta]==SumN0^(Infinity)JN12[k*r]Exp[I*ntheta]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B[r, theta] == SumN0^Infinity*JN12[k*r]*Exp[I*ntheta]]",
+          "texform_roundtrip": "B(r,\\theta )=\\text{Indeterminate}",
+          "messages": []
+        },
+        {
+          "latex": "G(\\theta,\\varphi,t)=D(\\theta,\\varphi)R_{\\mathrm{gyro}}(\\omega_{\\mathrm{gyro}}t)",
+          "normalized_latex": "G[theta,phi,t]==D[theta,phi]RGyro[omegaGyrot]",
+          "wolfram_input": "G[theta,phi,t]==D[theta,phi]RGyro[omegaGyrot]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[G[theta, phi, t] == D[theta, phi]*RGyro[omegaGyrot]]",
+          "texform_roundtrip": "G(\\theta ,\\phi ,t)=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0212 generated source-truth Wolfram model *)\nClearAll[K0212, TRAWINClosure0212];\neq0212$1 = HoldForm[F[r, theta, phi, t] == TZPGroup[SumN0^Infinity*JN12[k*r]*Exp[I*ntheta]]*TensorProduct[ConstrainedDipole[theta, phi]*GyroscopicPrecession[omegaGyro*t]]];\neq0212$2 = HoldForm[F[r, theta, phi, t] == B[r, theta]*TensorProduct*G[theta, phi, t]];\neq0212$3 = HoldForm[B[r, theta] == SumN0^Infinity*JN12[k*r]*Exp[I*ntheta]];\neq0212$4 = HoldForm[G[theta, phi, t] == D[theta, phi]*RGyro[omegaGyrot]];\nK0212 = HoldForm[{eq0212$1, eq0212$2, eq0212$3, eq0212$4}];\nTRAWINClosure0212[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0212 = TRAWINClosure0212[K0212];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nC(\\phi_1,\\phi_2)\n=\n\\frac{\n\\left|\\langle \\phi_1,\\phi_2\\rangle\\right|\n}{\n\\lVert \\phi_1\\rVert\\,\\lVert \\phi_2\\rVert\n}.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\phi_1$ and $\\phi_2$ be two field configurations on $M$.  \nTheir raw overlap is measured by the inner product:\n\n\\begin{equation}\n\\langle \\phi_1,\\phi_2\\rangle .\n\\end{equation}\n\nTo remove dependence on field magnitude, normalize by the product of the two norms:\n\n\\begin{equation}\n\\lVert \\phi_1\\rVert\\,\\lVert \\phi_2\\rVert .\n\\end{equation}\n\nTaking the absolute value gives a nonnegative coherence score:\n\n\\begin{equation}\n\\boxed{\nC(\\phi_1,\\phi_2)\n=\n\\frac{\n\\left|\\langle \\phi_1,\\phi_2\\rangle\\right|\n}{\n\\lVert \\phi_1\\rVert\\,\\lVert \\phi_2\\rVert\n}.\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe field coherence metric measures normalized alignment between two field states. Values near $1$ indicate strong coherence; values near $0$ indicate decoherence or orthogonality.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0212/ID0212.source_truth.json",
+    "entry_id": "ID0212",
+    "registry_id": "registry_id_0212",
+    "canonical_title": "Gyromagnetic Bessel Interference Operator",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0212/ID0212.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "5b4e404d-0db2-5997-a556-9dcab8344d31",
+    "RTEID": "RTE:P823.2431:T1.3565",
+    "poloidal_theta_rad": "823.2431",
+    "toroidal_phi_rad": "1.3565",
+    "rteid_source": "manifest",
+    "PiID": "5933446128475",
+    "TZPi": "6",
+    "PiPE_position": "219",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "F(r,\\theta,\\varphi,t) = \\left[ \\sum_{n=0}^{\\infty} J_{n+1/2}(k r)e^{i n \\theta} \\right] \\otimes \\left[ \\mathrm{ConstrainedDipole}(\\theta,\\varphi)\\, \\mathrm{GyroscopicPrecession}(\\omega_{\\mathrm{gyro}} t) \\right].",
+        "numeric_atoms": [
+          "0",
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "varphi",
+          "sum",
+          "otimes",
+          "omega",
+          "F",
+          "r",
+          "t",
+          "n",
+          "J",
+          "k",
+          "e",
+          "i"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0212\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Bessel Interference Operator\", \"latex\" -> \"F(r,\\\\theta,\\\\varphi,t) = \\\\left[ \\\\sum_{n=0}^{\\\\infty} J_{n+1/2}(k r)e^{i n \\\\theta} \\\\right] \\\\otimes \\\\left[ \\\\mathrm{ConstrainedDipole}(\\\\theta,\\\\varphi)\\\\, \\\\mathrm{GyroscopicPrecession}(\\\\omega_{\\\\mathrm{gyro}} t) \\\\right].\", \"numericAtoms\" -> {0, 1, 2}, \"symbolicTokens\" -> {\"theta\", \"varphi\", \"sum\", \"otimes\", \"omega\", \"F\", \"r\", \"t\", \"n\", \"J\", \"k\", \"e\", \"i\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "F(r,\\theta,\\varphi,t)=B(r,\\theta)\\otimes G(\\theta,\\varphi,t)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "theta",
+          "varphi",
+          "otimes",
+          "F",
+          "r",
+          "t",
+          "B",
+          "G"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0212\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Bessel Interference Operator\", \"latex\" -> \"F(r,\\\\theta,\\\\varphi,t)=B(r,\\\\theta)\\\\otimes G(\\\\theta,\\\\varphi,t)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"theta\", \"varphi\", \"otimes\", \"F\", \"r\", \"t\", \"B\", \"G\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "B(r,\\theta)=\\sum_{n=0}^{\\infty}J_{n+1/2}(k r)e^{i n\\theta}",
+        "numeric_atoms": [
+          "0",
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "sum",
+          "B",
+          "r",
+          "n",
+          "J",
+          "k",
+          "e",
+          "i"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0212\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Bessel Interference Operator\", \"latex\" -> \"B(r,\\\\theta)=\\\\sum_{n=0}^{\\\\infty}J_{n+1/2}(k r)e^{i n\\\\theta}\", \"numericAtoms\" -> {0, 1, 2}, \"symbolicTokens\" -> {\"theta\", \"sum\", \"B\", \"r\", \"n\", \"J\", \"k\", \"e\", \"i\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

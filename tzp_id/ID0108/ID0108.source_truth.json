@@ -1,0 +1,385 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:36:23.004645+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0108",
+    "uuid": "b903f02c-2ecb-57c1-a995-6784922c2ed8",
+    "registry_id": "registry_id_0108",
+    "canonical_title": "Relative-Entropy Constraint",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0108/ID0108.TEX",
+      "json": "D:/TZPID/TZPID/ID0108/ID0108.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0108/ID0108.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "This measure quantifies how different two states are.",
+    "technical_interpretation": "This measure quantifies how different two states are."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "D(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]",
+      "D(\\rho\\Vert\\sigma)\\ge 0"
+    ],
+    "source_section_latex": "\\[\nD(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]\n\\]\n\\[\nD(\\rho\\Vert\\sigma)\\ge 0\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Relative-Entropy Definition",
+      "formula_latex_blocks": [
+        "D(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]"
+      ],
+      "interpretive_role": "This identifies the mismatch term that compares actual and target synchronized states."
+    },
+    {
+      "step": 2,
+      "component_title": "Positivity Bound",
+      "formula_latex_blocks": [
+        "D(\\rho\\Vert\\sigma)\\ge 0"
+      ],
+      "interpretive_role": "This promotes the mismatch measure to a true constraint rather than a free correction term."
+    },
+    {
+      "step": 3,
+      "component_title": "Functional Insertion",
+      "formula_latex_blocks": [
+        "\\frac{\\delta \\mathcal{S}_{\\mathrm{sync}}}{\\delta \\rho} \\supset \\beta\\, D(\\rho\\Vert\\sigma)"
+      ],
+      "interpretive_role": "This closes the progression by feeding the divergence bound directly back into the master synchronization law."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Vert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sigma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rho(\\log\\rho-\\log\\sigma)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\ge$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\supset$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\beta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D(\\rho\\Vert\\sigma)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S_{sync}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$o(\\log\\rho-\\log\\sigma)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Relative-Entropy Constraint\nCanonical operator translation\neq0108_1 = HoldForm[D(rho)== Tr[rho(-)]];\neq0108_2 = HoldForm[D(rho) >= 0];\n\nTRAWIN closure composition\nTRAWINClosure0108[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0108 := HoldForm[{eq0108_1, eq0108_2}];\nResult0108 := TRAWINClosure0108[K0108];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "D(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]",
+          "normalized_latex": "D[rhoVertsigma]==Tr[rho[logrho-logsigma]]",
+          "wolfram_input": "D[rhoVertsigma]==Tr[rho[logrho-logsigma]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[D[rhoVertsigma] == Tr[rho[logrho - logsigma]]]",
+          "texform_roundtrip": "\\text{rhoVertsigma}=\\text{Tr}[\\rho (\\text{logrho}-\\text{logsigma})]",
+          "messages": []
+        },
+        {
+          "latex": "D(\\rho\\Vert\\sigma)\\ge 0",
+          "normalized_latex": "D[rhoVertsigma]>=0",
+          "wolfram_input": "D[rhoVertsigma]>=0",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[D[rhoVertsigma] >= 0]",
+          "texform_roundtrip": "\\text{rhoVertsigma}\\geq 0",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{\\delta \\mathcal{S}_{\\mathrm{sync}}}{\\delta \\rho} \\supset \\beta\\, D(\\rho\\Vert\\sigma)",
+          "normalized_latex": "((DiracDelta*SSync)/(DiracDelta*rho))supset*beta*D[rhoVertsigma]",
+          "wolfram_input": "((DiracDelta*SSync)/(DiracDelta*rho))supset*beta*D[rhoVertsigma]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[((DiracDelta*SSync)/(DiracDelta*rho))*supset*beta*D[rhoVertsigma]]",
+          "texform_roundtrip": "\\frac{\\beta  \\text{rhoVertsigma} \\text{SSync} \\text{supset}}{\\rho }",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0108 generated source-truth Wolfram model *)\nClearAll[K0108, TRAWINClosure0108];\neq0108$1 = HoldForm[D[rhoVertsigma] == Tr[rho[logrho - logsigma]]];\neq0108$2 = HoldForm[D[rhoVertsigma] >= 0];\neq0108$3 = HoldForm[((DiracDelta*SSync)/(DiracDelta*rho))*supset*beta*D[rhoVertsigma]];\nK0108 = HoldForm[{eq0108$1, eq0108$2, eq0108$3}];\nTRAWINClosure0108[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0108 = TRAWINClosure0108[K0108];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nD(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]\n\\]\n\\[\nD(\\rho\\Vert\\sigma)\\ge 0\n\\]\n\n\\paragraph{Primary Derivation.}\nThis condition \\( D(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right] \\) enforces a normalization. It sets the quantity to a fixed value away from special points and introduces a delta-function source at those points, ensuring that the integral of the quantity equals the specified constant.\n\\paragraph{Equation Type.}\nThis statement is classified as a normalization relation.\n\n\\paragraph{Interpretation.}\nThe identity governs the objects appearing in the equation. In the TRAWIN reading, the equation functions as the normalized carrier for the entry’s information content. Under CHL, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0108/ID0108.source_truth.json",
+    "entry_id": "ID0108",
+    "registry_id": "registry_id_0108",
+    "canonical_title": "Relative-Entropy Constraint",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0108/ID0108.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "b903f02c-2ecb-57c1-a995-6784922c2ed8",
+    "RTEID": "RTE:P419.3880:T0.6910",
+    "poloidal_theta_rad": "419.3880",
+    "toroidal_phi_rad": "0.6910",
+    "rteid_source": "manifest",
+    "PiID": "5132823066470",
+    "TZPi": "3",
+    "PiPE_position": "115",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "D(\\rho\\Vert\\sigma)= \\operatorname{Tr}\\!\\left[\\rho(\\log\\rho-\\log\\sigma)\\right]",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "rho",
+          "Vert",
+          "sigma",
+          "log",
+          "D"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0108\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Relative-Entropy Constraint\", \"latex\" -> \"D(\\\\rho\\\\Vert\\\\sigma)= \\\\operatorname{Tr}\\\\!\\\\left[\\\\rho(\\\\log\\\\rho-\\\\log\\\\sigma)\\\\right]\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"rho\", \"Vert\", \"sigma\", \"log\", \"D\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "D(\\rho\\Vert\\sigma)\\ge 0",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "rho",
+          "Vert",
+          "sigma",
+          "ge",
+          "D"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0108\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Relative-Entropy Constraint\", \"latex\" -> \"D(\\\\rho\\\\Vert\\\\sigma)\\\\ge 0\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"rho\", \"Vert\", \"sigma\", \"ge\", \"D\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+[
+	{
+		"id":"TAP-BESSEL-001",
+		"check":"hyperspherical_order_d4",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"The d-dimensional hyperspherical order nu=ell+(d-2)\/2 reduces to nu=ell+1 for d=4."
+	},
+	{
+		"id":"TAP-BESSEL-002",
+		"check":"bessel_boundary_quantization",
+		"status":"pass",
+		"engine":"WolframScript",
+		"first_J1_root":"3.83170597020751231562266994505691485625`16.",
+		"notes":"Boundary quantization is represented by BesselJZero[ell+1,q]\/R; fundamental J1 root is recorded."
+	},
+	{
+		"id":"TAP-BESSEL-003",
+		"check":"half_bessel_drop_fraction",
+		"status":"pass",
+		"engine":"WolframScript",
+		"drop_fraction":"0.18010602117791017763629856491450004381`16.",
+		"zero_release_residual":"0",
+		"notes":"Fundamental half-Bessel drop (J1 first zero to J1\/2 first zero pi) is about 18.0106 percent."
+	},
+	{
+		"id":"TAP-BESSEL-004",
+		"check":"entropy_residual_isolated",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_source":"(c^4*Sigma)\/(8*ellP^2*G*Pi) + Ts",
+		"notes":"Subtracting ordinary matter stress leaves sound stress plus entropy-fold stress."
+	},
+	{
+		"id":"TAP-BESSEL-005",
+		"check":"effective_source_decomposition",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_source":"(c^4*Sigma)\/(8*ellP^2*G*Pi) + Ts",
+		"notes":"T_eff = T_matter + T_sound + c^4\/(8 pi G ellP^2) Sigma decomposes exactly."
+	},
+	{
+		"id":"TAP-BESSEL-006",
+		"check":"kernel_normalization",
+		"status":"pass",
+		"engine":"WolframScript",
+		"integral":"1",
+		"notes":"The causal exponential accumulation kernel integrates to one over the past-time variable s=t-tau."
+	},
+	{
+		"id":"TAP-BESSEL-007",
+		"check":"curvature_residual_decomposition",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"(IntK*Sigma)\/ellP^2 + (8*G*IntK*Pi*Ts)\/c^4",
+		"notes":"Accumulated curvature minus matter-only curvature equals accumulated sound plus Planck-scaled entropy-fold residual."
+	},
+	{
+		"id":"TAP-BESSEL-009",
+		"check":"planck_charge_coupling",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Planck-scaled charges multiply to the ordinary gravitational fine-structure coupling G mX mY\/(hbar c)."
+	},
+	{
+		"id":"TAP-BESSEL-010",
+		"check":"isotope_mass_accounting",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Isotope gravitational charge is ordinary particle mass accounting minus binding energy over c^2, scaled by mP."
+	},
+	{
+		"id":"TAP-BESSEL-011",
+		"check":"large_number_smoothing",
+		"status":"pass",
+		"engine":"WolframScript",
+		"variance_mean":"sigmaq^2\/n",
+		"notes":"Variance of the average charge shrinks as sigma_q^2\/N."
+	},
+	{
+		"id":"TAP-BESSEL-012",
+		"check":"ordinary_mass_energy_residual",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"Gentropy + Gsound",
+		"notes":"After subtracting ordinary mass-energy curvature, the testable residual is sound plus entropy-fold curvature."
+	}
+]

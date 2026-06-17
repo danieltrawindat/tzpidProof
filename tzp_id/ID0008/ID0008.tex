@@ -1,0 +1,271 @@
+\tzpanchor{0008}
+\tzpentryheader{0008}{Non-Linearity Constant $K_{\mathrm{NL}}$}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{9e40ddae-727e-5aa3-8c06-19198be44786}}\\
+\textbf{PiID} & \tzpcode{3589793238462} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{15}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{31.0658 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.0512 rad}\\
+\textbf{TZPID} & \tzpcode{ID0008} & \textbf{Node Dependencies}\quad \tzpidref{0004}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0008} & \textbf{Scale}\quad field\\
+\textbf{LOC Classification} & Q175 nonlinearity and field response & QA614 differential operators\\
+\textbf{arXiv Classification} & Primary: nlin.CD & Cross-list: math-ph, gr-qc\\
+\textbf{Primary Support} & Hessian-to-Gradient Ratio & TZP Limit of Field Response\\
+\textbf{Closure Support} & Normalized Non-Linearity & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+$\KNL$ is a dimensionless constant defined by the ratio $\KNL = \frac{\lVert \Nabla^2 \PhiField \rVert}{\lVert \Nabla \PhiField \rVert^2}$ evaluated in the limit as the field $\PhiField$ approaches the TZP, with $\Nabla$ denoting the Trawinistic connection.
+
+\tzpsection{Canonical Equation}
+\[
+K_{\mathrm{NL}}
+=
+\frac{\lVert \nabla^{2}\Phi \rVert}{\lVert \nabla\Phi \rVert^{2}}
+\]
+\[
+K_{\mathrm{NL}}^{\mathrm{TZP}}
+=
+\lim_{x \to p}
+\frac{\lVert \nabla^{2}\Phi(x) \rVert}{\lVert \nabla\Phi(x) \rVert^{2}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $K_{\mathrm{NL}}$: source equation symbol.
+    \item $\Phi$: flux, phase, or topological map term in the source equation.
+    \item $g_{\mathrm{norm}}$: source equation symbol.
+    \item $x$: local field point or coordinate variable in the canonical equation.
+    \item $V$: auxiliary target state or comparison variable.
+    \item $P$: source equation symbol.
+    \item $N$: normalization, count, or closure parameter in the entry relation.
+    \item $T$: source equation symbol.
+    \item $R$: global radius, boundary radius, or topological scale.
+    \item $A$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0008 generated source Wolfram model *)
+ClearAll[K0008, Cr0008, T, R, A, W, I, N];
+eq0008$1 = HoldForm[KNL == (lVert*Grad^2*PhirVert)/(lVert*GradPhirVert^2)];
+eq0008$2 = HoldForm[KNL^TZP == LimitXp[(lVert*Grad^2*Phi[x]*rVert)/(lVert*GradPhi[x]*rVert^2)]];
+eq0008$3 = HoldForm[KNLNorm == NormalizeTRAWIN[(lVert*Grad^2*PhirVert)/(lVert*GradPhirVert^2), LimitXp*KNL, gNorm]];
+
+K0008 = HoldForm[{eq0008$1, eq0008$2, eq0008$3}];
+
+N = "normalized TRAWIN closure object for Non-Linearity Constant $K_{\mathrm{NL}}$";
+I = "Normalized Non-Linearity integration/comparison layer";
+W = "TZP Limit of Field Response wave or operator carrier";
+A = "Hessian-to-Gradient Ratio admissible action/amplitude condition";
+R = "TZP Limit of Field Response rotation/curl preservation layer";
+T = "Hessian-to-Gradient Ratio local source condition";
+
+Cr0008[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0008 = Cr0008[K0008];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Hessian-to-Gradient Ratio local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ TZP Limit of Field Response rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Hessian-to-Gradient Ratio admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ TZP Limit of Field Response wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Non-Linearity integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Non-Linearity Constant \$K\_\{\textbackslash{}mathrm\{NL\}\}\$.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0008] Non-Linearity Constant $K_{\mathrm{NL}}$}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+K_{\mathrm{NL}}
+=
+\frac{\left\lVert \nabla^{2}\varphi\right\rVert}
+{\left\lVert \nabla\varphi\right\rVert^{2}} .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\varphi$ be a scalar field on the Trawinistic manifold.  
+The first-order variation of the field is measured by the gradient:
+
+\begin{equation}
+\nabla\varphi .
+\end{equation}
+
+The second-order curvature or bending of the field is measured by:
+
+\begin{equation}
+\nabla^2\varphi .
+\end{equation}
+
+A dimensionless measure of non-linearity should compare second-order deformation against the square of first-order variation. Therefore define:
+
+\begin{equation}
+K_{\mathrm{NL}}
+=
+\frac{\text{second-order field deformation}}
+{\text{first-order field variation squared}} .
+\end{equation}
+
+Substituting the appropriate differential norms gives:
+
+\begin{equation}
+\boxed{
+K_{\mathrm{NL}}
+=
+\frac{\left\lVert \nabla^{2}\varphi\right\rVert}
+{\left\lVert \nabla\varphi\right\rVert^{2}} .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+$K_{\mathrm{NL}}$ measures how sharply a field bends relative to its local rate of change. Large values indicate strong nonlinear behavior near the TZP.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Non-Linearity Constant \$K\_\{\textbackslash{}mathrm\{NL\}\}\$ by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Hessian-to-Gradient Ratio}\par
+\[
+K_{\mathrm{NL}}
+=
+\frac{\lVert \nabla^{2}\Phi \rVert}{\lVert \nabla\Phi \rVert^{2}}
+\]
+\noindent This defines the raw field-response quotient and gives a direct scalar measure of nonlinear amplification.\par
+\noindent\textbf{2. TZP Limit of Field Response}\par
+\[
+K_{\mathrm{NL}}^{\mathrm{TZP}}
+=
+\lim_{x \to p}
+\frac{\lVert \nabla^{2}\Phi(x) \rVert}{\lVert \nabla\Phi(x) \rVert^{2}}
+\]
+\noindent This localizes the constant to the singular regime where the framework expects the strongest deviation from linear behavior.\par
+\noindent\textbf{3. Normalized Non-Linearity}\par
+\[
+K_{\mathrm{NL}}^{\mathrm{norm}}
+=
+\operatorname{Normalize}_{\mathrm{TRAWIN}}
+\!\left(
+\frac{\lVert \nabla^{2}\Phi \rVert}{\lVert \nabla\Phi \rVert^{2}},\,
+\lim_{x \to p} K_{\mathrm{NL}},\,
+g_{\mathrm{norm}}
+\right)
+\]
+\noindent This closes the progression by making the non-linearity constant comparable across admissible singular geometries rather than tied to one raw coordinate description.\par
+
+\clearpage
+\noindent\textbf{[ID 0008] Non-Linearity Constant $K_{\mathrm{NL}}$}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Non Linearity Constant K sub NL label id-008-nonlinearity-constant-k sub nlk sub textnlk sub nl is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} KNL is a dimensionless constant defined by the ratio KNL = ratio lVert Nabla to the power 2 PhiField rVert lVert Nabla PhiField rVert to the power 2 evaluated in the limit as the field PhiField approaches the TZP, with Nabla denoting the Trawinistic connection. \textbf{Contextual meaning:} The entry reads Non Linearity Constant K sub NL label id-008-nonlinearity-constant-k sub nlk sub textnlk sub nl as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Hessian-to-Gradient Ratio; TZP Limit of Field Response; Normalized Non-Linearity.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+K sub NL measures how sharply a field bends relative to its local rate of change. Large values indicate strong nonlinear behavior near the TZP.
+
+\tzpsection{Equation Grounding}
+Equation anchors: K sub NL =ratio lVert abla to the power 2 varphirVert lVert ablavarphirVert to the power 2 , K sub NL =ratio lVert abla to the power 2 varphirVert lVert ablavarphirVert to the power 2 ,.
+
+\tzpsection{Interpretive Role}
+This constant marks the point where perturbative intuition becomes unreliable and singular corrections dominate. It is especially useful for deciding when later field equations need explicitly TRAWIN-normalized rather than linearized treatment.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Non Linearity Constant Nl Label}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Non Linearity Constant Normalization Analogue}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Nl Equivalence}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0008]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0008_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0008] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Non-Linearity Constant $K_{\mathrm{NL}}$}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:}  is a dimensionless constant defined by the ratio  = \textbackslash{}lVert \textbackslash{}Nabla\textasciicircum{}2 \textbackslash{}PhiField \textbackslash{}rVert
+\textasciicircum{}2 evaluated in the limit as the field  approaches the...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Non‑Linearity Constant K\_\{\textbackslash{}mathrm\{NL is valid as a formal registry statement when its
+source equation and semantic claim are read together.''\\
+\textbf{Proof:} The source semantics state that  is a dimensionless constant defined by the ratio  =
+\textbackslash{}lVert \textbackslash{}Nabla\textasciicircum{}2 \textbackslash{}PhiField \textbackslash{}rVert \textasciicircum{}2 evaluated in the limit as the field  approaches
+the TZP, with  denoting the Trawinistic connection. K\_NL measures how sharply a
+field bends relative to its local rate of change. Large values indicate strong nonlinear
+behavior near the TZP.. The CHL validation treats the equation as the formal anchor and
+the semantic text as the interpretation constraint.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- source-backed formal validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0008_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

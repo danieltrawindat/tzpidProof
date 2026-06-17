@@ -1,0 +1,17 @@
+\section*{ID6448: Step 3 — TZP Emerges at Phase Singularity: Oint dargΨ}
+\paragraph{Metadata.}
+PiID: 6682829493041 | RTEID: RTE:P25039.0160:T3.5575 | UUID: d310b65e-e31a-59a7-9c81-6824ff24e446
+
+\paragraph{Canonical Statement.}
+\#\#\# Step 3 — *TZP emerges at phase singularity* - You locate a node of \textbackslash{}(\textbackslash{}Psi\textbackslash{}) at \textbackslash{}((\textbackslash{}phi,\textbackslash{}theta)=(\textbackslash{}pi/2,\textbackslash{}pi)\textbackslash{}) and compute a Jacobian J of partials, concluding Det[J]=0 and winding ≠ 0. - **Clarify**: if \textbackslash{}(\textbackslash{}Psi\textbackslash{}) is complex, J should be defined on the pair of real components \textbackslash{}( (\textbackslash{}Re\textbackslash{}Psi,\textbackslash{}Im\textbackslash{}Psi) \textbackslash{}) or treat \textbackslash{}(\textbackslash{}Psi\textbackslash{}) as a complex scalar field and compute the vorticity via the phase: vorticity = \textbackslash{}((1/2\textbackslash{}pi)\textbackslash{}oint\_C d(\textbackslash{}arg\textbackslash{}Psi)\textbackslash{}). For a mode like \textbackslash{}(\textbackslash{}cos(2\textbackslash{}phi)\textbackslash{}cos\textbackslash{}theta\textbackslash{}) (real-valued) the phase is 0 or π (sign flips), and zeros can be nodes where phase changes sign. - Your integral `∮ ∇Ψ·dl = 2π(2) = 4π` is mixing notations: the correct topological invariant is the **phase winding**: \textbackslash{}[ w = \textbackslash{}frac\{1\}\{2\textbackslash{}pi\}\textbackslash{}oint\_C \textbackslash{}nabla \textbackslash{}arg\textbackslash{}Psi \textbackslash{}cdot d\textbackslash{}ell \textbackslash{}in \textbackslash{}mathbb Z. \textbackslash{}] For a mode with angular index 2 in φ, one expects integer winding 2 around the φ-direction. So the step is fine *if* you restate it as phase winding and evaluate \textbackslash{}(\textbackslash{}oint d\textbackslash{}arg\textbackslash{}Psi\textbackslash{}). - **To make rigorous**: compute \textbackslash{}(\textbackslash{}arg(\textbackslash{}Psi)\textbackslash{}) on a small loop encircling the node and show winding number = 2 (or 4π if you report the angle integral rather than normalized winding). Also show the Jacobian of mapping from (φ,θ)→(ReΨ,ImΨ) has rank drop ⇒ topological singularity. - **Actionable**: compute numerically the phase and the winding integral on a small contour.
+
+\paragraph{Canonical Equation.}
+\[
+\oint d\arg\Psi
+\]
+
+\paragraph{Dictionary.}
+Relation: oint dargΨ
+
+\paragraph{Encyclopedia.}
+Step 3 — TZP Emerges at Phase Singularity: Oint dargΨ is a contour integral, written oint dargΨ. It is evaluated by integrating along a closed contour, capturing global or topological properties of the field. It is built from Ψ. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

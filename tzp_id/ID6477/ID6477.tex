@@ -1,0 +1,17 @@
+\section*{ID6477: EEG-Driven Breathing Simulation (Synthetic EEG): σ\_r(t)}
+\paragraph{Metadata.}
+PiID: 4613953984683 | RTEID: RTE:P25151.6294:T3.7430 | UUID: 2894dd1b-e922-5091-a085-1167929ccf77
+
+\paragraph{Canonical Statement.}
+\#\#\# (e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6\textbackslash{}sin(2\textbackslash{}pi 10t) + 0.3\textbackslash{}sin(2\textbackslash{}pi 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}(\textbackslash{}sigma\_r(t)=\textbackslash{}sigma\_0 + \textbackslash{}kappa\textbackslash{}cdot\textbackslash{}text\{Env\}\_\textbackslash{}alpha(t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}). - Produced plots: - Time series |I(t)| vs alpha envelope: **/mnt/data/cymatic\_expanded/I\_t\_eeg\_driven.png** - Coherence between |I(t)| and alpha envelope: **/mnt/data/cymatic\_expanded/coherence\_I\_alpha.png** - **Observations:** bursts in |I(t)| align with peaks of the alpha envelope; coherence plot shows elevated coherence at frequencies corresponding to the modulation (visible in the figure). This demonstrates the gating/entrainment mechanism you hypothesized.
+
+\paragraph{Canonical Equation.}
+\[
+\sigma_r(t)=\sigma_0 + \kappa\cdot\text{Env}_\alpha(t)
+\]
+
+\paragraph{Dictionary.}
+(e) EEG-driven breathing simulation (synthetic EEG) - I simulated synthetic EEG \textbackslash{}(s(t)=0.6 (2 10t) + 0.3 (2 2t)\textbackslash{}) (alpha + delta), extracted the alpha envelope via bandpass+Hilbert, used it to modulate torus width \textbackslash{}( \_r(t)= \_0 + \_ (t)\textbackslash{}), and recomputed the soft-δ overlap \textbackslash{}(I(t)\textbackslash{}) (σ\_r(t))
+
+\paragraph{Encyclopedia.}
+EEG-Driven Breathing Simulation (Synthetic EEG): σ\_r(t) is an algebraic definition, written σ\_r(t)=σ\_0 + κ·Env\_α(t). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from κ, α, defining σ\_r(t). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

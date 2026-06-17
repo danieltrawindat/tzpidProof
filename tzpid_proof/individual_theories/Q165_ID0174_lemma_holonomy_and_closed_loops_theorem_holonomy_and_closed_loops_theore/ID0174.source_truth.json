@@ -1,0 +1,307 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:25:26.319667+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0174",
+    "uuid": "9a0a4581-8062-5d02-805c-3d247d7b726b",
+    "registry_id": "registry_id_0174",
+    "canonical_title": "Curvature and Field Strength",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0174/ID0174.TEX",
+      "json": "D:/TZPID/TZPID/ID0174/ID0174.JSON",
+      "id_system": "D:/TZPID/TZPID/ID0174/ID0174.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The unified field supports a Hilbert space of dimension 153 600 with antipodal pairing, yielding ultra-stable qubits and providing a natural quantum error-correcting code.",
+    "technical_interpretation": "The unified field supports a Hilbert space of dimension 153 600 with antipodal pairing, yielding ultra-stable qubits and providing a natural quantum error-correcting code."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F = dA + A\\wedge A",
+      "[D_\\mu, D_\\nu] = F_{\\mu\\nu}"
+    ],
+    "source_section_latex": "\\[\nF = dA + A\\wedge A\n\\]\n\\[\n[D_\\mu, D_\\nu] = F_{\\mu\\nu}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "First Support",
+      "formula_latex_blocks": [
+        "F = dA + A\\wedge A"
+      ],
+      "interpretive_role": "This support equation moves the entry from the abstract claim toward a concrete first measurable relation."
+    },
+    {
+      "step": 2,
+      "component_title": "Second Support",
+      "formula_latex_blocks": [
+        "[D_\\mu, D_\\nu] = F_{\\mu\\nu}"
+      ],
+      "interpretive_role": "This support equation adds the second structural constraint needed to narrow the admissible TRAWIN reading."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Closure",
+      "formula_latex_blocks": [
+        "\\tzpnormalizewrap{F,[D_\\mu,D_\\nu],\\text{curvature}}"
+      ],
+      "interpretive_role": "This normalized closure ties the support terms together and closes the progression under the TRAWIN frame."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0174}$",
+        "description": "canonical registry object for entry ID 0174."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0174}$",
+        "name": "canonical registry object for entry ID 0174.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\wedge$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tzpnormalizewrap$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$F_{\\mu\\nu}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Curvature and Field Strength\nCanonical operator translation\neq0174_1 = HoldForm[F == dA + A A];\neq0174_2 = HoldForm[[D_mu, D_] == Fmu];\n\nTRAWIN closure composition\nTRAWINClosure0174[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0174 := HoldForm[{eq0174_1, eq0174_2}];\nResult0174 := TRAWINClosure0174[K0174];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "F = dA + A\\wedge A",
+          "normalized_latex": "F==dA+Awedge*A",
+          "wolfram_input": "F==dA+Awedge*A",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[F == dA + Awedge*A]",
+          "texform_roundtrip": "F=A \\text{Awedge}+\\text{dA}",
+          "messages": []
+        },
+        {
+          "latex": "[D_\\mu, D_\\nu] = F_{\\mu\\nu}",
+          "normalized_latex": "Commutator[D_mu,D_nu]==FMunu",
+          "wolfram_input": "Commutator[D_mu,D_nu]==FMunu",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Commutator[D_mu, D_nu] == FMunu]",
+          "texform_roundtrip": "\\text{D$\\_$mu}\\text{**}\\text{D$\\_$nu}-\\text{D$\\_$nu}\\text{**}\\text{D$\\_$mu}=\\text{FMunu}",
+          "messages": []
+        },
+        {
+          "latex": "\\tzpnormalizewrap{F,[D_\\mu,D_\\nu],\\text{curvature}}",
+          "normalized_latex": "TZPNormalizeWrap[F,Commutator[DMu,DNu]]",
+          "wolfram_input": "TZPNormalizeWrap[F,Commutator[DMu,DNu]]",
+          "normalization_notes": [
+            "\\tzpnormalizewrap normalized to TZPNormalizeWrap[...]",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPNormalizeWrap[F, Commutator[DMu, DNu]]]",
+          "texform_roundtrip": "\\text{TZPNormalizeWrap}(F,\\text{DMu}\\text{**}\\text{DNu}-\\text{DNu}\\text{**}\\text{DMu})",
+          "messages": []
+        }
+      ],
+      "status": "ok"
+    },
+    "generated_model": "(* TZPID ID0174 generated source-truth Wolfram model *)\nClearAll[K0174, TRAWINClosure0174];\neq0174$1 = HoldForm[F == dA + Awedge*A];\neq0174$2 = HoldForm[Commutator[D_mu, D_nu] == FMunu];\neq0174$3 = HoldForm[TZPNormalizeWrap[F, Commutator[DMu, DNu]]];\nK0174 = HoldForm[{eq0174$1, eq0174$2, eq0174$3}];\nTRAWINClosure0174[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0174 = TRAWINClosure0174[K0174];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nF = dA + A\\wedge A\n\\]\n\\[\n[D_\\mu, D_\\nu] = F_{\\mu\\nu}\n\\]\n\n\\paragraph{Primary Derivation.}\nTo derive the stated relation using functional and analytic properties. leading to the displayed result.\n\\paragraph{Equation Type.}\nThis statement is classified as a other relation.\n\n\\paragraph{Interpretation.}\nThe statement concerns the variables introduced in the displayed formula. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. In CHL terms, the derivation provides a certificate connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0174/ID0174.source_truth.json",
+    "entry_id": "ID0174",
+    "registry_id": "registry_id_0174",
+    "canonical_title": "Curvature and Field Strength",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/tzpidNEW/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "fa0c73436f9875d44f46dbda171c4a379a33b42c",
+    "sidecar": "D:/TZPID/TZPID/ID0174/ID0174.id_system.json",
+    "linked_at_utc": "2026-06-06T07:27:43Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "9a0a4581-8062-5d02-805c-3d247d7b726b",
+    "RTEID": "RTE:P675.6806:T1.1133",
+    "poloidal_theta_rad": "675.6806",
+    "toroidal_phi_rad": "1.1133",
+    "rteid_source": "manifest",
+    "PiID": "1055596446229",
+    "TZPi": "6",
+    "PiPE_position": "181",
+    "loc_class": "",
+    "arxiv_class": ""
+  }
+}

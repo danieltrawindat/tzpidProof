@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11385",
+    "uuid": "fa1731b4-432a-5fdb-b102-51e5c8daa92a",
+    "registry_id": "registry_id_11385",
+    "piid": "PiID-11385-portal-breathing",
+    "canonical_title": "Friedmann Breathing Component Equation",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11385\\ID11385.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The breathing model augments the Friedmann equation with curvature and a dynamic pressure function F(a).",
+    "technical_interpretation": "This is the computational scaffold for comparing closed breathing models against CMB, BAO, and supernova distance data.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H^{2}(a)=H_{0}^{2}\\left[\\Omega_{r}a^{-4}+\\Omega_{m}a^{-3}+\\Omega_{K}a^{-2}+\\Omega_{X}F(a)\\right]"
+    ],
+    "source_section_latex": "H^{2}(a)=H_{0}^{2}\\left[\\Omega_{r}a^{-4}+\\Omega_{m}a^{-3}+\\Omega_{K}a^{-2}+\\Omega_{X}F(a)\\right]"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Friedmann Breathing Component Equation",
+          "wolfram": "Hsq == H0^2*(Or*a^-4 + Om*a^-3 + Ok*a^-2 + Ox*F)",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Friedmann_Carrier",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11385",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

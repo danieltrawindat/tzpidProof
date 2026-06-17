@@ -1,0 +1,17 @@
+\section*{ID9651: Definition of ψ\_0}
+\paragraph{Metadata.}
+PiID: 3604112373599 | RTEID: RTE:P37476.9763:T5.2019 | UUID: f33609d5-4a4a-5b26-b63b-74a2cc2b52c5
+
+\paragraph{Canonical Statement.}
+\}(\textbackslash{}Omega)\$ results from the rotation of the reference frame. Both effects scale linearly with the OAM quantum number \$m\$, leading to mode-dependent phase accumulation that can be exploited for multiplexing and demultiplexing operations. \textbackslash{}subsection\{Gerchberg-Saxton Iterative Phase Retrieval\} Converting a target intensity distribution into the required input phase pattern constitutes an inverse problem. The Gerchberg-Saxton algorithm provides an iterative solution by alternately enforcing constraints in real space and Fourier space. The algorithm proceeds as follows. Initialize a complex field \$\textbackslash{}psi\_0 = \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}phi\_0\}\$ with the target intensity and random phase. Then iterate: \textbackslash{}begin\{enumerate\}[label=(\textbackslash{}arabic*)] \textbackslash{}item Apply forward propagation: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n = \textbackslash{}mathcal\{P\}[\textbackslash{}psi\_n]\$ where \$\textbackslash{}mathcal\{P\}\$ represents the helical propagator \textbackslash{}item Enforce target intensity constraint: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n \textbackslash{}leftarrow \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}arg(\textbackslash{}tilde\{\textbackslash{}psi\}\_n)\}\$ \textbackslash{}item Apply inverse propagation: \$\textbackslash{}psi\_\{n+1\} = \textbackslash{}mathcal\{P\}\textasciicircum{}\{-1\}[\textbackslash{}tilde\{\textbackslash{}psi\}\_n]\$ \textbackslash{}item Enforce input domain constraints as needed \textbackslash{}end\{enumerate\} Convergence
+
+\paragraph{Canonical Equation.}
+\[
+\psi_0 = \sqrt{I_{\text{target}}} e^{i\phi_0}
+\]
+
+\paragraph{Dictionary.}
+( )\$ results from the rotation of the reference frame.
+
+\paragraph{Encyclopedia.}
+Definition of ψ\_0 is an algebraic definition, written ψ\_0 = sqrtI\_target e\textasciicircum{}iφ\_0. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from I\_, defining ψ\_0. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

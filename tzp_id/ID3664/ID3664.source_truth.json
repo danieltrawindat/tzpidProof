@@ -1,0 +1,774 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-04T17:23:48.178663+00:00",
+    "non_destructive": false,
+    "source": "tier_a_filled_naming_worklist",
+    "content_cleanup_at": "2026-06-04T17:25:52.970170+00:00"
+  },
+  "identity": {
+    "tzpid": "ID3664",
+    "uuid": "5419c070-a5e1-50a7-b8eb-eafb07710338",
+    "registry_id": "registry_id_3664",
+    "piid": "PiID-3664-2d0d1d438545",
+    "piid_short": "PiID-3664",
+    "canonical_title": "Quantum Holonomy Stress-Energy Tensor",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID3664/ID3664.TEX",
+      "json": "D:/TZPID/TZPID/ID3664/ID3664.JSON",
+      "source_truth": "D:/TZPID/TZPID/ID3664/ID3664.source_truth.json",
+      "id_system": "D:/TZPIDProof/tzp_id/ID3664/ID3664.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "QC - Physics: plasma and electromagnetic fields",
+    "arxiv_class": "physics.plasm-ph",
+    "arxiv_secondary_classes": [
+      "astro-ph.SR",
+      "math-ph"
+    ],
+    "category": "equation-source-intake",
+    "discipline": "physics",
+    "classification_method": "deterministic_keyword_heuristic_requires_review",
+    "piid_metadata": {
+      "piid": "PiID-3664-2d0d1d438545",
+      "piid_short": "PiID-3664",
+      "volume_family": "post-denary-intake-37",
+      "local_sequence": "64",
+      "method": "deterministic_uuid5_from_tzpid_title_equation"
+    }
+  },
+  "theory": {
+    "canonical_statement": "ID3664 records Quantum Holonomy Stress-Energy Tensor as a source-extracted canonical equation.",
+    "technical_interpretation": "The entry preserves the equation exactly as extracted from `D:\\00_Engine\\CSV\\emergent_curvature_theory.tex` for registry alignment and later derivation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}"
+    ],
+    "source_section_latex": "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}"
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "canonical_equation_symbols": [
+      {
+        "symbol": "$\\hat$",
+        "description": "Operator / unit-vector accent (denotes a quantum operator or unit vector)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\hat` extracted from the canonical equation.",
+        "meaning_source": "Notation accent",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "description": "Reduced Planck constant (ħ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "reduced Planck constant in the canonical equation.",
+        "meaning_source": "Fundamental constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\int_{-\\infty}$",
+        "description": "Symbol “int_-infty” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\int_{-\\infty}` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\mu$",
+        "description": "Magnetic permeability, chemical potential, or index (μ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\mu` extracted from the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\nu$",
+        "description": "Frequency or tensor index (ν)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\nu` extracted from the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\oint_{\\partial$",
+        "description": "Symbol “oint_partial” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\oint_{\\partial` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\oint_{\\partial V}$",
+        "description": "Symbol “oint_partial V” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\oint_{\\partial V}` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\pi$",
+        "description": "Pi, the circle constant (≈ 3.14159)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "circular constant in the canonical equation.",
+        "meaning_source": "Mathematical constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\rho$",
+        "description": "Mass / charge density",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "density variable in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\tau$",
+        "description": "Time constant, proper time, or torsion (τ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "torsion, time constant, or transport parameter in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\tau_{\\text{dec}$",
+        "description": "Time constant, proper time, or torsion (τ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "torsion, time constant, or transport parameter with subscripted role `\\tau_{\\text{dec}` in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_notes": "Subscript \"\\text{dec\" specializes this quantity.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$B$",
+        "description": "Magnetic field (magnetic flux density)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "magnetic field or magnetic induction variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "In this magnetics-heavy corpus, B is almost always the magnetic field.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$G$",
+        "description": "Newtonian gravitational constant (or Green’s function, context-dependent)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `G` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Fundamental constant / function",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$H$",
+        "description": "Hamiltonian",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "Hamiltonian, helicity, or energy-like functional symbol in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$J$",
+        "description": "Current density or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `J` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$L$",
+        "description": "Lagrangian, length, or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "length, Lagrangian, or angular momentum term in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$R$",
+        "description": "Radius, curvature scalar, or resistance",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "radius, scale, or characteristic length in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$S$",
+        "description": "Action",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `S` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$T_{\\mu\\nu}$",
+        "description": "Stress–energy (energy–momentum) tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `T_{\\mu\\nu}` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol. Carries μν indices.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$V$",
+        "description": "Volume or potential",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "volume or integration domain in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$V}$",
+        "description": "Symbol “V” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `V}` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$c$",
+        "description": "Speed of light in vacuum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave speed or speed-of-light scale in the canonical equation.",
+        "meaning_source": "Fundamental constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$dS$",
+        "description": "Symbol “dS” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `dS` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$dec$",
+        "description": "Descriptive label “dec” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `dec` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$decoherence$",
+        "description": "Descriptive label “decoherence” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `decoherence` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$dt$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `dt` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$g_{\\mu\\nu}$",
+        "description": "Metric component, coupling, or g-factor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `g_{\\mu\\nu}` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$grav$",
+        "description": "Descriptive label “grav” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `grav` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$gravity$",
+        "description": "Descriptive label “gravity” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `gravity` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$h$",
+        "description": "Planck constant, height, or step size",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `h` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$helicity$",
+        "description": "Descriptive label “helicity” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `helicity` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$mathbf$",
+        "description": "Bold (vector/tensor) styling accent",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `mathbf` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$n$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "integer mode index in the canonical equation.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$quantum$",
+        "description": "Quantum qualifier / label",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `quantum` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "time parameter in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$v$",
+        "description": "Velocity or speed",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `v` appearing in the canonical equation for Quantum Holonomy Stress-Energy Tensor.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$y$",
+        "description": "Spatial coordinate (y-axis)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate or compact dimension variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "description": "Dot / inner product (or scalar multiplication)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "inner product or multiplication marker.",
+        "meaning_source": "Operation marker",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\frac$",
+        "description": "Fraction (ratio) structure",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "fraction structure.",
+        "meaning_source": "Notation structure",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\partial$",
+        "description": "Partial-derivative operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "partial derivative operator.",
+        "meaning_source": "Differential operator",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      }
+    ],
+    "extraction_method": "Wolfram Engine string-symbol extraction merged with source LaTeX symbol list",
+    "wolfram_engine": {
+      "tool": "wolframscript",
+      "commands": [
+        "\\begin",
+        "\\frac",
+        "\\partial",
+        "\\mu",
+        "\\nu",
+        "\\pi",
+        "\\int_{-\\\\infty}",
+        "\\tau",
+        "\\tau_{\\\\text{dec}",
+        "\\mathcal",
+        "\\text",
+        "\\rho",
+        "\\hbar",
+        "\\oint_{\\\\partial V}",
+        "\\mathbf",
+        "\\cdot",
+        "\\hat",
+        "\\end"
+      ],
+      "variables": [
+        "t",
+        "G",
+        "c",
+        "e",
+        "dec",
+        "d",
+        "quantum",
+        "i",
+        "H",
+        "decoherence",
+        "gravity",
+        "g",
+        "dt",
+        "V",
+        "helicity",
+        "grav",
+        "mathbf",
+        "n",
+        "dS"
+      ],
+      "constructs": [
+        "\\frac",
+        "\\partial",
+        "\\cdot"
+      ]
+    }
+  },
+  "source_evidence": {
+    "source_kind": "text_source",
+    "source_short": "D:\\00_Engine\\CSV\\emergent_curvature_theory.tex",
+    "source_path": "D:\\00_Engine\\CSV\\emergent_curvature_theory.tex",
+    "new_id_score": "100",
+    "title_method": "derived",
+    "title_review_flag": "False",
+    "promotion_status_before_apply": "awaiting_author_title_assignment"
+  },
+  "verification_handles": {
+    "formal_status": "source-equation-recorded",
+    "claim_strength": "source-equation-intake",
+    "equation_quality_status": "source_equation_present",
+    "equation_quality_flags": [],
+    "artifacts": {}
+  },
+  "audit": {
+    "created_by": "scripts/apply_tier_a_filled_names_to_tzpid_folders.py",
+    "created_at": "2026-06-04T17:23:48.178663+00:00",
+    "write_policy": "create_new_entry_folder_or_skip_existing_unless_overwrite",
+    "unrealized_section_cleanup": {
+      "removed_sections": [
+        "wolfram_form",
+        "derivation_layer",
+        "proof_support"
+      ],
+      "reason": "no generated Wolfram, derivation, or proof artifact is included until real source-backed content exists"
+    },
+    "wolfram_symbol_key_enrichment": {
+      "updated_at": "2026-06-04T17:33:39.472248+00:00",
+      "symbol_count": 40,
+      "method": "wolframscript_extract_commands_variables_constructs"
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID3664/ID3664.source_truth.json",
+    "entry_id": "ID3664",
+    "registry_id": "registry_id_3664",
+    "canonical_title": "Quantum Holonomy Stress-Energy Tensor",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID3664/ID3664.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "5419c070-a5e1-50a7-b8eb-eafb07710338",
+    "RTEID": "RTE:P14228.1257:T4.5940",
+    "poloidal_theta_rad": "14228.1257",
+    "toroidal_phi_rad": "4.5940",
+    "rteid_source": "computed",
+    "PiID": "8027098199430",
+    "TZPi": "8",
+    "PiPE_position": "3671",
+    "loc_class": "QC - Physics: plasma and electromagnetic fields",
+    "arxiv_class": "physics.plasm-ph"
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}",
+          "normalized_latex": "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID3664\", 1, \"\\\\begin{align} \\\\frac{\\\\partial g_{\\\\mu\\\\nu}}{\\\\partial t} &= \\\\frac{16\\\\pi G}{c^4}\\\\int_{-\\\\infty}^t T_{\\\\mu\\\\nu}(\\\\tau)e^{-(t-\\\\tau)/\\\\tau_{\\\\text{dec}}} d\\\\tau + \\\\mathcal{R}_{\\\\mu\\\\nu}^{\\\\text{quantum}} \\\\\\\\ \\\\frac{\\\\partial\\\\rho}{\\\\partial t} &= -\\\\frac{i}{\\\\hbar}[H,\\\\rho] + \\\\mathcal{L}_{\\\\text{decoherence}}[\\\\rho] + \\\\mathcal{B}_{\\\\text{gravity}}[\\\\rho,g] \\\\\\\\ \\\\frac{d\\\\mathcal{H}}{dt} &= -2\\\\oint_{\\\\partial V} (\\\\mathbf{J}_{\\\\text{helicity}} + \\\\mathbf{J}_{\\\\text{grav}}) \\\\cdot \\\\hat{\\\\mathbf{n}} \\\\, dS \\\\end{align}\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID3664 minted source-truth Wolfram carrier model *)\nClearAll[K3664, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq3664$1 = HoldForm[TZPIDCanonicalLatex[\"ID3664\", 1, \"\\\\begin{align} \\\\frac{\\\\partial g_{\\\\mu\\\\nu}}{\\\\partial t} &= \\\\frac{16\\\\pi G}{c^4}\\\\int_{-\\\\infty}^t T_{\\\\mu\\\\nu}(\\\\tau)e^{-(t-\\\\tau)/\\\\tau_{\\\\text{dec}}} d\\\\tau + \\\\mathcal{R}_{\\\\mu\\\\nu}^{\\\\text{quantum}} \\\\\\\\ \\\\frac{\\\\partial\\\\rho}{\\\\partial t} &= -\\\\frac{i}{\\\\hbar}[H,\\\\rho] + \\\\mathcal{L}_{\\\\text{decoherence}}[\\\\rho] + \\\\mathcal{B}_{\\\\text{gravity}}[\\\\rho,g] \\\\\\\\ \\\\frac{d\\\\mathcal{H}}{dt} &= -2\\\\oint_{\\\\partial V} (\\\\mathbf{J}_{\\\\text{helicity}} + \\\\mathbf{J}_{\\\\text{grav}}) \\\\cdot \\\\hat{\\\\mathbf{n}} \\\\, dS \\\\end{align}\"]];\nK3664 = HoldForm[{eq3664$1}];\nTZPIDCanonicalCarrier[\"ID3664\"] = <|\"id\" -> \"ID3664\", \"title\" -> \"Quantum Holonomy Stress-Energy Tensor\", \"blocks\" -> K3664|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\begin{align} \\frac{\\partial g_{\\mu\\nu}}{\\partial t} &= \\frac{16\\pi G}{c^4}\\int_{-\\infty}^t T_{\\mu\\nu}(\\tau)e^{-(t-\\tau)/\\tau_{\\text{dec}}} d\\tau + \\mathcal{R}_{\\mu\\nu}^{\\text{quantum}} \\\\ \\frac{\\partial\\rho}{\\partial t} &= -\\frac{i}{\\hbar}[H,\\rho] + \\mathcal{L}_{\\text{decoherence}}[\\rho] + \\mathcal{B}_{\\text{gravity}}[\\rho,g] \\\\ \\frac{d\\mathcal{H}}{dt} &= -2\\oint_{\\partial V} (\\mathbf{J}_{\\text{helicity}} + \\mathbf{J}_{\\text{grav}}) \\cdot \\hat{\\mathbf{n}} \\, dS \\end{align}",
+        "numeric_atoms": [
+          "16",
+          "4",
+          "-2"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "mu",
+          "nu",
+          "Pi",
+          "int",
+          "tau",
+          "rho",
+          "hbar",
+          "oint",
+          "mathbf",
+          "hat",
+          "g",
+          "t",
+          "c",
+          "T",
+          "e",
+          "d",
+          "H",
+          "dt",
+          "V",
+          "dS"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID3664\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum Holonomy Stress-Energy Tensor\", \"latex\" -> \"\\\\begin{align} \\\\frac{\\\\partial g_{\\\\mu\\\\nu}}{\\\\partial t} &= \\\\frac{16\\\\pi G}{c^4}\\\\int_{-\\\\infty}^t T_{\\\\mu\\\\nu}(\\\\tau)e^{-(t-\\\\tau)/\\\\tau_{\\\\text{dec}}} d\\\\tau + \\\\mathcal{R}_{\\\\mu\\\\nu}^{\\\\text{quantum}} \\\\\\\\ \\\\frac{\\\\partial\\\\rho}{\\\\partial t} &= -\\\\frac{i}{\\\\hbar}[H,\\\\rho] + \\\\mathcal{L}_{\\\\text{decoherence}}[\\\\rho] + \\\\mathcal{B}_{\\\\text{gravity}}[\\\\rho,g] \\\\\\\\ \\\\frac{d\\\\mathcal{H}}{dt} &= -2\\\\oint_{\\\\partial V} (\\\\mathbf{J}_{\\\\text{helicity}} + \\\\mathbf{J}_{\\\\text{grav}}) \\\\cdot \\\\hat{\\\\mathbf{n}} \\\\, dS \\\\end{align}\", \"numericAtoms\" -> {16, 4, -2}, \"symbolicTokens\" -> {\"partial\", \"mu\", \"nu\", \"Pi\", \"int\", \"tau\", \"rho\", \"hbar\", \"oint\", \"mathbf\", \"hat\", \"g\", \"t\", \"c\", \"T\", \"e\", \"d\", \"H\", \"dt\", \"V\", \"dS\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

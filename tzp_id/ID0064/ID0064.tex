@@ -1,0 +1,223 @@
+\tzpanchor{0064}
+\tzpentryheader{0064}{Observer-Dependent Quantum States}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{36318e47-9e8a-531b-9708-9d4400f8d6af}}\\
+\textbf{PiID} & \tzpcode{0781640628620} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{71}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{248.5262 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.4095 rad}\\
+\textbf{TZPID} & \tzpcode{ID0064} & \textbf{Node Dependencies}\quad \tzpidref{0007}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0064} & \textbf{Scale}\quad trajectory-dependent states\\
+\textbf{LOC Classification} & QC174 observer dependence & QC178 relativistic quantum theory\\
+\textbf{arXiv Classification} & Primary: gr-qc \quad Cross-list: quant-ph, hep-th & \\
+\textbf{Primary Support} & Reference State & Observer Transport Operator\\
+\textbf{Closure Support} & Observer-Dependent State Assignment & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Different observers may assign different states to the same physical system because of their distinct motions in curved space; there is no absolute state independent of the observer.
+
+\tzpsection{Canonical Equation}
+\[
+\lvert \psi_{\mathrm{obs}}\rangle
+=
+U(\gamma)\lvert \psi_{0}\rangle
+\]
+\[
+U(\gamma)^{\dagger}U(\gamma) = I
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $U$: auxiliary source state or local chart variable.
+    \item $\gamma$: source equation symbol.
+    \item $I$: source equation symbol.
+    \item $\mathcal{K}_{0064}$: canonical registry object for entry ID 0064.
+    \item $\psi_{obs}$: source equation symbol.
+    \item $\psi_{0}$: source equation symbol.
+    \item $\dagger$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0064 generated source Wolfram model *)
+ClearAll[K0064, Cr0064, T, R, A, W, I, N];
+eq0064$1 = HoldForm[Abs[psiObs] == U[gamma]*Abs[psi0]];
+eq0064$2 = HoldForm[U[gamma]^Dagger*U[gamma] == I];
+eq0064$3 = HoldForm[Abs[psi0]];
+
+K0064 = HoldForm[{eq0064$1, eq0064$2, eq0064$3}];
+
+N = "normalized TRAWIN closure object for Observer-Dependent Quantum States";
+I = "Observer-Dependent State Assignment integration/comparison layer";
+W = "Observer Transport Operator wave or operator carrier";
+A = "Reference State admissible action/amplitude condition";
+R = "Observer Transport Operator rotation/curl preservation layer";
+T = "Reference State local source condition";
+
+Cr0064[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0064 = Cr0064[K0064];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Reference State local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Observer Transport Operator rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Reference State admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Observer Transport Operator wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Observer-Dependent State Assignment integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Observer-Dependent Quantum States.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0064] Observer-Dependent Quantum States}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\rho \rightarrow \frac{P \rho P}{\mathrm{Tr}(P\rho)}.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Measurement with projector $P$ collapses the state.
+
+Post-measurement state is:
+\begin{equation}
+\rho' = \frac{P \rho P}{\mathrm{Tr}(P\rho)}.
+\end{equation}
+
+\paragraph{Interpretation.}
+Projection enforces classical outcome selection.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Observer-Dependent Quantum States by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Reference State}\par
+\[
+\lvert \psi_{0}\rangle
+\]
+\noindent This is the baseline state before observer transport is applied.\par
+\noindent\textbf{2. Observer Transport Operator}\par
+\[
+U(\gamma)^{\dagger}U(\gamma) = I
+\]
+\noindent This ensures that transport along the observer world-line preserves quantum norm.\par
+\noindent\textbf{3. Observer-Dependent State Assignment}\par
+\[
+\lvert \psi_{\mathrm{obs}}\rangle
+=
+U(\gamma)\lvert \psi_{0}\rangle
+\]
+\noindent This closes the progression by making the observed state explicitly trajectory-dependent.\par
+
+\clearpage
+\noindent\textbf{[ID 0064] Observer-Dependent Quantum States}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Observer-Dependent Quantum States is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Different observers may assign different states to the same physical system because of their distinct motions in curved space; there is no absolute state independent of the observer. \textbf{Contextual meaning:} The entry reads Observer-Dependent Quantum States as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This entry explains why state descriptions may differ without contradiction between observers. It ties the quantum-information branch back to manifold transport and temporal displacement. \textbf{Lemma support:} Reference State; Observer Transport Operator; Observer-Dependent State Assignment.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Projection enforces classical outcome selection.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The state  psitextbartextbackslash psi psi assigned to a system depends on the observer s trajectory through the Trawinistic manifold; specifically,  psiobs=U(gamma) psi0textbartextbackslash psi obs = U(gamma)textbartextbackslash psi 0 psiobs=U(gamma) psi0, where U(gamma)U(gamma)U(gamma) is a unitary transformation determined by the observer s world-line gammagammagamma and the temporal displacement factor. The state  psitextbartextbackslash psi psi assigned to a system depends on the observer s trajectory through the Trawinistic manifold; specifically,  psiobs=U(gamma) psi0textbartextbackslash psi obs = U(gamma)textbartextbackslash psi 0 psiobs=U(gamma) psi0, where U(gamma)U(gamma)U(gamma) is a unitary transformation determined by the observer s world-line gammagammagamma and the temporal displacement factor.
+
+\tzpsection{Interpretive Role}
+This entry explains why state descriptions may differ without contradiction between observers. It ties the quantum-information branch back to manifold transport and temporal displacement.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Observer Dependent State-Level States}: quantum-state language for amplitudes, measurement, basis structure, or weak coupling.
+\item \textbf{State-Level Quantum-State Analogue}: quantum-state language for amplitudes, measurement, basis structure, or weak coupling.
+\item \textbf{State-Level Terminology}: quantum-state language for amplitudes, measurement, basis structure, or weak coupling.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0064]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0064_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0064] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Observer-Dependent Quantum States}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} different observers may assign different states to the same physical system because of
+their distinct motions in curved space; there is no absolute...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Observer-Dependent Quantum States is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0064_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

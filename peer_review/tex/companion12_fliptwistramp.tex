@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={FlipTwistRamp: A Dual-Carrier Architecture with Phase-Inversion Seam},pdfsubject={TZPID Companion Spine Series, Paper C12},pdfkeywords={TZPID, FlipTwistRamp}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{FlipTwistRamp: A Dual-Carrier Architecture with Phase-Inversion Seam\\[0.6em]
+\large TZPID Companion Spine Series, Paper C12 of XXVII\\
+\normalsize From the pair (153600, 129600) to transient topological defects}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion formalizes the FlipTwistRamp signal architecture: dual carriers built from the pair (153600, 129600) and bridge ratio r = 32/27, a Gaussian seam operator implementing a localized phase inversion, and time-frequency diagnostics for transient topological-like defects.
+The source manuscript's stated thesis: ``This manuscript formalizes a dual-carrier signal architecture built from a rational bridge ratio and a localized phase-inversion seam. Starting from the pair (153,600, 129,600) and bridge ratio r = 32/27, we derive entrainment-scale realizations, define a Gaussian seam operator, and provide time-frequency and phase-space diagnostics for transient topological-like defects.'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID0131, ID2354, ID8351, ID3513, ID3514, ID8382, ID8391) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the corpus's constructive synthesis: the signal group's primitives assembled into one operating architecture.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+FlipTwistRamp is where the signal group stops analyzing and starts building. The architecture begins from a deliberate pair of integers: $153600$ and $129600$, whose ratio is exactly $32/27 = r$, the bridge ratio of companion C11. The first integer is no accident---$153600$ is the canonical point count of the DAANSsphere discretization (ID0245, core Paper I), so the dual-carrier pair is tuned to the enclosure's own lattice, with the second carrier sitting one bridge ratio below the enclosure fundamental.
+
+Onto this pair the architecture installs its named components. The \emph{ramp} sweeps entrainment-scale realizations of the carrier pair, walking the system through the beat windows that core Paper II certifies as uniformly spaced. The \emph{seam} is a Gaussian-windowed operator (the C9/C10 kernel wearing its windowing role) that implements a localized phase inversion---the \emph{flip}, the signal-level realization of the reciprocal map $r \mapsto 1/r$ that organizes the entire program. The \emph{twist} is the relative phase rotation accumulated across the seam, and the manuscript's diagnostics---time-frequency distributions and phase-space portraits---track what the flip leaves behind: transient, topological-like defects, localized phase dislocations with quantized winding signatures.
+
+The spine below anchors the architecture's registry chain. Its claim to physics, beyond signal design, is the defect phenomenology: if the flip is genuinely the program's dimensional inversion, seam-generated defects should carry the winding quantization of Paper III's holonomy machinery, and their statistics should obey the criticality structure of Paper I.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID0131} \to \text{ID2354} \to \text{ID8351} \to \text{ID3513} \\
+\to \text{ID3514} \to \text{ID8382} \to \text{ID8391}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID0131: Gaussian Window Insertion Operator (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{g(t)=\textbackslash{}exp\textbackslash{}!\textbackslash{}left(-\textbackslash{}frac\{(t-t\_0)\textasciicircum{}2\}\{2\textbackslash{}sig ma\textasciicircum{}2\}\textbackslash{}right) || s\_\{\textbackslash{}mathrm\{mix\}\}(t)=f\_A'\textbackslash{}cos(2\textbackslash{}pi f\_A' t)+f\_B'\textbackslash{}cos(2\textbackslash{}pi f\_B' t)+f\_\{\textbackslash{}mathrm\{bridge\}\}\textbackslash{}cos(2\textbackslash{}pi f\_\{\textbackslash{}mathrm\{bridge\}\} t) || \textbackslash{}mathcal\{G\}[s](t)=g(t)\textbackslash{},s\_\{\textbackslash{}mathrm\{mix\}\}(t)}}\par\medskip
+\noindent\textit{Dictionary definition.} Define a timelocalized Gaussian envelope g(t) = exp([(t -- t0)\textasciicircum{}2]/(2 sigma\textasciicircum{}2)).\par\medskip
+\noindent\textit{Encyclopedia reading.} Technical interpretation remains tied to the local registry and equation witness. Interpretive role: This entry opens the next arc by turning the bridge-frequency construction into an event that can be placed in time. It prepares the phase-flip and phase-winding pages by giving them a local domain in which to act.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID0131\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID2354: FlipTwistRamp (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{g(t)=\textbackslash{}exp\textbackslash{}!\textbackslash{}big(-\textbackslash{}frac\{(t-t\_0)\textasciicircum{}2\}\{2\textbackslash{}sigm a\textasciicircum{}2\}\textbackslash{}big). s(t)=A\_1\textbackslash{}sin(2\textbackslash{}pi f\_A' t+\textbackslash{}phi\_1)+A\_2\textbackslash{}sin(2\textbackslash{}pi f\_B' t+\textbackslash{}phi\_2) + A\_3\textbackslash{}, g(t)\textbackslash{}sin(2\textbackslash{}pi f\_\{\textbackslash{}text\{bridge\}\} t+\textbackslash{}phi\_3).}}\par\medskip
+\noindent\textit{Dictionary definition.} Technically, FlipTwistRamp is represented by its existing canonical equation and any recovered support equations; the proposed symbol key and Wolfram form are synchronized to that equation.\par\medskip
+\noindent\textit{Encyclopedia reading.} Technically, FlipTwistRamp is represented by its existing canonical equation and any recovered support equations; the proposed symbol key and Wolfram form are synchronized to that equation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID2354\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID8351: How \textbackslash{}(r\textbackslash{}) Can Act as a Bridge / Flip / Twist for DAANS: Fmapsto F. R (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{f\textbackslash{}mapsto f\textbackslash{}cdot r}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: fmapsto f. r\par\medskip
+\noindent\textit{Encyclopedia reading.} How \textbackslash{}(r\textbackslash{}) Can Act as a Bridge / Flip / Twist for DAANS: Fmapsto F. R is a symbolic expression, written fmapsto f. r. It introduces a symbol or relation used elsewhere in the framework. It is built from f, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID8351\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID3513: Conductivity Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}[ g(t)=\textbackslash{}exp\textbackslash{}!\textbackslash{}big(-\textbackslash{}frac\{(t-t\_0)\textasciicircum{}2\}\{2\textbackslash{}sigm a\textasciicircum{}2\}\textbackslash{}big)." CL\_33efa6ff69da,CID\_8b3ec97a14,1,sin;sig nal;sum;a\_1;f\_a;phi\_1;a\_2;f\_b;phi\_2;a\_3; text;bridge;phi\_3,,2025-12-12T20:15:22.6 85742+00:00,2025-12-12T20:15:22.685742+0 0:00,"\textbackslash{}]}}\par\medskip
+\noindent\textit{Dictionary definition.} Conductivity Relation --- [ g(t)=exp (-((t-t\_0)\textasciicircum{}2)/(2sigma\textasciicircum{}2) )." CL\_33efa6ff69da,CID\_8b3ec97a14,1,sin;signal;sum;a\_1;f\_a;phi\_1;a\_2;f\_b;phi\_2;a\_3;text;bridge;phi\_3,,2025-12-12T20:1\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `D:\textbackslash{}00\_EngineCSVconcept\_clusters.csv` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID3513\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID3514: Pi Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}[ s(t)=A\_1\textbackslash{}sin(2\textbackslash{}pi f\_A' t+\textbackslash{}phi\_1)+A\_2\textbackslash{}sin(2\textbackslash{}pi f\_B' t+\textbackslash{}phi\_2) + A\_3\textbackslash{}, g(t)\textbackslash{}sin(2\textbackslash{}pi f\_\{\textbackslash{}text\{bridge\}\} t+\textbackslash{}phi\_3)." CL\_6699605fd26e,CID\_0aa36c885b,1,choose; sigma;small;bridge;narrow;time;topologic al;seam,,2025-12-12T20:15:22.685742+00:0 0,2025-12-12T20:15:22.685742+00:00,\textbackslash{}]}}\par\medskip
+\noindent\textit{Dictionary definition.} Pi Relation --- [ s(t)=A\_1sin(2pi f\_A' t+phi\_1)+A\_2sin(2pi f\_B' t+phi\_2) + A\_3 g(t)sin(2pi f\_bridge t+phi\_3)." CL\_6699605fd26e,CID\_0aa36c885b,1,choose;sigma;small;bridge;narro\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `D:\textbackslash{}00\_EngineCSVconcept\_clusters.csv` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID3514\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID8382: Level 3 --- Hamiltonian Micro Picture (HTZPtunnel and HER Bridge): epsilon(t) \textasciitilde{} A\_3 G(t) e\textasciicircum{}iphi\_3 (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}epsilon(t) \textbackslash{}sim A\_3 g(t) e\textasciicircum{}\{i\textbackslash{}phi\_3\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Interpretation: - \textbackslash{}(J\textbackslash{}) controls direct hybridization (mode overlap).\par\medskip
+\noindent\textit{Encyclopedia reading.} Level 3 --- Hamiltonian Micro Picture (HTZPtunnel and HER Bridge): epsilon(t) \textasciitilde{} A\_3 G(t) e\textasciicircum{}iphi\_3 is a scaling / order-of-magnitude relation, written epsilon(t) \textasciitilde{} A\_3 g(t) e\textasciicircum{}iphi\_3. It expresses a scaling or proportionality, capturing how the quantity grows with its parameters. It is built from epsilon, A\_3, g. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID8382\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID8391: Simulation Pipeline (Order): alpha (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}dot\{\textbackslash{}alpha\} = -i\textbackslash{}omega\_a \textbackslash{}alpha - \textbackslash{}gamma\_a \textbackslash{}alpha - iJ\textbackslash{}beta - iK|\textbackslash{}alpha|\textasciicircum{}2\textbackslash{}alpha - i g\_a \textbackslash{}gamma + F\_a(t),}}\par\medskip
+\noindent\textit{Dictionary definition.} Simulation pipeline (order) 1. Classical nonlinear-mode simulation --- integrate coupled-mode ODEs for (a,b,c) with noise bath: similar for beta, gamma (c-mode).\par\medskip
+\noindent\textit{Encyclopedia reading.} Simulation Pipeline (Order): alpha is a differential equation, written alpha = -iomega\_a alpha - gamma\_a alpha - iJbeta - iK|alpha|\textasciicircum{}2alpha - i g\_a gamma + F\_a(t). It relates the quantity to its derivatives, governing how the system evolves in space and time. It is built from beta, gamma, a, J, K, g\_a, defining alpha. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{FlipTwistRamp\_ID8391\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the FlipTwistRamp spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID0131 & Core\_Definition & \texttt{FlipTwistRamp\_ID0131\_threshold} \\
+ID2354 & Core\_Definition & \texttt{FlipTwistRamp\_ID2354\_identity} \\
+ID8351 & Core\_Definition & \texttt{FlipTwistRamp\_ID8351\_structure} \\
+ID3513 & Core\_Definition & \texttt{FlipTwistRamp\_ID3513\_identity} \\
+ID3514 & Core\_Definition & \texttt{FlipTwistRamp\_ID3514\_identity} \\
+ID8382 & Derived\_Theorem\_Obligation & \texttt{FlipTwistRamp\_ID8382\_structure} \\
+ID8391 & Derived\_Theorem\_Obligation & \texttt{FlipTwistRamp\_ID8391\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 0 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID0131 & --- & --- \\
+ID2354 & --- & --- \\
+ID8351 & --- & --- \\
+ID3513 & --- & --- \\
+ID3514 & --- & --- \\
+ID8382 & --- & --- \\
+ID8391 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+FlipTwistRamp consumes the entire signal group: C9's injection primitive, C10's kernel calculus, C11's enforced ratio. Upward, it instantiates the program's deepest structures at bench scale: the flip is Papers I--III's reciprocal inversion, the seam defects are countable winding events in the sense of ID0020, and the carrier tuned to 153600 makes the apparatus a deliberate scale model of the enclosure lattice itself.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_FlipTwistRamp.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{FlipTwistRamp\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID0131} (\texttt{FlipTwistRamp\_ID0131\_threshold}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID2354} (\texttt{FlipTwistRamp\_ID2354\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID8351} (\texttt{FlipTwistRamp\_ID8351\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3513} (\texttt{FlipTwistRamp\_ID3513\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3514} (\texttt{FlipTwistRamp\_ID3514\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID8382} (\texttt{FlipTwistRamp\_ID8382\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID8391} (\texttt{FlipTwistRamp\_ID8391\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. Signal architecture is engineering and stands or falls on its diagnostics; the framework's surplus is the defect claim---quantized winding signatures with critical statistics---which time-frequency analysis of built seams can settle directly.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+FlipTwistRamp is the program's flip rendered executable: two carriers a bridge ratio apart, a Gaussian seam that inverts phase, and diagnostics watching for the quantized debris. Its refinement target is a built implementation with defect statistics compared against winding quantization and critical exponents. If the debris carries the program's signatures, the reciprocal flip will have been performed, not just postulated.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: FlipTwistRamp}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{FlipTwistRamp}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

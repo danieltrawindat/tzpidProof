@@ -1,0 +1,452 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:49:03.657812+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0308",
+    "uuid": "af7f9e54-4e3e-580a-96f6-59f4b386bd1e",
+    "registry_id": "registry_id_0308",
+    "canonical_title": "Blob-to-Quantum Address Pipeline",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0308/ID0308.TEX",
+      "json": "D:/TZPID/TZPID/ID0308/ID0308.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0308/ID0308.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "To map an $n\\times m$ real matrix $B$ to a DAANSphere address:",
+    "technical_interpretation": "To map an $n\\times m$ real matrix $B$ to a DAANSphere address: \\[ B = U\\Sigma V^{T}. \\] Extract the first three left singular vectors $u_1,u_2,u_3$ and normalize them to points on $S^2$. Convert the corresponding angles to continued-fraction expansions, multiply each coefficient by $\\pi^{p/2}$ at the desired precision, and extract base-3 digits. Apply the Cantor pairing function recursively to collapse the digit sequence to a single integer modulo $153{,}600$, select a tesseract vertex from the lower four bits, combine the vertex and Cantor encodings, and prepare the 18-qubit state defined by the 18-bit binary representation of the resulting address."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "B = U\\Sigma V^{T}.",
+      "B=U\\Sigma V^{\\top}",
+      "A_{\\mathrm{DAQ}}=\\bigl(\\pi_C(d_1,\\ldots,d_k)\\bmod 153600\\bigr)+1"
+    ],
+    "source_section_latex": "\\[ B = U\\Sigma V^{T}. \\] Extract the first three left singular vectors $u_1,u_2,u_3$ and normalize them to points on $S^2$. Convert the corresponding angles to continued-fraction expansions, multiply each coefficient by $\\pi^{p/2}$ at the desired precision, and extract base-3 digits. Apply the Cantor pairing function recursively to collapse the digit sequence to a single integer modulo $153{,}600$, select a tesseract vertex from the lower four bits, combine the vertex and Cantor encodings, and prepare the 18-qubit state defined by the 18-bit binary representation of the resulting address.\n\n\\[\nB=U\\Sigma V^{\\top}\n\\]\n\\[\nA_{\\mathrm{DAQ}}=\\bigl(\\pi_C(d_1,\\ldots,d_k)\\bmod 153600\\bigr)+1\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Matrix Decomposition",
+      "formula_latex_blocks": [
+        "B=U\\Sigma V^{\\top}"
+      ],
+      "interpretive_role": "This fixes the singular-value decomposition that turns the blob into an ordered geometric carrier."
+    },
+    {
+      "step": 2,
+      "component_title": "Cantor Address Reduction",
+      "formula_latex_blocks": [
+        "A_{\\mathrm{DAQ}}=\\bigl(\\pi_C(d_1,\\ldots,d_k)\\bmod 153600\\bigr)+1"
+      ],
+      "interpretive_role": "This reduces the extracted digit stream into a single DAANSphere address by recursive Cantor pairing."
+    },
+    {
+      "step": 3,
+      "component_title": "Quantum Register Lift",
+      "formula_latex_blocks": [
+        "lvert \\psi_{\\mathrm{addr}}\\rangle=\\lvert b_1b_2\\cdots b_{18}\\rangle"
+      ],
+      "interpretive_role": "This closes the entry by lifting the address into its 18-qubit binary register state."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0308}$",
+        "description": "canonical registry object for entry ID 0308."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0308}$",
+        "name": "canonical registry object for entry ID 0308.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Sigma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\top$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigl$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\ldots$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bmod$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigr$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\psi_{addr}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rangle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdots$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$U$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V^{T}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V^{\\top}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$A_{DAQ}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$C(d_1,\\ldots,d_k)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Blob-to-Quantum Address Pipeline\nCanonical operator translation\neq0308_1 = HoldForm[B == U V^(T)];\neq0308_2 = HoldForm[B==U V^( -> p)];\neq0308_3 = HoldForm[ADAQ==(_C(d_1,,d_k) 153600)+1];\n\nTRAWIN closure composition\nTRAWINClosure0308[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0308 := HoldForm[{eq0308_1, eq0308_2, eq0308_3}];\nResult0308 := TRAWINClosure0308[K0308];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "B = U\\Sigma V^{T}.",
+          "normalized_latex": "B==USigma*V^(T)",
+          "wolfram_input": "B==USigma*V^(T)",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B == USigma*V^T]",
+          "texform_roundtrip": "B=\\text{USigma} V^T",
+          "messages": []
+        },
+        {
+          "latex": "B=U\\Sigma V^{\\top}",
+          "normalized_latex": "B==USigma*V^(Transpose)",
+          "wolfram_input": "B==USigma*V^(Transpose)",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B == USigma*V^Transpose]",
+          "texform_roundtrip": "B=\\text{USigma} V^{\\text{Transpose}}",
+          "messages": []
+        },
+        {
+          "latex": "A_{\\mathrm{DAQ}}=\\bigl(\\pi_C(d_1,\\ldots,d_k)\\bmod 153600\\bigr)+1",
+          "normalized_latex": "ADAQ==Tuple[PiC[d1,ldots,dK]bmod153600]+1",
+          "wolfram_input": "ADAQ==Tuple[PiC[d1,ldots,dK]bmod153600]+1",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ADAQ == Tuple[PiC[d1, ldots, dK]*bmod153600] + 1]",
+          "texform_roundtrip": "\\text{ADAQ}=\\text{Tuple}(\\text{bmod153600} \\text{PiC}(\\text{d1},\\text{ldots},\\text{dK}))+1",
+          "messages": []
+        },
+        {
+          "latex": "lvert \\psi_{\\mathrm{addr}}\\rangle=\\lvert b_1b_2\\cdots b_{18}\\rangle",
+          "normalized_latex": "Ket[psiAddr]==Ket[b1*b_2*Ellipsis*b18]",
+          "wolfram_input": "Ket[psiAddr]==Ket[b1*b_2*Ellipsis*b18]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Ket[psiAddr] == Ket[b1*(b_)*2*Ellipsis*b18]]",
+          "texform_roundtrip": "\\text{Ket}[\\text{psiAddr}]=\\text{Ket}[2 \\text{b$\\_$} \\text{b1} \\text{b18} \\text{Ellipsis}]",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0308 generated source-truth Wolfram model *)\nClearAll[K0308, TRAWINClosure0308];\neq0308$1 = HoldForm[B == USigma*V^T];\neq0308$2 = HoldForm[B == USigma*V^Transpose];\neq0308$3 = HoldForm[ADAQ == Tuple[PiC[d1, ldots, dK]*bmod153600] + 1];\neq0308$4 = HoldForm[Ket[psiAddr] == Ket[b1*(b_)*2*Ellipsis*b18]];\nK0308 = HoldForm[{eq0308$1, eq0308$2, eq0308$3, eq0308$4}];\nTRAWINClosure0308[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0308 = TRAWINClosure0308[K0308];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nK_{\\mathrm{NL}}\n=\n\\frac{\\left\\lVert \\nabla^{2}\\varphi\\right\\rVert}\n{\\left\\lVert \\nabla\\varphi\\right\\rVert^{2}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\varphi$ be a scalar field on the Trawinistic manifold.  \nThe first-order variation of the field is measured by the gradient:\n\n\\begin{equation}\n\\nabla\\varphi .\n\\end{equation}\n\nThe second-order curvature or bending of the field is measured by:\n\n\\begin{equation}\n\\nabla^2\\varphi .\n\\end{equation}\n\nA dimensionless measure of non-linearity should compare second-order deformation against the square of first-order variation. Therefore define:\n\n\\begin{equation}\nK_{\\mathrm{NL}}\n=\n\\frac{\\text{second-order field deformation}}\n{\\text{first-order field variation squared}} .\n\\end{equation}\n\nSubstituting the appropriate differential norms gives:\n\n\\begin{equation}\n\\boxed{\nK_{\\mathrm{NL}}\n=\n\\frac{\\left\\lVert \\nabla^{2}\\varphi\\right\\rVert}\n{\\left\\lVert \\nabla\\varphi\\right\\rVert^{2}} .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\n$K_{\\mathrm{NL}}$ measures how sharply a field bends relative to its local rate of change. Large values indicate strong nonlinear behavior near the TZP.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0308/ID0308.source_truth.json",
+    "entry_id": "ID0308",
+    "registry_id": "registry_id_0308",
+    "canonical_title": "Blob-to-Quantum Address Pipeline",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0308/ID0308.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "af7f9e54-4e3e-580a-96f6-59f4b386bd1e",
+    "RTEID": "RTE:P1196.0324:T1.9707",
+    "poloidal_theta_rad": "1196.0324",
+    "toroidal_phi_rad": "1.9707",
+    "rteid_source": "manifest",
+    "PiID": "6606315588174",
+    "TZPi": "5",
+    "PiPE_position": "315",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "B = U\\Sigma V^{T}.",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "Sigma",
+          "B",
+          "U",
+          "V",
+          "T"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0308\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Blob-to-Quantum Address Pipeline\", \"latex\" -> \"B = U\\\\Sigma V^{T}.\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"Sigma\", \"B\", \"U\", \"V\", \"T\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "B=U\\Sigma V^{\\top}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "Sigma",
+          "top",
+          "B",
+          "U",
+          "V"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0308\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Blob-to-Quantum Address Pipeline\", \"latex\" -> \"B=U\\\\Sigma V^{\\\\top}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"Sigma\", \"top\", \"B\", \"U\", \"V\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "A_{\\mathrm{DAQ}}=\\bigl(\\pi_C(d_1,\\ldots,d_k)\\bmod 153600\\bigr)+1",
+        "numeric_atoms": [
+          "1",
+          "153600",
+          "+1"
+        ],
+        "symbolic_tokens": [
+          "bigl",
+          "Pi",
+          "ldots",
+          "bmod",
+          "bigr",
+          "A",
+          "C",
+          "d",
+          "k"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0308\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Blob-to-Quantum Address Pipeline\", \"latex\" -> \"A_{\\\\mathrm{DAQ}}=\\\\bigl(\\\\pi_C(d_1,\\\\ldots,d_k)\\\\bmod 153600\\\\bigr)+1\", \"numericAtoms\" -> {1, 153600, +1}, \"symbolicTokens\" -> {\"bigl\", \"Pi\", \"ldots\", \"bmod\", \"bigr\", \"A\", \"C\", \"d\", \"k\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

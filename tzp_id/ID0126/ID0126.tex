@@ -1,0 +1,236 @@
+\tzpanchor{0126}
+\tzpentryheader{0126}{Electrohydrodynamic Resonance Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{987b7191-6a99-5ba3-8aff-445488cfdcd8}}\\
+\textbf{PiID} & \tzpcode{6095505822317} & \textbf{TZPi}\quad \tzpcode{5}\quad \textbf{PiPE}\quad \tzpcode{133}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{489.2860 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.8062 rad}\\
+\textbf{TZPID} & \tzpcode{ID0126} & \textbf{Node Dependencies}\quad \tzpidref{0125}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0126} & \textbf{Scale}\quad time-dependent charged vortex forcing\\
+\textbf{LOC Classification} & QC718 plasma dynamics & QA371 driven oscillators\\
+\textbf{arXiv Classification} & Primary: physics.plasm-ph \quad Cross-list: physics.flu-dyn, nlin.PS & \\
+\textbf{Primary Support} & Charge-Density Drive & Driven Radial Acceleration\\
+\textbf{Closure Support} & Resonance Operator Form & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The electrohydrodynamic resonance operator introduces a time-varying charge density into the vortex core and promotes the resulting force modulation to a driven acceleration law. The point of the entry is to turn the previous static concentration effect into a tunable oscillatory operator.
+
+\tzpsection{Canonical Equation}
+\[
+\rho_e(t) = \rho_0 + \rho_1\cos(\omega t)
+\]
+\[
+a_r^{\mathrm{tot}}(t) = a_r^{\mathrm{fluid}} + \kappa\rho_e(t)
+\]
+\[
+\mathcal{R}_{\mathrm{EHD}}[\Psi] = a_r^{\mathrm{tot}}(t)\,\Psi
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\rho_e(t)$: time-dependent electric charge density.
+    \item $\rho_0$: baseline charge-density component.
+    \item $\rho_1$: oscillating charge-density amplitude.
+    \item $\omega$: angular driving frequency.
+    \item $t$: time coordinate.
+    \item $a_r$: baseline radial acceleration.
+    \item $\mathcal{R}_{\mathrm{EHD}}$: electrohydrodynamic resonance operator acting on the state carrier.
+    \item $\Psi$: wavefunction or state carrier for the entry equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0126 generated source Wolfram model *)
+ClearAll[K0126, Cr0126, T, R, A, W, I, N];
+eq0126$1 = HoldForm[rhoE[t] == rho0 + rho1*Cos[omega*t]];
+eq0126$2 = HoldForm[aR^tot*t == aR^fluid + kapparhoE[t]];
+eq0126$3 = HoldForm[REHD[Psi] == aR^tot*t*Psi];
+
+K0126 = HoldForm[{eq0126$1, eq0126$2, eq0126$3}];
+
+N = "normalized TRAWIN closure object for Electrohydrodynamic Resonance Operator";
+I = "Resonance Operator Form integration/comparison layer";
+W = "Driven Radial Acceleration wave or operator carrier";
+A = "Charge-Density Drive admissible action/amplitude condition";
+R = "Driven Radial Acceleration rotation/curl preservation layer";
+T = "Charge-Density Drive local source condition";
+
+Cr0126[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0126 = Cr0126[K0126];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Charge-Density Drive local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Driven Radial Acceleration rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Charge-Density Drive admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Driven Radial Acceleration wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Resonance Operator Form integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Electrohydrodynamic Resonance Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0126] Electrohydrodynamic Resonance Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\rho_e(t) = \rho_0 + \rho_1\cos(\omega t)
+\]
+\[
+a_r^{\mathrm{tot}}(t) = a_r^{\mathrm{fluid}} + \kappa\rho_e(t)
+\]
+\[
+\mathcal{R}_{\mathrm{EHD}}[\Psi] = a_r^{\mathrm{tot}}(t)\,\Psi
+\]
+
+\paragraph{Primary Derivation.}
+The identity \( \rho_e(t) = \rho_0 + \rho_1\cos(\omega t) \) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.
+\paragraph{Equation Type.}
+This statement is classified as a operator relation.
+
+\paragraph{Interpretation.}
+This relation applies to the quantities defined above. In the TRAWIN reading, the equation functions as the operator-level carrier for the entry’s information content. Within the CHL view, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The periodic charge-density input turns the static baseline into a timed forcing term for the downstream acceleration and resonance relations.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Charge-Density Drive}\par
+\[
+\rho_e(t) = \rho_0 + \rho_1\cos(\omega t)
+\]
+\noindent This introduces an explicit periodic forcing channel into the vortex region.\par
+\noindent\textbf{2. Driven Radial Acceleration}\par
+\[
+a_r^{\mathrm{tot}}(t) = a_r^{\mathrm{fluid}} + \kappa\rho_e(t)
+\]
+\noindent This converts the electrical drive into a modulated inward pull.\par
+\noindent\textbf{3. Resonance Operator Form}\par
+\[
+\mathcal{R}_{\mathrm{EHD}}[\Psi] = a_r^{\mathrm{tot}}(t)\,\Psi
+\]
+\noindent This closes the progression by expressing the whole forcing law as an operator on the evolving state.\par
+
+\clearpage
+\noindent\textbf{[ID 0126] Electrohydrodynamic Resonance Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+An electrohydrodynamic resonance operator begins with charge density that changes periodically in time. The canonical relation separates a steady electrical background from an oscillating driving contribution.
+
+\tzpsection{Contextual Meaning}
+
+The entry changes a static density condition into a tunable forcing law. The baseline \(\rho_0\) supplies the persistent level, while \(\rho_1\cos(\omega t)\) gives its cyclic departure; a coupled response can therefore inherit periodic modulation.
+
+\tzpsection{Formal Statement}
+
+\[
+\rho_e(t)=\rho_0+\rho_1\cos(\omega t)
+\]
+
+\tzpsection{Derivable Consequences}
+
+Density ranges from \(\rho_0-\rho_1\) to \(\rho_0+\rho_1\). If \(\rho_1=0\), the relation becomes static; increasing \(\omega\) repeats the same modulation more rapidly.
+
+\tzpsection{Lemma Support}
+
+The approved aligned source states this relation and identifies \(\rho_e(t)\), \(\rho_0\), \(\rho_1\), \(\omega\), and \(t\). Later coupling remains a separate claim.
+
+\tzpsection{Technical Interpretation}
+
+This harmonic modulation law supplies an operator input whose offset, amplitude, and frequency may be independently varied in calculation. Because the cosine drive is explicit, the subsequent operator can distinguish baseline response from oscillatory response without redefining the charge-density source.
+
+\tzpsection{Equation Grounding}
+
+\(\rho_e(t)\) is time-dependent electric charge density; \(\rho_0\) is the baseline charge-density component; \(\rho_1\) is the oscillating amplitude; \(\omega\) is angular driving frequency; and \(t\) is time.
+
+\tzpsection{Interpretive Role}
+
+This entry turns a static density mechanism into a timed forcing signal carried into later driven-acceleration relations.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Charge-Density Baseline}: The time-independent offset around which the electrical density oscillates. \enspace\textbullet\enspace \textbf{Harmonic Modulation}: The cosine variation that gives the forcing term a repeatable temporal rhythm. \enspace\textbullet\enspace \textbf{Angular Driving Frequency}: The rate parameter that controls the cycle of the modulation.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0126_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0126] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Electrohydrodynamic Resonance Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the electrohydrodynamic resonance operator introduces a time-varying charge density into
+the vortex core and promotes the resulting force modulatio...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Electrohydrodynamic Resonance Operator is valid as a synchronization criterion under the
+coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0126_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

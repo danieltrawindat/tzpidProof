@@ -1,0 +1,61 @@
+{
+  "schema": "TZPIDProof individual theorem proof package",
+  "generated_at_utc": "2026-06-10T00:42:13+00:00",
+  "queue": {
+    "queue_index": "27",
+    "source": "master_registry",
+    "id": "ID3287",
+    "name": "Magnetic Helicity Evolution Evolution Relation",
+    "kind": "Theorem",
+    "obligation_role": "",
+    "semantic_anchor_id": "",
+    "source_file": "",
+    "line": "",
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "duplicate_source_id_name": "no"
+  },
+  "metadata": {
+    "tzpid": "ID3287",
+    "title": "Magnetic Helicity Evolution Evolution Relation",
+    "uuid": "59e34ea4-099b-509f-8bf4-a26e21f0fba9",
+    "PiID": "0337869936007",
+    "RTEID": "RTE:P12764.1510:T2.1818",
+    "TZPi": "9",
+    "PiPE_position": "3294",
+    "poloidal_theta_rad": "12764.1510",
+    "toroidal_phi_rad": "2.1818",
+    "loc_class": "QC - Physics: waves, acoustics, and fluid dynamics",
+    "arxiv_class": "physics.flu-dyn",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "https://orcid.org/0009-0001-4630-3715",
+    "embedded_at_utc": "2026-06-10T00:42:13+00:00"
+  },
+  "master_row": {
+    "id": "ID3287",
+    "title": "Magnetic Helicity Evolution Evolution Relation",
+    "canonical_statement": "\\mathbf{B}) \\times (\\nabla \\times \\delta \\mathbf{B}) \\end{equation} where: \\begin{itemize} \\item $\\xi$ = displacement field (acoustic) \\item $v_A = \\frac{B}{\\sqrt{\\mu_0 \\rho}}$ = Alfvén velocity \\item $\\delta \\mathbf{B}$ = magnetic field perturbation \\end{itemize} \\subsection{Topological Mode Coupling} The magnetic helicity (topological invariant) couples to acoustic modes: \\begin{equation} \\mathcal{H}_M = \\int_V \\mathbf{A} \\cdot \\mathbf{B} \\, dV - \\frac{\\omega_{gyro}}{c^2} \\int_V \\mathbf{r} \\times (\\mathbf{E} \\times \\mathbf{B}) \\, dV \\end{equation} Time derivative under acoustic modulation: \\begin{equation} \\frac{d\\mathcal{H}_M}{dt} = \\int_V \\left( \\frac{\\partial \\mathbf{A}}{\\partial t} \\cdot \\mathbf{B} + \\mathbf{A} \\cdot \\frac{\\partial \\mathbf{B}}{\\partial t} \\right) dV + \\mathcal{O}(\\omega_{acoustic}) \\end{equation} \\section{Harmonic Topology Access Mechanisms} \\subsection{Type I: Alfvén Resonance Ladder} \\begin{theorem}[Alfvén Mode Quantization] In a spherical cavity of radius R with permeable boundary $\\mu_r$, Alfvén waves satisfy: \\begin{equation} \\omega_{n\\ell m} = \\frac{v_A}{R} \\sqrt{n^2 + \\frac{\\ell(\\ell+1)}{1 + \\frac{R}{2\\delta_{skin}}}} \\end{equation} where n, $\\ell$, m",
+    "canonical_equation": "\\begin{equation} \\frac{d \\mathcal{H}_M}{dt} = \\int_V \\left( \\frac{ \\partial \\mathbf{A}}{ \\partial t} \\cdot \\mathbf{B} + \\mathbf{A} \\cdot \\frac{ \\partial \\mathbf{B}}{ \\partial t} \\right) dV + \\mathcal{O}( \\omega_{acoustic}) \\end{equation}",
+    "formation_method": "Integral expression",
+    "formation_inputs": "∂, V, A, B, O, a",
+    "formation_note": "Recovered from a D:\\All source document.",
+    "dictionary": "B) ( B) equation where: Topological Mode Coupling The magnetic helicity (topological invariant) couples to acoustic modes: Time derivative under acoustic modulation: Harmonic Topology Access Mechanisms Type I: Alfvén Resonance Ladder where n, ℓ, m",
+    "encyclopedia": "The entry preserves the equation exactly as extracted from `00_Engine\\AI_Workspaces\\analysis_all_edit_OpenAI\\all_edit_equation_arc_compact.csv` for registry alignment and later derivation.",
+    "isabelle_kind": "Theorem",
+    "obligation_role": "",
+    "proof_required_checks": "",
+    "gold_spine": "",
+    "lean_rocq": "registry_ID3287",
+    "wolfram_status": "",
+    "isabelle_sid": "9670",
+    "uuid": "59e34ea4-099b-509f-8bf4-a26e21f0fba9"
+  },
+  "source_truth_relative": "../../tzp_id/ID3287/ID3287.source_truth.json",
+  "tex_relative": "../../tzp_id/ID3287/ID3287.tex",
+  "formal_status": {
+    "translation_status": "batch002_started",
+    "translation_class": "spectral_helicity_kk_segment",
+    "isabelle_batch_source": "",
+    "note": "Proof package captures the theorem row, metadata, source truth, TeX source, and current semantic translation status."
+  }
+}

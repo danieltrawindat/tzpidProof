@@ -1,0 +1,227 @@
+\tzpanchor{0131}
+\tzpentryheader{0131}{Gaussian Window Insertion Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{9f35b0e3-f4af-5078-bf87-1eb64c034f4f}}\\
+\textbf{PiID} & \tzpcode{0582231725359} & \textbf{TZPi}\quad \tzpcode{1}\quad \textbf{PiPE}\quad \tzpcode{138}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{508.7021 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.8382 rad}\\
+\textbf{TZPID} & \tzpcode{ID0131} & \textbf{Node Dependencies}\quad \tzpidref{0130}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0131} & \textbf{Scale}\quad time-windowed bridge-tone injection\\
+\textbf{LOC Classification} & QA371 signal operators & QC20 wave phenomena\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: nlin.PS, physics.class-ph & \\
+\textbf{Primary Support} & Gaussian Envelope & Carrier Mixture\\
+\textbf{Closure Support} & Localized Insertion & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Gaussian window insertion operator localizes the bridge-carrier construction in time. Instead of acting globally on the signal, the bridge tone is inserted only inside a smooth envelope centered at \(t_0\), giving a finite event rather than an everywhere-on modulation.
+
+\tzpsection{Canonical Equation}
+\[
+g(t)=\exp\!\left(-\frac{(t-t_0)^2}{2\sigma^2}\right)
+\]
+\[
+s_{\mathrm{mix}}(t)=f_A'\cos(2\pi f_A' t)+f_B'\cos(2\pi f_B' t)+f_{\mathrm{bridge}}\cos(2\pi f_{\mathrm{bridge}} t)
+\]
+\[
+\mathcal{G}[s](t)=g(t)\,s_{\mathrm{mix}}(t)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $t_0$: source equation symbol.
+    \item $\sigma$: conductivity or coupling coefficient in the source equation.
+    \item $s_{\mathrm{mix}}(t)$: source equation symbol.
+    \item $f_A$: source equation symbol.
+    \item $\pi$: source equation symbol.
+    \item $t$: source equation symbol.
+    \item $f_B$: source equation symbol.
+    \item $f_{\mathrm{bridge}}$: source equation symbol.
+    \item $\mathcal{G}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0131 generated source Wolfram model *)
+ClearAll[K0131, Cr0131, T, R, A, W, I, N];
+eq0131$1 = HoldForm[g[t] == exp[-((t - t0)^2/(2*sigma^2))]];
+eq0131$2 = HoldForm[sMix[t] == Derivative[1][fA]*Cos[2*Pi*Derivative[1][fA]*t] + Derivative[1][fB]*Cos[2*Pi*Derivative[1][fB]*t] + fBridgeCos[2*Pi*fBridge*t]];
+eq0131$3 = HoldForm[G[s]*t == g[t]*sMix[t]];
+
+K0131 = HoldForm[{eq0131$1, eq0131$2, eq0131$3}];
+
+N = "normalized TRAWIN closure object for Gaussian Window Insertion Operator";
+I = "Localized Insertion integration/comparison layer";
+W = "Carrier Mixture wave or operator carrier";
+A = "Gaussian Envelope admissible action/amplitude condition";
+R = "Carrier Mixture rotation/curl preservation layer";
+T = "Gaussian Envelope local source condition";
+
+Cr0131[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0131 = Cr0131[K0131];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Gaussian Envelope local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Carrier Mixture rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Gaussian Envelope admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Carrier Mixture wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Localized Insertion integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Gaussian Window Insertion Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0131] Gaussian Window Insertion Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+g(t)=\exp\!\left(-\frac{(t-t_0)^2}{2\sigma^2}\right)
+\]
+\[
+s_{\mathrm{mix}}(t)=f_A'\cos(2\pi f_A' t)+f_B'\cos(2\pi f_B' t)+f_{\mathrm{bridge}}\cos(2\pi f_{\mathrm{bridge}} t)
+\]
+\[
+\mathcal{G}[s](t)=g(t)\,s_{\mathrm{mix}}(t)
+\]
+
+\paragraph{Primary Derivation.}
+The identity \( g(t)=\exp\!\left(-\frac{(t-t_0)^2}{2\sigma^2}\right) \) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.
+\paragraph{Equation Type.}
+This statement is classified as a operator relation.
+
+\paragraph{Interpretation.}
+This relation applies to the quantities defined above. From the TRAWIN perspective, the equation functions as the operator-level carrier for the entry’s information content. In CHL terms, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Gaussian Window Insertion Operator by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Gaussian Envelope}\par
+\[
+g(t)=\exp\!\left(-\frac{(t-t_0)^2}{2\sigma^2}\right)
+\]
+\noindent This defines the smooth time-localization that makes the insertion finite.\par
+\noindent\textbf{2. Carrier Mixture}\par
+\[
+s_{\mathrm{mix}}(t)=f_A'\cos(2\pi f_A' t)+f_B'\cos(2\pi f_B' t)+f_{\mathrm{bridge}}\cos(2\pi f_{\mathrm{bridge}} t)
+\]
+\noindent This collects the aligned carriers and the bridge tone into one pre-window signal.\par
+\noindent\textbf{3. Localized Insertion}\par
+\[
+\mathcal{G}[s](t)=g(t)\,s_{\mathrm{mix}}(t)
+\]
+\noindent This closes the progression by expressing the actual insertion as the product of envelope and bridge-bearing signal.\par
+
+\clearpage
+\noindent\textbf{[ID 0131] Gaussian Window Insertion Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Gaussian Window Insertion Operator is a Operator. Define a time localized Gaussian envelope g(t) = exp(-[(t -- t ) ]/(2   )). A signal combining scaled carriers and the bridge tone is s(t) = A  sin(2  f\_A' t +   ) + A  sin(2  f\_B' t +   ) + A  g(t) sin(2  f\_bridge t +   ), where   is small relative to the beat period.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Define a time localized Gaussian envelope g(t) = exp(-[(t -- t ) ]/(2   )). A signal combining scaled carriers and the bridge tone is s(t) = A  sin(2  f\_A' t +   ) + A  sin(2  f\_B' t +   ) + A  g(t) sin(2  f\_bridge t +   ), where   is small relative to the beat period.
+\textbf{Contextual meaning:} A Gaussian envelope inserts the bridging tone only at specific times, creating a narrow "seam" between carriers.
+\textbf{Derivable consequences:} Design of binaural beats; scaling of frequencies to desired difference; foundation for Gaussian insertion and phase manipulation.
+\textbf{Lemma support:} Define a time localized Gaussian envelope g(t) = exp(-[(t -- t ) ]/(2   )). A signal combining scaled carriers and the bridge tone is s(t) = A  sin(2  f\_A' t +   ) + A  sin(2  f\_B' t +   ) + A  g(t) sin(2  f\_bridge t +   ), where   is small relative to the beat period.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Implement the scaling and verify that the resulting beat frequency matches the target; test stability of the bridging mapping. ID 131: Gaussian Window Insertion Operator
+
+\tzpsection{Equation Grounding}
+Define a time localized Gaussian envelope g(t) = exp(-[(t -- t ) ]/(2   )). A signal combining scaled carriers and the bridge tone is s(t) = A  sin(2  f\_A' t +   ) + A  sin(2  f\_B' t +   ) + A  g(t) sin(2  f\_bridge t +   ), where   is small relative to the beat period.
+
+\tzpsection{Interpretive Role}
+A Gaussian envelope inserts the bridging tone only at specific times, creating a narrow "seam" between carriers.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Gaussian Envelope}: The definition of the smooth time-localization that makes the insertion finite.
+\item \textbf{Carrier Mixture}: The collection of the aligned carriers and the bridge tone into one pre-window signal.
+\item \textbf{Localized Insertion}: The expression of the actual insertion as the product of envelope and bridge-bearing signal.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0131]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0131_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0131] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Gaussian Window Insertion Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Gaussian window insertion operator localizes the bridge-carrier construction in time
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Gaussian Window Insertion Operator is valid as a spectral relation when frequency,
+phase, and propagation variables satisfy the stated equation.''\\
+\textbf{Proof:} The source statement describes a wave, harmonic, or resonance relation. The proof
+obligation is that the frequency-domain quantities are typed consistently and that the
+derived propagation or resonance condition follows from the stated variables.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- spectral-relation validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0131_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

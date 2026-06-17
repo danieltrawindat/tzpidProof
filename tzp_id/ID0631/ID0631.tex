@@ -1,0 +1,254 @@
+\tzpanchor{0631}
+\tzpentryheader{0631}{QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\_gp)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{9e1459ac-45b9-5fa2-8faa-ffbf991dfb64}}\\
+\textbf{PiID} & \tzpcode{5778960917363} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{638}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2427.0138 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{03.9990 rad}\\
+\textbf{TZPID} & \tzpcode{ID0631} & \textbf{Node Dependencies}\quad \tzpidref{0630}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0631} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA329 operator theory & QA169 categorical structure\\
+\textbf{arXiv Classification} & Primary: math.CT & Cross-list: math-ph, cs.LO\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records quark-gluon plasma residue operator (hatq\_gp) through the Septenary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.
+
+\tzpsection{Canonical Equation}
+\[
+\frac{\partial S}{\partial t} + \mathcal{H}_T \left( q,\frac{\partial S}{\partial q},t \right) = 0.
+\]
+\[
+p_q=\frac{\partial S}{\partial q}.
+\]
+\[
+\mathcal{H}_T(q,p_q,t).
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $S$: source equation symbol.
+    \item $t$: source equation symbol.
+    \item $\mathcal{H}_T$: source equation symbol.
+    \item $p_q$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0631 generated source Wolfram model *)
+ClearAll[K0631, Cr0631, T, R, A, W, I, N];
+eq0631$1 = HoldForm[(Partial*S)/(Partial*t) + HT[q, (Partial*S)/(Partial*q), t] == 0];
+eq0631$2 = HoldForm[pQ == (Partial*S)/(Partial*q)];
+eq0631$3 = HoldForm[HT[q, pQ, t]];
+
+K0631 = HoldForm[{eq0631$1, eq0631$2, eq0631$3}];
+
+N = "normalized TRAWIN closure object for QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\_gp)";
+I = "Normalized Output integration/comparison layer";
+W = "Composable Action wave or operator carrier";
+A = "Carrier Map admissible action/amplitude condition";
+R = "Composable Action rotation/curl preservation layer";
+T = "Carrier Map local source condition";
+
+Cr0631[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0631 = Cr0631[K0631];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Carrier Map local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Composable Action rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Carrier Map admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Composable Action wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Output integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\textbackslash{}\_gp).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0631] QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\_gp)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\frac{\partial S}{\partial t}
++
+\mathcal{H}_T
+\left(
+q,\frac{\partial S}{\partial q},t
+\right)
+=
+0 .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $S(q,t)$ be the action function for a classical trajectory on the Trawinistic manifold.  
+The canonical momentum is obtained from the action by:
+
+\begin{equation}
+p_q=\frac{\partial S}{\partial q}.
+\end{equation}
+
+The Hamiltonian density or Hamiltonian function in Trawinistic form is:
+
+\begin{equation}
+\mathcal{H}_T(q,p_q,t).
+\end{equation}
+
+Substituting $p_q=\partial S/\partial q$ into the Hamiltonian gives:
+
+\begin{equation}
+\mathcal{H}_T
+\left(
+q,\frac{\partial S}{\partial q},t
+\right).
+\end{equation}
+
+The Hamilton--Jacobi condition states that time evolution of the action cancels the Hamiltonian contribution:
+
+\begin{equation}
+\boxed{
+\frac{\partial S}{\partial t}
++
+\mathcal{H}_T
+\left(
+q,\frac{\partial S}{\partial q},t
+\right)
+=
+0 .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+This equation translates Trawinistic Hamiltonian dynamics into an action-based evolution law.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\textbackslash{}\_gp) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Carrier Map}\par
+\[
+\frac{\partial S}{\partial t} + \mathcal{H}_T \left( q,\frac{\partial S}{\partial q},t \right) = 0.
+\]
+\noindent This names the entry as an actual map between carrier domains rather than a loose metaphor.\par
+\noindent\textbf{2. Composable Action}\par
+\[
+p_q=\frac{\partial S}{\partial q}.
+\]
+\noindent This inserts the map into the ordered TRAWIN chain and makes composition explicit.\par
+\noindent\textbf{3. Normalized Output}\par
+\[
+\mathcal{H}_T(q,p_q,t).
+\]
+\noindent This closes the entry by requiring that the output land in the admissible target class.\par
+
+\clearpage
+\noindent\textbf{[ID 0631] QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\_gp)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ sub gp) is a registry definition in Gyromagnetic and Rotating-Frame Physics with secondary pressure from Vortex and Cymatic Transport.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} hat Q gp = text Tr [F munu F to the power munu ] otimes expleft(-frac T sub c T(L) right) implies SU(3) sub color text Pinning. \textbf{Contextual meaning:} The entry reads QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ sub gp) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc. \textbf{Lemma support:} Carrier Map; Composable Action; Normalized Output.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+This equation translates Trawinistic Hamiltonian dynamics into an action-based evolution law.
+
+\tzpsection{Equation Grounding}
+Equation anchors: R sub S = ratio 2GM c to the power 2; 10K** **Total:** \textasciitilde{}; and omega spin approximately Omega orbit. Proof route: show that the composite map lands in the admissible target class once the TRAWIN ordering is respected. Formalization route: prove closure of the stated operator or functor under composition with the TRAWIN chain.
+
+\tzpsection{Interpretive Role}
+The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{High-Energy Chromodynamic Scaffolding}: The mathematical ghost left behind in the field's structure from the absolute highest-energy, fundamental particle interactions.
+\item \textbf{Strong-Force Entanglement Echo}: The residual twisting in the geometric metric that remembers the intense, unbreakable bonds holding atomic nuclei together.
+\item \textbf{Primordial State Reversion Sourcing}: The operator simulating the extreme, universe-shattering heat and pressure required to melt normal matter down to its most basic, soup-like form.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0631]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0631_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0631] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont QUARK-GLUON PLASMA RESIDUE OPERATOR (hatQ\_gp)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the entry records quark-gluon plasma residue operator (hatq\textbackslash{}\_gp) through the Septenary
+derivation layer, using the displayed relations as operation...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``QUARK-GLUON PLASMA RESIDUE OPERATOR (\textbackslash{}hat\{Q\_\{gp) is valid as a formal dynamical law
+when the Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0631_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

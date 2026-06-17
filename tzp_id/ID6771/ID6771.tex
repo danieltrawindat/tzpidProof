@@ -1,0 +1,17 @@
+\section*{ID6771: How to Use This in TZP Modeling and Experiments You Can Run: T\_m}
+\paragraph{Metadata.}
+PiID: 2343955449597 | RTEID: RTE:P26293.2967:T5.6242 | UUID: 3408ddc9-150a-5c66-842d-2aacd8f9599b
+
+\paragraph{Canonical Statement.}
+\#\# How to use this in TZP modeling and experiments you can run 1. **Extract angular spectrum from a real image** - Use the same annulus averaging code (I used annulus mean) to extract \textbackslash{}(A(\textbackslash{}phi)\textbackslash{}), then FFT to get \textbackslash{}(A\_m\textbackslash{}). Compare peaks to expected values for aperture geometry (e.g., 6 vanes → m=12). 2. **Recover intrinsic spherical-harmonic content (deconvolution)** - In spectral space, the observed coefficients equal the intrinsic coefficients times the PSF transfer at each m: \textbackslash{}(a\textasciicircum{}\{\textbackslash{}rm obs\}\_m = T\_m a\textasciicircum{}\{\textbackslash{}rm true\}\_m\textbackslash{}). Estimate \textbackslash{}(T\_m\textbackslash{}) from your aperture/PSF model and invert (regularize) to recover \textbackslash{}(a\textasciicircum{}\{\textbackslash{}rm true\}\_m\textbackslash{}). That’s the recipe I sketched earlier. 3. **Build TZP maps filtered by instrument** - Generate synthetic TZP spherical-harmonic maps (superpositions of Y\_l\textasciicircum{}m), compute their equatorial angular spectra, multiply by PSF spectra, and compare to the real photos. Tune TZP coefficients to best match — that’s a parameter estimation problem. 4. **Measure branching metric** - Compute \textbackslash{}(M = |A\_\{m\textasciicircum{}*\}|\textasciicircum{}2/\textbackslash{}sum\_\{m\textbackslash{}ne m\textasciicircum{}*\}|A\_m|\textasciicircum{}2\textbackslash{}). Low M indicates branching/mode-mixing (fractal/IFS); high M indicates a clean aperture spike. Use M as a TZP “bifurcation index.”
+
+\paragraph{Canonical Equation.}
+\[
+T_m
+\]
+
+\paragraph{Dictionary.}
+Relation: T\_m
+
+\paragraph{Encyclopedia.}
+How to Use This in TZP Modeling and Experiments You Can Run: T\_m is a symbolic expression, written T\_m. It introduces a symbol or relation used elsewhere in the framework. It is built from T\_m. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

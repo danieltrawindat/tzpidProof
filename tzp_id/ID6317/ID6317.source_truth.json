@@ -1,0 +1,293 @@
+{
+  "schema": {
+    "name": "TZPID source truth generated from canonical equation master",
+    "version": "0.3.0",
+    "generated_at": "2026-06-06T04:32:40Z",
+    "non_destructive": true,
+    "basis": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+    "basis_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "identity": {
+    "tzpid": "ID6317",
+    "uuid": "40a4baff-92a2-5ef4-8891-234f3b963356",
+    "registry_id": "registry_id_6317",
+    "canonical_title": "Quick Summary of the Model I Used: Ell: Ell (1)",
+    "previous_or_source_id": "ID6317",
+    "source_files": {
+      "master_csv": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_truth": "D:/TZPID/TZPID/ID6317/ID6317.source_truth.json",
+      "planned_tex": "D:/TZPID/TZPID/ID6317/ID6317.TEX",
+      "planned_json": "D:/TZPID/TZPID/ID6317/ID6317.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID6317/ID6317.id_system.json"
+    }
+  },
+  "classification": {
+    "source_family": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export",
+    "category": "canonical-equation-master-intake",
+    "formation_method": "Symbolic expression"
+  },
+  "theory": {
+    "canonical_statement": "### Quick summary of the model I used - Two fields in 2D polar coordinates \\((r,\\theta)\\): \\(\\psi_1(r,\\theta)\\propto r^{\\ell} e^{i\\ell\\theta} e^{-r^2/(2\\sigma^2)}\\) (your vortex / toroidal field, winding exponent \\(\\ell\\)). \\(\\psi_2(r,\\theta)\\propto e^{-r^2/(2\\sigma^2)}\\) (a symmetric probe field). - Soft delta approximated by a normalized 2-D Gaussian: \\(\\delta_\\epsilon(r)=(2\\pi\\epsilon^2)^{-1}e^{-r^2/(2\\epsilon^2)}\\). - Overlap integral computed numerically: \\[ I(\\ell)=\\int_0^{2\\pi}\\!\\!\\int_0^\\infty \\overline{\\psi_1}\\,\\delta_\\epsilon(r)\\,\\psi_2 \\; r\\,dr\\,d\\theta . \\] - Important physics note used analytically: with a perfectly angularly symmetric \\(\\psi_2\\) the angular integral \\(\\int_0^{2\\pi} e^{-i\\ell\\theta}d\\theta\\) vanishes for any nonzero \\(\\ell\\). That means a perfectly symmetric probe (and true δ at the origin) only samples the \\(\\ell=0\\) (non-vortex) component — vortex modes with nonzero integer or fractional charge have a node at \\(r=0\\) and give zero direct overlap. - To make the problem physically interesting (and get nonzero overlaps for \\(\\ell\\ne0\\)), I introduced a small angular asymmetry in \\(\\psi_2\\): \\(\\psi_2\\to \\psi_2(1+\\alpha\\cos\\theta)\\) with \\(\\alpha=0.15\\). This models e.g. imperfect alignment, a probe with a slight dipole moment, or a measurement device that breaks perfect rotational symmetry — realistic in experiments.",
+    "technical_interpretation": "Quick Summary of the Model I Used: Ell: Ell (1) is a symbolic expression, written ℓ. It introduces a symbol or relation used elsewhere in the framework. It is built from ell. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\ell"
+    ],
+    "source_section_latex": "\\[\n\\ell\n\\]"
+  },
+  "equation_progression": [
+    {
+      "slot": 1,
+      "latex": "\\ell",
+      "source": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_path": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852",
+      "status": "canonical_master_source"
+    }
+  ],
+  "formation": {
+    "method": "Symbolic expression",
+    "inputs": "ell",
+    "note": "Introduced in the derivation where your vortex / toroidal field, winding exponent"
+  },
+  "source_evidence": {
+    "dictionary": "Quick Summary of the Model I Used: Ell: Ell (1): a symbolic expression expressing ℓ in terms of ell.",
+    "encyclopedia": "Quick Summary of the Model I Used: Ell: Ell (1) is a symbolic expression, written ℓ. It introduces a symbol or relation used elsewhere in the framework. It is built from ell. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+    "master_csv_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "symbol_index": {
+    "reviewed_source_symbols": [],
+    "status": "needs_symbol_extraction_from_canonical_master_entry"
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "Quick Summary of the Model I Used: Ell: Ell (1): a symbolic expression expressing ℓ in terms of ell.",
+      "contextual_meaning": "Quick Summary of the Model I Used: Ell: Ell (1) is a symbolic expression, written ℓ. It introduces a symbol or relation used elsewhere in the framework. It is built from ell. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "formal_statement_latex": "\\ell",
+      "technical_interpretation": "Quick Summary of the Model I Used: Ell: Ell (1) is a symbolic expression, written ℓ. It introduces a symbol or relation used elsewhere in the framework. It is built from ell. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "equation_grounding": "Equation grounding source: TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv.",
+      "tzp_thesaurus": "Quick Summary of the Model I Used: Ell: Ell (1)"
+    },
+    "equation_support_summary": "Generated from the canonical equation master and awaiting source-context expansion."
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_source_truth_formalization"
+    },
+    "lean": {
+      "status": "pending_source_truth_formalization"
+    },
+    "rocq": {
+      "status": "pending_source_truth_formalization"
+    },
+    "wolfram": {
+      "status": "wolfram_form_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "note": "Carrier form preserves source LaTeX as Wolfram-readable data; semantic proof remains domain-specific.",
+      "parse_verified_at_utc": "2026-06-10T21:39:33Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260610_213826\\source_truth_wolfram_parse_results.json"
+    }
+  },
+  "promotion_status": {
+    "status": "source_truth_seeded_from_canonical_master",
+    "needs_review": true
+  },
+  "proof_support": {
+    "status": "pending",
+    "note": "Folder and source-truth JSON were created for registry coverage; deeper proof obligations should be generated downstream."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:32:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID6317/ID6317.source_truth.json",
+    "entry_id": "ID6317",
+    "registry_id": "registry_id_6317",
+    "canonical_title": "Quick Summary of the Model I Used: Ell: Ell (1)",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID6317/ID6317.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "fc0f773d-c518-5b0d-99dd-303f090e7d86",
+    "RTEID": "RTE:P24530.3139:T2.7193",
+    "poloidal_theta_rad": "24530.3139",
+    "toroidal_phi_rad": "2.7193",
+    "rteid_source": "computed",
+    "PiID": "2313017114448",
+    "TZPi": "7",
+    "PiPE_position": "6324",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\ell",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\ell",
+          "normalized_latex": "\\ell",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID6317\", 1, \"\\\\ell\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID6317 minted source-truth Wolfram carrier model *)\nClearAll[K6317, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq6317$1 = HoldForm[TZPIDCanonicalLatex[\"ID6317\", 1, \"\\\\ell\"]];\nK6317 = HoldForm[{eq6317$1}];\nTZPIDCanonicalCarrier[\"ID6317\"] = <|\"id\" -> \"ID6317\", \"title\" -> \"Quick Summary of the Model I Used: Ell: Ell (1)\", \"blocks\" -> K6317|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\ell",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "ell"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID6317\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quick Summary of the Model I Used: Ell: Ell (1)\", \"latex\" -> \"\\\\ell\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"ell\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

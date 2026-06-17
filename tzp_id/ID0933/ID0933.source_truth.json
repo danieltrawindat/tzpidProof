@@ -1,0 +1,358 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:49:40.096886+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0933",
+    "uuid": "d953c1bb-6b4c-5e8e-8424-ed09a26a7cea",
+    "registry_id": "registry_id_0933",
+    "canonical_title": "THE UPDATE OPERATOR REFRESH RATE",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0933/ID0933.TEX",
+      "json": "D:/TZPID/TZPID/ID0933/ID0933.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0933/ID0933.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The update operator refresh rate fixes the discrete cadence for applying a flux correction to the tracked state. The refresh interval must resolve the fastest retained mode so that each update remains composable with the surrounding TRAWIN transfer chain.",
+    "technical_interpretation": "7. Update: n\\_flux = n\\_flux + Deltan"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "n_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k}",
+      "\\Delta t_{\\mathrm{refresh}}\\leq \\frac{1}{2f_{\\max}}",
+      "\\tau_{\\mathrm{update}}\\approx 2.2\\,\\mu\\mathrm{s}"
+    ],
+    "source_section_latex": "\\[\nn_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k}\n\\]\n\\[\n\\Delta t_{\\mathrm{refresh}}\\leq \\frac{1}{2f_{\\max}}\n\\]\n\\[\n\\tau_{\\mathrm{update}}\\approx 2.2\\,\\mu\\mathrm{s}\n\\]"
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0933}$",
+        "description": "canonical registry object for entry ID 0933."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0933}$",
+        "name": "canonical registry object for entry ID 0933.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\leq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\max$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\tau_{update}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\approx$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mus$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "THE UPDATE OPERATOR REFRESH RATE\nCanonical operator translation\neq0933_1 = HoldForm[nflux^(k+1)==nflux^(k)+Delta nflux^(k)];\neq0933_2 = HoldForm[Delta trefresh <= q (1)(2f)];\neq0933_3 = HoldForm[~== 2.2 mus];\n\nTRAWIN closure composition\nTRAWINClosure0933[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0933 := HoldForm[{eq0933_1, eq0933_2, eq0933_3}];\nResult0933 := TRAWINClosure0933[K0933];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "n_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k}",
+          "normalized_latex": "nFlux^(k+1)==nFlux^(k)+Delta*nFlux^(k)",
+          "wolfram_input": "nFlux^(k+1)==nFlux^(k)+Delta*nFlux^(k)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[nFlux^(k + 1) == nFlux^k + Delta*nFlux^k]",
+          "texform_roundtrip": "\\text{nFlux}^{k+1}=\\text{Delta} \\text{nFlux}^k+\\text{nFlux}^k",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta t_{\\mathrm{refresh}}\\leq \\frac{1}{2f_{\\max}}",
+          "normalized_latex": "Delta*tRefresh<=((1)/(2*fMax))",
+          "wolfram_input": "Delta*tRefresh<=((1)/(2*fMax))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Delta*tRefresh <= 1/(2*fMax)]",
+          "texform_roundtrip": "\\text{Delta} \\text{tRefresh}\\leq \\frac{1}{2 \\text{fMax}}",
+          "messages": []
+        },
+        {
+          "latex": "\\tau_{\\mathrm{update}}\\approx 2.2\\,\\mu\\mathrm{s}",
+          "normalized_latex": "tauUpdate==2.2*mus",
+          "wolfram_input": "tauUpdate==2.2*mus",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[tauUpdate == 2.2*mus]",
+          "texform_roundtrip": "\\text{tauUpdate}=2.2 \\text{mus}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0933 generated source-truth Wolfram model *)\nClearAll[K0933, TRAWINClosure0933];\neq0933$1 = HoldForm[nFlux^(k + 1) == nFlux^k + Delta*nFlux^k];\neq0933$2 = HoldForm[Delta*tRefresh <= 1/(2*fMax)];\neq0933$3 = HoldForm[tauUpdate == 2.2*mus];\nK0933 = HoldForm[{eq0933$1, eq0933$2, eq0933$3}];\nTRAWINClosure0933[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0933 = TRAWINClosure0933[K0933];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\nn_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k}\n\\]\n\\[\n\\Delta t_{\\mathrm{refresh}}\\leq \\frac{1}{2f_{\\max}}\n\\]\n\\[\n\\tau_{\\mathrm{update}}\\approx 2.2\\,\\mu\\mathrm{s}\n\\]\n\n\\paragraph{Primary Derivation.}\nThe identity \\( n_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k} \\) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.\n\\paragraph{Equation Type.}\nThis statement is classified as a operator relation.\n\n\\paragraph{Interpretation.}\nIt pertains to the fields or functions just described. From the TRAWIN perspective, the equation functions as the operator-level carrier for the entry’s information content. Within the CHL view, the derivation provides an explicit term connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0933/ID0933.source_truth.json",
+    "entry_id": "ID0933",
+    "registry_id": "registry_id_0933",
+    "canonical_title": "THE UPDATE OPERATOR REFRESH RATE",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0933/ID0933.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "d953c1bb-6b4c-5e8e-8424-ed09a26a7cea",
+    "RTEID": "RTE:P3568.6811:T5.8801",
+    "poloidal_theta_rad": "3568.6811",
+    "toroidal_phi_rad": "5.8801",
+    "rteid_source": "manifest",
+    "PiID": "3537875937519",
+    "TZPi": "5",
+    "PiPE_position": "940",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "n_{\\mathrm{flux}}^{k+1}=n_{\\mathrm{flux}}^{k}+\\Delta n_{\\mathrm{flux}}^{k}",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "Delta",
+          "n",
+          "k"
+        ],
+        "candidate_wolfram_input": "HoldForm[n$flux^(k+1)==n$flux^(k)+Delta n$flux^(k)]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0933\", 1, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"THE UPDATE OPERATOR REFRESH RATE\", \"latex\" -> \"n_{\\\\mathrm{flux}}^{k+1}=n_{\\\\mathrm{flux}}^{k}+\\\\Delta n_{\\\\mathrm{flux}}^{k}\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"Delta\", \"n\", \"k\"}, \"candidateWolframInput\" -> \"HoldForm[n$flux^(k+1)==n$flux^(k)+Delta n$flux^(k)]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Delta t_{\\mathrm{refresh}}\\leq \\frac{1}{2f_{\\max}}",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "Delta",
+          "max",
+          "t",
+          "f"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0933\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"THE UPDATE OPERATOR REFRESH RATE\", \"latex\" -> \"\\\\Delta t_{\\\\mathrm{refresh}}\\\\leq \\\\frac{1}{2f_{\\\\max}}\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"Delta\", \"max\", \"t\", \"f\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\tau_{\\mathrm{update}}\\approx 2.2\\,\\mu\\mathrm{s}",
+        "numeric_atoms": [
+          "2.2"
+        ],
+        "symbolic_tokens": [
+          "tau",
+          "mu"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0933\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"THE UPDATE OPERATOR REFRESH RATE\", \"latex\" -> \"\\\\tau_{\\\\mathrm{update}}\\\\approx 2.2\\\\,\\\\mu\\\\mathrm{s}\", \"numericAtoms\" -> {2.2}, \"symbolicTokens\" -> {\"tau\", \"mu\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

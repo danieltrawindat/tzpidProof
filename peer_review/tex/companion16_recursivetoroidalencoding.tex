@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={Recursive Toroidal Encoding of the DAANSsphere},pdfsubject={TZPID Companion Spine Series, Paper C16},pdfkeywords={TZPID, RecursiveToroidalEncoding}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Recursive Toroidal Encoding of the DAANSsphere\\[0.6em]
+\large TZPID Companion Spine Series, Paper C16 of XXVII\\
+\normalsize Every circle a torus: the fiber-bundle reading of the 153600-point lattice}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion formalizes a geometric reinterpretation of the DAANSsphere: each apparent circular element of the discretized spherical lattice is the projection of a complete toroidal manifold, giving the system a recursive fiber-bundle structure.
+The source manuscript's stated thesis: ``This paper formalizes a geometric interpretation of the Dimensionally Adjustable Azimuthal Navigational System Sphere (DAANSsphere), in which each apparent circular element on the discretized spherical lattice is itself a projection of a complete toroidal manifold. Using the canonical 153,600-point uniform spherical sampling of the DAANSsphere, we show that the system admits a recursive fiber-bundle structure: a sing\,\ldots'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID0358, ID0472, ID9692, ID9688, ID0360, ID9638, ID0362) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper deepens the enclosure's geometry from a sphere with points to a tower of tori---the structure Paper VIII's unified charge is assembled on.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Look closely at any circle on the DAANSsphere, this companion says, and you will find a torus. The manuscript formalizes a geometric reinterpretation of the Dimensionally Adjustable Azimuthal Navigational System Sphere in which each apparent circular element of the canonical $153600$-point lattice (ID0245) is itself the projection of a complete toroidal manifold. The discretized sphere is thereby promoted to a recursive fiber-bundle structure: circles carry tori, whose own circular elements carry tori in turn---a self-similar tower of fibrations.
+
+The reinterpretation is less exotic than it sounds and more consequential than it looks. Less exotic: the program's geometry has been fibered from the start---the Hopf map $S^3 \to S^2$ with circle fibers carried Paper III's comma, and any two of its fibers link once. The recursive toroidal encoding extends that one fibration into a nested family adapted to the lattice. More consequential: the torus $T^2$ is exactly where core Paper VIII assembles the unified charge $\Omega_{\mathrm{top}} = C_1(T^2) + \pi w(T^2) + \log\Pi_\pi$. A lattice whose every circle secretly carries a torus is a lattice prepared, at every site, to host Chern numbers, windings, and the unified obligation---turning the enclosure from a place where topological charge can live into a structure that manufactures sites for it recursively.
+
+The spine below anchors the encoding's registry chain. Refinement targets: the explicit bundle atlas (transition functions between neighbouring toroidal charts), the depth-dependence of the recursion, and the census of how charge assembled at depth $n$ projects to depth $n-1$.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID0358} \to \text{ID0472} \to \text{ID9692} \to \text{ID9688} \\
+\to \text{ID0360} \to \text{ID9638} \to \text{ID0362}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID0358: Recursive Toroidal Fiber Bundle (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{omega = constant \textbackslash{}pm 0 || Stable rotation: omega = constant \textbackslash{}pm 0}}\par\medskip
+\noindent\textit{Dictionary definition.} This entry develops uniform base manifold inside the field theory and action principles arc of the directory.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Geometric Carrier is localized within the field theory and action principles arc of the directory. R: Compatibility Law preserves the operative relation that uniform base manifold requires. A: Topological Closure fixes the admissible closure condi- tion for the entry. W: Uniform Base Manifold is rendered as a reusable operator-level statement. I: The informational content of uniform base manifold is retained rather than flattened. N: Uniform Base Manifold closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID0358\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID0472: 153,600-Dimensional Trajectory Encoding (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle S = \textbackslash{}cdots \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 472 defines the mapping of geometric trajectories within the 153,600 node lattice to human memory recall patterns.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Canonical Definition is localized within the manifold and metric dynamics arc of the directory. R: Geometric Constraint preserves the operative relation that meditation convergence fixed-points requires. A: Closure Relation fixes the admissible closure condition for the entry. W: MEDITATION CONVERGENCE FIXED-POINTS is rendered as a reusable operator-level statement. I: The informational content of meditation convergence fixed-points is retained rather than flattened. N: MEDITATION CONVERGENCE FIXED-POINTS closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID0472\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9692: DAANSsphere as a Uniform Base Manifold: A:(i,k)mapsto p\_i,kinR\textasciicircum{}3 (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}mathcal\{A\}:(i,k)\textbackslash{}mapsto \textbackslash{}mathbf\{p\}\_\{i,k\}\textbackslash{}in\textbackslash{}mathbb\{R\}\textasciicircum{}3,}}\par\medskip
+\noindent\textit{Dictionary definition.} This construction defines a spherical base manifold equipped with infinite radial fibers.\par\medskip
+\noindent\textit{Encyclopedia reading.} DAANSsphere as a Uniform Base Manifold: A:(i,k)mapsto p\_i,kinR\textasciicircum{}3 is a symbolic expression, written A:(i,k)mapsto p\_i,kinR\textasciicircum{}3. It introduces a symbol or relation used elsewhere in the framework. It is built from A, k, p. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID9692\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID9688: Toroidal Manifold as the Generating Structure: L\_i (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{L\_i = \textbackslash{}Pi\_i(\textbackslash{}mathcal\{T\}),}}\par\medskip
+\noindent\textit{Dictionary definition.} Thus, the DAANSsphere does not represent a collection of loops, but a single torus viewed repeatedly from 153,600 distinct orientations.\par\medskip
+\noindent\textit{Encyclopedia reading.} Toroidal Manifold as the Generating Structure: L\_i is an algebraic definition, written L\_i = Pi\_i(T). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from T, defining L\_i. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID9688\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID0360: Torus as Generating Manifold (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{T\textasciicircum{}\{2\}=S\textasciicircum{}\{1\}\textbackslash{}times S\textasciicircum{}\{1\} || \textbackslash{}pi\_\{1\}(T\textasciicircum{}\{2\})\textbackslash{}cong\textbackslash{}mathbb\{Z\}\textbackslash{}oplus\textbackslash{}mathbb\{Z\}}}\par\medskip
+\noindent\textit{Dictionary definition.} This entry develops holographic redundancy principle inside the field theory and action principles arc of the directory.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Variation Law is localized within the field theory and action principles arc of the directory. R: Support Relation preserves the operative relation that holographic redundancy principle requires. A: Closure Relation fixes the admissible closure condition for the entry. W: Holographic Redundancy Principle is rendered as a reusable operator-level statement. I: The informational content of holographic redundancy principle is retained rather than flattened. N: Holographic Redundancy Principle closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID0360\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9638: Definition of B (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}mathbf\{B\} = \textbackslash{}mathbf\{U\}\textbackslash{}mathbf\{\textbackslash{}Sigma\}\textbackslash{}mathbf\{V\}\textasciicircum{}\textbackslash{}top}}\par\medskip
+\noindent\textit{Dictionary definition.} Definition of B --- B = USigmaV\textasciicircum{}->p\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of B is an algebraic definition, written B = USigmaV\textasciicircum{}->p. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from Sigma, U, V, defining B. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID9638\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID0362: Scale Invariance on the DAANSsphere (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}mathbb\{S\}\_\{\textbackslash{}mathrm\{DAAN\}\}(\textbackslash{}lambda r)\textbackslash{}cong\textbackslash{}mathbb\{S\}\_\{\textbackslash{}mathrm\{DAAN\}\}(r) || \textbackslash{}mathcal\{F\}(\textbackslash{}lambda x)=\textbackslash{}lambda\textasciicircum{}\{\textbackslash{}Delta\}\textbackslash{}mathcal\{F\}(x)}}\par\medskip
+\noindent\textit{Dictionary definition.} This entry develops distributed memory condition inside the field theory and action principles arc of the directory.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Variation Law is localized within the field theory and action principles arc of the directory. R: Support Relation preserves the operative relation that distributed memory condition requires. A: Closure Relation fixes the admissible closure condition for the entry. W: Distributed Memory Condition is rendered as a reusable operator-level statement. I: The informational content of distributed memory condi- tion is retained rather than flattened. N: Distributed Memory Condition closes as a distinct nor- malized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{RecursiveToroidalEnc\_ID0362\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the RecursiveToroidalEncoding spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID0358 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID0358\_identity} \\
+ID0472 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID0472\_identity} \\
+ID9692 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID9692\_structure} \\
+ID9688 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID9688\_identity} \\
+ID0360 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID0360\_identity} \\
+ID9638 & Core\_Definition & \texttt{RecursiveToroidalEnc\_ID9638\_identity} \\
+ID0362 & Derived\_Theorem\_Obligation & \texttt{RecursiveToroidalEnc\_ID0362\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 1 appear in core-series spines and 0 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID0358 & --- & --- \\
+ID0472 & --- & --- \\
+ID9692 & --- & --- \\
+ID9688 & --- & --- \\
+ID0360 & --- & --- \\
+ID9638 & --- & --- \\
+ID0362 & I (Nested Hyperspherical Enclosures) & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This companion is the geometric deepening that Paper VIII silently assumes: the unified charge is assembled on $T^2$, and the recursive encoding supplies $T^2$s at every lattice site and depth. It also extends Paper III's fibration logic (one Hopf map, one comma) into a tower, and gives the gyromagnetic toroidal constraints (C18, Paper IV) their native habitat: poloidal/toroidal linkage is meaningful at every recursion depth.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_RecursiveToroidalEncoding.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{RecursiveToroidalEncoding\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID0358} (\texttt{RecursiveToroidalEnc\_ID0358\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0472} (\texttt{RecursiveToroidalEnc\_ID0472\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9692} (\texttt{RecursiveToroidalEnc\_ID9692\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9688} (\texttt{RecursiveToroidalEnc\_ID9688\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0360} (\texttt{RecursiveToroidalEnc\_ID0360\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9638} (\texttt{RecursiveToroidalEnc\_ID9638\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0362} (\texttt{RecursiveToroidalEnc\_ID0362\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. The reinterpretation is mathematics and stands on the exhibited bundle structure; its physical surplus---that charge censuses at successive depths are related by the stated projections---becomes falsifiable once the depth census is computed.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+Recursive toroidal encoding rebuilds the enclosure's lattice as a tower of fibrations: circles all the way down, each carrying the torus on which the program's unified charge is assembled. The refinement pass owes the atlas and the depth census; the reward is a geometry in which Paper VIII's unification is not imposed on the enclosure but read off from it at every scale.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: RecursiveToroidalEncoding}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{RecursiveToroidalEncoding}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

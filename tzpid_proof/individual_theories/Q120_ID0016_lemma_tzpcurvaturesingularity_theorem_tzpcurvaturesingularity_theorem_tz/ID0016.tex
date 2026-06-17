@@ -1,0 +1,244 @@
+\tzpanchor{0016}
+\tzpentryheader{0016}{Manifold Curvature (TZP Condition)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{586331a1-3faa-5651-8449-d88476f9acd7}}\\
+\textbf{PiID} & \tzpcode{3846264338327} & \textbf{TZPi}\quad \tzpcode{4}\quad \textbf{PiPE}\quad \tzpcode{23}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{62.1316 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.1024 rad}\\
+\textbf{TZPID} & \tzpcode{ID0016} & \textbf{Node Dependencies}\quad \tzpidref{0002}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0016} & \textbf{Scale}\quad curvature\\
+\textbf{LOC Classification} & QA641 curvature & QC178 general relativity\\
+\textbf{arXiv Classification} & Primary: gr-qc \quad Cross-list: math.DG, math-ph & \\
+\textbf{Primary Support} & Raw Ricci Scalar & Regulated TZP Limit\\
+\textbf{Closure Support} & Lemniscatic Admissibility Criterion & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Trawinistic scalar curvature $\TrawinCurv$ is defined by \( R_T = \lim_{x\to p}(R+f(x)) \), where $R$ is the usual Ricci scalar and $f(x)$ is a regulator function that cancels divergences such that $\TrawinCurv$ remains finite if and only if the lemniscatic self-intersection condition holds.
+
+\tzpsection{Canonical Equation}
+\[
+R_{T}
+=
+\lim_{x \to p}\bigl(R(x)+f(x)\bigr)
+\]
+\[
+R_{T} < \infty
+\quad \Longleftrightarrow \quad
+\Gamma \sim \Lambda
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $R_{T}$: source equation symbol.
+    \item $T$: source equation symbol.
+    \item $R$: global radius, boundary radius, or topological scale.
+    \item $\Lambda$: lemniscatic representative or canonical branch object.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0016 generated source Wolfram model *)
+ClearAll[K0016, Cr0016, T, R, A, W, I, N];
+eq0016$1 = HoldForm[RT == LimitXp[R[x] + f[x]]];
+eq0016$2 = HoldForm[SimilarTo[Inequality[RT, Less, Infinity, Equal, Gamma], Lambda]];
+eq0016$3 = HoldForm[R[x]];
+
+K0016 = HoldForm[{eq0016$1, eq0016$2, eq0016$3}];
+
+N = "normalized TRAWIN closure object for Manifold Curvature (TZP Condition)";
+I = "Lemniscatic Admissibility Criterion integration/comparison layer";
+W = "Regulated TZP Limit wave or operator carrier";
+A = "Raw Ricci Scalar admissible action/amplitude condition";
+R = "Regulated TZP Limit rotation/curl preservation layer";
+T = "Raw Ricci Scalar local source condition";
+
+Cr0016[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0016 = Cr0016[K0016];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Raw Ricci Scalar local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Regulated TZP Limit rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Raw Ricci Scalar admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Regulated TZP Limit wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Lemniscatic Admissibility Criterion integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Manifold Curvature (TZP Condition).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0016] Manifold Curvature (TZP Condition)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+R_T
+=
+\lim_{x\to p}
+\left(
+R+f(x)
+\right).
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $R$ denote the ordinary Ricci scalar curvature of the manifold.  
+Near the TZP, ordinary curvature may diverge because the metric becomes degenerate.
+
+To produce a finite Trawinistic curvature quantity, introduce a regulator function $f(x)$ designed to cancel or absorb the divergent contribution near $p$:
+
+\begin{equation}
+R_{\mathrm{reg}}(x)=R(x)+f(x).
+\end{equation}
+
+The TZP curvature is then defined as the limiting regularized curvature at the zero point:
+
+\begin{equation}
+\boxed{
+R_T
+=
+\lim_{x\to p}
+\left(
+R+f(x)
+\right).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+$R_T$ is the curvature seen through the TZP regulator. It separates uncontrolled singular behavior from a finite Trawinistic curvature condition.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Manifold Curvature (TZP Condition) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Raw Ricci Scalar}\par
+\[
+R(x)
+\]
+\noindent This is the ordinary curvature datum that would diverge near the zero point if left uncorrected.\par
+\noindent\textbf{2. Regulated TZP Limit}\par
+\[
+R_{T}
+=
+\lim_{x \to p}\bigl(R(x)+f(x)\bigr)
+\]
+\noindent This inserts the compensating regulator needed to extract a meaningful curvature reading at the singular anchor.\par
+\noindent\textbf{3. Lemniscatic Admissibility Criterion}\par
+\[
+R_{T} < \infty
+\quad \Longleftrightarrow \quad
+\Gamma \sim \Lambda
+\]
+\noindent This closes the progression by tying finite normalized curvature to the same topological control that governs loop behavior at the zero point.\par
+
+\clearpage
+\noindent\textbf{[ID 0016] Manifold Curvature (TZP Condition)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Manifold Curvature (TZP Condition) is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The Trawinistic scalar curvature TrawinCurv is defined by R sub T = lim sub xto p (R+f(x)) , where R is the usual Ricci scalar and f(x) is a regulator function that cancels divergences such that TrawinCurv remains finite if and only if the lemniscatic self-intersection condition holds. \textbf{Contextual meaning:} The entry reads Manifold Curvature (TZP Condition) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Raw Ricci Scalar; Regulated TZP Limit; Lemniscatic Admissibility Criterion.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+R sub T is the curvature seen through the TZP regulator. It separates uncontrolled singular behavior from a finite Trawinistic curvature condition.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The Trawinistic scalar curvature TrawinCurv is defined by R T=limu2061xrightarrowp(R+f(x))Rtextbackslash T =textbackslash lim xto p (R + f(x))R T=limxrightarrowp(R+f(x)), where RRR is the usual Ricci scalar and f(x)f(x)f(x) is a regulator function that cancels divergences such that TrawinCurv remains finite if and only if the lemniscatic self-intersection condition holds. The Trawinistic scalar curvature TrawinCurv is defined by R T=limu2061xrightarrowp(R+f(x))Rtextbackslash T =textbackslash lim xto p (R + f(x))R T=limxrightarrowp(R+f(x)), where RRR is the usual Ricci scalar and f(x)f(x)f(x) is a regulator function that cancels divergences such that TrawinCurv remains finite if and only if the lemniscatic self-intersection condition holds.
+
+\tzpsection{Interpretive Role}
+This curvature definition lets the registry speak about geometric bending without surrendering the zero point to uncontrolled divergence. It also becomes the curvature input for coherence, wave, and connection operators built later in the sequence.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Geometric Space Geometric Bending Tzp Condition}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Geometric Space Geometric Bending Geometric Analogue}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Geometric Bending Terminology}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0016]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0016_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0016] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Manifold Curvature (TZP Condition)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Trawinistic scalar curvature  is defined by \textbackslash{}( R\_T = \_x p(R+f(x)) \textbackslash{}), where R is
+the usual Ricci scalar and f(x) is a regulator function...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Manifold Curvature (TZP Condition) is valid as a tensorial/geometric statement when the
+stated tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0016_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

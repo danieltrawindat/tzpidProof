@@ -1,0 +1,92 @@
+[
+	{
+		"id":"ID10146",
+		"check":"config_state_dimension",
+		"status":"pass",
+		"engine":"WolframScript",
+		"state_dimension":"12",
+		"notes":"Vimana state vector has four R3 components: r_cm, omega_gyro, mu_constrained, L_mech."
+	},
+	{
+		"id":"ID0037",
+		"check":"torque_orthogonality",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"For torque mu x B, torque is perpendicular to the magnetic moment direction."
+	},
+	{
+		"id":"ID0087",
+		"check":"angular_velocity_integral",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Constant torque history integrates to omega(t)=omega0+(tau\/I)t."
+	},
+	{
+		"id":"ID0038",
+		"check":"elsasser_relaxation",
+		"status":"pass",
+		"engine":"WolframScript",
+		"solution":"1 + (-1 + lambda0)\/E^(k*t)",
+		"limit":"1",
+		"notes":"Normal form dot Lambda=-k(Lambda-1) relaxes to Lambda=1 for k>0."
+	},
+	{
+		"id":"ID0039",
+		"check":"equipartition_identity",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Magnetic and rotational energy densities match when B=sqrt(mu0 rho) Omega r."
+	},
+	{
+		"id":"ID0044",
+		"check":"gyromagnetic_scaling",
+		"status":"pass",
+		"engine":"WolframScript",
+		"dimensionless_ratio":"k",
+		"notes":"If mu=k M R^2 Omega then mu\/(M R^2 Omega)=k."
+	},
+	{
+		"id":"ID10131",
+		"check":"gyromagnetic_ratio",
+		"status":"pass",
+		"engine":"WolframScript",
+		"ratio":"gamma",
+		"notes":"The celestial gyromagnetic ratio gamma=L\/mu is recovered by substitution."
+	},
+	{
+		"id":"ID9758",
+		"check":"helicity_constant",
+		"status":"pass",
+		"engine":"WolframScript",
+		"dHdt":"0",
+		"notes":"Ideal topological-protection obligation: constant helicity has zero time derivative."
+	},
+	{
+		"id":"ID10145",
+		"check":"rotating_metric_zero_limit",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Rotating-frame correction controlled by (omega R\/c)^2 vanishes at zero rim speed."
+	},
+	{
+		"id":"ID10272",
+		"check":"gravitomagnetic_zero_limit",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual":"0",
+		"notes":"Weak gravitomagnetic surrogate term vanishes when omega R is zero."
+	},
+	{
+		"id":"source:Our_Gyromagnetic_Universe",
+		"check":"magnetoacoustic_response_zero",
+		"status":"pass",
+		"engine":"WolframScript",
+		"response_abs_squared":"alpha^2\/(kappa^2 + w^2)",
+		"at_zero":"alpha^2\/kappa^2",
+		"notes":"The response deltaLambda=alpha\/(kappa+i omega) has zero-frequency magnitude squared alpha^2\/kappa^2."
+	}
+]

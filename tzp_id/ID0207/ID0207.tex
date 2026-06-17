@@ -1,0 +1,219 @@
+\tzpanchor{0207}
+\tzpentryheader{0207}{Helicity Transfer Constraint}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{bcec169a-98f5-5847-aeb1-08b61169c38e}}\\
+\textbf{PiID} & \tzpcode{9756659334461} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{214}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{803.8270 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.3245 rad}\\
+\textbf{TZPID} & \tzpcode{ID0207} & \textbf{Node Dependencies}\quad \tzpidref{0206}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0207} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Total Helicity Accounting & Conserved Transfer\\
+\textbf{Closure Support} &  & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+In the coupled phonon--magnon system, the total helicity H\_total = H\_acoustic + H\_magnetic is conserved.
+
+\tzpsection{Canonical Equation}
+\[
+H_{\mathrm{total}} = H_{\mathrm{acoustic}} + H_{\mathrm{magnetic}}
+\]
+\[
+\partial_t H_{\mathrm{total}} = 0
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $H_{\mathrm{total}}$: total helicity conserved in the coupled phonon--magnon system.
+    \item $H_{\mathrm{acoustic}}$: acoustic-channel helicity contribution.
+    \item $H_{\mathrm{magnetic}}$: magnetic-channel helicity contribution.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0207 generated source Wolfram model *)
+ClearAll[K0207, Cr0207, T, R, A, W, I, N];
+eq0207$1 = HoldForm[HTotal == HAcoustic + HMagnetic];
+eq0207$2 = HoldForm[D[HTotal, t] == 0];
+
+K0207 = HoldForm[{eq0207$1, eq0207$2}];
+
+N = "normalized TRAWIN closure object for Helicity Transfer Constraint";
+I = "Helicity Transfer Constraint integration/comparison layer";
+W = "Conserved Transfer wave or operator carrier";
+A = "Total Helicity Accounting admissible action/amplitude condition";
+R = "Conserved Transfer rotation/curl preservation layer";
+T = "Total Helicity Accounting local source condition";
+
+Cr0207[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0207 = Cr0207[K0207];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Total Helicity Accounting local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Conserved Transfer rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Total Helicity Accounting admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Conserved Transfer wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Helicity Transfer Constraint integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Helicity Transfer Constraint.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0207] Helicity Transfer Constraint}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+H_{\mathrm{total}}=H_{\mathrm{acoustic}}+H_{\mathrm{magnetic}},\qquad \partial_t H_{\mathrm{total}}=0.
+\]
+\paragraph{Conservation Derivation.}
+Differentiate the total-helicity decomposition with respect to time:
+\[
+\partial_t H_{\mathrm{total}}=\partial_t H_{\mathrm{acoustic}}+\partial_t H_{\mathrm{magnetic}}.
+\]
+Applying the stated conservation constraint gives
+\[
+0=\partial_t H_{\mathrm{acoustic}}+\partial_t H_{\mathrm{magnetic}},\qquad \partial_t H_{\mathrm{acoustic}}=-\partial_t H_{\mathrm{magnetic}}.
+\]
+\paragraph{Interpretation.}
+Within the coupled model, helicity can be transferred between acoustic and magnetic channels while the total remains invariant.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The conserved-sum relation makes any acoustic helicity transfer compensating: within the coupled model, its time variation is balanced by the magnetic helicity variation.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Total Helicity Accounting}\par
+\[
+H_{\mathrm{total}} = H_{\mathrm{acoustic}} + H_{\mathrm{magnetic}}
+\]
+\noindent The coupled phonon--magnon system carries a total helicity composed of acoustic and magnetic contributions.\par
+\noindent\textbf{2. Conserved Transfer}\par
+\[
+\partial_t H_{\mathrm{total}}=0
+\]
+\[
+\partial_t H_{\mathrm{acoustic}}=-\partial_t H_{\mathrm{magnetic}}
+\]
+\noindent Under the stated conservation law, exchange in one channel is balanced by the other.\par
+
+\clearpage
+\noindent\textbf{[ID 0207] Helicity Transfer Constraint}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+
+\tzpsection{Definition}
+
+A helicity transfer constraint is a conservation law for a coupled phonon--magnon system. It states that acoustic and magnetic contributions may exchange helicity while their combined total remains fixed.
+
+\tzpsection{Contextual Meaning}
+
+In this entry helicity measures twistedness or linking carried by the coupled channels. A change in the acoustic portion is therefore paired with an opposing change in the magnetic portion, rather than interpreted as new helicity being created by the interaction.
+
+\tzpsection{Formal Statement}
+
+\[
+H_{\mathrm{total}}=H_{\mathrm{acoustic}}+H_{\mathrm{magnetic}},\qquad
+\partial_t H_{\mathrm{total}}=0
+\]
+
+\tzpsection{Derivable Consequences}
+
+Differentiating the sum gives \(\partial_t H_{\mathrm{acoustic}}=-\partial_t H_{\mathrm{magnetic}}\) under the conservation condition. The sourced text further identifies controlled opposite-helicity acoustic vortices as a route for testing compensating magnetic-helicity change.
+
+\tzpsection{Lemma Support}
+
+The aligned source names this entry as a conservation law, gives the sum \(H_{\mathrm{total}}=H_{\mathrm{acoustic}}+H_{\mathrm{magnetic}}\), and states that coupling transfers helicity between sound and magnetic fields without creating or destroying it.
+
+\tzpsection{Technical Interpretation}
+
+The equation is an accounting constraint on internal transfer, not by itself an energy-conversion efficiency law. It fixes an invariant quantity against which a phonon--magnon interaction model can be checked.
+
+\tzpsection{Equation Grounding}
+
+\(H_{\mathrm{total}}\) is total helicity of the coupled system; \(H_{\mathrm{acoustic}}\) is the acoustic-channel contribution; and \(H_{\mathrm{magnetic}}\) is the magnetic-channel contribution. The derivative equality expresses the stated conservation.
+
+\tzpsection{Interpretive Role}
+
+This entry carries the tertiary arc from coupling mechanisms to a topological invariant: exchange may occur, but the conserved combined helicity restricts admissible transfer histories.
+
+\tzpsection{TZP Thesaurus}
+
+\noindent \textbf{Helicity}: A measure of twistedness or linking carried by a field configuration. \enspace\textbullet\enspace \textbf{Helicity Transfer}: Redistribution of helicity between acoustic and magnetic channels under coupling. \enspace\textbullet\enspace \textbf{Conservation Constraint}: A relation requiring the combined helicity to remain invariant during transfer.\par
+
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0207].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0207] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Helicity Transfer Constraint}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} Within the stated coupled system,
+\[
+H_{\mathrm{total}}=H_{\mathrm{acoustic}}+H_{\mathrm{magnetic}},\qquad \partial_t H_{\mathrm{total}}=0.
+\]
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} Conservation of total helicity entails balanced transfer between the acoustic and magnetic channels.\\
+\textbf{Proof:} Differentiation of the additive decomposition yields \(\partial_t H_{\mathrm{total}}=\partial_t H_{\mathrm{acoustic}}+\partial_t H_{\mathrm{magnetic}}\). Substitution of the sourced conservation condition gives \(\partial_t H_{\mathrm{acoustic}}=-\partial_t H_{\mathrm{magnetic}}\).\\
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal conservation consequence under the stated model\\
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL obligation\\
+\textbf{Physical Status:} THEORETICAL -- empirical realization remains model-dependent
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0207].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

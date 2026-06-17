@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T11:47:20+00:00",
+    "source": "portal_breathing_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11391",
+    "uuid": "59e890ce-cb0f-55b1-af07-41200a5c0e95",
+    "registry_id": "registry_id_11391",
+    "piid": "PiID-11391-portal-breathing",
+    "canonical_title": "Hyperbolic Phase-Separation Profiles",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "hypersphere_idea": "D:\\TZPIDProof\\hypersphere_idea.txt",
+      "sparta_support": "D:\\TZPIDProof\\this_is_SPARTA",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11391\\ID11391.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-breathing-occupancy-interface",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "Breathing and topological phases can be modeled by complementary tanh interface profiles.",
+    "technical_interpretation": "This gives the phase-separation model a reusable smooth interface carrier.",
+    "source_lineage": "Extracted from the_portal_equation.txt and hypersphere_idea.txt; SPARTA files provide computational cosmology context."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\phi_{E}(s)=\\frac{1}{2}\\left[1+\\tanh(s/\\ell)\\right],\\qquad \\phi_{T}(s)=\\frac{1}{2}\\left[1-\\tanh(s/\\ell)\\right]"
+    ],
+    "source_section_latex": "\\phi_{E}(s)=\\frac{1}{2}\\left[1+\\tanh(s/\\ell)\\right],\\qquad \\phi_{T}(s)=\\frac{1}{2}\\left[1-\\tanh(s/\\ell)\\right]"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Hyperbolic Phase-Separation Profiles",
+          "wolfram": "phiE[s_] := (1 + Tanh[s/ell])/2; phiT[s_] := (1 - Tanh[s/ell])/2",
+          "status": "pass_via_portal_breathing_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Occupancy_Interface",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing"
+    ],
+    "wolfram_status": "11/11 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_breathing_check_results.json",
+    "isabelle_sid": "11391",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_breathing_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T11:47:20+00:00"
+  }
+}

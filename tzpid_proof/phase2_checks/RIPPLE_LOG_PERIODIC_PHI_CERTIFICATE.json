@@ -1,0 +1,116 @@
+{
+  "certificate": "RIPPLE_LOG_PERIODIC_PHI_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:49:00+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for phi-scaled log-periodic projection and dimensionless ripple-index invariance; not a new empirical dataset.",
+  "equations": {
+    "phi": "phi = (1 + sqrt(5))/2",
+    "alpha": "alpha = 1/phi",
+    "shell_sequence": "r_k = r0 alpha^k",
+    "successor_ratio": "r_{k+1}/r_k = alpha",
+    "ripple_index": "(alpha^k wavelength)/(alpha^k height) = wavelength/height"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "shell_ratio_verified": "pass",
+    "ripple_index_invariance_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "sand_ripple_index_15",
+      "role": "Representative aeolian ripple index carrier.",
+      "base_radius": 1.0,
+      "wavelength": 0.15,
+      "height": 0.01,
+      "levels": 12
+    },
+    {
+      "name": "water_ripple_index_8",
+      "role": "Representative water-surface ripple index carrier.",
+      "base_radius": 2.0,
+      "wavelength": 0.08,
+      "height": 0.01,
+      "levels": 12
+    },
+    {
+      "name": "wide_megaripple_index_20",
+      "role": "Larger-scale bedform ratio carrier.",
+      "base_radius": 30.0,
+      "wavelength": 4.0,
+      "height": 0.2,
+      "levels": 12
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "sand_ripple_index_15",
+      "role": "Representative aeolian ripple index carrier.",
+      "base_radius": 1.0,
+      "wavelength": 0.15,
+      "height": 0.01,
+      "levels": 12,
+      "phi": 1.618033988749895,
+      "alpha": 0.6180339887498948,
+      "initial_ripple_index": 15.0,
+      "final_shell_radius": 0.003105620015141855,
+      "max_shell_ratio_residual": 0.0,
+      "max_scale_ratio_residual": 0.0,
+      "max_ripple_index_residual": 1.7763568394002505e-15,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "alpha_open_unit_interval": "pass",
+      "shell_successor_ratio_constant": "pass",
+      "projection_scale_successor_ratio_constant": "pass",
+      "ripple_index_invariant": "pass",
+      "shells_monotone_inward": "pass"
+    },
+    {
+      "scenario": "water_ripple_index_8",
+      "role": "Representative water-surface ripple index carrier.",
+      "base_radius": 2.0,
+      "wavelength": 0.08,
+      "height": 0.01,
+      "levels": 12,
+      "phi": 1.618033988749895,
+      "alpha": 0.6180339887498948,
+      "initial_ripple_index": 8.0,
+      "final_shell_radius": 0.00621124003028371,
+      "max_shell_ratio_residual": 0.0,
+      "max_scale_ratio_residual": 0.0,
+      "max_ripple_index_residual": 0.0,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "alpha_open_unit_interval": "pass",
+      "shell_successor_ratio_constant": "pass",
+      "projection_scale_successor_ratio_constant": "pass",
+      "ripple_index_invariant": "pass",
+      "shells_monotone_inward": "pass"
+    },
+    {
+      "scenario": "wide_megaripple_index_20",
+      "role": "Larger-scale bedform ratio carrier.",
+      "base_radius": 30.0,
+      "wavelength": 4.0,
+      "height": 0.2,
+      "levels": 12,
+      "phi": 1.618033988749895,
+      "alpha": 0.6180339887498948,
+      "initial_ripple_index": 20.0,
+      "final_shell_radius": 0.09316860045425565,
+      "max_shell_ratio_residual": 1.1102230246251565e-16,
+      "max_scale_ratio_residual": 0.0,
+      "max_ripple_index_residual": 3.552713678800501e-15,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "alpha_open_unit_interval": "pass",
+      "shell_successor_ratio_constant": "pass",
+      "projection_scale_successor_ratio_constant": "pass",
+      "ripple_index_invariant": "pass",
+      "shells_monotone_inward": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\RIPPLE_LOG_PERIODIC_PHI_GRID.csv",
+  "status": "pass"
+}

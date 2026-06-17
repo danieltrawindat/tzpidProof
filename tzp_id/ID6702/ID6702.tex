@@ -1,0 +1,17 @@
+\section*{ID6702: How to Fold the Aperture/Bessel Kernel into TZP Fractal Mechanics: I\_obs(θ,φ)}
+\paragraph{Metadata.}
+PiID: 6730229219139 | RTEID: RTE:P26025.3544:T5.1827 | UUID: ec194e5d-908b-5588-9531-9ca9522814ba
+
+\paragraph{Canonical Statement.}
+1. **Filtering viewpoint (preferred):** treat the aperture PSF as a convolution kernel that filters the “true” TZP field on the celestial sphere. The observed intensity \textbackslash{}(I\_\{\textbackslash{}text\{obs\}\}\textbackslash{}) is \textbackslash{}[ I\_\{\textbackslash{}text\{obs\}\}(\textbackslash{}theta,\textbackslash{}phi) \textbackslash{};=\textbackslash{}; \textbackslash{}int\_\{S\textasciicircum{}2\} \textbackslash{}text\{PSF\}(\textbackslash{}theta',\textbackslash{}phi')\textbackslash{},\textbackslash{}mathcal\{T\}(\textbackslash{}theta-\textbackslash{}theta',\textbackslash{}phi-\textbackslash{}phi')\textbackslash{},d\textbackslash{}Omega' + \textbackslash{}text\{noise\}, \textbackslash{}] where \textbackslash{}(\textbackslash{}mathcal\{T\}\textbackslash{}) is the true TZP map (fractal/vortex). In spectral space, convolution becomes multiplication, \textbackslash{}[ a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{obs\}\} = a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\}\textbackslash{}; a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}mathcal\{T\}\}. \textbackslash{}] That gives a clear recipe: recover \textbackslash{}(a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}mathcal\{T\}\} = a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{obs\}\} / a\_\{\textbackslash{}ell m\}\textasciicircum{}\{\textbackslash{}text\{PSF\}\}\textbackslash{}) (regularized), then feed those coefficients into the TZP fractal/bifurcation analysis.
+
+\paragraph{Canonical Equation.}
+\[
+I_{\text{obs}}(\theta,\phi) \;=\; \int_{S^2} \text{PSF}(\theta',\phi')\,\mathcal{T}(\theta-\theta',\phi-\phi')\,d\Omega' + \text{noise},
+\]
+
+\paragraph{Dictionary.}
+Relation: I\_obs(θ,φ) = ∫\_S\textasciicircum{}2 PSF(θ',φ') T(θ-θ',φ-φ') dΩ' + noise
+
+\paragraph{Encyclopedia.}
+How to Fold the Aperture/Bessel Kernel into TZP Fractal Mechanics: I\_obs(θ,φ) is an integral expression, written I\_obs(θ,φ) = ∫\_S\textasciicircum{}2 PSF(θ',φ') T(θ-θ',φ-φ') dΩ' + noise. It is obtained by integrating over a domain, accumulating contributions across the region of interest. It is built from θ, φ, Ω, S, T, defining I\_obs(θ,φ). Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

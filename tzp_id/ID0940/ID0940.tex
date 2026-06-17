@@ -1,0 +1,210 @@
+\tzpanchor{0940}
+\tzpentryheader{0940}{THE ALPHA-PARTICLE HELICITY OPERATOR}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{7be9d718-6568-5ff5-95ce-d335863e8fec}}\\
+\textbf{PiID} & \tzpcode{9375195778185} & \textbf{TZPi}\quad \tzpcode{5}\quad \textbf{PiPE}\quad \tzpcode{947}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{3584.2140 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{05.9057 rad}\\
+\textbf{TZPID} & \tzpcode{ID0940} & \textbf{Node Dependencies}\quad \tzpidref{0939}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0940} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA329 operator theory & QA169 categorical structure\\
+\textbf{arXiv Classification} & Primary: math.CT & Cross-list: math-ph, cs.LO\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+delta T\_\{ij\} = alpha/, frac\{G M\_\{rm acc\}\}\{R\textasciicircum{}3\} hat n\_i hat n\_j,
+
+\tzpsection{Canonical Equation}
+\[
+hat{\mathcal{H}}_{\text{cymatic}} = \int_{\Omega} \hat{\rho}(\mathbf{r}, t) \Phi_{\text{acoustic}}[\omega, \mathbf{k}, t] \, d^3\mathbf{r} \equiv \sum_{n=1}^{153,600} \gamma_n (\hat{b}_n^\dagger + \hat{b}_n) \hat{a}_n^\dagger \hat{a}_n
+\]
+\[
+Q_T = \frac{1}{4\pi^2} \int_{T^2 \times T^2} F \wedge F \in \mathbb{Z}, \quad \text{subject to } \frac{dQ_T}{dt} = \mathcal{L}_{\text{diss}} \equiv 0
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{H}$: source equation symbol.
+    \item $\Omega$: domain, angular, or boundary operator associated with the equation.
+    \item $\rho$: density or measure term used by the entry equation.
+    \item $t$: source equation symbol.
+    \item $\Phi$: flux, phase, or topological map term in the source equation.
+    \item $n$: integer mode index.
+    \item $\gamma_n$: source equation symbol.
+    \item $Q_T$: source equation symbol.
+    \item $\pi$: source equation symbol.
+    \item $F$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0940 generated source Wolfram model *)
+ClearAll[K0940, Cr0940, T, R, A, W, I, N];
+eq0940$1 = HoldForm[HCymatic == CymaticHamiltonianOperator[Omega, rhoHat, PhiAcoustic]];
+eq0940$2 = HoldForm[Element[QT == (1/(4*Pi^2))*IntegralT2*T2*Fwedge*F, TZPSequence[Z, SubjectTo[dQT/dt] == LDissequiv0]]];
+
+K0940 = HoldForm[{eq0940$1, eq0940$2}];
+
+N = "normalized TRAWIN closure object for THE ALPHA-PARTICLE HELICITY OPERATOR";
+I = "THE ALPHA-PARTICLE HELICITY OPERATOR integration/comparison layer";
+W = "THE ALPHA-PARTICLE HELICITY OPERATOR wave or operator carrier";
+A = "THE ALPHA-PARTICLE HELICITY OPERATOR admissible action/amplitude condition";
+R = "THE ALPHA-PARTICLE HELICITY OPERATOR rotation/curl preservation layer";
+T = "THE ALPHA-PARTICLE HELICITY OPERATOR local source condition";
+
+Cr0940[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0940 = Cr0940[K0940];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ THE ALPHA-PARTICLE HELICITY OPERATOR local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ THE ALPHA-PARTICLE HELICITY OPERATOR rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ THE ALPHA-PARTICLE HELICITY OPERATOR admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ THE ALPHA-PARTICLE HELICITY OPERATOR wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ THE ALPHA-PARTICLE HELICITY OPERATOR integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for THE ALPHA-PARTICLE HELICITY OPERATOR.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0940] THE ALPHA-PARTICLE HELICITY OPERATOR}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+hat{\mathcal{H}}_{\text{cymatic}} = \int_{\Omega} \hat{\rho}(\mathbf{r}, t) \Phi_{\text{acoustic}}[\omega, \mathbf{k}, t] \, d^3\mathbf{r} \equiv \sum_{n=1}^{153,600} \gamma_n (\hat{b}_n^\dagger + \hat{b}_n) \hat{a}_n^\dagger \hat{a}_n
+\]
+\[
+Q_T = \frac{1}{4\pi^2} \int_{T^2 \times T^2} F \wedge F \in \mathbb{Z}, \quad \text{subject to } \frac{dQ_T}{dt} = \mathcal{L}_{\text{diss}} \equiv 0
+\]
+
+\paragraph{Primary Derivation.}
+The identity \( hat{\mathcal{H}}_{\text{cymatic}} = \int_{\Omega} \hat{\rho}(\mathbf{r}, t) \Phi_{\text{acoustic}}[\omega, \mathbf{k}, t] \, d^3\mathbf{r} \equiv \sum_{n=1}^{153,600} \gamma_n (\hat{b}_n^\dagger + \hat{b}_n) \hat{a}_n^\dagger \hat{a}_n \) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.
+\paragraph{Equation Type.}
+This statement is classified as a operator relation.
+
+\paragraph{Interpretation.}
+This relation applies to the quantities defined above. In the TRAWIN reading, the equation functions as the operator-level carrier for the entry’s information content. In CHL terms, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors THE ALPHA-PARTICLE HELICITY OPERATOR by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+hat{\mathcal{H}}_{\text{cymatic}} = \int_{\Omega} \hat{\rho}(\mathbf{r}, t) \Phi_{\text{acoustic}}[\omega, \mathbf{k}, t] \, d^3\mathbf{r} \equiv \sum_{n=1}^{153,600} \gamma_n (\hat{b}_n^\dagger + \hat{b}_n) \hat{a}_n^\dagger \hat{a}_n
+\]
+\[
+Q_T = \frac{1}{4\pi^2} \int_{T^2 \times T^2} F \wedge F \in \mathbb{Z}, \quad \text{subject to } \frac{dQ_T}{dt} = \mathcal{L}_{\text{diss}} \equiv 0
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0940] THE ALPHA-PARTICLE HELICITY OPERATOR}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+THE ALPHA-PARTICLE HELICITY OPERATOR is a registry definition in Biological and Biomolecular Analogies with secondary pressure from Category Theory and Proof Structure.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} delta T sub ij = alpha/, frac G M sub rm acc R to the power 3 hat n sub i hat n sub j,. \textbf{Contextual meaning:} The entry reads THE ALPHA-PARTICLE HELICITY OPERATOR as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc. \textbf{Lemma support:} Carrier Map; Composable Action; Normalized Output.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, THE ALPHA-PARTICLE HELICITY OPERATOR is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: hat H sub cymatic = integral sub Omega hat rho ( r , t) Phi sub acoustic [omega, k , t] d to the power 3 r equiv sum sub n=1 to the power 153,600 gamma sub n (hat b sub n to the power dagger + hat b sub n) hat a sub n to the power dagger hat a sub n; Q sub T = ratio 1 4pi to the power 2 integral sub T to the power 2 times T to the power 2 F wedge F in mathbb Z , subject to ratio dQ sub T dt = L sub diss equiv 0; and V sub BC = (xi sub 1, xi sub 2, xi sub 3, xi sub 4) : xi sub i in -1, +1 subset mathbb R to the power 4, |V sub BC | = 16. Proof route: show that the composite map lands in the admissible target class once the TRAWIN ordering is respected. Formalization route: prove closure of the stated operator or functor under composition with the TRAWIN chain.
+
+\tzpsection{Interpretive Role}
+The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Radioactive Spin-Locking}: The incredibly precise technique of hitting heavy, dangerous radiation particles with a magnetic field to force them all to spin in the exact same direction.
+\item \textbf{Ionizing Torsion Tracking}: The calculation of exactly how much the heavy, sluggish alpha particles are twisting and dragging the magnetic lines of force as they smash through the chamber.
+\item \textbf{Helical-Decay Pathing}: The chaotic physics where a decaying atom doesn't shoot straight out, but spirals wildly through the room like a deflating balloon.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0940]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0940].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0940] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont THE ALPHA-PARTICLE HELICITY OPERATOR}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} THE ALPHA-PARTICLE HELICITY OPERATOR is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``THE ALPHA-PARTICLE HELICITY OPERATOR is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0940].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

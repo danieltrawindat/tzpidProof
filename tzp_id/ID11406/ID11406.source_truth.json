@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11406",
+    "uuid": "39224e85-1f48-5311-9c96-c803e664508f",
+    "registry_id": "registry_id_11406",
+    "piid": "PiID-11406-portal-equilibrium",
+    "canonical_title": "Golden Portal State Equation",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11406\\ID11406.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The candidate golden equilibrium state is achieved when phi-scaled surface tension balances inertial plus acoustic/field pressure contributions.",
+    "technical_interpretation": "This captures the central candidate law in the saved portal-equation section. It is registered as a candidate law because the source transcript asserts validation, while the proof package still requires independent experimental data.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathrm{PortalState}=\\frac{F_{s}\\varphi}{F_{i}+F_{a}}=1"
+    ],
+    "source_section_latex": "\\mathrm{PortalState}=\\frac{F_{s}\\varphi}{F_{i}+F_{a}}=1"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Golden Portal State Equation",
+          "wolfram": "portalState == Fs*phi/(Fi + Fa)",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Candidate_Law",
+    "obligation_role": "Portal_Phi_Equilibrium",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11406",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

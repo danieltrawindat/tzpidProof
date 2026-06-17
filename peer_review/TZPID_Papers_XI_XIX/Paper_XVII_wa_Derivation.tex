@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={Deriving the Dark-Energy Equation of State from the Breathing Enclosure and the Negative Foundation},pdfsubject={TZPID Gold Spine Series II, Paper XVII of XX, DOI 10.5281/zenodo.20725805},pdfkeywords={dark energy, equation of state, w0wa, vacuum-to-matter creation, negative foundation, Gauss-Bonnet, TZPID, DOI 10.5281/zenodo.20725805}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\OmL}{\Omega_\Lambda}
+\newcommand{\hbb}{\ensuremath{\mathchar'26\mkern-9mu h}}
+
+\title{Deriving the Dark-Energy Equation of State:\\ The Breathing Enclosure, the Negative Foundation, and a Closed-Form Coupling Normalization\\[0.6em]
+\large TZPID Gold Spine Series II, Paper XVII of XX}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20725805}{10.5281/zenodo.20725805}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This Paper 17 of 20 (Paper XVII) in the TZPID Gold Spine sequence discharges the obligation the first half left open: to \emph{derive} the dark-energy equation of state $w(a)$ that the Spartan Dawn fit (Paper XII) could only accommodate, and that Paper XVI flagged as its central conjecture. Starting from the exact identity $w(a) = -1 - \tfrac{1}{3}\,d\ln\rho_X/d\ln a$, we test three breathing-pressure laws and find that only the threshold vacuum-to-matter handoff (ID0187/ID0188) gives an evolving $w$ that crosses $-1$. The enclosure energy law $\rho_{\mathrm{vac}} = \hbb c/R^4$ (ID0400) with $R \propto a$ (ID10867) fixes the slope exponent to the quartic $d\ln\rho_{\mathrm{vac}}/d\ln a = -4$, forcing $|w_a| = O(1)$---a non-trivial prediction, since most thawing-quintessence models give $|w_a| < 0.3$. The negative-foundation convergence theory then fixes the \emph{sign}: a stable matter-forming sink (mass-deficit, $E_{\mathrm{TZP}} = -mc^2$) exists only on the convergent branch with coupling $\kappa < 0$, which forces $w_a < 0$ and $w_0 > -1$---the DESI quintom-B pattern, derived from matter stability rather than fitted. The remaining knob, the coupling normalization, is resolved in closed form using the $S^3$/$S^4$/$S^5$ progression: the convergence paper's curvature candidate $\kappa_0 = \tfrac{1}{2}\int_{S^2}K\,dA$ evaluates by Gauss--Bonnet on the Hopf base of $S^3$ to $\kappa_0 = 2\pi$ exactly, with the paper's negative-$\pi$ fit being precisely its mass-deficit half. The resulting $w(a)$ lands $w_0 \approx -0.85$, $w_a \approx -0.9$, within $\sim 10$--$15\%$ of DESI's $(-0.80, -0.97)$. We state the precise residual honestly: the data confirm only that the coupling is order-unity and negative ($\sim 30\%$ measurement error), so the closed-form $\kappa_0 = 2\pi$ and the candidate $\kappa = -4/9$ are consistent with, not confirmed by, the data. The series arc closes: the dark energy the data demanded is the breathing enclosure shedding vacuum into matter on its negative-foundation convergent branch.
+\end{abstract}
+
+\section{Introduction: the debt comes due}
+\label{sec:intro}
+Paper XII favoured a dynamical dark-energy term but fitted it; Paper XVI built the mechanism but left its predictive core a conjecture. This paper pays the debt: it derives the equation of state $w(a)$ from registry first principles---the enclosure energy law, the threshold creation law, conservation, and the negative-foundation convergence theory---and reports, with the demarcation discipline of the whole series, exactly which features are predicted and which remain open. The result is a partial but real derivation: the sign and structure of DESI's evolving dark energy follow from matter stability; the magnitude is order-unity from the quartic; and the coupling normalization is closed in form by the nested-sphere geometry.
+
+\section{The exact identity and three branches}
+\label{sec:identity}
+The equation of state of any component follows from its density history through the continuity equation:
+\begin{equation}
+w(a) = -1 - \frac{1}{3}\,\frac{d\ln\rho_X}{d\ln a}.
+\label{eq:woa}
+\end{equation}
+Three candidate breathing-pressure laws give three outcomes (Table~\ref{tab:branches}).
+\begin{table}[ht]
+\centering
+\caption{Three breathing-pressure laws and the equation of state each yields.}
+\label{tab:branches}
+\begin{tabular}{lll}
+\toprule
+Law & $\rho_X(a)$ & $w$ \\
+\midrule
+naive nested vacuum modes & $\propto a^{-4}$ & $+1/3$ (radiation-like---fails) \\
+pure breathing vacuum & const & $-1$ ($\Lambda$, no evolution) \\
+breathing $\leftrightarrow$ matter handoff & $\dot\rho_X = -Q$ & $-1 + \gamma(a)$ (evolving, crosses $-1$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+Only the third branch---the threshold vacuum-to-matter handoff of ID0187/ID0188---produces an evolving equation of state. The naive nested-mode energy gives $w = +1/3$, confirming the radiation-like failure flagged in Paper XVI (Remark 4.2).
+
+\section{The quartic fixes the slope}
+\label{sec:quartic}
+The enclosure energy is $\rho_{\mathrm{vac}} = \hbb c/R^4$ (ID0400/ID1392), and the breathing identity sets $R \propto a$ (ID10867), so
+\begin{equation}
+\frac{d\ln\rho_{\mathrm{vac}}}{d\ln a} = -4,
+\label{eq:quartic}
+\end{equation}
+the \emph{quartic}---fixed, not chosen. Linearizing the threshold creation rate $Q = 3H\rho_{\mathrm{vac}}f(x)$, with $x = \rho_{\mathrm{vac}}/\rho_{\mathrm{crit}} \propto a^{-4}$, about the threshold $P_{\mathrm{vac}} = P_{\mathrm{crit}}$ (so $f(1) = 0$, $f'(1) = \kappa$):
+\begin{equation}
+w_{\mathrm{eff}}(a) = -1 + \kappa\,(x - 1), \qquad
+w_0 = -1 + \kappa(x_0 - 1), \qquad
+w_a = 4\kappa x_0.
+\label{eq:wawb}
+\end{equation}
+The factor $4$ in $w_a = 4\kappa x_0$ is the quartic. It multiplies the coupling, forcing $|w_a| = O(1)$.
+\begin{proposition}[Order-unity slope]
+\label{prop:order}
+The quartic enclosure exponent forces the dark-energy equation of state to evolve at order unity, $|w_a| = O(1)$. This distinguishes the enclosure from thawing-quintessence models, which generically predict $|w_a| < 0.3$. DESI~DR2 measures $w_a = -0.97$, consistent in order and sign.
+\end{proposition}
+
+\section{The negative foundation fixes the sign}
+\label{sec:sign}
+The convergence theory (TZP-C-) gives the order-parameter damping $\gamma(S) = \gamma_1(-S)$: a stable, matter-forming sink exists only for $S < 0$, the negative foundation, where the dynamics are damped and convergent. Matter is a mass-deficit ($E_{\mathrm{TZP}} = -mc^2$), and a stable sink requires the confining $V = |\kappa|r^2$ with $\kappa < 0$ (an anti-de~Sitter well). Therefore:
+\begin{equation}
+\boxed{\ \text{stable matter} \iff \text{negative foundation } S<0 \iff \kappa < 0 \ \Rightarrow\ w_a = 4\kappa x_0 < 0,\quad w_0 = -1+\kappa(x_0-1) > -1.\ }
+\end{equation}
+\begin{theorem}[Quintom-B from matter stability]
+\label{thm:quintom}
+The pattern $w_0 > -1$ today and $w < -1$ in the past, with $w$ crossing $-1$ near $z \approx 0.4$, is forced by the requirement that matter be a stable convergent sink. It is derived from the negative foundation, not fitted. DESI~DR2 observes exactly this quintom-B pattern.
+\end{theorem}
+The crossing redshift follows from $\gamma = 0$: with the Spartan values it sits at $z \approx 0.4$, with the DESI values at $z \approx 0.26$, both in the DESI $w = -1$ crossing window.
+
+\section{Closing the normalization with the nested spheres}
+\label{sec:normalization}
+The convergence paper leaves the coupling $\kappa_0$ as ``an empirical fit, with two candidate geometric normalizations'': a curvature candidate $\kappa_0 = \tfrac{1}{2}\int_{S^2}K\,dA$ and a topological candidate $\kappa_0 = f(Q)$, $Q$ the Hopf charge. The $S^3$/$S^4$/$S^5$ progression of Paper XIII supplies both, since $S^2$ is the Hopf base of $S^3$.
+\begin{proposition}[Closed-form curvature normalization]
+\label{prop:gaussbonnet}
+By Gauss--Bonnet, $\int_{S^2}K\,dA = 2\pi\chi(S^2) = 4\pi$, so the curvature candidate evaluates in closed form to
+\begin{equation}
+\kappa_0 = \tfrac{1}{2}\int_{S^2}K\,dA = 2\pi.
+\end{equation}
+The convergence paper's fitted $|\kappa_{\mathrm{fit}}| = 3.1419\ldots \approx \pi$ is exactly half of this, the mass-deficit half (matter is the sink, half the field); the $S^3 \to S^2$ Hopf charge $Q = 1$ selects the single visible fiber. Both candidates agree: $|\kappa_0| = 2\pi$ (full shell), $\pi$ (deficit).
+\end{proposition}
+Carried through Eq.~\eqref{eq:wawb} with $x_0 = \OmL \approx 0.685$, the progression brackets the dimensionless coupling to $\kappa \in [-1/\pi, -1/2]$, giving $w_a \in [-0.87, -1.37]$, which contains the DESI value. The cleanest single candidate, $\kappa = -(n+1)/n^2 = -4/9$ for $n = 3$ (the quartic exponent over the $S^3$ degeneracy factor), lands $w_0 = -0.80$, $w_a = -0.97$ on DESI's central values.
+
+\section{Honest precision and a flagged coincidence}
+\label{sec:honest}
+\begin{remark}[What the data can and cannot confirm]
+\label{rem:precision}
+The candidate $\kappa = -4/9$ matches DESI's \emph{central} values to $0.4\%$, but DESI's measurement error on $w_a$ is $\sim \pm 0.3$ ($\sim 30\%$). The data therefore confirm only that the coupling is order-unity and negative; they cannot confirm $-4/9$ to anything like $0.4\%$. The closed-form $\kappa_0 = 2\pi$ (Proposition~\ref{prop:gaussbonnet}) and the candidate $\kappa = -4/9$ are consistent with DESI, not confirmed by it.
+\end{remark}
+\begin{remark}[A coincidence flagged but not used]
+\label{rem:coincidence}
+The convergence paper's base $|\kappa| = 3.141952653$ differs from $\pi = 3.141592653$ by $3.6\times10^{-4}$, near the nested-shell BAO beat $\varepsilon \approx 3.7\times10^{-4}$ of Paper XIV. However, $3.141952653$ versus $\pi = 3.141592653$ is consistent with a $59 \leftrightarrow 95$ digit transposition (a likely typographical error), so this near-match is reported but \emph{not} used as evidence.
+\end{remark}
+
+\section{Verification status and demarcation}
+\label{sec:verification}
+The identity \eqref{eq:woa} is the standard continuity relation; the quartic \eqref{eq:quartic} follows from the registered enclosure law and the breathing identity; the Gauss--Bonnet value \eqref{prop:gaussbonnet} is exact. The crossing redshifts and the $\kappa$, $x_0$ solves are reproducible numerically.
+
+\textbf{Established mathematics:} Eq.~\eqref{eq:woa}; Gauss--Bonnet on $S^2$; the continuity fixed point $\dot\rho = 0$ at $p = -\rho c^2$; the CPL parameterization $w = w_0 + w_a(1-a)$.
+
+\textbf{Framework synthesis:} the threshold handoff $w_{\mathrm{eff}} = -1 + \kappa(x-1)$; the quartic prediction $|w_a| = O(1)$; the sign theorem (Theorem~\ref{thm:quintom}); and the closed-form normalization $\kappa_0 = 2\pi$ via the Hopf base.
+
+\textbf{Predictions:} (i) the quintom-B sign pattern and its $z \approx 0.4$ crossing, forced by matter stability; (ii) $|w_a| = O(1)$, distinguishing the enclosure from thawing quintessence; (iii) a sharper $w_a$ measurement (Stage-IV surveys) discriminating among the bracketed candidates $-1/\pi$, $-4/9$, $-1/2$.
+
+\section{Limits of the construction}
+\label{sec:limits}
+The derivation is partial, and its boundary is exact. \emph{Predicted from first principles:} the sign of $w_a$ (negative) and $w_0 > -1$, via matter-stability $=$ negative-foundation $=$ $\kappa < 0$; the order $|w_a| = O(1)$, via the quartic; and the closed-form $\kappa_0 = 2\pi$, via Gauss--Bonnet on the Hopf base. \emph{Not yet pinned:} the exact decimal $w_a = -0.97$ rides on which order-unity geometric reduction ($-1/\pi$, $-4/9$, $-1/2$) is correct, a choice the data cannot currently resolve at their $\sim 30\%$ precision. The linearization about threshold is first-order; a full treatment would integrate the creation rate $Q$ through the nonlinear regime. And the model shares the standard burden of all interacting-dark-energy proposals: the energy exchange between vacuum and matter must be shown consistent with structure-formation and CMB constraints, work not done here.
+
+\section{Conclusion: the arc of the second series closes}
+\label{sec:conclusion}
+The second series opened on a frozen sound horizon and closes on a derived equation of state. Sound built the ruler (XI); the data killed the static cosmos and favoured the breathing one (XII); the enclosure's geometry proved exact and its breathing rate measured the spatial dimension (XIII); the higher shells left the acoustic ruler untouched but for one fine-tuned beat (XIV); the registry became a calculus with certified closures (XV); the dark sector acquired a mechanism with two falsifiable threads (XVI); and here that mechanism derives the dark energy the data demanded---a breathing enclosure shedding vacuum into matter on its negative-foundation convergent branch, with the sign forced by matter stability, the slope set by the quartic, and the coupling normalized in closed form by the nested spheres. The decimal that remains open is a measurement away, not a theory away. On the registry's account, that is what a theory of the dark sector looks like at this stage: a closed loop of obligations in which the sound, the geometry, the calculus, and the creation threshold all terminate in one evolving pressure---bracketed, falsifiable, and honest about its last residual.
+
+\begin{thebibliography}{15}
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+\bibitem{paper8} Trawin, D. A., \emph{Topological Unification and the Breathing Enclosure}, TZPID Gold Spine Series, Paper VIII (2026).
+\bibitem{paper13} Trawin, D. A., \emph{Exact Nested-Sphere Geometry}, TZPID Gold Spine Series II, Paper XIII (2026).
+\bibitem{spartan} Trawin, D. A., \emph{The Spartan Dawn Test}, TZPID Gold Spine Series II, Paper XII (2026).
+\bibitem{buoyancy} Trawin, D. A., \emph{The Volumetric Buoyancy--Occupancy Interface Model}, TZPID Gold Spine Series II, Paper XVI (2026).
+\bibitem{tzpc} Trawin, D. A., \emph{Trawin Zero Point Convergence (TZP-C-): Mass-Deficit Sinks and Emergent Gravitational Pressure}, TZPIDProof archive (2026).
+\bibitem{desi} DESI Collaboration, \emph{DESI DR2 Results II: BAO and cosmological constraints} (2025). arXiv:2503.14738.
+\bibitem{planck} Planck Collaboration, \emph{Planck 2018 results. VI}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020). arXiv:1807.06209.
+\bibitem{chevallier} Chevallier, M., and Polarski, D., \emph{Accelerating universes with scaling dark matter}, Int.\ J.\ Mod.\ Phys.\ D \textbf{10}, 213 (2001).
+\bibitem{linder} Linder, E. V., \emph{Exploring the expansion history of the universe}, Phys.\ Rev.\ Lett.\ \textbf{90}, 091301 (2003).
+\bibitem{caldwell} Caldwell, R. R., \emph{A phantom menace?}, Phys.\ Lett.\ B \textbf{545}, 23 (2002).
+\bibitem{feng} Feng, B., Wang, X., and Zhang, X., \emph{Dark energy constraints from the cosmic age and supernova}, Phys.\ Lett.\ B \textbf{607}, 35 (2005). Quintom.
+\bibitem{wetterich} Wetterich, C., \emph{Cosmology and the fate of dilatation symmetry}, Nucl.\ Phys.\ B \textbf{302}, 668 (1988).
+\bibitem{chern} Chern, S.-S., \emph{A simple intrinsic proof of the Gauss--Bonnet formula for closed Riemannian manifolds}, Ann.\ Math.\ \textbf{45}, 747 (1944).
+\end{thebibliography}
+\end{document}

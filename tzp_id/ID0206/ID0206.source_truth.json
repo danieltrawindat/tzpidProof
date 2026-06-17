@@ -1,0 +1,387 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:22.380366+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0206",
+    "uuid": "effa07f7-f254-5420-a685-a4e7a868510a",
+    "registry_id": "registry_id_0206",
+    "canonical_title": "Phonon--Magnon Coupling Hamiltonian",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0206/ID0206.TEX",
+      "json": "D:/TZPID/TZPID/ID0206/ID0206.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0206/ID0206.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The interaction Hamiltonian for topological phonon--magnon coupling is given by H\\_int = g * integral{[}(curl u) dot B{]} dV, where u is the acoustic displacement field, B is the magnetic field and g is the magneto-elastic coupling constant.",
+    "technical_interpretation": "The interaction Hamiltonian for topological phonon--magnon coupling is given by H\\_int = g * integral{[}(curl u) dot B{]} dV, where u is the acoustic displacement field, B is the magnetic field and g is the magneto-elastic coupling constant."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "H_{\\mathrm{int}} = g\\int_V (\\nabla\\times u)\\cdot B\\,dV",
+      "i\\hbar\\,\\partial_t\\psi = H_{\\mathrm{int}}\\psi"
+    ],
+    "source_section_latex": "\\[\nH_{\\mathrm{int}} = g\\int_V (\\nabla\\times u)\\cdot B\\,dV\n\\]\n\\[\ni\\hbar\\,\\partial_t\\psi = H_{\\mathrm{int}}\\psi\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Energy Generator",
+      "formula_latex_blocks": [
+        "H_{\\mathrm{int}} = g\\int_V (\\nabla\\times u)\\cdot B\\,dV"
+      ],
+      "interpretive_role": "This gathers the free, interaction, and bridge sectors into one energy generator."
+    },
+    {
+      "step": 2,
+      "component_title": "State Evolution",
+      "formula_latex_blocks": [
+        "i\\hbar\\,\\partial_t\\psi = H_{\\mathrm{int}}\\psi"
+      ],
+      "interpretive_role": "This promotes the generator into the actual carrier of admissible state evolution."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Constraint",
+      "formula_latex_blocks": [
+        "[H_{\\mathrm{int}},\\mathcal{N}_{\\mathrm{TZP}}]=0"
+      ],
+      "interpretive_role": "This closes the entry by requiring compatibility with the normalization operator."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0206}$",
+        "description": "canonical registry object for entry ID 0206."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0206}$",
+        "name": "canonical registry object for entry ID 0206.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\nabla$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\psi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H_{int}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N_{TZP}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Phonon--Magnon Coupling Hamiltonian\nCanonical operator translation\neq0206_1 = HoldForm[Hint == gIntegrate_V (Grad* u) B dV];\neq0206_2 = HoldForm[ihbar D_t == Hint];\n\nTRAWIN closure composition\nTRAWINClosure0206[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0206 := HoldForm[{eq0206_1, eq0206_2}];\nResult0206 := TRAWINClosure0206[K0206];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "H_{\\mathrm{int}} = g\\int_V (\\nabla\\times u)\\cdot B\\,dV",
+          "normalized_latex": "HInt==gIntegralV[Grad*u]*B*dV",
+          "wolfram_input": "HInt==gIntegralV[Grad*u]*B*dV",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HInt == gIntegralV[Grad*u]*B*dV]",
+          "texform_roundtrip": "\\text{HInt}=B \\text{dV} \\text{gIntegralV}(\\text{Grad} u)",
+          "messages": []
+        },
+        {
+          "latex": "i\\hbar\\,\\partial_t\\psi = H_{\\mathrm{int}}\\psi",
+          "normalized_latex": "ihbar*PartialTpsi==HIntpsi",
+          "wolfram_input": "ihbar*PartialTpsi==HIntpsi",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[ihbar*PartialTpsi == HIntpsi]",
+          "texform_roundtrip": "\\text{ihbar} \\text{PartialTpsi}=\\text{HIntpsi}",
+          "messages": []
+        },
+        {
+          "latex": "[H_{\\mathrm{int}},\\mathcal{N}_{\\mathrm{TZP}}]=0",
+          "normalized_latex": "Commutator[HInt,NTZP]==0",
+          "wolfram_input": "Commutator[HInt,NTZP]==0",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Commutator[HInt, NTZP] == 0]",
+          "texform_roundtrip": "\\text{HInt}\\text{**}\\text{NTZP}-\\text{NTZP}\\text{**}\\text{HInt}=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0206 generated source-truth Wolfram model *)\nClearAll[K0206, TRAWINClosure0206];\neq0206$1 = HoldForm[HInt == gIntegralV[Grad*u]*B*dV];\neq0206$2 = HoldForm[ihbar*PartialTpsi == HIntpsi];\neq0206$3 = HoldForm[Commutator[HInt, NTZP] == 0];\nK0206 = HoldForm[{eq0206$1, eq0206$2, eq0206$3}];\nTRAWINClosure0206[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0206 = TRAWINClosure0206[K0206];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nu_T := \\int_{\\Gamma}\\sqrt{|g|}\\,\\mathrm{d}\\ell .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\Gamma$ be a fundamental loop encircling the Trawin Zero Point exactly once.  \nThe infinitesimal line element induced by the metric is:\n\n\\begin{equation}\n\\mathrm{d}s = \\sqrt{|g|}\\,\\mathrm{d}\\ell .\n\\end{equation}\n\nIntegrating this metric-weighted length around the loop gives the primitive unit associated with one complete encirclement of the TZP:\n\n\\begin{equation}\nu_T = \\int_{\\Gamma}\\mathrm{d}s .\n\\end{equation}\n\nSubstituting the line element yields:\n\n\\begin{equation}\n\\boxed{\nu_T := \\int_{\\Gamma}\\sqrt{|g|}\\,\\mathrm{d}\\ell .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Trawin base unit $u_T$ is the fundamental geometric unit obtained by completing one metric-weighted loop around the TZP.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0206/ID0206.source_truth.json",
+    "entry_id": "ID0206",
+    "registry_id": "registry_id_0206",
+    "canonical_title": "Phonon--Magnon Coupling Hamiltonian",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0206/ID0206.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "effa07f7-f254-5420-a685-a4e7a868510a",
+    "RTEID": "RTE:P799.9437:T1.3181",
+    "poloidal_theta_rad": "799.9437",
+    "toroidal_phi_rad": "1.3181",
+    "rteid_source": "manifest",
+    "PiID": "0975665933446",
+    "TZPi": "5",
+    "PiPE_position": "213",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "H_{\\mathrm{int}} = g\\int_V (\\nabla\\times u)\\cdot B\\,dV",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "int",
+          "nabla",
+          "H",
+          "g",
+          "V",
+          "u",
+          "B",
+          "dV"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0206\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phonon--Magnon Coupling Hamiltonian\", \"latex\" -> \"H_{\\\\mathrm{int}} = g\\\\int_V (\\\\nabla\\\\times u)\\\\cdot B\\\\,dV\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"int\", \"nabla\", \"H\", \"g\", \"V\", \"u\", \"B\", \"dV\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "i\\hbar\\,\\partial_t\\psi = H_{\\mathrm{int}}\\psi",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "hbar",
+          "partial",
+          "psi",
+          "i",
+          "t",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0206\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phonon--Magnon Coupling Hamiltonian\", \"latex\" -> \"i\\\\hbar\\\\,\\\\partial_t\\\\psi = H_{\\\\mathrm{int}}\\\\psi\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"hbar\", \"partial\", \"psi\", \"i\", \"t\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

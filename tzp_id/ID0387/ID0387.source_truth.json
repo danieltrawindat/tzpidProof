@@ -1,0 +1,397 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:59:07.050067+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0387",
+    "uuid": "db36c1ef-8045-53f2-aa00-8275f2483488",
+    "registry_id": "registry_id_0387",
+    "canonical_title": "Triple Resonance Domain Condition",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0387/ID0387.TEX",
+      "json": "D:/TZPID/TZPID/ID0387/ID0387.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0387/ID0387.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Emergent phenomena appear when three characteristic scales satisfy the confluence condition that the quantum length scale is much smaller than the classical scale, which in turn is much smaller than the relativistic scale, and their associated energy scales become comparable. Classical variables include gyroscopic angular momentum and rotation frequencies; quantum variables involve flux quantisation and tunnelling; relativistic variables involve frame-dragging. When these conditions are met, new hybrid phenomena activate.",
+    "technical_interpretation": "Emergent phenomena appear when three characteristic scales satisfy the confluence condition that the quantum length scale is much smaller than the classical scale, which in turn is much smaller than the relativistic scale, and their associated energy scales become comparable. Classical variables include gyroscopic angular momentum and rotation frequencies; quantum variables involve flux quantisation and tunnelling; relativistic variables involve frame-dragging. When these conditions are met, new hybrid phenomena activate."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\omega_{1}=\\omega_{2}=\\omega_{3}",
+      "\\mathcal{D}_{\\mathrm{res}}=\\{x:\\lvert\\omega_i(x)-\\omega_j(x)\\rvert\\leq\\varepsilon\\}"
+    ],
+    "source_section_latex": "\\[\n\\omega_{1}=\\omega_{2}=\\omega_{3}\n\\]\n\\[\n\\mathcal{D}_{\\mathrm{res}}=\\{x:\\lvert\\omega_i(x)-\\omega_j(x)\\rvert\\leq\\varepsilon\\}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Triple Resonance Match",
+      "formula_latex_blocks": [
+        "\\omega_{1}=\\omega_{2}=\\omega_{3}"
+      ],
+      "interpretive_role": "This fixes the triple-resonance condition aligning the three carrier frequencies."
+    },
+    {
+      "step": 2,
+      "component_title": "Domain Window",
+      "formula_latex_blocks": [
+        "\\mathcal{D}_{\\mathrm{res}}=\\{x:\\lvert\\omega_i(x)-\\omega_j(x)\\rvert\\leq\\varepsilon\\}"
+      ],
+      "interpretive_role": "This identifies the spatial or parameter domain in which the resonance match is admissible."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Detuning",
+      "formula_latex_blocks": [
+        "\\Delta_{\\mathrm{tri}}=\\max_{i,j}\\lvert\\omega_i-\\omega_j\\rvert/\\varepsilon\\leq1"
+      ],
+      "interpretive_role": "This closes the entry with a normalized detuning that measures departure from exact triple resonance."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$x$",
+        "description": "local field point or coordinate variable in the canonical equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$x$",
+        "name": "local field point or coordinate variable in the canonical equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\omega_{1}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega_{3}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\leq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\varepsilon$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Delta_{tri}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\max_{i,j}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D_{res}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$i(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$j(x)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Triple Resonance Domain Condition\nCanonical operator translation\neq0387_1 = HoldForm[omega1==omega2==omega3];\neq0387_2 = HoldForm[(D)res==\\(x:_i(x)-omega_j(x) <= q\\)];\n\nTRAWIN closure composition\nTRAWINClosure0387[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0387 := HoldForm[{eq0387_1, eq0387_2}];\nResult0387 := TRAWINClosure0387[K0387];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\omega_{1}=\\omega_{2}=\\omega_{3}",
+          "normalized_latex": "omega1==omega2==omega3",
+          "wolfram_input": "omega1==omega2==omega3",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omega1 == omega2 == omega3]",
+          "texform_roundtrip": "\\text{omega1}=\\text{omega2}=\\text{omega3}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{D}_{\\mathrm{res}}=\\{x:\\lvert\\omega_i(x)-\\omega_j(x)\\rvert\\leq\\varepsilon\\}",
+          "normalized_latex": "DRes==List[x:Abs[omegaI[x]-omegaJ[x]]<=epsilon]",
+          "wolfram_input": "DRes==List[x:Abs[omegaI[x]-omegaJ[x]]<=epsilon]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[DRes == {x:Abs[omegaI[x] - omegaJ[x]] <= epsilon}]",
+          "texform_roundtrip": "\\text{DRes}=\\{x:| \\text{omegaI}(x)-\\text{omegaJ}(x)| \\leq \\epsilon \\}",
+          "messages": []
+        },
+        {
+          "latex": "\\Delta_{\\mathrm{tri}}=\\max_{i,j}\\lvert\\omega_i-\\omega_j\\rvert/\\varepsilon\\leq1",
+          "normalized_latex": "DeltaTri==maxIjAbs[omegaI-omegaJ]/epsilon<=1",
+          "wolfram_input": "DeltaTri==maxIjAbs[omegaI-omegaJ]/epsilon<=1",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Inequality[DeltaTri, Equal, maxIjAbs[omegaI - omegaJ]/epsilon, LessEqual, 1]]",
+          "texform_roundtrip": "\\text{DeltaTri}=\\frac{\\text{maxIjAbs}(\\text{omegaI}-\\text{omegaJ})}{\\epsilon }\\leq 1",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0387 generated source-truth Wolfram model *)\nClearAll[K0387, TRAWINClosure0387];\neq0387$1 = HoldForm[omega1 == omega2 == omega3];\neq0387$2 = HoldForm[DRes == {x:Abs[omegaI[x] - omegaJ[x]] <= epsilon}];\neq0387$3 = HoldForm[Inequality[DeltaTri, Equal, maxIjAbs[omegaI - omegaJ]/epsilon, LessEqual, 1]];\nK0387 = HoldForm[{eq0387$1, eq0387$2, eq0387$3}];\nTRAWINClosure0387[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0387 = TRAWINClosure0387[K0387];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equations.}\n\\begin{equation}\n\\dot{\\omega}(t)\n=\n\\frac{\\tau_{\\mathrm{em}}(t)}{I_T}.\n\\end{equation}\n\n\\begin{equation}\n\\omega(t)\n=\n\\omega(0)\n+\n\\frac{1}{I_T}\n\\int_0^t\n\\tau_{\\mathrm{em}}(t')\n\\,\\mathrm{d}t' .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $I_T$ be the Trawinistic moment of inertia.  \nAngular momentum is related to angular velocity by:\n\\begin{equation}\nL=I_T\\omega .\n\\end{equation}\n\nDifferentiating gives:\n\\begin{equation}\n\\dot{L}\n=\nI_T\\dot{\\omega},\n\\end{equation}\nassuming $I_T$ is constant over the interval.\n\nSince $\\dot{L}=\\tau_{\\mathrm{em}}$, we obtain:\n\\begin{equation}\n\\dot{\\omega}(t)\n=\n\\frac{\\tau_{\\mathrm{em}}(t)}{I_T}.\n\\end{equation}\n\nIntegrating through time gives:\n\\begin{equation}\n\\boxed{\n\\omega(t)\n=\n\\omega(0)\n+\n\\frac{1}{I_T}\n\\int_0^t\n\\tau_{\\mathrm{em}}(t')\n\\,\\mathrm{d}t' .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nRotation is the accumulated response to torque history, scaled by the effective moment of inertia.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "analogue-physics model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0387/ID0387.source_truth.json",
+    "entry_id": "ID0387",
+    "registry_id": "registry_id_0387",
+    "canonical_title": "Triple Resonance Domain Condition",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0387/ID0387.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "db36c1ef-8045-53f2-aa00-8275f2483488",
+    "RTEID": "RTE:P1502.8069:T2.4762",
+    "poloidal_theta_rad": "1502.8069",
+    "toroidal_phi_rad": "2.4762",
+    "rteid_source": "manifest",
+    "PiID": "9519415116094",
+    "TZPi": "5",
+    "PiPE_position": "394",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\omega_{1}=\\omega_{2}=\\omega_{3}",
+        "numeric_atoms": [
+          "1",
+          "2",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "omega"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0387\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Triple Resonance Domain Condition\", \"latex\" -> \"\\\\omega_{1}=\\\\omega_{2}=\\\\omega_{3}\", \"numericAtoms\" -> {1, 2, 3}, \"symbolicTokens\" -> {\"omega\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\mathcal{D}_{\\mathrm{res}}=\\{x:\\lvert\\omega_i(x)-\\omega_j(x)\\rvert\\leq\\varepsilon\\}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "lvert",
+          "omega",
+          "rvert",
+          "epsilon",
+          "x",
+          "i",
+          "j"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0387\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Triple Resonance Domain Condition\", \"latex\" -> \"\\\\mathcal{D}_{\\\\mathrm{res}}=\\\\{x:\\\\lvert\\\\omega_i(x)-\\\\omega_j(x)\\\\rvert\\\\leq\\\\varepsilon\\\\}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"lvert\", \"omega\", \"rvert\", \"epsilon\", \"x\", \"i\", \"j\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

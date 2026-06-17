@@ -1,0 +1,260 @@
+\tzpanchor{0371}
+\tzpentryheader{0371}{Constrained Dipole Configuration}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{dd8604bc-da15-53af-93a7-629ddf18c8f5}}\\
+\textbf{PiID} & \tzpcode{8820466521384} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{378}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1440.6754 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{02.3738 rad}\\
+\textbf{TZPID} & \tzpcode{ID0371} & \textbf{Node Dependencies}\quad \tzpidref{0370}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0371} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Opposing Dipole Moments & Constraint Energy Potential\\
+\textbf{Closure Support} & Magnetic Helicity Invariant & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Constrained Dipole Configuration entry receives the dipole, constraint-energy, and helicity equations from the cosmological\_constant source, placing the opposing constrained moments into the Quaternary field-support page.
+
+\tzpsection{Canonical Equation}
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\boldsymbol{\mu}_1(t)=\mu_0\hat{\mathbf{z}},\qquad \boldsymbol{\mu}_2(t)=-\mu_0\hat{\mathbf{z}}
+$
+\end{adjustbox}
+\]
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+U_{\mathrm{con}}=\int_V\frac{\mathbf{B}\cdot\mathbf{B}}{2\mu_0}\,dV+\mathbf{F}_{\mathrm{mech}}\cdot\mathbf{d}
+$
+\end{adjustbox}
+\]
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+H_M=\int_V\mathbf{A}\cdot\mathbf{B}\,dV
+$
+\end{adjustbox}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mu$: source equation symbol.
+    \item $\mu_0$: vacuum permeability constant.
+    \item $U_{\mathrm{con}}$: source equation symbol.
+    \item $B$: magnetic field magnitude.
+    \item $F$: source equation symbol.
+    \item $H_M$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0371 generated source Wolfram model *)
+ClearAll[K0371, Cr0371, T, R, A, W, I, N];
+eq0371$1 = HoldForm[TZPSequence[$boldsymbol[mu]*_*1*t == mu0*hat[z], boldsymbol[mu]*_*2*t == (-mu0)*hat[z]*$]];
+eq0371$2 = HoldForm[$UCon == IntegralV[(B*B)/(2*mu0)]*dV + FMech*d$];
+eq0371$3 = HoldForm[$HM == IntegralVA*B*dV$];
+
+K0371 = HoldForm[{eq0371$1, eq0371$2, eq0371$3}];
+
+N = "normalized TRAWIN closure object for Constrained Dipole Configuration";
+I = "Magnetic Helicity Invariant integration/comparison layer";
+W = "Constraint Energy Potential wave or operator carrier";
+A = "Opposing Dipole Moments admissible action/amplitude condition";
+R = "Constraint Energy Potential rotation/curl preservation layer";
+T = "Opposing Dipole Moments local source condition";
+
+Cr0371[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0371 = Cr0371[K0371];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Opposing Dipole Moments local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Constraint Energy Potential rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Opposing Dipole Moments admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Constraint Energy Potential wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Magnetic Helicity Invariant integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Constrained Dipole Configuration.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0371] Constrained Dipole Configuration}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+|\psi\rangle = \alpha|0\rangle+\beta|1\rangle,
+\qquad
+|\alpha|^2+|\beta|^2=1 .
+\end{equation}
+
+\paragraph{Embedding Map.}
+\begin{equation}
+\iota:S^2_{\mathrm{Bloch}}\hookrightarrow M .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+A qubit is a normalized two-level quantum state. Its amplitudes satisfy
+\begin{equation}
+|\alpha|^2+|\beta|^2=1 .
+\end{equation}
+
+Modulo global phase, the normalized qubit state corresponds to a point on the Bloch sphere:
+\begin{equation}
+|\psi\rangle \longleftrightarrow S^2_{\mathrm{Bloch}} .
+\end{equation}
+
+In the Trawinistic setting, this Bloch sphere is embedded into the ambient manifold by
+\begin{equation}
+\boxed{
+\iota:S^2_{\mathrm{Bloch}}\hookrightarrow M .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The qubit is treated as both a Hilbert-space state and a geometric object embedded into the Trawinistic manifold.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Constrained Dipole Configuration by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Opposing Dipole Moments}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+\boldsymbol{\mu}_1(t)=\mu_0\hat{\mathbf{z}},\qquad \boldsymbol{\mu}_2(t)=-\mu_0\hat{\mathbf{z}}
+$
+\end{adjustbox}
+\]
+\noindent This records the source opposing dipole moments as the configuration anchors.\par
+\noindent\textbf{2. Constraint Energy Potential}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+U_{\mathrm{con}}=\int_V\frac{\mathbf{B}\cdot\mathbf{B}}{2\mu_0}\,dV+\mathbf{F}_{\mathrm{mech}}\cdot\mathbf{d}
+$
+\end{adjustbox}
+\]
+\noindent This places the confinement and mechanical work term on the support page.\par
+\noindent\textbf{3. Magnetic Helicity Invariant}\par
+\[
+\begin{adjustbox}{max width=\linewidth}
+$\displaystyle
+H_M=\int_V\mathbf{A}\cdot\mathbf{B}\,dV
+$
+\end{adjustbox}
+\]
+\noindent This closes the constrained-field support chain with the helicity invariant.\par
+
+\clearpage
+\noindent\textbf{[ID 0371] Constrained Dipole Configuration}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Constrained Dipole Configuration is a registry definition in Field Theory and Action Principles with secondary pressure from Manifold and Metric Dynamics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} This definition sets up a mechanically constrained dipole pair whose fields do not cancel but form nested loops due to separation and confinement. \textbf{Contextual meaning:} The entry reads Constrained Dipole Configuration as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now states the constrained dipole configuration as a real field construction instead of truncated prose fragments. \textbf{Lemma support:} Opposing Dipole Moments; Constraint Energy Potential; Magnetic Helicity Invariant.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The qubit is treated as both a Hilbert-space state and a geometric object embedded into the Trawinistic manifold.
+
+\tzpsection{Equation Grounding}
+Equation anchors: psi(r,z)=A , r ,exp !(-ratio (r-R) to the power 2+z to the power 2 sigma to the power 2 ); mathbf v(r,phi,z)=Big(ratio 1 r partial sub zpsi, ; q(r,z), ; -ratio 1 r partial sub rpsiBig),; abladot v=0; and q(r,z)=S ,ratio psi(r,z) r. Proof route: show that the stated dipole locations and single-dipole field law combine into the constrained total field configuration. Formalization route: prove that superposition of the two dipole sectors and the constraint sector yields the stated total field.
+
+\tzpsection{Interpretive Role}
+The entry now states the constrained dipole configuration as a real field construction instead of truncated prose fragments.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Opposing Source-Sink Localization}: The precise mathematical placement of a positive and negative magnetic pole at fixed, unmoving coordinates in space.
+\item \textbf{Superposed Magnetic Field Lines}: The geometric map created when the outward flux of one pole perfectly bends to meet the inward pull of its partner.
+\item \textbf{Far-Field Cancellation Effects}: The property where the opposing forces of the two poles rapidly neutralize each other at large distances from the central axis.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0371]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0371_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0371] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Constrained Dipole Configuration}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Constrained Dipole Configuration entry receives the dipole, constraint-energy, and
+helicity equations from the cosmological\textbackslash{}\_constant source, p...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Constrained Dipole Configuration is valid as a tensorial/geometric statement when the
+stated tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0371_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

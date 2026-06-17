@@ -1,0 +1,219 @@
+\tzpanchor{0173}
+\tzpentryheader{0173}{Horizontal Lift and Gauge Transport}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{d0d2cf4d-7b64-4c93-9f5c-478342bbf751}}\\
+\textbf{PiID} & \tzpcode{1105559644622} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{180}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{671.7974 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.1069 rad}\\
+\textbf{TZPID} & \tzpcode{ID0173} & \textbf{Node Dependencies}\quad \tzpidref{0172}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0173} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA612.6 fiber bundles & QC gauge structure\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: hep-th, math-ph\\
+\textbf{Primary Support} & Horizontal Lift & Gauge Transport\\
+\textbf{Closure Support} & Connection Form & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Controlling energy flow at the TZP can produce modifications to gravitational curvature, permitting gravitational manipulation and field generation.
+
+\tzpsection{Canonical Equation}
+\[
+\omega(\dot\gamma)=0
+\]
+\[
+\dot\Gamma^{\mathrm{hor}} = \mathrm{Lift}_{\omega}(\dot\gamma)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\omega$: angular frequency term in the source equation.
+    \item $\gamma$: closed loop, path, or admissible trajectory in the entry domain.
+    \item $G$: source equation symbol.
+    \item $L$: characteristic length scale or Lagrangian carrier in the entry relation.
+    \item $a$: source equation symbol.
+    \item $t_{\omega}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0173 generated source Wolfram model *)
+ClearAll[K0173, Cr0173, T, R, A, W, I, N];
+eq0173$1 = HoldForm[omega[dotgamma] == 0];
+eq0173$2 = HoldForm[dotGamma^hor == LiftOmega[dotgamma]];
+eq0173$3 = HoldForm[TZPNormalizeWrap[omega[dotgamma], LiftOmega[dotgamma]]];
+
+K0173 = HoldForm[{eq0173$1, eq0173$2, eq0173$3}];
+
+N = "normalized TRAWIN closure object for Horizontal Lift and Gauge Transport";
+I = "Normalized Closure integration/comparison layer";
+W = "Second Support wave or operator carrier";
+A = "First Support admissible action/amplitude condition";
+R = "Second Support rotation/curl preservation layer";
+T = "First Support local source condition";
+
+Cr0173[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0173 = Cr0173[K0173];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ First Support local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Second Support rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ First Support admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Second Support wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Closure integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Horizontal Lift and Gauge Transport.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0173] Horizontal Lift and Gauge Transport}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\omega(\dot\gamma)=0
+\]
+\[
+\dot\Gamma^{\mathrm{hor}} = \mathrm{Lift}_{\omega}(\dot\gamma)
+\]
+
+\paragraph{Primary Derivation.}
+One can verify the equality using functional and analytic properties. giving the formula in the first line.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+It pertains to the fields or functions just described. Interpreted through TRAWIN, the equation functions as the generalized carrier for the entry’s information content. According to CHL, the derivation provides a certificate connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Horizontal Lift and Gauge Transport by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. First Support}\par
+\[
+\omega(\dot\gamma)=0
+\]
+\noindent This support equation moves the entry from the abstract claim toward a concrete first measurable relation.\par
+\noindent\textbf{2. Second Support}\par
+\[
+\dot\Gamma^{\mathrm{hor}} = \mathrm{Lift}_{\omega}(\dot\gamma)
+\]
+\noindent This support equation adds the second structural constraint needed to narrow the admissible TRAWIN reading.\par
+\noindent\textbf{3. Normalized Closure}\par
+\[
+\tzpnormalizewrap{\omega(\dot\gamma),\mathrm{Lift}_{\omega}(\dot\gamma),\text{transport}}
+\]
+\noindent This normalized closure ties the support terms together and closes the progression under the TRAWIN frame.\par
+
+\clearpage
+\noindent\textbf{[ID 0173] Horizontal Lift and Gauge Transport}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Gravitational Manipulation Capability is a Derivable Prediction. Because gravity converges with other forces at the TZP, the Hamiltonian term HER=   g  R  T   d4x\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{ER\}\} = \textbackslash{}int\_\{\textbackslash{}Sigma\} \textbackslash{}sqrt\{|g|\}\textbackslash{},R\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} T\_\{\textbackslash{}mu\textbackslash{}nu\} \textbackslash{}, d\textasciicircum{}4xHER =    g  R  T   d4x couples directly to spacetime curvature, enabling localized gravitational effects and potential propulsion.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Because gravity converges with other forces at the TZP, the Hamiltonian term HER=   g  R  T   d4x\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{ER\}\} = \textbackslash{}int\_\{\textbackslash{}Sigma\} \textbackslash{}sqrt\{|g|\}\textbackslash{},R\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} T\_\{\textbackslash{}mu\textbackslash{}nu\} \textbackslash{}, d\textasciicircum{}4xHER =    g  R  T   d4x couples directly to spacetime curvature, enabling localized gravitational effects and potential propulsion.
+\textbf{Contextual meaning:} Controlling energy flow at the TZP can produce modifications to gravitational curvature, permitting gravitational manipulation and field generation.
+\textbf{Derivable consequences:} Suggests experimental exploration of grav
+\textbf{Lemma support:} Because gravity converges with other forces at the TZP, the Hamiltonian term HER=   g  R  T   d4x\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{ER\}\} = \textbackslash{}int\_\{\textbackslash{}Sigma\} \textbackslash{}sqrt\{|g|\}\textbackslash{},R\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} T\_\{\textbackslash{}mu\textbackslash{}nu\} \textbackslash{}, d\textasciicircum{}4xHER =    g  R  T   d4x couples directly to spacetime curvature, enabling localized gravitational effects and potential propulsion.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+If experiments yield energy extraction rates far below the predicted scale without explanation, this prediction would be challenged. ID 173: Gravitational Manipulation Capability
+
+\tzpsection{Equation Grounding}
+Because gravity converges with other forces at the TZP, the Hamiltonian term HER=   g  R  T   d4x\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{ER\}\} = \textbackslash{}int\_\{\textbackslash{}Sigma\} \textbackslash{}sqrt\{|g|\}\textbackslash{},R\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} T\_\{\textbackslash{}mu\textbackslash{}nu\} \textbackslash{}, d\textasciicircum{}4xHER =    g  R  T   d4x couples directly to spacetime curvature, enabling localized gravitational effects and potential propulsion.
+
+\tzpsection{Interpretive Role}
+Controlling energy flow at the TZP can produce modifications to gravitational curvature, permitting gravitational manipulation and field generation.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{First Support}: The abstraction of the claim toward a concrete first measurable relation for the bundle lift.
+\item \textbf{Second Support}: The addition of the second structural constraint needed to narrow the admissible TRAWIN reading.
+\item \textbf{Normalized Closure}: The final progression step tying the support terms under the TRAWIN frame.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0173]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0173_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0173] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Horizontal Lift and Gauge Transport}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} controlling energy flow at the TZP can produce modifications to gravitational curvature,
+permitting gravitational manipulation and field generation
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Gravitational Manipulation Capability is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0173_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

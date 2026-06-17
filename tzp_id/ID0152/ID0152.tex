@@ -1,0 +1,251 @@
+\tzpanchor{0152}
+\tzpentryheader{0152}{Matter Stress--Energy Contribution}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{0898bb63-62a9-5100-9ac3-b4b2c0f5030c}}\\
+\textbf{PiID} & \tzpcode{1117450284102} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{159}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{590.2498 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.9726 rad}\\
+\textbf{TZPID} & \tzpcode{ID0152} & \textbf{Node Dependencies}\quad \tzpidref{0151}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0152} & \textbf{Scale}\quad effective matter source tensor\\
+\textbf{LOC Classification} & QC173.6 stress-energy sources & QA299 operator traces\\
+\textbf{arXiv Classification} & Primary: gr-qc \quad Cross-list: hep-th, math-ph & \\
+\textbf{Primary Support} & Matter Tensor Form & Density Trace\\
+\textbf{Closure Support} & Pressure Trace & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory.
+
+\tzpsection{Canonical Equation}
+\[
+T_{\mathrm{matter}}^{\mu\nu}
+=
+\operatorname{diag}\!\left(
+\rho_{\mathrm{eff}}c^2,\ p_{\mathrm{eff}},\ p_{\mathrm{eff}},\ p_{\mathrm{eff}}
+\right)
+\]
+\[
+\rho_{\mathrm{eff}}
+=
+\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}\mathcal{H}_{\mathrm{TRAWIN}}\right]
+\]
+\[
+p_{\mathrm{eff}}
+=
+-\frac{1}{3}\sum_{i=1}^{3}\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}P_i\right]
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $T_{\mathrm{matter}}$: source equation symbol.
+    \item $\mu$: source equation symbol.
+    \item $\rho_{\mathrm{eff}}$: source equation symbol.
+    \item $c$: speed of light or relativistic conversion factor.
+    \item $p_{\mathrm{eff}}$: source equation symbol.
+    \item $\rho_{\mathrm{matrix}}$: source equation symbol.
+    \item $\mathcal{H}_{\mathrm{TRAWIN}}$: source equation symbol.
+    \item $P_i$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0152 generated source Wolfram model *)
+ClearAll[K0152, Cr0152, T, R, A, W, I, N];
+eq0152$1 = HoldForm[TMatter^munu == diagTuple[rhoEffc^2, pEff, pEff, pEff]];
+eq0152$2 = HoldForm[rhoEff == Tr[rhoMatrixHTRAWIN]];
+eq0152$3 = HoldForm[pEff == (-(1/3))*SumI1^3*Tr[rhoMatrixPI]];
+
+K0152 = HoldForm[{eq0152$1, eq0152$2, eq0152$3}];
+
+N = "normalized TRAWIN closure object for Matter Stress--Energy Contribution";
+I = "Pressure Trace integration/comparison layer";
+W = "Density Trace wave or operator carrier";
+A = "Matter Tensor Form admissible action/amplitude condition";
+R = "Density Trace rotation/curl preservation layer";
+T = "Matter Tensor Form local source condition";
+
+Cr0152[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0152 = Cr0152[K0152];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Matter Tensor Form local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Density Trace rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Matter Tensor Form admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Density Trace wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Pressure Trace integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Matter Stress--Energy Contribution.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0152] Matter Stress--Energy Contribution}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+T_{\mathrm{matter}}^{\mu\nu}
+=
+\operatorname{diag}\!\left(
+\rho_{\mathrm{eff}}c^2,\ p_{\mathrm{eff}},\ p_{\mathrm{eff}},\ p_{\mathrm{eff}}
+\right)
+\]
+\[
+\rho_{\mathrm{eff}}
+=
+\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}\mathcal{H}_{\mathrm{TRAWIN}}\right]
+\]
+\[
+p_{\mathrm{eff}}
+=
+-\frac{1}{3}\sum_{i=1}^{3}\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}P_i\right]
+\]
+
+\paragraph{Primary Derivation.}
+The relation is obtained through direct evaluation of the expression. yielding the required identity.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+The statement concerns the variables introduced in the displayed formula. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Matter Stress--Energy Contribution by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Matter Tensor Form}\par
+\[
+T_{\mathrm{matter}}^{\mu\nu}
+=
+\operatorname{diag}\!\left(
+\rho_{\mathrm{eff}}c^2,\ p_{\mathrm{eff}},\ p_{\mathrm{eff}},\ p_{\mathrm{eff}}
+\right)
+\]
+\noindent This fixes the macroscopic form of the matter source.\par
+\noindent\textbf{2. Density Trace}\par
+\[
+\rho_{\mathrm{eff}}
+=
+\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}\mathcal{H}_{\mathrm{TRAWIN}}\right]
+\]
+\noindent This extracts the effective energy density from the internal operator state.\par
+\noindent\textbf{3. Pressure Trace}\par
+\[
+p_{\mathrm{eff}}
+=
+-\frac{1}{3}\sum_{i=1}^{3}\operatorname{Tr}\!\left[\rho_{\mathrm{matrix}}P_i\right]
+\]
+\noindent This closes the progression by defining the isotropic pressure contribution.\par
+
+\clearpage
+\noindent\textbf{[ID 0152] Matter Stress--Energy Contribution}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Matter Stress--Energy Contribution is a Definition. The matter contribution to the stress--energy tensor is Tmatter  =diag ( effc2,peff,peff,peff)T\_\{\textbackslash{}text\{matter\}\}\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} = \textbackslash{}operatorname\{diag\}(\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} c\textasciicircum{}2, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\})Tmatter   =diag( eff c2,peff ,peff ,peff ) where  eff=Tr [ matrix HTrawin]\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} = \textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}, \textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}] eff =Tr[ matrix HTrawin ] and peff=-13Tr [ matrix\{HTrawin,Pi\}]p\_\{\textbackslash{}text\{eff\}\} = -\textbackslash{}tfrac\{1\}\{3\}\textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}\{\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}, P\textasciicircum{}i\textbackslash{}\}]peff =-31 Tr[ matrix \{HTrawin ,Pi\}].
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The matter contribution to the stress--energy tensor is Tmatter  =diag ( effc2,peff,peff,peff)T\_\{\textbackslash{}text\{matter\}\}\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} = \textbackslash{}operatorname\{diag\}(\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} c\textasciicircum{}2, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\})Tmatter   =diag( eff c2,peff ,peff ,peff ) where  eff=Tr [ matrix HTrawin]\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} = \textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}, \textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}] eff =Tr[ matrix HTrawin ] and peff=-13Tr [ matrix\{HTrawin,Pi\}]p\_\{\textbackslash{}text\{eff\}\} = -\textbackslash{}tfrac\{1\}\{3\}\textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}\{\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}, P\textasciicircum{}i\textbackslash{}\}]peff =-31 Tr[ matrix \{HTrawin ,Pi\}].
+\textbf{Contextual meaning:} Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory. De
+\textbf{Derivable consequences:} Source evidence records the entry as a reusable object whose consequences should be read from the matched formal statement and local proof route.
+\textbf{Lemma support:} The matter contribution to the stress--energy tensor is Tmatter  =diag ( effc2,peff,peff,peff)T\_\{\textbackslash{}text\{matter\}\}\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} = \textbackslash{}operatorname\{diag\}(\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} c\textasciicircum{}2, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\})Tmatter   =diag( eff c2,peff ,peff ,peff ) where  eff=Tr [ matrix HTrawin]\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} = \textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}, \textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}] eff =Tr[ matrix HTrawin ] and peff=-13Tr [ matrix\{HTrawin,Pi\}]p\_\{\textbackslash{}text\{eff\}\} = -\textbackslash{}tfrac\{1\}\{3\}\textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}\{\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}, P\textasciicircum{}i\textbackslash{}\}]peff =-31 Tr[ matrix \{HTrawin ,Pi\}].\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory. De
+
+\tzpsection{Equation Grounding}
+The matter contribution to the stress--energy tensor is Tmatter  =diag ( effc2,peff,peff,peff)T\_\{\textbackslash{}text\{matter\}\}\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\} = \textbackslash{}operatorname\{diag\}(\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} c\textasciicircum{}2, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\}, p\_\{\textbackslash{}text\{eff\}\})Tmatter   =diag( eff c2,peff ,peff ,peff ) where  eff=Tr [ matrix HTrawin]\textbackslash{}rho\_\{\textbackslash{}text\{eff\}\} = \textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}, \textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}] eff =Tr[ matrix HTrawin ] and peff=-13Tr [ matrix\{HTrawin,Pi\}]p\_\{\textbackslash{}text\{eff\}\} = -\textbackslash{}tfrac\{1\}\{3\}\textbackslash{}operatorname\{Tr\}[\textbackslash{}rho\_\{\textbackslash{}text\{matrix\}\}\textbackslash{}\{\textbackslash{}mathcal\{H\}\_\{\textbackslash{}text\{Trawin\}\}, P\textasciicircum{}i\textbackslash{}\}]peff =-31 Tr[ matrix \{HTrawin ,Pi\}].
+
+\tzpsection{Interpretive Role}
+Effective energy density and pressure are computed from the density matrix and the Trawin Hamiltonian; this defines how emergent matter contributes to energy--momentum in the unified theory. De
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Matter Tensor Form}: The fixing of the macroscopic form of the matter source.
+\item \textbf{Density Trace}: The extraction of the effective energy density from the internal operator state.
+\item \textbf{Pressure Trace}: The definition of the isotropic pressure contribution.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0152]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0152_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0152] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Matter Stress--Energy Contribution}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} effective energy density and pressure are computed from the density matrix and the
+Trawin Hamiltonian; this defines how emergent matter contributes...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Matter Stress--Energy Contribution is valid when the total tensorial quantity is
+conserved under the stated constraint.''\\
+\textbf{Proof:} The source statement identifies a conserved balance law. Reading 0152 as a proposition,
+validity follows by requiring the full stress, flux, or current contribution to be
+included before the divergence or balance condition is evaluated.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conserved total-structure validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0152_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

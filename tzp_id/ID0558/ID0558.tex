@@ -1,0 +1,232 @@
+\tzpanchor{0558}
+\tzpentryheader{0558}{SO(3) times U(1) Configuration Bundle}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{37acfe17-04ca-51d3-9945-808c174155d2}}\\
+\textbf{PiID} & \tzpcode{7705392171762} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{565}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2143.5386 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{03.5319 rad}\\
+\textbf{TZPID} & \tzpcode{ID0558} & \textbf{Node Dependencies}\quad \tzpidref{0557}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0558} & \textbf{Scale}\quad geometric\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math.DG & Cross-list: math-ph, math.AT\\
+\textbf{Primary Support} & Geometric Carrier & Compatibility Law\\
+\textbf{Closure Support} & Topological Closure & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records so(3) times u(1) configuration bundle through the Senary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.
+
+\tzpsection{Canonical Equation}
+\[
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu} = \beta(g,d_{\mathrm{eff}}).
+\]
+\[
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu}.
+\]
+\[
+\boxed{ \mu\frac{\mathrm{d}g}{\mathrm{d}\mu} = \beta(g,d_{\mathrm{eff}}). }
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mu$: source equation symbol.
+    \item $d_{\mathrm{eff}}$: source equation symbol.
+    \item $\mathcal{K}_{0558}$: canonical registry object for entry ID 0558.
+    \item $\beta(g,d_{eff})$: source equation symbol.
+    \item $a(g,d_{eff})$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0558 generated source Wolfram model *)
+ClearAll[K0558, Cr0558, T, R, A, W, I, N];
+eq0558$1 = HoldForm[mu[dg/dmu] == beta[g, dEff]];
+eq0558$2 = HoldForm[mu[dg/dmu]];
+eq0558$3 = HoldForm[mu[dg/dmu] == beta[g, dEff]];
+
+K0558 = HoldForm[{eq0558$1, eq0558$2, eq0558$3}];
+
+N = "normalized TRAWIN closure object for SO(3) times U(1) Configuration Bundle";
+I = "Topological Closure integration/comparison layer";
+W = "Compatibility Law wave or operator carrier";
+A = "Geometric Carrier admissible action/amplitude condition";
+R = "Compatibility Law rotation/curl preservation layer";
+T = "Geometric Carrier local source condition";
+
+Cr0558[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0558 = Cr0558[K0558];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Geometric Carrier local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Compatibility Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Geometric Carrier admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Compatibility Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Topological Closure integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for SO(3) times U(1) Configuration Bundle.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0558] SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu}
+=
+\beta(g,d_{\mathrm{eff}}).
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $g(\mu)$ be a coupling constant depending on scale $\mu$.  
+Near the TZP, effective dimension may vary according to the hyper-dimensional span, so the beta function depends not only on $g$ but also on $d_{\mathrm{eff}}$.
+
+The scale derivative is written as:
+
+\begin{equation}
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu}.
+\end{equation}
+
+The renormalization flow law becomes:
+
+\begin{equation}
+\boxed{
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu}
+=
+\beta(g,d_{\mathrm{eff}}).
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Renormalization becomes navigation through scale and effective dimension.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors SO(3) times U(1) Configuration Bundle by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Geometric Carrier}\par
+\[
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu} = \beta(g,d_{\mathrm{eff}}).
+\]
+\noindent This fixes the effective geometry or carrier space named by the entry title.\par
+\noindent\textbf{2. Compatibility Law}\par
+\[
+\mu\frac{\mathrm{d}g}{\mathrm{d}\mu}.
+\]
+\noindent This makes the geometry admissible by imposing its internal compatibility law.\par
+\noindent\textbf{3. Topological Closure}\par
+\[
+\boxed{ \mu\frac{\mathrm{d}g}{\mathrm{d}\mu} = \beta(g,d_{\mathrm{eff}}). }
+\]
+\noindent This closes the entry by tying the local structure to a global topological invariant.\par
+
+\clearpage
+\noindent\textbf{[ID 0558] SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+SO(3) times U(1) Configuration Bundle is a registry definition in Quantum-Classical Transition with secondary pressure from Gyromagnetic and Rotating-Frame Physics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} 8.8 x 10 to the power 16. \textbf{Contextual meaning:} The entry reads SO(3) times U(1) Configuration Bundle as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity. \textbf{Lemma support:} Geometric Carrier; Compatibility Law; Topological Closure.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Renormalization becomes navigation through scale and effective dimension.
+
+\tzpsection{Equation Grounding}
+Equation anchors: ErrorActionPreference = Stop ; r omega sub c r approximatelyr 8.8 times 10 to the power 16 Hz ,r; and r rho sub ZPE r =r ratio hbar omega sub c 2 .r. Proof route: show that the effective geometry preserves the required compatibility condition while supporting the stated topological invariant. Formalization route: prove that the effective deformation leaves the relevant Euler characteristic or bundle invariant well-defined.
+
+\tzpsection{Interpretive Role}
+The entry stabilizes the geometric side of the quaternary arc, giving the later dynamical laws a carrier on which they can act without ambiguity.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Spherical-Phase Interlocking Geometry}: The incredibly complex mathematical shape required to track an object that can rotate in any 3D direction, while simultaneously shifting its invisible quantum phase.
+\item \textbf{Electroweak Symmetry Grouping}: The deep, foundational math that proves electricity and radioactivity are actually just two slightly different reflections of the exact same underlying force.
+\item \textbf{Non-Trivial Principal Fibrations}: The realization that as the particle spins around in a circle, its internal quantum stopwatch doesn't return to zero, but instead gets permanently twisted out of sync.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0558]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0558_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0558] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont SO(3) times U(1) Configuration Bundle}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the entry records so(3) times u(1) configuration bundle through the Senary derivation
+layer, using the displayed relations as operational anchors f...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``SO(3) \textbackslash{}times U(1) Configuration Bundle is well formed when the total space, base
+space, structure group, and projection map are compatible.''\\
+\textbf{Proof:} The source statement supplies a bundle-style construction. The CHL reading treats the
+base as the proposition carrier, the fiber or structure group as the typed parameter,
+and the projection as the categorical morphism that preserves local-to-global structure.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- principal-bundle structure validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0558_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

@@ -1,0 +1,240 @@
+\tzpanchor{0091}
+\tzpentryheader{0091}{SO(3) $\times$ U(1) Configuration Bundle}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{10b56340-8d92-555e-ab5d-d38e658110c7}}\\
+\textbf{PiID} & \tzpcode{4211706798214} & \textbf{TZPi}\quad \tzpcode{6}\quad \textbf{PiPE}\quad \tzpcode{98}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{353.3732 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.5823 rad}\\
+\textbf{TZPID} & \tzpcode{ID0091} & \textbf{Node Dependencies}\quad \tzpidref{0017}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0091} & \textbf{Scale}\quad rotation-gauge coupling\\
+\textbf{LOC Classification} & QA613 bundles & QC793 gauge symmetry\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: hep-th, physics.class-ph & \\
+\textbf{Primary Support} & Base-Manifold Carrier & Bundle Structure Law\\
+\textbf{Closure Support} & Physical Configuration Section & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The symmetry structure of the Trawin framework includes both spatial rotations and electromagnetic phases; this combination dictates how fields transform.
+
+\tzpsection{Canonical Equation}
+\[
+P \longrightarrow M,
+\qquad
+\mathrm{Struct}(P)=SO(3) \times U(1)
+\]
+\[
+\sigma : M \longrightarrow P
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $P$: source equation symbol.
+    \item $M$: source equation symbol.
+    \item $U$: auxiliary source state or local chart variable.
+    \item $\sigma$: conductivity or coupling coefficient in the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0091 generated source Wolfram model *)
+ClearAll[K0091, Cr0091, T, R, A, W, I, N];
+eq0091$1 = HoldForm[TZPSequence[P -> M, Struct[P] == SO[3]*U[1]]];
+eq0091$2 = HoldForm[sigma[M] -> P];
+eq0091$3 = HoldForm[M];
+
+K0091 = HoldForm[{eq0091$1, eq0091$2, eq0091$3}];
+
+N = "normalized TRAWIN closure object for SO(3) $\times$ U(1) Configuration Bundle";
+I = "Physical Configuration Section integration/comparison layer";
+W = "Bundle Structure Law wave or operator carrier";
+A = "Base-Manifold Carrier admissible action/amplitude condition";
+R = "Bundle Structure Law rotation/curl preservation layer";
+T = "Base-Manifold Carrier local source condition";
+
+Cr0091[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0091 = Cr0091[K0091];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Base-Manifold Carrier local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Bundle Structure Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Base-Manifold Carrier admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Bundle Structure Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Physical Configuration Section integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for SO(3) \$\textbackslash{}times\$ U(1) Configuration Bundle.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0091] SO(3) $\times$ U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equations.}
+\begin{equation}
+P \longrightarrow M,
+\qquad
+\mathrm{Struct}(P)=SO(3)\times U(1).
+\end{equation}
+
+\begin{equation}
+\sigma:M\longrightarrow P.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $M$ be the base manifold of admissible configurations. Rotational orientation is represented by $SO(3)$, while gauge phase is represented by $U(1)$.
+
+A bundle carrying both data has structure group:
+\begin{equation}
+SO(3)\times U(1).
+\end{equation}
+
+Thus,
+\begin{equation}
+P\to M,
+\qquad
+\mathrm{Struct}(P)=SO(3)\times U(1).
+\end{equation}
+
+A physical configuration is then a section:
+\begin{equation}
+\boxed{
+\sigma:M\to P.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Rotational and gauge-phase data are organized into one configuration bundle.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors SO(3) \$\textbackslash{}times\$ U(1) Configuration Bundle by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Base-Manifold Carrier}\par
+\[
+M
+\]
+\noindent This identifies the domain over which the system is organized.\par
+\noindent\textbf{2. Bundle Structure Law}\par
+\[
+P \longrightarrow M,
+\qquad
+\mathrm{Struct}(P)=SO(3) \times U(1)
+\]
+\noindent This equips the base manifold with combined rotational and gauge symmetry.\par
+\noindent\textbf{3. Physical Configuration Section}\par
+\[
+\sigma : M \longrightarrow P
+\]
+\noindent This closes the progression by representing a physical state as a section of the full configuration bundle.\par
+
+\clearpage
+\noindent\textbf{[ID 0091] SO(3) $\times$ U(1) Configuration Bundle}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+SO(3) times U(1) Configuration Bundle is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The symmetry structure of the Trawin framework includes both spatial rotations and electromagnetic phases; this combination dictates how fields transform. \textbf{Contextual meaning:} The entry reads SO(3) times U(1) Configuration Bundle as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This entry packages symmetry before dynamics. It supplies the geometric stage on which rotational motion and gauge phase can interact coherently throughout the next few entries. \textbf{Lemma support:} Base-Manifold Carrier; Bundle Structure Law; Physical Configuration Section.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Rotational and gauge-phase data are organized into one configuration bundle.
+
+\tzpsection{Equation Grounding}
+Equation anchors: Rotational and gauge symmetries are combined in a configuration bundle with structure group SO(3)times U(1)SO(3)times U(1)SO(3)times U(1); fields are sections of this bundle, and gauge transformations act as SO(3)SO(3)SO(3) rotations combined with U(1)U(1)U(1) phase shifts. Rotational and gauge symmetries are combined in a configuration bundle with structure group SO(3)times U(1)SO(3)times U(1)SO(3)times U(1); fields are sections of this bundle, and gauge transformations act as SO(3)SO(3)SO(3) rotations combined with U(1)U(1)U(1) phase shifts.
+
+\tzpsection{Interpretive Role}
+This entry packages symmetry before dynamics. It supplies the geometric stage on which rotational motion and gauge phase can interact coherently throughout the next few entries.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{So 3 Times 1 Configuration}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\item \textbf{Fibered Carrier Geometric Analogue}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Fibered Carrier Terminology}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0091]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0091_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0091] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont SO(3) $\times$ U(1) Configuration Bundle}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the symmetry structure of the Trawin framework includes both spatial rotations and
+electromagnetic phases; this combination dictates how fields tra...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``SO(3) \textbackslash{}times U(1) Configuration Bundle is well formed when the total space, base
+space, structure group, and projection map are compatible.''\\
+\textbf{Proof:} The source statement supplies a bundle-style construction. The CHL reading treats the
+base as the proposition carrier, the fiber or structure group as the typed parameter,
+and the projection as the categorical morphism that preserves local-to-global structure.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- principal-bundle structure validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0091_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

@@ -1,0 +1,17 @@
+\section*{ID9751: Recursive Harmonic Operators and Inversionslabelsec:recursiveharmonics: Δℓ}
+\paragraph{Metadata.}
+PiID: 0658748822569 | RTEID: RTE:P37865.2985:T5.8417 | UUID: 6d02d53d-3a5f-5919-bc75-4246ad51abbc
+
+\paragraph{Canonical Statement.}
+uantumDecomposition[f\_obs\_, \{R,c\_s,ω\_gyro,B0,μ\_r\}] := Module[\{eigs, match\}, eigs = \{\}; For[n=1, n<=Nmax, n++, For[ℓ=0, ℓ<=Lmax, ℓ++, For[m=-ℓ, m<=ℓ, m++, ω\_nℓ = (c\_s/R)*j\_\{ℓ,n\}*Sqrt[1 + (ω\_gyro/ω\_nℓ)\textasciicircum{}2 * ℓ*(ℓ+1)]; AppendTo[eigs, \{\{n,ℓ,m\}, ω\_nℓ\}]; ]; ]; ]; match = MinimalBy[eigs, Abs[\#[[2]] - f\_obs]\&][[1]]; Return[match]; ] \textbackslash{}end\{verbatim\} Here \$j\_\{\textbackslash{}ell,n\}\$ are spherical Bessel zeros and \$\textbackslash{}omega\_\{n\textbackslash{}ell\}\$ includes gyromagnetic shifts. The output `match` is the mode closest to \$f\_\{\textbackslash{}rm obs\}\$. One then applies selection rules (\$\textbackslash{}Delta\textbackslash{}ell=0,\textbackslash{}pm1,\textbackslash{}pm2\$, etc.) and mode patterns to finalize the identification.
+
+\paragraph{Canonical Equation.}
+\[
+\Delta\ell=0,\pm1,\pm2
+\]
+
+\paragraph{Dictionary.}
+Relation: Δℓ=0,pm1,pm2
+
+\paragraph{Encyclopedia.}
+Recursive Harmonic Operators and Inversionslabelsec:recursiveharmonics: Δℓ is an algebraic definition, written Δℓ=0,pm1,pm2. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

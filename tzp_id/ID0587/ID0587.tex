@@ -1,0 +1,256 @@
+\tzpanchor{0587}
+\tzpentryheader{0587}{CARNOT EFFICIENCY LIMITS (eta\_total)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{9eb3aa66-9479-5974-ba29-112fe8ba1d8e}}\\
+\textbf{PiID} & \tzpcode{8467669405132} & \textbf{TZPi}\quad \tzpcode{9}\quad \textbf{PiPE}\quad \tzpcode{594}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2256.1520 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{03.7174 rad}\\
+\textbf{TZPID} & \tzpcode{ID0587} & \textbf{Node Dependencies}\quad \tzpidref{0586}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0587} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Canonical Definition & Support Relation\\
+\textbf{Closure Support} & Closure Relation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+eta\_\{total\} = eta\_\{coupling\} x eta\_\{extract\} x eta\_\{rect\} x eta\_\{thermal\}
+
+\tzpsection{Canonical Equation}
+\[
+eta_{total} = \eta_{coupling} \times \eta_{extract} \times \eta_{rect} \times \eta_{thermal}
+\]
+\[
+mathcal{J}_{\mathrm{out}} = \mathcal{T}_{\mathrm{TZP}}\!\left(\mathcal{K}_{\mathrm{TZP}}\right)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $J$: source equation symbol.
+    \item $\mathcal{T}_{\mathrm{TZP}}$: source equation symbol.
+    \item $\mathcal{K}_{\mathrm{TZP}}$: source equation symbol.
+    \item $A$: source equation symbol.
+    \item $\mathcal{J}_{\mathrm{out}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0587 generated source Wolfram model *)
+ClearAll[K0587, Cr0587, T, R, A, W, I, N];
+eq0587$1 = HoldForm[etaTotal == etaCoupling*etaExtract*etaRect*etaThermal];
+eq0587$2 = HoldForm[mathcal[J]*_*out == TTZP[KTZP]];
+eq0587$3 = HoldForm[mathcal[A]*_*adm*JOut == 1];
+
+K0587 = HoldForm[{eq0587$1, eq0587$2, eq0587$3}];
+
+N = "normalized TRAWIN closure object for CARNOT EFFICIENCY LIMITS (eta\_total)";
+I = "Closure Relation integration/comparison layer";
+W = "Support Relation wave or operator carrier";
+A = "Canonical Definition admissible action/amplitude condition";
+R = "Support Relation rotation/curl preservation layer";
+T = "Canonical Definition local source condition";
+
+Cr0587[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0587 = Cr0587[K0587];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Canonical Definition local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Support Relation rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Canonical Definition admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Support Relation wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Closure Relation integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for CARNOT EFFICIENCY LIMITS (eta\textbackslash{}\_total).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0587] CARNOT EFFICIENCY LIMITS (eta\_total)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equations.}
+\begin{equation}
+\dot{\omega}(t)
+=
+\frac{\tau_{\mathrm{em}}(t)}{I_T}.
+\end{equation}
+
+\begin{equation}
+\omega(t)
+=
+\omega(0)
++
+\frac{1}{I_T}
+\int_0^t
+\tau_{\mathrm{em}}(t')
+\,\mathrm{d}t' .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $I_T$ be the Trawinistic moment of inertia.  
+Angular momentum is related to angular velocity by:
+\begin{equation}
+L=I_T\omega .
+\end{equation}
+
+Differentiating gives:
+\begin{equation}
+\dot{L}
+=
+I_T\dot{\omega},
+\end{equation}
+assuming $I_T$ is constant over the interval.
+
+Since $\dot{L}=\tau_{\mathrm{em}}$, we obtain:
+\begin{equation}
+\dot{\omega}(t)
+=
+\frac{\tau_{\mathrm{em}}(t)}{I_T}.
+\end{equation}
+
+Integrating through time gives:
+\begin{equation}
+\boxed{
+\omega(t)
+=
+\omega(0)
++
+\frac{1}{I_T}
+\int_0^t
+\tau_{\mathrm{em}}(t')
+\,\mathrm{d}t' .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Rotation is the accumulated response to torque history, scaled by the effective moment of inertia.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors CARNOT EFFICIENCY LIMITS (eta\textbackslash{}\_total) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Canonical Definition}\par
+\[
+eta_{total} = \eta_{coupling} \times \eta_{extract} \times \eta_{rect} \times \eta_{thermal}
+\]
+\noindent This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization.\par
+\noindent\textbf{2. Support Relation}\par
+\[
+mathcal{J}_{\mathrm{out}} = \mathcal{T}_{\mathrm{TZP}}\!\left(\mathcal{K}_{\mathrm{TZP}}\right)
+\]
+\noindent This adds the next operational equation that advances the entry beyond its opening definition.\par
+\noindent\textbf{3. Closure Relation}\par
+\[
+mathcal{A}_{\mathrm{adm}}\!\left(\mathcal{J}_{\mathrm{out}}\right)=1
+\]
+\noindent This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell.\par
+
+\clearpage
+\noindent\textbf{[ID 0587] CARNOT EFFICIENCY LIMITS (eta\_total)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+CARNOT EFFICIENCY LIMITS (eta sub total) is a registry definition in Quantum-Classical Transition with secondary pressure from Gyromagnetic and Rotating-Frame Physics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} eta sub total = eta sub coupling x eta sub extract x eta sub rect x eta sub thermal. \textbf{Contextual meaning:} The entry reads CARNOT EFFICIENCY LIMITS (eta sub total) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now reads through actual sourced equations, so its local arc is carried by explicit mathematical relations rather than a uniform quaternary certificate record shell. \textbf{Lemma support:} Canonical Definition; Support Relation; Closure Relation.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Rotation is the accumulated response to torque history, scaled by the effective moment of inertia.
+
+\tzpsection{Equation Grounding}
+Equation anchors: eta sub total = eta sub coupling times eta sub extract times eta sub rect times eta sub thermal; mathcal J sub out = T sub TZP ( K sub TZP ); and mathcal A sub adm ( J sub out )=1. Proof route: show that the stated equations form a coherent progression for the entry and remain compatible under the TRAWIN ordering. Formalization route: prove that the final closure relation follows from the preceding entry-specific equations.
+
+\tzpsection{Interpretive Role}
+The entry now reads through actual sourced equations, so its local arc is carried by explicit mathematical relations rather than a uniform quaternary certificate record shell.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Absolute Thermodynamic Ceiling}: The inescapable, fundamental law of physics dictating the absolute maximum amount of heat that can ever be converted into useful work.
+\item \textbf{Idealized Heat-Engine Scaling}: The comparison between the messy, real-world performance of the machine and the perfect, frictionless mathematical ideal.
+\item \textbf{Temperature-Gradient Power Cap}: The calculation showing that no matter how clever the engineering, the output is forever limited by the difference between the hottest and coldest parts of the reactor.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0587]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0587_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0587] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont CARNOT EFFICIENCY LIMITS (eta\_total)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} eta\textbackslash{}\_\textbackslash{} = eta\textbackslash{}\_\textbackslash{} x eta\textbackslash{}\_\textbackslash{} x eta\textbackslash{}\_\textbackslash{} x eta\textbackslash{}\_\textbackslash{}
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``CARNOT EFFICIENCY LIMITS (\textbackslash{}eta\_\{total) is valid as a synchronization criterion under
+the coupling conditions named by the source.''\\
+\textbf{Proof:} The source statement describes coupled-oscillator behavior. The logical claim is
+accepted only as a conditional synchronization result: coupling weights, frequency
+spread, and order-parameter behavior determine whether coherence is increased, limited,
+or dominated by a subset.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional synchronization validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0587_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

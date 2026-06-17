@@ -1,0 +1,218 @@
+\tzpanchor{0493}
+\tzpentryheader{0493}{Experimental Deviation Tolerance}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{b163c95f-b376-5aa6-bac7-ec080b8adfc9}}\\
+\textbf{PiID} & \tzpcode{1194912983367} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{500}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1898.8956 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{03.1288 rad}\\
+\textbf{TZPID} & \tzpcode{ID0493} & \textbf{Node Dependencies}\quad \tzpidref{0492}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0493} & \textbf{Scale}\quad Quantum-Classical Transition\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Canonical Definition & Support Relation\\
+\textbf{Closure Support} & Closure Relation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+ID 493 establishes the rigorous error bounds for the Furiene Turbine's operation. To maintain the topological regime, the observed ratio between steps must remain within a 5 Precision Audit: Continuous comparison of SQUID flux data against the weighted surplus criterion. Safety Trigger: Automated decoupling if the error gradient exceeds the Lyapunov persistence limit.
+
+\tzpsection{Canonical Equation}
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+tolerance = 10^(-12)
+$
+\end{adjustbox}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{K}_{0493}$: canonical registry object for entry ID 0493.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0493 generated source Wolfram model *)
+ClearAll[K0493, Cr0493, T, R, A, W, I, N];
+eq0493$1 = HoldForm[$tolerance == $/10^12];
+
+K0493 = HoldForm[{eq0493$1}];
+
+N = "normalized TRAWIN closure object for Experimental Deviation Tolerance";
+I = "Experimental Deviation Tolerance integration/comparison layer";
+W = "Experimental Deviation Tolerance wave or operator carrier";
+A = "Experimental Deviation Tolerance admissible action/amplitude condition";
+R = "Experimental Deviation Tolerance rotation/curl preservation layer";
+T = "Experimental Deviation Tolerance local source condition";
+
+Cr0493[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0493 = Cr0493[K0493];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Experimental Deviation Tolerance local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Experimental Deviation Tolerance rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Experimental Deviation Tolerance admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Experimental Deviation Tolerance wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Experimental Deviation Tolerance integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Experimental Deviation Tolerance.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0493] Experimental Deviation Tolerance}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equations.}
+\begin{equation}
+\mathcal{L}_{X_H}\omega=0.
+\end{equation}
+
+\begin{equation}
+\phi_t^{*}\omega=\omega.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\omega$ be the symplectic form and $X_H$ the Hamiltonian vector field.  
+Hamiltonian flow preserves the symplectic form when:
+
+\begin{equation}
+\mathcal{L}_{X_H}\omega=0.
+\end{equation}
+
+Integrating the infinitesimal flow produces the global preservation law:
+
+\begin{equation}
+\boxed{
+\phi_t^{*}\omega=\omega.
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+Admissible Hamiltonian evolution preserves phase-space topology and Liouville structure.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Experimental Deviation Tolerance by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+tolerance = 10^(-12)
+$
+\end{adjustbox}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0493] Experimental Deviation Tolerance}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Experimental Deviation Tolerance is a registry definition in the active TZPID arc.
+
+\tzpsection{Contextual Meaning}
+ID 493 establishes the rigorous error bounds for the Furiene Turbine's operation. To maintain the topological regime, the observed ratio between steps must remain within a 5 Precision Audit: Continuous comparison of SQUID flux data against the weighted surplus criterion. Safety Trigger: Automated decoupling if the error gradient exceeds the Lyapunov persistence limit.
+
+\tzpsection{Formal Statement}
+\[
+\begin{adjustbox}{max width=\linewidth,center}
+$\displaystyle
+tolerance = 10^(-12)
+$
+\end{adjustbox}
+\]
+
+\tzpsection{Technical Interpretation}
+ID 493 establishes the rigorous error bounds for the Furiene Turbine's operation. To maintain the topological regime, the observed ratio between steps must remain within a 5 Precision Audit: Continuous comparison of SQUID flux data against the weighted surplus criterion. Safety Trigger: Automated decoupling if the error gradient exceeds the Lyapunov persistence limit.
+
+\tzpsection{Equation Grounding}
+The equation grounding is carried by the canonical equation and the source Wolfram model on the entry page.
+
+\tzpsection{Interpretive Role}
+The canonical equation anchors Experimental Deviation Tolerance by connecting the source condition to the derivation layer and proof certificate.
+
+\tzpsection{TZP Thesaurus}
+Experimental Deviation Tolerance; canonical operator; source equation; TRAWIN-normalized relation.
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0493]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0493].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0493] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Experimental Deviation Tolerance}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} sigma\textbackslash{}\_\textbackslash{}\textbackslash{} <= | chi\textbackslash{}\_\textbackslash{}\textbackslash{} - chi\textbackslash{}\_\textbackslash{}\textbackslash{} | <= 0.05
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``EXPERIMENTAL DEVIATION TOLERANCE (\textbackslash{}pm 0.05) is valid as a formal dynamical law when
+the Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0493].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

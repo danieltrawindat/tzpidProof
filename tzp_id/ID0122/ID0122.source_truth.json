@@ -1,0 +1,422 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:37:32.334891+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0122",
+    "uuid": "0c3458a9-851f-5279-bb7e-b4d2f47d41ba",
+    "registry_id": "registry_id_0122",
+    "canonical_title": "Cross Symmetry Vortex Focusing",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0122/ID0122.TEX",
+      "json": "D:/TZPID/TZPID/ID0122/ID0122.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0122/ID0122.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "A cross-shaped stopper dividing an opening into four quadrants creates a stagnation-point geometry with symmetric pressure gradients. In cylindrical coordinates the incompressible continuity equation is",
+    "technical_interpretation": "A cross-shaped stopper dividing an opening into four quadrants creates a stagnation-point geometry with symmetric pressure gradients. In cylindrical coordinates the incompressible continuity equation is \\[ \\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0. \\] Hence an increase in the downward velocity component $v_z$ forces a corresponding increase in the inward radial component $v_r$. The cross geometry therefore enforces four symmetric inflow channels that amplify radial focusing toward the central opening."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0.",
+      "\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0",
+      "v_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow",
+      "N_{\\mathrm{channels}} = 4"
+    ],
+    "source_section_latex": "\\[ \\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0. \\] Hence an increase in the downward velocity component $v_z$ forces a corresponding increase in the inward radial component $v_r$. The cross geometry therefore enforces four symmetric inflow channels that amplify radial focusing toward the central opening.\n\n\\[\n\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0\n\\]\n\\[\nv_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow\n\\]\n\\[\nN_{\\mathrm{channels}} = 4\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Axisymmetric Continuity Law",
+      "formula_latex_blocks": [
+        "\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0"
+      ],
+      "interpretive_role": "This supplies the conservation statement that links vertical draw to radial intake."
+    },
+    {
+      "step": 2,
+      "component_title": "Focused Inflow Response",
+      "formula_latex_blocks": [
+        "v_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow"
+      ],
+      "interpretive_role": "This states the directional consequence of stronger downward transport in the cross geometry."
+    },
+    {
+      "step": 3,
+      "component_title": "Four-Channel Symmetry",
+      "formula_latex_blocks": [
+        "N_{\\mathrm{channels}} = 4"
+      ],
+      "interpretive_role": "This closes the progression by identifying the structural reason the focusing is amplified rather than generic."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0122}$",
+        "description": "canonical registry object for entry ID 0122."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0122}$",
+        "name": "canonical registry object for entry ID 0122.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigl(r v_r\\bigr)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\uparrow$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Longrightarrow$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$N_{channels}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$l(r v_r\\bigr)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Cross Symmetry Vortex Focusing\nCanonical operator translation\neq0122_1 = HoldForm[(1)/(r)(D)/(D r)(r v_r) + (D v_z)/(D z) == 0];\neq0122_2 = HoldForm[(1)/(r)(D)/(D r)(r v_r) + (D v_z)/(D z) == 0];\neq0122_3 = HoldForm[v_z v_r];\neq0122_4 = HoldForm[Nchannels == 4];\n\nTRAWIN closure composition\nTRAWINClosure0122[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0122 := HoldForm[{eq0122_1, eq0122_2, eq0122_3, eq0122_4}];\nResult0122 := TRAWINClosure0122[K0122];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0.",
+          "normalized_latex": "((1)/(r))((Partial)/(Partial*r))(r*vR)+((Partial*vZ)/(Partial*z))==0",
+          "wolfram_input": "((1)/(r))((Partial)/(Partial*r))(r*vR)+((Partial*vZ)/(Partial*z))==0",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0]",
+          "texform_roundtrip": "\\frac{\\text{vR}}{r}+\\frac{\\text{vZ}}{z}=0",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0",
+          "normalized_latex": "((1)/(r))((Partial)/(Partial*r))(r*vR)+((Partial*vZ)/(Partial*z))==0",
+          "wolfram_input": "((1)/(r))((Partial)/(Partial*r))(r*vR)+((Partial*vZ)/(Partial*z))==0",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0]",
+          "texform_roundtrip": "\\frac{\\text{vR}}{r}+\\frac{\\text{vZ}}{z}=0",
+          "messages": []
+        },
+        {
+          "latex": "v_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow",
+          "normalized_latex": "vZuparrowLongrightarrow*vRuparrow",
+          "wolfram_input": "vZuparrowLongrightarrow*vRuparrow",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[vZuparrowLongrightarrow*vRuparrow]",
+          "texform_roundtrip": "\\text{vRuparrow} \\text{vZuparrowLongrightarrow}",
+          "messages": []
+        },
+        {
+          "latex": "N_{\\mathrm{channels}} = 4",
+          "normalized_latex": "NChannels==4",
+          "wolfram_input": "NChannels==4",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[NChannels == 4]",
+          "texform_roundtrip": "\\text{NChannels}=4",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0122 generated source-truth Wolfram model *)\nClearAll[K0122, TRAWINClosure0122];\neq0122$1 = HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0];\neq0122$2 = HoldForm[(1/r)*(Partial/(Partial*r))*(r*vR) + (Partial*vZ)/(Partial*z) == 0];\neq0122$3 = HoldForm[vZuparrowLongrightarrow*vRuparrow];\neq0122$4 = HoldForm[NChannels == 4];\nK0122 = HoldForm[{eq0122$1, eq0122$2, eq0122$3, eq0122$4}];\nTRAWINClosure0122[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0122 = TRAWINClosure0122[K0122];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[ \\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0. \\] Hence an increase in the downward velocity component $v_z$ forces a corresponding increase in the inward radial component $v_r$. The cross geometry therefore enforces four symmetric inflow channels that amplify radial focusing toward the central opening.\n\n\\[\n\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0\n\\]\n\\[\nv_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow\n\\]\n\\[\nN_{\\mathrm{channels}} = 4\n\\]\n\n\\paragraph{Primary Derivation.}\nThe first line specifies a map, while the subsequent line provides its explicit form \\( v_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow \\). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.\n\\paragraph{Equation Type.}\nThis statement is classified as a map relation.\n\n\\paragraph{Interpretation.}\nIt pertains to the fields or functions just described. In the TRAWIN reading, the equation functions as the mapping carrier for the entry’s information content. According to CHL, the derivation provides a witness morphism connecting the canonical proposition to its proof certificate.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "wave-geometry-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0122/ID0122.source_truth.json",
+    "entry_id": "ID0122",
+    "registry_id": "registry_id_0122",
+    "canonical_title": "Cross Symmetry Vortex Focusing",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0122/ID0122.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "0c3458a9-851f-5279-bb7e-b4d2f47d41ba",
+    "RTEID": "RTE:P473.7531:T0.7806",
+    "poloidal_theta_rad": "473.7531",
+    "toroidal_phi_rad": "0.7806",
+    "rteid_source": "manifest",
+    "PiID": "3844609550582",
+    "TZPi": "9",
+    "PiPE_position": "129",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(r v_r\\bigr) + \\frac{\\partial v_z}{\\partial z} = 0.",
+        "numeric_atoms": [
+          "1",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "bigl",
+          "bigr",
+          "r",
+          "v",
+          "z"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0122\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cross Symmetry Vortex Focusing\", \"latex\" -> \"\\\\frac{1}{r}\\\\frac{\\\\partial}{\\\\partial r}\\\\bigl(r v_r\\\\bigr) + \\\\frac{\\\\partial v_z}{\\\\partial z} = 0.\", \"numericAtoms\" -> {1, 0}, \"symbolicTokens\" -> {\"partial\", \"bigl\", \"bigr\", \"r\", \"v\", \"z\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\frac{1}{r}\\frac{\\partial}{\\partial r}(r v_r) + \\frac{\\partial v_z}{\\partial z} = 0",
+        "numeric_atoms": [
+          "1",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "r",
+          "v",
+          "z"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0122\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cross Symmetry Vortex Focusing\", \"latex\" -> \"\\\\frac{1}{r}\\\\frac{\\\\partial}{\\\\partial r}(r v_r) + \\\\frac{\\\\partial v_z}{\\\\partial z} = 0\", \"numericAtoms\" -> {1, 0}, \"symbolicTokens\" -> {\"partial\", \"r\", \"v\", \"z\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "v_z \\uparrow \\;\\Longrightarrow\\; v_r \\uparrow",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "uparrow",
+          "Longrightarrow",
+          "v",
+          "z",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0122\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Cross Symmetry Vortex Focusing\", \"latex\" -> \"v_z \\\\uparrow \\\\;\\\\Longrightarrow\\\\; v_r \\\\uparrow\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"uparrow\", \"Longrightarrow\", \"v\", \"z\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "N_{\\mathrm{channels}} = 4",
+        "numeric_atoms": [
+          "4"
+        ],
+        "symbolic_tokens": [
+          "N"
+        ],
+        "candidate_wolfram_input": "HoldForm[N$channels == 4]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0122\", 4, <|\"kind\" -> \"numeric_symbolic\", \"title\" -> \"Cross Symmetry Vortex Focusing\", \"latex\" -> \"N_{\\\\mathrm{channels}} = 4\", \"numericAtoms\" -> {4}, \"symbolicTokens\" -> {\"N\"}, \"candidateWolframInput\" -> \"HoldForm[N$channels == 4]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 4,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

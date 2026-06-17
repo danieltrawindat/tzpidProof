@@ -1,0 +1,8 @@
+% Auto-generated source-truth intake stub for ID4648.
+\tzpentry{ID4648}{Unresolved Source Fragment (Pending Review)}
+\paragraph{Canonical Statement.}
+ID4648 introduces Unresolved Source Fragment (Pending Review) as a source-extracted canonical equation candidate. The equation is promoted from the Tier A equation-source intake and remains pending source-context expansion, duplicate review against the earlier TZPID corpus, Wolfram normalization, symbol-key enrichment, and derivation/proof-lane construction.
+\paragraph{Canonical Equation.}
+$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...
+\paragraph{Registry Metadata.}
+UUID: \texttt{11148d98-5d0a-5617-927e-d74e71808924}. PiID: \texttt{PiID-4648}. LOC: \texttt{QA - Mathematics: geometry and topology}. arXiv: \texttt{math.DG}.

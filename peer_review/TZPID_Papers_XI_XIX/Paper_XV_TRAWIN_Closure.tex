@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={The TRAWIN Operator Composition and Its Closure},pdfsubject={TZPID Gold Spine Series II, Paper XV of XX, DOI 10.5281/zenodo.20725456}]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{The TRAWIN Operator Composition and Its Closure:\\ A Type-Admissible Operator Pass Over the Registry, with Verified Closure Identities\\[0.6em]
+\large TZPID Gold Spine Series II, Paper XV of XX}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20725456}{10.5281/zenodo.20725456}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The first series treated the registry's equations as a static catalogue. This paper makes it a calculus. The Trawin Operator Alphabet $\mathcal{O}_{\mathrm{TRAWIN}} = \{T,R,A,W,I,N\}$ is six operator classes---temporal $\partial_t$, rotational/radial $\nabla\times$, amplitude $A\cdot$, wave $\Box = \nabla^2 - c^{-2}\partial_t^2$, integral $\int_\Omega\cdot\,dV$, normalization---whose ordered composition $\mathcal{C}_R = N \circ I \circ W \circ A \circ R \circ T$ acts on a field $\Psi$ and is admissible when $\mathcal{C}_R[\Psi] = 0$ or const. We run this pass over the entire registry ($10{,}356$ entries), tagging each field by type (scalar, vector, tensor, logical) so inadmissible operators are marked, not silently applied. The census is scalar $76.9\%$, vector $10.2\%$, tensor $6.9\%$, logical $6.0\%$; operator reach is $N$ at $100\%$, $T/A/W/I$ at $94\%$, $R$ at $87\%$, with the $621$ logical statements correctly carrying only the closure operator. We then evaluate the composition on the cosmology keystones and verify five operator-level closure identities symbolically: $\nabla\times\nabla\varphi = 0$ (the classical Einstein limit of ID0335), $\nabla\cdot(\nabla\times\mathbf{F}) = 0$ (conservation, ID0167), $\dot V/V = 3H$ (ID10867), $\dot\rho = 0$ under $p = -\rho c^2$ (the vacuum continuity fixed point, ID10868), and the far-field free-wave limit of ID0958. Each is tied to a built Isabelle/HOL vector-calculus carrier theorem, so the closures rest on machine-checked lemmas rather than numerics alone. The result converts a uniform symbolic scaffold into a type-honest, partially-certified closure layer feeding Papers XVI--XX.
+\end{abstract}
+\section{Introduction: from catalogue to calculus}
+A registry of ten thousand equations is a catalogue until a uniform operation acts on all of it. The Trawin Operator Alphabet supplies that operation: six domain-agnostic classes that compose into a single closure map. Applying it to every entry tests, uniformly, whether each equation's field admits the framework's admissibility condition---and exposes where the operation is meaningless, so the pass is honest about its own coverage.
+\section{The operator alphabet and composition}
+\begin{definition}[TRAWIN realization]
+A realization is a six-tuple $(T,R,A,W,I,N)$ with representative forms $T := \partial_t$, $R := \nabla\times$ (or $r\,\hat r\cdot\nabla$), $A := A(\mathbf{x},t)\cdot$, $W := \Box = \nabla^2 - c^{-2}\partial_t^2$, $I := \int_\Omega \cdot\,dV$, $N := $ normalization. The composition is $\mathcal{C}_R := N \circ I \circ W \circ A \circ R \circ T$; a realization is admissible when $\mathcal{C}_R[\Psi] = 0$ or const.
+\end{definition}
+The ordering is not arbitrary: $T$ extracts local evolution, $R$ and $A$ shape it, $W$ propagates it, $I$ aggregates it, and $N$ enforces the closure---a map from a local field to a global constraint.
+\section{Type-admissible pass over the registry}
+Each field $\Psi$ is classified, and each operator marked admissible or not according to Table~\ref{tab:admiss}.
+\begin{table}[ht]\centering
+\caption{Operator admissibility by field type. A blank cell is left empty, not filled with a vacuous wrap.}
+\label{tab:admiss}
+\begin{tabular}{lcccccc}
+\toprule
+Field type & $T$ & $R$ & $A$ & $W$ & $I$ & $N$ \\
+\midrule
+scalar & yes & yes (radial) & yes & yes & yes & yes \\
+vector & yes & yes (curl) & yes & yes & yes & yes \\
+tensor & yes & n/a & yes & yes & yes & yes \\
+logical & n/a & n/a & n/a & n/a & n/a & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+Over the $10{,}356$ entries the census is scalar $76.9\%$, vector $10.2\%$, tensor $6.9\%$, logical $6.0\%$. Reach: $N$ at $100\%$ (the universal closure, $N(\mathrm{TRAWI}) = 0$), $T/A/W/I$ at $94\%$ (all but the logical statements), $R$ at $87\%$ (withheld from the $716$ tensor fields where the curl is ill-defined). The $621$ logical statements---assertions like $\det(g) = 0$---carry only the closure operator, so the pass does not manufacture $\partial_t(\forall\,\Gamma \subset M)$.
+\begin{remark}[Why type-tagging matters]
+Without it, the pass would report a uniform six-fold wrap and silently include $\sim 6\%$ vacuous operations and many ill-typed curls. The tagging converts that noise to signal: the coverage statistics are the honest reach of the calculus.
+\end{remark}
+\section{Verified closure identities on the keystones}
+On the cosmology keystones the composition is evaluated and the closure checked symbolically.
+\begin{table}[ht]\centering
+\caption{Operator-level closure identities, verified symbolically.}
+\label{tab:closures}
+\begin{tabular}{lll}
+\toprule
+Identity & Result & Keystone \\
+\midrule
+$R \circ T$ on a gradient: $\nabla\times\nabla\varphi$ & $= 0$ & ID0335 (classical Einstein limit) \\
+divergence: $\nabla\cdot(\nabla\times\mathbf{F})$ & $= 0 \Rightarrow \nabla^\mu T_{\mu\nu} = 0$ & ID0167 (conservation) \\
+breathing: $V = 2\pi^2 R^3 \Rightarrow \dot V/V$ & $= 3\dot R/R = 3H$ & ID10867 \\
+continuity, $p = -\rho c^2$: $\dot\rho + 3H(\rho + p/c^2)$ & $= \dot\rho \Rightarrow \rho_\Lambda = $ const & ID10868 \\
+wave limit: $\Box A = N_\rho,\ N_\rho \to 0$ & $\Rightarrow \Box A = 0$ (free wave) & ID0958 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{theorem}[Closure on the keystones]
+The five identities are exact symbolic results. With the checks of Papers XI--XII, the keystones ID0335, ID0167, ID0394, ID0958, and ID0400/ID1392 carry admissible closures, and ID10867--ID10870 are newly computed and closed.
+\end{theorem}
+\section{The formal backbone}
+Each operator-level step is discharged by an existing Isabelle/HOL vector-calculus carrier. The curl-of-a-gradient closure is \texttt{isar\_delta\_alpha\_gradient\_curl\_layer}; the integral step (Stokes--Green) is \texttt{vc\_green\_rectangle\_constant\_curl} and \texttt{vc\_rect\_boundary\_circulation\_simplifies}; the discrete normalization is \texttt{vc\_quantized\_flux\_is\_quantized}. The composition rests on machine-checked lemmas, with the cosmological numbers cross-checked in Wolfram---the same verification posture as the first series.
+\section{Demarcation}
+\textbf{Established mathematics:} $\nabla\times\nabla\varphi = 0$; $\nabla\cdot(\nabla\times\mathbf{F}) = 0$; $\dot V/V = 3H$; the continuity fixed point $\dot\rho = 0$ at $w = -1$; the d'Alembertian free-wave limit.
+
+\textbf{Framework synthesis:} the Trawin Operator Alphabet and its composition as a uniform closure map; the type-admissible pass as a coverage audit; and the identification of the five identities as the operator-level content of the cosmology keystones.
+
+\textbf{Predictions:} the pass is a falsifiable bookkeeping claim---any keystone whose composition failed to close would be flagged, and none of the curated keystones do; the coverage statistics are reproducible from the registry and the classifier.
+\section{Limits of the construction}
+The full $10{,}356$-row pass is a type-honest scaffold, not a proof: a uniform wrap is not a theorem. The certified content is the small curated layer of the closures. Within it, two obligations remain open: ID10871 closes only on the constraint surface, not as an identity; and the tensor calculus for ID0335 and ID0167 is represented by typed predicates, not full manifold curvature. The calculus advances the bookkeeping; it does not by itself prove the physics.
+\section{Conclusion: the registry now computes}
+With the TRAWIN composition the registry stops being a catalogue and starts being a calculus: every entry is run through a uniform six-operator closure, the pass is honest about where the operators apply, and the cosmology keystones carry symbolically verified closures backed by built Isabelle carriers. One of those---the vacuum continuity fixed point $\dot\rho = 0$ at $p = -\rho c^2$ (ID10868)---is the hinge of the dark-energy problem Paper XII left open. Papers XVI--XX turn that hinge into the release-facing closure of the series.
+\begin{thebibliography}{9}
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry}, TZPIDProof archive (2026).
+\bibitem{primary} Trawin, D. A., \emph{Trawin Zero Point 100 (Primary)}, Definitions 2--4 (Trawin Operator Alphabet) (2026).
+\bibitem{spartan} Trawin, D. A., \emph{The Spartan Dawn Test}, TZPID Gold Spine Series II, Paper XII (2026).
+\bibitem{isar} Trawin, D. A., \emph{Vector-Calculus Isar Spine Layer Certificate}, TZPIDProof archive (2026).
+\bibitem{nipkow} Nipkow, T., Paulson, L. C., Wenzel, M., \emph{Isabelle/HOL}, Springer LNCS 2283 (2002).
+\bibitem{harrison} Harrison, J., \emph{The HOL Light theory of Euclidean space}, J.\ Autom.\ Reasoning \textbf{50}, 173 (2013).
+\bibitem{wald} Wald, R. M., \emph{General Relativity}, University of Chicago Press (1984).
+\end{thebibliography}
+\end{document}

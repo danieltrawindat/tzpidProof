@@ -1,0 +1,378 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T16:11:02.956241+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0531",
+    "uuid": "7cbd34d9-a0c9-5330-8195-f230154204e4",
+    "registry_id": "registry_id_0531",
+    "canonical_title": "ZERO-POINT ENERGY PUMPING MECHANISM",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0531/ID0531.TEX",
+      "json": "D:/TZPID/TZPID/ID0531/ID0531.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0531/ID0531.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The entry records zero-point energy pumping mechanism through the Senary derivation layer, using the displayed relations as operational anchors for the canonical equation chain.",
+    "technical_interpretation": "formal\\_statement\": \"The vacuum energy density at the TZP is defined as  rho \\_vacT=1u \\_T4  int0 omega \\_cuteta( omega) hbar omega d omega rho \\_\\{vac\\} textsuperscript\\{\\{T\\}= frac\\{1\\}\\{u \\_\\{T\\}\\}4\\} , int\\_\\{0\\} \\textasciicircum{}\\{\\}\\{ omega \\_\\{cut\\}\\} eta( omega) , hbar omega ,d omega rho \\_vacT=u \\_T41 int0 omega \\_cuteta( omega)hbar omegad omega, where eta( omega) eta( omega)eta( omega) is the spectral density index from ID ,015 and  omega \\_cut omega \\_\\{cut\\} omega \\_cut is a high-frequency cutoff determined by  HD."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\frac{\\partial S}{\\partial t} + \\mathcal{H}_T \\left( q,\\frac{\\partial S}{\\partial q},t \\right) = 0.",
+      "p_q=\\frac{\\partial S}{\\partial q}.",
+      "\\mathcal{H}_T(q,p_q,t)."
+    ],
+    "source_section_latex": "\\[\n\\frac{\\partial S}{\\partial t} + \\mathcal{H}_T \\left( q,\\frac{\\partial S}{\\partial q},t \\right) = 0.\n\\]\n\\[\np_q=\\frac{\\partial S}{\\partial q}.\n\\]\n\\[\n\\mathcal{H}_T(q,p_q,t).\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Frequency Relation",
+      "formula_latex_blocks": [
+        "\\frac{\\partial S}{\\partial t} + \\mathcal{H}_T \\left( q,\\frac{\\partial S}{\\partial q},t \\right) = 0."
+      ],
+      "interpretive_role": "This fixes the first explicit relation carried by the entry rather than a generic certificate record normalization."
+    },
+    {
+      "step": 2,
+      "component_title": "Frequency Relation",
+      "formula_latex_blocks": [
+        "p_q=\\frac{\\partial S}{\\partial q}."
+      ],
+      "interpretive_role": "This adds the next operational equation that advances the entry beyond its opening definition."
+    },
+    {
+      "step": 3,
+      "component_title": "Closure Relation",
+      "formula_latex_blocks": [
+        "\\mathcal{H}_T(q,p_q,t)."
+      ],
+      "interpretive_role": "This closes the progression with an actual admissibility or closure relation instead of recycling the normalization shell."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0531}$",
+        "description": "canonical registry object for entry ID 0531."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0531}$",
+        "name": "canonical registry object for entry ID 0531.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left( q,\\frac{\\partial S}{\\partial q},t \\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T(q,p_q,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t( q,\\frac{\\partial S}{\\partial q},t \\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "ZERO-POINT ENERGY PUMPING MECHANISM\nCanonical operator translation\neq0531_1 = HoldForm[(D S)/(D t) + (H)_T ( q,(D S)/(D q),t ) == 0];\neq0531_2 = HoldForm[p_q==(D S)/(D q)];\neq0531_3 = HoldForm[(H)_T(q,p_q,t)];\n\nTRAWIN closure composition\nTRAWINClosure0531[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0531 := HoldForm[{eq0531_1, eq0531_2, eq0531_3}];\nResult0531 := TRAWINClosure0531[K0531];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\frac{\\partial S}{\\partial t} + \\mathcal{H}_T \\left( q,\\frac{\\partial S}{\\partial q},t \\right) = 0.",
+          "normalized_latex": "((Partial*S)/(Partial*t))+HT[q,((Partial*S)/(Partial*q)),t]==0",
+          "wolfram_input": "((Partial*S)/(Partial*t))+HT[q,((Partial*S)/(Partial*q)),t]==0",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[(Partial*S)/(Partial*t) + HT[q, (Partial*S)/(Partial*q), t] == 0]",
+          "texform_roundtrip": "\\text{HT}\\left(q,\\frac{S}{q},t\\right)+\\frac{S}{t}=0",
+          "messages": []
+        },
+        {
+          "latex": "p_q=\\frac{\\partial S}{\\partial q}.",
+          "normalized_latex": "pQ==((Partial*S)/(Partial*q))",
+          "wolfram_input": "pQ==((Partial*S)/(Partial*q))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[pQ == (Partial*S)/(Partial*q)]",
+          "texform_roundtrip": "\\text{pQ}=\\frac{S}{q}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathcal{H}_T(q,p_q,t).",
+          "normalized_latex": "HT[q,pQ,t]",
+          "wolfram_input": "HT[q,pQ,t]",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[HT[q, pQ, t]]",
+          "texform_roundtrip": "\\text{HT}(q,\\text{pQ},t)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0531 generated source-truth Wolfram model *)\nClearAll[K0531, TRAWINClosure0531];\neq0531$1 = HoldForm[(Partial*S)/(Partial*t) + HT[q, (Partial*S)/(Partial*q), t] == 0];\neq0531$2 = HoldForm[pQ == (Partial*S)/(Partial*q)];\neq0531$3 = HoldForm[HT[q, pQ, t]];\nK0531 = HoldForm[{eq0531$1, eq0531$2, eq0531$3}];\nTRAWINClosure0531[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0531 = TRAWINClosure0531[K0531];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\frac{\\partial S}{\\partial t}\n+\n\\mathcal{H}_T\n\\left(\nq,\\frac{\\partial S}{\\partial q},t\n\\right)\n=\n0 .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $S(q,t)$ be the action function for a classical trajectory on the Trawinistic manifold.  \nThe canonical momentum is obtained from the action by:\n\n\\begin{equation}\np_q=\\frac{\\partial S}{\\partial q}.\n\\end{equation}\n\nThe Hamiltonian density or Hamiltonian function in Trawinistic form is:\n\n\\begin{equation}\n\\mathcal{H}_T(q,p_q,t).\n\\end{equation}\n\nSubstituting $p_q=\\partial S/\\partial q$ into the Hamiltonian gives:\n\n\\begin{equation}\n\\mathcal{H}_T\n\\left(\nq,\\frac{\\partial S}{\\partial q},t\n\\right).\n\\end{equation}\n\nThe Hamilton--Jacobi condition states that time evolution of the action cancels the Hamiltonian contribution:\n\n\\begin{equation}\n\\boxed{\n\\frac{\\partial S}{\\partial t}\n+\n\\mathcal{H}_T\n\\left(\nq,\\frac{\\partial S}{\\partial q},t\n\\right)\n=\n0 .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThis equation translates Trawinistic Hamiltonian dynamics into an action-based evolution law.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "",
+    "claim_strength": "",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0531/ID0531.source_truth.json",
+    "entry_id": "ID0531",
+    "registry_id": "registry_id_0531",
+    "canonical_title": "ZERO-POINT ENERGY PUMPING MECHANISM",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0531/ID0531.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7cbd34d9-a0c9-5330-8195-f230154204e4",
+    "RTEID": "RTE:P2042.5748:T3.3655",
+    "poloidal_theta_rad": "2042.5748",
+    "toroidal_phi_rad": "3.3655",
+    "rteid_source": "manifest",
+    "PiID": "3952247371907",
+    "TZPi": "7",
+    "PiPE_position": "538",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\frac{\\partial S}{\\partial t} + \\mathcal{H}_T \\left( q,\\frac{\\partial S}{\\partial q},t \\right) = 0.",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "partial",
+          "t",
+          "T",
+          "q"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0531\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"ZERO-POINT ENERGY PUMPING MECHANISM\", \"latex\" -> \"\\\\frac{\\\\partial S}{\\\\partial t} + \\\\mathcal{H}_T \\\\left( q,\\\\frac{\\\\partial S}{\\\\partial q},t \\\\right) = 0.\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"partial\", \"t\", \"T\", \"q\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "p_q=\\frac{\\partial S}{\\partial q}.",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "partial",
+          "p",
+          "q"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0531\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"ZERO-POINT ENERGY PUMPING MECHANISM\", \"latex\" -> \"p_q=\\\\frac{\\\\partial S}{\\\\partial q}.\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"partial\", \"p\", \"q\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "\\mathcal{H}_T(q,p_q,t).",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "T",
+          "q",
+          "p",
+          "t"
+        ],
+        "candidate_wolfram_input": "HoldForm[calH$T[q,p$q,t]]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0531\", 3, <|\"kind\" -> \"symbolic\", \"title\" -> \"ZERO-POINT ENERGY PUMPING MECHANISM\", \"latex\" -> \"\\\\mathcal{H}_T(q,p_q,t).\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"T\", \"q\", \"p\", \"t\"}, \"candidateWolframInput\" -> \"HoldForm[calH$T[q,p$q,t]]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

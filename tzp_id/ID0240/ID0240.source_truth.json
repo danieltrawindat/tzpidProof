@@ -1,0 +1,356 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T19:48:09.495358+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0240",
+    "uuid": "7f9ce01e-f4b6-5850-8311-3d33a957902d",
+    "registry_id": "registry_id_0240",
+    "canonical_title": "Magnetic Reynolds Number Regimes",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0240/ID0240.TEX",
+      "json": "D:/TZPID/TZPID/ID0240/ID0240.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0240/ID0240.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The transition between laminar and dynamo regimes in magnetohydrodynamics is organized by the magnetic Reynolds number \\(R_m=\\mu_0\\sigma vL\\). Laboratory flows with \\(R_m\\ll1\\) are diffusion-dominated, Earth's core at \\(R_m\\sim10^3\\) is near dynamo threshold, and stellar interiors at \\(R_m\\sim10^8\\)--\\(10^{10}\\) are fully turbulent dynamos.",
+    "technical_interpretation": "The transition between laminar and dynamo regimes in magnetohydrodynamics occurs around R\\_m $f(\\lambda x) = \\lambda^D f(x) \\implies D omega^{2} = k^{2} v_{\\mathrm{A}}^{2}\\left[1 + \\left(\\frac{\\omega_{\\mathrm{gyro}}}{\\omega}\\right)^{2}\\right] 3/2$ 1. Laboratory flows with R\\_m much less than one are diffusion-dominated, Earth's core at R\\_m around 10\\^{}3 is near dynamo threshold, and stellar interiors at R\\_m approximately 10\\^{}8 to 10\\^{}10 are fully turbulent dynamos."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "R_m=\\mu_0\\sigma vL",
+      "R_m<1\\Rightarrow \\text{diffusion dominated}"
+    ],
+    "source_section_latex": "\\[\nR_m=\\mu_0\\sigma vL\n\\]\n\\[\nR_m<1\\Rightarrow \\text{diffusion dominated}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Dimensionless Ratio",
+      "formula_latex_blocks": [
+        "R_m=\\mu_0\\sigma vL"
+      ],
+      "interpretive_role": "This defines the transport-to-diffusion balance that controls the magnetic regime."
+    },
+    {
+      "step": 2,
+      "component_title": "Critical Regime",
+      "formula_latex_blocks": [
+        "R_m<1\\Rightarrow \\text{diffusion dominated}"
+      ],
+      "interpretive_role": "This marks the onset of the self-organizing dynamo window."
+    },
+    {
+      "step": 3,
+      "component_title": "Normalized Threshold",
+      "formula_latex_blocks": [
+        "R_m\\gg 1\\Rightarrow \\text{dynamo dominated}"
+      ],
+      "interpretive_role": "This closes the entry by normalizing the actual regime against the critical threshold."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0240}$",
+        "description": "canonical registry object for entry ID 0240."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0240}$",
+        "name": "canonical registry object for entry ID 0240.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sigma$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Rightarrow$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\gg$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Magnetic Reynolds Number Regimes\nCanonical operator translation\neq0240_1 = HoldForm[R_m==mu_0 vL];\neq0240_2 = HoldForm[R_m<1 diffusion dominated];\n\nTRAWIN closure composition\nTRAWINClosure0240[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0240 := HoldForm[{eq0240_1, eq0240_2}];\nResult0240 := TRAWINClosure0240[K0240];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "R_m=\\mu_0\\sigma vL",
+          "normalized_latex": "RM==mu0*sigma*vL",
+          "wolfram_input": "RM==mu0*sigma*vL",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[RM == mu0*sigma*vL]",
+          "texform_roundtrip": "\\text{RM}=\\text{mu0} \\sigma  \\text{vL}",
+          "messages": []
+        },
+        {
+          "latex": "R_m<1\\Rightarrow \\text{diffusion dominated}",
+          "normalized_latex": "RM<1->DiffusionDominated",
+          "wolfram_input": "RM<1->DiffusionDominated",
+          "normalization_notes": [
+            "text prose removed from Wolfram parse",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[RM < 1 -> DiffusionDominated]",
+          "texform_roundtrip": "\\text{RM}<1\\to \\text{DiffusionDominated}",
+          "messages": []
+        },
+        {
+          "latex": "R_m\\gg 1\\Rightarrow \\text{dynamo dominated}",
+          "normalized_latex": "RM>1->DynamoDominated",
+          "wolfram_input": "RM>1->DynamoDominated",
+          "normalization_notes": [
+            "text prose removed from Wolfram parse",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[RM > 1 -> DynamoDominated]",
+          "texform_roundtrip": "\\text{RM}>1\\to \\text{DynamoDominated}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0240 generated source-truth Wolfram model *)\nClearAll[K0240, TRAWINClosure0240];\neq0240$1 = HoldForm[RM == mu0*sigma*vL];\neq0240$2 = HoldForm[RM < 1 -> DiffusionDominated];\neq0240$3 = HoldForm[RM > 1 -> DynamoDominated];\nK0240 = HoldForm[{eq0240$1, eq0240$2, eq0240$3}];\nTRAWINClosure0240[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0240 = TRAWINClosure0240[K0240];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\Lambda_{\\mathrm{crit}}\\approx 1 .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFrom the Elsasser parameter,\n\n\\begin{equation}\n\\Lambda\n=\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2},\n\\end{equation}\n\ncriticality occurs when magnetic and rotational terms are balanced.\n\nBalance means the numerator and denominator are of the same order:\n\n\\begin{equation}\n\\mathbf{B}^2\n\\sim\n\\rho\\,\\mu\\,\\Omega^2 .\n\\end{equation}\n\nTherefore,\n\n\\begin{equation}\n\\frac{\\mathbf{B}^2}\n{\\rho\\,\\mu\\,\\Omega^2}\n\\sim\n1 .\n\\end{equation}\n\nThus,\n\n\\begin{equation}\n\\boxed{\n\\Lambda_{\\mathrm{crit}}\\approx 1 .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe critical Elsasser value marks a universal balance architecture across scales: the point where magnetic organization and rotational inertia enter comparable strength.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "dimensional-analysis conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0240/ID0240.source_truth.json",
+    "entry_id": "ID0240",
+    "registry_id": "registry_id_0240",
+    "canonical_title": "Magnetic Reynolds Number Regimes",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0240/ID0240.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7f9ce01e-f4b6-5850-8311-3d33a957902d",
+    "RTEID": "RTE:P931.9733:T1.5356",
+    "poloidal_theta_rad": "931.9733",
+    "toroidal_phi_rad": "1.5356",
+    "rteid_source": "manifest",
+    "PiID": "2712019091456",
+    "TZPi": "9",
+    "PiPE_position": "247",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "R_m=\\mu_0\\sigma vL",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "sigma",
+          "R",
+          "m",
+          "vL"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0240\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Magnetic Reynolds Number Regimes\", \"latex\" -> \"R_m=\\\\mu_0\\\\sigma vL\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"mu\", \"sigma\", \"R\", \"m\", \"vL\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "R_m<1\\Rightarrow \\text{diffusion dominated}",
+        "numeric_atoms": [
+          "1"
+        ],
+        "symbolic_tokens": [
+          "Rightarrow",
+          "R",
+          "m"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0240\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Magnetic Reynolds Number Regimes\", \"latex\" -> \"R_m<1\\\\Rightarrow \\\\text{diffusion dominated}\", \"numericAtoms\" -> {1}, \"symbolicTokens\" -> {\"Rightarrow\", \"R\", \"m\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

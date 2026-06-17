@@ -1,0 +1,2006 @@
+[
+  {
+    "id": "ID0006",
+    "block_index": 1,
+    "latex": "u_{T}\n:=\n\\oint_{\\Gamma}\n\\sqrt{\\lvert g \\rvert}\\, d\\ell",
+    "wolfram_input": "uT==ContourIntegralGamma*Sqrt[Abs[g]]*dell",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0006\\ID0006.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0006",
+    "block_index": 2,
+    "latex": "\\operatorname{Wind}_{p}(\\Gamma)=1",
+    "wolfram_input": "WindP[Gamma]==1",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0006\\ID0006.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0006",
+    "block_index": 3,
+    "latex": "u_{T}^{\\mathrm{norm}}\n=\n\\operatorname{Normalize}_{\\mathrm{TRAWIN}}\n\\!\\left(\n\\oint_{\\Gamma}\\sqrt{\\lvert g \\rvert}\\, d\\ell,\\,\n\\operatorname{Wind}_{p}(\\Gamma)=1,\\,\n\\Gamma \\sim \\Lambda\n\\right)",
+    "wolfram_input": "uTNorm==NormalizeTRAWINTuple[ContourIntegralGammaSqrt[Abs[g]]*dell,WindP[Gamma]==1,SimilarTo[Gamma,Lambda]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0006\\ID0006.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0007",
+    "block_index": 1,
+    "latex": "\\alpha_{T}\n=\n\\frac{dt'}{dt}",
+    "wolfram_input": "alphaT==((dt')/(dt))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0007\\ID0007.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0007",
+    "block_index": 2,
+    "latex": "\\alpha_{T}^{\\mathrm{TZP}}\n=\n\\lim_{\\gamma \\to p} \\frac{dt'}{dt}",
+    "wolfram_input": "alphaT^(TZP)==LimitGammap[(dt')/(dt)]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0007\\ID0007.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0007",
+    "block_index": 3,
+    "latex": "\\alpha_{T}^{\\mathrm{norm}}\n=\n\\operatorname{Normalize}_{\\mathrm{TRAWIN}}\n\\!\\left(\n\\frac{dt'}{dt},\\,\n\\lim_{\\gamma \\to p}\\frac{dt'}{dt},\\,\nu_{T}\n\\right)",
+    "wolfram_input": "alphaTNorm==NormalizeTRAWIN[((dt')/(dt)),LimitGammap[(dt')/(dt)],uT]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0007\\ID0007.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0012",
+    "block_index": 1,
+    "latex": "C(\\phi_{1},\\phi_{2})\n=\n\\frac{\\left|\\langle \\phi_{1},\\phi_{2}\\rangle\\right|}\n{\\|\\phi_{1}\\|\\,\\|\\phi_{2}\\|}",
+    "wolfram_input": "C[phi1,phi2]==(Tuple[Abs[Inner[phi1,phi2]]]/(phi1*phi2))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0012\\ID0012.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0012",
+    "block_index": 2,
+    "latex": "\\|\\phi\\| = \\sqrt{\\langle \\phi,\\phi\\rangle}",
+    "wolfram_input": "phi==Sqrt[Inner[phi,phi]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0012\\ID0012.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0012",
+    "block_index": 3,
+    "latex": "\\langle \\phi_{1},\\phi_{2}\\rangle",
+    "wolfram_input": "Inner[phi1,phi2]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0012\\ID0012.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0024",
+    "block_index": 1,
+    "latex": "\\rho_{\\mathrm{vac}}^{T}\n=\n\\frac{1}{u_{T}^{4}}\n\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+    "wolfram_input": "rhoVac^(T)==((1)/(uT^(4)))*Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0024\\ID0024.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper06",
+      "paper07"
+    ]
+  },
+  {
+    "id": "ID0024",
+    "block_index": 2,
+    "latex": "\\omega_{\\mathrm{cut}}=\\omega_{\\mathrm{cut}}(S_{\\mathrm{HD}})",
+    "wolfram_input": "omegaCut==omegaCut[SHD]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0024\\ID0024.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper06",
+      "paper07"
+    ]
+  },
+  {
+    "id": "ID0024",
+    "block_index": 3,
+    "latex": "\\eta(\\omega)",
+    "wolfram_input": "eta[omega]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0024\\ID0024.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper06",
+      "paper07"
+    ]
+  },
+  {
+    "id": "ID0024",
+    "block_index": 4,
+    "latex": "\\int_{0}^{\\omega_{\\mathrm{cut}}}\n\\eta(\\omega)\\,\\hbar\\omega\\,d\\omega",
+    "wolfram_input": "Integral0^(omegaCut)eta[omega]*hbaromega*domega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0024\\ID0024.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper06",
+      "paper07"
+    ]
+  },
+  {
+    "id": "ID0037",
+    "block_index": 1,
+    "latex": "L\n=\n\\int_{V}\n\\bigl(\n\\mathbf{r}\\times\\mathbf{J}\n\\bigr)\\,d^{3}x",
+    "wolfram_input": "L==IntegralV[r*J]*d^(3)x",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0037\\ID0037.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0037",
+    "block_index": 2,
+    "latex": "\\frac{dL}{dt}\n=\n\\int_{V}\n\\bigl(\n\\mathbf{J}\\times\\mathbf{B}\n\\bigr)\\,d^{3}x",
+    "wolfram_input": "((dL)/(dt))==IntegralV[J*B]*d^(3)x",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0037\\ID0037.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0037",
+    "block_index": 3,
+    "latex": "L \\leftrightarrow (\\mathbf{J},\\mathbf{B})",
+    "wolfram_input": "L*rightarrowPair[J,B]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0037\\ID0037.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0038",
+    "block_index": 1,
+    "latex": "\\Lambda\n=\n\\frac{B^{2}}{\\rho\\,\\mu\\,\\Omega^{2}}",
+    "wolfram_input": "Lambda==((B^(2))/(rho*mu*Omega^(2)))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0038\\ID0038.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0038",
+    "block_index": 2,
+    "latex": "\\Lambda \\approx 1",
+    "wolfram_input": "Lambda==1",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0038\\ID0038.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0038",
+    "block_index": 3,
+    "latex": "\\Lambda \\to 1",
+    "wolfram_input": "Lambda->1",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0038\\ID0038.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0039",
+    "block_index": 1,
+    "latex": "\\frac{B^{2}}{2\\mu}\n=\n\\frac{1}{2}\\rho(\\Omega r)^{2}",
+    "wolfram_input": "((B^(2))/(2*mu))==((1)/(2))rho[Omega*r]^(2)",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0039\\ID0039.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0039",
+    "block_index": 2,
+    "latex": "E_{\\mathrm{mag}}\n=\nE_{\\mathrm{rot}}",
+    "wolfram_input": "EMag==ERot",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0039\\ID0039.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0039",
+    "block_index": 3,
+    "latex": "\\frac{B^{2}}{2\\mu}",
+    "wolfram_input": "((B^(2))/(2*mu))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0039\\ID0039.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0039",
+    "block_index": 4,
+    "latex": "\\frac{1}{2}\\rho(\\Omega r)^{2}",
+    "wolfram_input": "((1)/(2))rho[Omega*r]^(2)",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0039\\ID0039.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0040",
+    "block_index": 1,
+    "latex": "\\Lambda\n=\n\\frac{B^{2}}{\\rho\\,\\mu\\,\\Omega^{2}}",
+    "wolfram_input": "Lambda==((B^(2))/(rho*mu*Omega^(2)))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0040\\ID0040.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0040",
+    "block_index": 2,
+    "latex": "\\Lambda_{\\mathrm{crit}} \\approx 1",
+    "wolfram_input": "LambdaCrit==1",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0040\\ID0040.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0040",
+    "block_index": 3,
+    "latex": "\\left|\\Lambda - 1\\right| \\leq \\varepsilon_{\\mathrm{sys}}",
+    "wolfram_input": "Abs[Lambda-1]<=epsilonSys",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0040\\ID0040.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04",
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0044",
+    "block_index": 1,
+    "latex": "\\mu\n=\nk\\,M R^{2}\\Omega",
+    "wolfram_input": "mu==k*MR^(2)Omega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0044\\ID0044.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0044",
+    "block_index": 2,
+    "latex": "k \\approx \\mathrm{const.}",
+    "wolfram_input": "k==const",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0044\\ID0044.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0044",
+    "block_index": 3,
+    "latex": "M R^{2}\\Omega",
+    "wolfram_input": "M*R^(2)Omega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0044\\ID0044.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0044",
+    "block_index": 4,
+    "latex": "k = \\frac{\\mu}{M R^{2}\\Omega}",
+    "wolfram_input": "k==((mu)/(M*R^(2)Omega))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0044\\ID0044.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0045",
+    "block_index": 1,
+    "latex": "g_{\\mu}\n=\n\\frac{\\mu}{M R^{2}\\Omega}",
+    "wolfram_input": "gMu==((mu)/(M*R^(2)Omega))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0045\\ID0045.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0045",
+    "block_index": 2,
+    "latex": "g_{\\mu} = \\mathcal{O}(1)",
+    "wolfram_input": "gMu==O[1]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0045\\ID0045.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0045",
+    "block_index": 3,
+    "latex": "\\mu",
+    "wolfram_input": "mu",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0045\\ID0045.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0045",
+    "block_index": 4,
+    "latex": "M R^{2}\\Omega",
+    "wolfram_input": "M*R^(2)Omega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0045\\ID0045.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0045",
+    "block_index": 5,
+    "latex": "g_{\\mu}\n=\n\\frac{\\mu}{M R^{2}\\Omega}\n=\n\\mathcal{O}(1)",
+    "wolfram_input": "gMu==((mu)/(M*R^(2)Omega))==O[1]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0045\\ID0045.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0068",
+    "block_index": 1,
+    "latex": "\\gamma_{\\mathrm{B}}\n=\ni\\oint_{\\Gamma}\\langle \\psi \\mid \\nabla_{\\lambda}\\psi\\rangle\\cdot d\\lambda",
+    "wolfram_input": "gammaB==iContourIntegralGammaInner[psi,GradLambdapsi]*dlambda",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0068\\ID0068.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID0068",
+    "block_index": 2,
+    "latex": "\\gamma_{\\mathrm{tot}}\n=\n\\gamma_{\\mathrm{dyn}} + \\gamma_{\\mathrm{B}} + \\gamma_{\\mathrm{L}}",
+    "wolfram_input": "gammaTot==gammaDyn+gammaB+gammaL",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0068\\ID0068.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID0068",
+    "block_index": 3,
+    "latex": "\\Gamma",
+    "wolfram_input": "Gamma",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0068\\ID0068.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID0078",
+    "block_index": 1,
+    "latex": "\\langle O(x)O(0)\\rangle\n\\sim\n\\lvert x\\rvert^{-2+\\eta}",
+    "wolfram_input": "SimilarTo[Inner[O[x]O[0]],Abs[x]^(-2+eta)]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0078\\ID0078.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0078",
+    "block_index": 2,
+    "latex": "\\eta = \\eta(d_{\\mathrm{eff}},\\mathrm{TZP})",
+    "wolfram_input": "eta==eta[dEff,TZP]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0078\\ID0078.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0078",
+    "block_index": 3,
+    "latex": "O(x)",
+    "wolfram_input": "O[x]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0078\\ID0078.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0085",
+    "block_index": 1,
+    "latex": "\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV",
+    "wolfram_input": "tauEm==Integral*r*(J*B+rhoEE)*dV",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0085\\ID0085.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0085",
+    "block_index": 2,
+    "latex": "\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}",
+    "wolfram_input": "((dL)/(dt))==tauEm",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0085\\ID0085.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0085",
+    "block_index": 3,
+    "latex": "\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}",
+    "wolfram_input": "J*B+rhoEE",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0085\\ID0085.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0087",
+    "block_index": 1,
+    "latex": "\\dot{\\omega}(t)=\\frac{\\tau_{\\mathrm{em}}(t)}{I_{\\mathrm{T}}}",
+    "wolfram_input": "dot[omega](t)==((tauEm[t])/(IT))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0087\\ID0087.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0087",
+    "block_index": 2,
+    "latex": "\\omega(t)=\\omega(0)+\\frac{1}{I_{\\mathrm{T}}}\\int_{0}^{t}\\tau_{\\mathrm{em}}(t')\\,dt'",
+    "wolfram_input": "omega[t]==omega[0]+((1)/(IT))Integral0^(t)tauEm[t']*dt'",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0087\\ID0087.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0087",
+    "block_index": 3,
+    "latex": "\\tau_{\\mathrm{em}}(t)",
+    "wolfram_input": "tauEm[t]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0087\\ID0087.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0089",
+    "block_index": 1,
+    "latex": "F: \\mathbf{LabGyro} \\longrightarrow \\mathbf{AstroRot}",
+    "wolfram_input": "F[mathbfLabGyro] -> mathbfAstroRot",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0089\\ID0089.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0089",
+    "block_index": 2,
+    "latex": "F(g\\circ f)=F(g)\\circ F(f)\n\\qquad\n\\text{and}\\qquad\n\\eta: F \\Rightarrow G",
+    "wolfram_input": "F[gcirc*f]==F[g]circ*F[f]&&eta:F->G",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0089\\ID0089.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0089",
+    "block_index": 3,
+    "latex": "F(g\\circ f)=F(g)\\circ F(f)",
+    "wolfram_input": "F[gcirc*f]==F[g]circ*F[f]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0089\\ID0089.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0089",
+    "block_index": 4,
+    "latex": "\\eta: F \\Rightarrow G",
+    "wolfram_input": "eta:F->G",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0089\\ID0089.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0090",
+    "block_index": 1,
+    "latex": "\\Pi_{k}^{\\mathrm{lab}} = \\Pi_{k}^{\\mathrm{astro}}",
+    "wolfram_input": "PiK^(lab)==PiK^(astro)",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0090\\ID0090.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0090",
+    "block_index": 2,
+    "latex": "F_{\\mathrm{scale}} : \\mathcal{S}_{\\mathrm{lab}} \\longrightarrow \\mathcal{S}_{\\mathrm{astro}}",
+    "wolfram_input": "Fscale[Slab] -> Sastro",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0090\\ID0090.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0090",
+    "block_index": 3,
+    "latex": "\\Pi_{k}^{\\mathrm{lab}}",
+    "wolfram_input": "PiK^(lab)",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0090\\ID0090.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0092",
+    "block_index": 1,
+    "latex": "G = SO(3) \\ltimes_{\\varphi} U(1)",
+    "wolfram_input": "G==SO[3]*ltimesPhi*U[1]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0092\\ID0092.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0092",
+    "block_index": 2,
+    "latex": "(R,e^{i\\alpha})\\cdot(R',e^{i\\beta})\n=\n\\left(RR', e^{i\\alpha}\\,\\varphi_R(e^{i\\beta})\\right)",
+    "wolfram_input": "Tuple[R,Exp[I*alpha]]*Tuple[R',Exp[I*beta]]==Tuple[RR',Exp[I*alpha]*phiR[Exp[I*beta]]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0092\\ID0092.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0092",
+    "block_index": 3,
+    "latex": "SO(3),\\qquad U(1)",
+    "wolfram_input": "TZPSequence[SO[3],U[1]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0092\\ID0092.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0093",
+    "block_index": 1,
+    "latex": "\\phi_t^{\\ast}\\omega = \\omega",
+    "wolfram_input": "phiT^(ast)omega==omega",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0093\\ID0093.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0093",
+    "block_index": 2,
+    "latex": "\\mathcal{L}_{X_H}\\omega = 0",
+    "wolfram_input": "LXHomega==0",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0093\\ID0093.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0093",
+    "block_index": 3,
+    "latex": "X_H",
+    "wolfram_input": "XH",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0093\\ID0093.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0099",
+    "block_index": 1,
+    "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\psi_{\\mathrm{beat}}(t)=2\\cos\\!\\bigl(\\pi(f_2-f_1)t\\bigr)\\sin\\!\\bigl(\\pi(f_1+f_2)t\\bigr)\n$\n\\end{adjustbox}",
+    "wolfram_input": "$psiBeat[t]==2*Cos[Pi[f2-f1]t]Sin[Pi[f1+f2]t]$",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0099\\ID0099.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0099",
+    "block_index": 2,
+    "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\n\\Delta f=|f_2-f_1|,\\qquad \\bar f=\\frac{f_1+f_2}{2}\n$\n\\end{adjustbox}",
+    "wolfram_input": "TZPSequence[$Delta*f==Abs[f2-f1],bar*f==((f1+f2)/(2))$]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0099\\ID0099.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0099",
+    "block_index": 3,
+    "latex": "\\begin{adjustbox}{max width=\\linewidth}\n$\\displaystyle\nt_n=\\frac{n}{2\\Delta f}\\quad(440/446\\,\\mathrm{Hz}:\\;t_n=\\frac{n}{12})\n$\n\\end{adjustbox}",
+    "wolfram_input": "$tN==((n)/(2*Delta*f))(440/446*Hz:tN==((n)/(12)))$",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0099\\ID0099.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0105",
+    "block_index": 1,
+    "latex": "\\mathcal{S}_{\\mathrm{sync}}[\\rho,\\theta,\\Phi]\n=\n\\int_{\\mathcal{M}} \\left(\n\\alpha \\lvert \\nabla \\theta \\rvert^2 + \\beta D(\\rho\\Vert\\sigma) + \\gamma \\lvert \\Phi_{\\mathrm{bulk}}-\\Phi_{\\mathrm{bdy}}\\rvert^2\n\\right)\\, d\\mu",
+    "wolfram_input": "SSync[rho,theta,Phi]==IntegralM[alpha*Abs[Grad*theta]^2+beta*D[rhoVertsigma]+gamma*Abs[PhiBulk-PhiBdy]^2]*dmu",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0105\\ID0105.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0105",
+    "block_index": 2,
+    "latex": "\\delta \\mathcal{S}_{\\mathrm{sync}} = 0",
+    "wolfram_input": "DiracDelta*SSync==0",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0105\\ID0105.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0105",
+    "block_index": 3,
+    "latex": "\\int_{\\mathcal{M}} \\alpha \\lvert \\nabla \\theta \\rvert^2\\, d\\mu",
+    "wolfram_input": "IntegralM*alpha*Abs[Grad*theta]^2*dmu",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0105\\ID0105.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0105",
+    "block_index": 4,
+    "latex": "\\int_{\\mathcal{M}} \\beta D(\\rho\\Vert\\sigma)\\, d\\mu",
+    "wolfram_input": "IntegralM*beta*D[rhoVertsigma]*dmu",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0105\\ID0105.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0115",
+    "block_index": 1,
+    "latex": "\\dot{\\theta}_i\n=\n\\omega_i\n\\;+\\;\n\\frac{K}{N}\\sum_{j=1}^{N}A_{ij}\\sin(\\theta_j-\\theta_i)",
+    "wolfram_input": "dot[theta]_i==omegaI+((K)/(N))SumJ1^(N)AIjSin[thetaJ-thetaI]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0115\\ID0115.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0115",
+    "block_index": 2,
+    "latex": "A_{ij}=\\frac{\\sqrt{m_i m_j}}{|a_i-a_j|}",
+    "wolfram_input": "AIj==((Sqrt[mI*mJ])/(Abs[aI-aJ]))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0115\\ID0115.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0115",
+    "block_index": 3,
+    "latex": "N=8",
+    "wolfram_input": "N==8",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0115\\ID0115.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0117",
+    "block_index": 1,
+    "latex": "r e^{i\\psi} = \\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}",
+    "wolfram_input": "r*Exp[I*psi]==((1)/(N))SumJ1^(N)Exp[I*thetaJ]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0117\\ID0117.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0117",
+    "block_index": 2,
+    "latex": "r = \\left|\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right|",
+    "wolfram_input": "r==Abs[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0117\\ID0117.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0117",
+    "block_index": 3,
+    "latex": "\\psi = \\arg\\!\\left(\\frac{1}{N}\\sum_{j=1}^{N} e^{i\\theta_j}\\right)",
+    "wolfram_input": "psi==arg[((1)/(N))SumJ1^(N)Exp[I*thetaJ]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0117\\ID0117.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0120",
+    "block_index": 1,
+    "latex": "\\dot{\\theta}_i\n=\n\\Omega_i\n\\;+\\;\n\\frac{K_s}{N}\\sum_{j=1}^{N}\\sin(\\theta_j-\\theta_i)\n\\;+\\;\n\\lambda_i\\sin(\\phi_i-\\theta_i)",
+    "wolfram_input": "dot[theta]_i==OmegaI+((KS)/(N))SumJ1^(N)Sin[thetaJ-thetaI]+lambdaISin[phiI-thetaI]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0120\\ID0120.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0120",
+    "block_index": 2,
+    "latex": "\\dot{\\phi}_i\n=\n\\nu_i\n\\;+\\;\n\\frac{K_o}{N}\\sum_{j=1}^{N}\\sin(\\phi_j-\\phi_i)",
+    "wolfram_input": "dot[phi]_i==nuI+((KO)/(N))SumJ1^(N)Sin[phiJ-phiI]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0120\\ID0120.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0120",
+    "block_index": 3,
+    "latex": "X_i=(\\theta_i,\\phi_i)",
+    "wolfram_input": "XI==Pair[thetaI,phiI]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0120\\ID0120.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID0143",
+    "block_index": 1,
+    "latex": "\\frac{\\Omega_{\\mathrm{spin}}}{\\Omega_{\\mathrm{orb}}}=\\frac{3}{2}",
+    "wolfram_input": "((OmegaSpin)/(OmegaOrb))==((3)/(2))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0143\\ID0143.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0143",
+    "block_index": 2,
+    "latex": "\\tau_{\\mathrm{tidal}}\\propto -\\gamma \\sin\\!\\bigl(2\\theta-3M\\bigr)",
+    "wolfram_input": "Proportional[tauTidal,-gamma*Sin[2*theta-3*M]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0143\\ID0143.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0143",
+    "block_index": 3,
+    "latex": "\\dot{\\theta}=\\Omega_{\\mathrm{spin}}+\\tau_{\\mathrm{tidal}}",
+    "wolfram_input": "dot[theta]==OmegaSpin+tauTidal",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0143\\ID0143.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0144",
+    "block_index": 1,
+    "latex": "K_0\\in [K_{\\min},K_{\\max}]",
+    "wolfram_input": "Element[K0,Commutator[KMin,KMax]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0144\\ID0144.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0144",
+    "block_index": 2,
+    "latex": "r(t;K_0)=\\left|\\frac{1}{N}\\sum_{j=1}^{N}e^{i\\theta_j(t;K_0)}\\right|",
+    "wolfram_input": "r[t;K0]==Abs[((1)/(N))SumJ1^(N)Exp[I*thetaJ[t;K0]]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0144\\ID0144.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0144",
+    "block_index": 3,
+    "latex": "\\Omega_{\\mathrm{cluster}}(K_0)=\\{\\dot{\\theta}_j:\\ |\\dot{\\theta}_j-\\dot{\\theta}_k|<\\varepsilon\\}",
+    "wolfram_input": "OmegaCluster[K0]==(dot[theta]_j:Abs[dot[theta]_j-dot[theta]_k]<epsilon)",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0144\\ID0144.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID0187",
+    "block_index": 1,
+    "latex": "P_{\\mathrm{vac}} > P_{\\mathrm{crit}}",
+    "wolfram_input": "PVac>PCrit",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0187\\ID0187.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0187",
+    "block_index": 2,
+    "latex": "\\mathcal{B}_{\\mathrm{TZP}} \\neq 0",
+    "wolfram_input": "BTZP!=0",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0187\\ID0187.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0187",
+    "block_index": 3,
+    "latex": "\\tzpnormalizewrap{P_{\\mathrm{vac}},P_{\\mathrm{crit}},\\text{singularity}}",
+    "wolfram_input": "TZPNormalizeWrap[PVac,PCrit]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0187\\ID0187.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper07",
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0256",
+    "block_index": 1,
+    "latex": "f_{n}=n f_{1},\\quad n\\in\\mathbb{Z}_{>0}",
+    "wolfram_input": "Element[TZPSequence[fN==n*f1,n],Z0]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0256\\ID0256.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0256",
+    "block_index": 2,
+    "latex": "\\omega^{2} = k^{2} v_{\\mathrm{A}}^{2}\\left[1 + \\left(\\frac{\\omega_{\\mathrm{gyro}}}{\\omega}\\right)^{2}\\right]",
+    "wolfram_input": "omega^(2)==k^(2)vA^(2)[1+(((omegaGyro)/(omega)))^(2)]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0256\\ID0256.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0285",
+    "block_index": 1,
+    "latex": "\\mathcal{M}_{\\mathrm{DAANS}}=\\mathcal{Q}\\times\\mathcal{C}",
+    "wolfram_input": "MDAANS==Q*C",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0285\\ID0285.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0285",
+    "block_index": 2,
+    "latex": "\\dim(\\mathcal{M}_{\\mathrm{DAANS}})=153600",
+    "wolfram_input": "Dim[MDAANS]==153600",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0285\\ID0285.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0285",
+    "block_index": 3,
+    "latex": "\\mathcal{E}_{\\mathrm{TZP}}:\\mathcal{M}_{\\mathrm{DAANS}}\\to\\mathcal{T}",
+    "wolfram_input": "ETZP[MDAANS] -> T",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0285\\ID0285.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0285",
+    "block_index": 4,
+    "latex": "\\mathcal{E}_{\\mathrm{TZP}}:\\mathcal{M}_{\\mathrm{DAANS}}\\to\\mathcal{T}",
+    "wolfram_input": "ETZP[MDAANS] -> T",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0285\\ID0285.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0353",
+    "block_index": 1,
+    "latex": "P(s)\\sim s^{-\\tau}f(s/s_{c})",
+    "wolfram_input": "SimilarTo[P[s],s^(-tau)f[s/sC]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0353\\ID0353.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0353",
+    "block_index": 2,
+    "latex": "\\tau=\\tau_{\\ast}",
+    "wolfram_input": "tau==tauAst",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0353\\ID0353.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0353",
+    "block_index": 3,
+    "latex": "s_{c}\\sim L^{D}",
+    "wolfram_input": "SimilarTo[sC,L^(D)]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0353\\ID0353.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0388",
+    "block_index": 1,
+    "latex": "H^2(a)=H_0^2\\left[\\Omega_m a^{-3}+\\Omega_r a^{-4}+\\Omega_k a^{-2}+\\Omega_\\Lambda\\right].",
+    "wolfram_input": "H^2(a)==H0^2[OmegaM*a^(-3)+OmegaR*a^(-4)+OmegaK*a^(-2)+Omega_Lambda]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0388\\ID0388.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0388",
+    "block_index": 2,
+    "latex": "D_C(z)=c\\int_0^{z}\\frac{dz'}{H(z')}.",
+    "wolfram_input": "DC[z]==cIntegral0^(z)((dz')/(H[z']))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0388\\ID0388.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0388",
+    "block_index": 3,
+    "latex": "D_{\\text{hor}}=c\\int_{0}^{t_0}\\frac{dt}{a(t)}=c\\int_{0}^{\\infty}\\frac{dz}{H(z)}.",
+    "wolfram_input": "D==cIntegral0^(t0)((dt)/(a[t]))==cIntegral0^(Infinity)((dz)/(H[z]))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0388\\ID0388.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0395",
+    "block_index": 1,
+    "latex": "P(s)\\propto s^{-3/2}\\exp\\!\\left(-\\frac{s}{s_{\\mathrm{cutoff}}}\\right),",
+    "wolfram_input": "Proportional[P[s],s^(-3/2)exp[-((s)/(sCutoff))]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0395\\ID0395.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0395",
+    "block_index": 2,
+    "latex": "\\tau=\\frac{3}{2}.",
+    "wolfram_input": "tau==((3)/(2))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0395\\ID0395.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0395",
+    "block_index": 3,
+    "latex": "P(s)\\propto s^{-3/2}e^{-s/s_{\\mathrm{cutoff}}}",
+    "wolfram_input": "Proportional[P[s],s^(-3/2)e^(-s/sCutoff)]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0395\\ID0395.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0395",
+    "block_index": 4,
+    "latex": "tau=\\frac{3}{2}",
+    "wolfram_input": "tau==((3)/(2))",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0395\\ID0395.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0395",
+    "block_index": 5,
+    "latex": "s_{\\mathrm{cutoff}}<\\infty",
+    "wolfram_input": "sCutoff<Infinity",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0395\\ID0395.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0470",
+    "block_index": 1,
+    "latex": "\\begin{adjustbox}{max width=\\linewidth,center}\n$\\displaystyle\nI(s)\\propto s^{1-\\tau}=s^{-1/2}\n$\n\\end{adjustbox}",
+    "wolfram_input": "Proportional[$I[s],s^(1-tau)==s^(-1/2)$]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0470\\ID0470.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID0643",
+    "block_index": 1,
+    "latex": "\\tzpfitmath{Lk = \\frac{1}{4\\pi} \\oint_{C_1} \\oint_{C_2} \\frac{ (\\mathbf{r}_1-\\mathbf{r}_2) \\cdot (\\mathrm{d}\\mathbf{r}_1\\times \\mathrm{d}\\mathbf{r}_2) }{ |\\mathbf{r}_1-\\mathbf{r}_2|^3 }.}",
+    "wolfram_input": "TZPFitMath[Lk==((1)/(4*Pi))*ContourIntegralC1ContourIntegralC2[((r1-r2)*(dr1*dr2))/(Abs[r1-r2]^3)]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0643\\ID0643.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0643",
+    "block_index": 2,
+    "latex": "\\mathbf{r}_1-\\mathbf{r}_2.",
+    "wolfram_input": "r1-r2",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0643\\ID0643.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0643",
+    "block_index": 3,
+    "latex": "\\mathrm{d}\\mathbf{r}_1\\times \\mathrm{d}\\mathbf{r}_2.",
+    "wolfram_input": "dr1*dr2",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0643\\ID0643.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID0800",
+    "block_index": 1,
+    "latex": "\\mathcal{O}_{\\mathrm{id0800}}:\\mathcal{X}_{\\mathrm{id0800}}\\longrightarrow\\mathcal{Y}_{\\mathrm{id0800}}",
+    "wolfram_input": "Oid0800[Xid0800] -> Yid0800",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0800\\ID0800.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0800",
+    "block_index": 2,
+    "latex": "\\mathcal{N}_{\\mathrm{TRAWIN}}(\\mathcal{O}_{\\mathrm{id0800}})=\\mathcal{O}_{\\mathrm{id0800}}",
+    "wolfram_input": "NTRAWIN[OId0800]==OId0800",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0800\\ID0800.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0800",
+    "block_index": 3,
+    "latex": "\\mathcal{O}_{\\mathrm{id0800}}(x)\\in\\mathcal{Y}_{\\mathrm{adm}}",
+    "wolfram_input": "Element[OId0800[x],YAdm]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0800\\ID0800.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID0882",
+    "block_index": 1,
+    "latex": "\\mathcal{O}_{\\mathrm{id0882}}:\\mathcal{X}_{\\mathrm{id0882}}\\longrightarrow\\mathcal{Y}_{\\mathrm{id0882}}",
+    "wolfram_input": "Oid0882[Xid0882] -> Yid0882",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0882\\ID0882.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID0882",
+    "block_index": 2,
+    "latex": "\\mathcal{N}_{\\mathrm{TRAWIN}}(\\mathcal{O}_{\\mathrm{id0882}})=\\mathcal{O}_{\\mathrm{id0882}}",
+    "wolfram_input": "NTRAWIN[OId0882]==OId0882",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0882\\ID0882.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID0882",
+    "block_index": 3,
+    "latex": "\\mathcal{O}_{\\mathrm{id0882}}(x)\\in\\mathcal{Y}_{\\mathrm{adm}}",
+    "wolfram_input": "Element[OId0882[x],YAdm]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID0882\\ID0882.source_truth.json",
+    "source_method": "InputForm",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID1171",
+    "block_index": 1,
+    "latex": "\\tau_{\\mathrm{tidal}}(\\omega,\\Omega)=\\frac{1}{I}\\sum_{n=1}^{N}J_n(ne)^2\\sin(2(\\omega-n\\Omega))",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1171\", 1, \"\\\\tau_{\\\\mathrm{tidal}}(\\\\omega,\\\\Omega)=\\\\frac{1}{I}\\\\sum_{n=1}^{N}J_n(ne)^2\\\\sin(2(\\\\omega-n\\\\Omega))\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1171\\ID1171.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID1392",
+    "block_index": 1,
+    "latex": "\\rho_{\\Lambda}=\\frac{\\hbar c}{R^4}\\,\\frac{\\Phi_0}{\\Phi_{\\mathrm{total}}}\\sim H_0^2\\approx6\\times10^{-10}\\,\\mathrm{J\\,m^{-3}}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1392\", 1, \"\\\\rho_{\\\\Lambda}=\\\\frac{\\\\hbar c}{R^4}\\\\,\\\\frac{\\\\Phi_0}{\\\\Phi_{\\\\mathrm{total}}}\\\\sim H_0^2\\\\approx6\\\\times10^{-10}\\\\,\\\\mathrm{J\\\\,m^{-3}}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1392\\ID1392.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper05",
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID1837",
+    "block_index": 1,
+    "latex": "\\pi_i: \\mathcal{T} \\to \\mathbb{R}^3",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1837\", 1, \"\\\\pi_i: \\\\mathcal{T} \\\\to \\\\mathbb{R}^3\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1837\\ID1837.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID1876",
+    "block_index": 1,
+    "latex": "H\\_textTrawin\\",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1876\", 1, \"H\\\\_textTrawin\\\\\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1876\\ID1876.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID1888",
+    "block_index": 1,
+    "latex": "K_{\\mathrm{NL}}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1888\", 1, \"K_{\\\\mathrm{NL}}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1888\\ID1888.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID1895",
+    "block_index": 1,
+    "latex": "H\\_textTrawin\\",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1895\", 1, \"H\\\\_textTrawin\\\\\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1895\\ID1895.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID1897",
+    "block_index": 1,
+    "latex": "K_{\\mathrm{NL}}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1897\", 1, \"K_{\\\\mathrm{NL}}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1897\\ID1897.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID1898",
+    "block_index": 1,
+    "latex": "K_{\\mathrm{NL}}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID1898\", 1, \"K_{\\\\mathrm{NL}}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID1898\\ID1898.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper10"
+    ]
+  },
+  {
+    "id": "ID2222",
+    "block_index": 1,
+    "latex": "\\begin{equation} R(t) = \\left| \\frac{1}{N}\\sum_{i=1}^{N} e^{i\\theta_i(t)} \\right|, \\label{eq:global_order} \\end{equation}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2222\", 1, \"\\\\begin{equation} R(t) = \\\\left| \\\\frac{1}{N}\\\\sum_{i=1}^{N} e^{i\\\\theta_i(t)} \\\\right|, \\\\label{eq:global_order} \\\\end{equation}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2222\\ID2222.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 1,
+    "latex": "\\[ \\frac{\\hbar c}{R_H^4}\\approx 9\\times10^{-131}\\ \\mathrm{J/m^3}.\" CL_ff8c80410d1f,CID_aec1bd34ee,1,sim",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 1, \"\\\\[ \\\\frac{\\\\hbar c}{R_H^4}\\\\approx 9\\\\times10^{-131}\\\\ \\\\mathrm{J/m^3}.\\\" CL_ff8c80410d1f,CID_aec1bd34ee,1,sim\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 2,
+    "latex": "pure",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 2, \"pure\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 3,
+    "latex": "hbar",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 3, \"hbar\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 4,
+    "latex": "estimate",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 4, \"estimate\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 5,
+    "latex": "r_h",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 5, \"r_h\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 6,
+    "latex": "far",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 6, \"far\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 7,
+    "latex": "below",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 7, \"below\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2453",
+    "block_index": 8,
+    "latex": "observed",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2453\", 8, \"observed\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2453\\ID2453.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 1,
+    "latex": "\\[ \\frac{\\hbar c}{\\ell_{\\rm Pl}^4}\\sim 4\\times10^{113}\\ \\mathrm{J/m^3}. CL_e8b9ec885472,CID_b3f1bcd1cf,1,familiar",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 1, \"\\\\[ \\\\frac{\\\\hbar c}{\\\\ell_{\\\\rm Pl}^4}\\\\sim 4\\\\times10^{113}\\\\ \\\\mathrm{J/m^3}. CL_e8b9ec885472,CID_b3f1bcd1cf,1,familiar\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 2,
+    "latex": "vacuum-energy",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 2, \"vacuum-energy\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 3,
+    "latex": "cosmological-constant",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 3, \"cosmological-constant\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 4,
+    "latex": "paradox",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 4, \"paradox\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 5,
+    "latex": "naive",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 5, \"naive\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 6,
+    "latex": "zero-point",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 6, \"zero-point\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 7,
+    "latex": "sums",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 7, \"sums\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID2462",
+    "block_index": 8,
+    "latex": "either",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID2462\", 8, \"either\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID2462\\ID2462.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07",
+      "paper08",
+      "paper09"
+    ]
+  },
+  {
+    "id": "ID5167",
+    "block_index": 1,
+    "latex": "$=3/2 emerges identically in quantum decoherence cascades, metamaterial avalanches and other scale-free processes.\\\\\\\" [ID 0396],Beat Frequency Resonance and Information Density,\"The tripartite channel architecture predicts that resonant beat frequencies occur at 𝑓res=𝑓0𝛼,fres=f0$",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID5167\", 1, \"$=3/2 emerges identically in quantum decoherence cascades, metamaterial avalanches and other scale-free processes.\\\\\\\\\\\\\\\" [ID 0396],Beat Frequency Resonance and Information Density,\\\"The tripartite channel architecture predicts that resonant beat frequencies occur at 𝑓res=𝑓0𝛼,fres=f0$\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID5167\\ID5167.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID5773",
+    "block_index": 1,
+    "latex": "\\[ h_{\\mu\\nu} = A\\,\\psi^{*}\\partial_{\\mu}\\partial_{\\nu}\\psi \\]",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID5773\", 1, \"\\\\[ h_{\\\\mu\\\\nu} = A\\\\,\\\\psi^{*}\\\\partial_{\\\\mu}\\\\partial_{\\\\nu}\\\\psi \\\\]\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID5773\\ID5773.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID6819",
+    "block_index": 1,
+    "latex": "Y_\\ell^m",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID6819\", 1, \"Y_\\\\ell^m\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID6819\\ID6819.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID7177",
+    "block_index": 1,
+    "latex": "P(k) = P_{\\rm prim}(k)\\,T^2(k),",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7177\", 1, \"P(k) = P_{\\\\rm prim}(k)\\\\,T^2(k),\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7177\\ID7177.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID7207",
+    "block_index": 1,
+    "latex": "\\Sigma(R,\\phi,t) = \\sum_{m,k} A_{m,k}(t) \\, e^{i(m\\phi + kR - \\omega_{m,k} t)}.",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7207\", 1, \"\\\\Sigma(R,\\\\phi,t) = \\\\sum_{m,k} A_{m,k}(t) \\\\, e^{i(m\\\\phi + kR - \\\\omega_{m,k} t)}.\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7207\\ID7207.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID7215",
+    "block_index": 1,
+    "latex": "\\mathbf{a}_{\\rm N}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7215\", 1, \"\\\\mathbf{a}_{\\\\rm N}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7215\\ID7215.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper05"
+    ]
+  },
+  {
+    "id": "ID7216",
+    "block_index": 1,
+    "latex": "M_{\\rm acc}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7216\", 1, \"M_{\\\\rm acc}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7216\\ID7216.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper05",
+      "paper06"
+    ]
+  },
+  {
+    "id": "ID7257",
+    "block_index": 1,
+    "latex": "\\delta_b(\\vec{r},t) = A\\, j_0(k r_s)\\, T(k)\\, D(t)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7257\", 1, \"\\\\delta_b(\\\\vec{r},t) = A\\\\, j_0(k r_s)\\\\, T(k)\\\\, D(t)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7257\\ID7257.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper06"
+    ]
+  },
+  {
+    "id": "ID7259",
+    "block_index": 1,
+    "latex": "r_s",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7259\", 1, \"r_s\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7259\\ID7259.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID7311",
+    "block_index": 1,
+    "latex": "\\delta T_{ij} = \\alpha\\, \\frac{G M_{\\rm acc}}{R^3} \\hat n_i \\hat n_j,",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7311\", 1, \"\\\\delta T_{ij} = \\\\alpha\\\\, \\\\frac{G M_{\\\\rm acc}}{R^3} \\\\hat n_i \\\\hat n_j,\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7311\\ID7311.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper05"
+    ]
+  },
+  {
+    "id": "ID7437",
+    "block_index": 1,
+    "latex": "\\sin(k_1\\phi_1 - k_2\\phi_2)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7437\", 1, \"\\\\sin(k_1\\\\phi_1 - k_2\\\\phi_2)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7437\\ID7437.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper02"
+    ]
+  },
+  {
+    "id": "ID7577",
+    "block_index": 1,
+    "latex": "\\Phi(x,t)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7577\", 1, \"\\\\Phi(x,t)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7577\\ID7577.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper05"
+    ]
+  },
+  {
+    "id": "ID7733",
+    "block_index": 1,
+    "latex": "j_\\ell(kr)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7733\", 1, \"j_\\\\ell(kr)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID7733\\ID7733.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID8480",
+    "block_index": 1,
+    "latex": "S_{CS} = \\int_{M} A \\wedge dA + \\Gamma_{acoustic}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID8480\", 1, \"S_{CS} = \\\\int_{M} A \\\\wedge dA + \\\\Gamma_{acoustic}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID8480\\ID8480.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID8647",
+    "block_index": 1,
+    "latex": "2^{3/12}\\approx1.1892",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID8647\", 1, \"2^{3/12}\\\\approx1.1892\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID8647\\ID8647.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID8648",
+    "block_index": 1,
+    "latex": "81/80\\approx21.5",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID8648\", 1, \"81/80\\\\approx21.5\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID8648\\ID8648.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID9176",
+    "block_index": 1,
+    "latex": "A_\\mudxΘ{\\mu}+B_{\\text{gravitational}}+ C_{\\text{electromagnetic}}Aµ= Aµdxµ+Bgravitational",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9176\", 1, \"A_\\\\mudxΘ{\\\\mu}+B_{\\\\text{gravitational}}+ C_{\\\\text{electromagnetic}}Aµ= Aµdxµ+Bgravitational\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9176\\ID9176.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper08"
+    ]
+  },
+  {
+    "id": "ID9513",
+    "block_index": 1,
+    "latex": "K = |\\omega_1-\\omega_2|",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9513\", 1, \"K = |\\\\omega_1-\\\\omega_2|\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9513\\ID9513.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper02",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID9758",
+    "block_index": 1,
+    "latex": "H_M = \\int_V \\mathbf{A}\\cdot\\mathbf{B}\\,dV,",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9758\", 1, \"H_M = \\\\int_V \\\\mathbf{A}\\\\cdot\\\\mathbf{B}\\\\,dV,\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9758\\ID9758.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID9760",
+    "block_index": 1,
+    "latex": "\\int_V (\\mathbf{J}\\times\\mathbf{B})\\,dV = 0.",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9760\", 1, \"\\\\int_V (\\\\mathbf{J}\\\\times\\\\mathbf{B})\\\\,dV = 0.\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9760\\ID9760.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID9761",
+    "block_index": 1,
+    "latex": "\\int_V (\\mathbf{J}\\times\\mathbf{B} - \\rho\\,\\boldsymbol{\\Omega}\\times\\mathbf{v})\\,dV = 0,",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9761\", 1, \"\\\\int_V (\\\\mathbf{J}\\\\times\\\\mathbf{B} - \\\\rho\\\\,\\\\boldsymbol{\\\\Omega}\\\\times\\\\mathbf{v})\\\\,dV = 0,\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9761\\ID9761.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID9940",
+    "block_index": 1,
+    "latex": "g_{\\mu\\nu}(t,\\mathbf x)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID9940\", 1, \"g_{\\\\mu\\\\nu}(t,\\\\mathbf x)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID9940\\ID9940.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10018",
+    "block_index": 1,
+    "latex": "\\chi(\\omega) = \\frac{\\partial M}{\\partial H}\\Big|_\\omega,\\quad \\omega^2 \\chi(\\omega) = \\omega_0^2 + i\\gamma\\omega - k^2 v_A^2 where 𝑣 𝐴 = 𝐵 / 𝜇 0 𝜌 v A ​ =B/ μ 0 ​ ρ ​ (Alfvén speed) dynamic_tensor . → Suggests resonant field breathing and possible magnetoacoustic coupling. 4. Energy and Density Formulation Magnetic energy density: u_m = \\frac{1}{2\\mu_0} B^2,\\quad U_{\\text{total}} = \\int_0^R\\!\\!\\int_0^\\pi\\!\\!\\int_0^{2\\pi} u_m r^2 \\sin\\theta\\, dr\\, d\\theta\\, d\\phi",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10018\", 1, \"\\\\chi(\\\\omega) = \\\\frac{\\\\partial M}{\\\\partial H}\\\\Big|_\\\\omega,\\\\quad \\\\omega^2 \\\\chi(\\\\omega) = \\\\omega_0^2 + i\\\\gamma\\\\omega - k^2 v_A^2 where 𝑣 𝐴 = 𝐵 / 𝜇 0 𝜌 v A ​ =B/ μ 0 ​ ρ ​ (Alfvén speed) dynamic_tensor . → Suggests resonant field breathing and possible magnetoacoustic coupling. 4. Energy and Density Formulation Magnetic energy density: u_m = \\\\frac{1}{2\\\\mu_0} B^2,\\\\quad U_{\\\\text{total}} = \\\\int_0^R\\\\!\\\\!\\\\int_0^\\\\pi\\\\!\\\\!\\\\int_0^{2\\\\pi} u_m r^2 \\\\sin\\\\theta\\\\, dr\\\\, d\\\\theta\\\\, d\\\\phi\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10018\\ID10018.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10130",
+    "block_index": 1,
+    "latex": "\\eta: \\Sph^3 \\to \\Sph^2",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10130\", 1, \"\\\\eta: \\\\Sph^3 \\\\to \\\\Sph^2\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10130\\ID10130.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper03",
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10131",
+    "block_index": 1,
+    "latex": "\\gamma = L/\\mu",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10131\", 1, \"\\\\gamma = L/\\\\mu\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10131\\ID10131.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10145",
+    "block_index": 1,
+    "latex": "\\omega R \\sim 10^{-4}c",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10145\", 1, \"\\\\omega R \\\\sim 10^{-4}c\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10145\\ID10145.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10164",
+    "block_index": 1,
+    "latex": "E_{\\text{vacuum}}^{\\text{naive}} = \\sum_{\\vec{k}}\\frac{\\hbar\\omega_{\\vec{k}}}{2} = \\sum_{\\vec{k}}\\frac{\\hbar c |\\vec{k}|}{2} \\rightarrow \\infty",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10164\", 1, \"E_{\\\\text{vacuum}}^{\\\\text{naive}} = \\\\sum_{\\\\vec{k}}\\\\frac{\\\\hbar\\\\omega_{\\\\vec{k}}}{2} = \\\\sum_{\\\\vec{k}}\\\\frac{\\\\hbar c |\\\\vec{k}|}{2} \\\\rightarrow \\\\infty\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10164\\ID10164.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper07"
+    ]
+  },
+  {
+    "id": "ID10264",
+    "block_index": 1,
+    "latex": "\\mathcal{O} = \\Association\\left[\\begin{aligned} &\\text{FrameDragging} \\to \\Delta\\phi = \\frac{4GJ_{\\oplus}}{c^2 r} \\int_0^T \\sin^2\\theta \\, dt \\\\ &\\text{KKResonance} \\to \\delta\\omega/\\omega = \\frac{m_{KK}c}{R_{KK}\\omega_0} \\\\ &\\text{AccumulatedField} \\to g_{\\text{acc}}/g_{\\text{Newton}} = 1 + \\alpha t + \\beta t^2 \\\\ &\\text{HelicityTransfer} \\to \\mathcal{H}_{\\text{mag}} \\rightarrow \\mathcal{H}_{KK}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10264\", 1, \"\\\\mathcal{O} = \\\\Association\\\\left[\\\\begin{aligned} &\\\\text{FrameDragging} \\\\to \\\\Delta\\\\phi = \\\\frac{4GJ_{\\\\oplus}}{c^2 r} \\\\int_0^T \\\\sin^2\\\\theta \\\\, dt \\\\\\\\ &\\\\text{KKResonance} \\\\to \\\\delta\\\\omega/\\\\omega = \\\\frac{m_{KK}c}{R_{KK}\\\\omega_0} \\\\\\\\ &\\\\text{AccumulatedField} \\\\to g_{\\\\text{acc}}/g_{\\\\text{Newton}} = 1 + \\\\alpha t + \\\\beta t^2 \\\\\\\\ &\\\\text{HelicityTransfer} \\\\to \\\\mathcal{H}_{\\\\text{mag}} \\\\rightarrow \\\\mathcal{H}_{KK}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10264\\ID10264.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04",
+      "paper05"
+    ]
+  },
+  {
+    "id": "ID10272",
+    "block_index": 1,
+    "latex": "\\omega R \\to c",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10272\", 1, \"\\\\omega R \\\\to c\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10272\\ID10272.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10760",
+    "block_index": 1,
+    "latex": "NO_CANONICAL_LATEX_BLOCK_PRESENT",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10760\", 1, \"NO_CANONICAL_LATEX_BLOCK_PRESENT\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10760\\ID10760.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper04"
+    ]
+  },
+  {
+    "id": "ID10786",
+    "block_index": 1,
+    "latex": "γ = (3/2)^12 / 2^7 = 3^12/2^19 = 531441/524288 ≈ 1.0136433",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10786\", 1, \"γ = (3/2)^12 / 2^7 = 3^12/2^19 = 531441/524288 ≈ 1.0136433\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10786\\ID10786.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID10790",
+    "block_index": 1,
+    "latex": "Δχ_Hopf = Ω,   ω_bulk = 1/γ = 524288/531441",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10790\", 1, \"Δχ_Hopf = Ω,   ω_bulk = 1/γ = 524288/531441\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10790\\ID10790.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID10791",
+    "block_index": 1,
+    "latex": "1/σνz = (α−1)/(τ−1) = (2−1)/(3/2−1) = 2,   ⟨S⟩(T) ∝ T²,   T(S) ∝ S^{1/2}",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10791\", 1, \"1/σνz = (α−1)/(τ−1) = (2−1)/(3/2−1) = 2,   ⟨S⟩(T) ∝ T²,   T(S) ∝ S^{1/2}\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10791\\ID10791.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01"
+    ]
+  },
+  {
+    "id": "ID10792",
+    "block_index": 1,
+    "latex": "τ_avalanche = 3/2  ⟺  1/τ = 2/3 = τ_cascade   (reciprocal map r ↦ 1/r)",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10792\", 1, \"τ_avalanche = 3/2  ⟺  1/τ = 2/3 = τ_cascade   (reciprocal map r ↦ 1/r)\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10792\\ID10792.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper02",
+      "paper03"
+    ]
+  },
+  {
+    "id": "ID10793",
+    "block_index": 1,
+    "latex": "\\boxed{ \\text{hyperspherical resonance} \\rightarrow \\text{disharmonic Bessel fold} \\rightarrow \\text{entropy-producing half-mode drop} \\rightarrow \\text{temporal accumulation} \\rightarrow \\text{curvature, time-arrow, and gravitational charge} }",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10793\", 1, \"\\\\boxed{ \\\\text{hyperspherical resonance} \\\\rightarrow \\\\text{disharmonic Bessel fold} \\\\rightarrow \\\\text{entropy-producing half-mode drop} \\\\rightarrow \\\\text{temporal accumulation} \\\\rightarrow \\\\text{curvature, time-arrow, and gravitational charge} }\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10793\\ID10793.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper06"
+    ]
+  },
+  {
+    "id": "ID10860",
+    "block_index": 1,
+    "latex": "\\boxed{ \\textbf{ Mass-energy becomes geometry because resonant field energy, particle count, and entropy-producing Bessel-fold defects accumulate through a causal temporal kernel until their large-number average becomes smooth curvature. } }",
+    "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID10860\", 1, \"\\\\boxed{ \\\\textbf{ Mass-energy becomes geometry because resonant field energy, particle count, and entropy-producing Bessel-fold defects accumulate through a causal temporal kernel until their large-number average becomes smooth curvature. } }\"]]",
+    "source_truth": "D:\\TZPIDProof\\tzp_id\\ID10860\\ID10860.source_truth.json",
+    "source_method": "minted_source_truth_latex_carrier",
+    "paper_keys": [
+      "paper01",
+      "paper06"
+    ]
+  }
+]

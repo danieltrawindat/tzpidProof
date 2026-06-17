@@ -1,0 +1,484 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:53:41.572663+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0320",
+    "uuid": "aab0a55e-56eb-5646-93a6-788f6f292d57",
+    "registry_id": "registry_id_0320",
+    "canonical_title": "Oscillatory Boundary Field Configuration",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0320/ID0320.TEX",
+      "json": "D:/TZPID/TZPID/ID0320/ID0320.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0320/ID0320.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "On the surface of a spherical shell of radius $R$, partitioned into tessellated domains $\\Omega_{+}$ and $\\Omega_{-}$ by angular coordinates $(\\theta,\\phi)$, impose the radial boundary field",
+    "technical_interpretation": "On the surface of a spherical shell of radius $R$, partitioned into tessellated domains $\\Omega_{+}$ and $\\Omega_{-}$ by angular coordinates $(\\theta,\\phi)$, impose the radial boundary field \\[ B_{\\mathrm{bnd}}(\\theta,\\phi,t) = B_{0}\\, \\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr) e^{i\\omega t}\\,\\hat r, \\] where $n_{\\theta},n_{\\phi}\\in\\mathbb{Z}$ set the periodicity. This oscillatory boundary condition drives interference patterns inside the enclosure."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "B_{\\mathrm{bnd}}(\\theta,\\phi,t) = B_{0}\\, \\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr) e^{i\\omega t}\\,\\hat r,",
+      "B_{\\mathrm{bnd}}(\\theta,\\phi,t)=B_0\\,\\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr)e^{i\\omega t}\\,\\hat r",
+      "n_{\\theta},n_{\\phi}\\in \\mathbb{Z}"
+    ],
+    "source_section_latex": "\\[ B_{\\mathrm{bnd}}(\\theta,\\phi,t) = B_{0}\\, \\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr) e^{i\\omega t}\\,\\hat r, \\] where $n_{\\theta},n_{\\phi}\\in\\mathbb{Z}$ set the periodicity. This oscillatory boundary condition drives interference patterns inside the enclosure.\n\n\\[\nB_{\\mathrm{bnd}}(\\theta,\\phi,t)=B_0\\,\\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr)e^{i\\omega t}\\,\\hat r\n\\]\n\\[\nn_{\\theta},n_{\\phi}\\in \\mathbb{Z}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Boundary Forcing",
+      "formula_latex_blocks": [
+        "B_{\\mathrm{bnd}}(\\theta,\\phi,t)=B_0\\,\\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr)e^{i\\omega t}\\,\\hat r"
+      ],
+      "interpretive_role": "This fixes the oscillatory radial boundary field imposed on the tessellated spherical shell."
+    },
+    {
+      "step": 2,
+      "component_title": "Angular Periodicity",
+      "formula_latex_blocks": [
+        "n_{\\theta},n_{\\phi}\\in \\mathbb{Z}"
+      ],
+      "interpretive_role": "This identifies the integer angular periodicities that govern the sign-flipping boundary pattern."
+    },
+    {
+      "step": 3,
+      "component_title": "Radial Carrier",
+      "formula_latex_blocks": [
+        "Delta\\theta=\\frac{2\\pi}{n_{\\theta}},\\qquad \\Delta\\phi=\\frac{2\\pi}{n_{\\phi}}"
+      ],
+      "interpretive_role": "This closes the entry by relating the tessellation cell sizes to the chosen angular mode counts."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "description": "exponential damping factor encoding potential-induced suppression."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$e^{-V_T}$",
+        "name": "exponential damping factor encoding potential-induced suppression.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\theta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigl$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sin(n_{\\theta}\\theta)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sin(n_{\\phi}\\phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigr$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hat$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbb$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\Delta$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{bnd}(\\theta,\\phi,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Z$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$D$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$n(n_{\\theta}\\theta)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$n(n_{\\phi}\\phi)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Oscillatory Boundary Field Configuration\nCanonical operator translation\neq0320_1 = HoldForm[Bbnd(,,t) == B0 sgn(Sin(n)Sin(n)) e^(iomega t) r,];\neq0320_2 = HoldForm[Bbnd(,,t)==B_0 sgn(Sin(n)Sin(n))e^(iomega t) r];\neq0320_3 = HoldForm[n,n (Z)];\n\nTRAWIN closure composition\nTRAWINClosure0320[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0320 := HoldForm[{eq0320_1, eq0320_2, eq0320_3}];\nResult0320 := TRAWINClosure0320[K0320];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "B_{\\mathrm{bnd}}(\\theta,\\phi,t) = B_{0}\\, \\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr) e^{i\\omega t}\\,\\hat r,",
+          "normalized_latex": "BBnd[theta,phi,t]==B0*sgn[Sin[nThetatheta]Sin[nPhiphi]]*Exp[I*omega*t]hat*r",
+          "wolfram_input": "BBnd[theta,phi,t]==B0*sgn[Sin[nThetatheta]Sin[nPhiphi]]*Exp[I*omega*t]hat*r",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BBnd[theta, phi, t] == B0*sgn[Sin[nThetatheta]*Sin[nPhiphi]]*Exp[I*omega*t]*hat*r]",
+          "texform_roundtrip": "\\text{BBnd}(\\theta ,\\phi ,t)=\\text{B0} \\text{hat} r e^{i \\omega  t} \\text{sgn}(\\sin (\\text{nPhiphi}) \\sin (\\text{nThetatheta}))",
+          "messages": []
+        },
+        {
+          "latex": "B_{\\mathrm{bnd}}(\\theta,\\phi,t)=B_0\\,\\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr)e^{i\\omega t}\\,\\hat r",
+          "normalized_latex": "BBnd[theta,phi,t]==B0*sgn[Sin[nThetatheta]Sin[nPhiphi]]Exp[I*omega*t]hat*r",
+          "wolfram_input": "BBnd[theta,phi,t]==B0*sgn[Sin[nThetatheta]Sin[nPhiphi]]Exp[I*omega*t]hat*r",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "operatorname unwrapped",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BBnd[theta, phi, t] == B0*sgn[Sin[nThetatheta]*Sin[nPhiphi]]*Exp[I*omega*t]*hat*r]",
+          "texform_roundtrip": "\\text{BBnd}(\\theta ,\\phi ,t)=\\text{B0} \\text{hat} r e^{i \\omega  t} \\text{sgn}(\\sin (\\text{nPhiphi}) \\sin (\\text{nThetatheta}))",
+          "messages": []
+        },
+        {
+          "latex": "n_{\\theta},n_{\\phi}\\in \\mathbb{Z}",
+          "normalized_latex": "n_{\\theta},n_{\\phi}\\in \\mathbb{Z}",
+          "wolfram_input": "Element[TZPSequence[nTheta,nPhi],Z]",
+          "normalization_notes": [
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[TZPSequence[nTheta, nPhi], Z]]",
+          "texform_roundtrip": "\\text{TZPSequence}(\\text{nTheta},\\text{nPhi})\\in Z",
+          "messages": []
+        },
+        {
+          "latex": "Delta\\theta=\\frac{2\\pi}{n_{\\theta}},\\qquad \\Delta\\phi=\\frac{2\\pi}{n_{\\phi}}",
+          "normalized_latex": "TZPSequence[Deltatheta==((2*Pi)/(nTheta)),Deltaphi==((2*Pi)/(nPhi))]",
+          "wolfram_input": "TZPSequence[Deltatheta==((2*Pi)/(nTheta)),Deltaphi==((2*Pi)/(nPhi))]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers",
+            "top-level comma sequence wrapped for Wolfram parsing"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPSequence[Deltatheta == (2*Pi)/nTheta, Deltaphi == (2*Pi)/nPhi]]",
+          "texform_roundtrip": "\\text{TZPSequence}\\left(\\text{Deltatheta}=\\frac{2 \\pi }{\\text{nTheta}},\\text{Deltaphi}=\\frac{2 \\pi }{\\text{nPhi}}\\right)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0320 generated source-truth Wolfram model *)\nClearAll[K0320, TRAWINClosure0320];\neq0320$1 = HoldForm[BBnd[theta, phi, t] == B0*sgn[Sin[nThetatheta]*Sin[nPhiphi]]*Exp[I*omega*t]*hat*r];\neq0320$2 = HoldForm[BBnd[theta, phi, t] == B0*sgn[Sin[nThetatheta]*Sin[nPhiphi]]*Exp[I*omega*t]*hat*r];\neq0320$3 = HoldForm[Element[TZPSequence[nTheta, nPhi], Z]];\neq0320$4 = HoldForm[TZPSequence[Deltatheta == (2*Pi)/nTheta, Deltaphi == (2*Pi)/nPhi]];\nK0320 = HoldForm[{eq0320$1, eq0320$2, eq0320$3, eq0320$4}];\nTRAWINClosure0320[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0320 = TRAWINClosure0320[K0320];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\mathcal{L}_U\n=\n\\frac{c^4}{16\\pi G}R[g]\n+\n\\mathcal{L}_{QFT}[\\Psi,A_\\mu]\n+\n\\mathcal{L}_{topo}[A_\\mu]\n+\n\\mathcal{L}_{info}[\\Phi]\n+\n\\mathcal{L}_{bio}[\\Xi].\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nA unified Trawinistic action density is constructed by summing distinct physical sectors.\n\nThe gravitational sector is given by the Einstein-Hilbert density:\n\n\\begin{equation}\n\\mathcal{L}_{grav}\n=\n\\frac{c^4}{16\\pi G}R[g].\n\\end{equation}\n\nThe quantum field contribution is:\n\n\\begin{equation}\n\\mathcal{L}_{QFT}[\\Psi,A_\\mu].\n\\end{equation}\n\nThe topological contribution accounts for winding, helicity, and gauge structure:\n\n\\begin{equation}\n\\mathcal{L}_{topo}[A_\\mu].\n\\end{equation}\n\nThe information-field sector is:\n\n\\begin{equation}\n\\mathcal{L}_{info}[\\Phi].\n\\end{equation}\n\nThe biological or organized-complexity sector is:\n\n\\begin{equation}\n\\mathcal{L}_{bio}[\\Xi].\n\\end{equation}\n\nAdding all components gives:\n\n\\begin{equation}\n\\boxed{\n\\mathcal{L}_U\n=\n\\frac{c^4}{16\\pi G}R[g]\n+\n\\mathcal{L}_{QFT}[\\Psi,A_\\mu]\n+\n\\mathcal{L}_{topo}[A_\\mu]\n+\n\\mathcal{L}_{info}[\\Phi]\n+\n\\mathcal{L}_{bio}[\\Xi].\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThis equation defines a layered Lagrangian architecture: gravity, quantum fields, topology, information, and biological organization are treated as coupled sectors of one Trawinistic action density.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0320/ID0320.source_truth.json",
+    "entry_id": "ID0320",
+    "registry_id": "registry_id_0320",
+    "canonical_title": "Oscillatory Boundary Field Configuration",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0320/ID0320.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "aab0a55e-56eb-5646-93a6-788f6f292d57",
+    "RTEID": "RTE:P1242.6311:T2.0475",
+    "poloidal_theta_rad": "1242.6311",
+    "toroidal_phi_rad": "2.0475",
+    "rteid_source": "manifest",
+    "PiID": "4881520920962",
+    "TZPi": "0",
+    "PiPE_position": "327",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "B_{\\mathrm{bnd}}(\\theta,\\phi,t) = B_{0}\\, \\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr) e^{i\\omega t}\\,\\hat r,",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "phi",
+          "bigl",
+          "sin",
+          "bigr",
+          "omega",
+          "hat",
+          "B",
+          "t",
+          "n",
+          "e",
+          "i",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0320\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Oscillatory Boundary Field Configuration\", \"latex\" -> \"B_{\\\\mathrm{bnd}}(\\\\theta,\\\\phi,t) = B_{0}\\\\, \\\\operatorname{sgn}\\\\!\\\\bigl(\\\\sin(n_{\\\\theta}\\\\theta)\\\\sin(n_{\\\\phi}\\\\phi)\\\\bigr) e^{i\\\\omega t}\\\\,\\\\hat r,\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"theta\", \"phi\", \"bigl\", \"sin\", \"bigr\", \"omega\", \"hat\", \"B\", \"t\", \"n\", \"e\", \"i\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "B_{\\mathrm{bnd}}(\\theta,\\phi,t)=B_0\\,\\operatorname{sgn}\\!\\bigl(\\sin(n_{\\theta}\\theta)\\sin(n_{\\phi}\\phi)\\bigr)e^{i\\omega t}\\,\\hat r",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "theta",
+          "phi",
+          "bigl",
+          "sin",
+          "bigr",
+          "omega",
+          "hat",
+          "B",
+          "t",
+          "n",
+          "e",
+          "i",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0320\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Oscillatory Boundary Field Configuration\", \"latex\" -> \"B_{\\\\mathrm{bnd}}(\\\\theta,\\\\phi,t)=B_0\\\\,\\\\operatorname{sgn}\\\\!\\\\bigl(\\\\sin(n_{\\\\theta}\\\\theta)\\\\sin(n_{\\\\phi}\\\\phi)\\\\bigr)e^{i\\\\omega t}\\\\,\\\\hat r\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"theta\", \"phi\", \"bigl\", \"sin\", \"bigr\", \"omega\", \"hat\", \"B\", \"t\", \"n\", \"e\", \"i\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "n_{\\theta},n_{\\phi}\\in \\mathbb{Z}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "theta",
+          "phi",
+          "in",
+          "mathbb",
+          "n"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0320\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Oscillatory Boundary Field Configuration\", \"latex\" -> \"n_{\\\\theta},n_{\\\\phi}\\\\in \\\\mathbb{Z}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"theta\", \"phi\", \"in\", \"mathbb\", \"n\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 3,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:28:36.152912+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0013",
+    "uuid": "93d3669d-bb50-5ecc-af2c-93398438d3b4",
+    "registry_id": "registry_id_0013",
+    "canonical_title": "Null Space Projection",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0013/ID0013.TEX",
+      "json": "D:/TZPID/TZPID/ID0013/ID0013.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0013/ID0013.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "The null space projection operator $P_{\\text{null}}:T_pM\\to T_pM$ is defined by $P_{\\text{null}}(v)=v$ if $g(v,w)=0$ for all $w\\in T_pM$, and $P_{\\text{null}}(v)=0$ otherwise.",
+    "technical_interpretation": "The null space projection operator $P_{\\text{null}}:T_pM\\to T_pM$ is defined by $P_{\\text{null}}(v)=v$ if $g(v,w)=0$ for all $w\\in T_pM$, and $P_{\\text{null}}(v)=0$ otherwise."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "P_{\\mathrm{null}} : T_{p}M \\to T_{p}M",
+      "P_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0 \\text{ for all } w \\in T_{p}M,\\\\\n0, & \\text{otherwise.}\n\\end{cases}"
+    ],
+    "source_section_latex": "\\[\nP_{\\mathrm{null}} : T_{p}M \\to T_{p}M\n\\]\n\\[\nP_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0 \\text{ for all } w \\in T_{p}M,\\\\\n0, & \\text{otherwise.}\n\\end{cases}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Null Pairing Test",
+      "formula_latex_blocks": [
+        "g(v,w)=0 \\qquad \\text{for all } w \\in T_{p}M"
+      ],
+      "interpretive_role": "This identifies the vectors the degenerate metric cannot resolve against any tangent direction at the zero point."
+    },
+    {
+      "step": 2,
+      "component_title": "Identity Action on Null Directions",
+      "formula_latex_blocks": [
+        "P_{\\mathrm{null}}(v)=v"
+      ],
+      "interpretive_role": "This preserves the singular directions rather than suppressing them, making them explicitly available for later operators."
+    },
+    {
+      "step": 3,
+      "component_title": "Zero Action on Regular Directions",
+      "formula_latex_blocks": [
+        "P_{\\mathrm{null}}(v)=0 \\qquad \\text{otherwise}"
+      ],
+      "interpretive_role": "This closes the progression by cleanly separating null and non-null tangent components into two disjoint operator outputs."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0013}$",
+        "description": "canonical registry object for entry ID 0013."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0013}$",
+        "name": "canonical registry object for entry ID 0013.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\begin$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\in$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\end$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P_{null}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$T_{p}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$M$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P_{null}(v)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$g(v,w)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Pnull[v_] := Piecewise[{{v, ForAll[w, g[v,w] == 0]}, {0,\n  True}}]",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "P_{\\mathrm{null}} : T_{p}M \\to T_{p}M",
+          "normalized_latex": "P_{\\mathrm{null}} : T_{p}M \\to T_{p}M",
+          "wolfram_input": "Pnull[TpM] -> TpM",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Pnull[TpM] -> TpM]",
+          "texform_roundtrip": "\\text{Pnull}(\\text{TpM})\\to \\text{TpM}",
+          "messages": []
+        },
+        {
+          "latex": "P_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0 \\text{ for all } w \\in T_{p}M,\\\\\n0, & \\text{otherwise.}\n\\end{cases}",
+          "normalized_latex": "P_{\\mathrm{null}}(v) = v, g(v,w)=0 \\text{ for all } w \\in T_{p}M, 0, \\text{otherwise.}",
+          "wolfram_input": "Element[TZPSequence[PNull[v]==v,g[v,w]==0*w],TZPSequence[TPM,0]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[TZPSequence[PNull[v] == v, g[v, w] == 0*w], TZPSequence[TPM, 0]]]",
+          "texform_roundtrip": "\\text{TZPSequence}(\\text{PNull}(v)=v,g(v,w)=0)\\in \\text{TZPSequence}(\\text{TPM},0)",
+          "messages": []
+        },
+        {
+          "latex": "g(v,w)=0 \\qquad \\text{for all } w \\in T_{p}M",
+          "normalized_latex": "g(v,w)=0 \\text{for all } w \\in T_{p}M",
+          "wolfram_input": "Element[g[v,w]==0*w,TPM]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "\\in normalized to Element[...]"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[Element[g[v, w] == 0*w, TPM]]",
+          "texform_roundtrip": "g(v,w)=0\\in \\text{TPM}",
+          "messages": []
+        },
+        {
+          "latex": "P_{\\mathrm{null}}(v)=v",
+          "normalized_latex": "PNull[v]==v",
+          "wolfram_input": "PNull[v]==v",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PNull[v] == v]",
+          "texform_roundtrip": "\\text{PNull}(v)=v",
+          "messages": []
+        },
+        {
+          "latex": "P_{\\mathrm{null}}(v)=0 \\qquad \\text{otherwise}",
+          "normalized_latex": "PNull[v]==0",
+          "wolfram_input": "PNull[v]==0",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "text prose removed from Wolfram parse",
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PNull[v] == 0]",
+          "texform_roundtrip": "\\text{PNull}(v)=0",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0013 generated source-truth Wolfram model *)\nClearAll[K0013, TRAWINClosure0013];\neq0013$1 = HoldForm[Pnull[TpM] -> TpM];\neq0013$2 = HoldForm[Element[TZPSequence[PNull[v] == v, g[v, w] == 0*w], TZPSequence[TPM, 0]]];\neq0013$3 = HoldForm[Element[g[v, w] == 0*w, TPM]];\neq0013$4 = HoldForm[PNull[v] == v];\neq0013$5 = HoldForm[PNull[v] == 0];\nK0013 = HoldForm[{eq0013$1, eq0013$2, eq0013$3, eq0013$4, eq0013$5}];\nTRAWINClosure0013[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0013 = TRAWINClosure0013[K0013];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nP_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0\\ \\text{for all}\\ w\\in T_pM,\\\\\n0, & \\text{otherwise}.\n\\end{cases}\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nAt the TZP, the degenerate metric admits null directions.  \nA vector $v\\in T_pM$ belongs to the null space if it pairs to zero with every tangent vector $w$:\n\n\\begin{equation}\ng(v,w)=0\n\\qquad\n\\forall w\\in T_pM .\n\\end{equation}\n\nThe null projection operator preserves vectors satisfying this condition:\n\n\\begin{equation}\nP_{\\mathrm{null}}(v)=v .\n\\end{equation}\n\nVectors not satisfying the null condition are removed by the projection:\n\n\\begin{equation}\nP_{\\mathrm{null}}(v)=0 .\n\\end{equation}\n\nThus,\n\n\\begin{equation}\n\\boxed{\nP_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0\\ \\text{for all}\\ w\\in T_pM,\\\\\n0, & \\text{otherwise}.\n\\end{cases}\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\n$P_{\\mathrm{null}}$ extracts only those tangent directions annihilated by the degenerate TZP metric.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0013/ID0013.source_truth.json",
+    "entry_id": "ID0013",
+    "registry_id": "registry_id_0013",
+    "canonical_title": "Null Space Projection",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0013/ID0013.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "93d3669d-bb50-5ecc-af2c-93398438d3b4",
+    "RTEID": "RTE:P50.4819:T0.0832",
+    "poloidal_theta_rad": "50.4819",
+    "toroidal_phi_rad": "0.0832",
+    "rteid_source": "manifest",
+    "PiID": "9323846264338",
+    "TZPi": "6",
+    "PiPE_position": "20",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "P_{\\mathrm{null}} : T_{p}M \\to T_{p}M",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "P",
+          "T",
+          "p",
+          "M"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0013\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Null Space Projection\", \"latex\" -> \"P_{\\\\mathrm{null}} : T_{p}M \\\\to T_{p}M\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"P\", \"T\", \"p\", \"M\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "P_{\\mathrm{null}}(v)\n=\n\\begin{cases}\nv, & g(v,w)=0 \\text{ for all } w \\in T_{p}M,\\\\\n0, & \\text{otherwise.}\n\\end{cases}",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "in",
+          "P",
+          "v",
+          "g",
+          "w",
+          "T",
+          "p",
+          "M"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_text_or_markup",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0013\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Null Space Projection\", \"latex\" -> \"P_{\\\\mathrm{null}}(v)\\n=\\n\\\\begin{cases}\\nv, & g(v,w)=0 \\\\text{ for all } w \\\\in T_{p}M,\\\\\\\\\\n0, & \\\\text{otherwise.}\\n\\\\end{cases}\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"in\", \"P\", \"v\", \"g\", \"w\", \"T\", \"p\", \"M\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_text_or_markup\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

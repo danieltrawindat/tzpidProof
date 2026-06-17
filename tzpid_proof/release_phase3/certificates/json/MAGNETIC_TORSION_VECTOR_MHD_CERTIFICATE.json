@@ -1,0 +1,134 @@
+{
+  "certificate": "MAGNETIC_TORSION_VECTOR_MHD_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:58+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for vector-MHD algebraic carriers; not a full PDE MHD simulation.",
+  "equations": {
+    "helicity_density": "h = A dot B",
+    "uniform_helicity": "H = V h",
+    "resistive_dissipation": "D = 2 eta |J|^2",
+    "elsasser": "Lambda = magnetic_force / coriolis_force",
+    "torsion_density": "T = curvature + twist"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "ideal_mhd_zero_dissipation": "pass",
+    "unit_elsasser_balance": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "zero_b_field_ideal_balance",
+      "role": "Zero magnetic field gives zero helicity density with ideal MHD balance.",
+      "vector_a": [
+        1.0,
+        -2.0,
+        0.5
+      ],
+      "vector_b": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "volume": 3.0,
+      "eta": 0.0,
+      "current_norm_sq": 4.0,
+      "magnetic_force": 2.0,
+      "coriolis_force": 2.0,
+      "curvature": 0.7
+    },
+    {
+      "name": "aligned_helicity_density",
+      "role": "Nonzero A dot B still has exact volume integral and balance semantics.",
+      "vector_a": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "vector_b": [
+        0.5,
+        0.25,
+        -0.1
+      ],
+      "volume": 5.0,
+      "eta": 0.0,
+      "current_norm_sq": 9.0,
+      "magnetic_force": 1.5,
+      "coriolis_force": 1.5,
+      "curvature": -1.2
+    },
+    {
+      "name": "large_volume_unit_elsasser",
+      "role": "Large-volume carrier for helicity integral and Elsasser unit recovery.",
+      "vector_a": [
+        -2.0,
+        1.0,
+        4.0
+      ],
+      "vector_b": [
+        3.0,
+        -1.0,
+        0.5
+      ],
+      "volume": 12.0,
+      "eta": 0.0,
+      "current_norm_sq": 0.25,
+      "magnetic_force": 7.0,
+      "coriolis_force": 7.0,
+      "curvature": 2.0
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "zero_b_field_ideal_balance",
+      "role": "Zero magnetic field gives zero helicity density with ideal MHD balance.",
+      "helicity_density": 0.0,
+      "volume": 3.0,
+      "eta": 0.0,
+      "magnetic_force": 2.0,
+      "coriolis_force": 2.0,
+      "curvature": 0.7,
+      "status": "pass",
+      "zero_b_field_zero_helicity_density": "pass",
+      "uniform_helicity_integral_exact": "pass",
+      "ideal_mhd_zero_dissipation": "pass",
+      "elsasser_balance_unit": "pass",
+      "opposite_twist_zero_torsion": "pass"
+    },
+    {
+      "scenario": "aligned_helicity_density",
+      "role": "Nonzero A dot B still has exact volume integral and balance semantics.",
+      "helicity_density": 0.7,
+      "volume": 5.0,
+      "eta": 0.0,
+      "magnetic_force": 1.5,
+      "coriolis_force": 1.5,
+      "curvature": -1.2,
+      "status": "pass",
+      "zero_b_field_zero_helicity_density": "pass",
+      "uniform_helicity_integral_exact": "pass",
+      "ideal_mhd_zero_dissipation": "pass",
+      "elsasser_balance_unit": "pass",
+      "opposite_twist_zero_torsion": "pass"
+    },
+    {
+      "scenario": "large_volume_unit_elsasser",
+      "role": "Large-volume carrier for helicity integral and Elsasser unit recovery.",
+      "helicity_density": -5.0,
+      "volume": 12.0,
+      "eta": 0.0,
+      "magnetic_force": 7.0,
+      "coriolis_force": 7.0,
+      "curvature": 2.0,
+      "status": "pass",
+      "zero_b_field_zero_helicity_density": "pass",
+      "uniform_helicity_integral_exact": "pass",
+      "ideal_mhd_zero_dissipation": "pass",
+      "elsasser_balance_unit": "pass",
+      "opposite_twist_zero_torsion": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\MAGNETIC_TORSION_VECTOR_MHD_GRID.csv",
+  "status": "pass"
+}

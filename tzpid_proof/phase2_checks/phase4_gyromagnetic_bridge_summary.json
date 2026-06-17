@@ -1,0 +1,146 @@
+{
+  "source_hdf5": "delta_alpha_phase4_bridge.h5",
+  "attrs": {
+    "angular_mode_m": 1,
+    "creator": "Daniel Alexander Trawin",
+    "delta": 0.18010602113350746,
+    "description": "Δα ↔ Bessel ↔ ψ ↔ Lz ↔ Gyromagnetic bridge dataset",
+    "formal_property": "0.18 < delta < 0.19",
+    "isabelle_bridge": "TZPID_Bessel_External_Certificates + GyromagneticMovement",
+    "j11": 3.83170597,
+    "j_half": 3.141592653589793,
+    "orcid": "https://orcid.org/0009-0001-4630-3715",
+    "project": "TZPID Hyperspherical Bridge Phase4",
+    "role": "Creator / Founder",
+    "scale": 10.0,
+    "theory_layer_1": "Bessel boundary drop fraction",
+    "theory_layer_2": "Δα radial phase field",
+    "theory_layer_3": "ψ = exp(iΔα)",
+    "theory_layer_4": "Lz from angular derivative",
+    "theory_layer_5": "Gyromagnetic correspondence"
+  },
+  "domain_radius": 1.4142135623730951,
+  "j11": 3.83170597,
+  "delta": 0.18010602113350746,
+  "scale": 10.0,
+  "predicted_shell_radii": [
+    0.6437903504411578,
+    1.2875807008823157
+  ],
+  "dataset_summaries": [
+    {
+      "dataset": "field/psi_real",
+      "shape": [
+        8,
+        400,
+        400
+      ],
+      "min": -0.9999999999982808,
+      "max": 0.9999999999982808,
+      "mean": -4.831690603168681e-17,
+      "std": 0.7071067811865476,
+      "is_effectively_constant": false,
+      "best_nonconstant_slice": {
+        "dataset": "field/psi_real",
+        "slice_index": 0,
+        "dataset_std": 0.7071067811865476,
+        "dataset_min": -0.9999999999982808,
+        "dataset_max": 0.9999999999982808,
+        "is_effectively_constant": false,
+        "observed_peak_count": 76,
+        "predicted_shell_count": 2,
+        "mean_abs_error": 0.0010169215212778027,
+        "max_abs_error": 0.001710663481156116,
+        "mean_relative_error": 0.0009152912133351886,
+        "predicted_radii": "0.6437903504;1.2875807009",
+        "observed_radii": "0.0164991582;0.0306412939;0.0447834295;0.0589255651;0.0730677007;0.0872098363;0.0966379268;0.1107800624;0.1249221980;0.1390643336;0.1484924240;0.1673486049"
+      }
+    },
+    {
+      "dataset": "field/psi_imag",
+      "shape": [
+        8,
+        400,
+        400
+      ],
+      "min": -0.9999999999982808,
+      "max": 0.9999999999982808,
+      "mean": 7.105427357601002e-19,
+      "std": 0.7071067811865476,
+      "is_effectively_constant": false,
+      "best_nonconstant_slice": {
+        "dataset": "field/psi_imag",
+        "slice_index": 0,
+        "dataset_std": 0.7071067811865476,
+        "dataset_min": -0.9999999999982808,
+        "dataset_max": 0.9999999999982808,
+        "is_effectively_constant": false,
+        "observed_peak_count": 76,
+        "predicted_shell_count": 2,
+        "mean_abs_error": 0.0010169215212778027,
+        "max_abs_error": 0.001710663481156116,
+        "mean_relative_error": 0.0009152912133351886,
+        "predicted_radii": "0.6437903504;1.2875807009",
+        "observed_radii": "0.0164991582;0.0306412939;0.0447834295;0.0589255651;0.0730677007;0.0872098363;0.0966379268;0.1107800624;0.1249221980;0.1390643336;0.1484924240;0.1673486049"
+      }
+    },
+    {
+      "dataset": "field/helicity_proxy",
+      "shape": [
+        8,
+        400,
+        400
+      ],
+      "min": -0.49999999997771233,
+      "max": 0.49999999997771233,
+      "mean": -3.552713678800501e-19,
+      "std": 0.3508366705070362,
+      "is_effectively_constant": false,
+      "best_nonconstant_slice": {
+        "dataset": "field/helicity_proxy",
+        "slice_index": 0,
+        "dataset_std": 0.3508366705070362,
+        "dataset_min": -0.49999999997771233,
+        "dataset_max": 0.49999999997771233,
+        "is_effectively_constant": false,
+        "observed_peak_count": 77,
+        "predicted_shell_count": 2,
+        "mean_abs_error": 0.0010169215212778027,
+        "max_abs_error": 0.001710663481156116,
+        "mean_relative_error": 0.0009152912133351886,
+        "predicted_radii": "0.6437903504;1.2875807009",
+        "observed_radii": "0.0164991582;0.0306412939;0.0447834295;0.0589255651;0.0730677007;0.0872098363;0.0966379268;0.1107800624;0.1249221980;0.1390643336;0.1484924240;0.1673486049"
+      }
+    },
+    {
+      "dataset": "field/Lz",
+      "shape": [
+        8,
+        400,
+        400
+      ],
+      "min": 0.999999833332655,
+      "max": 0.9999998333338194,
+      "mean": 0.999999833333429,
+      "std": 2.3304306877372256e-13,
+      "is_effectively_constant": true,
+      "best_nonconstant_slice": null
+    }
+  ],
+  "best_meaningful_shell_observable": {
+    "dataset": "field/psi_real",
+    "slice_index": 0,
+    "dataset_std": 0.7071067811865476,
+    "dataset_min": -0.9999999999982808,
+    "dataset_max": 0.9999999999982808,
+    "is_effectively_constant": false,
+    "observed_peak_count": 76,
+    "predicted_shell_count": 2,
+    "mean_abs_error": 0.0010169215212778027,
+    "max_abs_error": 0.001710663481156116,
+    "mean_relative_error": 0.0009152912133351886,
+    "predicted_radii": "0.6437903504;1.2875807009",
+    "observed_radii": "0.0164991582;0.0306412939;0.0447834295;0.0589255651;0.0730677007;0.0872098363;0.0966379268;0.1107800624;0.1249221980;0.1390643336;0.1484924240;0.1673486049"
+  },
+  "note": "field/Lz is treated as a gyromagnetic bridge invariant/correspondence witness, not as a shell-bearing radial observable, because its standard deviation is below 1e-9."
+}

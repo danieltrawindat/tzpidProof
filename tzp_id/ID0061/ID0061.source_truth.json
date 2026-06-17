@@ -1,0 +1,422 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:32:32.940015+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0061",
+    "uuid": "57a9c407-fc9a-544d-854c-ec3837703b87",
+    "registry_id": "registry_id_0061",
+    "canonical_title": "Environment-Induced Superselection",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0061/ID0061.TEX",
+      "json": "D:/TZPID/TZPID/ID0061/ID0061.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0061/ID0061.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Certain sets of states (pointer states) are stable against decoherence because the environment causes rapid decoherence of superpositions between them; mathematically, density matrices evolve to block-diagonal form in the basis of these pointer states within finite time.",
+    "technical_interpretation": "Certain sets of states (pointer states) are stable against decoherence because the environment causes rapid decoherence of superpositions between them; mathematically, density matrices evolve to block-diagonal form in the basis of these pointer states within finite time."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\rho(t) \\to \\sum_{i} p_{i}\\,\\lvert i\\rangle\\langle i\\rvert",
+      "\\rho_{ij}(t) \\to 0\n\\qquad (i \\neq j)"
+    ],
+    "source_section_latex": "\\[\n\\rho(t) \\to \\sum_{i} p_{i}\\,\\lvert i\\rangle\\langle i\\rvert\n\\]\n\\[\n\\rho_{ij}(t) \\to 0\n\\qquad (i \\neq j)\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Open-System Density Matrix",
+      "formula_latex_blocks": [
+        "\\rho(t)"
+      ],
+      "interpretive_role": "This is the evolving state of the system under environmental interaction."
+    },
+    {
+      "step": 2,
+      "component_title": "Off-Diagonal Suppression",
+      "formula_latex_blocks": [
+        "\\rho_{ij}(t) \\to 0\n\\qquad (i \\neq j)"
+      ],
+      "interpretive_role": "This records the destruction of coherence between competing basis states."
+    },
+    {
+      "step": 3,
+      "component_title": "Pointer-State Limit",
+      "formula_latex_blocks": [
+        "\\rho(t) \\to \\sum_{i} p_{i}\\,\\lvert i\\rangle\\langle i\\rvert"
+      ],
+      "interpretive_role": "This closes the progression by identifying the basis selected by the environment."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\rho(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{i}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rangle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\langle$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rho_{ij}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\neq$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$o(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$o_{ij}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Environment-Induced Superselection\nCanonical operator translation\neq0061_1 = HoldForm[rho(t) -> Sumi pi i i];\neq0061_2 = HoldForm[rhoij(t) -> 0 (i != j)];\n\nTRAWIN closure composition\nTRAWINClosure0061[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0061 := HoldForm[{eq0061_1, eq0061_2}];\nResult0061 := TRAWINClosure0061[K0061];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\rho(t) \\to \\sum_{i} p_{i}\\,\\lvert i\\rangle\\langle i\\rvert",
+          "normalized_latex": "rho[t]->SumI*pI*Abs[i]Inner[i]",
+          "wolfram_input": "rho[t]->SumI*pI*Abs[i]Inner[i]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rho[t] -> SumI*pI*Abs[i]*Inner[i]]",
+          "texform_roundtrip": "\\rho (t)\\to \\text{pI} \\text{SumI} | i|  \\text{Inner}[i]",
+          "messages": []
+        },
+        {
+          "latex": "\\rho_{ij}(t) \\to 0\n\\qquad (i \\neq j)",
+          "normalized_latex": "rhoIj[t]->0(i!=j)",
+          "wolfram_input": "rhoIj[t]->0(i!=j)",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rhoIj[t] -> 0*(i != j)]",
+          "texform_roundtrip": "\\text{rhoIj}(t)\\to 0",
+          "messages": []
+        },
+        {
+          "latex": "\\rho(t)",
+          "normalized_latex": "rho[t]",
+          "wolfram_input": "rho[t]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[rho[t]]",
+          "texform_roundtrip": "\\rho (t)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0061 generated source-truth Wolfram model *)\nClearAll[K0061, TRAWINClosure0061];\neq0061$1 = HoldForm[rho[t] -> SumI*pI*Abs[i]*Inner[i]];\neq0061$2 = HoldForm[rhoIj[t] -> 0*(i != j)];\neq0061$3 = HoldForm[rho[t]];\nK0061 = HoldForm[{eq0061$1, eq0061$2, eq0061$3}];\nTRAWINClosure0061[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0061 = TRAWINClosure0061[K0061];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nS_A = -\\mathrm{Tr}(\\rho_A \\log \\rho_A).\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\rho$ be the density matrix of a composite system partitioned into subsystems $A$ and $B$.\n\nThe reduced density matrix is:\n\\begin{equation}\n\\rho_A = \\mathrm{Tr}_B(\\rho).\n\\end{equation}\n\nThe entanglement entropy is defined as:\n\\begin{equation}\nS_A = -\\mathrm{Tr}(\\rho_A \\log \\rho_A).\n\\end{equation}\n\n\\paragraph{Interpretation.}\nEntropy measures quantum correlation between subsystems.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "proof_support": {
+    "external_sources": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "id": "ID0061",
+        "title": "Environment-Induced Superselection",
+        "canonical_claim": "Certain sets of states (pointer states) are stable against decoherence because the environment causes rapid decoherence of superpositions between them; mathematically, density matrices evolve to block-diagonal form in the basis of these pointer states within finite time.",
+        "proof_lane": "L5 Physical/experimental evidence support",
+        "exact_language": "This source (Quantum decoherence) supports the physical phenomenon (environment‑induced superselection) by showing that The decoherence article notes that decoherence can select preferred pointer states through environment‑induced superselection: off‑diagonal elements vanish in the pointer basis, leaving a diagonal density matrix.",
+        "remaining_gap": "While the cited source provides partial support, a dedicated mathematical or physical proof specific to the Trawinistic framework is still required to fully establish this entry.",
+        "source_title": "Quantum decoherence",
+        "url": "https://en.wikipedia.org/wiki/Quantum_decoherence",
+        "doi_or_arxiv": "",
+        "source_type": "reference article",
+        "relevance": "The decoherence article notes that decoherence can select preferred pointer states through environment‑induced superselection: off‑diagonal elements vanish in the pointer basis, leaving a diagonal density matrix. This supports the concept of environment‑induced superselection and pointer states.",
+        "supported_component": "physical phenomenon (environment‑induced superselection)",
+        "confidence": "medium",
+        "promotion_status": "source_backed_proof_support_candidate",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv"
+      }
+    ],
+    "promotion_ledger": [
+      {
+        "basis": "proofone_first100_external_source_ingest",
+        "ingested_at": "2026-06-02T13:16:50+00:00",
+        "source_report_md": "D:/Proofs/proofone.md",
+        "source_report_csv": "D:/Proofs/tzpid_proof_support_id0000_0099_redo.csv",
+        "added_external_sources": 1,
+        "note": "Append-only proof-support promotion; final physical certificate still requires review of cited source fit."
+      }
+    ]
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0061/ID0061.source_truth.json",
+    "entry_id": "ID0061",
+    "registry_id": "registry_id_0061",
+    "canonical_title": "Environment-Induced Superselection",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0061/ID0061.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "57a9c407-fc9a-544d-854c-ec3837703b87",
+    "RTEID": "RTE:P236.8765:T0.3903",
+    "poloidal_theta_rad": "236.8765",
+    "toroidal_phi_rad": "0.3903",
+    "rteid_source": "manifest",
+    "PiID": "9230781640628",
+    "TZPi": "1",
+    "PiPE_position": "68",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\rho(t) \\to \\sum_{i} p_{i}\\,\\lvert i\\rangle\\langle i\\rvert",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "rho",
+          "sum",
+          "lvert",
+          "rangle",
+          "langle",
+          "rvert",
+          "t",
+          "i",
+          "p"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0061\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Environment-Induced Superselection\", \"latex\" -> \"\\\\rho(t) \\\\to \\\\sum_{i} p_{i}\\\\,\\\\lvert i\\\\rangle\\\\langle i\\\\rvert\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"rho\", \"sum\", \"lvert\", \"rangle\", \"langle\", \"rvert\", \"t\", \"i\", \"p\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\rho_{ij}(t) \\to 0\n\\qquad (i \\neq j)",
+        "numeric_atoms": [
+          "0"
+        ],
+        "symbolic_tokens": [
+          "rho",
+          "neq",
+          "ij",
+          "t",
+          "i",
+          "j"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0061\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Environment-Induced Superselection\", \"latex\" -> \"\\\\rho_{ij}(t) \\\\to 0\\n\\\\qquad (i \\\\neq j)\", \"numericAtoms\" -> {0}, \"symbolicTokens\" -> {\"rho\", \"neq\", \"ij\", \"t\", \"i\", \"j\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

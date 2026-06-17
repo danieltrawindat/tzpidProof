@@ -1,0 +1,472 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-04T17:24:05.586366+00:00",
+    "non_destructive": false,
+    "source": "tier_a_filled_naming_worklist",
+    "content_cleanup_at": "2026-06-04T17:25:56.998485+00:00"
+  },
+  "identity": {
+    "tzpid": "ID5642",
+    "uuid": "7d6de2c2-f0b2-53b8-8b40-4f2ba9a5b360",
+    "registry_id": "registry_id_5642",
+    "piid": "PiID-5642-2bf728c9d47e",
+    "piid_short": "PiID-5642",
+    "canonical_title": "Phase Field Evolution Equation",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID5642/ID5642.TEX",
+      "json": "D:/TZPID/TZPID/ID5642/ID5642.JSON",
+      "source_truth": "D:/TZPID/TZPID/ID5642/ID5642.source_truth.json",
+      "id_system": "D:/TZPIDProof/tzp_id/ID5642/ID5642.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph",
+    "arxiv_secondary_classes": [],
+    "category": "equation-source-intake",
+    "discipline": "physics",
+    "classification_method": "deterministic_keyword_heuristic_requires_review",
+    "piid_metadata": {
+      "piid": "PiID-5642-2bf728c9d47e",
+      "piid_short": "PiID-5642",
+      "volume_family": "post-denary-intake-57",
+      "local_sequence": "42",
+      "method": "deterministic_uuid5_from_tzpid_title_equation"
+    }
+  },
+  "theory": {
+    "canonical_statement": "ID5642 records Phase Field Evolution Equation as a source-extracted canonical equation.",
+    "technical_interpretation": "The entry preserves the equation exactly as extracted from `00_Engine\\Lemma-Maker\\Prism\\minimal_output_with_meta.tex` for registry alignment and later derivation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}"
+    ],
+    "source_section_latex": "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}"
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "canonical_equation_symbols": [
+      {
+        "symbol": "$\\Omega_i$",
+        "description": "Angular velocity / rotation rate (or solid angle)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "angular rotation or modulation parameter with subscripted role `\\Omega_i` in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_notes": "Subscript \"i\" specializes this quantity.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\Psi$",
+        "description": "Quantum state / wavefunction (Ψ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wavefunction or state field in the canonical equation.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\big$",
+        "description": "Delimiter-sizing command",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\big` extracted from the canonical equation.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\dot$",
+        "description": "Time-derivative accent",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\dot` extracted from the canonical equation.",
+        "meaning_source": "Notation accent",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\label$",
+        "description": "LaTeX cross-reference label (markup)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `\\label` extracted from the canonical equation.",
+        "meaning_source": "Notation token",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\phi$",
+        "description": "Phase angle or scalar field (φ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "phase, scalar field, or golden-ratio symbol as determined by the equation context.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\phi_i$",
+        "description": "Phase angle or scalar field (φ)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "phase, scalar field, or golden-ratio symbol as determined by the equation context.",
+        "meaning_source": "Greek variable",
+        "meaning_confidence": "medium",
+        "meaning_notes": "Subscript \"i\" specializes this quantity.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$K$",
+        "description": "Kinetic energy or wavenumber",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `K` appearing in the canonical equation for Phase Field Evolution Equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$R$",
+        "description": "Radius, curvature scalar, or resistance",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "radius, scale, or characteristic length in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$eq$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `eq` appearing in the canonical equation for Phase Field Evolution Equation.",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$k$",
+        "description": "Wavenumber or mode/summation index",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave number or mode index in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$kuramoto_meanfield$",
+        "description": "Symbol “kuramoto_meanfield” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `kuramoto_meanfield` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$o_meanfield$",
+        "description": "Symbol “o_meanfield” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `o_meanfield` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "time parameter in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$\\sin$",
+        "description": "Sine function",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "sine function.",
+        "meaning_source": "Function",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      }
+    ],
+    "extraction_method": "Wolfram Engine string-symbol extraction merged with source LaTeX symbol list",
+    "wolfram_engine": {
+      "tool": "wolframscript",
+      "commands": [
+        "\\begin",
+        "\\dot",
+        "\\phi",
+        "\\Omega_i",
+        "\\sin",
+        "\\big",
+        "\\Psi",
+        "\\phi_i",
+        "\\label",
+        "\\end"
+      ],
+      "variables": [
+        "K",
+        "R",
+        "t",
+        "eq",
+        "kuramoto_meanfield"
+      ],
+      "constructs": [
+        "\\sin"
+      ]
+    }
+  },
+  "source_evidence": {
+    "source_kind": "text_source",
+    "source_short": "00_Engine\\Lemma-Maker\\Prism\\minimal_output_with_meta.tex",
+    "source_path": "D:\\00_Engine\\Lemma-Maker\\Prism\\minimal_output_with_meta.tex",
+    "new_id_score": "100",
+    "title_method": "derived",
+    "title_review_flag": "False",
+    "promotion_status_before_apply": "awaiting_author_title_assignment"
+  },
+  "verification_handles": {
+    "formal_status": "source-equation-recorded",
+    "claim_strength": "source-equation-intake",
+    "equation_quality_status": "source_equation_present",
+    "equation_quality_flags": [],
+    "artifacts": {}
+  },
+  "audit": {
+    "created_by": "scripts/apply_tier_a_filled_names_to_tzpid_folders.py",
+    "created_at": "2026-06-04T17:24:05.586366+00:00",
+    "write_policy": "create_new_entry_folder_or_skip_existing_unless_overwrite",
+    "unrealized_section_cleanup": {
+      "removed_sections": [
+        "wolfram_form",
+        "derivation_layer",
+        "proof_support"
+      ],
+      "reason": "no generated Wolfram, derivation, or proof artifact is included until real source-backed content exists"
+    },
+    "wolfram_symbol_key_enrichment": {
+      "updated_at": "2026-06-04T17:33:40.947216+00:00",
+      "symbol_count": 15,
+      "method": "wolframscript_extract_commands_variables_constructs"
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID5642/ID5642.source_truth.json",
+    "entry_id": "ID5642",
+    "registry_id": "registry_id_5642",
+    "canonical_title": "Phase Field Evolution Equation",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID5642/ID5642.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "7d6de2c2-f0b2-53b8-8b40-4f2ba9a5b360",
+    "RTEID": "RTE:P21909.1390:T4.6836",
+    "poloidal_theta_rad": "21909.1390",
+    "toroidal_phi_rad": "4.6836",
+    "rteid_source": "computed",
+    "PiID": "8720192771528",
+    "TZPi": "2",
+    "PiPE_position": "5649",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}",
+          "normalized_latex": "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID5642\", 1, \"\\\\begin{equation} \\\\dot{\\\\phi}_i = \\\\Omega_i + K R(t)\\\\,\\\\sin\\\\!\\\\big(\\\\Psi(t)-\\\\phi_i\\\\big). \\\\label{eq:kuramoto_meanfield} \\\\end{equation}\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID5642 minted source-truth Wolfram carrier model *)\nClearAll[K5642, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq5642$1 = HoldForm[TZPIDCanonicalLatex[\"ID5642\", 1, \"\\\\begin{equation} \\\\dot{\\\\phi}_i = \\\\Omega_i + K R(t)\\\\,\\\\sin\\\\!\\\\big(\\\\Psi(t)-\\\\phi_i\\\\big). \\\\label{eq:kuramoto_meanfield} \\\\end{equation}\"]];\nK5642 = HoldForm[{eq5642$1}];\nTZPIDCanonicalCarrier[\"ID5642\"] = <|\"id\" -> \"ID5642\", \"title\" -> \"Phase Field Evolution Equation\", \"blocks\" -> K5642|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\begin{equation} \\dot{\\phi}_i = \\Omega_i + K R(t)\\,\\sin\\!\\big(\\Psi(t)-\\phi_i\\big). \\label{eq:kuramoto_meanfield} \\end{equation}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "dot",
+          "phi",
+          "Omega",
+          "sin",
+          "big",
+          "Psi",
+          "label",
+          "i",
+          "K",
+          "R",
+          "t"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID5642\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Phase Field Evolution Equation\", \"latex\" -> \"\\\\begin{equation} \\\\dot{\\\\phi}_i = \\\\Omega_i + K R(t)\\\\,\\\\sin\\\\!\\\\big(\\\\Psi(t)-\\\\phi_i\\\\big). \\\\label{eq:kuramoto_meanfield} \\\\end{equation}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"dot\", \"phi\", \"Omega\", \"sin\", \"big\", \"Psi\", \"label\", \"i\", \"K\", \"R\", \"t\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

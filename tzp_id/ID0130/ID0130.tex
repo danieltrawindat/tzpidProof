@@ -1,0 +1,236 @@
+\tzpanchor{0130}
+\tzpentryheader{0130}{Bridging Frequency Ratio}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{b32343ad-963b-57ef-ab2e-a23485fc7f4c}}\\
+\textbf{PiID} & \tzpcode{5058223172535} & \textbf{TZPi}\quad \tzpcode{3}\quad \textbf{PiPE}\quad \tzpcode{137}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{504.8189 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.8318 rad}\\
+\textbf{TZPID} & \tzpcode{ID0130} & \textbf{Node Dependencies}\quad \tzpidref{0129}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0130} & \textbf{Scale}\quad beat alignment across carrier bands\\
+\textbf{LOC Classification} & QA371 resonance systems & QC670 wave and optical frequencies\\
+\textbf{arXiv Classification} & Primary: physics.class-ph \quad Cross-list: physics.optics, nlin.PS & \\
+\textbf{Primary Support} & Bridge Ratio & Carrier Rescaling\\
+\textbf{Closure Support} & Bridge Frequency & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+Given two carrier frequencies \(f_A\) and \(f_B\), scale both by a common factor \(S=\Delta/B\), where \(\Delta\) is the original frequency separation and \(B\) is the target beat frequency. The bridge carrier is then obtained by applying the rational lift \(r=32/27\) to the rescaled \(f_B\) carrier.
+
+\tzpsection{Canonical Equation}
+\[
+r = \frac{32}{27}
+\]
+\[
+S = \frac{\Delta}{B},
+\qquad
+f_A' = \frac{f_A}{S},
+\qquad
+f_B' = \frac{f_B}{S}
+\]
+\[
+f_{\mathrm{bridge}} = r\,f_B'
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $S$: source equation symbol.
+    \item $B$: magnetic field magnitude.
+    \item $f_A$: source equation symbol.
+    \item $f_B$: source equation symbol.
+    \item $f_{\mathrm{bridge}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0130 generated source Wolfram model *)
+ClearAll[K0130, Cr0130, T, R, A, W, I, N];
+eq0130$1 = HoldForm[r == 32/27];
+eq0130$2 = HoldForm[TZPSequence[S == Delta/B, Derivative[1][fA] == fA/S, Derivative[1][fB] == fB/S]];
+eq0130$3 = HoldForm[fBridge == r*Derivative[1][fB]];
+
+K0130 = HoldForm[{eq0130$1, eq0130$2, eq0130$3}];
+
+N = "normalized TRAWIN closure object for Bridging Frequency Ratio";
+I = "Bridge Frequency integration/comparison layer";
+W = "Carrier Rescaling wave or operator carrier";
+A = "Bridge Ratio admissible action/amplitude condition";
+R = "Carrier Rescaling rotation/curl preservation layer";
+T = "Bridge Ratio local source condition";
+
+Cr0130[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0130 = Cr0130[K0130];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Bridge Ratio local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Carrier Rescaling rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Bridge Ratio admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Carrier Rescaling wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Bridge Frequency integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Bridging Frequency Ratio.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0130] Bridging Frequency Ratio}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+r = \frac{32}{27}
+\]
+\[
+S = \frac{\Delta}{B},
+\qquad
+f_A' = \frac{f_A}{S},
+\qquad
+f_B' = \frac{f_B}{S}
+\]
+\[
+f_{\mathrm{bridge}} = r\,f_B'
+\]
+
+\paragraph{Primary Derivation.}
+The relation is obtained by employing standard algebraic manipulations, yielding the required identity.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. From the TRAWIN perspective, the equation functions as the generalized carrier for the entry’s information content. Under CHL, the derivation provides a certificate connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Bridging Frequency Ratio by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Bridge Ratio}\par
+\[
+r = \frac{32}{27}
+\]
+\noindent This identifies the rational lift factor used to move the aligned carrier into the bridge band.\par
+\noindent\textbf{2. Carrier Rescaling}\par
+\[
+S = \frac{\Delta}{B},
+\qquad
+f_A' = \frac{f_A}{S},
+\qquad
+f_B' = \frac{f_B}{S}
+\]
+\noindent This enforces the common scaling that makes the target beat explicit before bridging.\par
+\noindent\textbf{3. Bridge Frequency}\par
+\[
+f_{\mathrm{bridge}} = r\,f_B'
+\]
+\noindent This closes the progression by producing the new carrier that sits in the desired bridge relation to the rescaled system.\par
+
+\clearpage
+\noindent\textbf{[ID 0130] Bridging Frequency Ratio}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Bridging Frequency Ratio is a canonical-registry. Given two carriers f\_A and f\_B, scale both by the same factor S =  /B so that the difference becomes the target beat B. Define f\_A' = f\_A/S, f\_B' = f\_B/S and the bridging frequency f\_bridge = f\_B'   r. Interpretive Meaning: The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication. Dependencies: Primitive
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} Given two carriers f\_A and f\_B, scale both by the same factor S =  /B so that the difference becomes the target beat B. Define f\_A' = f\_A/S, f\_B' = f\_B/S and the bridging frequency f\_bridge = f\_B'   r. Interpretive Meaning: The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication. Dependencies: Primitive
+\textbf{Contextual meaning:} The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication.
+\textbf{Derivable consequences:} Source evidence records the entry as a reusable object whose consequences should be read from the matched formal statement and local proof route.
+\textbf{Lemma support:} Given two carriers f\_A and f\_B, scale both by the same factor S =  /B so that the difference becomes the target beat B. Define f\_A' = f\_A/S, f\_B' = f\_B/S and the bridging frequency f\_bridge = f\_B'   r. Interpretive Meaning: The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication. Dependencies: Primitive\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication.
+
+\tzpsection{Equation Grounding}
+Given two carriers f\_A and f\_B, scale both by the same factor S =  /B so that the difference becomes the target beat B. Define f\_A' = f\_A/S, f\_B' = f\_B/S and the bridging frequency f\_bridge = f\_B'   r. Interpretive Meaning: The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication. Dependencies: Primitive
+
+\tzpsection{Interpretive Role}
+The rational ratio 32/27 acts as a deterministic map between two frequency states, serving as a "bridge" operator that stitches otherwise distinct carriers through a simple multiplication.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Bridge Ratio}: The identification of the rational lift factor used to move the aligned carrier into the bridge band.
+\item \textbf{Carrier Rescaling}: The enforcement of the common scaling that makes the target beat explicit before bridging.
+\item \textbf{Bridge Frequency}: The production of the new carrier that sits in the desired bridge relation to the rescaled system.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0130]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0130_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0130] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Bridging Frequency Ratio}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} given two carrier frequencies \(f_A\) and \(f_B\), scale both by
+\(S=\Delta/B\) and define the bridge carrier by \(f_{\mathrm{bridge}}=(32/27)f_B'\).
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Bridging Frequency Ratio is valid as a spectral relation when frequency, phase, and
+propagation variables satisfy the stated equation.''\\
+\textbf{Proof:} The source statement describes a wave, harmonic, or resonance relation. The proof
+obligation is that the frequency-domain quantities are typed consistently and that the
+derived propagation or resonance condition follows from the stated variables.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- spectral-relation validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0130_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

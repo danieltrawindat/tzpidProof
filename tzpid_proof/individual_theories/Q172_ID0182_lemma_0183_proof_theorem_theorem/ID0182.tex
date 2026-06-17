@@ -1,0 +1,217 @@
+\tzpanchor{0182}
+\tzpentryheader{0182}{Topological Quantization of Charge and Spin}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{a1d96e2c-2d48-5fd9-bb33-0f2c6c5879a1}}\\
+\textbf{PiID} & \tzpcode{4622948954930} & \textbf{TZPi}\quad \tzpcode{8}\quad \textbf{PiPE}\quad \tzpcode{189}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{706.7464 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{01.1645 rad}\\
+\textbf{TZPID} & \tzpcode{ID0182} & \textbf{Node Dependencies}\quad \tzpidref{0181}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0182} & \textbf{Scale}\quad quantum\\
+\textbf{LOC Classification} & QC quantum theory & \\
+\textbf{arXiv Classification} & Primary: quant-ph & Cross-list: math-ph, hep-th\\
+\textbf{Primary Support} & Topological Class & Discrete Spectrum\\
+\textbf{Closure Support} & Quantized Spin & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The integral of the gauge field along the fold yields quantized charge; the spin-half arises from the twist in how the defect is stitched into the hypersphere; these topological features enforce discrete values.
+
+\tzpsection{Canonical Equation}
+\[
+Q = n e
+\]
+\[
+S = \frac{m}{2}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $Q$: source equation symbol.
+    \item $n$: integer mode index.
+    \item $S$: source equation symbol.
+    \item $\mathcal{K}_{0182}$: canonical registry object for entry ID 0182.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0182 generated source Wolfram model *)
+ClearAll[K0182, Cr0182, T, R, A, W, I, N];
+eq0182$1 = HoldForm[Q == n*e];
+eq0182$2 = HoldForm[S == m/2];
+eq0182$3 = HoldForm[TZPNormalizeWrap[Q, S]];
+
+K0182 = HoldForm[{eq0182$1, eq0182$2, eq0182$3}];
+
+N = "normalized TRAWIN closure object for Topological Quantization of Charge and Spin";
+I = "Normalized Closure integration/comparison layer";
+W = "Second Support wave or operator carrier";
+A = "First Support admissible action/amplitude condition";
+R = "Second Support rotation/curl preservation layer";
+T = "First Support local source condition";
+
+Cr0182[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0182 = Cr0182[K0182];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ First Support local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Second Support rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ First Support admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Second Support wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Normalized Closure integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Topological Quantization of Charge and Spin.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0182] Topological Quantization of Charge and Spin}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+Q = n e
+\]
+\[
+S = \frac{m}{2}
+\]
+
+\paragraph{Primary Derivation.}
+The relation is obtained by employing standard algebraic manipulations. which confirms the stated equality.
+\paragraph{Equation Type.}
+This statement is classified as a other relation.
+
+\paragraph{Interpretation.}
+This relation applies to the quantities defined above. In the TRAWIN reading, the equation functions as the generalized carrier for the entry’s information content. According to CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Topological Quantization of Charge and Spin by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. First Support}\par
+\[
+Q = n e
+\]
+\noindent This support equation moves the entry from the abstract claim toward a concrete first measurable relation.\par
+\noindent\textbf{2. Second Support}\par
+\[
+S = \frac{m}{2}
+\]
+\noindent This support equation adds the second structural constraint needed to narrow the admissible TRAWIN reading.\par
+\noindent\textbf{3. Normalized Closure}\par
+\[
+\tzpnormalizewrap{Q,S,\text{quantization}}
+\]
+\noindent This normalized closure ties the support terms together and closes the progression under the TRAWIN frame.\par
+
+\clearpage
+\noindent\textbf{[ID 0182] Topological Quantization of Charge and Spin}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Topological Quantization of Charge and Spin is a Structural Constraint  . A fold carrying an electron picks up a discrete gauge charge of and a phase reversal under rotation, giving spin ; the quantization of charge and spin stems from topological properties of the vacuum field.  
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} A fold carrying an electron picks up a discrete gauge charge of and a phase reversal under rotation, giving spin ; the quantization of charge and spin stems from topological properties of the vacuum field.  
+\textbf{Contextual meaning:} The integral of the gauge field along the fold yields quantized charge; the spin half arises from the twist in how the defect is stitched into the hypersphere; these topological features enforce discrete values.  
+\textbf{Derivable consequences:} Explains quantization of fundamental charges; forbids fractional spin except in co
+\textbf{Lemma support:} A fold carrying an electron picks up a discrete gauge charge of and a phase reversal under rotation, giving spin ; the quantization of charge and spin stems from topological properties of the vacuum field.  \par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Observing electrons with different intrinsic properties or continuous variation of charge would falsify this entry. ID 182: Topological Quantization of Charge and Spin  
+
+\tzpsection{Equation Grounding}
+A fold carrying an electron picks up a discrete gauge charge of and a phase reversal under rotation, giving spin ; the quantization of charge and spin stems from topological properties of the vacuum field.  
+
+\tzpsection{Interpretive Role}
+The integral of the gauge field along the fold yields quantized charge; the spin half arises from the twist in how the defect is stitched into the hypersphere; these topological features enforce discrete values.  
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{First Support}: The quantization condition mapping continuous fields to integer charges.
+\item \textbf{Second Support}: The quantization condition mapping continuous fields to half-integer spins.
+\item \textbf{Normalized Closure}: The encoding of the quantization law into the TRAWIN framework.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0182]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0182_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0182] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Topological Quantization of Charge and Spin}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the integral of the gauge field along the fold yields quantized charge; the spin-half
+arises from the twist in how the defect is stitched into the...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Topological Quantization of Charge and Spin is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0182_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

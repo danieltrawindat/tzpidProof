@@ -1,0 +1,362 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:32:03.047383+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0055",
+    "uuid": "9f353752-5725-54aa-9377-9646e355e321",
+    "registry_id": "registry_id_0055",
+    "canonical_title": "Boundary-Induced Quantum Effects",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0055/ID0055.TEX",
+      "json": "D:/TZPID/TZPID/ID0055/ID0055.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0055/ID0055.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Boundaries in the Trawinistic manifold alter quantum fields; the operator encapsulates how edges, surfaces and topological defects influence field configurations and energies.",
+    "technical_interpretation": "Boundaries in the Trawinistic manifold alter quantum fields; the operator encapsulates how edges, surfaces and topological defects influence field configurations and energies."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\mathcal{B}_{\\partial\\Omega}\\phi\n=\n\\sum_{n} b_{n}(\\partial\\Omega)\\,\\phi_{n}",
+      "b_{n} = b_{n}^{\\mathrm{geom}} + b_{n}^{\\mathrm{top}} + b_{n}^{\\mathrm{curv}}"
+    ],
+    "source_section_latex": "\\[\n\\mathcal{B}_{\\partial\\Omega}\\phi\n=\n\\sum_{n} b_{n}(\\partial\\Omega)\\,\\phi_{n}\n\\]\n\\[\nb_{n} = b_{n}^{\\mathrm{geom}} + b_{n}^{\\mathrm{top}} + b_{n}^{\\mathrm{curv}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Confined Mode Family",
+      "formula_latex_blocks": [
+        "\\phi = \\sum_{n}\\phi_{n}"
+      ],
+      "interpretive_role": "This expresses the field as the sum of boundary-compatible confined modes."
+    },
+    {
+      "step": 2,
+      "component_title": "Boundary Coefficient Decomposition",
+      "formula_latex_blocks": [
+        "b_{n} = b_{n}^{\\mathrm{geom}} + b_{n}^{\\mathrm{top}} + b_{n}^{\\mathrm{curv}}"
+      ],
+      "interpretive_role": "This identifies the separate geometric sources of boundary influence."
+    },
+    {
+      "step": 3,
+      "component_title": "Boundary Effect Operator",
+      "formula_latex_blocks": [
+        "\\mathcal{B}_{\\partial\\Omega}\\phi\n=\n\\sum_{n} b_{n}(\\partial\\Omega)\\,\\phi_{n}"
+      ],
+      "interpretive_role": "This closes the progression by turning boundary data into an explicit operator acting on the field."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\partial$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\sum_{n}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi_{n}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{\\partial\\Omega}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$b_{n}(\\partial\\Omega)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Boundary-Induced Quantum Effects\nCanonical operator translation\neq0055_1 = HoldForm[(B)DOmega == Sumn bn(DOmega)];\neq0055_2 = HoldForm[bn == bn^(geom) + bn^(top) + bn^(curv)];\n\nTRAWIN closure composition\nTRAWINClosure0055[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0055 := HoldForm[{eq0055_1, eq0055_2}];\nResult0055 := TRAWINClosure0055[K0055];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\mathcal{B}_{\\partial\\Omega}\\phi\n=\n\\sum_{n} b_{n}(\\partial\\Omega)\\,\\phi_{n}",
+          "normalized_latex": "BPartialOmegaphi==SumN*bN[PartialOmega]*phiN",
+          "wolfram_input": "BPartialOmegaphi==SumN*bN[PartialOmega]*phiN",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BPartialOmegaphi == SumN*bN[PartialOmega]*phiN]",
+          "texform_roundtrip": "\\text{BPartialOmegaphi}=\\text{phiN} \\text{SumN} \\text{bN}(\\text{PartialOmega})",
+          "messages": []
+        },
+        {
+          "latex": "b_{n} = b_{n}^{\\mathrm{geom}} + b_{n}^{\\mathrm{top}} + b_{n}^{\\mathrm{curv}}",
+          "normalized_latex": "bN==bN^(geom)+bN^(top)+bN^(curv)",
+          "wolfram_input": "bN==bN^(geom)+bN^(top)+bN^(curv)",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[bN == bN^geom + bN^top + bN^curv]",
+          "texform_roundtrip": "\\text{bN}=\\text{bN}^{\\text{geom}}+\\text{bN}^{\\text{curv}}+\\text{bN}^{\\text{top}}",
+          "messages": []
+        },
+        {
+          "latex": "\\phi = \\sum_{n}\\phi_{n}",
+          "normalized_latex": "phi==SumNphiN",
+          "wolfram_input": "phi==SumNphiN",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[phi == SumNphiN]",
+          "texform_roundtrip": "\\phi =\\text{SumNphiN}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0055 generated source-truth Wolfram model *)\nClearAll[K0055, TRAWINClosure0055];\neq0055$1 = HoldForm[BPartialOmegaphi == SumN*bN[PartialOmega]*phiN];\neq0055$2 = HoldForm[bN == bN^geom + bN^top + bN^curv];\neq0055$3 = HoldForm[phi == SumNphiN];\nK0055 = HoldForm[{eq0055$1, eq0055$2, eq0055$3}];\nTRAWINClosure0055[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0055 = TRAWINClosure0055[K0055];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nB_{\\partial\\Omega}\\phi\n=\n\\sum_n b_n(\\partial\\Omega)\\,\\phi_n .\n\\end{equation}\n\n\\paragraph{Coefficient Decomposition.}\n\\begin{equation}\nb_n\n=\nb_n^{\\mathrm{geom}}\n+\nb_n^{\\mathrm{top}}\n+\nb_n^{\\mathrm{curv}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFrom mode quantization, a confined field can be expanded as:\n\n\\begin{equation}\n\\phi=\\sum_n \\phi_n .\n\\end{equation}\n\nBoundary geometry modifies the amplitude or phase of each mode through coefficients $b_n(\\partial\\Omega)$.\n\nThe boundary-response operator is therefore:\n\n\\begin{equation}\n\\boxed{\nB_{\\partial\\Omega}\\phi\n=\n\\sum_n b_n(\\partial\\Omega)\\,\\phi_n .\n}\n\\end{equation}\n\nThe coefficient naturally decomposes into geometric, topological, and curvature components:\n\n\\begin{equation}\nb_n\n=\nb_n^{\\mathrm{geom}}\n+\nb_n^{\\mathrm{top}}\n+\nb_n^{\\mathrm{curv}} .\n\\end{equation}\n\n\\paragraph{Interpretation.}\nBoundaries actively reshape quantum fields by reweighting their confined mode expansion.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0055/ID0055.source_truth.json",
+    "entry_id": "ID0055",
+    "registry_id": "registry_id_0055",
+    "canonical_title": "Boundary-Induced Quantum Effects",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0055/ID0055.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "9f353752-5725-54aa-9377-9646e355e321",
+    "RTEID": "RTE:P213.5772:T0.3519",
+    "poloidal_theta_rad": "213.5772",
+    "toroidal_phi_rad": "0.3519",
+    "rteid_source": "manifest",
+    "PiID": "7494459230781",
+    "TZPi": "9",
+    "PiPE_position": "62",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\mathcal{B}_{\\partial\\Omega}\\phi\n=\n\\sum_{n} b_{n}(\\partial\\Omega)\\,\\phi_{n}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "partial",
+          "Omega",
+          "phi",
+          "sum",
+          "n",
+          "b"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0055\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Boundary-Induced Quantum Effects\", \"latex\" -> \"\\\\mathcal{B}_{\\\\partial\\\\Omega}\\\\phi\\n=\\n\\\\sum_{n} b_{n}(\\\\partial\\\\Omega)\\\\,\\\\phi_{n}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"partial\", \"Omega\", \"phi\", \"sum\", \"n\", \"b\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "b_{n} = b_{n}^{\\mathrm{geom}} + b_{n}^{\\mathrm{top}} + b_{n}^{\\mathrm{curv}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "b",
+          "n"
+        ],
+        "candidate_wolfram_input": "HoldForm[b$n == b$n^(geom) + b$n^(top) + b$n^(curv)]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0055\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"Boundary-Induced Quantum Effects\", \"latex\" -> \"b_{n} = b_{n}^{\\\\mathrm{geom}} + b_{n}^{\\\\mathrm{top}} + b_{n}^{\\\\mathrm{curv}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"b\", \"n\"}, \"candidateWolframInput\" -> \"HoldForm[b$n == b$n^(geom) + b$n^(top) + b$n^(curv)]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

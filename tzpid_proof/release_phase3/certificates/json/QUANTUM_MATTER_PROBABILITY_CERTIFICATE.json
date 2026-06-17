@@ -1,0 +1,117 @@
+{
+  "certificate": "QUANTUM_MATTER_PROBABILITY_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:49:00+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Computational certificate for diagonal two-state probability carriers; not a full complex density-matrix or Bell-experiment model.",
+  "equations": {
+    "density_trace": "Tr(rho) = p0 + p1 = 1",
+    "born_probabilities": "P0 = p0, P1 = p1, each in [0,1]",
+    "conservation": "after - before = 0",
+    "chsh_window": "2 < |S| <= 2 sqrt(2)",
+    "discrete_shell": "mass = n * quantum"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "probability_carrier_verified": "pass",
+    "bell_window_verified": "pass",
+    "conservation_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "balanced_qubit_violation",
+      "role": "Trace-one balanced diagonal density with CHSH violation below Tsirelson.",
+      "p0": 0.5,
+      "p1": 0.5,
+      "before": 1.0,
+      "after": 1.0,
+      "chsh_s": 2.5,
+      "quantum": 0.25,
+      "shell_n": 4
+    },
+    {
+      "name": "biased_qubit_shell",
+      "role": "Biased diagonal density and exact discrete mass shell.",
+      "p0": 0.2,
+      "p1": 0.8,
+      "before": 3.0,
+      "after": 3.0,
+      "chsh_s": 2.2,
+      "quantum": 0.1,
+      "shell_n": 7
+    },
+    {
+      "name": "near_tsirelson_window",
+      "role": "Near-upper quantum-window CHSH carrier.",
+      "p0": 0.9,
+      "p1": 0.1,
+      "before": 0.0,
+      "after": 0.0,
+      "chsh_s": 2.8,
+      "quantum": 1.5,
+      "shell_n": 2
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "balanced_qubit_violation",
+      "role": "Trace-one balanced diagonal density with CHSH violation below Tsirelson.",
+      "p0": 0.5,
+      "p1": 0.5,
+      "trace": 1.0,
+      "conservation_residual": 0.0,
+      "chsh_abs_s": 2.5,
+      "tsirelson_bound": 2.8284271247461903,
+      "quantum": 0.25,
+      "shell_n": 4,
+      "shell_mass": 1.0,
+      "status": "pass",
+      "trace_one": "pass",
+      "born_probabilities_in_unit_interval": "pass",
+      "conservation_residual_zero": "pass",
+      "chsh_quantum_window": "pass",
+      "discrete_shell_exact": "pass"
+    },
+    {
+      "scenario": "biased_qubit_shell",
+      "role": "Biased diagonal density and exact discrete mass shell.",
+      "p0": 0.2,
+      "p1": 0.8,
+      "trace": 1.0,
+      "conservation_residual": 0.0,
+      "chsh_abs_s": 2.2,
+      "tsirelson_bound": 2.8284271247461903,
+      "quantum": 0.1,
+      "shell_n": 7,
+      "shell_mass": 0.7000000000000001,
+      "status": "pass",
+      "trace_one": "pass",
+      "born_probabilities_in_unit_interval": "pass",
+      "conservation_residual_zero": "pass",
+      "chsh_quantum_window": "pass",
+      "discrete_shell_exact": "pass"
+    },
+    {
+      "scenario": "near_tsirelson_window",
+      "role": "Near-upper quantum-window CHSH carrier.",
+      "p0": 0.9,
+      "p1": 0.1,
+      "trace": 1.0,
+      "conservation_residual": 0.0,
+      "chsh_abs_s": 2.8,
+      "tsirelson_bound": 2.8284271247461903,
+      "quantum": 1.5,
+      "shell_n": 2,
+      "shell_mass": 3.0,
+      "status": "pass",
+      "trace_one": "pass",
+      "born_probabilities_in_unit_interval": "pass",
+      "conservation_residual_zero": "pass",
+      "chsh_quantum_window": "pass",
+      "discrete_shell_exact": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\QUANTUM_MATTER_PROBABILITY_GRID.csv",
+  "status": "pass"
+}

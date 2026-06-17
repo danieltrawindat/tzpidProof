@@ -1,0 +1,17 @@
+\section*{ID6577: Density: Make a HEALPix Map of Overdensity: δ(θ,φ; Z)}
+\paragraph{Metadata.}
+PiID: 9898989358211 | RTEID: RTE:P25539.9516:T4.3829 | UUID: e40023be-5ee7-5632-aff1-e786897110f9
+
+\paragraph{Canonical Statement.}
+How you can use this on real cosmic maps (DESI/Euclid/etc.) - Replace the synthetic `psi` with your observed field: - For density: make a HEALPix map of overdensity \textbackslash{}(\textbackslash{}delta(\textbackslash{}theta,\textbackslash{}phi; z)\textbackslash{}) on redshift shells and pass that map into `compute\_alm` to get \textbackslash{}(\textbackslash{}delta\_\{l,m\}(r)\textbackslash{}). - For velocity: if you have a reconstructed peculiar velocity field on shells, interpolate its eastward/northward components into the same theta/phi grid and feed them to `compute\_winding\_number` and `compute\_vorticity`. - For large datasets use higher `n\_theta`/`n\_phi` and increase `lmax`. The quadrature here is direct and accurate if the grid is sufficiently dense relative to lmax (Nyquist-like rule of thumb: n\_theta \textasciitilde{} 2*lmax, n\_phi \textasciitilde{} 4*lmax). - For real HEALPix files you can map HEALPix pixel centers to (theta,phi) and plug values directly into `compute\_alm` without regridding.
+
+\paragraph{Canonical Equation.}
+\[
+\delta(\theta,\phi; z)
+\]
+
+\paragraph{Dictionary.}
+Density: Make a HEALPix Map of Overdensity: δ(θ,φ; Z) — δ(θ,φ; z)
+
+\paragraph{Encyclopedia.}
+Density: Make a HEALPix Map of Overdensity: δ(θ,φ; Z) is a symbolic expression, written δ(θ,φ; z). It introduces a symbol or relation used elsewhere in the framework. It is built from δ, θ, φ, z. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

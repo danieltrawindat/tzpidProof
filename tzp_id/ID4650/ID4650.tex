@@ -1,0 +1,8 @@
+% Auto-generated source-truth intake stub for ID4650.
+\tzpentry{ID4650}{Start Time TIMESTAMP Time TIMESTAMP Trad Relation}
+\paragraph{Canonical Statement.}
+ID4650 introduces Start Time TIMESTAMP Time TIMESTAMP Trad Relation as a source-extracted canonical equation candidate. The equation is promoted from the Tier A equation-source intake and remains pending source-context expansion, duplicate review against the earlier TZPID corpus, Wolfram normalization, symbol-key enrichment, and derivation/proof-lane construction.
+\paragraph{Canonical Equation.}
+$$ DECLARE start_time TIMESTAMP; end_time TIMESTAMP; trad_time INTERVAL; daans_time INTERVAL; test_point GEOGRAPHY; i INTEGER; BEGIN -- Create a test point in SF test_point := ST_SetSRID(ST_MakePoint(-122.4194, 37.7749), 4326)::geography; -- Benchmark traditional PostGIS transformation start_time := clock_timestamp(); FOR i IN 1..iterations LOOP -- What Google does now: multiple trigonometric operations PERFORM ST_Transform(test_point::geometry, 3857); -- Web Mercator PERFORM ST_Distance(test_point, test_point); PERFORM ST_Area(ST_Buffer(test_point, 100)); END LOOP; end_time := clock_timestamp(); trad_time := end_time - start_time; -- Benchmark DAANSphere transformation start_time := clock_t ...
+\paragraph{Registry Metadata.}
+UUID: \texttt{e73b857b-7b43-5aa1-850c-b6a4d66325ca}. PiID: \texttt{PiID-4650}. LOC: \texttt{QC - Physics: relativity and gravitation}. arXiv: \texttt{gr-qc}.

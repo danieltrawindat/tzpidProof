@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black]{hyperref}
+\hypersetup{
+  pdfauthor={Daniel Alexander Trawin},
+  pdfcreator={Trawin, Daniel Alexander},
+  pdftitle={Exact Nested-Sphere Geometry and the Breathing Dimension-Counter},
+  pdfsubject={TZPID Gold Spine Series II, Paper XIII},
+  pdfkeywords={TZPID, nested spheres, S3, S4, S5, breathing dimension counter, Laplace-Beltrami spectrum, DOI:10.5281/zenodo.20723779}
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\OmK}{\Omega_K}
+\title{Exact Nested-Sphere Geometry and the Breathing Dimension-Counter:\\ $S^3$, $S^4$, $S^5$, the $+\ell$ Cascade, and the $3{:}4{:}5$ Triad\\[0.6em]
+\large TZPID Gold Spine Series II, Paper XIII of XX}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20723779}{10.5281/zenodo.20723779}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The breathing enclosure favoured by Paper XII demands an exact geometry. We give the dimension-general geometry of the $3$-, $4$-, and $5$-spheres as nested breathing enclosures: closed-form hypervolumes $|S^n| R^n$, the breathing law $\dot V/V = nH$, the Laplace--Beltrami spectrum $\lambda_\ell = \ell(\ell+n-1)/R^2$ with exact degeneracies, scalar curvature $n(n-1)/R^2$, and the higher-dimensional Friedmann scaling. Two exact structural results emerge: the nesting rule $\lambda_\ell(S^n) = \lambda_\ell(S^{n-1}) + \ell$, the cascade-plus-cutoff mechanism of Paper I made exact; and the Pythagorean fundamental triad $\lambda_1(S^3):\lambda_1(S^4):\lambda_1(S^5) = 3:4:5$, tying the nested fundamental tones to the $3$--$4$--$5$ right triangle and, through the shared $S^1$ Hopf fiber, to the comma holonomy of Paper III. The load-bearing result is a measurement: because $\dot V/V = nH$ exactly, the ratio of cosmic volume-production rate to the Hubble rate \emph{is} the spatial dimension, and the value from the Spartan Dawn fit, $\dot V/V = 0.207\ \mathrm{Gyr}^{-1}$, $H_0 \approx 0.069\ \mathrm{Gyr}^{-1}$, gives $n = 3.0$. The observable spatial slice is the $3$-sphere; $S^4$, $S^5$ are outer shells of the nest. Sections~2--3 are exact closed-form geometry; the dimension anchor is data-driven; the identification of nature with the stack $S^3 \subset S^4 \subset S^5$ remains the hypothesis tested in Paper XIV.
+\end{abstract}
+\section{Introduction: the geometry the data demand}
+Paper XII left the breathing enclosure favoured but under-specified. This paper supplies the structure of the nest in closed form, treating the nested hyperspheres as exact Riemannian objects. The computation is standard differential geometry; what the framework adds is the reading of these quantities as the physical content of nested cosmological enclosures, and the recognition that one of them is directly measured.
+\section{The breathing dimension-counter}
+Volume on an $n$-sphere of radius $R$ is $V = |S^n| R^n$, so
+\begin{equation}
+\boxed{\ \frac{\dot V}{V} = n\,\frac{\dot R}{R} = n\,H\ }
+\label{eq:dimcount}
+\end{equation}
+exactly. The ratio of volume-production rate to the Hubble rate is literally the number of spatial dimensions. The Spartan Dawn fit supplies both numbers independently: $\dot V/V = 0.207\ \mathrm{Gyr}^{-1}$, $H_0 \approx 0.069\ \mathrm{Gyr}^{-1}$, whence $n = 0.207/0.069 = 3.0$.
+\begin{theorem}[Dimension anchor]
+The observable spatial slice is the $3$-sphere. Consequently $S^4$ and $S^5$ are not extra directions of measured space; they are outer shells of the nested enclosure, geometric and structural layers rather than observed spatial dimensions.
+\end{theorem}
+Were space $S^4$, Eq.~\eqref{eq:dimcount} would give $\dot V/V = 0.28\ \mathrm{Gyr}^{-1}$; were it $S^5$, $0.35\ \mathrm{Gyr}^{-1}$. The measured $3H_0$ fixes the factor $3$ in ID10867 as a measurement of dimensionality.
+\section{The three spheres, exactly}
+The unit volume is $|S^n| = 2\pi^{(n+1)/2}/\Gamma(\tfrac{n+1}{2})$; the eigenvalues $\lambda_\ell = \ell(\ell+n-1)$; the degeneracies $m_\ell = \binom{n+\ell}{\ell} - \binom{n+\ell-2}{\ell-2}$; the scalar curvature $n(n-1)/R^2$.
+\begin{table}[ht]\centering
+\caption{Exact dimension-general geometry of the nested spheres.}
+\label{tab:geom}
+\begin{tabular}{lccc}
+\toprule
+Quantity & $S^3$ (our space) & $S^4$ & $S^5$ \\
+\midrule
+Unit volume $|S^n|$ & $2\pi^2$ & $\tfrac{8}{3}\pi^2$ & $\pi^3$ \\
+Volume at radius $R$ & $2\pi^2 R^3$ & $\tfrac{8}{3}\pi^2 R^4$ & $\pi^3 R^5$ \\
+Breathing $\dot V/V$ & $3H$ & $4H$ & $5H$ \\
+Scalar curvature & $6/R^2$ & $12/R^2$ & $20/R^2$ \\
+Spectrum $\lambda_\ell$ & $\ell(\ell+2)/R^2$ & $\ell(\ell+3)/R^2$ & $\ell(\ell+4)/R^2$ \\
+Fundamental gap $\lambda_1$ & $3/R^2$ & $4/R^2$ & $5/R^2$ \\
+Degeneracy $m_\ell$ & $(\ell+1)^2$ & $\tfrac{(\ell+1)(\ell+2)(2\ell+3)}{6}$ & $\tfrac{(\ell+1)(\ell+2)^2(\ell+3)}{12}$ \\
+$m_\ell$ for $\ell = 0..4$ & $1,4,9,16,25$ & $1,5,14,30,55$ & $1,6,20,50,105$ \\
+Density of states & $\sim \ell^2$ & $\sim \ell^3$ & $\sim \ell^4$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+The eigenvalue ladders at unit radius are $0,3,8,15,24,\dots$ ($S^3$); $0,4,10,18,28,\dots$ ($S^4$); $0,5,12,21,32,\dots$ ($S^5$).
+\section{The nesting rule and the Pythagorean triad}
+\begin{proposition}[The $+\ell$ cascade]
+Stepping outward one shell raises every mode by its own level number:
+\begin{equation}
+\boxed{\ \lambda_\ell(S^n) = \lambda_\ell(S^{n-1}) + \ell\ }, \qquad \ell(\ell+n-1) - \ell(\ell+n-2) = \ell.
+\end{equation}
+Low modes barely move; high modes climb fast, so the nested shells fan apart at the top of the ladder.
+\end{proposition}
+This is the exact form of the cascade-plus-cutoff mechanism Paper I exhibited across sand, water, and cloud ripples: each shell's spectrum is the previous shell's sheared upward, linearly in the mode index.
+\begin{proposition}[The fundamental triad]
+The fundamental gaps stand in a Pythagorean ratio,
+\begin{equation}
+\boxed{\ \lambda_1(S^3):\lambda_1(S^4):\lambda_1(S^5) = 3:4:5\ }.
+\end{equation}
+\end{proposition}
+The breathing dimension and the first overtone ($\lambda_1 = n/R^2$) are the same integer. Both $S^3$ and $S^5$ are circle bundles ($S^3 \to S^2$ and $S^5 \to \mathbb{CP}^2$, fiber $S^1$), so the same $S^1$ phase that carries the comma holonomy of Paper III threads the nested shells.
+\section{Higher-dimensional Friedmann scaling}
+The generalized breathing law in $n$ spatial dimensions is $H^2 = \tfrac{16\pi G}{n(n-1)}\rho - kc^2/R^2$, $\dot\rho + nH(\rho + p/c^2) = 0$. Matter dilutes as $R^{-n}$, radiation as $R^{-(n+1)}$, vacuum stays constant, curvature as $R^{-2}$. Two invariants survive every dimension: vacuum density is constant (the $p = -\rho c^2$ fixed point of Papers XV--XX), and curvature always dilutes as $R^{-2}$---the geometric root of the permitted-but-unconstrained $\OmK$ of Paper XII. The radiation exponent $n+1 = 4$ for $S^3$ is the quartic that fixes the dark-energy slope in Paper XX.
+\section{Demarcation}
+\textbf{Established mathematics:} the hypervolumes, Laplace spectra, degeneracies, scalar curvatures, the nesting identity, the $3{:}4{:}5$ gap ratio, and the generalized Friedmann scaling are exact and standard.
+
+\textbf{Framework synthesis:} the reading of these spheres as physical nested cosmological enclosures; $\dot V/V = 3H$ as a dimension measurement (ID10867); and the linkage of the triad to the comma spine through the shared $S^1$ Hopf fiber.
+
+\textbf{Predictions:} a future precision determination of $\dot V/V$ departing from $3H_0$ would contradict $n = 3$; and any observable trace of $S^4$, $S^5$ is deferred to Paper XIV, where it is permitted only through a fine-tuned channel.
+\section{Limits of the construction}
+The exactness of Sections~2--3 must not be over-read. $n = 3$ is data-anchored, not derived. That $S^4$ and $S^5$ are \emph{physical} outer shells rather than convenient higher embeddings is a hypothesis; there is no observational evidence for extra large spatial dimensions, and this paper claims none. Their role is structural: a nested mode budget whose cascade projects into the $3$-sphere. The $3{:}4{:}5$ triad and comma linkage are exact arithmetic, but their physical operativeness is the framework wager, tested acoustically in Paper XIV.
+\section{Conclusion: three is measured, the rest is structure}
+The breathing enclosure now has an exact geometry: closed-form volumes, spectra, degeneracies, curvatures; shells nesting by $\lambda_\ell(S^n) = \lambda_\ell(S^{n-1}) + \ell$; fundamental tones in the $3$--$4$--$5$ triad; and a breathing rate that counts the spatial dimension, fixed at three. Paper XIV feeds the outer-shell ladders through the BAO, the one observable that could carry their fingerprint.
+\begin{thebibliography}{9}
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry}, TZPIDProof archive (2026).
+\bibitem{paper1} Trawin, D. A., \emph{Nested Hyperspherical Enclosures}, TZPID Gold Spine Series, Paper I (2026).
+\bibitem{paper3} Trawin, D. A., \emph{The Pythagorean Comma as Hopf Holonomy}, TZPID Gold Spine Series, Paper III (2026).
+\bibitem{spartan} Trawin, D. A., \emph{The Spartan Dawn Test}, TZPID Gold Spine Series II, Paper XII (2026).
+\bibitem{chavel} Chavel, I., \emph{Eigenvalues in Riemannian Geometry}, Academic Press (1984).
+\bibitem{steinweiss} Stein, E. M., Weiss, G., \emph{Introduction to Fourier Analysis on Euclidean Spaces}, Princeton (1971).
+\bibitem{hopf} Hopf, H., \emph{\"Uber die Abbildungen der dreidimensionalen Sph\"are}, Math.\ Ann.\ \textbf{104}, 637 (1931).
+\bibitem{weinberg} Weinberg, S., \emph{Cosmology}, Oxford University Press (2008).
+\end{thebibliography}
+\end{document}

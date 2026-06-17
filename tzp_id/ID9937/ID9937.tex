@@ -1,0 +1,17 @@
+\section*{ID9937: Definition of β}
+\paragraph{Metadata.}
+PiID: 9552498872758 | RTEID: RTE:P38587.5778:T0.7486 | UUID: fa0f503e-d6ab-5095-b096-99025c19cfac
+
+\paragraph{Canonical Statement.}
+or mu in range(4): for nu in range(4): summ = 0 for alpha in range(4): for beta in range(4): \# compute g\textasciicircum{}\{mu alpha\} g\textasciicircum{}\{nu beta\} F\_\{alpha rho\} F\_\{beta\}\{\}\textasciicircum{}\{rho\} pass \# (Use tensor libraries to avoid manual index mistakes.) Notes: • For index manipulations, using a tensor CAS (xAct for Mathematica, einsteinpy or sympy.tensor) avoids index-order errors. • Keep expressions symbolic as long as possible; only substitute numeric parameters (e.g., fixed rotation rate \$\textbackslash{}omega\$) at the end. 9. Simplifications for slow rotation / near-field If rotation speed is nonrelativistic, expand in small parameter \$\textbackslash{}beta = |\textbackslash{}omega\textbackslash{}times r|/c\$ and keep up to \$\textbackslash{}mathcal\{O\}(\textbackslash{}beta)\$ or \$\textbackslash{}mathcal\{O\}(\textbackslash{}beta\textasciicircum{}2)\$ as needed. Provide these approximate forms for \$T\textasciicircum{}\{00\},T\textasciicircum{}\{0i\},T\textasciicircum{}\{ij\}\$ for readability and physical interpretation. 10. Checklist / deliverables you can request next • Full symbolic expansion of \$T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu\}\$ components using the exact metric and \$A\_\{\textbackslash{}rm total\}\$ from your notes (I will substitute your explicit metric and potential and produce the long component expressions). • A runnable SymPy notebook (.ipynb) that computes \$T\textasciicircum{}\{\textbackslash{}mu\textbackslash{}nu
+
+\paragraph{Canonical Equation.}
+\[
+\beta = |\omega\times r|/c
+\]
+
+\paragraph{Dictionary.}
+Definition of β — β = |ω× r|/c
+
+\paragraph{Encyclopedia.}
+Definition of β is an algebraic definition, written β = |ω× r|/c. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from ω, r, c, defining β. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

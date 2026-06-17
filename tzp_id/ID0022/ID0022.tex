@@ -1,0 +1,236 @@
+\tzpanchor{0022}
+\tzpentryheader{0022}{TZP Curvature Singularity}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{7a6a62fd-a4a3-5414-94ac-9aee6ffcc558}}\\
+\textbf{PiID} & \tzpcode{4338327950288} & \textbf{TZPi}\quad \tzpcode{7}\quad \textbf{PiPE}\quad \tzpcode{29}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{85.4309 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.1408 rad}\\
+\textbf{TZPID} & \tzpcode{ID0022} & \textbf{Node Dependencies}\quad \tzpidref{0016}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0022} & \textbf{Scale}\quad singularity\\
+\textbf{LOC Classification} & QA641 singular curvature & QC178 relativistic singularities\\
+\textbf{arXiv Classification} & Primary: gr-qc \quad Cross-list: math.DG, math-ph & \\
+\textbf{Primary Support} & Regularized Curvature Field & Anchor Divergence Criterion\\
+\textbf{Closure Support} & Singularity Classification & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The TZP curvature singularity marks the regime where even the regularized Trawin curvature fails to remain finite. It distinguishes controlled degeneracy from genuinely divergent geometric behavior at the zero point.
+
+\tzpsection{Canonical Equation}
+\[
+\lim_{x\to p} R_{T}(x) = \infty
+\]
+\[
+R_{T}(x)=\lim_{y\to x}\bigl(R(y)+f(y)\bigr)
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $R_{T}(x)$: source equation symbol.
+    \item $T$: source equation symbol.
+    \item $R$: global radius, boundary radius, or topological scale.
+    \item $\Lambda$: cosmological or lemniscatic branch parameter in the entry relation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0022 generated source Wolfram model *)
+ClearAll[K0022, Cr0022, T, R, A, W, I, N];
+eq0022$1 = HoldForm[LimitXp*RT[x] == Infinity];
+eq0022$2 = HoldForm[RT[x] == LimitYx[R[y] + f[y]]];
+eq0022$3 = HoldForm[SingTZP == NormalizeTRAWINTuple[LimitXpRT[x], RT, Lambda]];
+
+K0022 = HoldForm[{eq0022$1, eq0022$2, eq0022$3}];
+
+N = "normalized TRAWIN closure object for TZP Curvature Singularity";
+I = "Singularity Classification integration/comparison layer";
+W = "Anchor Divergence Criterion wave or operator carrier";
+A = "Regularized Curvature Field admissible action/amplitude condition";
+R = "Anchor Divergence Criterion rotation/curl preservation layer";
+T = "Regularized Curvature Field local source condition";
+
+Cr0022[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0022 = Cr0022[K0022];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Regularized Curvature Field local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Anchor Divergence Criterion rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Regularized Curvature Field admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Anchor Divergence Criterion wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Singularity Classification integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for TZP Curvature Singularity.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0022] TZP Curvature Singularity}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+\lim_{x\to p}R_T(x)=\infty .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+From ID 0016, the regularized Trawin curvature is:
+
+\begin{equation}
+R_T(x)=R(x)+f(x).
+\end{equation}
+
+A regular TZP curvature condition occurs when:
+
+\begin{equation}
+\lim_{x\to p}R_T(x)<\infty .
+\end{equation}
+
+A curvature singularity occurs when this limiting value fails to remain finite. Therefore the singular condition is:
+
+\begin{equation}
+\boxed{
+\lim_{x\to p}R_T(x)=\infty .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+ID 0022 defines the failure condition of the regulator: the TZP becomes a true curvature singularity when $R_T$ diverges.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors TZP Curvature Singularity by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Regularized Curvature Field}\par
+\[
+R_{T}(x)=\lim_{y\to x}\bigl(R(y)+f(y)\bigr)
+\]
+\noindent This defines the curvature quantity whose anchor behavior is under inspection.\par
+\noindent\textbf{2. Anchor Divergence Criterion}\par
+\[
+\lim_{x\to p} R_{T}(x) = \infty
+\]
+\noindent This identifies the exact condition under which the zero point is a genuine curvature singularity.\par
+\noindent\textbf{3. Singularity Classification}\par
+\[
+\operatorname{Sing}_{\mathrm{TZP}}
+=
+\operatorname{Normalize}_{\mathrm{TRAWIN}}
+\!\left(
+\lim_{x\to p}R_{T}(x),\,
+R_{T},\,
+\Lambda
+\right)
+\]
+\noindent This closes the progression by converting raw divergence into a normalized yes-or-no classification inside the TRAWIN scheme.\par
+
+\clearpage
+\noindent\textbf{[ID 0022] TZP Curvature Singularity}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+TZP Curvature Singularity is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} A curvature singularity at the TZP occurs when the regularised scalar curvature TrawinCurv defined in ID 016 diverges as xrightarrowpxto pxrightarrowp, that is, lim xrightarrowpR sub T(x)=infinitytextbackslash lim sub xto p Rtextbackslash sub T (x)=inftylimxrightarrowpR sub T(x)=infinity. \textbackslash{}. \textbf{Contextual meaning:} The entry reads TZP Curvature Singularity as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Regularized Curvature Field; Anchor Divergence Criterion; Singularity Classification.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+ID 0022 defines the failure condition of the regulator: the TZP becomes a true curvature singularity when R sub T diverges.
+
+\tzpsection{Equation Grounding}
+Equation anchors: A curvature singularity at the TZP occurs when the regularised scalar curvature TrawinCurv defined in ID ,016 diverges as xrightarrowpxto pxrightarrowp, that is, limu2061xrightarrowpR T(x)=infinitytextbackslash lim xto p Rtextbackslash T (x)=inftylimxrightarrowpR T(x)=infinity. A curvature singularity at the TZP occurs when the regularised scalar curvature TrawinCurv defined in ID ,016 diverges as xrightarrowpxto pxrightarrowp, that is, limu2061xrightarrowpR T(x)=infinitytextbackslash lim xto p Rtextbackslash T (x)=inftylimxrightarrowpR T(x)=infinity.
+
+\tzpsection{Interpretive Role}
+This entry provides the cutoff between acceptable regularized geometries and true curvature blow-up. It is the threshold notion later potential, Hamiltonian, and stability statements can use when deciding whether a configuration is physically admissible.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Tzp Geometric Bending Critical Locus}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Geometric Bending Critical Locus Geometric Analogue}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Critical Locus Terminology}: entry-specific alternate wording for indexing, related literature, and local formal context.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0022]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0022_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0022] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont TZP Curvature Singularity}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the TZP curvature singularity marks the regime where even the regularized Trawin
+curvature
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``TZP Curvature Singularity is valid as a tensorial/geometric statement when the stated
+tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0022_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

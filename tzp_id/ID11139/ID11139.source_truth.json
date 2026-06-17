@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "name": "TZPID Phone2 gold-anchor batch source truth",
+    "version": "0.1.0",
+    "generated_at": "2026-06-11T06:55:07Z",
+    "basis": "PHONE2_GOLD_ANCHOR_BACKFILL_QUEUE.csv",
+    "basis_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "identity": {
+    "tzpid": "ID11139",
+    "uuid": "3127de31-b3dc-51da-b0ff-1ee407033279",
+    "registry_id": "registry_ID11139",
+    "canonical_title": "Phone2 Universal Criticality — Criticalexponent Distribution Module"
+  },
+  "classification": {
+    "source_family": "Phone2",
+    "category": "phone2-gold-anchor-backfill",
+    "isabelle_kind": "Theorem",
+    "gold_spine": "phone2_theorem_anchor_backfill"
+  },
+  "theorem_anchor": {
+    "anchor_id": "PHONE2_ANCHOR_007",
+    "anchor_title": "Universal Criticality",
+    "anchor_source_file": "univision.txt",
+    "anchor_line_number": "225",
+    "mapping_method": "nearest_prior_same_source",
+    "line_distance": "9"
+  },
+  "theory": {
+    "canonical_statement": "Phone2 gold-anchor equation supporting PHONE2_ANCHOR_007 Universal Criticality, extracted from univision.txt line 234, with canonical equation $CriticalExponent[distribution_] := Module[$.",
+    "technical_interpretation": "ID11139 supports theorem anchor PHONE2_ANCHOR_007 Universal Criticality. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 234. Equation grounding: CriticalExponent[distribution_] := Module["
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "CriticalExponent[distribution_] := Module["
+    ],
+    "source_section_latex": "\\[\nCriticalExponent[distribution_] := Module[\n\\]",
+    "wolfram_form_hint": "CriticalExponent[distribution_] := Module["
+  },
+  "formation": {
+    "method": "Phone2 theorem-anchor backfill extraction",
+    "inputs": "univision.txt line 234",
+    "note": "Minted from PHONE2_GOLD_ANCHOR_BATCH2; atomic_index=2303; anchor=PHONE2_ANCHOR_007 Universal Criticality; domain=optimization_computation; mapping=nearest_prior_same_source."
+  },
+  "source_evidence": {
+    "dictionary": "Phone2 equation candidate selected from the gold-anchor backfill queue for PHONE2_ANCHOR_007 Universal Criticality. Source: univision.txt line 234.",
+    "encyclopedia": "ID11139 supports theorem anchor PHONE2_ANCHOR_007 Universal Criticality. The equation was selected from the Phone2 gold-anchor backfill queue using nearest_prior_same_source against source univision.txt line 234. Equation grounding: CriticalExponent[distribution_] := Module[",
+    "source_file": "univision.txt",
+    "line_number": "234",
+    "phone2_backfill_queue_sha1": "153a57b0de644112f136b212fa5ee3b693da6184"
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_phone2_anchor_semantic_translation"
+    },
+    "wolfram": {
+      "status": "wolfram_gold_anchor_fragment_carrier_verified",
+      "message": "primary candidate parsed under HoldComplete",
+      "rescue_class": "fragment_carrier",
+      "wolfram_candidate": "Phone2EquationCarrier[\"ID11139\", <|\"canonical\" -> \"CriticalExponent[distribution_] := Module[\", \"rescueClass\" -> \"hard_fragment\"|>]",
+      "certificate_artifact": "D:\\TZPIDProof\\phone2_intake\\theorem_toe\\wolfram_gold_anchor_batch2\\phone2_gold_anchor_batch2_wolfram_certificate_results.json",
+      "certified_at_utc": "2026-06-11T06:56:35Z",
+      "note": "Gold-anchor batch 2 Wolfram syntax/carrier certificate under HoldComplete."
+    },
+    "lean": {
+      "status": "pending_export"
+    },
+    "rocq": {
+      "status": "pending_export"
+    }
+  },
+  "promotion_status": {
+    "status": "minted_from_phone2_gold_anchor_batch2",
+    "needs_review": true,
+    "wolfram_certificate_status": "wolfram_gold_anchor_fragment_carrier_verified"
+  },
+  "tzpid_id_system": {
+    "id": "ID11139",
+    "title": "Phone2 Universal Criticality — Criticalexponent Distribution Module",
+    "uuid": "3127de31-b3dc-51da-b0ff-1ee407033279",
+    "loc_class": "",
+    "arxiv_class": "",
+    "RTEID": "RTE:P43255.2107:T2.1562",
+    "poloidal_theta_rad": "43255.2107",
+    "toroidal_phi_rad": "2.1562",
+    "rteid_source": "computed",
+    "PiID": "8542534048308",
+    "TZPi": "4",
+    "PiPE_position": "11146"
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "mint_phone2_gold_anchor_batch2.py",
+    "generated_at_utc": "2026-06-11T06:55:07Z",
+    "source_tag": "PHONE2"
+  }
+}

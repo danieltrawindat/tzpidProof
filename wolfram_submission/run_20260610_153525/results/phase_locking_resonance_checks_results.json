@@ -1,0 +1,69 @@
+[
+	{
+		"id":"ID0117",
+		"check":"kuramoto_order_parameter_bounds",
+		"status":"pass",
+		"engine":"WolframScript",
+		"order_parameter_sample":"7.473417450352271*^-17",
+		"notes":"The finite Kuramoto order parameter r = |Mean[Exp[I theta]]| is bounded by 0 and 1."
+	},
+	{
+		"id":"ID9513",
+		"check":"phase_lock_threshold",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_lock_substitution":"0",
+		"notes":"For K >= |Delta omega|, a two-oscillator fixed phase delta = ArcSin[Delta omega\/K] solves K Sin[delta] = Delta omega."
+	},
+	{
+		"id":"ID0143",
+		"check":"spin_orbit_3_2_reciprocal",
+		"status":"pass",
+		"engine":"WolframScript",
+		"ratio":"3\/2",
+		"residual_after_reciprocal":"0",
+		"notes":"The Mercury-style 3:2 spin-orbit lock has exact reciprocal 2\/3."
+	},
+	{
+		"id":"ID0252",
+		"check":"cavity_harmonic_2_1",
+		"status":"pass",
+		"engine":"WolframScript",
+		"ratio":"2",
+		"residual_after_reciprocal":"0",
+		"notes":"The harmonic ladder f_n = n f_1 gives f_2\/f_1 = 2 and reciprocal 1\/2."
+	},
+	{
+		"id":"ID0261",
+		"check":"cavity_bessel_boundary",
+		"status":"pass",
+		"engine":"WolframScript",
+		"first_bessel_root":"2.40482555769577276862281325129800735221`20.",
+		"boundary_value":"0``19.385024623265206",
+		"notes":"The first radial cavity mode root satisfies J_0(root) = 0 numerically."
+	},
+	{
+		"id":"ID9494",
+		"check":"entrainment_lyapunov_descent",
+		"status":"pass",
+		"engine":"WolframScript",
+		"dVdt":"-gx^2 - gy^2 - gz^2",
+		"notes":"A negative-gradient entrainment law gives nonpositive Lyapunov derivative."
+	},
+	{
+		"id":"ID0099",
+		"check":"beat_window_spacing",
+		"status":"pass",
+		"engine":"WolframScript",
+		"window_spacing":"1\/(2*df)",
+		"notes":"Beat activation windows t_n = n\/(2 Delta f) are evenly spaced by 1\/(2 Delta f)."
+	},
+	{
+		"id":"ID0097",
+		"check":"bridge_ratio_reciprocal",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_reciprocal":"0",
+		"notes":"The bridge ratio 32\/27 has exact reciprocal 27\/32."
+	}
+]

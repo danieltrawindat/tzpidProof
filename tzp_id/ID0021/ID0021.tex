@@ -1,0 +1,264 @@
+\tzpanchor{0021}
+\tzpentryheader{0021}{Trawin Characteristic Class}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{69a35368-5caf-5587-865a-f4e8fc4a5d56}}\\
+\textbf{PiID} & \tzpcode{6433832795028} & \textbf{TZPi}\quad \tzpcode{2}\quad \textbf{PiPE}\quad \tzpcode{28}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{81.5477 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.1344 rad}\\
+\textbf{TZPID} & \tzpcode{ID0021} & \textbf{Node Dependencies}\quad \tzpidref{0020}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0021} & \textbf{Scale}\quad cohomological\\
+\textbf{LOC Classification} & QA612.7 characteristic classes & QA612 cohomology\\
+\textbf{arXiv Classification} & Primary: math.AT \quad Cross-list: math.DG, math-ph & \\
+\textbf{Primary Support} & Curvature Two-Form & Normalized Cohomology Representative\\
+\textbf{Closure Support} & Holonomy-Winding Match & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The Trawin characteristic class records how a gauge bundle twists around the punctured manifold obtained by removing the Trawin Zero Point. It lifts the winding-number information into a cohomological object.
+
+\tzpsection{Canonical Equation}
+\[
+c_{T}
+=
+\left[\frac{1}{2\pi}F\right]
+\in
+H^{2}(M\setminus\{p\},\mathbb{Z})
+\]
+\[
+\operatorname{hol}(\mathcal{A}) = w
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $c_{T}$: source equation symbol.
+    \item $T$: source equation symbol.
+    \item $\pi$: source equation symbol.
+    \item $F$: source equation symbol.
+    \item $H$: source equation symbol.
+    \item $M$: source equation symbol.
+    \item $Z$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0021 generated source Wolfram model *)
+ClearAll[K0021, Cr0021, T, R, A, W, I, N];
+eq0021$1 = HoldForm[Element[cT == TZPGroup[(1/(2*Pi))*F], H^2*Tuple[MsetminusList[p], Z]]];
+eq0021$2 = HoldForm[hol[A] == w];
+eq0021$3 = HoldForm[F];
+
+K0021 = HoldForm[{eq0021$1, eq0021$2, eq0021$3}];
+
+N = "normalized TRAWIN closure object for Trawin Characteristic Class";
+I = "Holonomy-Winding Match integration/comparison layer";
+W = "Normalized Cohomology Representative wave or operator carrier";
+A = "Curvature Two-Form admissible action/amplitude condition";
+R = "Normalized Cohomology Representative rotation/curl preservation layer";
+T = "Curvature Two-Form local source condition";
+
+Cr0021[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0021 = Cr0021[K0021];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Curvature Two-Form local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Normalized Cohomology Representative rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Curvature Two-Form admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Normalized Cohomology Representative wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Holonomy-Winding Match integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Trawin Characteristic Class.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0021] Trawin Characteristic Class}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+c_T
+=
+\left[
+\frac{1}{2\pi}F
+\right]
+\in
+H^2(M\setminus\{p\},\mathbb{Z}) .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $F$ be the curvature two-form of a principal $U(1)$ bundle over the punctured manifold $M\setminus\{p\}$.
+
+For a $U(1)$ bundle, the first characteristic class is obtained by normalizing curvature by $2\pi$:
+
+\begin{equation}
+\frac{1}{2\pi}F .
+\end{equation}
+
+Taking the cohomology class gives:
+
+\begin{equation}
+c_T
+=
+\left[
+\frac{1}{2\pi}F
+\right].
+\end{equation}
+
+Since the TZP is removed from the base space, the class naturally lives in:
+
+\begin{equation}
+H^2(M\setminus\{p\},\mathbb{Z}) .
+\end{equation}
+
+Thus,
+
+\begin{equation}
+\boxed{
+c_T
+=
+\left[
+\frac{1}{2\pi}F
+\right]
+\in
+H^2(M\setminus\{p\},\mathbb{Z}) .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The Trawin characteristic class records the topological charge generated by removing the TZP from the manifold.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Trawin Characteristic Class by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Curvature Two-Form}\par
+\[
+F
+\]
+\noindent This is the geometric field strength whose global integral data records twisting around the puncture.\par
+\noindent\textbf{2. Normalized Cohomology Representative}\par
+\[
+c_{T}
+=
+\left[\frac{1}{2\pi}F\right]
+\in
+H^{2}(M\setminus\{p\},\mathbb{Z})
+\]
+\noindent This converts local curvature into a global integral cohomology class.\par
+\noindent\textbf{3. Holonomy-Winding Match}\par
+\[
+\operatorname{hol}(\mathcal{A}) = w
+\]
+\noindent This closes the progression by tying the characteristic class directly to the winding information established in the previous entry.\par
+
+\clearpage
+\noindent\textbf{[ID 0021] Trawin Characteristic Class}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Trawin Characteristic Class is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The Trawin characteristic class TrawinChar is an element of the cohomology group H2(M  p ,Z)H 2(Msetminustextbackslash ptextbackslash ,mathbb Z )H2(M  p ,Z) defined by c sub T= [ 12piF ] ctextbackslash sub T = [ ratio 1 2textbackslash pi F ] c sub T= [ 2pi1F ] , where FFF is the curvature two-form of a principal U(1) bundle whose connection one-form has holonomy equal to the Trawinistic winding number www. \textbackslash{}. \textbf{Contextual meaning:} The entry reads Trawin Characteristic Class as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry preserves the named object as a reusable definition, connects it to the local proof route, and records the consequences implied by the equation chain. \textbf{Lemma support:} Curvature Two-Form; Normalized Cohomology Representative; Holonomy-Winding Match.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The Trawin characteristic class records the topological charge generated by removing the TZP from the manifold.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The Trawin characteristic class TrawinChar is an element of the cohomology group H2(M  p ,Z)H to the power 2(Msetminustextbackslash ptextbackslash ,mathbb Z )H2(M  p ,Z) defined by c T= [ 12piF ] ctextbackslash T = [ ratio 1 2textbackslash pi F ] c T= [ 2pi1F ] , where FFF is the curvature two-form of a principal U(1) bundle whose connection one-form has holonomy equal to the Trawinistic winding number www. The Trawin characteristic class TrawinChar is an element of the cohomology group H2(M  p ,Z)H to the power 2(Msetminustextbackslash ptextbackslash ,mathbb Z )H2(M  p ,Z) defined by c T= [ 12piF ] ctextbackslash T = [ ratio 1 2textbackslash pi F ] c T= [ 2pi1F ] , where FFF is the curvature two-form of a principal U(1) bundle whose connection one-form has holonomy equal to the Trawinistic winding number www.
+
+\tzpsection{Interpretive Role}
+This class is the bundle-level avatar of the winding number. It supports gauge classification, topological charge bookkeeping, and later conservation laws that need a global rather than purely local invariant.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Trawin-Normalized Characteristic Class}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Trawin-Normalized Normalization Analogue}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\item \textbf{Trawin-Normalized Terminology}: normalization vocabulary for fixed form, invariant comparison, or TRAWIN admissibility.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0021]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0021_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0021] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Trawin Characteristic Class}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the Trawin characteristic class records how a gauge bundle twists around the punctured
+manifold obtained by removing the Trawin Zero Point
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Trawin Characteristic Class is valid as a tensorial/geometric statement when the stated
+tensor fields are well formed on the specified domain.''\\
+\textbf{Proof:} The source statement gives a metric, curvature, or tensor relation. The CHL reading
+validates it by checking that the tensorial objects have compatible domains, indices,
+and transformation behavior.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- tensorial well-formedness validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0021_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

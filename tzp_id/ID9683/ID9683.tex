@@ -1,0 +1,17 @@
+\section*{ID9683: Single-Qubit Embedding from Sphere Address: θ\_i}
+\paragraph{Metadata.}
+PiID: 5623526601276 | RTEID: RTE:P37601.2394:T5.4066 | UUID: deb082f4-bff2-5ef3-a5a5-1a52bc732273
+
+\paragraph{Canonical Statement.}
+ction\{Bandwidth Optimization\} Classical information capacity bounds follow Shannon-Hartley: \textbackslash{}begin\{equation\} C\_\{\textbackslash{}text\{classical\}\} = B \textbackslash{}log\_2(1 + \textbackslash{}text\{SNR\}) \textbackslash{}end\{equation\} Total communication latency includes encoding, transmission, and decoding. Fidelity quantifies reconstruction quality: \textbackslash{}begin\{equation\} F = |\textbackslash{}langle \textbackslash{}psi\_\{\textbackslash{}text\{sent\}\} | \textbackslash{}psi\_\{\textbackslash{}text\{received\}\} \textbackslash{}rangle|\textasciicircum{}2 \textbackslash{}end\{equation\} \textbackslash{}section\{DAANSsphere-to-Bloch Mapping Integration\} \textbackslash{}subsection\{Single-Qubit Embedding from Sphere Address\} Let \$\textbackslash{}mathbf\{p\}\_i = (x\_i,y\_i,z\_i)\$ be the unit DAANSsphere point selected by address \$i\$. Define \textbackslash{}begin\{equation\} \textbackslash{}theta\_i = \textbackslash{}arccos(z\_i), \textbackslash{}qquad \textbackslash{}phi\_i = \textbackslash{}operatorname\{atan2\}(y\_i,x\_i). \textbackslash{}end\{equation\} The associated qubit state is \textbackslash{}begin\{equation\} \textbackslash{}ket\{\textbackslash{}psi\_i\} = \textbackslash{}cos\textbackslash{}!\textbackslash{}left(\textbackslash{}frac\{\textbackslash{}theta\_i\}\{2\}\textbackslash{}right)\textbackslash{}ket\{0\} + e\textasciicircum{}\{i\textbackslash{}phi\_i\}\textbackslash{}sin\textbackslash{}!\textbackslash{}left(\textbackslash{}frac\{\textbackslash{}theta\_i\}\{2\}\textbackslash{}right)\textbackslash{}ket\{1\}. \textbackslash{}end\{equation\} Its density matrix is \$\textbackslash{}rho\_i = \textbackslash{}ket\{\textbackslash{}psi\_i\}\textbackslash{}!\textbackslash{}bra\{\textbackslash{}psi\_i\}\$.
+
+\paragraph{Canonical Equation.}
+\[
+\theta_i = \arccos(z_i), \qquad \phi_i = \operatorname{atan2}(y_i,x_i).
+\]
+
+\paragraph{Dictionary.}
+Single-Qubit Embedding from Sphere Address: θ\_i — θ\_i = arccos(z\_i), φ\_i = atan2(y\_i,x\_i).
+
+\paragraph{Encyclopedia.}
+Single-Qubit Embedding from Sphere Address: θ\_i is an algebraic definition, written θ\_i = arccos(z\_i), φ\_i = atan2(y\_i,x\_i).. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from z\_i, y\_i, x\_i, defining θ\_i. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

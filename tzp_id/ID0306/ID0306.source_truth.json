@@ -1,0 +1,384 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:52:31.697446+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0306",
+    "uuid": "baf9151d-23d8-52ef-946c-ec2462096540",
+    "registry_id": "registry_id_0306",
+    "canonical_title": "Quantum State Space Decomposition",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0306/ID0306.TEX",
+      "json": "D:/TZPID/TZPID/ID0306/ID0306.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0306/ID0306.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The total Hilbert space used for quantum holographic navigation factors as /(H\\_\\{mathrm\\{total\\}\\} = H\\_\\{mathrm\\{spatial\\}\\} otimes H\\_\\{mathrm\\{OAM\\}\\} otimes H\\_\\{mathrm\\{polarization\\}\\} otimes H\\_\\{mathrm\\{frequency\\}\\}/), where /(dim(H\\_\\{mathrm\\{spatial\\}\\}) = 153,600/), /(dim(H\\_\\{mathrm\\{OAM\\}\\}) = 2 m\\_\\{max\\} + 1/), /(dim(H\\_\\{mathrm\\{polarization\\}\\}) = 2/), and /(dim(H\\_\\{mathrm\\{frequency\\}\\}) = infinity/).",
+    "technical_interpretation": "The total Hilbert space used for quantum holographic navigation factors as /(H\\_\\{mathrm\\{total\\}\\} = H\\_\\{mathrm\\{spatial\\}\\} otimes H\\_\\{mathrm\\{OAM\\}\\} otimes H\\_\\{mathrm\\{polarization\\}\\} otimes H\\_\\{mathrm\\{frequency\\}\\}/), where /(dim(H\\_\\{mathrm\\{spatial\\}\\}) = 153,600/), /(dim(H\\_\\{mathrm\\{OAM\\}\\}) = 2 m\\_\\{max\\} + 1/), /(dim(H\\_\\{mathrm\\{polarization\\}\\}) = 2/), and /(dim(H\\_\\{mathrm\\{frequency\\}\\}) = infinity/)."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}",
+      "\\Phi_Q(J_z)=\\bigoplus_{m=-j}^{j}H_m"
+    ],
+    "source_section_latex": "\\[\n\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}\n\\]\n\\[\n\\Phi_Q(J_z)=\\bigoplus_{m=-j}^{j}H_m\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Hilbert Factorization",
+      "formula_latex_blocks": [
+        "\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}"
+      ],
+      "interpretive_role": "This fixes the full tensor-product decomposition of the quantum navigation state space."
+    },
+    {
+      "step": 2,
+      "component_title": "OAM Dimension",
+      "formula_latex_blocks": [
+        "\\Phi_Q(J_z)=\\bigoplus_{m=-j}^{j}H_m"
+      ],
+      "interpretive_role": "This identifies the orbital-angular-momentum sector dimension carried by the truncation index."
+    },
+    {
+      "step": 3,
+      "component_title": "Polarization Sector",
+      "formula_latex_blocks": [
+        "\\Phi_Q(e^{i\\phi J_z})=\\operatorname{diag}(e^{im\\phi})_{m=-j}^{j}"
+      ],
+      "interpretive_role": "This closes the entry by fixing the two-state polarization sector inside the total carrier."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0306}$",
+        "description": "canonical registry object for entry ID 0306."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0306}$",
+        "name": "canonical registry object for entry ID 0306.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\Phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigoplus_{m=-j}^{j}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\phi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$P$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Q$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$S$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$H$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Q(J_z)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$Q(e^{i\\phi J_z})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$g(e^{im\\phi})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Quantum State Space Decomposition\nCanonical operator translation\neq0306_1 = HoldForm[Phi_Q:(SpinRep) -> (Hilb)];\neq0306_2 = HoldForm[Phi_Q(J_z)==-j^(j)H_m];\n\nTRAWIN closure composition\nTRAWINClosure0306[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0306 := HoldForm[{eq0306_1, eq0306_2}];\nResult0306 := TRAWINClosure0306[K0306];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}",
+          "normalized_latex": "\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}",
+          "wolfram_input": "PhiQ[mathbfSpinRep] -> mathbfHilb",
+          "normalization_notes": [
+            "map declaration normalized to Rule"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PhiQ[mathbfSpinRep] -> mathbfHilb]",
+          "texform_roundtrip": "\\text{PhiQ}(\\text{mathbfSpinRep})\\to \\text{mathbfHilb}",
+          "messages": []
+        },
+        {
+          "latex": "\\Phi_Q(J_z)=\\bigoplus_{m=-j}^{j}H_m",
+          "normalized_latex": "PhiQ[JZ]==bigoplusMj^(j)HM",
+          "wolfram_input": "PhiQ[JZ]==bigoplusMj^(j)HM",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PhiQ[JZ] == bigoplusMj^j*HM]",
+          "texform_roundtrip": "\\text{PhiQ}(\\text{JZ})=\\text{HM} \\text{bigoplusMj}^j",
+          "messages": []
+        },
+        {
+          "latex": "\\Phi_Q(e^{i\\phi J_z})=\\operatorname{diag}(e^{im\\phi})_{m=-j}^{j}",
+          "normalized_latex": "PhiQ[Exp[I*phi*JZ]]==diag[Exp[I*mphi]]_(m==-j)^(j)",
+          "wolfram_input": "PhiQ[Exp[I*phi*JZ]]==diag[Exp[I*mphi]]_(m==-j)^(j)",
+          "normalization_notes": [
+            "operatorname unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[PhiQ[Exp[I*phi*JZ]] == diag[Exp[I*mphi]]*_*(m == -j)^j]",
+          "texform_roundtrip": "\\text{PhiQ}\\left(e^{i \\text{JZ} \\phi }\\right)=\\_ \\text{diag}\\left(e^{i \\text{mphi}}\\right) (m=-j)^j",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0306 generated source-truth Wolfram model *)\nClearAll[K0306, TRAWINClosure0306];\neq0306$1 = HoldForm[PhiQ[mathbfSpinRep] -> mathbfHilb];\neq0306$2 = HoldForm[PhiQ[JZ] == bigoplusMj^j*HM];\neq0306$3 = HoldForm[PhiQ[Exp[I*phi*JZ]] == diag[Exp[I*mphi]]*_*(m == -j)^j];\nK0306 = HoldForm[{eq0306$1, eq0306$2, eq0306$3}];\nTRAWINClosure0306[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0306 = TRAWINClosure0306[K0306];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\nu_T := \\int_{\\Gamma}\\sqrt{|g|}\\,\\mathrm{d}\\ell .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nLet $\\Gamma$ be a fundamental loop encircling the Trawin Zero Point exactly once.  \nThe infinitesimal line element induced by the metric is:\n\n\\begin{equation}\n\\mathrm{d}s = \\sqrt{|g|}\\,\\mathrm{d}\\ell .\n\\end{equation}\n\nIntegrating this metric-weighted length around the loop gives the primitive unit associated with one complete encirclement of the TZP:\n\n\\begin{equation}\nu_T = \\int_{\\Gamma}\\mathrm{d}s .\n\\end{equation}\n\nSubstituting the line element yields:\n\n\\begin{equation}\n\\boxed{\nu_T := \\int_{\\Gamma}\\sqrt{|g|}\\,\\mathrm{d}\\ell .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nThe Trawin base unit $u_T$ is the fundamental geometric unit obtained by completing one metric-weighted loop around the TZP.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "operator-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0306/ID0306.source_truth.json",
+    "entry_id": "ID0306",
+    "registry_id": "registry_id_0306",
+    "canonical_title": "Quantum State Space Decomposition",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0306/ID0306.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "baf9151d-23d8-52ef-946c-ec2462096540",
+    "RTEID": "RTE:P1188.2660:T1.9579",
+    "poloidal_theta_rad": "1188.2660",
+    "toroidal_phi_rad": "1.9579",
+    "rteid_source": "manifest",
+    "PiID": "0066063155881",
+    "TZPi": "3",
+    "PiPE_position": "313",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\Phi_Q:\\mathbf{SpinRep}\\to\\mathbf{Hilb}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "Phi",
+          "mathbf",
+          "Q"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "definition_syntax_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0306\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum State Space Decomposition\", \"latex\" -> \"\\\\Phi_Q:\\\\mathbf{SpinRep}\\\\to\\\\mathbf{Hilb}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"Phi\", \"mathbf\", \"Q\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"definition_syntax_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\Phi_Q(J_z)=\\bigoplus_{m=-j}^{j}H_m",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "Phi",
+          "bigoplus",
+          "Q",
+          "J",
+          "z",
+          "m",
+          "j",
+          "H"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0306\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Quantum State Space Decomposition\", \"latex\" -> \"\\\\Phi_Q(J_z)=\\\\bigoplus_{m=-j}^{j}H_m\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"Phi\", \"bigoplus\", \"Q\", \"J\", \"z\", \"m\", \"j\", \"H\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

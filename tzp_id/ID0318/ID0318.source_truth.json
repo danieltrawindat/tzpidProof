@@ -1,0 +1,579 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:53:31.735822+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0318",
+    "uuid": "9560f8f8-7a6d-566a-bc41-fabdf9220a18",
+    "registry_id": "registry_id_0318",
+    "canonical_title": "Constrained Dipole Field Configuration",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0318/ID0318.TEX",
+      "json": "D:/TZPID/TZPID/ID0318/ID0318.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0318/ID0318.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "Two magnetic dipoles of equal magnitude $\\mu_{0}$, oriented along the $z$-axis with opposite directions, are located at",
+    "technical_interpretation": "Two magnetic dipoles of equal magnitude $\\mu_{0}$, oriented along the $z$-axis with opposite directions, are located at \\[ r_{1}=(0,0,-d/2), \\qquad r_{2}=(0,0,d/2). \\] The field produced by a single dipole at position $r_{0}$ is \\[ B_{\\mathrm{dip}}(r;\\mu,r_{0}) = \\frac{\\mu_{0}}{4\\pi} \\left[ \\frac{3(r-r_{0})\\bigl(\\mu\\cdot(r-r_{0})\\bigr)}{\\lvert r-r_{0}\\rvert^{5}} - \\frac{\\mu}{\\lvert r-r_{0}\\rvert^{3}} \\right]. \\] The total internal field is \\[ B_{\\mathrm{total}}(r,t) = B_{\\mathrm{dip}}(r;\\mu_{1}(t),r_{1}) + B_{\\mathrm{dip}}(r;\\mu_{2}(t),r_{2}) + B_{\\mathrm{constraint}}(r,t). \\]"
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "r_{1}=(0,0,-d/2), \\qquad r_{2}=(0,0,d/2).",
+      "B_{\\mathrm{dip}}(r;\\mu,r_{0}) = \\frac{\\mu_{0}}{4\\pi} \\left[ \\frac{3(r-r_{0})\\bigl(\\mu\\cdot(r-r_{0})\\bigr)}{\\lvert r-r_{0}\\rvert^{5}} - \\frac{\\mu}{\\lvert r-r_{0}\\rvert^{3}} \\right].",
+      "B_{\\mathrm{total}}(r,t) = B_{\\mathrm{dip}}(r;\\mu_{1}(t),r_{1}) + B_{\\mathrm{dip}}(r;\\mu_{2}(t),r_{2}) + B_{\\mathrm{constraint}}(r,t).",
+      "\\mathbf{r}_{+}=a\\hat{\\mathbf{z}},\\qquad \\mathbf{r}_{-}=-a\\hat{\\mathbf{z}}",
+      "\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r};\\mathbf{m})=\\frac{\\mu_{0}}{4\\pi}\\frac{3\\hat{\\mathbf{r}}(\\mathbf{m}\\cdot\\hat{\\mathbf{r}})-\\mathbf{m}}{\\lVert\\mathbf{r}\\rVert^{3}}"
+    ],
+    "source_section_latex": "\\[ r_{1}=(0,0,-d/2), \\qquad r_{2}=(0,0,d/2). \\] The field produced by a single dipole at position $r_{0}$ is \\[ B_{\\mathrm{dip}}(r;\\mu,r_{0}) = \\frac{\\mu_{0}}{4\\pi} \\left[ \\frac{3(r-r_{0})\\bigl(\\mu\\cdot(r-r_{0})\\bigr)}{\\lvert r-r_{0}\\rvert^{5}} - \\frac{\\mu}{\\lvert r-r_{0}\\rvert^{3}} \\right]. \\] The total internal field is \\[ B_{\\mathrm{total}}(r,t) = B_{\\mathrm{dip}}(r;\\mu_{1}(t),r_{1}) + B_{\\mathrm{dip}}(r;\\mu_{2}(t),r_{2}) + B_{\\mathrm{constraint}}(r,t). \\]\n\n\\[\n\\mathbf{r}_{+}=a\\hat{\\mathbf{z}},\\qquad \\mathbf{r}_{-}=-a\\hat{\\mathbf{z}}\n\\]\n\\[\n\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r};\\mathbf{m})=\\frac{\\mu_{0}}{4\\pi}\\frac{3\\hat{\\mathbf{r}}(\\mathbf{m}\\cdot\\hat{\\mathbf{r}})-\\mathbf{m}}{\\lVert\\mathbf{r}\\rVert^{3}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Dipole Locations",
+      "formula_latex_blocks": [
+        "\\mathbf{r}_{+}=a\\hat{\\mathbf{z}},\\qquad \\mathbf{r}_{-}=-a\\hat{\\mathbf{z}}"
+      ],
+      "interpretive_role": "This fixes the antipodal locations of the constrained dipole pair along the carrier axis."
+    },
+    {
+      "step": 2,
+      "component_title": "Single Dipole Field",
+      "formula_latex_blocks": [
+        "\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r};\\mathbf{m})=\\frac{\\mu_{0}}{4\\pi}\\frac{3\\hat{\\mathbf{r}}(\\mathbf{m}\\cdot\\hat{\\mathbf{r}})-\\mathbf{m}}{\\lVert\\mathbf{r}\\rVert^{3}}"
+      ],
+      "interpretive_role": "This states the Biot--Savart dipole field contributed by a single localized moment."
+    },
+    {
+      "step": 3,
+      "component_title": "Total Constrained Field",
+      "formula_latex_blocks": [
+        "\\mathbf{B}=\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r}-\\mathbf{r}_{+};\\mathbf{m})+\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r}-\\mathbf{r}_{-};-\\mathbf{m})"
+      ],
+      "interpretive_role": "This closes the entry by assembling the total constrained field from both dipoles and the boundary constraint sector."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0318}$",
+        "description": "canonical registry object for entry ID 0318."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0318}$",
+        "name": "canonical registry object for entry ID 0318.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\pi$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigl$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot(r-r_{0})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\bigr$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lvert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rvert^{5}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rvert^{3}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu_{1}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mu_{2}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hat$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\cdot$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\lVert$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\rVert^{3}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{dip}(r;\\mu,r_{0})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{total}(r,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{dip}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B_{constraint}(r,t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(r-r_{0})$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$u_{1}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$u_{2}(t)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Constrained Dipole Field Configuration\nCanonical operator translation\neq0318_1 = HoldForm[r1==(0,0,-d/2), r2==(0,0,d/2)];\neq0318_2 = HoldForm[Bdip(r;mu,r0) == (mu0)(4) [ (3(r-r0)(mu(r-r0)))( r-r0^(5)) - (mu)( r-r0^(3)) ]];\neq0318_3 = HoldForm[Btotal(r,t) == Bdip(r;mu1(t),r1) + Bdip(r;mu2(t),r2) + Bconstraint(r,t)];\neq0318_4 = HoldForm[(r)+==a((z)), (r)-==-a((z))];\n\nTRAWIN closure composition\nTRAWINClosure0318[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0318 := HoldForm[{eq0318_1, eq0318_2, eq0318_3, eq0318_4}];\nResult0318 := TRAWINClosure0318[K0318];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "r_{1}=(0,0,-d/2), \\qquad r_{2}=(0,0,d/2).",
+          "normalized_latex": "TZPSequence[r1==Tuple[0,0,-d/2],r2==Tuple[0,0,d/2]]",
+          "wolfram_input": "TZPSequence[r1==Tuple[0,0,-d/2],r2==Tuple[0,0,d/2]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers",
+            "top-level comma sequence wrapped for Wolfram parsing"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPSequence[r1 == Tuple[0, 0, -d/2], r2 == Tuple[0, 0, d/2]]]",
+          "texform_roundtrip": "\\text{TZPSequence}\\left(\\text{r1}=\\text{Tuple}\\left(0,0,-\\frac{d}{2}\\right),\\text{r2}=\\text{Tuple}\\left(0,0,\\frac{d}{2}\\right)\\right)",
+          "messages": []
+        },
+        {
+          "latex": "B_{\\mathrm{dip}}(r;\\mu,r_{0}) = \\frac{\\mu_{0}}{4\\pi} \\left[ \\frac{3(r-r_{0})\\bigl(\\mu\\cdot(r-r_{0})\\bigr)}{\\lvert r-r_{0}\\rvert^{5}} - \\frac{\\mu}{\\lvert r-r_{0}\\rvert^{3}} \\right].",
+          "normalized_latex": "BDip[r;mu,r0]==((mu0)/(4*Pi))[((3(r-r0)(mu*(r-r0)))/(Abs[r-r0]^(5)))-((mu)/(Abs[r-r0]^(3)))]",
+          "wolfram_input": "BDip[r;mu,r0]==((mu0)/(4*Pi))[((3(r-r0)(mu*(r-r0)))/(Abs[r-r0]^(5)))-((mu)/(Abs[r-r0]^(3)))]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BDip[r; mu, r0] == (mu0/(4*Pi))[(3*(r - r0)*(mu*(r - r0)))/Abs[r - r0]^5 - mu/Abs[r - r0]^3]]",
+          "texform_roundtrip": "\\text{BDip}(\\mu ,\\text{r0})=\\frac{\\text{mu0}}{4 \\pi }\\left(\\frac{3 \\mu  (r-\\text{r0})^2}{| r-\\text{r0}| ^5}-\\frac{\\mu }{| r-\\text{r0}| ^3}\\right)",
+          "messages": []
+        },
+        {
+          "latex": "B_{\\mathrm{total}}(r,t) = B_{\\mathrm{dip}}(r;\\mu_{1}(t),r_{1}) + B_{\\mathrm{dip}}(r;\\mu_{2}(t),r_{2}) + B_{\\mathrm{constraint}}(r,t).",
+          "normalized_latex": "BTotal[r,t]==BDipTuple[r;mu1[t],r1]+BDipTuple[r;mu2[t],r2]+BConstraint[r,t]",
+          "wolfram_input": "BTotal[r,t]==BDipTuple[r;mu1[t],r1]+BDipTuple[r;mu2[t],r2]+BConstraint[r,t]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BTotal[r, t] == BDipTuple[r; mu1[t], r1] + BDipTuple[r; mu2[t], r2] + BConstraint[r, t]]",
+          "texform_roundtrip": "\\text{BTotal}(r,t)=\\text{BConstraint}(r,t)+\\text{BDipTuple}(\\text{mu1}(t),\\text{r1})+\\text{BDipTuple}(\\text{mu2}(t),\\text{r2})",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{r}_{+}=a\\hat{\\mathbf{z}},\\qquad \\mathbf{r}_{-}=-a\\hat{\\mathbf{z}}",
+          "normalized_latex": "TZPSequence[r==ahat[z],r==-ahat[z]]",
+          "wolfram_input": "TZPSequence[r==ahat[z],r==-ahat[z]]",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers",
+            "top-level comma sequence wrapped for Wolfram parsing"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[TZPSequence[r == ahat[z], r == -ahat[z]]]",
+          "texform_roundtrip": "\\text{TZPSequence}(r=\\text{ahat}(z),r=-\\text{ahat}(z))",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r};\\mathbf{m})=\\frac{\\mu_{0}}{4\\pi}\\frac{3\\hat{\\mathbf{r}}(\\mathbf{m}\\cdot\\hat{\\mathbf{r}})-\\mathbf{m}}{\\lVert\\mathbf{r}\\rVert^{3}}",
+          "normalized_latex": "BDip[r;m]==((mu0)/(4*Pi))((3*hat[r](m*hat[r])-m)/(lVertrrVert^(3)))",
+          "wolfram_input": "BDip[r;m]==((mu0)/(4*Pi))((3*hat[r](m*hat[r])-m)/(lVertrrVert^(3)))",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[BDip[r; m] == (mu0/(4*Pi))*((3*hat[r]*(m*hat[r]) - m)/lVertrrVert^3)]",
+          "texform_roundtrip": "\\text{BDip}(m)=\\frac{\\text{mu0} \\left(3 m \\text{hat}(r)^2-m\\right)}{4 \\pi  \\text{lVertrrVert}^3}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{B}=\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r}-\\mathbf{r}_{+};\\mathbf{m})+\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r}-\\mathbf{r}_{-};-\\mathbf{m})",
+          "normalized_latex": "B==BDip[r-r;m]+BDip[r-r;-m]",
+          "wolfram_input": "B==BDip[r-r;m]+BDip[r-r;-m]",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[B == BDip[r - r; m] + BDip[r - r; -m]]",
+          "texform_roundtrip": "B=\\text{BDip}(-m)+\\text{BDip}(m)",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0318 generated source-truth Wolfram model *)\nClearAll[K0318, TRAWINClosure0318];\neq0318$1 = HoldForm[TZPSequence[r1 == Tuple[0, 0, -d/2], r2 == Tuple[0, 0, d/2]]];\neq0318$2 = HoldForm[BDip[r; mu, r0] == (mu0/(4*Pi))[(3*(r - r0)*(mu*(r - r0)))/Abs[r - r0]^5 - mu/Abs[r - r0]^3]];\neq0318$3 = HoldForm[BTotal[r, t] == BDipTuple[r; mu1[t], r1] + BDipTuple[r; mu2[t], r2] + BConstraint[r, t]];\neq0318$4 = HoldForm[TZPSequence[r == ahat[z], r == -ahat[z]]];\neq0318$5 = HoldForm[BDip[r; m] == (mu0/(4*Pi))*((3*hat[r]*(m*hat[r]) - m)/lVertrrVert^3)];\neq0318$6 = HoldForm[B == BDip[r - r; m] + BDip[r - r; -m]];\nK0318 = HoldForm[{eq0318$1, eq0318$2, eq0318$3, eq0318$4, eq0318$5, eq0318$6}];\nTRAWINClosure0318[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0318 = TRAWINClosure0318[K0318];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\\nabla^{T\\,a}\\phi .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nFor a scalar field $\\phi$, the ordinary Laplacian is obtained by taking the divergence of the gradient.  \nReplacing the ordinary connection with the Trawinistic connection gives:\n\n\\begin{equation}\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\n\\left(\n\\nabla^{T\\,a}\\phi\n\\right).\n\\end{equation}\n\nUsing index notation, this becomes:\n\n\\begin{equation}\n\\boxed{\n\\Delta_T\\phi\n=\n\\nabla^{T}_{a}\\nabla^{T\\,a}\\phi .\n}\n\\end{equation}\n\nIndices are raised using the regularized inverse metric wherever the ordinary inverse fails at the TZP.\n\n\\paragraph{Interpretation.}\n$\\Delta_T$ is the Laplacian adapted to TZP geometry. It measures second-order field variation using the Trawinistic connection.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0318/ID0318.source_truth.json",
+    "entry_id": "ID0318",
+    "registry_id": "registry_id_0318",
+    "canonical_title": "Constrained Dipole Field Configuration",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0318/ID0318.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "9560f8f8-7a6d-566a-bc41-fabdf9220a18",
+    "RTEID": "RTE:P1234.8646:T2.0347",
+    "poloidal_theta_rad": "1234.8646",
+    "toroidal_phi_rad": "2.0347",
+    "rteid_source": "manifest",
+    "PiID": "1748815209209",
+    "TZPi": "5",
+    "PiPE_position": "325",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "r_{1}=(0,0,-d/2), \\qquad r_{2}=(0,0,d/2).",
+        "numeric_atoms": [
+          "1",
+          "0",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "r",
+          "d"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0318\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constrained Dipole Field Configuration\", \"latex\" -> \"r_{1}=(0,0,-d/2), \\\\qquad r_{2}=(0,0,d/2).\", \"numericAtoms\" -> {1, 0, 2}, \"symbolicTokens\" -> {\"r\", \"d\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "B_{\\mathrm{dip}}(r;\\mu,r_{0}) = \\frac{\\mu_{0}}{4\\pi} \\left[ \\frac{3(r-r_{0})\\bigl(\\mu\\cdot(r-r_{0})\\bigr)}{\\lvert r-r_{0}\\rvert^{5}} - \\frac{\\mu}{\\lvert r-r_{0}\\rvert^{3}} \\right].",
+        "numeric_atoms": [
+          "0",
+          "4",
+          "3",
+          "5"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "Pi",
+          "bigl",
+          "bigr",
+          "lvert",
+          "rvert",
+          "B",
+          "r"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "commutator_or_list_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0318\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constrained Dipole Field Configuration\", \"latex\" -> \"B_{\\\\mathrm{dip}}(r;\\\\mu,r_{0}) = \\\\frac{\\\\mu_{0}}{4\\\\pi} \\\\left[ \\\\frac{3(r-r_{0})\\\\bigl(\\\\mu\\\\cdot(r-r_{0})\\\\bigr)}{\\\\lvert r-r_{0}\\\\rvert^{5}} - \\\\frac{\\\\mu}{\\\\lvert r-r_{0}\\\\rvert^{3}} \\\\right].\", \"numericAtoms\" -> {0, 4, 3, 5}, \"symbolicTokens\" -> {\"mu\", \"Pi\", \"bigl\", \"bigr\", \"lvert\", \"rvert\", \"B\", \"r\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"commutator_or_list_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 3,
+        "latex": "B_{\\mathrm{total}}(r,t) = B_{\\mathrm{dip}}(r;\\mu_{1}(t),r_{1}) + B_{\\mathrm{dip}}(r;\\mu_{2}(t),r_{2}) + B_{\\mathrm{constraint}}(r,t).",
+        "numeric_atoms": [
+          "1",
+          "2"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "B",
+          "r",
+          "t"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0318\", 3, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constrained Dipole Field Configuration\", \"latex\" -> \"B_{\\\\mathrm{total}}(r,t) = B_{\\\\mathrm{dip}}(r;\\\\mu_{1}(t),r_{1}) + B_{\\\\mathrm{dip}}(r;\\\\mu_{2}(t),r_{2}) + B_{\\\\mathrm{constraint}}(r,t).\", \"numericAtoms\" -> {1, 2}, \"symbolicTokens\" -> {\"mu\", \"B\", \"r\", \"t\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 4,
+        "latex": "\\mathbf{r}_{+}=a\\hat{\\mathbf{z}},\\qquad \\mathbf{r}_{-}=-a\\hat{\\mathbf{z}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathbf",
+          "hat",
+          "a"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0318\", 4, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constrained Dipole Field Configuration\", \"latex\" -> \"\\\\mathbf{r}_{+}=a\\\\hat{\\\\mathbf{z}},\\\\qquad \\\\mathbf{r}_{-}=-a\\\\hat{\\\\mathbf{z}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathbf\", \"hat\", \"a\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 5,
+        "latex": "\\mathbf{B}_{\\mathrm{dip}}(\\mathbf{r};\\mathbf{m})=\\frac{\\mu_{0}}{4\\pi}\\frac{3\\hat{\\mathbf{r}}(\\mathbf{m}\\cdot\\hat{\\mathbf{r}})-\\mathbf{m}}{\\lVert\\mathbf{r}\\rVert^{3}}",
+        "numeric_atoms": [
+          "0",
+          "4",
+          "3"
+        ],
+        "symbolic_tokens": [
+          "mathbf",
+          "mu",
+          "Pi",
+          "hat",
+          "lVert",
+          "rVert"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0318\", 5, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Constrained Dipole Field Configuration\", \"latex\" -> \"\\\\mathbf{B}_{\\\\mathrm{dip}}(\\\\mathbf{r};\\\\mathbf{m})=\\\\frac{\\\\mu_{0}}{4\\\\pi}\\\\frac{3\\\\hat{\\\\mathbf{r}}(\\\\mathbf{m}\\\\cdot\\\\hat{\\\\mathbf{r}})-\\\\mathbf{m}}{\\\\lVert\\\\mathbf{r}\\\\rVert^{3}}\", \"numericAtoms\" -> {0, 4, 3}, \"symbolicTokens\" -> {\"mathbf\", \"mu\", \"Pi\", \"hat\", \"lVert\", \"rVert\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 5,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

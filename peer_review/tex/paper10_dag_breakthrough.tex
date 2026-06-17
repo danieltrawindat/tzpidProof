@@ -1,0 +1,228 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={A Formally Verified Acyclic Derivation Order for a 10,271-Node Unification Registry},pdfsubject={TZPID Proof Pipeline, Paper X, DOI: 10.5281/zenodo.20632000},pdfkeywords={TZPID, proof ladder, directed acyclic graph, derivation order, Sledgehammer, Isabelle/HOL, dependency graph, non-circularity, DOI 10.5281/zenodo.20632000}]{hyperref}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{A Formally Verified Acyclic Derivation Order for a 10,271-Node Unification Registry:\\
+Dependency Topology, Depth Metrics, and an Isabelle/HOL Certification Pathway\\[0.6em]
+\large TZPID Proof Pipeline Series, Paper X}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20632000}{10.5281/zenodo.20632000}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper documents the registry-level dependency breakthrough in the TZPID proof pipeline. The canonical registry contains 10,271 entries, but its proof burden is not a single opaque chain. By reassembling the complete master list into a dependency-respecting proof ladder, extracting the materialized rung-to-rung dependencies, and checking their order in Isabelle/HOL, the package establishes a concrete derivation order for the whole registry. The audit identifies 753 concrete materialized edge cases, 763 prose-level dependency edges before cycle handling, 9 cycle-partner edges cut for linearization and retained for refinement, 9,460 isolated entries, 811 non-isolated entries, 138 nontrivial connected clusters, and a maximum dependency depth of only 21 edges. The core theorem is non-circularity: every materialized edge points from an earlier prerequisite rung to a later dependent rung, so the checked graph is acyclic under the ladder ranking. The result is a practical certificate: the reassembled list is the authoritative derivation order for proof, certificate, and peer-review artifacts. This turns the registry from a large flat catalog into a directed acyclic proof infrastructure with measurable topology, bounded sequential depth, and a reproducible Sledgehammer-backed invariant.
+\end{abstract}
+
+\section{Purpose of the DAG audit}
+\label{sec:purpose}
+
+The TZPID registry is large enough that a human reader cannot reliably determine its proof order by inspection. A master list sorted only by identifier records construction history, not derivation structure. A proof package needs something stronger: a list in which each item appears only after the entries it depends on have already appeared.
+
+This paper records the construction and verification of that stronger object. The file \path{TZPID_ALL_IDS_REASSEMBLED_PROOF_LADDER.md} is the registry-wide proof ladder: a reorganization of all 10,271 canonical entries into derivation order. Its order is established by three evidence layers:
+
+\begin{enumerate}
+  \item explicit ID citations mined from dictionary and encyclopedia prose,
+  \item ordered spine chains from the gold-spine and companion-spine corpus, and
+  \item canonical ID order as a tiebreaker where no dependency constrains two entries.
+\end{enumerate}
+
+The crucial point is that this list is not merely a presentation device. It is the order against which downstream proof files, computational certificates, and peer-review papers are indexed. In this sense, the reorganized ladder is the package's derivation-order authority.
+
+\section{The derivation-order claim}
+\label{sec:claim}
+
+\begin{definition}[Materialized dependency edge]
+A materialized dependency edge is a concrete rung-to-rung pair $(d,r)$ extracted from the proof ladder, where rung $r$ depends on rung $d$. The intended proof-order condition is $d < r$: the prerequisite must occur above the dependent entry.
+\end{definition}
+
+\begin{definition}[Derivation-order ladder]
+A proof ladder is a derivation-order ladder when every concrete materialized dependency edge $(d,r)$ satisfies $d < r$.
+\end{definition}
+
+\begin{theorem}[DAG non-circularity and derivation-order invariant]
+For the reassembled TZPID proof ladder, all 753 concrete materialized rung-to-rung dependency edge cases satisfy the strict upward-rung condition $d < r$. Consequently, no checked materialized edge can point to itself, point downward, or participate in a directed cycle under the ladder ranking.
+\end{theorem}
+
+\begin{proof}
+The edge list is exported as \texttt{graph\_topology/materialized\_edges.csv}. The Isabelle/HOL harness \texttt{sledgehammer/TZPID\_Proof\_Ladder\_Sledgehammer.thy} encodes the predicate
+\[
+\texttt{edge\_points\_upward}\,(d,r) \equiv d < r
+\]
+and checks the generated edge list with Isabelle's \texttt{list\_all} evaluator. The Sledgehammer report records a successful Isabelle build with exit code 0. Therefore every materialized edge encoded in the generated theory respects the derivation order.
+\end{proof}
+
+\section{Edge counts and why they differ}
+\label{sec:counts}
+
+The audit intentionally distinguishes three related counts, because each one answers a different review question.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Dependency-edge counts in the proof-ladder audit.}
+\label{tab:edgecounts}
+\begin{tabularx}{\textwidth}{rL{10.3cm}}
+\toprule
+Count & Meaning \\
+\midrule
+753 & Concrete materialized rung-to-rung dependency edges encoded and checked in Isabelle/HOL. These are the edge cases certified by the Sledgehammer harness. \\
+754 & Numeric table tokens when the single parenthetical summary marker \texttt{(+1)} is counted as a number. The marker documents one summarized dependency but is not itself a concrete rung-to-rung edge. \\
+763 & Prose-level dependency edges before cycle handling. These include cycle partners discovered in the source prose. \\
+9 & Cycle-partner prose edges cut to linearize the ladder while retained for refinement and audit. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The formal certificate therefore rests on the 753 concrete edge cases. The extra prose-level material is not discarded; it is preserved in the graph-topology audit, especially in \texttt{cut\_edge\_transitive\_audit.csv}, so future refinement can decide whether each cut edge should become a new formal obligation, a transitive documentation note, or a corrected source statement.
+
+\section{Connected-component topology}
+\label{sec:topology}
+
+The graph audit separates the registry into isolated units and connected risk zones. This is the practical payoff of treating the registry as a graph rather than as a monolith.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Registry topology after materialized edge extraction.}
+\label{tab:topology}
+\begin{tabular}{lr}
+\toprule
+Quantity & Value \\
+\midrule
+Total ladder nodes & 10,271 \\
+Materialized dependency edges & 753 \\
+Isolated nodes with 0 incoming and 0 outgoing edges & 9,460 \\
+Non-isolated nodes touched by at least one edge & 811 \\
+Connected components total & 9,598 \\
+Nontrivial connected clusters & 138 \\
+Largest connected cluster & 330 nodes / 385 edges \\
+Maximum dependency depth & 21 edges / 22 sequential layers \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The high isolated-node count is a strength, not a defect. It means most entries are parallelizable units: they can be reviewed, typed, or certified independently unless later promoted into a spine or dependency cluster. The risk zones are the 138 nontrivial connected clusters, especially the largest component containing 330 nodes and 385 edges.
+
+\begin{center}
+\fbox{\begin{minipage}{0.88\textwidth}
+\centering
+\textbf{Occam-depth claim.} The registry has 10,271 entries, but the current materialized dependency graph has a maximum sequential depth of only 21 edges. With parallel processing by layer, the checked derivation order requires 22 sequential layers rather than 10,271 serial steps.
+\end{minipage}}
+\end{center}
+
+\section{Critical path and parallelization}
+\label{sec:criticalpath}
+
+The longest materialized dependency path has length 21 edges, or 22 sequential layers. In engineering terms, this is the minimum sequential depth imposed by the current dependency graph. With unlimited parallel workers, the registry can be processed layer by layer in 22 rounds rather than as 10,271 serial steps.
+
+The deepest chain runs through recovery-window, Lindblad normalization, temporal-hyperspherical, gyromagnetic, Bessel, hypersphere eigenmode, BAO, and filament-mode entries, ending at the disk-mode seeding relation. Its existence is useful because it marks the most order-sensitive corridor of the system: a change in one of those upstream entries should trigger a downstream rebuild and citation audit.
+
+\section{Causal self-consistency of the major chains}
+\label{sec:causal}
+
+The strongest conceptual payoff is joint acyclicity. Matter creation, gravity as accumulated force, gyromagnetic movement, phase locking, topological unification, and nested-hyperspherical enclosure claims are all indexed against the same upward-rung invariant. A physical chain may contain feedback, resonance, circulation, or recursive mechanism in its modeled domain, but the proof package does not allow the derivation of that chain to be circular.
+
+This distinction is central to the ``causal, self-consistent universe'' argument. The spines can describe loop-like physical behavior while the claims about those loops are built in a non-looping formal order. The DAG layer therefore separates model recursion from proof recursion: the universe may turn, breathe, lock, and fold, but the registry's derivation order remains acyclic.
+
+\section{Super-nodes and review priorities}
+\label{sec:supernodes}
+
+The graph exposes entries with unusually high dependency influence. The top prerequisite super-nodes include ID0006 (Trawin Base Unit), ID0012 (Field Coherence Metric), ID0007 (Temporal Displacement Factor), ID0019 (Trawinistic D'Alembertian), ID0023 (TZP Potential Term), ID0040 (Universality of Elsasser Criticality), and ID0800 (SO(3) Times U(1) Configuration Bundle). These nodes should be treated as review priorities because many later statements inherit their definitions or constraints.
+
+Conversely, top dependent nodes such as ID1898, ID1876, ID1888, ID1895, ID1897, and ID6489 are audit sinks: they collect many prerequisites and therefore make good targets for consistency checks, citation normalization, and proof-obligation consolidation.
+
+\section{Sledgehammer and Isabelle/HOL role}
+\label{sec:isabelle}
+
+The Isabelle theory does not claim to prove the physical truth of every registry entry. Its claim is narrower and stronger: given the extracted graph, the proposed ladder order is internally consistent. The generated theory includes an edge-introduction lemma,
+\[
+d < r \Longrightarrow \texttt{edge\_points\_upward}\,(d,r),
+\]
+and then checks the full list of explicit ladder edges.
+
+This is the correct role for Isabelle/HOL at this layer. Physics-specific claims are handled in the spine theories and computational certificates. The DAG layer supplies the build-order invariant those downstream theories depend on.
+
+\section{Publication-package consequences}
+\label{sec:consequences}
+
+The DAG breakthrough changes how the TZPID proof package should be read and verified:
+
+\begin{enumerate}
+  \item The proof ladder is the authoritative derivation order.
+  \item The 753 concrete edge cases are the formal edge set checked by Isabelle.
+  \item The 9 cut cycle-partner edges are retained as refinement targets rather than hidden.
+  \item The 9,460 isolated entries can be processed in parallel.
+  \item The 138 nontrivial clusters define the real review risk zones.
+  \item The maximum depth of 21 edges bounds the sequential rebuild depth of the current registry graph.
+\end{enumerate}
+
+This makes the proof package reproducible in a reviewer-friendly sense: a reader can inspect the ladder, inspect the edge list, run the Isabelle harness, and confirm that the ordering invariant holds.
+
+\section{Artifacts}
+\label{sec:artifacts}
+
+The relevant audit files are:
+
+\begin{itemize}
+  \item \texttt{TZPID\_ALL\_IDS\_REASSEMBLED\_PROOF\_LADDER.md}: the derivation-order authority for all 10,271 canonical entries.
+  \item \texttt{graph\_topology/materialized\_edges.csv}: the 753 concrete edge cases checked by Isabelle.
+  \item \texttt{graph\_topology/GRAPH\_TOPOLOGY\_REPORT.md}: connected components, super-nodes, critical path, and prose-gap audit.
+  \item \texttt{graph\_topology/connected\_components.csv}: component assignments for the full graph.
+  \item \texttt{graph\_topology/top\_prerequisite\_supernodes.csv}: entries with the most direct dependents.
+  \item \texttt{graph\_topology/top\_dependent\_nodes.csv}: entries with the most direct prerequisites.
+  \item \texttt{graph\_topology/cut\_edge\_transitive\_audit.csv}: the 9 cycle-cut edges retained for refinement.
+  \item \texttt{graph\_topology/dependency\_heatmap\_nonisolated.svg}: reviewer-facing visualization of the non-isolated dependency graph.
+  \item \texttt{sledgehammer/TZPID\_Proof\_Ladder\_Sledgehammer.thy}: the Isabelle/HOL order-checking harness.
+  \item \texttt{sledgehammer/sledgehammer\_report.md}: the build report and formal derivation-order summary.
+  \item \texttt{peer\_review/tex/paper10\_dag\_breakthrough.tex.tpl}: optional template source for regenerating the paper with computed metrics.
+\end{itemize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The DAG breakthrough is the point where the TZPID registry becomes a proof infrastructure. The package no longer asks a reviewer to trust that a 10,271-entry registry has an implicit order. It provides a reassembled derivation-order ladder, a 753-edge materialized graph, a connected-component topology, a bounded critical path, and an Isabelle/HOL harness that checks every concrete edge against the upward-rung invariant. This is the bridge from corpus to reproducible proof package: not all physics is proven by this layer, but the order in which the physics is to be built, audited, and certified is now explicit.
+
+\begin{thebibliography}{9}
+
+\bibitem{tzpid-ladder}
+Daniel Alexander Trawin,
+\emph{TZPID Reassembled Proof Ladder---All IDs in Derivation Order},
+TZPIDProof archive, 2026.
+DOI: \href{https://doi.org/10.5281/zenodo.20632000}{10.5281/zenodo.20632000}.
+
+\bibitem{tzpid-sledgehammer}
+Daniel Alexander Trawin,
+\emph{TZPID Proof Ladder Sledgehammer Report},
+TZPIDProof archive, 2026.
+DOI: \href{https://doi.org/10.5281/zenodo.20632000}{10.5281/zenodo.20632000}.
+
+\bibitem{isabelle}
+Tobias Nipkow, Lawrence C. Paulson, and Markus Wenzel,
+\emph{Isabelle/HOL: A Proof Assistant for Higher-Order Logic},
+Springer, 2002.
+
+\end{thebibliography}
+
+\end{document}

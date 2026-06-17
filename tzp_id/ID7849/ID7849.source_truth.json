@@ -1,0 +1,294 @@
+{
+  "schema": {
+    "name": "TZPID source truth generated from canonical equation master",
+    "version": "0.3.0",
+    "generated_at": "2026-06-06T04:32:40Z",
+    "non_destructive": true,
+    "basis": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+    "basis_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "identity": {
+    "tzpid": "ID7849",
+    "uuid": "fb972f4f-b4f5-5ab5-9c61-06a98fc87714",
+    "registry_id": "registry_id_7849",
+    "canonical_title": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a",
+    "previous_or_source_id": "ID7849",
+    "source_files": {
+      "master_csv": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_truth": "D:/TZPID/TZPID/ID7849/ID7849.source_truth.json",
+      "planned_tex": "D:/TZPID/TZPID/ID7849/ID7849.TEX",
+      "planned_json": "D:/TZPID/TZPID/ID7849/ID7849.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID7849/ID7849.id_system.json"
+    }
+  },
+  "classification": {
+    "source_family": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export",
+    "category": "canonical-equation-master-intake",
+    "formation_method": "Symbolic expression"
+  },
+  "theory": {
+    "canonical_statement": "1. Spatial grid: 2D domain (thin metamaterial sheet) or 3D for full enclosure. Use pseudospectral in periodic directions + finite differences in radius. Grid resolution should resolve \\(\\xi\\). 2. Time integrator: implicit-explicit RK (IMEX) for stiff diffusion + nonlinear terms, or ETDRK4 for accuracy. 3. Solve coupled system: - update \\(\\Psi\\) via TDGL with current \\(p(t,\\mathbf{x})\\); - update \\(\\Phi_a\\) via damped wave (using explicit schemes with CFL condition); - incorporate Josephson phase if junction network included via coupled ODEs. 4. Diagnostics per time step: - \\(|\\Psi(\\mathbf{x},t)|\\), \\(\\arg\\Psi\\), supercurrent \\(\\mathbf{J}\\); - winding numbers on small plaquettes; - spectral content (FFT) in angular direction to detect J₆ or chosen Bessel harmonics; - energy exchange: compute \\(\\Delta\\mathcal{F}\\), acoustic energy. 5. Parameter sweep: vary \\(p_0\\), \\(\\Delta f\\), coupling \\(g\\), and damping \\(\\gamma_a\\) to find bifurcation thresholds.",
+    "technical_interpretation": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a is a symbolic expression, written γ_a. It introduces a symbol or relation used elsewhere in the framework. It is built from a. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\gamma_a"
+    ],
+    "source_section_latex": "\\[\n\\gamma_a\n\\]"
+  },
+  "equation_progression": [
+    {
+      "slot": 1,
+      "latex": "\\gamma_a",
+      "source": "TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_path": "D:/tzpidNEW/TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv",
+      "source_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852",
+      "status": "canonical_master_source"
+    }
+  ],
+  "formation": {
+    "method": "Symbolic expression",
+    "inputs": "a",
+    "note": "Introduced in the derivation where parameter sweep: vary , , coupling , and damping"
+  },
+  "source_evidence": {
+    "dictionary": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a: a symbolic expression expressing γ_a in terms of a.",
+    "encyclopedia": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a is a symbolic expression, written γ_a. It introduces a symbol or relation used elsewhere in the framework. It is built from a. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+    "master_csv_sha1": "7a30ad0065bfc8951c71eac909021b42e6efd852"
+  },
+  "symbol_index": {
+    "reviewed_source_symbols": [],
+    "status": "needs_symbol_extraction_from_canonical_master_entry"
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a: a symbolic expression expressing γ_a in terms of a.",
+      "contextual_meaning": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a is a symbolic expression, written γ_a. It introduces a symbol or relation used elsewhere in the framework. It is built from a. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "formal_statement_latex": "\\gamma_a",
+      "technical_interpretation": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a is a symbolic expression, written γ_a. It introduces a symbol or relation used elsewhere in the framework. It is built from a. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.",
+      "equation_grounding": "Equation grounding source: TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv.",
+      "tzp_thesaurus": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a"
+    },
+    "equation_support_summary": "Generated from the canonical equation master and awaiting source-context expansion."
+  },
+  "formal_derivations": {
+    "isabelle": {
+      "status": "pending_source_truth_formalization"
+    },
+    "lean": {
+      "status": "pending_source_truth_formalization"
+    },
+    "rocq": {
+      "status": "pending_source_truth_formalization"
+    },
+    "wolfram": {
+      "status": "wolfram_form_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "note": "Carrier form preserves source LaTeX as Wolfram-readable data; semantic proof remains domain-specific.",
+      "parse_verified_at_utc": "2026-06-10T21:39:33Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260610_213826\\source_truth_wolfram_parse_results.json"
+    }
+  },
+  "promotion_status": {
+    "status": "source_truth_seeded_from_canonical_master",
+    "needs_review": true
+  },
+  "proof_support": {
+    "status": "pending",
+    "note": "Folder and source-truth JSON were created for registry coverage; deeper proof obligations should be generated downstream."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:32:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID7849/ID7849.source_truth.json",
+    "entry_id": "ID7849",
+    "registry_id": "registry_id_7849",
+    "canonical_title": "Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID7849/ID7849.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "a5984b69-3ed7-50c8-90cd-ffc2f0987bec",
+    "RTEID": "RTE:P30479.4101:T6.2384",
+    "poloidal_theta_rad": "30479.4101",
+    "toroidal_phi_rad": "6.2384",
+    "rteid_source": "computed",
+    "PiID": "3718065355672",
+    "TZPi": "5",
+    "PiPE_position": "7856",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_form": {
+    "existing_from_tex": "\\gamma_a",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "\\gamma_a",
+          "normalized_latex": "\\gamma_a",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID7849\", 1, \"\\\\gamma_a\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID7849 minted source-truth Wolfram carrier model *)\nClearAll[K7849, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq7849$1 = HoldForm[TZPIDCanonicalLatex[\"ID7849\", 1, \"\\\\gamma_a\"]];\nK7849 = HoldForm[{eq7849$1}];\nTZPIDCanonicalCarrier[\"ID7849\"] = <|\"id\" -> \"ID7849\", \"title\" -> \"Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a\", \"blocks\" -> K7849|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\gamma_a",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "gamma",
+          "a"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID7849\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): γ_a\", \"latex\" -> \"\\\\gamma_a\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"gamma\", \"a\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

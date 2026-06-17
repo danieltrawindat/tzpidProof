@@ -1,0 +1,1273 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-04T17:23:56.764873+00:00",
+    "non_destructive": false,
+    "source": "tier_a_filled_naming_worklist",
+    "content_cleanup_at": "2026-06-04T17:25:54.941325+00:00"
+  },
+  "identity": {
+    "tzpid": "ID4648",
+    "uuid": "11148d98-5d0a-5617-927e-d74e71808924",
+    "registry_id": "registry_id_4648",
+    "piid": "PiID-4648-886f22260908",
+    "piid_short": "PiID-4648",
+    "canonical_title": "Unresolved Source Fragment (Pending Review)",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID4648/ID4648.TEX",
+      "json": "D:/TZPID/TZPID/ID4648/ID4648.JSON",
+      "source_truth": "D:/TZPID/TZPID/ID4648/ID4648.source_truth.json",
+      "id_system": "D:/TZPIDProof/tzp_id/ID4648/ID4648.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "QA - Mathematics: geometry and topology",
+    "arxiv_class": "math.DG",
+    "arxiv_secondary_classes": [
+      "math.AT",
+      "math-ph"
+    ],
+    "category": "equation-source-intake",
+    "discipline": "mathematics",
+    "classification_method": "deterministic_keyword_heuristic_requires_review",
+    "piid_metadata": {
+      "piid": "PiID-4648-886f22260908",
+      "piid_short": "PiID-4648",
+      "volume_family": "post-denary-intake-47",
+      "local_sequence": "48",
+      "method": "deterministic_uuid5_from_tzpid_title_equation"
+    }
+  },
+  "theory": {
+    "canonical_statement": "ID4648 records Unresolved Source Fragment (Pending Review) as a source-extracted canonical equation.",
+    "technical_interpretation": "The entry preserves the equation exactly as extracted from `0_Incoming\\Manual_Uploads\\TXT_20260224_182616\\yes thats  great lets please do, -153a4e1ae6baa2aa.txt` for registry alignment and later derivation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ..."
+    ],
+    "source_section_latex": "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ..."
+  },
+  "equation_progression": [],
+  "symbol_index": {
+    "canonical_equation_symbols": [
+      {
+        "symbol": "$A$",
+        "description": "Magnetic vector potential, amplitude, or area",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "vector potential, amplitude, or coefficient in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$B$",
+        "description": "Magnetic field (magnetic flux density)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "magnetic field or magnetic induction variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "In this magnetics-heavy corpus, B is almost always the magnetic field.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$BEGIN$",
+        "description": "Descriptive label “BEGIN” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `BEGIN` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$C$",
+        "description": "Capacitance or a constant of integration",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `C` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Cartesian$",
+        "description": "Descriptive label “Cartesian” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Cartesian` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Convert$",
+        "description": "Descriptive label “Convert” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Convert` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$D$",
+        "description": "Electric displacement field or diffusion coefficient",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `D` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$DAANSphere$",
+        "description": "Descriptive label “DAANSphere” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `DAANSphere` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$DECLARE$",
+        "description": "Descriptive label “DECLARE” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `DECLARE` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$E$",
+        "description": "Electric field or energy",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "electric field variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Extract$",
+        "description": "Descriptive label “Extract” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Extract` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$F$",
+        "description": "Force or field-strength tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `F` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$FLOAT8$",
+        "description": "Symbol “FLOAT8” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `FLOAT8` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$Find$",
+        "description": "Descriptive label “Find” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `Find` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$G$",
+        "description": "Newtonian gravitational constant (or Green’s function, context-dependent)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `G` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Fundamental constant / function",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$I$",
+        "description": "Electric current, moment of inertia, or identity/information",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "inertia, information, or integral quantity in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$INTEGER$",
+        "description": "Descriptive label “INTEGER” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `INTEGER` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$INTO$",
+        "description": "Non-mathematical word swept in during extraction (not a symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `INTO` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Safe to ignore or delete from the key.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$L$",
+        "description": "Lagrangian, length, or angular momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "length, Lagrangian, or angular momentum term in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$N$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `N` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$O$",
+        "description": "Order symbol or a generic operator",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `O` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$P$",
+        "description": "Pressure, power, or momentum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "period or pitch parameter in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$PostGIS$",
+        "description": "Descriptive label “PostGIS” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `PostGIS` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$R$",
+        "description": "Radius, curvature scalar, or resistance",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "radius, scale, or characteristic length in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$S$",
+        "description": "Action or entropy",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `S` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$SELECT$",
+        "description": "Descriptive label “SELECT” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `SELECT` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$ST_X$",
+        "description": "Symbol “ST_X” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `ST_X` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$ST_Y$",
+        "description": "Symbol “ST_Y” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `ST_Y` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$T$",
+        "description": "Temperature, period, kinetic energy, or stress tensor",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "time, transformation, or operator label in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$This$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `This` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$anyway$",
+        "description": "Descriptive label “anyway” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `anyway` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$as$",
+        "description": "Symbol “as” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `as` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$b$",
+        "description": "Impact parameter, width, or coefficient",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `b` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "low",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$best_dot$",
+        "description": "Symbol “best_dot” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `best_dot` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$best_index$",
+        "description": "Symbol “best_index” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `best_index` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$c$",
+        "description": "Speed of light in vacuum",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "wave speed or speed-of-light scale in the canonical equation.",
+        "meaning_source": "Fundamental constant",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$cos$",
+        "description": "Descriptive label “cos” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `cos` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$current_dot$",
+        "description": "Symbol “current_dot” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `current_dot` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$daansphere_point$",
+        "description": "Symbol “daansphere_point” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `daansphere_point` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$does$",
+        "description": "Descriptive label “does” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `does` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$dot$",
+        "description": "Descriptive label “dot” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `dot` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$dot_product$",
+        "description": "Symbol “dot_product” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `dot_product` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$e_point$",
+        "description": "Symbol “e_point” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `e_point` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$f$",
+        "description": "Frequency or a generic function",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `f` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$from$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `from` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$geography$",
+        "description": "Descriptive label “geography” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `geography` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$geometry$",
+        "description": "Descriptive label “geometry” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `geometry` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$h$",
+        "description": "Planck constant, height, or step size",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `h` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "medium",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$input_x$",
+        "description": "Symbol “input_x” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `input_x` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$input_y$",
+        "description": "Symbol “input_y” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `input_y` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$input_z$",
+        "description": "Symbol “input_z” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `input_z` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$internally$",
+        "description": "Descriptive label “internally” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `internally` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$is$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `is` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$key$",
+        "description": "Descriptive label “key” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `key` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$lat$",
+        "description": "Descriptive label “lat” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `lat` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$lon$",
+        "description": "Descriptive label “lon” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `lon` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$nearest$",
+        "description": "Descriptive label “nearest” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `nearest` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$needed$",
+        "description": "Descriptive label “needed” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `needed` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$no$",
+        "description": "Symbol “no” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `no` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$optimization$",
+        "description": "Descriptive label “optimization” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `optimization` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$point$",
+        "description": "Descriptive label “point” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `point` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$point_geog$",
+        "description": "Symbol “point_geog” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `point_geog` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$product$",
+        "description": "Descriptive label “product” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `product` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$radians$",
+        "description": "Descriptive label “radians” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `radians` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$result$",
+        "description": "Descriptive label “result” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `result` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$sin$",
+        "description": "Descriptive label “sin” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `sin` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$sphere_index$",
+        "description": "Symbol “sphere_index” used in the equation; meaning is context-specific",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `sphere_index` extracted from the canonical equation.",
+        "meaning_source": "Equation-context token",
+        "meaning_confidence": "low",
+        "meaning_notes": "No standard physics convention matched; review against source.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t_dot$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `t_dot` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t_index$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `t_index` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t_x$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `t_x` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t_y$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `t_y` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$t_z$",
+        "description": "Time (or thickness)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "mathematical token `t_z` extracted from the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_notes": "Indexed/subscripted form of the base symbol.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$the$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `the` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$this$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `this` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$to$",
+        "description": "Non-mathematical token / extraction artifact (not a meaningful symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `to` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Likely swept in during automated symbol extraction; safe to ignore or delete.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$trigonometry$",
+        "description": "Descriptive label “trigonometry” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `trigonometry` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$using$",
+        "description": "Non-mathematical word swept in during extraction (not a symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `using` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Extraction artifact",
+        "meaning_confidence": "low",
+        "meaning_notes": "Safe to ignore or delete from the key.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$what$",
+        "description": "Descriptive label “what” qualifying a quantity (a named tag, not a standard physics symbol)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "source-defined variable `what` appearing in the canonical equation for Unresolved Source Fragment (Pending Review).",
+        "meaning_source": "Descriptive label",
+        "meaning_confidence": "low",
+        "meaning_notes": "Named subscript/label; interpret from local context.",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$x$",
+        "description": "Spatial coordinate / position (x-axis)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate or state variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$y$",
+        "description": "Spatial coordinate (y-axis)",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate or compact dimension variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      },
+      {
+        "symbol": "$z$",
+        "description": "Spatial coordinate (z-axis) or complex variable",
+        "source": "wolfram_engine_symbol_extraction",
+        "wolfram_detected_role": "coordinate variable in the canonical equation.",
+        "meaning_source": "Conventional variable",
+        "meaning_confidence": "high",
+        "meaning_update_source": "D:\\TZPID\\kdp_workflow\\build\\source_architecture\\equation_source_master\\tier_a_id_intake\\TIER_A_WOLFRAM_SYMBOL_KEY_FILLED_latest.csv",
+        "meaning_update_date": "2026-06-04"
+      }
+    ],
+    "extraction_method": "Wolfram Engine string-symbol extraction merged with source LaTeX symbol list",
+    "wolfram_engine": {
+      "tool": "wolframscript",
+      "commands": [],
+      "variables": [
+        "DECLARE",
+        "input_x",
+        "FLOAT8",
+        "input_y",
+        "input_z",
+        "lat",
+        "lon",
+        "best_index",
+        "INTEGER",
+        "best_dot",
+        "current_dot",
+        "result",
+        "daansphere_point",
+        "BEGIN",
+        "Extract",
+        "from",
+        "PostGIS",
+        "geography",
+        "ST_Y",
+        "point_geog",
+        "geometry",
+        "ST_X",
+        "Convert",
+        "to",
+        "Cartesian",
+        "this",
+        "is",
+        "what",
+        "does",
+        "internally",
+        "anyway",
+        "cos",
+        "radians",
+        "sin",
+        "Find",
+        "nearest",
+        "DAANSphere",
+        "point",
+        "using",
+        "dot",
+        "product",
+        "This",
+        "the",
+        "key",
+        "optimization",
+        "no",
+        "trigonometry",
+        "needed",
+        "SELECT",
+        "sphere_index",
+        "x",
+        "y",
+        "z",
+        "as",
+        "dot_product",
+        "INTO"
+      ],
+      "constructs": []
+    }
+  },
+  "source_evidence": {
+    "source_kind": "text_source",
+    "source_short": "0_Incoming\\Manual_Uploads\\TXT_20260224_182616\\yes thats  great lets please do, -153a4e1ae6baa2aa.txt",
+    "source_path": "D:\\00_Engine\\CSV\\latex_storyboard_semantic_bundle_exhaustive_20260307_002706\\00_Engine\\0_Incoming\\Manual_Uploads\\TXT_20260224_182616\\yes thats  great lets please do, -153a4e1ae6baa2aa.txt",
+    "new_id_score": "100",
+    "title_method": "flagged_noise",
+    "title_review_flag": "True",
+    "promotion_status_before_apply": "awaiting_author_title_assignment"
+  },
+  "verification_handles": {
+    "formal_status": "source-equation-recorded",
+    "claim_strength": "source-equation-intake",
+    "equation_quality_status": "source_equation_present",
+    "equation_quality_flags": [],
+    "artifacts": {}
+  },
+  "audit": {
+    "created_by": "scripts/apply_tier_a_filled_names_to_tzpid_folders.py",
+    "created_at": "2026-06-04T17:23:56.764873+00:00",
+    "write_policy": "create_new_entry_folder_or_skip_existing_unless_overwrite",
+    "unrealized_section_cleanup": {
+      "removed_sections": [
+        "wolfram_form",
+        "derivation_layer",
+        "proof_support"
+      ],
+      "reason": "no generated Wolfram, derivation, or proof artifact is included until real source-backed content exists"
+    },
+    "wolfram_symbol_key_enrichment": {
+      "updated_at": "2026-06-04T17:33:40.250850+00:00",
+      "symbol_count": 81,
+      "method": "wolframscript_extract_commands_variables_constructs"
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID4648/ID4648.source_truth.json",
+    "entry_id": "ID4648",
+    "registry_id": "registry_id_4648",
+    "canonical_title": "Unresolved Source Fragment (Pending Review)",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID4648/ID4648.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "11148d98-5d0a-5617-927e-d74e71808924",
+    "RTEID": "RTE:P18049.2162:T4.6068",
+    "poloidal_theta_rad": "18049.2162",
+    "toroidal_phi_rad": "4.6068",
+    "rteid_source": "computed",
+    "PiID": "6077166925474",
+    "TZPi": "6",
+    "PiPE_position": "4655",
+    "loc_class": "QA - Mathematics: geometry and topology",
+    "arxiv_class": "math.DG"
+  },
+  "wolfram_form": {
+    "existing_from_tex": "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "carrier_minted_without_engine_specific_translation",
+      "status": "minted_source_truth_latex_carrier_parse_verified",
+      "minted_at_utc": "2026-06-10T21:38:01Z",
+      "blocks": [
+        {
+          "latex": "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...",
+          "normalized_latex": "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...",
+          "wolfram_input": "HoldForm[TZPIDCanonicalLatex[\"ID4648\", 1, \"$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...\"]]",
+          "parse_method": "minted_source_truth_latex_carrier",
+          "parse_status": "pass",
+          "normalization_notes": [
+            "Minted from canonical_equation.latex_blocks",
+            "Carrier form preserves exact LaTeX as Wolfram string data",
+            "Semantic/numeric interpretation remains a later domain-specific upgrade"
+          ],
+          "messages": [],
+          "parse_verified_at_utc": "2026-06-10T21:39:33Z"
+        }
+      ],
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID4648 minted source-truth Wolfram carrier model *)\nClearAll[K4648, TZPIDCanonicalLatex, TZPIDCanonicalCarrier];\neq4648$1 = HoldForm[TZPIDCanonicalLatex[\"ID4648\", 1, \"$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...\"]];\nK4648 = HoldForm[{eq4648$1}];\nTZPIDCanonicalCarrier[\"ID4648\"] = <|\"id\" -> \"ID4648\", \"title\" -> \"Unresolved Source Fragment (Pending Review)\", \"blocks\" -> K4648|>;",
+    "carrier_semantics": {
+      "scope": "source_truth_preservation_and_wolfram_parse_coverage",
+      "claim": "The block is a valid Wolfram carrier for the source equation text; it is not yet a domain-specific computational proof."
+    }
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...",
+        "numeric_atoms": [
+          "-2.0"
+        ],
+        "symbolic_tokens": [
+          "DECLARE",
+          "input",
+          "x",
+          "FLOAT8",
+          "y",
+          "z",
+          "lat",
+          "lon",
+          "best",
+          "index",
+          "INTEGER",
+          "dot",
+          "current",
+          "result",
+          "daansphere",
+          "point",
+          "BEGIN",
+          "Extract",
+          "from",
+          "PostGIS",
+          "geography",
+          "ST",
+          "Y",
+          "geog",
+          "geometry",
+          "X",
+          "Convert",
+          "to",
+          "Cartesian",
+          "this",
+          "is",
+          "what",
+          "does",
+          "internally",
+          "anyway",
+          "cos",
+          "radians",
+          "sin",
+          "Find",
+          "nearest",
+          "DAANSphere",
+          "using",
+          "product",
+          "This",
+          "key",
+          "optimization",
+          "no",
+          "trigonometry",
+          "needed",
+          "SELECT",
+          "sphere",
+          "as",
+          "INTO"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "contains_prose",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID4648\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Unresolved Source Fragment (Pending Review)\", \"latex\" -> \"$$ DECLARE input_x FLOAT8; input_y FLOAT8; input_z FLOAT8; lat FLOAT8; lon FLOAT8; best_index INTEGER; best_dot FLOAT8 := -2.0; current_dot FLOAT8; result daansphere_point; BEGIN -- Extract lat/lon from PostGIS geography lat := ST_Y(point_geog::geometry); lon := ST_X(point_geog::geometry); -- Convert to Cartesian (this is what PostGIS does internally anyway) input_x := cos(radians(lat)) * cos(radians(lon)); input_y := cos(radians(lat)) * sin(radians(lon)); input_z := sin(radians(lat)); -- Find nearest DAANSphere point using dot product -- This is the key optimization - no trigonometry needed! SELECT sphere_index, (x * input_x + y * input_y + z * input_z) as dot_product INTO best_index, best_ ...\", \"numericAtoms\" -> {-2.0}, \"symbolicTokens\" -> {\"DECLARE\", \"input\", \"x\", \"FLOAT8\", \"y\", \"z\", \"lat\", \"lon\", \"best\", \"index\", \"INTEGER\", \"dot\", \"current\", \"result\", \"daansphere\", \"point\", \"BEGIN\", \"Extract\", \"from\", \"PostGIS\", \"geography\", \"ST\", \"Y\", \"geog\", \"geometry\", \"X\", \"Convert\", \"to\", \"Cartesian\", \"this\", \"is\", \"what\", \"does\", \"internally\", \"anyway\", \"cos\", \"radians\", \"sin\", \"Find\", \"nearest\", \"DAANSphere\", \"using\", \"product\", \"This\", \"key\", \"optimization\", \"no\", \"trigonometry\", \"needed\", \"SELECT\", \"sphere\", \"as\", \"INTO\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"contains_prose\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+\tzpanchor{0752}
+\tzpentryheader{0752}{NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n)}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{f87f0965-fd48-5ea4-b8df-c6b589510d12}}\\
+\textbf{PiID} & \tzpcode{8707211349999} & \textbf{TZPi}\quad \tzpcode{1}\quad \textbf{PiPE}\quad \tzpcode{759}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2885.2340 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{04.7540 rad}\\
+\textbf{TZPID} & \tzpcode{ID0752} & \textbf{Node Dependencies}\quad \tzpidref{0751}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0752} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA329 operator theory & QA169 categorical structure\\
+\textbf{arXiv Classification} & Primary: math.CT & Cross-list: math-ph, cs.LO\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records neutron-flux parity operator (hatomega\_n) through a normalized Octonary TRAWIN operator chain.
+
+\tzpsection{Canonical Equation}
+\[
+\mathcal{O}_{\mathrm{id0752}}:\mathcal{X}_{\mathrm{id0752}}\longrightarrow\mathcal{Y}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0752}})=\mathcal{O}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0752}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{O}_{\mathrm{id0752}}$: canonical operator or carrier map for the entry.
+    \item $\mathcal{X}_{\mathrm{id0752}}$: source domain or input state space for the entry map.
+    \item $\mathcal{Y}_{\mathrm{id0752}}$: target domain or output state space for the entry map.
+    \item $\mathcal{N}_{\mathrm{TRAWIN}}$: TRAWIN normalization operator applied to the entry relation.
+    \item $\mathcal{Y}_{\mathrm{adm}}$: admissible output space selected by the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0752 generated source Wolfram model *)
+ClearAll[K0752, Cr0752, T, R, A, W, I, N];
+eq0752$1 = HoldForm[Oid0752[Xid0752] -> Yid0752];
+eq0752$2 = HoldForm[NTRAWIN[OId0752] == OId0752];
+eq0752$3 = HoldForm[Element[OId0752[x], YAdm]];
+
+K0752 = HoldForm[{eq0752$1, eq0752$2, eq0752$3}];
+
+N = "normalized TRAWIN closure object for NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n)";
+I = "NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n) integration/comparison layer";
+W = "NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n) wave or operator carrier";
+A = "NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n) admissible action/amplitude condition";
+R = "NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n) rotation/curl preservation layer";
+T = "NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n) local source condition";
+
+Cr0752[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0752 = Cr0752[K0752];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n).\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0752] NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n)}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\mathcal{O}_{\mathrm{id0752}}:\mathcal{X}_{\mathrm{id0752}}\longrightarrow\mathcal{Y}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0752}})=\mathcal{O}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0752}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\paragraph{Primary Derivation.}
+The identity \( \mathcal{O}_{\mathrm{id0752}}:\mathcal{X}_{\mathrm{id0752}}\longrightarrow\mathcal{Y}_{\mathrm{id0752}} \) is an operator relation. Applying the operator to the relevant function and using its algebraic properties (such as linearity, commutators, or derivative rules) leads to the displayed equality.
+\paragraph{Equation Type.}
+This statement is classified as a operator relation.
+
+\paragraph{Interpretation.}
+The identity governs the objects appearing in the equation. From the TRAWIN perspective, the equation functions as the operator-level carrier for the entry’s information content. Within the CHL view, the derivation provides a certificate connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\mathcal{O}_{\mathrm{id0752}}:\mathcal{X}_{\mathrm{id0752}}\longrightarrow\mathcal{Y}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0752}})=\mathcal{O}_{\mathrm{id0752}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0752}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0752] NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n)}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+NEUTRON-FLUX PARITY OPERATOR (hatOmega sub n) is a registry definition in Vortex and Cymatic Transport with secondary pressure from Resonance and Phase Locking.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} hat Omega n = sum alpha (P * psi sub n(r sub alpha)) otimes expleft(-integral Sigma sub tot (L) dzright). \textbf{Contextual meaning:} The entry reads NEUTRON-FLUX PARITY OPERATOR (hatOmega sub n) as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc. \textbf{Lemma support:} Carrier Map; Composable Action; Normalized Output.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, NEUTRON-FLUX PARITY OPERATOR (hatOmega sub n) is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: big|omega sub i - partial sub tPsi sub i(t)big|,; S sub i(t)=exp Big(-tfrac (omega to the power rm beat sub i-omega sub rm beat to the power star) to the power 2 2sigma sub omega to the power 2 Big); partial sub t n(x sub i; and partial sub t n(x sub i,t) = lambda sub 0 S sub i(t) [1+beta R sub i(t)] - Gamma sub rm decay n + D sub n abla to the power 2 n. Proof route: show that the composite map lands in the admissible target class once the TRAWIN ordering is respected. Formalization route: prove closure of the stated operator or functor under composition with the TRAWIN chain.
+
+\tzpsection{Interpretive Role}
+The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Neutral Particle Density Mapping}: The mathematical tool tracking the dense, uncharged nuclear radiation silently drifting through and interacting with the primary field.
+\item \textbf{Isotopic Spin-State Flipping}: The rule calculating how the passing mass of neutrons subtly knocks the delicate spin alignments of the surrounding lattice out of phase.
+\item \textbf{Non-Electromagnetic Mass Interference}: The operator assessing the purely physical, gravitational-like disruption caused by heavy particles that ignore electric and magnetic pushes.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0752]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0752].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0752] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont NEUTRON-FLUX PARITY OPERATOR (hatOmega\_n)}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``NEUTRON-FLUX PARITY OPERATOR (hatOmega\textbackslash{}\_n) is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0752].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

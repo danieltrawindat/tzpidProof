@@ -1,0 +1,346 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:32:57.538717+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0066",
+    "uuid": "d00b2e1f-7450-562e-96ac-cb3b989d3526",
+    "registry_id": "registry_id_0066",
+    "canonical_title": "Multipartite Entanglement FractalNodes",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0066/ID0066.TEX",
+      "json": "D:/TZPID/TZPID/ID0066/ID0066.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0066/ID0066.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "A multipartite entanglement network is a graph G(V,E)G(V,E)G(V,E) whose vertices VVV label subsystems and whose weighted edges EEE represent pairwise entanglement measured by entanglement entropy or negativity; curvature-dependent weights reflect the effect of the Trawinistic manifold.",
+    "technical_interpretation": "A multipartite entanglement network is a graph G(V,E)G(V,E)G(V,E) whose vertices VVV label subsystems and whose weighted edges EEE represent pairwise entanglement measured by entanglement entropy or negativity; curvature-dependent weights reflect the effect of the Trawinistic manifold."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "G = (V,E,w)",
+      "w_{ij} = \\mathcal{E}_{ij}"
+    ],
+    "source_section_latex": "\\[\nG = (V,E,w)\n\\]\n\\[\nw_{ij} = \\mathcal{E}_{ij}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Subsystem Vertex Set",
+      "formula_latex_blocks": [
+        "V = \\{v_{1},\\dots,v_{n}\\}"
+      ],
+      "interpretive_role": "This identifies the individual subsystems in the multipartite state."
+    },
+    {
+      "step": 2,
+      "component_title": "Entanglement Weight Assignment",
+      "formula_latex_blocks": [
+        "w_{ij} = \\mathcal{E}_{ij}"
+      ],
+      "interpretive_role": "This assigns an entanglement strength to each relevant pairwise relation."
+    },
+    {
+      "step": 3,
+      "component_title": "Multipartite Entanglement Graph",
+      "formula_latex_blocks": [
+        "G = (V,E,w)"
+      ],
+      "interpretive_role": "This closes the progression by organizing the full many-body correlation pattern as a weighted FractalNodes graph."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0066}$",
+        "description": "canonical registry object for entry ID 0066."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0066}$",
+        "name": "canonical registry object for entry ID 0066.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\dots$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$G$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E_{ij}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "G = (V, E, w), Ei j, V Variation[S[phi]] == 0",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "G = (V,E,w)",
+          "normalized_latex": "G==Tuple[V,E,w]",
+          "wolfram_input": "G==Tuple[V,E,w]",
+          "normalization_notes": [],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[G == Tuple[V, E, w]]",
+          "texform_roundtrip": "G=\\text{Tuple}(V,e,w)",
+          "messages": []
+        },
+        {
+          "latex": "w_{ij} = \\mathcal{E}_{ij}",
+          "normalized_latex": "wIj==EIj",
+          "wolfram_input": "wIj==EIj",
+          "normalization_notes": [
+            "mathcal unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[wIj == EIj]",
+          "texform_roundtrip": "\\text{wIj}=\\text{EIj}",
+          "messages": []
+        },
+        {
+          "latex": "V = \\{v_{1},\\dots,v_{n}\\}",
+          "normalized_latex": "V==Tuple[v1,dots,vN]",
+          "wolfram_input": "V==Tuple[v1,dots,vN]",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[V == Tuple[v1, dots, vN]]",
+          "texform_roundtrip": "V=\\text{Tuple}(\\text{v1},\\text{dots},\\text{vN})",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0066 generated source-truth Wolfram model *)\nClearAll[K0066, TRAWINClosure0066];\neq0066$1 = HoldForm[G == Tuple[V, E, w]];\neq0066$2 = HoldForm[wIj == EIj];\neq0066$3 = HoldForm[V == Tuple[v1, dots, vN]];\nK0066 = HoldForm[{eq0066$1, eq0066$2, eq0066$3}];\nTRAWINClosure0066[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0066 = TRAWINClosure0066[K0066];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n\\delta S = 0.\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nDominant contributions to path integral arise from stationary action paths.\n\nThus classical trajectories satisfy:\n\\begin{equation}\n\\boxed{\\delta S = 0.}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nClassical paths emerge from quantum stationary phase.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0066/ID0066.source_truth.json",
+    "entry_id": "ID0066",
+    "registry_id": "registry_id_0066",
+    "canonical_title": "Multipartite Entanglement FractalNodes",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0066/ID0066.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "d00b2e1f-7450-562e-96ac-cb3b989d3526",
+    "RTEID": "RTE:P256.2927:T0.4223",
+    "poloidal_theta_rad": "256.2927",
+    "toroidal_phi_rad": "0.4223",
+    "rteid_source": "manifest",
+    "PiID": "8164062862089",
+    "TZPi": "2",
+    "PiPE_position": "73",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "G = (V,E,w)",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "G",
+          "V",
+          "E",
+          "w"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "tuple_notation_requires_semantic_translation",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0066\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Multipartite Entanglement FractalNodes\", \"latex\" -> \"G = (V,E,w)\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"G\", \"V\", \"E\", \"w\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"tuple_notation_requires_semantic_translation\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "w_{ij} = \\mathcal{E}_{ij}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "w",
+          "ij"
+        ],
+        "candidate_wolfram_input": "HoldForm[w$ij == calE$ij]",
+        "candidate_method": "heuristic_symbolic_candidate",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0066\", 2, <|\"kind\" -> \"symbolic\", \"title\" -> \"Multipartite Entanglement FractalNodes\", \"latex\" -> \"w_{ij} = \\\\mathcal{E}_{ij}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"w\", \"ij\"}, \"candidateWolframInput\" -> \"HoldForm[w$ij == calE$ij]\", \"candidateMethod\" -> \"heuristic_symbolic_candidate\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_parse_pass",
+        "candidate_eval_status": "symbolic_held",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

@@ -1,0 +1,320 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={Nested Hyperspherical Enclosures: Acoustic, Projective, Critical, and Synchronization Evidence for a Bounded Cosmology},pdfsubject={TZPID Gold Spine Series, Paper I, DOI: 10.5281/zenodo.20630296},pdfkeywords={hypersphere, BAO, scale invariance, criticality, synchronization, TZPID, DOI 10.5281/zenodo.20630296}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Nested Hyperspherical Enclosures:\\ Acoustic, Projective, Critical, and Synchronization Evidence for a Bounded Cosmology\\[0.6em]
+\large TZPID Gold Spine Series, Paper I of VIII}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20630296}{10.5281/zenodo.20630296}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We open the TZPID spine series with its load-bearing structural claim: that observable physics is the interior phenomenology of \emph{nested hyperspherical enclosures}, with the cosmological $S^3$ as the outermost member of the nest. The claim is supported by four independent observational pillars, each anchored to the TZPID canonical equation registry. First, the cosmic filament web carries the signature of \emph{enclosure acoustics}: the baryon acoustic oscillation (BAO) standing wave $\delta_b = A\, j_0(k r_s)\, T(k)\, D(t)$ is the fundamental radial mode of a spherical resonator, and its nodes sit on the same spherical-Bessel eigenvalue ladder $j_\ell(k_{\ell n}R)=0$ that gives any bounded spherical cavity its tone. Second, dimensionless ripple morphology is conserved across at least three orders of magnitude in scale and across media (subaqueous sand, aeolian sand, Martian sand, cloud billows), consistent with the projection of a single higher-dimensional generating mechanism. Third, avalanche and cascade dynamics across neural, granular, magnetic, seismic, and quantum-critical systems share the universal mean-field exponent $\tau = 3/2$, with the crackling-noise relation $1/\sigma\nu z = (\alpha-1)/(\tau-1) = 2$ fixing the full exponent family from a single number. Fourth, synchronization and resonance locking on the bounded enclosure supply the dynamical mechanism that selects the rational ratios the other pillars exhibit. A single inversion---the reciprocal map $r \mapsto 1/r$---runs through all four pillars and is identified as the bulk--boundary flip of the Hopf projection $S^3 \to S^2$. We state the unifying enclosure geometry (the DAANSsphere registry objects), present a worked BAO computation as the spine's most defensible quantitative node, and set out the demarcation between established physics and the framework hypothesis. This paper supplies the stage on which the remaining seven papers of the series act.
+\end{abstract}
+
+\section{Introduction: the shape of the argument}
+\label{sec:intro}
+
+Every physical theory begins by declaring its arena. Newtonian mechanics declared absolute space; general relativity declared a dynamical pseudo-Riemannian manifold; quantum field theory declared a fixed background spacetime carrying operator-valued distributions. The TZPID framework, whose canonical registry of more than ten thousand equation-bearing entries underlies the present series, declares something more specific: \emph{we exist within nested hyperspherical enclosures}, and the phenomena conventionally treated as independent---cosmic large-scale structure, scale-invariant pattern formation, critical avalanche statistics, orbital and oscillator synchronization---are four different readouts of the interior of that nest.
+
+This first paper assembles the observational case. The strategy is deliberately conservative. Each of the four pillars below rests, at its base, on physics that is established and independently citable: BAO acoustics is standard cosmology; ripple-index scale invariance is standard geomorphology; the $\tau=3/2$ avalanche exponent is standard critical phenomena; Kuramoto phase-locking and spin--orbit resonance are standard nonlinear dynamics. What the framework adds---and what must survive peer scrutiny---is the structural identification: that these four bodies of established physics are not four coincidences but one fingerprint, the self-similar projection of a bounded hyperspherical bulk onto the lower-dimensional surfaces we inhabit and observe.
+
+The registry anchors used in this paper are drawn from the TZPID canonical equation master and its published dictionary and encyclopedia. Throughout, registry identifiers (e.g.\ ID7257) refer to entries of that master; each carries a canonical equation, a dictionary definition, and a proof-obligation role consumed downstream by the Isabelle and Wolfram verification pipelines.
+
+The series unfolds as a single argument. Paper II isolates the dynamical mechanism (phase locking) that selects rational frequency ratios on the enclosure. Paper III exhibits the arithmetic signature of the enclosure's curvature in the oldest exact science we possess---music theory---identifying the Pythagorean comma as a Hopf holonomy and the golden ratio as the fixed point of the reciprocal flip. Paper IV supplies the movement engine: rotation as accumulated electromagnetic torque, organized by magnetic helicity and the Elsasser attractor. Paper V applies the accumulation principle to gravitation itself. Paper VI inserts a falsifiable residual layer---the Bessel residual spinal tap---between gravity and matter creation. Paper VII derives the energy-to-matter logic by which vacuum pressure crossing a threshold condenses into mass. Paper VIII closes the arc with topological unification and the identification of the Hubble rate and the cosmological constant as two readouts of one breathing enclosure radius.
+
+\section{The enclosure geometry}
+\label{sec:geometry}
+
+\subsection{Nested hyperspheres and the DAANSsphere}
+
+The unifying geometric object of the spine is a nest of hyperspherical enclosures, formalized in the registry by the DAANSsphere family. ID0285 declares the high-dimensional manifold
+\begin{equation}
+\mathcal{M}_{\mathrm{DAANS}} = \mathcal{Q} \times \mathcal{C}, \qquad \dim(\mathcal{M}_{\mathrm{DAANS}}) = 153600,
+\end{equation}
+the configuration-times-control bundle on which enclosure states live. Its companion ID0245 gives the explicit golden-angle discretization of the enclosure surface,
+\begin{equation}
+u_i = \frac{i + 1/2}{N}, \qquad z_i = 1 - 2u_i, \qquad \theta_i = \frac{2\pi i}{\varphi},
+\end{equation}
+\begin{equation}
+\mathbf{x}_i = \left( \sqrt{1 - z_i^2}\cos\theta_i,\ \sqrt{1 - z_i^2}\sin\theta_i,\ z_i \right), \qquad N = 153600, \qquad \mathbf{x}_{i+N/2} \simeq -\mathbf{x}_i,
+\end{equation}
+where $\varphi$ is the golden ratio. The appearance of $\varphi$ in the very discretization of the enclosure is not decorative; Paper III will show that $\varphi$ is the fixed point of the reciprocal flip that organizes the entire nest. Finally ID1837 (Derived\_Theorem\_Obligation) supplies the projection maps
+\begin{equation}
+\pi_i : \mathcal{T} \to \mathbb{R}^3,
+\end{equation}
+which carry bulk enclosure configurations to the three-dimensional observational surfaces on which all four pillars below are measured. The logical chain ID0285 $\to$ ID0245 $\to$ ID1837 is the geometric backbone of this paper: a bulk, its discretized boundary, and its projections.
+
+\subsection{Modes of a bounded sphere}
+
+A spherical enclosure of radius $R$ supports angular eigenmodes $Y_{\ell m}(\theta,\phi)$ (ID7732, Core\_Definition) and radial standing waves $j_\ell(kr)$ (ID7733, Core\_Definition), with the three-sphere generalization $Y_\ell^m$ on $S^3$ given by ID6819 (Core\_Definition). The boundary condition
+\begin{equation}
+j_\ell(k_{\ell n} R) = 0
+\label{eq:besselzero}
+\end{equation}
+quantizes the spectrum: the allowed wavenumbers are the zeros of the spherical Bessel functions. For $\ell = 0$ these zeros are exactly $k_{0n}R = n\pi$---a perfectly harmonic ladder. This single eigenvalue problem, evaluated at different radii of the nest, is the recurring engine of everything that follows.
+
+\section{Pillar 1: the cosmic filament web as enclosure acoustics}
+\label{sec:pillar1}
+
+\subsection{The registry chain}
+
+The first pillar asserts that the large-scale filament web of the universe is the acoustic interior pattern of the outermost enclosure. The curated registry chain is
+\begin{equation*}
+\text{ID7732} \to \text{ID7733} \to \text{ID6819} \to \text{ID7257} \to \text{ID7259} \to \text{ID7177} \to \text{ID7207},
+\end{equation*}
+running from the mode basis (angular, radial, hyperspherical) through the BAO standing wave and sound horizon to the cosmic-web power spectrum and filament inflow field. The central dynamical statement is ID7257 (Derived\_Theorem\_Obligation), the baryon acoustic standing wave
+\begin{equation}
+\delta_b(\vec{r},t) = A\, j_0(k r_s)\, T(k)\, D(t),
+\label{eq:bao}
+\end{equation}
+where $r_s$ is the sound horizon at the drag epoch (ID7259, Core\_Axiom), $T(k)$ the transfer function, and $D(t)$ the growth factor. The matter power spectrum then follows as ID7177,
+\begin{equation}
+P(k) = P_{\mathrm{prim}}(k)\, T^2(k),
+\end{equation}
+and the filament inflow pattern as the mode sum ID7207,
+\begin{equation}
+\Sigma(R,\phi,t) = \sum_{m,k} A_{m,k}(t)\, e^{i(m\phi + kR - \omega_{m,k} t)}.
+\end{equation}
+
+\subsection{The worked check}
+
+The defensible core of this pillar is a computation, not an analogy. A spherical acoustic enclosure has normal modes at the spherical-Bessel zeros, Eq.~\eqref{eq:besselzero}. Table~\ref{tab:besselzeros} lists the eigenvalues $k_{\ell n}R$ for the first four zeros of $\ell = 0,\dots,3$, computed directly and verified to better than $10^{-6}$.
+
+\begin{table}[ht]
+\centering
+\caption{Spherical-Bessel zeros: the acoustic eigenvalue ladder $k_{\ell n}R$ of a bounded spherical enclosure. The $\ell=0$ row is exactly $n\pi$.}
+\label{tab:besselzeros}
+\begin{tabular}{ccccc}
+\toprule
+$\ell$ & $n=1$ & $n=2$ & $n=3$ & $n=4$ \\
+\midrule
+0 & 3.14159 & 6.28319 & 9.42478 & 12.56637 \\
+1 & 4.49341 & 7.72525 & 10.90412 & 14.06619 \\
+2 & 5.76346 & 9.09501 & 12.32294 & 15.51460 \\
+3 & 6.98793 & 10.41712 & 13.69802 & 16.92362 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The early-universe baryon--photon fluid is exactly such a resonator, and its transfer function carries the $j_0(k r_s)$ modulation of Eq.~\eqref{eq:bao}, whose zeros sit at $k r_s = n\pi$---the same harmonic ladder as the $\ell = 0$ row of Table~\ref{tab:besselzeros}. Using the Planck 2018 sound horizon at the drag epoch, $r_s = 147.05$ Mpc, one obtains:
+\begin{align}
+k_1 &= \pi / r_s = 0.02136\ \mathrm{Mpc}^{-1} \quad \text{(first node of } j_0(k r_s)\text{)},\\
+\Delta k &= 2\pi / r_s = 0.04273\ \mathrm{Mpc}^{-1} \quad \text{(BAO wiggle period in } P(k)\text{)},\\
+\lambda_{\mathrm{BAO}} &\approx r_s = 147.05\ \mathrm{Mpc} \approx 99.6\ h^{-1}\,\mathrm{Mpc},
+\end{align}
+the last being the famous $\sim$100 $h^{-1}$ Mpc clustering bump observed in galaxy surveys.
+
+\begin{remark}
+Mainstream cosmology already agrees that the web's characteristic spacing is set by an acoustic standing wave frozen at recombination. The worked check shows that the very same mathematical object---the zeros of $j_\ell$---is what gives any bounded spherical enclosure its tone. Reading the filament web as enclosure acoustics is therefore not a metaphor: it is the identical eigenvalue problem evaluated at cosmological scale. This makes the ID7257 $\to$ ID7259 link the most defensible, citable node of the spine.
+\end{remark}
+
+\section{Pillar 2: cross-scale ripple morphology as projection}
+\label{sec:pillar2}
+
+\subsection{The claim and the registry chain}
+
+The second pillar asserts that ripple patterns---under the sea, on water, on sand, on Mars, and in the sky---are vastly different in absolute size yet share conserved dimensionless form, the signature of a higher-dimensional oscillating enclosure projecting onto lower-dimensional surfaces. The registry chain is
+\begin{equation*}
+\text{ID0230} \to \text{ID0256} \to \text{ID6583} \to \text{ID0362} \to \text{ID0104} \to \text{ID8796},
+\end{equation*}
+beginning with the Bessel ripple ansatz (ID0230, Core\_Definition)
+\begin{equation}
+\Psi(r,t) = \Psi_0 + \varepsilon\, j_0(kr)\cos(\omega t), \qquad k r_1 \approx 2.405,
+\end{equation}
+proceeding through the harmonic ladder $f_n = n f_1$ (ID0256) and the scale-invariant ratio axiom ID6583, to the DAANSsphere scale-invariance law (ID0362)
+\begin{equation}
+\mathbb{S}_{\mathrm{DAAN}}(\lambda r) \cong \mathbb{S}_{\mathrm{DAAN}}(r), \qquad \mathcal{F}(\lambda x) = \lambda^{\Delta} \mathcal{F}(x),
+\end{equation}
+and closing with the holographic projection machinery: the Ryu--Takayanagi area law (ID0104),
+\begin{equation}
+S_A = \frac{\operatorname{Area}(\gamma_A)}{4 G_N}, \qquad \mathcal{O}_{\mathrm{bulk}}(x) = \int K(x,y)\, \mathcal{O}_{\mathrm{bdy}}(y)\, dy,
+\end{equation}
+and the bulk--boundary dictionary (ID8796). The projection laws are what permit a bulk oscillation to imprint conserved dimensionless shape on boundary media of wildly different material constitution.
+
+\subsection{What the measurements show}
+
+The scale-free observable is the \emph{ripple index} $\mathrm{RI} = \lambda/\mathrm{height}$, a dimensionless shape ratio independent of absolute size by construction. The measured record: aeolian impact ripples cluster at $\mathrm{RI} \approx 15$--$20$ (standard $\approx 18$); megaripples from 0.3 m to tens of metres preserve the self-similar profile at $\mathrm{RI} \approx 15$--$20$; water-wave ripples sit at $\mathrm{RI} \approx 4$--$16$ and current ripples at $8$--$20$. The same dimensionless index thus describes bedforms spanning roughly three orders of magnitude in wavelength. The spatial shape of the pattern is genuinely scale-invariant; what varies between media is the regime, not the form.
+
+Two further results sharpen the projection reading. First, \emph{the same instabilities recur across media with shape conserved and scale set by the medium}: Kelvin--Helmholtz instability produces both breaking ocean waves and cloud billows (the sky pattern is literally a breaking-wave pattern at kilometre scale), and Lapotre et al.\ (\emph{Science}, 2016) demonstrated that Mars's metre-scale ripples form by wind dragging sand in precisely the manner water drags sand on Earth---``under the sea'' and ``on the Martian sand'' are the same physics in a different fluid. Second, \emph{scale selection is quantized}: Mars exhibits two distinct ripple populations ($\sim$10 cm impact ripples and $\sim$1--3 m wind-drag ripples) separated by a forbidden gap (no bedforms between roughly 20 and 80 cm), and Earth's ripple--megaripple--dune hierarchy shows its own gap. The size axis is not filled continuously; the system selects discrete rungs---precisely the behaviour of a mode-selecting enclosure, and the point of contact with Pillar 4.
+
+\subsection{The frequency axis and falsifiability}
+
+A precise caveat keeps this pillar honest. The registry ratio $32/27 \approx 1.18519$ (ID6583)---the Pythagorean minor third---is \emph{not} the spatial ripple index (those are 4--20). It is a \emph{frequency} ratio, and in the cymatic reading of the spine it belongs to the mode-frequency axis: the predicted ratio at which the projected enclosure produces successive standing-wave patterns, as Chladni and Faraday patterns change at discrete driving-frequency ratios. Keeping the two axes separate renders the pillar falsifiable: the spatial-invariance half is already supported by the geomorphological literature; the $32/27$ frequency half is a clean, specific prediction to test on a laboratory Faraday or cymatic rig.
+
+\section{Pillar 3: critical scale-invariance and the universal exponent \texorpdfstring{$3/2$}{3/2}}
+\label{sec:pillar3}
+
+\subsection{Established physics}
+
+Systems poised at a critical point relax through avalanches with no characteristic scale. The size distribution obeys $P(s) \propto s^{-\tau}$ with $\tau = 3/2$, and the duration distribution $P(T) \propto T^{-\alpha}$ with $\alpha = 2$: the mean-field critical-branching exponents (branching ratio $\sigma \to 1$), observed identically in cortical neuronal avalanches (Beggs and Plenz, 2003), resting-state MEG (Shriki et al., 2013), sandpiles, Barkhausen noise, earthquakes, and forest fires. This is universality in the technical sense: microscopic details are irrelevant; only dimension and symmetry matter.
+
+The registry encodes this exactly. ID0353 (Core\_Definition) declares the universal form
+\begin{equation}
+P(s) \sim s^{-\tau} f(s/s_c), \qquad \tau = \tau_\ast,
+\end{equation}
+ID0395 (Derived\_Theorem\_Obligation) fixes the exponent
+\begin{equation}
+P(s) \propto s^{-3/2} \exp\!\left( -\frac{s}{s_{\mathrm{cutoff}}} \right), \qquad \tau = \frac{3}{2},
+\end{equation}
+ID0470 gives the cascade intensity $I(s) \propto s^{1-\tau} = s^{-1/2}$, and ID5167 records that the same $3/2$ emerges identically in quantum criticality (with ID0078 supplying the quantum-critical correlation power law).
+
+\subsection{The crackling relation: one number fixes the family}
+
+The size and duration laws are not independent. They are tied by the size--duration scaling $\langle S \rangle(T) \propto T^{1/\sigma\nu z}$ with (ID10791)
+\begin{equation}
+\frac{1}{\sigma\nu z} = \frac{\alpha - 1}{\tau - 1} = \frac{2 - 1}{3/2 - 1} = 2,
+\qquad \langle S\rangle(T) \propto T^2, \qquad T(S) \propto S^{1/2}.
+\end{equation}
+A single free exponent ($\tau = 3/2$) fixes the whole exponent family---the hallmark of a single critical surface, and exactly what one expects if the diverse systems exhibiting it are reading one underlying generator.
+
+\subsection{The avalanche--cascade reciprocity}
+
+An avalanche is accumulation toward threshold; a cascade is release from it. They are the up and down halves of one cycle, and their exponents are reciprocals (ID10792, Core\_Axiom):
+\begin{equation}
+\tau_{\mathrm{avalanche}} = \frac{3}{2} \quad \Longleftrightarrow \quad \frac{1}{\tau} = \frac{2}{3} = \tau_{\mathrm{cascade}},
+\qquad \text{(reciprocal map } r \mapsto 1/r\text{)}.
+\label{eq:avalancheflip}
+\end{equation}
+Equation~\eqref{eq:avalancheflip} is the critical-dynamics face of the same reciprocity that Paper III will exhibit as the geometric face in the Pythagorean comma: the perfect fifth ascending is $3/2$, descending is $2/3$, and the comma $\gamma = 3^{12}/2^{19}$ has bulk reciprocal $\omega_{\mathrm{bulk}} = 1/\gamma$.
+
+\subsection{Why scale-invariance is the major clue}
+
+Two facts carry the argument. First, a power law $P(s) \propto s^{-\tau}$ is the \emph{only} distribution invariant under $s \to \lambda s$; a critical avalanche system looks the same at every magnification---precisely what a pattern projected from a self-similar, conformal source must look like. Second, universality means the same exponent in neurons, sand, magnets, faults, and quantum critical points: these systems sit on one critical surface indexed only by dimension and symmetry, not by their materials. Read through the spine, an oscillating higher-dimensional enclosure projecting downward is a scale-covariant map; its shadow inherits no characteristic scale and therefore presents as universal power laws. The recurrence of scale-invariance across cosmic-web acoustics (Pillar 1), ripple shape ratios (Pillar 2), and avalanche criticality (this pillar) is then not three coincidences but one fingerprint read three ways.
+
+\section{Pillar 4: synchronization and resonance locking---the mechanism}
+\label{sec:pillar4}
+
+The first three pillars \emph{observe} rational ratios and scale invariance. The fourth supplies the \emph{mechanism that produces them}: a wave bounded by an enclosure becomes a discrete set of oscillators, and coupled oscillators phase-lock onto rational frequency ratios. The registry chain is
+\begin{equation*}
+\text{ID0201} \to \text{ID0115} \to \text{ID2222} \to \text{ID7437} \to \text{ID1171} \to \text{ID0143} \to \text{ID7904}.
+\end{equation*}
+
+\textbf{Quantization by the boundary.} ID0201 (Core\_Definition), the Well/Wall/Wave law, states that a wave trapped by an enclosure has a discrete spectrum
+\begin{equation}
+f_n = \frac{n\, v_A}{2\pi R}, \qquad n \in \mathbb{N}_{>0}.
+\end{equation}
+The boundary turns a continuum into countable oscillators; without the enclosure there is nothing to lock.
+
+\textbf{Coupling and lock.} ID0115 (Core\_Definition) gives the Kuramoto dynamics of the resulting oscillator ensemble,
+\begin{equation}
+\dot{\theta}_i = \omega_i + \frac{K}{N}\sum_{j=1}^{N} A_{ij} \sin(\theta_j - \theta_i), \qquad A_{ij} = \frac{\sqrt{m_i m_j}}{|a_i - a_j|},
+\end{equation}
+with coherence measured by the order parameter (ID2222)
+\begin{equation}
+R(t) = \left| \frac{1}{N} \sum_{i=1}^{N} e^{i\theta_i(t)} \right|.
+\end{equation}
+
+\textbf{Celestial realization.} ID7437 (Derived\_Theorem\_Obligation) records that orbital resonance \emph{is} Kuramoto locking: the resonant-angle coupling $\sin(k_1\phi_1 - k_2\phi_2)$ is exactly a Kuramoto term. ID1171 supplies the tidal torque that drives the lock,
+\begin{equation}
+\tau_{\mathrm{tidal}}(\omega,\Omega) = \frac{1}{I} \sum_{n=1}^{N} J_n(ne)^2 \sin\big(2(\omega - n\Omega)\big),
+\end{equation}
+and ID0143 (Core\_Axiom) states the selected states: rational ratios
+\begin{equation}
+\frac{\Omega_{\mathrm{spin}}}{\Omega_{\mathrm{orb}}} = \frac{p}{q},
+\qquad \text{e.g.\ } \frac{3}{2} \ \text{(Mercury)}, \quad 1{:}1 \ \text{(Moon)}, \quad 1{:}2{:}4 \ \text{(Io--Europa--Ganymede)},
+\end{equation}
+drawn from the discrete ladder of allowed ratios ID7904. This pillar \emph{generates} the rational ratios that the comma (Paper III) and the criticality reciprocity (Pillar 3) observe; it is developed in full as the subject of Paper II.
+
+\section{The reciprocal flip: one inversion, five faces}
+\label{sec:flip}
+
+A single map---the reciprocal inversion $r \mapsto 1/r$---runs through every pillar. Table~\ref{tab:flip} collects its five registry faces.
+
+\begin{table}[ht]
+\centering
+\caption{The reciprocal-flip thread across domains.}
+\label{tab:flip}
+\begin{tabular}{lll}
+\toprule
+Registry ID & Domain & Flip \\
+\midrule
+ID10786 & Music: Pythagorean comma $\gamma = 3^{12}/2^{19}$ & reciprocal $r \mapsto 1/r$ \\
+ID10790 & Hopf flip: $\Delta\chi = \Omega$, $\omega_{\mathrm{bulk}} = 1/\gamma$ & bulk $\leftrightarrow$ boundary \\
+ID10792 & Criticality: avalanche $3/2 \Leftrightarrow$ cascade $2/3$ & reciprocal $r \mapsto 1/r$ \\
+ID0143 & Orbits: resonance $p{:}q \Leftrightarrow q{:}p$ & reciprocal $r \mapsto 1/r$ \\
+ID6583 & Interval: fifth $3/2 \Leftrightarrow$ descending fifth $2/3$ & reciprocal $r \mapsto 1/r$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The framework's identification is that this is not five separate inversions but one: the bulk--boundary inversion of the Hopf projection $S^3 \to S^2$. A quantity that closes in the bulk fails to close on the boundary by a holonomy; what the boundary reads as an excess ($\gamma > 1$, the ascending fifth, the avalanche build-up), the bulk carries as the reciprocal deficit ($1/\gamma$, the descending fifth, the cascade release). The full geometric development---comma as holonomy, solid angle, Hopf fiber rotation---is the subject of Paper III; here we record only that the same inversion appears, with registry anchors, in all four observational pillars. Verified arithmetic guardrails include $\gamma \cdot (1/\gamma) = 1$, $(3/2)\cdot(2/3) = 1$, and $(p/q)\cdot(q/p) = 1$: the flip is exactly $r \mapsto 1/r$.
+
+\section{Demarcation, verification status, and predictions}
+\label{sec:demarcation}
+
+\subsection{What is established and what is hypothesis}
+
+\textbf{Established physics, independently citable:} BAO acoustics and the $\sim$100 $h^{-1}$ Mpc feature; spherical-cavity eigenmodes at Bessel zeros; the ripple index and its scale invariance; Kelvin--Helmholtz billows; Mars's bimodal ripples and the wind-drag mechanism; $\tau = 3/2$, $\alpha = 2$, the crackling relation, and universality; Kuramoto synchronization, mean-motion and spin--orbit resonance, tidal locking, and cavity quantization.
+
+\textbf{Framework hypothesis, to be tested:} that the common origin of these is the conformal projection of nested hyperspherical enclosures; that the $3/2 \leftrightarrow 2/3$ reciprocity is the criticality face of the Hopf bulk--boundary inversion; that the discrete rungs selected by bedforms and orbits populate the same predicted ladder of allowed ratios; and that successive cymatic patterns of the projected enclosure occur at the $32/27$ frequency ratio.
+
+\subsection{Verification pipeline}
+
+Each registry target in this spine carries a proof-obligation role consumed by the formal pipeline. The Isabelle focus theory and Wolfram certificate suite check the enclosure eigenfrequency relation, the critical exponent relation, Kuramoto-style locking, the resonance-as-Kuramoto correspondence, and the reciprocal-flip identities of Table~\ref{tab:flip}. The corresponding machine identifiers are preserved in the release artifacts.
+
+\subsection{Predictions}
+
+The spine is falsifiable on at least three fronts. (i) \emph{Cymatic frequency ratio:} successive pattern transitions on a driven spherical-enclosure analogue should occur at the $32/27$ ratio, distinct from the spatial ripple index. (ii) \emph{Ladder population:} independently measured locked ratios---bedform rungs, orbital resonances, cavity harmonics---should populate a single discrete ladder rather than a continuum. (iii) \emph{Reciprocal pairing:} critical systems should exhibit the full reciprocal pair ($\tau$ and $1/\tau$ faces) and the projection holonomy, not merely the single exponent $3/2$.
+
+\section{Conclusion: the stage is set}
+\label{sec:conclusion}
+
+Four bodies of established physics---enclosure acoustics writ cosmological, conserved dimensionless ripple form across media and planets, the universal $3/2$ avalanche exponent with its reciprocal cascade, and rational-ratio phase locking---have been assembled on a single geometric stage: nested hyperspherical enclosures, discretized by the golden angle, projecting onto the surfaces we measure. One inversion, the reciprocal flip $r \mapsto 1/r$, appears in every pillar and is identified as the Hopf bulk--boundary flip of the outermost enclosure.
+
+The stage now requires its dynamics. If the enclosure's boundary quantizes the world into countable oscillators, what law decides which ratios those oscillators lock to, and why are the survivors rational? That is the subject of Paper II, the phase-locking and resonance ratio-selection spine---the missing dynamical mechanism beneath everything exhibited here.
+
+\begin{thebibliography}{19}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers ID0000--ID10860 as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Nested Hypersphere Spine and Worked Checks}, TZPIDProof archive, \texttt{TZPID\_NESTED\_HYPERSPHERE\_SPINE.md} (2026).
+
+\bibitem{planck} Planck Collaboration, \emph{Planck 2018 results. VI. Cosmological parameters}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020). arXiv:1807.06209.
+
+\bibitem{beggs} Beggs, J. M., and Plenz, D., \emph{Neuronal avalanches in neocortical circuits}, J.\ Neurosci.\ \textbf{23}, 11167 (2003).
+
+\bibitem{shriki} Shriki, O., et al., \emph{Neuronal avalanches in the resting MEG of the human brain}, J.\ Neurosci.\ \textbf{33}, 7079 (2013).
+
+\bibitem{sethna} Sethna, J. P., Dahmen, K. A., and Myers, C. R., \emph{Crackling noise}, Nature \textbf{410}, 242 (2001).
+
+\bibitem{soc} Watkins, N. W., et al., \emph{25 years of self-organized criticality: concepts and controversies}, Space Sci.\ Rev.\ \textbf{198}, 3 (2016). arXiv:1310.5527.
+
+\bibitem{lapotre} Lapotre, M. G. A., et al., \emph{Large wind ripples on Mars: A record of atmospheric evolution}, Science \textbf{353}, 55 (2016).
+
+\bibitem{lapotre2} Lapotre, M. G. A., et al., \emph{Morphologic diversity of Martian ripples}, Geophys.\ Res.\ Lett.\ \textbf{45}, 10229 (2018).
+
+\bibitem{ripples} Yizhaq, H., et al., \emph{Statistical perspectives on the ripple index from a case study of aeolian megaripples}, Aeolian Research (2021).
+
+\bibitem{megaripple} Lammel, M., et al., \emph{Aeolian sand sorting and megaripple formation}, Nature Communications (2018).
+
+\bibitem{kuramoto} Kuramoto, Y., \emph{Chemical Oscillations, Waves, and Turbulence}, Springer (1984).
+
+\bibitem{murray} Murray, C. D., and Dermott, S. F., \emph{Solar System Dynamics}, Cambridge University Press (1999).
+
+\bibitem{ryu} Ryu, S., and Takayanagi, T., \emph{Holographic derivation of entanglement entropy from AdS/CFT}, Phys.\ Rev.\ Lett.\ \textbf{96}, 181602 (2006).
+
+\bibitem{eisenstein} Eisenstein, D. J., et al., \emph{Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies}, Astrophys.\ J.\ \textbf{633}, 560 (2005).
+
+\end{thebibliography}
+
+\end{document}

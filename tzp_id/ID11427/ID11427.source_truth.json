@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:12:30+00:00",
+    "source": "s4_s5_hypersphere_mix_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11427",
+    "uuid": "8bf51190-f46b-5901-bfc4-3a818cadf957",
+    "registry_id": "registry_id_11427",
+    "piid": "PiID-11427-s4s5-mix",
+    "canonical_title": "Folded Phase-Mix Source Term",
+    "source_files": {
+      "s4_s5_hypersphere_mix": "D:\\TZPIDProof\\ll restart from the original hypersphere.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11427\\ID11427.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "s4-s5-hypersphere-mix-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The folded source term multiplies phase occupancies, resonance gates, Bessel support, capture probability, ratio gates, and energy inversion, then subtracts baryonic damping.",
+    "technical_interpretation": "This folds the phase mix, mode-ratio gate, FFT-ratio gate, signed energy inversion, Bessel support, and capture probability into one reusable source carrier.",
+    "source_lineage": "Extracted from the saved S4/S5 hypersphere rewrite and folded source-mix section."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "S_b(n)=\\eta_b\\phi_T\\phi_EK_{TE}G_{\\mathrm{res}}D_{\\mathrm{DAT}}A_BC_{\\mathrm{cap}}R_{\\mathrm{mode}}R_{\\mathrm{FFT}}I_E-\\Gamma_b\\phi_b"
+    ],
+    "source_section_latex": "S_b(n)=\\eta_b\\phi_T\\phi_EK_{TE}G_{\\mathrm{res}}D_{\\mathrm{DAT}}A_BC_{\\mathrm{cap}}R_{\\mathrm{mode}}R_{\\mathrm{FFT}}I_E-\\Gamma_b\\phi_b"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Folded Phase-Mix Source Term",
+          "wolfram": "Sb == etab*phiT*phiE*KTE*Gres*DDAT*AB*Ccap*Rmode*RFFT*IE - Gammab*phib",
+          "status": "queued_for_s4_s5_mix_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Definition",
+    "obligation_role": "Folded_Source_Term",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "queued;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+    "isabelle_sid": "11427",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\s4_s5_hypersphere_mix_check_results.json"
+  },
+  "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json",
+  "metadata": {
+    "wolfram_status": "13/13 pass;artifact=peer_review/portal_breathing_intake/wolfram/s4_s5_hypersphere_mix_check_results.json"
+  }
+}

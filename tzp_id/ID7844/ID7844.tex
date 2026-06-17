@@ -1,0 +1,17 @@
+\section*{ID7844: Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): |Ψ(x,t)|}
+\paragraph{Metadata.}
+PiID: 6041837180653 | RTEID: RTE:P30459.9940:T6.2064 | UUID: 8a53c1f6-958c-53ba-be80-c39fde8188b9
+
+\paragraph{Canonical Statement.}
+1. Spatial grid: 2D domain (thin metamaterial sheet) or 3D for full enclosure. Use pseudospectral in periodic directions + finite differences in radius. Grid resolution should resolve \textbackslash{}(\textbackslash{}xi\textbackslash{}). 2. Time integrator: implicit-explicit RK (IMEX) for stiff diffusion + nonlinear terms, or ETDRK4 for accuracy. 3. Solve coupled system: - update \textbackslash{}(\textbackslash{}Psi\textbackslash{}) via TDGL with current \textbackslash{}(p(t,\textbackslash{}mathbf\{x\})\textbackslash{}); - update \textbackslash{}(\textbackslash{}Phi\_a\textbackslash{}) via damped wave (using explicit schemes with CFL condition); - incorporate Josephson phase if junction network included via coupled ODEs. 4. Diagnostics per time step: - \textbackslash{}(|\textbackslash{}Psi(\textbackslash{}mathbf\{x\},t)|\textbackslash{}), \textbackslash{}(\textbackslash{}arg\textbackslash{}Psi\textbackslash{}), supercurrent \textbackslash{}(\textbackslash{}mathbf\{J\}\textbackslash{}); - winding numbers on small plaquettes; - spectral content (FFT) in angular direction to detect J₆ or chosen Bessel harmonics; - energy exchange: compute \textbackslash{}(\textbackslash{}Delta\textbackslash{}mathcal\{F\}\textbackslash{}), acoustic energy. 5. Parameter sweep: vary \textbackslash{}(p\_0\textbackslash{}), \textbackslash{}(\textbackslash{}Delta f\textbackslash{}), coupling \textbackslash{}(g\textbackslash{}), and damping \textbackslash{}(\textbackslash{}gamma\_a\textbackslash{}) to find bifurcation thresholds.
+
+\paragraph{Canonical Equation.}
+\[
+|\Psi(\mathbf{x},t)|
+\]
+
+\paragraph{Dictionary.}
+Relation: |Ψ(x,t)|
+
+\paragraph{Encyclopedia.}
+Numerical Recipe (Method-of-Lines / Split-Step for TDGL + Acoustic PDE): |Ψ(x,t)| is a symbolic expression, written |Ψ(x,t)|. It introduces a symbol or relation used elsewhere in the framework. It is built from Ψ, x. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

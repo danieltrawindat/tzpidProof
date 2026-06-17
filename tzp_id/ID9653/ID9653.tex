@@ -1,0 +1,17 @@
+\section*{ID9653: Definition of ψ\_n+1}
+\paragraph{Metadata.}
+PiID: 0411237359984 | RTEID: RTE:P37484.7427:T5.2147 | UUID: 38a81f1f-8a72-5026-ba02-7b84947967f6
+
+\paragraph{Canonical Statement.}
+ton algorithm provides an iterative solution by alternately enforcing constraints in real space and Fourier space. The algorithm proceeds as follows. Initialize a complex field \$\textbackslash{}psi\_0 = \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}phi\_0\}\$ with the target intensity and random phase. Then iterate: \textbackslash{}begin\{enumerate\}[label=(\textbackslash{}arabic*)] \textbackslash{}item Apply forward propagation: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n = \textbackslash{}mathcal\{P\}[\textbackslash{}psi\_n]\$ where \$\textbackslash{}mathcal\{P\}\$ represents the helical propagator \textbackslash{}item Enforce target intensity constraint: \$\textbackslash{}tilde\{\textbackslash{}psi\}\_n \textbackslash{}leftarrow \textbackslash{}sqrt\{I\_\{\textbackslash{}text\{target\}\}\} e\textasciicircum{}\{i\textbackslash{}arg(\textbackslash{}tilde\{\textbackslash{}psi\}\_n)\}\$ \textbackslash{}item Apply inverse propagation: \$\textbackslash{}psi\_\{n+1\} = \textbackslash{}mathcal\{P\}\textasciicircum{}\{-1\}[\textbackslash{}tilde\{\textbackslash{}psi\}\_n]\$ \textbackslash{}item Enforce input domain constraints as needed \textbackslash{}end\{enumerate\} Convergence is monitored through the error metric: \textbackslash{}begin\{equation\} \textbackslash{}epsilon\_n = \textbackslash{}frac\{\textbackslash{}|\textbackslash{},|\textbackslash{}mathcal\{P\}[\textbackslash{}psi\_n]|\textasciicircum{}2 - I\_\{\textbackslash{}text\{target\}\}\textbackslash{}|\_2\}\{\textbackslash{}|I\_\{\textbackslash{}text\{target\}\}\textbackslash{}|\_2\} \textbackslash{}end\{equation\} Iteration continues until \$\textbackslash{}epsilon\_n\$ falls below a specified tolerance or a maximum iteration count is reached. The final phase pattern \$\textbackslash{}arg(\textbackslash{}psi\_\{\textbackslash{}infty\})\$ provides the optimal encoding for generating the desired holographic image. \textbackslash{}section\{Integrate
+
+\paragraph{Canonical Equation.}
+\[
+\psi_{n+1} = \mathcal{P}^{-1}[\tilde{\psi}_n]
+\]
+
+\paragraph{Dictionary.}
+Definition of ψ\_n+1 — ψ\_n+1 = P\textasciicircum{}-1[ψ\_n]
+
+\paragraph{Encyclopedia.}
+Definition of ψ\_n+1 is an algebraic definition, written ψ\_n+1 = P\textasciicircum{}-1[ψ\_n]. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from ψ, P, n, defining ψ\_n+1. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

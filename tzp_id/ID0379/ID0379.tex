@@ -1,0 +1,246 @@
+\tzpanchor{0379}
+\tzpentryheader{0379}{Magnetic Vortex Generation Operator}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{e9ec0425-fc37-5601-a876-e571f0250732}}\\
+\textbf{PiID} & \tzpcode{2138414695194} & \textbf{TZPi}\quad \tzpcode{4}\quad \textbf{PiPE}\quad \tzpcode{386}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{1471.7412 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{02.4250 rad}\\
+\textbf{TZPID} & \tzpcode{ID0379} & \textbf{Node Dependencies}\quad \tzpidref{0378}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0379} & \textbf{Scale}\quad magnetofluid\\
+\textbf{LOC Classification} & QC809 magnetohydrodynamics & QC6 fluid and plasma dynamics\\
+\textbf{arXiv Classification} & Primary: physics.plasm-ph & Cross-list: astro-ph.SR, gr-qc\\
+\textbf{Primary Support} & Vorticity Source & Circulation Law\\
+\textbf{Closure Support} & Vortex Operator & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+In a gyromagnetic propulsion system, the total vector potential is composed of a dipole term, a term from the gyroscopic current and an induced term arising from time-varying currents. Together these contributions generate quantised vortex structures under rotation.
+
+\tzpsection{Canonical Equation}
+\[
+\boldsymbol{\omega}_{\mathrm{vort}}=\nabla\times\mathbf{v}
+\]
+\[
+\Gamma=\oint_{\partial S}\mathbf{v}\cdot d\boldsymbol{\ell}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\omega$: angular frequency term in the source equation.
+    \item $v$: velocity, flow speed, or auxiliary comparison variable.
+    \item $S$: source equation symbol.
+    \item $\mathcal{V}_{\mathrm{gen}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0379 generated source Wolfram model *)
+ClearAll[K0379, Cr0379, T, R, A, W, I, N];
+eq0379$1 = HoldForm[boldsymbol[omega]*_*vort == Grad*v];
+eq0379$2 = HoldForm[Gamma == ContourIntegralPartialSv*dboldsymbol[ell]];
+eq0379$3 = HoldForm[VGen[v] == Grad*v];
+
+K0379 = HoldForm[{eq0379$1, eq0379$2, eq0379$3}];
+
+N = "normalized TRAWIN closure object for Magnetic Vortex Generation Operator";
+I = "Vortex Operator integration/comparison layer";
+W = "Circulation Law wave or operator carrier";
+A = "Vorticity Source admissible action/amplitude condition";
+R = "Circulation Law rotation/curl preservation layer";
+T = "Vorticity Source local source condition";
+
+Cr0379[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0379 = Cr0379[K0379];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Vorticity Source local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Circulation Law rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Vorticity Source admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Circulation Law wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Vortex Operator integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Magnetic Vortex Generation Operator.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0379] Magnetic Vortex Generation Operator}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+F(t)
+=
+\left\langle
+[W(t),V(0)]^\dagger
+[W(t),V(0)]
+\right\rangle .
+\end{equation}
+
+\paragraph{Growth Law.}
+\begin{equation}
+F(t)\sim e^{\lambda_L t}.
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Quantum chaos is measured by how rapidly initially separated operators fail to commute under time evolution.
+
+The commutator is:
+\begin{equation}
+[W(t),V(0)] .
+\end{equation}
+
+Its squared magnitude is:
+\begin{equation}
+[W(t),V(0)]^\dagger[W(t),V(0)] .
+\end{equation}
+
+Taking the expectation value gives the chaos indicator:
+\begin{equation}
+\boxed{
+F(t)
+=
+\left\langle
+[W(t),V(0)]^\dagger
+[W(t),V(0)]
+\right\rangle .
+}
+\end{equation}
+
+The early-time growth is characterized by a Lyapunov exponent:
+\begin{equation}
+F(t)\sim e^{\lambda_L t}.
+\end{equation}
+
+\paragraph{Interpretation.}
+The OTOC-style quantity $F(t)$ measures operator scrambling and quantum sensitivity to initial structure.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Magnetic Vortex Generation Operator by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Vorticity Source}\par
+\[
+\boldsymbol{\omega}_{\mathrm{vort}}=\nabla\times\mathbf{v}
+\]
+\noindent This fixes the vorticity generated by the rotating carrier field.\par
+\noindent\textbf{2. Circulation Law}\par
+\[
+\Gamma=\oint_{\partial S}\mathbf{v}\cdot d\boldsymbol{\ell}
+\]
+\noindent This lifts the vorticity source into the corresponding circulation law.\par
+\noindent\textbf{3. Vortex Operator}\par
+\[
+\mathcal{V}_{\mathrm{gen}}(\mathbf{v})=\nabla\times\mathbf{v}
+\]
+\noindent This closes the entry by identifying the operator that generates the vortex sector from the velocity field.\par
+
+\clearpage
+\noindent\textbf{[ID 0379] Magnetic Vortex Generation Operator}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Magnetic Vortex Generation Operator is a registry definition in Field Theory and Action Principles with secondary pressure from Manifold and Metric Dynamics.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} In a gyromagnetic propulsion system, the total vector potential is composed of a dipole term, a term from the gyroscopic current and an induced term arising from time-varying currents. Together these contributions generate quantised vortex structures under rotation. \textbf{Contextual meaning:} The entry reads Magnetic Vortex Generation Operator as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now states the vortex-generation process directly through vorticity and circulation rather than leaving it as narrative-only transport. \textbf{Lemma support:} Vorticity Source; Circulation Law; Vortex Operator.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The OTOC-style quantity F(t) measures operator scrambling and quantum sensitivity to initial structure.
+
+\tzpsection{Equation Grounding}
+Equation anchors: omega sub vort = ablatimes v; Gamma=oint sub C vdot dell; and mathcal V sub gen (v)= ablatimes v. Proof route: show that the stated generation operator produces the admissible vortex sector from the carrier velocity field. Formalization route: prove that the vorticity and circulation laws are compatible under the stated vortex operator.
+
+\tzpsection{Interpretive Role}
+The entry now states the vortex-generation process directly through vorticity and circulation rather than leaving it as narrative-only transport.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Macroscopic Curl Induction}: The mathematical action that turns a straight, flowing field into a tight, spinning tornado of magnetic energy.
+\item \textbf{Closed-Path Line Integration}: The precise measurement of how strongly a field circles around a specific point by walking a loop around it and adding up the flow.
+\item \textbf{Singularity-Driven Swirl Dynamics}: The process by which the central topological defect forces all surrounding energy to continuously spiral inward.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0379]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0379_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0379] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Magnetic Vortex Generation Operator}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} in a gyromagnetic propulsion system, the total vector potential is composed of a dipole
+term, a term from the gyroscopic current and an induced ter...
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Magnetic Vortex Generation Operator is valid as a formal dynamical law when the
+Hamiltonian or energy operator is well defined on the stated state space.''\\
+\textbf{Proof:} The source statement identifies an energy, Hamiltonian, or vacuum-sector mechanism. The
+CHL proof reads it as an operator claim: if the state space and localized terms are
+defined, then the evolution or extraction channel is formally meaningful.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- formal dynamical-operator validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0379_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

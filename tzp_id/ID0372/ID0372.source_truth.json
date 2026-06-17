@@ -1,0 +1,360 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:57:54.078589+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0372",
+    "uuid": "8ed983ae-d2c9-5161-ac7d-4798f9b46b71",
+    "registry_id": "registry_id_0372",
+    "canonical_title": "Magnetic Energy and Pressure Functional",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0372/ID0372.TEX",
+      "json": "D:/TZPID/TZPID/ID0372/ID0372.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0372/ID0372.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "The magnetic energy density inside the spherical enclosure is half the square of the magnetic field divided by the permeability. The total magnetic energy within a radius is obtained by integrating this density over the volume. Mechanical compression contributes an additional constraint energy with a force that scales inversely with the fourth power of separation.",
+    "technical_interpretation": "The magnetic energy density inside the spherical enclosure is half the square of the magnetic field divided by the permeability. The total magnetic energy within a radius is obtained by integrating this density over the volume. Mechanical compression contributes an additional constraint energy with a force that scales inversely with the fourth power of separation."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "u_{B}=\\frac{B^{2}}{2\\mu_{0}}",
+      "E_{B}=\\int_{\\Omega}u_{B}\\,dV"
+    ],
+    "source_section_latex": "\\[\nu_{B}=\\frac{B^{2}}{2\\mu_{0}}\n\\]\n\\[\nE_{B}=\\int_{\\Omega}u_{B}\\,dV\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Magnetic Energy Density",
+      "formula_latex_blocks": [
+        "u_{B}=\\frac{B^{2}}{2\\mu_{0}}"
+      ],
+      "interpretive_role": "This fixes the local magnetic energy density carried by the field configuration."
+    },
+    {
+      "step": 2,
+      "component_title": "Integrated Magnetic Energy",
+      "formula_latex_blocks": [
+        "E_{B}=\\int_{\\Omega}u_{B}\\,dV"
+      ],
+      "interpretive_role": "This integrates the density over the bounded spherical carrier to obtain the total magnetic energy."
+    },
+    {
+      "step": 3,
+      "component_title": "Constraint Energy",
+      "formula_latex_blocks": [
+        "p_{B}=\\frac{B^{2}}{2\\mu_{0}}"
+      ],
+      "interpretive_role": "This closes the entry by adding the mechanical compression contribution into the total constraint energy."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\Omega$",
+        "description": "domain, angular, or boundary operator associated with the equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\Omega$",
+        "name": "domain, angular, or boundary operator associated with the equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\mu_{0}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int_{\\Omega}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B^{2}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E_{B}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$O$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Magnetic Energy and Pressure Functional\nCanonical operator translation\neq0372_1 = HoldForm[uB==(B^(2))(2mu0)];\neq0372_2 = HoldForm[EB==IntegrateOmegauB dV];\n\nTRAWIN closure composition\nTRAWINClosure0372[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0372 := HoldForm[{eq0372_1, eq0372_2}];\nResult0372 := TRAWINClosure0372[K0372];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "u_{B}=\\frac{B^{2}}{2\\mu_{0}}",
+          "normalized_latex": "uB==((B^(2))/(2*mu0))",
+          "wolfram_input": "uB==((B^(2))/(2*mu0))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[uB == B^2/(2*mu0)]",
+          "texform_roundtrip": "\\text{uB}=\\frac{B^2}{2 \\text{mu0}}",
+          "messages": []
+        },
+        {
+          "latex": "E_{B}=\\int_{\\Omega}u_{B}\\,dV",
+          "normalized_latex": "EB==IntegralOmegauB*dV",
+          "wolfram_input": "EB==IntegralOmegauB*dV",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[EB == IntegralOmegauB*dV]",
+          "texform_roundtrip": "\\text{EB}=\\text{dV} \\text{IntegralOmegauB}",
+          "messages": []
+        },
+        {
+          "latex": "p_{B}=\\frac{B^{2}}{2\\mu_{0}}",
+          "normalized_latex": "pB==((B^(2))/(2*mu0))",
+          "wolfram_input": "pB==((B^(2))/(2*mu0))",
+          "normalization_notes": [
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[pB == B^2/(2*mu0)]",
+          "texform_roundtrip": "\\text{pB}=\\frac{B^2}{2 \\text{mu0}}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0372 generated source-truth Wolfram model *)\nClearAll[K0372, TRAWINClosure0372];\neq0372$1 = HoldForm[uB == B^2/(2*mu0)];\neq0372$2 = HoldForm[EB == IntegralOmegauB*dV];\neq0372$3 = HoldForm[pB == B^2/(2*mu0)];\nK0372 = HoldForm[{eq0372$1, eq0372$2, eq0372$3}];\nTRAWINClosure0372[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0372 = TRAWINClosure0372[K0372];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\begin{equation}\n[q,p]=i\\hbar .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nContinuous-variable quantum systems use observables with continuous spectra, such as position $q$ and momentum $p$.\n\nThe commutator is defined by\n\\begin{equation}\n[q,p]=qp-pq .\n\\end{equation}\n\nCanonical quantization imposes\n\\begin{equation}\n\\boxed{\n[q,p]=i\\hbar .\n}\n\\end{equation}\n\nIn the Trawinistic extension, curvature may modify the phase-space volume element while preserving the canonical commutator as the primary algebraic witness.\n\n\\paragraph{Interpretation.}\nContinuous-variable systems extend the registry from finite qubit states into infinite-dimensional Hilbert-space dynamics.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {}
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0372/ID0372.source_truth.json",
+    "entry_id": "ID0372",
+    "registry_id": "registry_id_0372",
+    "canonical_title": "Magnetic Energy and Pressure Functional",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0372/ID0372.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "8ed983ae-d2c9-5161-ac7d-4798f9b46b71",
+    "RTEID": "RTE:P1444.5586:T2.3802",
+    "poloidal_theta_rad": "1444.5586",
+    "toroidal_phi_rad": "2.3802",
+    "rteid_source": "manifest",
+    "PiID": "8204665213841",
+    "TZPi": "5",
+    "PiPE_position": "379",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "u_{B}=\\frac{B^{2}}{2\\mu_{0}}",
+        "numeric_atoms": [
+          "2",
+          "0"
+        ],
+        "symbolic_tokens": [
+          "mu",
+          "u",
+          "B"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0372\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Magnetic Energy and Pressure Functional\", \"latex\" -> \"u_{B}=\\\\frac{B^{2}}{2\\\\mu_{0}}\", \"numericAtoms\" -> {2, 0}, \"symbolicTokens\" -> {\"mu\", \"u\", \"B\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "E_{B}=\\int_{\\Omega}u_{B}\\,dV",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "int",
+          "Omega",
+          "E",
+          "B",
+          "u",
+          "dV"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0372\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Magnetic Energy and Pressure Functional\", \"latex\" -> \"E_{B}=\\\\int_{\\\\Omega}u_{B}\\\\,dV\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"int\", \"Omega\", \"E\", \"B\", \"u\", \"dV\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

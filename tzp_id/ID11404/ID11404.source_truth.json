@@ -1,0 +1,66 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.2.1",
+    "generated_at": "2026-06-12T12:04:23+00:00",
+    "source": "portal_equilibrium_laws_intake",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID11404",
+    "uuid": "89c7cf01-ac40-56f4-b3b1-6643a7686364",
+    "registry_id": "registry_id_11404",
+    "piid": "PiID-11404-portal-equilibrium",
+    "canonical_title": "Five-Force Portal Equilibrium Balance",
+    "source_files": {
+      "portal_equation": "D:\\Bessel\\the_portal_equation.txt",
+      "source_truth": "D:\\TZPIDProof\\tzp_id\\ID11404\\ID11404.source_truth.json"
+    }
+  },
+  "creator": {
+    "name": "Daniel Alexander Trawin",
+    "orcid": "https://orcid.org/0009-0001-4630-3715"
+  },
+  "classification": {
+    "category": "portal-equilibrium-force-law",
+    "discipline": "mathematical physics",
+    "loc_class": "QC - Physics",
+    "arxiv_class": "physics.gen-ph"
+  },
+  "theory": {
+    "canonical_statement": "The droplet portal-equilibrium condition is the vanishing of the gravity, surface-tension, inertial, acoustic-pressure, and drag force sum.",
+    "technical_interpretation": "This is the saved transcript's sharper portal balance. It supplements the earlier generic force-balance carrier by naming the air-resistance term explicitly.",
+    "source_lineage": "Extracted from the saved portal-equation force-vector and phi-equilibrium sections."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "F_{g}+F_{s}+F_{i}+F_{a}+F_{r}=0"
+    ],
+    "source_section_latex": "F_{g}+F_{s}+F_{i}+F_{a}+F_{r}=0"
+  },
+  "wolfram_form": {
+    "audit": {
+      "blocks": [
+        {
+          "name": "Five-Force Portal Equilibrium Balance",
+          "wolfram": "Fg + Fs + Fi + Fa + Fr == 0",
+          "status": "pass_via_portal_equilibrium_laws_certificate"
+        }
+      ]
+    }
+  },
+  "proof_lane": {
+    "isabelle_kind": "Constraint",
+    "obligation_role": "Portal_Equilibrium",
+    "required_checks": [
+      "source_traceability",
+      "wolfram_certificate",
+      "hol_carrier_typing",
+      "empirical_validation_pending"
+    ],
+    "wolfram_status": "10/10 pass;artifact=peer_review/portal_breathing_intake/wolfram/portal_equilibrium_laws_check_results.json",
+    "isabelle_sid": "11404",
+    "wolfram_artifact": "D:\\TZPIDProof\\peer_review\\portal_breathing_intake\\wolfram\\portal_equilibrium_laws_check_results.json",
+    "wolfram_updated_at_utc": "2026-06-12T12:04:23+00:00"
+  }
+}

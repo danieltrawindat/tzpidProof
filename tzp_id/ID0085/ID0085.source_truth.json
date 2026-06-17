@@ -1,0 +1,387 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:34:30.139809+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0085",
+    "uuid": "a2ed68c8-393b-535e-aaa7-0ab0984a15c1",
+    "registry_id": "registry_id_0085",
+    "canonical_title": "Gyromagnetic Genesis Hypothesis",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0085/ID0085.TEX",
+      "json": "D:/TZPID/TZPID/ID0085/ID0085.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0085/ID0085.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "canonical-registry",
+    "discipline": "physics"
+  },
+  "theory": {
+    "canonical_statement": "Angular momentum in astrophysical and laboratory systems does not stem from primordial rotation but is continuously generated through interactions between local electromagnetic fields and matter, governed by the gyromagnetic coupling in the Trawin framework.",
+    "technical_interpretation": "Angular momentum in astrophysical and laboratory systems does not stem from primordial rotation but is continuously generated through interactions between local electromagnetic fields and matter, governed by the gyromagnetic coupling in the Trawin framework."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV",
+      "\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}"
+    ],
+    "source_section_latex": "\\[\n\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV\n\\]\n\\[\n\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Local Electromagnetic Source Terms",
+      "formula_latex_blocks": [
+        "\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}"
+      ],
+      "interpretive_role": "This identifies the field content that can source rotational change."
+    },
+    {
+      "step": 2,
+      "component_title": "Electromagnetic Torque Integral",
+      "formula_latex_blocks": [
+        "\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV"
+      ],
+      "interpretive_role": "This converts local forcing into a net rotational source term."
+    },
+    {
+      "step": 3,
+      "component_title": "Angular Momentum Generation Law",
+      "formula_latex_blocks": [
+        "\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}"
+      ],
+      "interpretive_role": "This closes the progression by stating that angular momentum is produced continuously from the torque source."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\rho$",
+        "description": "density or measure term used by the entry equation."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\rho$",
+        "name": "density or measure term used by the entry equation.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\tau_{em}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\int$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\mathbf$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\times$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$J$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$B$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$V$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$L$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$t(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "fEM[r_] := Cross[J[r], B[r]] + rhoE[r]*E[r]\ntauEM := Integrate[Cross[r, fEM[r]], {r, V}]\nD[L[t], t] == tauEM",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV",
+          "normalized_latex": "tauEm==Integral*r*(J*B+rhoEE)*dV",
+          "wolfram_input": "tauEm==Integral*r*(J*B+rhoEE)*dV",
+          "normalization_notes": [
+            "layout TeX stripped before Wolfram normalization",
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[tauEm == Integral*r*(J*B + rhoEE)*dV]",
+          "texform_roundtrip": "\\text{tauEm}=\\text{dV} \\text{Integral} r (B J+\\text{rhoEE})",
+          "messages": []
+        },
+        {
+          "latex": "\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}",
+          "normalized_latex": "((dL)/(dt))==tauEm",
+          "wolfram_input": "((dL)/(dt))==tauEm",
+          "normalization_notes": [
+            "mathrm unwrapped",
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[dL/dt == tauEm]",
+          "texform_roundtrip": "\\frac{\\text{dL}}{\\text{dt}}=\\text{tauEm}",
+          "messages": []
+        },
+        {
+          "latex": "\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}",
+          "normalized_latex": "J*B+rhoEE",
+          "wolfram_input": "J*B+rhoEE",
+          "normalization_notes": [
+            "mathbf unwrapped",
+            "TeX label subscripts collapsed into Wolfram-safe identifiers"
+          ],
+          "parse_method": "InputForm",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[J*B + rhoEE]",
+          "texform_roundtrip": "B J+\\text{rhoEE}",
+          "messages": []
+        }
+      ],
+      "status": "ok",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0085 generated source-truth Wolfram model *)\nClearAll[K0085, TRAWINClosure0085];\neq0085$1 = HoldForm[tauEm == Integral*r*(J*B + rhoEE)*dV];\neq0085$2 = HoldForm[dL/dt == tauEm];\neq0085$3 = HoldForm[J*B + rhoEE];\nK0085 = HoldForm[{eq0085$1, eq0085$2, eq0085$3}];\nTRAWINClosure0085[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0085 = TRAWINClosure0085[K0085];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Source Term.}\n\\begin{equation}\n\\mathbf{J}\\times\\mathbf{B}\n+\n\\rho_e\\mathbf{E}.\n\\end{equation}\n\n\\paragraph{Electromagnetic Torque Integral.}\n\\begin{equation}\n\\boldsymbol{\\tau}_{\\mathrm{em}}\n=\n\\int_V\n\\mathbf{r}\\times\n\\left(\n\\mathbf{J}\\times\\mathbf{B}\n+\n\\rho_e\\mathbf{E}\n\\right)\n\\,\\mathrm{d}V .\n\\end{equation}\n\n\\paragraph{Angular Momentum Generation Law.}\n\\begin{equation}\n\\frac{\\mathrm{d}\\mathbf{L}}{\\mathrm{d}t}\n=\n\\boldsymbol{\\tau}_{\\mathrm{em}} .\n\\end{equation}\n\n\\paragraph{Primary Derivation.}\nThe local electromagnetic force density is:\n\\begin{equation}\n\\mathbf{f}_{\\mathrm{em}}\n=\n\\mathbf{J}\\times\\mathbf{B}\n+\n\\rho_e\\mathbf{E}.\n\\end{equation}\n\nTorque density is position crossed with force density:\n\\begin{equation}\n\\mathbf{r}\\times\\mathbf{f}_{\\mathrm{em}}.\n\\end{equation}\n\nIntegrating over a source region $V$ gives:\n\\begin{equation}\n\\boldsymbol{\\tau}_{\\mathrm{em}}\n=\n\\int_V\n\\mathbf{r}\\times\n\\left(\n\\mathbf{J}\\times\\mathbf{B}\n+\n\\rho_e\\mathbf{E}\n\\right)\n\\,\\mathrm{d}V .\n\\end{equation}\n\nThe angular momentum generation law is therefore:\n\\begin{equation}\n\\boxed{\n\\frac{\\mathrm{d}\\mathbf{L}}{\\mathrm{d}t}\n=\n\\boldsymbol{\\tau}_{\\mathrm{em}} .\n}\n\\end{equation}\n\n\\paragraph{Interpretation.}\nAngular momentum is modeled as continuously generated by local electromagnetic source terms rather than assumed as a primordial input.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "standard-physics-model-conditional",
+    "artifacts": {
+      "isabelle": "",
+      "lean": "",
+      "rocq": ""
+    }
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0085/ID0085.source_truth.json",
+    "entry_id": "ID0085",
+    "registry_id": "registry_id_0085",
+    "canonical_title": "Gyromagnetic Genesis Hypothesis",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0085/ID0085.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "a2ed68c8-393b-535e-aaa7-0ab0984a15c1",
+    "RTEID": "RTE:P330.0739:T0.5439",
+    "poloidal_theta_rad": "330.0739",
+    "toroidal_phi_rad": "0.5439",
+    "rteid_source": "manifest",
+    "PiID": "3482534211706",
+    "TZPi": "4",
+    "PiPE_position": "92",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\tau_{\\mathrm{em}}\n=\n\\int \\mathbf{r}\\times\\left(\\mathbf{J}\\times\\mathbf{B}+\\rho_e\\mathbf{E}\\right)\\,dV",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "tau",
+          "int",
+          "mathbf",
+          "rho",
+          "e",
+          "dV"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0085\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Genesis Hypothesis\", \"latex\" -> \"\\\\tau_{\\\\mathrm{em}}\\n=\\n\\\\int \\\\mathbf{r}\\\\times\\\\left(\\\\mathbf{J}\\\\times\\\\mathbf{B}+\\\\rho_e\\\\mathbf{E}\\\\right)\\\\,dV\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"tau\", \"int\", \"mathbf\", \"rho\", \"e\", \"dV\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      },
+      {
+        "block_index": 2,
+        "latex": "\\frac{d\\mathbf{L}}{dt}=\\tau_{\\mathrm{em}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "mathbf",
+          "tau",
+          "d",
+          "dt"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0085\", 2, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Gyromagnetic Genesis Hypothesis\", \"latex\" -> \"\\\\frac{d\\\\mathbf{L}}{dt}=\\\\tau_{\\\\mathrm{em}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"mathbf\", \"tau\", \"d\", \"dt\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 2,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

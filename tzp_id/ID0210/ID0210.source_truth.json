@@ -1,0 +1,467 @@
+{
+  "schema": {
+    "name": "TZPID source truth prototype",
+    "version": "0.1.0",
+    "generated_at": "2026-05-21T15:44:42.071192+00:00",
+    "non_destructive": true
+  },
+  "identity": {
+    "tzpid": "ID0210",
+    "uuid": "f40541c6-f726-5fd8-8c43-d9d298e14719",
+    "registry_id": "registry_id_0210",
+    "canonical_title": "Dimensional Access Ladder",
+    "source_files": {
+      "tex": "D:/TZPID/TZPID/ID0210/ID0210.TEX",
+      "json": "D:/TZPID/TZPID/ID0210/ID0210.JSON",
+      "id_system": "D:/TZPIDProof/tzp_id/ID0210/ID0210.id_system.json"
+    }
+  },
+  "classification": {
+    "loc_class": "",
+    "arxiv_class": "",
+    "category": "",
+    "discipline": ""
+  },
+  "theory": {
+    "canonical_statement": "A resonance mapping equates an acoustic harmonic frequency with the frequency associated with a Kaluza--Klein mode energy.",
+    "technical_interpretation": "There exists a resonance mapping between acoustic harmonics and Kaluza--Klein modes defined by \\[ \\omega_n = \\frac{E_m}{\\hbar}, \\qquad \\omega_n = n f_{\\mathrm{fundamental}}, \\qquad E_m = \\frac{m\\hbar c}{R_{\\mathrm{KK}}}. \\] Resonant access occurs when the acoustic harmonic frequency matches the Kaluza--Klein excitation energy."
+  },
+  "canonical_equation": {
+    "latex_blocks": [
+      "\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}"
+    ],
+    "source_section_latex": "\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}\n\\]"
+  },
+  "equation_progression": [
+    {
+      "step": 1,
+      "component_title": "Acoustic Harmonic",
+      "formula_latex_blocks": [
+        "\\omega_n=n f_{\\mathrm{fundamental}}"
+      ],
+      "interpretive_role": "The acoustic carrier frequency is indexed by its harmonic mode."
+    },
+    {
+      "step": 2,
+      "component_title": "Compact-Sector Energy",
+      "formula_latex_blocks": [
+        "E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}"
+      ],
+      "interpretive_role": "The Kaluza--Klein excitation energy is scaled by compactification radius and mode index."
+    },
+    {
+      "step": 3,
+      "component_title": "Resonance Selection",
+      "formula_latex_blocks": [
+        "\\omega_n=\\frac{E_m}{\\hbar}",
+        "n f_{\\mathrm{fundamental}}=\\frac{m c}{R_{\\mathrm{KK}}}"
+      ],
+      "interpretive_role": "Matching the two sectors produces the resonance-selection condition."
+    }
+  ],
+  "symbol_index": {
+    "existing_from_tex": [
+      {
+        "symbol": "$\\mathcal{K}_{0210}$",
+        "description": "canonical registry object for entry ID 0210."
+      }
+    ],
+    "wolfram_and_latex_candidates": [
+      {
+        "symbol": "$\\mathcal{K}_{0210}$",
+        "name": "canonical registry object for entry ID 0210.",
+        "source": "existing_symbol_key"
+      },
+      {
+        "symbol": "$\\omega$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\hbar$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$\\qquad$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$E$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      },
+      {
+        "symbol": "$R_{KK}$",
+        "name": "candidate symbol extracted from canonical/progression LaTeX",
+        "source": "regex_candidate"
+      }
+    ]
+  },
+  "wolfram_form": {
+    "existing_from_tex": "Dimensional Access Ladder\nCanonical operator translation\neq0210_1 = HoldForm[omega_n == (E_m)/(hbar), omega_n == n ffundamental, E_m == (mhbar c)(RKK)];\neq0210_2 = HoldForm[omega_n == n ffundamental];\neq0210_3 = HoldForm[E_m == (mhbar c)(RKK)];\n\nTRAWIN closure composition\nTRAWINClosure0210[expr_] := N[I[W[A[R[T[expr]]]]]];\n\nEntry realization\nK0210 := HoldForm[{eq0210_1, eq0210_2, eq0210_3}];\nResult0210 := TRAWINClosure0210[K0210];",
+    "audit": {
+      "engine": "Wolfram Engine",
+      "version": "14.3.0 for Microsoft Windows (64-bit) (July 31, 2025)",
+      "blocks": [
+        {
+          "latex": "\\omega_n=n f_{\\mathrm{fundamental}}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaN == n*fFundamental]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[EM == m*hbar*c/RKK]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "\\omega_n=\\frac{E_m}{\\hbar}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[omegaN == EM/hbar]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        },
+        {
+          "latex": "n f_{\\mathrm{fundamental}}=\\frac{m c}{R_{\\mathrm{KK}}}",
+          "parse_method": "review_repaired_holdform",
+          "parse_status": "pass",
+          "holdform_inputform": "HoldForm[n*fFundamental == m*c/RKK]",
+          "normalization_notes": [
+            "source-aligned repair for review candidate"
+          ],
+          "messages": []
+        }
+      ],
+      "status": "source_aligned_review_repaired",
+      "parse_verification_status": "pass",
+      "parse_verified_at_utc": "2026-06-11T02:12:54Z",
+      "parse_verification_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\run_20260611_021207\\source_truth_wolfram_parse_results.json"
+    },
+    "generated_model": "(* TZPID ID0210 generated source-truth Wolfram model *)\nClearAll[K0210, TRAWINClosure0210];\neq0210$1 = HoldForm[TZPSequence[omegaN == EM/hbar, omegaN == n*fFundamental, EM == (mhbar*c)/RKK]];\neq0210$2 = HoldForm[omegaN == n*fFundamental];\neq0210$3 = HoldForm[EM == (mhbar*c)/RKK];\neq0210$4 = HoldForm[omegaN == EM/hbar];\nK0210 = HoldForm[{eq0210$1, eq0210$2, eq0210$3, eq0210$4}];\nTRAWINClosure0210[expr_] := HoldForm[TRAWINN[TRAWINI[TRAWINW[TRAWINA[TRAWINR[TRAWINT[expr]]]]]]];\nResult0210 = TRAWINClosure0210[K0210];"
+  },
+  "derivation_layer": {
+    "source_latex": "% BEGIN TZP DERIVATION LAYER\n\\tzpsection{Derivation Layer}\n\\paragraph{Primary Equation.}\n\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}.\n\\]\n\\paragraph{Resonance Derivation.}\nSubstitute the compact-mode energy into the frequency matching condition:\n\\[\n\\omega_n=\\frac{1}{\\hbar}\\frac{m\\hbar c}{R_{\\mathrm{KK}}}=\\frac{m c}{R_{\\mathrm{KK}}}.\n\\]\nEquating this with the acoustic harmonic gives\n\\[\nn f_{\\mathrm{fundamental}}=\\frac{m c}{R_{\\mathrm{KK}}},\\qquad f_{\\mathrm{fundamental}}=\\frac{m c}{n R_{\\mathrm{KK}}}.\n\\]\n\\paragraph{Interpretation.}\nThe entry supplies a mode-matching condition; transfer remains conditional on a physical coupling mechanism and is not asserted by the algebra alone.\n% END TZP DERIVATION LAYER"
+  },
+  "verification_handles": {
+    "formal_status": "model-conditional-proof-obligation",
+    "claim_strength": "requires-model-and-evidence-review",
+    "artifacts": {}
+  },
+  "review_source_enrichment": {
+    "review_status": "candidate_for_symbol_key_and_equation_grounding",
+    "method": "equation-aligned PDF evidence followed by manual review draft",
+    "review_claims": [
+      {
+        "formula_latex": "\\omega_n=\\frac{E_m}{\\hbar},\\quad \\omega_n=n f_{\\mathrm{fundamental}},\\quad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}",
+        "symbol_definitions": {
+          "\\omega_n": "angular frequency of the acoustic harmonic mode",
+          "E_m": "energy of the indexed Kaluza--Klein mode",
+          "\\hbar": "reduced Planck constant converting energy to angular frequency",
+          "n": "acoustic harmonic mode index",
+          "f_{\\mathrm{fundamental}}": "fundamental acoustic frequency",
+          "m": "Kaluza--Klein mode index",
+          "c": "speed of light in the compact-mode energy relation",
+          "R_{\\mathrm{KK}}": "compactification radius setting the mode-energy spacing"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 121
+      }
+    ]
+  },
+  "review_publication_overrides": {
+    "dictionary_sections": {
+      "definition": "The dimensional access ladder is a resonance-matching operator between an acoustic harmonic and a Kaluza--Klein excitation mode. The source relation equates acoustic angular frequency with mode energy measured in frequency units.",
+      "contextual_meaning": "An acoustic carrier is indexed by \\(n\\), while a compact-dimension excitation is indexed by \\(m\\). When their frequency and energy spacing agree, the source describes a resonant channel through which the modeled domains may exchange information or energy.",
+      "formal_statement_latex": "\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad\n\\omega_n=n f_{\\mathrm{fundamental}},\\qquad\nE_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}\n\\]",
+      "derivable_consequences": "Substitution yields \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\). Thus the selected acoustic frequency is conditioned by both mode indices and the compactification radius; decreasing \\(R_{\\mathrm{KK}}\\) raises the matching scale for fixed indices.",
+      "lemma_support": "The retrieved source explicitly gives all three displayed relations and describes the match as a resonance mapping between acoustic harmonics and Kaluza--Klein modes. It identifies frequency matching as the trigger for the proposed access channel.",
+      "technical_interpretation": "The equation is a selection condition rather than proof of transfer efficiency. It defines which acoustic excitation is kinematically aligned with a compact-mode energy spacing before any coupling strength is evaluated.",
+      "equation_grounding": "\\(\\omega_n\\) is the angular frequency of the acoustic harmonic; \\(E_m\\) is the Kaluza--Klein mode energy; \\(f_{\\mathrm{fundamental}}\\) is the fundamental acoustic frequency; \\(R_{\\mathrm{KK}}\\) is compactification radius; and \\(n,m\\) identify the corresponding modes.",
+      "interpretive_role": "This entry connects bounded acoustic harmonics to the compact-sector progression by providing a precise resonance condition rather than a general analogy.",
+      "tzp_thesaurus": [
+        {
+          "term": "Resonance Mapping",
+          "meaning": "A matching condition equating the frequencies associated with two modeled sectors."
+        },
+        {
+          "term": "Kaluza--Klein Mode",
+          "meaning": "An excitation indexed in the compact extra-dimensional sector."
+        },
+        {
+          "term": "Compactification Radius",
+          "meaning": "The radius scale controlling the spacing of compact-sector mode energies."
+        }
+      ]
+    },
+    "equation_support_summary": "Combining the acoustic harmonic frequency with the Kaluza--Klein energy spacing gives the resonance selection rule \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\).",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_review_candidate",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 260,
+      "applied_at": "20260525_010314"
+    },
+    "proof_latex": "\\textbf{Statement:} The source supplies the resonance relations\n\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}.\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} A mode pair is selected when its acoustic frequency equals its compact-sector frequency.\\\\\n\\textbf{Proof:} Substituting \\(E_m=m\\hbar c/R_{\\mathrm{KK}}\\) into \\(\\omega_n=E_m/\\hbar\\) gives \\(\\omega_n=m c/R_{\\mathrm{KK}}\\). Equating this with \\(\\omega_n=n f_{\\mathrm{fundamental}}\\) gives \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE} --- algebraic resonance selection follows from the displayed relations\\\\\n\\textbf{Formal Status:} \\ensuremath{\\checkmark}\\ THEORETICAL -- source-backed CHL obligation\\\\\n\\textbf{Physical Status:} THEORETICAL -- coupling efficiency remains to be tested"
+  },
+  "publication_overrides": {
+    "dictionary_sections": {
+      "definition": "The dimensional access ladder is a resonance-matching operator between an acoustic harmonic and a Kaluza--Klein excitation mode. The source relation equates acoustic angular frequency with mode energy measured in frequency units.",
+      "contextual_meaning": "An acoustic carrier is indexed by \\(n\\), while a compact-dimension excitation is indexed by \\(m\\). When their frequency and energy spacing agree, the source describes a resonant channel through which the modeled domains may exchange information or energy.",
+      "formal_statement_latex": "\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad\n\\omega_n=n f_{\\mathrm{fundamental}},\\qquad\nE_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}\n\\]",
+      "derivable_consequences": "Substitution yields \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\). Thus the selected acoustic frequency is conditioned by both mode indices and the compactification radius; decreasing \\(R_{\\mathrm{KK}}\\) raises the matching scale for fixed indices.",
+      "lemma_support": "The retrieved source explicitly gives all three displayed relations and describes the match as a resonance mapping between acoustic harmonics and Kaluza--Klein modes. It identifies frequency matching as the trigger for the proposed access channel.",
+      "technical_interpretation": "The equation is a selection condition rather than proof of transfer efficiency. It defines which acoustic excitation is kinematically aligned with a compact-mode energy spacing before any coupling strength is evaluated.",
+      "equation_grounding": "\\(\\omega_n\\) is the angular frequency of the acoustic harmonic; \\(E_m\\) is the Kaluza--Klein mode energy; \\(f_{\\mathrm{fundamental}}\\) is the fundamental acoustic frequency; \\(R_{\\mathrm{KK}}\\) is compactification radius; and \\(n,m\\) identify the corresponding modes.",
+      "interpretive_role": "This entry connects bounded acoustic harmonics to the compact-sector progression by providing a precise resonance condition rather than a general analogy.",
+      "tzp_thesaurus": [
+        {
+          "term": "Resonance Mapping",
+          "meaning": "A matching condition equating the frequencies associated with two modeled sectors."
+        },
+        {
+          "term": "Kaluza--Klein Mode",
+          "meaning": "An excitation indexed in the compact extra-dimensional sector."
+        },
+        {
+          "term": "Compactification Radius",
+          "meaning": "The radius scale controlling the spacing of compact-sector mode energies."
+        }
+      ]
+    },
+    "equation_support_summary": "Combining the acoustic harmonic frequency with the Kaluza--Klein energy spacing gives the resonance selection rule \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\).",
+    "dictionary_contract": {
+      "schema": "tzpid-locked-dictionary-sections-v1",
+      "status": "locked_source_approved_reference",
+      "required_section_order": [
+        "definition",
+        "contextual_meaning",
+        "formal_statement_latex",
+        "derivable_consequences",
+        "lemma_support",
+        "technical_interpretation",
+        "equation_grounding",
+        "interpretive_role",
+        "tzp_thesaurus"
+      ],
+      "narrative_word_count": 260,
+      "applied_at": "20260525_010314",
+      "approved_at": "2026-05-25",
+      "approval_note": "User approved rendered locked-layout review excerpt."
+    },
+    "proof_latex": "\\textbf{Statement:} The source supplies the resonance relations\n\\[\n\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}.\n\\]\n\\textbf{Logic Validation:}\\\\\n\\textbf{Proposition:} A mode pair is selected when its acoustic frequency equals its compact-sector frequency.\\\\\n\\textbf{Proof:} Substituting \\(E_m=m\\hbar c/R_{\\mathrm{KK}}\\) into \\(\\omega_n=E_m/\\hbar\\) gives \\(\\omega_n=m c/R_{\\mathrm{KK}}\\). Equating this with \\(\\omega_n=n f_{\\mathrm{fundamental}}\\) gives \\(n f_{\\mathrm{fundamental}}=m c/R_{\\mathrm{KK}}\\).\\\\\n\\textbf{VERDICT:} \\ensuremath{\\checkmark}\\ \\textbf{TRUE} --- algebraic resonance selection follows from the displayed relations\\\\\n\\textbf{Formal Status:} \\ensuremath{\\checkmark}\\ THEORETICAL -- source-backed CHL obligation\\\\\n\\textbf{Physical Status:} THEORETICAL -- coupling efficiency remains to be tested"
+  },
+  "approved_source_enrichment": {
+    "reviewed_at": "2026-05-25",
+    "review_status": "approved_for_symbol_key_and_equation_grounding",
+    "method": "equation-aligned source evidence followed by rendered-page user approval",
+    "approved_claims": [
+      {
+        "formula_latex": "\\omega_n=\\frac{E_m}{\\hbar},\\quad \\omega_n=n f_{\\mathrm{fundamental}},\\quad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}",
+        "symbol_definitions": {
+          "\\omega_n": "angular frequency of the acoustic harmonic mode",
+          "E_m": "energy of the indexed Kaluza--Klein mode",
+          "\\hbar": "reduced Planck constant converting energy to angular frequency",
+          "n": "acoustic harmonic mode index",
+          "f_{\\mathrm{fundamental}}": "fundamental acoustic frequency",
+          "m": "Kaluza--Klein mode index",
+          "c": "speed of light in the compact-mode energy relation",
+          "R_{\\mathrm{KK}}": "compactification radius setting the mode-energy spacing"
+        },
+        "source_path": "D:/Conversation/2-Ready-For-Extraction/PDFconvo/Writing - Cosmological Constant Explained.pdf",
+        "source_page": 121
+      }
+    ],
+    "approval_note": "User approved rendered locked-layout review excerpt.",
+    "limitation": "Approved meanings and formal consequences are limited to the displayed relations; physical realization and unshown coupling claims remain model-conditional."
+  },
+  "tzpid_provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "provenance_applied_at_utc": "2026-06-06T04:22:40Z",
+    "provenance_applied_by": "add_tzpid_source_truth_provenance.py",
+    "source_truth_file": "D:/TZPID/TZPID/ID0210/ID0210.source_truth.json",
+    "entry_id": "ID0210",
+    "registry_id": "registry_id_0210",
+    "canonical_title": "Dimensional Access Ladder",
+    "proof_pipeline": {
+      "workspace": "D:/tzpidNEW",
+      "status": "source-truth provenance linked to generated proof-obligation and certificate artifacts",
+      "scope_note": "This metadata records authorship, lineage, and proof-pipeline artifact links. It does not by itself assert that the entry has a completed native analytic proof.",
+      "formal_systems": [
+        "Isabelle/HOL",
+        "Lean",
+        "Rocq/Coq",
+        "Wolfram"
+      ],
+      "verification_summary": {
+        "isabelle_tzpid_session": "passed after provenance regeneration",
+        "lean_all_ids_mirror": "passed after provenance regeneration",
+        "rocq_all_ids_mirror": "passed after provenance regeneration",
+        "wolfram_spine_checks": "passed for generated curated/Zenodo spine checks; energy-matter naive integral divergence warning is expected"
+      },
+      "artifacts": [
+        {
+          "path": "D:/tzpidNEW/README_PROOF_PIPELINE.md",
+          "sha1": "05eeb800d8c7da069136d2312273fd82b0275b3a",
+          "bytes": 9551
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_NEW_SPINES_obligations.csv",
+          "sha1": "a5a9715ffb4bdff072888f315de82b0615d4e15a",
+          "bytes": 5288
+        },
+        {
+          "path": "D:/tzpidNEW/TZPID_ZENODO_SPINES_obligations.csv",
+          "sha1": "468b063e6cfe042898724f35f597262fe3a71156",
+          "bytes": 66549
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/ROOT",
+          "sha1": "d9914f0c53ef791d349f01f590e72865b38fd085",
+          "bytes": 421
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_Gravity_Focus.thy",
+          "sha1": "36cfd2eb318f341e2829b42044756c2113831251",
+          "bytes": 3825
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_EnergyMatter_Focus.thy",
+          "sha1": "63173e1f023401af7eb2239d75366307e7c9f429",
+          "bytes": 3431
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_TopologicalUnification_Focus.thy",
+          "sha1": "bb11e61725f371a1e6e7bf9330b92fa610aa4e17",
+          "bytes": 3437
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_NewSpines_Computational_Checks.thy",
+          "sha1": "8722799c734fd82e882a859ba6db97aa7fb96b3c",
+          "bytes": 7124
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Focus.thy",
+          "sha1": "c861569c3af9ec1a950a0f87306ac02b6f728308",
+          "bytes": 59141
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/TZPID_ZenodoSpines_Computational_Checks.thy",
+          "sha1": "dd48bf3f0e30f7d695ef39da9d8d0bef8fbe9d91",
+          "bytes": 35852
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_focus_summary.json",
+          "sha1": "276943072e82c18c636eecda288fdf6a26bde18d",
+          "bytes": 5213
+        },
+        {
+          "path": "D:/tzpidNEW/isabelle_tzpid/zenodo_spines_wolfram_certificate_summary.md",
+          "sha1": "711740c29a12d0c857b640bb8ee3766d4720b554",
+          "bytes": 22349
+        },
+        {
+          "path": "D:/tzpidNEW/wolfram_checks/zenodo_spines_results.json",
+          "sha1": "7e06d6db217c67d138c62a37629f41dc10601702",
+          "bytes": 115451
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.lean",
+          "sha1": "b9b6aa77aa7933794ddc09ac2f22faf6ce32dc7f",
+          "bytes": 462976
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/TZPIDAllIDs.v",
+          "sha1": "6df67b16ffb73ebc3260380f34a35712c15fb5e5",
+          "bytes": 551850
+        },
+        {
+          "path": "D:/tzpidNEW/lean_rocq_gold_spine/all_ids_export_summary.json",
+          "sha1": "4163a035234aca47b86ffb118dda5e8c897e816b",
+          "bytes": 6872
+        }
+      ]
+    }
+  },
+  "id_system": {
+    "source": "TZPID_ID_SYSTEM.csv",
+    "source_csv": "D:/TZPIDProof/TZPID_ID_SYSTEM.csv",
+    "source_csv_sha1": "0da06e002a0b1b00ed36d871ce6b735df5ed8486",
+    "sidecar": "D:/TZPIDProof/tzp_id/ID0210/ID0210.id_system.json",
+    "linked_at_utc": "2026-06-11T02:25:35Z",
+    "linked_by": "apply_tzpid_id_system_to_folders.py",
+    "uuid": "f40541c6-f726-5fd8-8c43-d9d298e14719",
+    "RTEID": "RTE:P815.4766:T1.3437",
+    "poloidal_theta_rad": "815.4766",
+    "toroidal_phi_rad": "1.3437",
+    "rteid_source": "manifest",
+    "PiID": "6659334461284",
+    "TZPi": "4",
+    "PiPE_position": "217",
+    "loc_class": "",
+    "arxiv_class": ""
+  },
+  "wolfram_representation": {
+    "schema": "tzpid_wolfram_representation_v1",
+    "created_at_utc": "2026-06-11T02:13:14Z",
+    "scope": "per-ID numeric atom and symbolic token representation with best-effort Wolfram candidates",
+    "status": "wolfram_representation_parse_verified",
+    "blocks": [
+      {
+        "block_index": 1,
+        "latex": "\\omega_n=\\frac{E_m}{\\hbar},\\qquad \\omega_n=n f_{\\mathrm{fundamental}},\\qquad E_m=\\frac{m\\hbar c}{R_{\\mathrm{KK}}}",
+        "numeric_atoms": [],
+        "symbolic_tokens": [
+          "omega",
+          "hbar",
+          "n",
+          "f",
+          "E",
+          "m",
+          "R"
+        ],
+        "candidate_wolfram_input": "",
+        "candidate_method": "untranslated_latex_command",
+        "wolfram_input": "HoldForm[TZPIDWolframRepresentation[\"ID0210\", 1, <|\"kind\" -> \"symbolic_token_index\", \"title\" -> \"Dimensional Access Ladder\", \"latex\" -> \"\\\\omega_n=\\\\frac{E_m}{\\\\hbar},\\\\qquad \\\\omega_n=n f_{\\\\mathrm{fundamental}},\\\\qquad E_m=\\\\frac{m\\\\hbar c}{R_{\\\\mathrm{KK}}}\", \"numericAtoms\" -> {}, \"symbolicTokens\" -> {\"omega\", \"hbar\", \"n\", \"f\", \"E\", \"m\", \"R\"}, \"candidateWolframInput\" -> \"\", \"candidateMethod\" -> \"untranslated_latex_command\"|>]]",
+        "representation_parse_status": "wolfram_representation_parse_pass",
+        "candidate_parse_status": "candidate_not_attempted",
+        "candidate_eval_status": "not_attempted",
+        "validated_at_utc": "2026-06-11T02:15:01Z",
+        "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json"
+      }
+    ],
+    "validated_at_utc": "2026-06-11T02:15:01Z",
+    "validation_artifact": "D:\\TZPIDProof\\wolfram_source_truth_verification\\representation_run_20260611_021425\\wolfram_representation_validation_results.json",
+    "summary": {
+      "blocks": 1,
+      "representation_parse_status": "pass",
+      "candidate_policy": "best_effort_candidates_parse_checked; unparseable candidates downgraded to symbolic token representation"
+    }
+  }
+}

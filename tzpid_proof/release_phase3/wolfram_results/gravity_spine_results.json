@@ -1,0 +1,26 @@
+[
+	{
+		"id":"ID7214",
+		"check":"grav_newtonian_recovery",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_substitution":"0",
+		"notes":"The accumulated-force acceleration reduces to the Newtonian baseline when alpha -> 0."
+	},
+	{
+		"id":"ID7314",
+		"check":"grav_stress_vanishes",
+		"status":"pass",
+		"engine":"WolframScript",
+		"residual_after_substitution":"0",
+		"notes":"The effective stress tensor reduces to Newtonian stress when the accumulated correction vanishes."
+	},
+	{
+		"id":"ID1816",
+		"check":"grav_poisson_dim_balance",
+		"status":"pass",
+		"engine":"WolframScript",
+		"dimension_vector":"<|L -> -1, T -> -2|>",
+		"notes":"The Poisson closure is represented with matching acceleration-per-length dimensions on both sides."
+	}
+]

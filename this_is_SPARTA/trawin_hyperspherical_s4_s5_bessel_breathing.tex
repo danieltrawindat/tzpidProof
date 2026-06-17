@@ -1,0 +1,669 @@
+% !TEX program = pdflatex
+% ================================================================
+% Manuscript metadata
+% Title: Hyperspherical Standing-Wave Breathing Across S^3, S^4, and S^5
+% Author: Daniel Alexander Trawin
+% ORCID: 0009-0001-4630-3715
+% ORCID URL: https://orcid.org/0009-0001-4630-3715
+% DOI: 10.5281/zenodo.20723171
+% PDF Creator: Trawin, Daniel Alexander
+% Generated: 2026-06-16
+% Source anchor: TZPID_SPARTAN_DAWN_CMB_BAO_SNE_TEST(2).md, generated 2026-06-11
+% Project: Trawin Zero Point Identity Directory (TZPID)
+% Registry links: ID10867, ID10868, ID10871
+% ================================================================
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{array,booktabs,longtable}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{makecell}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+\hypersetup{
+  pdftitle={Hyperspherical Standing-Wave Breathing Across S3, S4, and S5},
+  pdfauthor={Daniel Alexander Trawin; ORCID 0009-0001-4630-3715},
+  pdfcreator={Trawin, Daniel Alexander},
+  pdfsubject={Higher-dimensional standing waves, Bessel projections, hyperspherical breathing, BAO, and metric expansion},
+  pdfkeywords={TZPID, hypersphere, S3, S4, S5, Bessel zero, baryon acoustic oscillations, sound horizon, inflation, metric expansion, dark energy, DOI 10.5281/zenodo.20723171, ORCID 0009-0001-4630-3715}
+}
+
+\title{\textbf{Hyperspherical Standing-Wave Breathing Across $S^3$, $S^4$, and $S^5$}\\
+\large A Bessel-Projected Mechanism for Superluminal Metric Enlargement Without Local Faster-Than-Light Signaling}
+
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.20723171}{10.5281/zenodo.20723171}\\
+\small Trawin Zero Point Identity Directory (TZPID)}
+
+\date{Generated June 16, 2026\\Draft manuscript source}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\dd}{\,\mathrm{d}}
+\newcommand{\Sn}{S^n}
+\newcommand{\Sthree}{S^3}
+\newcommand{\Sfour}{S^4}
+\newcommand{\Sfive}{S^5}
+\newcommand{\Rc}{R_{\!c}}
+\newcommand{\Hz}{H}
+\newcommand{\cs}{c_s}
+\newcommand{\OmK}{\Omega_K}
+\newcommand{\LCDM}{$\Lambda$CDM}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\diag}{\operatorname{diag}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This manuscript formalizes the proposal that a primordial standing acoustic pattern can be made physically larger by hyperspherical metric breathing, while avoiding the incorrect claim that a local sound signal propagates faster than light.  The central construction treats the observed three-dimensional cosmic shell as an $S^3$ projection nested inside $S^4$ and $S^5$ parent geometries.  On $S^n$, scalar standing modes obey a dimension-shifted frequency ladder, $\omega_{n,\ell}^2 = c_s^2\ell(\ell+n-1)/R_n^2$, while local radial projections carry Bessel order $\nu=n/2-1$.  Thus higher dimensions supply hidden curvature-frequency, while hyperspherical breathing enlarges the visible node spacing.  The observed faster-than-light enlargement condition is not a violation of local causality, but the standard metric condition $\dot r_{\rm node}=H_{\rm obs}r_{\rm node}>c$.  The result is a disciplined version of the hypothesis: sound can seed the ruler, light can carry the snapshot, and a breathing metric can inflate the projected standing-wave geometry.
+\end{abstract}
+
+\noindent\textbf{Keywords:} hyperspherical breathing; $S^3$; $S^4$; $S^5$; Bessel zeros; baryon acoustic oscillations; sound horizon; metric expansion; dynamic dark energy; TZPID.
+
+\vspace{0.75em}
+\noindent\textbf{Author metadata.}
+Daniel Alexander Trawin, ORCID \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}.  DOI: \href{https://doi.org/10.5281/zenodo.20723171}{10.5281/zenodo.20723171}.  PDF creator metadata: Trawin, Daniel Alexander.  This manuscript is prepared as a TZPID research-source document and extends the Spartan Dawn test note \citep{TrawinSpartanDawn2026}.
+
+\tableofcontents
+\newpage
+
+\section{Purpose and scope}
+
+The working question is whether a standing wave can be made larger by a jump in frequency, wavelength, and Bessel-zero structure in a way that resembles the faster-than-light growth associated with early-universe expansion.  The strict answer is twofold.
+
+First, a local wave in a medium does not transmit information instantaneously.  A sound wave in the early photon--baryon plasma has a sound speed $c_s$ below $c$, and no local signal outruns the local causal cone.  Second, a metric scale factor can enlarge proper distances between comoving points faster than $c$ without violating relativity.  The clean target is therefore not ``instantaneous Bessel propagation,'' but rather:
+
+\begin{equation}
+\boxed{\begin{minipage}{0.86\linewidth}\centering
+Bessel or hyperspherical standing nodes fixed in comoving coordinates, enlarged by metric breathing.
+\end{minipage}}
+\end{equation}
+
+This document develops that idea for $S^3$, $S^4$, and $S^5$, then gives the interaction map among them.  It also ties the construction to the empirical acoustic-ruler frame used in the Spartan Dawn test, where the sound horizon was computed near the Planck value and dynamic breathing pressure was favored over static curvature in a compressed BAO+CMB+SNe comparison \citep{TrawinSpartanDawn2026,Planck2018VI,DESIDR2BAO2025}.
+
+\section{Acoustic premise: sound before free-streaming light}
+
+In standard cosmology, the early universe contained a tightly coupled photon--baryon plasma.  Photons existed, but before recombination they were strongly coupled to charged matter and did not freely propagate as the cosmic microwave background.  Acoustic perturbations in this plasma left the baryon acoustic oscillation (BAO) standard ruler, later observed in the clustering of galaxies \citep{Dodelson2003,NASABAO2020,ESAEuclidBAO2020}.
+
+Thus the disciplined statement is not that sound existed before photons existed.  It is:
+
+\begin{equation}
+\boxed{\text{Acoustic pressure modes shaped the plasma before the oldest freely traveling light was released.}}
+\end{equation}
+
+The approximate sound speed of the photon--baryon fluid is
+\begin{equation}
+ c_s(a)=\frac{c}{\sqrt{3(1+R_b(a))}},
+ \qquad
+ R_b(a)=\frac{3\rho_b(a)}{4\rho_\gamma(a)}.
+\end{equation}
+When $R_b\ll 1$, this tends to
+\begin{equation}
+ c_s\approx \frac{c}{\sqrt{3}}.
+\end{equation}
+This is fast, but still subluminal.  Any faster-than-light behavior in the model must therefore be assigned to the metric scale factor or to projection, not to ordinary local acoustic propagation.
+
+\section{Metric breathing and the Hubble law}
+
+Let $R(t)$ be a hyperspherical scale radius.  The Hubble rate can be read as a fractional breathing rate:
+\begin{equation}
+ H(t)=\frac{\dot a(t)}{a(t)}=\frac{\dot R(t)}{R(t)}.
+ \label{eq:hubble-breathing}
+\end{equation}
+For a comoving angular coordinate $\chi$, the proper radial separation is
+\begin{equation}
+ D(t)=R(t)\chi.
+\end{equation}
+Differentiation gives
+\begin{equation}
+ \dot D(t)=\dot R(t)\chi=\frac{\dot R(t)}{R(t)}D(t)=H(t)D(t).
+\end{equation}
+Therefore recession faster than $c$ occurs whenever
+\begin{equation}
+ \boxed{D(t)>\frac{c}{H(t)}}.
+ \label{eq:hubble-radius-condition}
+\end{equation}
+This is not local faster-than-light motion through space.  It is metric growth of proper distance between comoving points, as in the standard FLRW description of cosmic expansion \citep{Mukhanov2005,Weinberg2008}.
+
+\section{\texorpdfstring{Geometry of $S^n$ breathing}{Geometry of Sn breathing}}
+
+\begin{definition}[Round $n$-sphere]
+The round $n$-sphere of radius $R$ is
+\begin{equation}
+ S^n(R)=\left\{x\in\mathbb{R}^{n+1}:\sum_{i=1}^{n+1}x_i^2=R^2\right\}.
+\end{equation}
+Its breathing spacetime ansatz is
+\begin{equation}
+ \dd s^2=-c^2\dd t^2+R_n(t)^2\dd\Omega_n^2.
+ \label{eq:sn-metric}
+\end{equation}
+\end{definition}
+
+The $n$-volume of $S^n(R)$ is
+\begin{equation}
+ \Vol(S^n(R))=\frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)}R^n.
+ \label{eq:sn-volume-general}
+\end{equation}
+Taking a logarithmic derivative yields the universal volume-breathing identity
+\begin{equation}
+ \boxed{\frac{\dot V_{S^n}}{V_{S^n}}=n\frac{\dot R_n}{R_n}=nH_n.}
+ \label{eq:volume-breathing}
+\end{equation}
+
+For the three cases of interest:
+\begin{longtable}{@{}lll@{}}
+\toprule
+Sphere & Volume & Logarithmic volume growth \\
+\midrule
+$S^3$ & $2\pi^2R^3$ & $\dot V/V=3H$ \\
+$S^4$ & $\dfrac{8\pi^2}{3}R^4$ & $\dot V/V=4H$ \\
+$S^5$ & $\pi^3R^5$ & $\dot V/V=5H$ \\
+\bottomrule
+\end{longtable}
+
+At the same fractional radius-breathing rate $H$, higher dimension amplifies volume production.  This does not by itself prove physical extra dimensions; it only states the exact geometric scaling that any $S^n$ breathing model must obey.
+
+\section{\texorpdfstring{Standing waves on $S^n$}{Standing waves on Sn}}
+
+Let $\Delta_{S^n}$ denote the Laplace--Beltrami operator on the unit $n$-sphere.  Hyperspherical harmonics obey
+\begin{equation}
+ \Delta_{S^n}Y_{\ell,\mu}^{(n)}=-\ell(\ell+n-1)Y_{\ell,\mu}^{(n)},
+ \qquad \ell=0,1,2,\dots,
+ \label{eq:hyperspherical-eigenvalues}
+\end{equation}
+where $\mu$ denotes the degeneracy labels \citep{Avery1989}.
+
+A scalar or acoustic perturbation on the breathing metric \eqref{eq:sn-metric} has the model equation
+\begin{equation}
+ \ddot\Psi+nH_n\dot\Psi-\frac{c_s^2}{R_n(t)^2}\Delta_{S^n}\Psi=0.
+ \label{eq:sn-wave}
+\end{equation}
+Expand
+\begin{equation}
+ \Psi(t,\Omega_n)=\sum_{\ell,\mu}q_{\ell\mu}(t)Y_{\ell,\mu}^{(n)}(\Omega_n).
+\end{equation}
+Then each mode obeys
+\begin{equation}
+ \boxed{
+ \ddot q_{\ell\mu}+nH_n\dot q_{\ell\mu}
+ +\frac{c_s^2\ell(\ell+n-1)}{R_n(t)^2}q_{\ell\mu}=0.
+ }
+ \label{eq:mode-equation}
+\end{equation}
+In the slowly varying or instantaneous-frequency approximation,
+\begin{equation}
+ \boxed{
+ \omega_{n,\ell}(t)=\frac{c_s}{R_n(t)}\sqrt{\ell(\ell+n-1)}.
+ }
+ \label{eq:frequency-ladder}
+\end{equation}
+
+For $n=3,4,5$, this becomes
+\begin{align}
+ \omega_{3,\ell}&=\frac{c_s}{R}\sqrt{\ell(\ell+2)},\\
+ \omega_{4,\ell}&=\frac{c_s}{R}\sqrt{\ell(\ell+3)},\\
+ \omega_{5,\ell}&=\frac{c_s}{R}\sqrt{\ell(\ell+4)}.
+\end{align}
+The squared-frequency steps obey
+\begin{equation}
+ \omega_{4,\ell}^2-\omega_{3,\ell}^2
+ =\omega_{5,\ell}^2-\omega_{4,\ell}^2
+ =\frac{c_s^2}{R^2}\ell.
+ \label{eq:squared-frequency-ladder}
+\end{equation}
+
+For the fundamental $\ell=1$,
+\begin{equation}
+ \omega_{3,1}=\frac{c_s}{R}\sqrt{3},\qquad
+ \omega_{4,1}=\frac{2c_s}{R},\qquad
+ \omega_{5,1}=\frac{c_s}{R}\sqrt{5}.
+\end{equation}
+Thus
+\begin{equation}
+ \frac{\omega_{4,1}}{\omega_{3,1}}=\sqrt{\frac43}\approx1.1547,
+ \quad
+ \frac{\omega_{5,1}}{\omega_{3,1}}=\sqrt{\frac53}\approx1.2910,
+ \quad
+ \frac{\omega_{5,1}}{\omega_{4,1}}=\sqrt{\frac54}\approx1.1180.
+\end{equation}
+
+\begin{proposition}[Hidden curvature-frequency]
+At fixed radius, sound speed, and mode number $\ell$, lifting a standing wave from $S^3$ to $S^4$ or $S^5$ increases the mode frequency through the eigenvalue factor $\ell(\ell+n-1)$.  Higher spherical dimension therefore contributes hidden geometric frequency.
+\end{proposition}
+
+\begin{proof}
+Equation \eqref{eq:frequency-ladder} gives $\omega_{n,\ell}^2=c_s^2\ell(\ell+n-1)/R^2$.  Increasing $n$ by one adds $c_s^2\ell/R^2$ to $\omega^2$ at fixed $R$ and $\ell$.
+\end{proof}
+
+\section{Bessel projection and radial zeros}
+
+A projected circular standing wave in a two-dimensional plane is naturally described by $J_0(kr)$.  Its first positive zero is
+\begin{equation}
+ j_{0,1}\approx2.4048255577,
+\end{equation}
+with notation and zero structure tabulated by the NIST Digital Library of Mathematical Functions \citep{DLMFBesselZeros}.
+
+In local flat $n$-dimensional radial approximation, the radial Helmholtz solution has the form
+\begin{equation}
+ u_n(r)\sim r^{1-n/2}J_{\nu}(kr),
+ \qquad
+ \nu=\frac n2-1.
+ \label{eq:radial-bessel-order}
+\end{equation}
+Thus the visible $J_0$ pattern may be treated as a low-dimensional shadow of higher-order radial Bessel structure.
+
+\begin{longtable}{@{}llll@{}}
+\toprule
+Geometry or projection & Effective dimension & Bessel order & First radial zero \\
+\midrule
+Planar shadow & $2$ & $J_0$ & $2.4048$ \\
+$S^3$ local radial parent & $3$ & $J_{1/2}$ & $\pi\approx3.1416$ \\
+$S^4$ local radial parent & $4$ & $J_1$ & $3.8317$ \\
+$S^5$ local radial parent & $5$ & $J_{3/2}$ & $4.4934$ \\
+\bottomrule
+\end{longtable}
+
+The $S^3$ entry follows from $J_{1/2}(x)\propto \sin x/\sqrt{x}$; the $S^5$ entry follows from the first nonzero root of the associated spherical Bessel structure, equivalently the first positive solution of $\tan x=x$ for $J_{3/2}$-type radial behavior \citep{DLMFSphericalBesselZeros}.
+
+\begin{proposition}[Outward node shift under dimensional lift]
+Under the local radial approximation \eqref{eq:radial-bessel-order}, the first radial node shifts outward as the parent dimension rises from a $J_0$ planar shadow through $S^3$, $S^4$, and $S^5$.
+\end{proposition}
+
+This supports the interpretive move: a visible $J_0$ ring can be the projected trace of a deeper hyperspherical radial mode.  The parent geometry has a different Bessel order; the observed plane receives only its shadow.
+
+\section{\texorpdfstring{Nested $S^5\rightarrow S^4\rightarrow S^3$ interaction}{Nested S5 to S4 to S3 interaction}}
+
+The key interaction mechanism is foliation.  A four-sphere can be foliated by three-sphere slices:
+\begin{equation}
+ \dd\Omega_4^2=\dd\alpha^2+\sin^2\alpha\,\dd\Omega_3^2.
+ \label{eq:s4-foliation}
+\end{equation}
+The visible $S^3$ radius inside $S^4$ is therefore
+\begin{equation}
+ r_3(t)=R_4(t)\sin\alpha(t).
+ \label{eq:s3-in-s4}
+\end{equation}
+Taking a logarithmic derivative gives
+\begin{equation}
+ \boxed{
+ H_{3,\mathrm{obs}}=\frac{\dot r_3}{r_3}=H_4+\dot\alpha\cot\alpha.
+ }
+ \label{eq:s4-observed-h}
+\end{equation}
+If $\alpha$ is fixed, the observed $S^3$ breathing equals parent $S^4$ breathing.  If $\alpha$ drifts or twists, the observed $S^3$ expansion includes the extra projection term $\dot\alpha\cot\alpha$.
+
+Likewise, a five-sphere can be foliated by four-sphere slices:
+\begin{equation}
+ \dd\Omega_5^2=\dd\beta^2+\sin^2\beta\,\dd\Omega_4^2.
+ \label{eq:s5-foliation}
+\end{equation}
+Substituting \eqref{eq:s4-foliation} gives
+\begin{equation}
+ \dd\Omega_5^2
+ =\dd\beta^2+\sin^2\beta
+ \left[\dd\alpha^2+\sin^2\alpha\,\dd\Omega_3^2\right].
+\end{equation}
+The visible $S^3$ radius nested inside $S^5$ is
+\begin{equation}
+ r_3(t)=R_5(t)\sin\beta(t)\sin\alpha(t).
+ \label{eq:s3-in-s5}
+\end{equation}
+Therefore
+\begin{equation}
+ \boxed{
+ H_{3,\mathrm{obs}}=H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha.
+ }
+ \label{eq:s5-observed-h}
+\end{equation}
+
+\begin{proposition}[Projected breathing law]
+For a visible $S^3$ slice nested inside a breathing $S^5$, the observed three-dimensional Hubble-like breathing rate decomposes into parent breathing plus two angular drift terms:
+\begin{equation}
+H_{3,\mathrm{obs}}=H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Take the logarithmic derivative of \eqref{eq:s3-in-s5}.  Since
+\begin{equation}
+ \ln r_3=\ln R_5+\ln(\sin\beta)+\ln(\sin\alpha),
+\end{equation}
+one obtains
+\begin{equation}
+ \frac{\dot r_3}{r_3}=\frac{\dot R_5}{R_5}+\dot\beta\cot\beta+\dot\alpha\cot\alpha.
+\end{equation}
+\end{proof}
+
+This is the clean mathematical form of the interaction:
+\begin{equation}
+\boxed{\text{visible breathing} = \text{parent }S^5\text{ breathing} + S^5\rightarrow S^4\text{ drift} + S^4\rightarrow S^3\text{ drift}.}
+\end{equation}
+
+\section{Mode decomposition across the nested spheres}
+
+The $S^5$ Laplacian splits according to the foliation:
+\begin{equation}
+ \Delta_{S^5}
+ =\partial_\beta^2+4\cot\beta\,\partial_\beta
+ +\frac{1}{\sin^2\beta}\Delta_{S^4}.
+ \label{eq:s5-laplacian-split}
+\end{equation}
+Similarly,
+\begin{equation}
+ \Delta_{S^4}
+ =\partial_\alpha^2+3\cot\alpha\,\partial_\alpha
+ +\frac{1}{\sin^2\alpha}\Delta_{S^3}.
+ \label{eq:s4-laplacian-split}
+\end{equation}
+A separated $S^5$ mode can be organized schematically as
+\begin{equation}
+ \Psi_{L,M,m}(t,\beta,\alpha,\Omega_3)
+ =T_L(t)B_{L,M}(\beta)A_{M,m}(\alpha)Y_m^{S^3}(\Omega_3),
+ \label{eq:s5-mode-decomposition}
+\end{equation}
+with mode labels ordered by
+\begin{equation}
+ L\ge M\ge m.
+\end{equation}
+In this language,
+\begin{equation}
+ S^5\text{ parent mode }L
+ \rightarrow
+ S^4\text{ child mode }M
+ \rightarrow
+ S^3\text{ visible mode }m.
+\end{equation}
+The parent frequency scale is
+\begin{equation}
+ \omega_{5,L}=\frac{c_s}{R_5}\sqrt{L(L+4)},
+\end{equation}
+while the visible spatial pattern is indexed by the $S^3$ child mode,
+\begin{equation}
+ \omega_{3,m}=\frac{c_s}{r_3}\sqrt{m(m+2)}.
+\end{equation}
+A lower-dimensional observer may therefore measure a large visible $S^3$ wavelength while the temporal variation is influenced by hidden parent index $L$.
+
+\section{Hidden wave number and apparent phase speed}
+
+In a local flat approximation with two hidden angular directions, the total wave number satisfies
+\begin{equation}
+ k_{\rm full}^2=k_3^2+k_\alpha^2+k_\beta^2.
+\end{equation}
+The full dispersion relation is
+\begin{equation}
+ \omega^2=c_s^2\left(k_3^2+k_\alpha^2+k_\beta^2\right).
+ \label{eq:hidden-dispersion}
+\end{equation}
+The visible three-dimensional wavelength is
+\begin{equation}
+ \lambda_3=\frac{2\pi}{k_3}.
+\end{equation}
+A three-dimensional observer who incorrectly divides the full frequency by the visible wave number infers
+\begin{equation}
+ \boxed{
+ v_{\rm app}=\frac{\omega}{k_3}
+ =c_s\sqrt{1+\frac{k_\alpha^2+k_\beta^2}{k_3^2}}.
+ }
+ \label{eq:apparent-phase-speed}
+\end{equation}
+Thus $v_{\rm app}>c_s$ can occur as a projection effect.  This is not a local superluminal signal in the full space.  It is a lower-dimensional observer confusing full-dimensional timing with lower-dimensional wavelength.
+
+\begin{remark}[Wheat from chaff]
+The useful statement is that hidden-dimensional wave number can make a projected wave look like a large wavelength paired with a high frequency.  The unsafe statement is that the wave transmits information instantaneously.  The model should keep the first and reject the second.
+\end{remark}
+
+\section{Bessel nodes under breathing expansion}
+
+For a projected Bessel-like node with comoving wave number $k$, a node location can be written
+\begin{equation}
+ k\chi_j=x_j,
+\end{equation}
+where $x_j$ is the relevant zero, such as $j_{0,1}$ for a planar $J_0$ shadow or a higher-order zero for a hyperspherical parent.  The physical node radius is
+\begin{equation}
+ r_j(t)=a(t)\chi_j=a(t)\frac{x_j}{k}.
+\end{equation}
+Differentiation gives
+\begin{equation}
+ \dot r_j(t)=H(t)r_j(t).
+\end{equation}
+Therefore node enlargement is faster than light when
+\begin{equation}
+ \boxed{H(t)r_j(t)>c.}
+ \label{eq:node-superluminal-condition}
+\end{equation}
+For the nested $S^5\rightarrow S^3$ case, substitute \eqref{eq:s5-observed-h}:
+\begin{equation}
+ \boxed{
+ \left(H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha\right)r_j(t)>c.
+ }
+ \label{eq:nested-node-superluminal}
+\end{equation}
+This is the higher-dimensional version of superluminal inflationary enlargement.  The node does not fly through the universe faster than light.  Rather, the metric/projection scale that maps comoving nodes to physical radius grows fast enough that the proper separation exceeds $c$ per unit cosmic time.
+
+\section{Frequency jump versus wavelength stretch}
+
+For an ordinary wave in a fixed medium,
+\begin{equation}
+ v=f\lambda.
+\end{equation}
+At fixed wave speed, increasing wavelength lowers frequency.  In an expanding universe, physical wavelength scales with the scale factor:
+\begin{equation}
+ \lambda_{\rm phys}(t)\propto a(t),
+ \qquad
+ f_{\rm phys}(t)\propto a(t)^{-1}.
+\end{equation}
+So an embedded local observer sees redshift, not a local frequency increase.
+
+The strengthened higher-dimensional version is different:
+\begin{equation}
+\boxed{\parbox{0.86\textwidth}{\centering higher dimension raises hidden geometric frequency, while breathing expansion stretches visible node spacing.}}
+\end{equation}
+That is, $S^4$ and $S^5$ contribute to the frequency ladder through $\ell(\ell+n-1)$, while $R(t)$ or $a(t)$ enlarges the projected standing geometry.
+
+If the scale factor grows exponentially,
+\begin{equation}
+ a(t)=a_i\exp\left(\int_{t_i}^{t}H(t')\dd t'\right),
+\end{equation}
+then node spacing grows as
+\begin{equation}
+ \lambda_f=\lambda_i\exp(N_e),
+ \qquad
+ N_e=\int_{t_i}^{t_f}H(t)\dd t.
+\end{equation}
+This is the legitimate form of ``standing wave made larger.''  It is metric enlargement, not instantaneous propagation.
+
+\section{Connection to the Spartan Dawn empirical anchor}
+
+The Spartan Dawn note computed the acoustic sound horizon from the photon--baryon sound speed and compared the result to Planck-level values.  It reported
+\begin{equation}
+ r_s(z_*)\approx144.5\,\mathrm{Mpc},
+ \qquad
+ r_s(\mathrm{drag})\approx147.1\,\mathrm{Mpc},
+\end{equation}
+matching the usual CMB/BAO standard-ruler scale at the sub-percent level in the compressed calculation \citep{TrawinSpartanDawn2026,Planck2018VI}.
+
+The same note tested four model classes against compressed CMB acoustic scale, DESI DR2 BAO, and Pantheon+-style supernova shape information:
+\begin{longtable}{@{}p{0.08\linewidth}p{0.18\linewidth}p{0.19\linewidth}p{0.22\linewidth}p{0.22\linewidth}@{}}
+\toprule
+Model & Interpretation & Parameters & Relative result & Verdict \\
+\midrule
+A & flat \LCDM & $H_0,\Omega_m$ & benchmark & survives \\
+B & closed \LCDM & adds $\Omega_K$ & curvature pays little & static closure not supported \\
+C & flat breathing $w_0w_a$ & dynamic dark energy & improved AIC & breathing favored \\
+D & closed breathing & $\Omega_K+w_0w_a$ & best raw $\chi^2$ & curvature permitted, not forced \\
+\bottomrule
+\end{longtable}
+
+This aligns with the DESI DR2 report that BAO combined with CMB and supernova information gives a preference for time-evolving dark energy in the $w_0w_a$ parameterization, with significance depending on the supernova sample \citep{DESIDR2BAO2025}.  The cautious conclusion is that the breathing term is empirically interesting, while closed curvature remains tightly constrained and not required.
+
+\section{TZPID interpretation}
+
+The derivation can be registered as a higher-dimensional extension of the following TZPID concepts:
+
+\begin{small}
+\begin{longtable}{@{}p{0.15\textwidth}p{0.31\textwidth}p{0.47\textwidth}@{}}
+\toprule
+Registry ID & Role in this manuscript & Mathematical expression \\
+\midrule
+ID10867 & Hubble-as-breathing identity & $H=\dot R/R$, $\dot V/V=3H$ \\
+ID10868 & Vacuum/dark-pressure reading & $\Lambda=3\Omega_\Lambda H_0^2/c^2$ as present pressure value \\
+ID10871 & Closed breathing-enclosure Friedmann model & $H^2(a)=H_0^2[\Omega_r a^{-4}+\Omega_m a^{-3}+\Omega_K a^{-2}+\Omega_XF(a)]$ \\
+New extension & Nested hyperspherical wave projection & $H_{3,\rm obs}=H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha$ \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+For dynamic pressure,
+\begin{equation}
+ F(a)=\exp\left[3\int_a^1\frac{1+w(a')}{a'}\dd a'\right],
+ \qquad
+ w(a)=w_0+w_a(1-a).
+\end{equation}
+This is the phenomenological breathing-pressure term.  A stronger theory would derive $F(a)$ from the microphysics of the enclosure rather than fit it.
+
+\section{Testable predictions and falsification channels}
+
+The proposed construction is only useful if it makes contact with observations.  The main test channels are:
+
+\begin{enumerate}[leftmargin=2em]
+ \item \textbf{Redshift drift.} Dynamic breathing predicts a drift
+ \begin{equation}
+  \dot z=(1+z)H_0-H(z),
+ \end{equation}
+ which differs from constant-$\Lambda$ evolution.
+
+ \item \textbf{High-redshift BAO curvature fingerprint.} A closed term produces a $\sin\chi$ distance mapping,
+ \begin{equation}
+  D_M=R_c\sin\chi,
+ \end{equation}
+ while a flat geometry uses $D_M=R_c\chi$ in the zero-curvature limit.  Future high-redshift BAO measurements can reduce the allowed curvature window.
+
+ \item \textbf{Mode-ladder ratios.} If an $S^5\rightarrow S^3$ projection leaves a detectable signature, frequency ratios associated with
+ \begin{equation}
+  \sqrt{\ell(\ell+4)}:\sqrt{\ell(\ell+3)}:\sqrt{\ell(\ell+2)}
+ \end{equation}
+ may appear as structured residuals rather than arbitrary noise.
+
+ \item \textbf{Projection-driven apparent phase behavior.} Equation \eqref{eq:apparent-phase-speed} predicts that apparent projected phase speed should vary with hidden wave-number content, not with local signal transport.
+\end{enumerate}
+
+\section{Conclusion}
+
+The mathematical result is clear.  $S^4$ and $S^5$ do not merely make an $S^3$ standing wave bigger.  They add hidden curvature-frequency through the hyperspherical eigenvalue ladder.  The visible wavelength becomes larger only when the metric or projected radius breathes.  The correct model is therefore:
+
+\begin{equation}
+\boxed{\begin{minipage}{0.88\linewidth}\centering
+higher-dimensional frequency supplies hidden timing; lower-dimensional projection supplies visible geometry; breathing supplies apparent superluminal enlargement.
+\end{minipage}}
+\end{equation}
+
+The chaff is literal instantaneous signal propagation.  The wheat is metric/projection enlargement of standing nodes:
+\begin{equation}
+\boxed{
+\dot r_{\rm node}=H_{3,\rm obs}r_{\rm node},
+\qquad
+H_{3,\rm obs}=H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha.
+}
+\end{equation}
+This keeps the inspiration of sound-before-light, Bessel-zero geometry, and faster-than-light cosmic expansion, but places each piece where the math allows it to live.
+
+\appendix
+
+\section{Compact equation registry}
+
+\begin{align}
+ \Vol(S^n(R))&=\frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)}R^n,\\
+ \frac{\dot V_{S^n}}{V_{S^n}}&=nH_n,\\
+ \Delta_{S^n}Y_{\ell,\mu}^{(n)}&=-\ell(\ell+n-1)Y_{\ell,\mu}^{(n)},\\
+ \omega_{n,\ell}&=\frac{c_s}{R_n}\sqrt{\ell(\ell+n-1)},\\
+ u_n(r)&\sim r^{1-n/2}J_{n/2-1}(kr),\\
+ r_3&=R_4\sin\alpha,\\
+ r_3&=R_5\sin\beta\sin\alpha,\\
+ H_{3,\mathrm{obs}}&=H_5+\dot\beta\cot\beta+\dot\alpha\cot\alpha,\\
+ \omega^2&=c_s^2(k_3^2+k_\alpha^2+k_\beta^2),\\
+ v_{\rm app}&=c_s\sqrt{1+\frac{k_\alpha^2+k_\beta^2}{k_3^2}},\\
+ \dot r_{\rm node}&=H_{3,\mathrm{obs}}r_{\rm node}.
+\end{align}
+
+\section{Caveat statement for peer review}
+
+This manuscript should be read as a formal hypothesis-development document, not as a completed observational proof.  The higher-dimensional construction is mathematical.  The empirical support is indirect: BAO confirms an acoustic standard ruler; FLRW cosmology permits metric superluminal recession; DESI DR2 motivates renewed attention to dynamical dark energy; and the uploaded Spartan Dawn note uses compressed statistics to compare static curvature against dynamic breathing.  A full validation would require a Boltzmann-code likelihood analysis, explicit perturbation evolution, and a derived microphysical law for $F(a)$.
+
+
+\begin{thebibliography}{99}
+
+\bibitem[Trawin(2026)]{TrawinSpartanDawn2026}
+Daniel Alexander Trawin.
+\newblock \emph{The Spartan Dawn Test: Breathing Hypersphere vs the Big Bang, against real CMB + BAO + SNe}.
+\newblock Unpublished TZPID research note, generated 2026-06-11. ORCID 0009-0001-4630-3715, 2026.
+
+\bibitem[DESI Collaboration(2025)]{DESIDR2BAO2025}
+DESI Collaboration, M. Abdul-Karim, and others.
+\newblock DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints.
+\newblock \emph{arXiv e-prints}, arXiv:2503.14738, 2025.
+\newblock \url{https://arxiv.org/abs/2503.14738}.
+
+\bibitem[Planck Collaboration(2020)]{Planck2018VI}
+Planck Collaboration, N. Aghanim, and others.
+\newblock Planck 2018 results. VI. Cosmological parameters.
+\newblock \emph{Astronomy and Astrophysics}, 641:A6, 2020.
+\newblock doi:10.1051/0004-6361/201833910; arXiv:1807.06209.
+
+\bibitem[NASA GSFC(2020)]{NASABAO2020}
+NASA Goddard Space Flight Center.
+\newblock Baryon Acoustic Oscillations.
+\newblock NASA Scientific Visualization Studio, 2020.
+\newblock \url{https://svs.gsfc.nasa.gov/13768}.
+
+\bibitem[ESA(2020)]{ESAEuclidBAO2020}
+European Space Agency.
+\newblock What are baryonic acoustic oscillations?
+\newblock ESA Euclid science explainer, 2020.
+\newblock \url{https://sci.esa.int/web/euclid/-/what-are-baryonic-acoustic-oscillations-}.
+
+\bibitem[NIST DLMF(2026a)]{DLMFBesselZeros}
+NIST Digital Library of Mathematical Functions.
+\newblock DLMF Section 10.21: Zeros of Bessel and Hankel Functions.
+\newblock Accessed 2026-06-16.
+\newblock \url{https://dlmf.nist.gov/10.21}.
+
+\bibitem[NIST DLMF(2026b)]{DLMFSphericalBesselZeros}
+NIST Digital Library of Mathematical Functions.
+\newblock DLMF Section 10.58: Zeros of Spherical Bessel Functions.
+\newblock Accessed 2026-06-16.
+\newblock \url{https://dlmf.nist.gov/10.58}.
+
+\bibitem[Avery(1989)]{Avery1989}
+James Emil Avery.
+\newblock \emph{Hyperspherical Harmonics: Applications in Quantum Theory}.
+\newblock Kluwer Academic Publishers, 1989.
+
+\bibitem[Mukhanov(2005)]{Mukhanov2005}
+Viatcheslav Mukhanov.
+\newblock \emph{Physical Foundations of Cosmology}.
+\newblock Cambridge University Press, 2005.
+
+\bibitem[Weinberg(2008)]{Weinberg2008}
+Steven Weinberg.
+\newblock \emph{Cosmology}.
+\newblock Oxford University Press, 2008.
+
+\bibitem[Dodelson(2003)]{Dodelson2003}
+Scott Dodelson.
+\newblock \emph{Modern Cosmology}.
+\newblock Academic Press, 2003.
+
+\end{thebibliography}
+
+\end{document}

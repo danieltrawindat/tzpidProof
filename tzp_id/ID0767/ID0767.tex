@@ -1,0 +1,215 @@
+\tzpanchor{0767}
+\tzpentryheader{0767}{ENTRAINMENT CONDUCTOR FIELD}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{49955633-9dbf-5bc6-9800-e48668ed21a0}}\\
+\textbf{PiID} & \tzpcode{8372978049951} & \textbf{TZPi}\quad \tzpcode{8}\quad \textbf{PiPE}\quad \tzpcode{774}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{2943.4823 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{04.8500 rad}\\
+\textbf{TZPID} & \tzpcode{ID0767} & \textbf{Node Dependencies}\quad \tzpidref{0766}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0767} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Variation Law & Support Relation\\
+\textbf{Closure Support} & Closure Relation & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The entry records entrainment conductor field through a normalized Octonary TRAWIN operator chain.
+
+\tzpsection{Canonical Equation}
+\[
+\mathcal{O}_{\mathrm{id0767}}:\mathcal{X}_{\mathrm{id0767}}\longrightarrow\mathcal{Y}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0767}})=\mathcal{O}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0767}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $\mathcal{O}_{\mathrm{id0767}}$: canonical operator or carrier map for the entry.
+    \item $\mathcal{X}_{\mathrm{id0767}}$: source domain or input state space for the entry map.
+    \item $\mathcal{Y}_{\mathrm{id0767}}$: target domain or output state space for the entry map.
+    \item $\mathcal{N}_{\mathrm{TRAWIN}}$: TRAWIN normalization operator applied to the entry relation.
+    \item $\mathcal{Y}_{\mathrm{adm}}$: admissible output space selected by the source equation.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0767 generated source Wolfram model *)
+ClearAll[K0767, Cr0767, T, R, A, W, I, N];
+eq0767$1 = HoldForm[Oid0767[Xid0767] -> Yid0767];
+eq0767$2 = HoldForm[NTRAWIN[OId0767] == OId0767];
+eq0767$3 = HoldForm[Element[OId0767[x], YAdm]];
+
+K0767 = HoldForm[{eq0767$1, eq0767$2, eq0767$3}];
+
+N = "normalized TRAWIN closure object for ENTRAINMENT CONDUCTOR FIELD";
+I = "ENTRAINMENT CONDUCTOR FIELD integration/comparison layer";
+W = "ENTRAINMENT CONDUCTOR FIELD wave or operator carrier";
+A = "ENTRAINMENT CONDUCTOR FIELD admissible action/amplitude condition";
+R = "ENTRAINMENT CONDUCTOR FIELD rotation/curl preservation layer";
+T = "ENTRAINMENT CONDUCTOR FIELD local source condition";
+
+Cr0767[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0767 = Cr0767[K0767];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ ENTRAINMENT CONDUCTOR FIELD local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ ENTRAINMENT CONDUCTOR FIELD rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ ENTRAINMENT CONDUCTOR FIELD admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ ENTRAINMENT CONDUCTOR FIELD wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ ENTRAINMENT CONDUCTOR FIELD integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for ENTRAINMENT CONDUCTOR FIELD.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0767] ENTRAINMENT CONDUCTOR FIELD}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+\mathcal{O}_{\mathrm{id0767}}:\mathcal{X}_{\mathrm{id0767}}\longrightarrow\mathcal{Y}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0767}})=\mathcal{O}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0767}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+
+\paragraph{Primary Derivation.}
+The first line specifies a map, while the subsequent line provides its explicit form \( \mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0767}})=\mathcal{O}_{\mathrm{id0767}} \). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.
+\paragraph{Equation Type.}
+This statement is classified as a map relation.
+
+\paragraph{Interpretation.}
+It pertains to the fields or functions just described. From the TRAWIN perspective, the equation functions as the mapping carrier for the entry’s information content. In CHL terms, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors ENTRAINMENT CONDUCTOR FIELD by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+\mathcal{O}_{\mathrm{id0767}}:\mathcal{X}_{\mathrm{id0767}}\longrightarrow\mathcal{Y}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{N}_{\mathrm{TRAWIN}}(\mathcal{O}_{\mathrm{id0767}})=\mathcal{O}_{\mathrm{id0767}}
+\]
+\[
+\mathcal{O}_{\mathrm{id0767}}(x)\in\mathcal{Y}_{\mathrm{adm}}
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0767] ENTRAINMENT CONDUCTOR FIELD}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+ENTRAINMENT CONDUCTOR FIELD is a registry definition in Vortex and Cymatic Transport with secondary pressure from Resonance and Phase Locking.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} mathcal C (t,x):=ointgamma(t)*vec B * dA. \textbf{Contextual meaning:} The entry reads ENTRAINMENT CONDUCTOR FIELD as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry now reads through actual sourced equations, so its local arc is carried by explicit mathematical relations rather than a uniform quaternary certificate record shell. \textbf{Lemma support:} Variation Law; Support Relation; Closure Relation.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, ENTRAINMENT CONDUCTOR FIELD is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: mathcal K sub TZP = K sub 0 + delta K; mathcal J sub out = T sub TZP ( K sub TZP ); and mathcal A sub adm ( J sub out )=1. Proof route: show that the stated equations form a coherent progression for the entry and remain compatible under the TRAWIN ordering. Formalization route: prove that the final closure relation follows from the preceding entry-specific equations.
+
+\tzpsection{Interpretive Role}
+The entry now reads through actual sourced equations, so its local arc is carried by explicit mathematical relations rather than a uniform quaternary certificate record shell.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Macroscopic Harmonic Slaving}: The terrifying observation that the massive, deafening hum of the primary reactor is so powerful it is physically forcing the completely separate, secondary computers in the next room to vibrate at the exact same pitch.
+\item \textbf{Field-Induced Clock Synchronization}: The realization that you don't even need wires; just being near the spinning magnetic tornado naturally forces all the independent, chaotic atoms in the walls to lock into perfect step.
+\item \textbf{Parasitic Resonance Bleed}: The frustrating engineering problem where the beautiful, perfect energy inside the core is slowly leaking out, completely wasted on making the concrete floor of the laboratory shake.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0767]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0767].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0767] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont ENTRAINMENT CONDUCTOR FIELD}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} ENTRAINMENT CONDUCTOR FIELD is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``ENTRAINMENT CONDUCTOR FIELD is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0767].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

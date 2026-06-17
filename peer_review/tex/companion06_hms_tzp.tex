@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={TZP-HMS: Operator Calibration Against DESI-Aligned Clustering},pdfsubject={TZPID Companion Spine Series, Paper C6},pdfkeywords={TZPID, hms tzp}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{TZP-HMS: Operator Calibration Against DESI-Aligned Clustering\\[0.6em]
+\large TZPID Companion Spine Series, Paper C6 of XXVII\\
+\normalsize Hyperspherical diagnostics and the two-point correlation slope}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion reports the program's confrontation with survey statistics: a unified TZP-HMS treatment that calibrates registry operators against DESI-aligned clustering and reproduces a two-point correlation slope of gamma = 1.871, against a DESI comparison baseline near 1.874.
+The source manuscript's stated thesis: ``We present a unified TZP-HMS manuscript combining operator calibration against DESIaligned clustering statistics and hyperspherical (S 3 ) geometric diagnostics. The calibrated baseline reproduces a two-point correlation slope of gamma = 1.871346, close to a DESI comparison baseline (gamma \textasciitilde{}= 1.874).'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID0429, ID9145, ID9146, ID0421, ID3323, ID6366, ID3345) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper is the program's first quantitative contact with modern survey cosmology beyond the BAO scale.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Paper I of the core series staked the program's most defensible claim on the BAO: the enclosure's Bessel ladder evaluated at the sound horizon. This companion extends the confrontation from one scale to the clustering continuum. The TZP-HMS treatment combines two instruments: an operator calibration layer, in which registry operators are tuned against DESI-aligned two-point statistics, and a hyperspherical diagnostic layer, in which $S^3$ geometric signatures are tested against the same data.
+
+The headline number is the two-point correlation slope. The calibrated TZP-HMS baseline reproduces $\gamma = 1.871346$, against a DESI comparison value of $\gamma \approx 1.874$: agreement at the third decimal place, achieved not by fitting the slope directly but by calibrating operators with independent normalization and reading the slope out. Within the program's epistemology this is the correct shape for evidence: a number the framework did not put in by hand, emerging within measurement distance of the survey value.
+
+The spine below anchors the calibration chain to the registry. Its refinement direction is statistical maturity: error propagation through the operator calibration, covariance against survey systematics, and extension from the slope to the full correlation function shape---each a typed obligation away from the present concept-anchored backbone.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID0429} \to \text{ID9145} \to \text{ID9146} \to \text{ID0421} \\
+\to \text{ID3323} \to \text{ID6366} \to \text{ID3345}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID0429: Berry Phase Tomography \textbackslash{}\& Atemporal Readout (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle \textbackslash{}mathcal\{O\}\_\{\textbackslash{}text\{atemporal\}\} = \textbackslash{}cdots \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 429 defines the protocol for extracting data from the Atemporal Channel, where temporal ordering collapses onto null surfaces.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Aggregate Relation is localized within the manifold and metric dynamics arc of the directory. R: Support Relation preserves the operative relation that quantum rectification \& ratchet logic requires. A: Aggregate Relation fixes the admissible closure condi- tion for the entry. W: QUANTUM RECTIFICATION \& RATCHET LOGIC is rendered as a reusable operator-level statement. I: The informational content of quantum rectification \& ratchet logic is retained rather than flattened. N: QUANTUM RECTIFICATION \& RATCHET LOGIC closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID0429\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID9145: Relation: .|Sigma\_j=1\textasciicircum{}N (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{.|Sigma\_\{j=1\}\textasciicircum{}\{N\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: .|Sigma\_j=1\textasciicircum{}N --- .|Sigma\_j=1\textasciicircum{}N\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: .|Sigma\_j=1\textasciicircum{}N is an algebraic definition, written .|Sigma\_j=1\textasciicircum{}N. It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from j, N. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID9145\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID9146: Relation: theta\_j(t))|. (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{theta\_j(t))|.}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: theta\_j(t))|. --- theta\_j(t))|.\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: theta\_j(t))|. is a symbolic expression, written theta\_j(t))|.. It introduces a symbol or relation used elsewhere in the framework. It is built from j. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID9146\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID0421: Ss304L Torus Core Geometry \textbackslash{}\& Stress-Loading (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle \textbackslash{}sigma\_\{ij\}=\textbackslash{}frac\{E\}\{1+\textbackslash{}nu\}\textbackslash{}left(\textbackslash{}epsilo n\_\{ij\}+\textbackslash{}frac\{\textbackslash{}nu\}\{1-2\textbackslash{}nu\}\textbackslash{}delta\_\{ij\}\textbackslash{}eps ilon\_\{kk\}\textbackslash{}right) \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 421 establishes the mechanical baseline for the primary containment vessel.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Canonical Definition is localized within the manifold and metric dynamics arc of the directory. R: Support Relation preserves the operative relation that high-mu ferrite core composition \& saturation limits re- quires. A: Frequency Relation fixes the admissible closure condi- tion for the entry. W: HIGH-MU FERRITE CORE COMPOSITION \& SAT- URATION LIMITS is rendered as a reusable operator-level statement. I: The informational content of high-mu ferrite core com- position \& saturation limits is retained rather than flattened. N: HIGH-MU FERRITE CORE COMPOSITION \& SATURATION LIMITS closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID0421\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID3323: Phase Angle Relation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{align\} \textbackslash{}theta\_i \&= \textbackslash{}frac\{2 \textbackslash{}pi i\}\{ \textbackslash{}varphi\} \textbackslash{}\textbackslash{} \textbackslash{}phi\_i \&= \textbackslash{}arccos \textbackslash{}left(1 - \textbackslash{}frac\{2(i - 1/2)\}\{n\} \textbackslash{}right) \textbackslash{}\textbackslash{} \textbackslash{}mathbf\{p\}\_i \&= ( \textbackslash{}sin \textbackslash{}phi\_i \textbackslash{}cos \textbackslash{}theta\_i, \textbackslash{}sin \textbackslash{}phi\_i \textbackslash{}sin \textbackslash{}theta\_i, \textbackslash{}cos \textbackslash{}phi\_i) \textbackslash{}end\{align\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Phase Angle Relation --- theta\_i \&= (2 pi i)/( phi) phi\_i \&= arccos (1 - (2(i - 1/2))/(n) ) p\_i \&= ( sin phi\_i cos theta\_i, sin phi\_i sin theta\_i, cos phi\_i)\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineAI\_Workspacesanalysis\_all\_edit\_OpenAIall\_edit\_equation\_arc\_compact.csv` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID3323\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID6366: Technical Summary (What's in the File) (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{r\textasciicircum{}\{|\textbackslash{}ell|\} e\textasciicircum{}\{i\textbackslash{}ell\textbackslash{}theta\} e\textasciicircum{}\{-r\textasciicircum{}2/2\textbackslash{}sigma\textasciicircum{}2\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Technical Summary (What's in the File) --- r\textasciicircum{}|l| e\textasciicircum{}iltheta e\textasciicircum{}-r\textasciicircum{}2/2sigma\textasciicircum{}2\par\medskip
+\noindent\textit{Encyclopedia reading.} Technical Summary (What's in the File) is an exponential / gaussian profile, written r\textasciicircum{}|l| e\textasciicircum{}iltheta e\textasciicircum{}-r\textasciicircum{}2/2sigma\textasciicircum{}2. It describes an exponential or Gaussian profile characterizing localized or decaying behaviour. It is built from ell, theta, sigma, r. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID6366\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID3345: Angular Velocity Laplacian Operator (Core\_Axiom)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{equation\} t < \textbackslash{}frac\{1\}\{ \textbackslash{}Gamma\_\{ \textbackslash{}text\{dec\}\}( \textbackslash{}Omega)\} \textbackslash{}ln \textbackslash{}left( \textbackslash{}frac\{ \textbackslash{}sqrt\{2\}| \textbackslash{}cos[ \textbackslash{}Delta \textbackslash{}Phi( \textbackslash{}Omega, t)]|\}\{1\} \textbackslash{}right) \textbackslash{}end\{equation\}}}\par\medskip
+\noindent\textit{Dictionary definition.} Angular Velocity Laplacian Operator --- t < frac1 Gamma\_ dec( Omega) ln ( frac sqrt(2)| cos[ Delta Phi( Omega, t)]|1 )\par\medskip
+\noindent\textit{Encyclopedia reading.} The entry preserves the equation exactly as extracted from `00\_EngineLemma-MakerPrismQuantumTopoHoloNavSystem\_formatted2.tex` for registry alignment and later derivation.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{hms\_tzp\_ID3345\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Axiom this node is where the spine commits: it asserts without deriving, and everything downstream inherits the commitment. The demarcation section flags it accordingly, and the refinement pass should seek either an upstream derivation or an explicit empirical anchor.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the hms tzp spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID0429 & Core\_Definition & \texttt{hms\_tzp\_ID0429\_identity} \\
+ID9145 & Core\_Definition & \texttt{hms\_tzp\_ID9145\_identity} \\
+ID9146 & Core\_Definition & \texttt{hms\_tzp\_ID9146\_structure} \\
+ID0421 & Core\_Definition & \texttt{hms\_tzp\_ID0421\_threshold} \\
+ID3323 & Core\_Definition & \texttt{hms\_tzp\_ID3323\_threshold} \\
+ID6366 & Derived\_Theorem\_Obligation & \texttt{hms\_tzp\_ID6366\_structure} \\
+ID3345 & Core\_Axiom & \texttt{hms\_tzp\_ID3345\_threshold} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 3 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID0429 & --- & --- \\
+ID9145 & --- & tzp type c \\
+ID9146 & --- & tzp type c \\
+ID0421 & --- & --- \\
+ID3323 & --- & --- \\
+ID6366 & --- & www \\
+ID3345 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This companion extends Paper I's worked BAO check from a single defensible node to a survey-statistics program, and it gives Paper VIII's closed-geometry predictions their natural data partner: the same DESI-aligned pipeline that calibrates the slope can, in a refinement pass, carry the $\sin\chi$ distance signatures and the $j_{1,1}/\pi$ offset search of Paper VI. It is the corpus's template for how enclosure geometry meets a modern likelihood.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_hms\_tzp.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{hms\_tzp\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID0429} (\texttt{hms\_tzp\_ID0429\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9145} (\texttt{hms\_tzp\_ID9145\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9146} (\texttt{hms\_tzp\_ID9146\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0421} (\texttt{hms\_tzp\_ID0421\_threshold}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID3323} (\texttt{hms\_tzp\_ID3323\_threshold}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID6366} (\texttt{hms\_tzp\_ID6366\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID3345} (\texttt{hms\_tzp\_ID3345\_threshold}): state the axiom with its quantifiers explicit; attach the empirical anchor or upstream derivation candidate; declare the tolerance under which data could falsify it.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. The slope agreement is encouraging but unaudited: without propagated uncertainties and systematics covariance it is a consistency datum, not a detection, and the refinement pass must promote it accordingly.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+TZP-HMS shows the program behaving like cosmology: operators calibrated, diagnostics declared, a survey number reproduced to the third decimal. The refinement targets---error budgets, covariances, full-shape extension---are the standard maturation path of any clustering analysis. If the agreement survives that audit, the enclosure will have passed from one defensible BAO node to a defensible statistic; if it does not, the corpus will have learned exactly where its geometry and the sky part ways.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: hms tzp}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{hms tzp}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

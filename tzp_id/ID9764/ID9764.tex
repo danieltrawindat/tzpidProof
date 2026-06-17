@@ -1,0 +1,17 @@
+\section*{ID9764: Cohomological Exactness and Hodge Decomposition}
+\paragraph{Metadata.}
+PiID: 8157936789766 | RTEID: RTE:P37915.7804:T5.9249 | UUID: eb96e8fb-1f96-5526-80e0-644964f40abd
+
+\paragraph{Canonical Statement.}
+ition\} The fields live in the de Rham complex on \$M\$: \textbackslash{}[ \textbackslash{}Omega\textasciicircum{}0(M)\textbackslash{}xrightarrow\{d\} \textbackslash{}Omega\textasciicircum{}1(M)\textbackslash{}xrightarrow\{d\}\textbackslash{}Omega\textasciicircum{}2(M)\textbackslash{}xrightarrow\{d\}\textbackslash{}Omega\textasciicircum{}3(M), \textbackslash{}] with adjoint sequence via codifferentials \$\textbackslash{}delta = \textbackslash{}pm\textbackslash{}star d\textbackslash{}star\$. Exactness (\$\textbackslash{}ker d\_k=\textbackslash{}mathrm\{im\}\textbackslash{},d\_\{k-1\}\$, \$\textbackslash{}ker\textbackslash{}delta\_k=\textbackslash{}mathrm\{im\}\textbackslash{},\textbackslash{}delta\_\{k+1\}\$) yields the Hodge decomposition: for any \$k\$-form \$\textbackslash{}omega\$, \textbackslash{}[ \textbackslash{}omega = d\textbackslash{}alpha + \textbackslash{}delta\textbackslash{}beta + \textbackslash{}mathcal\{H\}\textasciicircum{}k,\textbackslash{}quad \textbackslash{}Delta\textbackslash{}mathcal\{H\}\textasciicircum{}k=0. \textbackslash{}] In our case, \$\textbackslash{}mathbf\{B\}\$ is a 2-form and \$\textbackslash{}mathbf\{A\}\$ a 1-form. In Coulomb gauge, we invert \$d\textbackslash{}mathbf\{A\}=\textbackslash{}mathbf\{B\}\$ by using \$\textbackslash{}delta\$. Concretely, \textbackslash{}[ \textbackslash{}mathbf\{A\} = \textbackslash{}delta(\textbackslash{}Delta\textasciicircum{}\{-1\}\textbackslash{}mathbf\{B\}), \textbackslash{}] with \$\textbackslash{}Delta = d\textbackslash{}delta + \textbackslash{}delta d\$. In code: \textbackslash{}begin\{verbatim\} InverseDifferentialForm[ω\_k\_, k\_] := PseudoInverse[ExteriorDerivative[k], Method -> "HodgeLaplacian"] @ ω\_k \textbackslash{}end\{verbatim\} This provides a unique (up to gauge) \$\textbackslash{}mathbf\{A\}\$ for any closed \$\textbackslash{}mathbf\{B\}\$.
+
+\paragraph{Canonical Equation.}
+\[
+\mathbf{A} = \delta(\Delta^{-1}\mathbf{B}),
+\]
+
+\paragraph{Dictionary.}
+Cohomological Exactness and Hodge Decomposition — A = δ(Δ\textasciicircum{}-1B)
+
+\paragraph{Encyclopedia.}
+Cohomological Exactness and Hodge Decomposition is an algebraic definition, written A = δ(Δ\textasciicircum{}-1B). It is an algebraic definition expressing the quantity directly in terms of the variables on its right-hand side. It is built from δ, Δ, B, defining A. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.

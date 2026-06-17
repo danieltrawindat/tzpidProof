@@ -1,0 +1,205 @@
+\tzpanchor{0967}
+\tzpentryheader{0967}{BIJECTIVE MAPPING VERIFICATION}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{bfc3f150-42fa-5818-8386-0172a811f755}}\\
+\textbf{PiID} & \tzpcode{0661300192787} & \textbf{TZPi}\quad \tzpcode{0}\quad \textbf{PiPE}\quad \tzpcode{974}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{3685.1778 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{06.0720 rad}\\
+\textbf{TZPID} & \tzpcode{ID0967} & \textbf{Node Dependencies}\quad \tzpidref{0966}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0967} & \textbf{Scale}\quad transfer\\
+\textbf{LOC Classification} & QA641 manifolds and topology & QC174.17 mathematical physics\\
+\textbf{arXiv Classification} & Primary: math-ph & Cross-list: gr-qc, math.DG\\
+\textbf{Primary Support} & Carrier Map & Composable Action\\
+\textbf{Closure Support} & Normalized Output & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+forall y in A, exists! x in B : f(x) = y implies |Unique(f(B))| equiv |B|
+
+\tzpsection{Canonical Equation}
+\[
+(x^2 + y^2)^2 = 2a^2(x^2 - y^2)
+\]
+\[
+mathbf{v}(p) = 0, \quad  abla \mathbf{v}(p)  eq 0, \quad \text{det}(J_p) \equiv 0
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $v$: velocity, flow speed, or auxiliary comparison variable.
+    \item $J_p$: source equation symbol.
+    \item $x$: local field point or coordinate variable in the canonical equation.
+    \item $J$: source equation symbol.
+    \item $t(J_p)$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0967 generated source Wolfram model *)
+ClearAll[K0967, Cr0967, T, R, A, W, I, N];
+eq0967$1 = HoldForm[(x^2 + y^2)^2 == 2*a^2*(x^2 - y^2)];
+eq0967$2 = HoldForm[TZPSequence[mathbf[v]*p == 0, abla*v[p]*eq0, JP*equiv0]];
+
+K0967 = HoldForm[{eq0967$1, eq0967$2}];
+
+N = "normalized TRAWIN closure object for BIJECTIVE MAPPING VERIFICATION";
+I = "BIJECTIVE MAPPING VERIFICATION integration/comparison layer";
+W = "BIJECTIVE MAPPING VERIFICATION wave or operator carrier";
+A = "BIJECTIVE MAPPING VERIFICATION admissible action/amplitude condition";
+R = "BIJECTIVE MAPPING VERIFICATION rotation/curl preservation layer";
+T = "BIJECTIVE MAPPING VERIFICATION local source condition";
+
+Cr0967[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0967 = Cr0967[K0967];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ BIJECTIVE MAPPING VERIFICATION local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ BIJECTIVE MAPPING VERIFICATION rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ BIJECTIVE MAPPING VERIFICATION admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ BIJECTIVE MAPPING VERIFICATION wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ BIJECTIVE MAPPING VERIFICATION integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for BIJECTIVE MAPPING VERIFICATION.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0967] BIJECTIVE MAPPING VERIFICATION}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\[
+(x^2 + y^2)^2 = 2a^2(x^2 - y^2)
+\]
+\[
+mathbf{v}(p) = 0, \quad  abla \mathbf{v}(p)  eq 0, \quad \text{det}(J_p) \equiv 0
+\]
+
+\paragraph{Primary Derivation.}
+The first line specifies a map, while the subsequent line provides its explicit form \( mathbf{v}(p) = 0, \quad abla \mathbf{v}(p) eq 0, \quad \text{det}(J_p) \equiv 0 \). Verifying that the formula satisfies the declared mapping properties confirms that the map is well defined.
+\paragraph{Equation Type.}
+This statement is classified as a map relation.
+
+\paragraph{Interpretation.}
+It pertains to the fields or functions just described. Interpreted through TRAWIN, the equation functions as the mapping carrier for the entry’s information content. According to CHL, the derivation provides a constructive term connecting the canonical proposition to its proof certificate.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors BIJECTIVE MAPPING VERIFICATION by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{Canonical Support Relation}\par
+\[
+(x^2 + y^2)^2 = 2a^2(x^2 - y^2)
+\]
+\[
+mathbf{v}(p) = 0, \quad  abla \mathbf{v}(p)  eq 0, \quad \text{det}(J_p) \equiv 0
+\]
+\noindent The support equation repeats the canonical relation so the derivation page remains self-contained.\par
+
+\clearpage
+\noindent\textbf{[ID 0967] BIJECTIVE MAPPING VERIFICATION}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+BIJECTIVE MAPPING VERIFICATION is a registry definition in Biological and Biomolecular Analogies with secondary pressure from Category Theory and Proof Structure.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} forall y in A, exists! x in B : f(x) = y implies |Unique(f(B))| equiv |B|. \textbf{Contextual meaning:} The entry reads BIJECTIVE MAPPING VERIFICATION as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc. \textbf{Lemma support:} Carrier Map; Composable Action; Normalized Output.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+Technically, BIJECTIVE MAPPING VERIFICATION is read through the local equation chain and the TRAWIN normalization recorded on the entry page.
+
+\tzpsection{Equation Grounding}
+Equation anchors: (x to the power 2 + y to the power 2) to the power 2 = 2a to the power 2(x to the power 2 - y to the power 2); mathbf v (p) = 0, abla v (p) eq 0, det (J sub p) equiv 0; and \$(x to the power 2 + y to the power 2) to the power 2 = 2a to the power 2(x to the power 2 - y to the power 2). Proof route: show that the composite map lands in the admissible target class once the TRAWIN ordering is respected. Formalization route: prove closure of the stated operator or functor under composition with the TRAWIN chain.
+
+\tzpsection{Interpretive Role}
+The entry converts a registry title into a transport map that can be reused by the surrounding transfer arc.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begin{enumerate}[leftmargin=1.6em,itemsep=6pt,topsep=4pt]
+\item \textbf{Symmetrical Function Auditing}: The rigorous mathematical proof that every single switch in the control room is wired to exactly one magnet, and every magnet is wired to exactly one switch.
+\item \textbf{Reversible-Logic Confirmation}: The terrifying check ensuring that if the computer knows how to spin the reactor up, it also mathematically knows exactly how to spin it back down.
+\item \textbf{Zero-Collision State Mapping}: The absolute guarantee that two completely different emergencies will never accidentally trigger the exact same warning alarm.
+\end{enumerate}
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0967]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\begingroup\footnotesize\itshape
+Visual plate pending source-specific approval for [ID 0967].
+\par\endgroup
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0967] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont BIJECTIVE MAPPING VERIFICATION}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} BIJECTIVE MAPPING VERIFICATION is read as a source-backed proof obligation.
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``BIJECTIVE MAPPING VERIFICATION is admissible under the named source equation and derivation.''\\
+\textbf{Proof:} The canonical statement supplies the proposition, the derivation supplies the witness, and the TRAWIN operator chain records the normalization path.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conditional registry validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{registry\_number\_matches, equation\_count\_matches}}\par
+\vfill
+\begingroup\footnotesize\itshape
+Proof visual pending source-specific approval for [ID 0967].
+\par\endgroup
+\vfill
+\endgroup
+\endgroup

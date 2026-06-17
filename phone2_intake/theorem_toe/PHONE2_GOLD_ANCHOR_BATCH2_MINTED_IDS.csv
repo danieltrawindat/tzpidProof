@@ -1,0 +1,251 @@
+minted_id,atomic_index,anchor_id,anchor_title,source_file,line_number,candidate_equation
+ID11122,110,PHONE2_ANCHOR_001,Parker-GW Resonance Condition,latext.txt,102,\nabla^2 h_{\mu\nu} \cdot \Psi_{\text{solar}} = \lambda_n \Psi_{\text{solar}}
+ID11123,977,PHONE2_ANCHOR_001,Parker-GW Resonance Condition,latext.txt,106,\lambda_n = -\left(\frac{n\pi}{L}\right)^2 + i\frac{\Omega_{\text{sun}}}{v_{sw}}
+ID11124,79,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,194,"\delta A_{\text{GW}} = \epsilon \left|\int \Psi_{\text{solar}} \cdot h_{\mu\nu} \, d^3x\right| \sim 10^{-24} \text{ strain}"
+ID11125,80,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,200,\Delta\phi_{\text{GW}} = \frac{2\pi n_{\text{wind}}}{c} \int_{\text{path}} B_{\text{solar}} \cdot dl \sim 10^{-6} \text{ rad}
+ID11126,982,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,206,"f_{\text{sideband}} = f_{\text{GW}} \pm n\Omega_{\odot}/(2\pi), \quad n \in \mathbb{Z}"
+ID11127,2281,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,218,ComputationalComplexity := Module[
+ID11128,983,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,221,spatialGrid = N^3
+ID11129,2282,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,222,temporalSteps = T/dt
+ID11130,984,PHONE2_ANCHOR_002,Modulation Signatures,latext.txt,223,"spectralModes = Product[2*l[i] + 1, {i, 1, maxL}]"
+ID11131,1002,PHONE2_ANCHOR_003,Elsasser Universality,univision.txt,127,\Lambda := \frac{B^2}{\mu_0 \rho \eta \omega} \to 1 \pm 0
+ID11132,2299,PHONE2_ANCHOR_003,Elsasser Universality,univision.txt,135,ElsasserConvergence[system_] := Module[
+ID11133,2300,PHONE2_ANCHOR_003,Elsasser Universality,univision.txt,138,"Lambda = Function[{field, density, viscosity, rotation},"
+ID11134,1004,PHONE2_ANCHOR_004,Topological Field Constraint,univision.txt,195,U(d) = \frac{3\mu_0\mu^2}{2\pi d^4} + U_{\text{constraint}}(d)
+ID11135,82,PHONE2_ANCHOR_004,Topological Field Constraint,univision.txt,203,"\vec{B}_{\text{torus}} = \nabla \times \vec{A}_\phi, \quad \vec{A} = \frac{\mu_0 I}{2\pi r}\hat{\phi}"
+ID11136,23,PHONE2_ANCHOR_005,TZP Vacuum Divergence,univision.txt,105,"\rho_{\text{vac}}(r,t) = \sum_{n=0}^{\infty} \sum_{i=1}^{N_{\TZP}} (-1)^n \Gamma\left(n+\tfrac{1}{2}\right) K_n\left(\frac{|r-r_{\TZP}^{(i)}|}{\xi}\right) e^{in(\omega_0 t + \theta_i)}"
+ID11137,388,PHONE2_ANCHOR_006,Topological Locking,univision.txt,213,"\Phi = n\Phi_0, \quad \Phi_0 = \frac{h}{2e} \approx 2"
+ID11138,1005,PHONE2_ANCHOR_007,Universal Criticality,univision.txt,227,"P(s) \sim s^{-\tau} e^{-s/s_c}, \quad \tau = \frac{3}{2}"
+ID11139,2303,PHONE2_ANCHOR_007,Universal Criticality,univision.txt,234,CriticalExponent[distribution_] := Module[
+ID11140,2304,PHONE2_ANCHOR_007,Universal Criticality,univision.txt,237,"tau = -D[Log[P[s]], Log[s]] /"
+ID11141,2305,PHONE2_ANCHOR_007,Universal Criticality,univision.txt,239,avalanche = ProbabilityDistribution[
+ID11142,389,PHONE2_ANCHOR_007,Universal Criticality,univision.txt,244,"Assert[tau == 3/2, ""Universal critical exponent""]"
+ID11143,1007,PHONE2_ANCHOR_008,Discrete Dark Matter Distribution,univision.txt,269,\rho_{\text{dark}}^{\text{apparent}} = \frac{c^2}{4\pi GR_U^2} \Delta_{S^3}\Phi_{\text{dark}}
+ID11144,1008,PHONE2_ANCHOR_008,Discrete Dark Matter Distribution,univision.txt,280,|\Psi\rangle_{S^3} = \frac{1}{\sqrt{2}}\left(|\uparrow\rangle_\chi \otimes |\downarrow\rangle_{\pi-\chi} + |\downarrow\rangle_\chi \otimes |\uparrow\rangle_{\pi-\chi}\right)
+ID11145,83,PHONE2_ANCHOR_008,Discrete Dark Matter Distribution,univision.txt,291,\mathcal{L}_{\text{total}} &= \int_{\mathcal{M}} d^4x \sqrt{-g} \Bigg[ \frac{R-2\Lambda}{16\pi G} - \frac{1}{4}\Tr[F_{\mu\nu}F^{\mu\nu}] \\ &\quad + i\bar{\psi}\gamma^\mu D_\mu\psi - m\bar{\psi}\psi + D_\mu\phi^\dagger D^\mu\phi - V[\phi] \\ &\quad + \lambda_{\TZP}\delta^{(4)}(x-x_{\TZP})
+ID11146,84,PHONE2_ANCHOR_008,Discrete Dark Matter Distribution,univision.txt,292,\mathcal{L}_{\text{total}} &= \int_{\mathcal{M}} d^4x \sqrt{-g} \Bigg[ \frac{R-2\Lambda}{16\pi G} - \frac{1}{4}\Tr[F_{\mu\nu}F^{\mu\nu}] \\
+ID11147,1642,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,1,UnificationComparison[] := Association[
+ID11148,635,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,4,G_GUT = SU(5) ⊃ SU(3) × SU(2) × U(1)
+ID11149,261,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,5,symmetry_breaking = ⟨Φ_Higgs⟩ ≠ 0
+ID11150,1066,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,12,Convergence_Point = TZP ∈ ℳ_lemniscatic
+ID11151,262,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,13,Mechanism = DimensionalCollapse[4D → 2D] @ InfiniteOrderTransition
+ID11152,1643,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,19,]ForceConvergenceMechanism[] := Module[
+ID11153,1644,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,23,"coupling_evolution = Module[{g_i, μ_scale},"
+ID11154,1645,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,24,beta_functions = Association[
+ID11155,1646,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,33,fixed_point = Solve[
+ID11156,263,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,34,"And @@ (Values[beta_functions] == 0),"
+ID11157,636,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,40,dimension_flow = 4 - ε × Log[μ_scale/μ_TZP]
+ID11158,55,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,42,"Limit[dimension_flow, μ_scale -> μ_TZP] == 2"
+ID11159,147,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,47,S_unified = ∫ dâ´x âˆš|g| × [
+ID11160,264,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,55,"FunctionalDerivative[S_unified, Fields] == 0"
+ID11161,1647,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,56,]UnifiedFieldStructure[ℋ_Trawin] := Module[
+ID11162,1648,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,60,"𝕋‹_topological = Module[{gerbe_classification, obstruction_class},"
+ID11163,265,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,61,"gerbe_classification = H³(ℳ_lemniscatic, U(1)) ≈… ℤ"
+ID11164,1649,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,63,obstruction_class = ChernSimonsInvariant[
+ID11165,56,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,65,Level -> k = 1/(4π) * ∫_Î£ Tr[F ∧ F]
+ID11166,1650,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,76,"ℂ_categorical = Module[{forces_category, unification_functor},"
+ID11167,1651,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,77,forces_category = HigherCategory[
+ID11168,1652,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,90,unification_functor = AdjointFunctorTheorem[
+ID11169,637,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,91,"LeftAdjoint -> DimensionalReduction[4D → 2D],"
+ID11170,638,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,92,"RightAdjoint -> VacuumInjection[2D → 4D],"
+ID11171,1653,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,93,"Unit -> η: Id → RightAdjoint âˆ˜ LeftAdjoint,"
+ID11172,1654,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,94,Counit -> ε: LeftAdjoint âˆ˜ RightAdjoint → Id
+ID11173,1655,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,101,"𝔔½_fibration = Module[{principal_bundle, associated_bundles, connection_form},"
+ID11174,1656,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,102,principal_bundle = PrincipalBundle[
+ID11175,639,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,105,"StructureGroup -> G_structure = U(1) × SU(2) × SU(3) × Diff(ℳ),"
+ID11176,1657,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,106,Projection -> π: E → B
+ID11177,1658,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,109,associated_bundles = Association[
+ID11178,57,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,111,"""Electromagnetic"" -> LineBundle[câ‚ = ∫_Î£ F/(2π)],"
+ID11179,1659,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,116,"connection_form = Module[{Ω_total, holonomy},"
+ID11180,148,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,117,Ω_total = Sum[
+ID11181,1660,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,122,holonomy = PathOrderedExponential[
+ID11182,1661,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,124,Path -> γ: SÂ¹ → ℳ encircling TZP
+ID11183,93,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,128,"Limit[holonomy, γ → PointLoop[TZP]] =="
+ID11184,1662,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,136,â„š_quantum_geometry = Module[
+ID11185,1663,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,140,"quantum_metric = Module[{g_ij},"
+ID11186,266,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,141,g_ij = Re[(∂_i⟨Ïˆ|∂_j|Ïˆ⟩ - ⟨∂_i Ïˆ|Ïˆ⟩⟨Ïˆ|∂_j Ïˆ⟩)]
+ID11187,1664,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,155,"berry_curvature = Module[{Ω_Berry},"
+ID11188,267,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,156,Ω_Berry = Im[∂_i⟨Ïˆ|∂_j|Ïˆ⟩ - ∂_j⟨Ïˆ|∂_i|Ïˆ⟩]
+ID11189,94,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,159,"Integrate[Ω_Berry, {surface, EnclosingSphere[TZP]}] =="
+ID11190,1665,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,163,unified_geometry = RiemannianMetric[quantum_metric] +
+ID11191,1666,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,174,convergence_locus = Module[
+ID11192,149,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,177,stress_energy_total = Sum[
+ID11193,1667,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,182,"curvature_total = Module[{R_unified},"
+ID11194,1668,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,183,R_unified = R_gravitational +
+ID11195,268,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,189,R^μν - (1/2)g^μν R + Λ g^μν == (8πG/c^4) × stress_energy_total
+ID11196,1669,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,192,field_strength_total = ExteriorDerivative[
+ID11197,1670,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,200,coherence_condition = And[
+ID11198,1067,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,206,Solution[coherence_condition] == {r -> r_TZP}
+ID11199,1671,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,378,]GravitationalObservables[] := Association[
+ID11200,640,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,380,Ω_Thomas = (γ - 1) * (v × a)/c^2
+ID11201,641,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,381,Ω_geodetic = (3*G_Newton*M_Earth)/(2*c^2*r^3) * (r × v)
+ID11202,642,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,382,Ω_Lense_Thirring = (G_Newton)/(c^2*r^3) * (
+ID11203,643,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,392,"""GravitationalRedshift"" -> ν_observed/ν_emitted - 1 ≈ˆ"
+ID11204,1672,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,398,]ConservationConstraint[T^μν_total] := Module[
+ID11205,644,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,401,T_vacuum = ⟨TZP|T^μν|TZP⟩ * Exp[-r^2/ξ_coherence^2]
+ID11206,1673,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,403,"T_matter = Module[{ρ_eff, p_eff},"
+ID11207,1674,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,404,ρ_eff = Tr[ρ_matrix * ℋ_Trawin]
+ID11208,645,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,405,"p_eff = -(1/3) * Tr[ρ_matrix * {ℋ_Trawin, P^i}]"
+ID11209,646,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,410,T_gravitational = (c^4/(8*π*G_Newton)) * (
+ID11210,150,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,414,"conservation_equation = CovariantDerivative[T^μν_total, ν] == 0"
+ID11211,1675,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,418,]GeodesicDeviation[ξ^μ] := Module[
+ID11212,1676,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,421,"jacobi_field = D[D[ξ^μ, Ï„], Ï„] + R^μ_νρσ * u^ν * ξ^ρ * u^σ"
+ID11213,1677,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,423,"deviation_tensor = Module[{K_sectional},"
+ID11214,1678,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,424,K_sectional = (R_μνρσ * ξ^μ * u^ν * ξ^ρ * u^σ)/
+ID11215,647,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,428,"Limit[K_sectional, r -> r_TZP] -> ∞"
+ID11216,1679,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,436,"]GravitationalWaveModulation[ℋ_TZP, h_+, h_×, Ω_GW] := Module["
+ID11217,648,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,439,"strain_tensor = h_+ * {{1,0,0,0}, {0,1,0,0}, {0,0,-1,0}, {0,0,0,0}} +"
+ID11218,1680,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,442,"coupling_operator = Module[{quadrupole_moment},"
+ID11219,151,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,443,quadrupole_moment = Integrate[
+ID11220,1681,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,454,resonance_condition = Solve[
+ID11221,1068,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,455,"Ω_GW == Ω_cymatic * GoldenRatio^n,"
+ID11222,1682,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,456,n ∈ Integers
+ID11223,1683,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,492,"]ℋ_Trawin^(grav)[Ïˆ,t,g_μν] := Module["
+ID11224,649,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,495,G_Newton = Quantity[6
+ID11225,1684,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,498,ℋ_base = ℋ_tunnel + ℋ_ER + ℋ_SC + ℋ_cymatic + ℋ_TZP
+ID11226,152,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,501,ℋ_Newtonian = -G_Newton * Sum[
+ID11227,1685,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,507,"ℋ_GR = Module[{Î“_christoffel, R_μνρσ, C_μνρσ},"
+ID11228,650,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,508,"Î“_christoffel[μ_,ν_,ρ_] := (1/2) * g^(ρσ) * ("
+ID11229,1686,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,512,"R_μνρσ = D[Î“_christoffel[μ,ν,σ],x^ρ] - D[Î“_christoffel[μ,ρ,σ],x^ν] +"
+ID11230,95,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,513,"Sum[Î“_christoffel[μ,ν,λ]*Î“_christoffel[λ,ρ,σ], {λ,0,3}] -"
+ID11231,96,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,514,"Sum[Î“_christoffel[μ,ρ,λ]*Î“_christoffel[λ,ν,σ], {λ,0,3}];"
+ID11232,651,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,516,C_μνρσ = R_μνρσ - (1/2)*(g_μρ*R_νσ - g_μσ*R_νρ + g_νσ*R_μρ - g_νρ*R_μσ) +
+ID11233,1687,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,524,"ℋ_tidal = Module[{E_ij, separation_vector},"
+ID11234,652,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,525,E_ij = R_0i0j
+ID11235,1688,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,526,separation_vector = r - r_TZP
+ID11236,97,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,528,(1/2) * Sum[
+ID11237,1689,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,535,"ℋ_frame_dragging = Module[{J_angular, B_gravmag},"
+ID11238,1690,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,536,"J_angular = AngularMomentum[CelestialBody[""Earth""]]"
+ID11239,653,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,538,B_gravmag = (G_Newton/(c^2)) * (
+ID11240,1691,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,547,]ConvergenceMechanism = Functor[
+ID11241,1692,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,551,]TopologicalUnificationValidation[ℋ_Trawin] := Module[
+ID11242,1693,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,554,𝕋Œ_universality = Module[
+ID11243,269,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,557,limit_manifolds = Association[
+ID11244,654,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,558,LowEnergy -> Limit[
+ID11245,270,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,561,"] == StandardModel[SU(3)×SU(2)×U(1)],"
+ID11246,655,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,563,Classical -> Limit[
+ID11247,271,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,566,"] == EinsteinHilbert[R - 2Λ] + Maxwell[F_μν],"
+ID11248,656,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,568,Planck -> Limit[
+ID11249,272,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,571,"] ∈ StringTheory[Calabi_Yau, dim_compact = 6]"
+ID11250,1694,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,574,"gauge_recovery = Module[{broken_symmetry, restoration},"
+ID11251,1069,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,575,broken_symmetry = SymmetryGroup[ℋ_Trawin] @ r ≠ r_TZP
+ID11252,1070,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,576,restoration = SymmetryGroup[ℋ_Trawin] @ r = r_TZP
+ID11253,1695,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,580,Kernel -> πâ‚(ℳ \ {TZP}) ≈… ℤ × ℤ
+ID11254,1696,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,584,dimensional_flow = RicciFlow[
+ID11255,657,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,585,"g_μν[t] = g_μν[0] - 2*R_μν*t,"
+ID11256,658,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,586,"Constraint -> Det[g] @ TZP = 0,"
+ID11257,1697,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,591,ℂ_correspondence = Module[
+ID11258,1698,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,594,observable_duality = BialgebraicStructure[
+ID11259,1699,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,595,"CoProduct[Î”: ℋ -> ℋ ⊗ ℋ] = Module[{splitting},"
+ID11260,1700,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,596,splitting = VertexOperatorAlgebra[
+ID11261,659,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,597,"Central_Charge -> c = 26 - D_critical,"
+ID11262,660,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,598,Highest_Weight -> h = Î”(Î”-1)/4
+ID11263,1701,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,607,"CoUnit[ε: ℋ -> ℂ] = Tr[ρ_vacuum * â€¢],"
+ID11264,1702,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,609,Antipode[S: ℋ -> ℋ] = TimeReversal âˆ˜ ChargeConjugation
+ID11265,1703,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,612,experimental_map = FunctorialCorrespondence[
+ID11266,661,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,614,"VacuumEnergyDensity -> ⟨0|ℋ_TZP|0⟩ = ρ_critical*c²,"
+ID11267,662,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,615,"CoherenceLength -> ξ = ℏ/(m_eff*c*âˆš(1-v²/c²)),"
+ID11268,1704,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,616,"FluxQuantization -> âˆ® AÂ·dl = n*h/e,"
+ID11269,153,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,617,BerryPhase -> γ = âˆ®_C ⟨Ïˆ|∇_R|Ïˆ⟩Â·dR = π
+ID11270,663,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,621,"EnergyExtraction -> P_out = (ℏ*câµ/G)^(1/2) * f[topology],"
+ID11271,664,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,622,"DimensionalSignature -> Hausdorff[ℳ @ TZP] = 2 ± ε_quantum,"
+ID11272,273,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,623,"VortexFrequency -> Ï‰_TZP = 432*2^n Hz, n ∈ ℤ"
+ID11273,1705,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,627,phenomenology = EffectiveFieldTheory[
+ID11274,154,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,628,Lagrangian -> ℒ_eff = ∫ dâ´x âˆš|g| * [
+ID11275,1706,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,633,"WilsonCoefficients -> {c_i = f_i[E/E_TZP]},"
+ID11276,274,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,634,MatchingCondition -> ∂_μ⟨T^μν⟩ = J_TZP^ν
+ID11277,1707,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,638,𝕋_verification = Module[
+ID11278,1708,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,641,consistency_checks = And[
+ID11279,58,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,642,"WardIdentity[∂_μ J^μ = 0] @ (r ≠ r_TZP),"
+ID11280,1709,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,648,"anomaly_cancellation = Module[{triangle, gravitational, mixed},"
+ID11281,275,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,649,"triangle = Tr[{T^a, T^b}T^c] + cyclic = 0"
+ID11282,276,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,650,gravitational = Tr[T^a] = 0
+ID11283,32,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,651,mixed = ∑_fermions (charges) = 0
+ID11284,1710,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,654,"Mechanism -> ModifiedBianchi[dH = Tr(F∧F) - Tr(R∧R)],"
+ID11285,1711,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,659,"unitarity_bounds = Module[{S_matrix, optical_theorem},"
+ID11286,155,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,660,S_matrix = 𝕋‹exp[-i∫ℋ_Trawin dt/ℏ]
+ID11287,20,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,661,"optical_theorem = 2*Im[T(s,t=0)] = ∑_n |T(s->n)|²"
+ID11288,277,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,663,Positivity[Im[T]] ∧ |S|² ≈¤ 1 ∧ CPT[S*Sâ€ = ðŸ™]
+ID11289,1712,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,667,â„™_predictive = Module[
+ID11290,1713,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,670,critical_experiments = Dataset[{
+ID11291,1714,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,685,falsifiable_claims = {
+ID11292,278,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,686,"r_TZP : Det[Jacobian] = 0,"
+ID11293,1715,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,688,"BerryPhase[Loop[TZP]] = π*(odd_integer),"
+ID11294,98,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,689,lim[r->r_TZP] Dimension[ℳ] = 2
+ID11295,1716,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,692,validation_hierarchy = BayesianNetwork[
+ID11296,1717,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,693,"Prior[ℋ_Trawin correct] = ε_theoretical,"
+ID11297,1718,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,694,"Likelihood[Data | ℋ_Trawin] = âˆ_i P(measurement_i | theory),"
+ID11298,1719,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,695,"Posterior = UpdateBelief[Prior, Evidence],"
+ID11299,665,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,696,Threshold = 5σ significance
+ID11300,1720,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,711,AcceleratedEvolutionOperator := Module[
+ID11301,1721,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,715,Ω_mutation = CategoryFunctor[
+ID11302,1722,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,716,Source → NaturalMutationSpace[
+ID11303,666,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,717,"Rate → 10^(-9) per_base_per_generation,"
+ID11304,1723,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,718,Distribution → PoissonProcess[λ_ambient]
+ID11305,1724,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,721,Target → DirectedMutationManifold[
+ID11306,667,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,722,"Rate → 10^(-3) per_base_per_generation, (* 10^6 fold acceleration *)"
+ID11307,1725,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,723,Distribution → QuantumJumpProcess[
+ID11308,668,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,724,"Generator := -iℏ^(-1)[H_TZPQVT, â€¢] + Lindbladian[{L_k}],"
+ID11309,1726,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,725,JumpOperators := {
+ID11310,1727,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,726,"L_adenine = âˆšγ_A |A⟩⟨G| ⊗ σ_+^{TZP},"
+ID11311,1728,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,727,"L_cytosine = âˆšγ_C |C⟩⟨T| ⊗ σ_-^{TZP},"
+ID11312,1729,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,728,"L_guanine = âˆšγ_G |G⟩⟨A| ⊗ σ_x^{TZP},"
+ID11313,1730,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,729,L_thymine = âˆšγ_T |T⟩⟨C| ⊗ σ_y^{TZP}
+ID11314,1731,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,734,ControlMechanism := CymaticFieldModulation[
+ID11315,1732,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,735,FrequencySpectrum → FourierTransform[
+ID11316,59,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,736,"Î£_{n=1}^{153600} A_n × BesselJ[n, k_n r] ×"
+ID11317,1733,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,739,Where: θ_n^{evolution_target} =
+ID11318,1734,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,745,Λ_selection = HyperbolicFlowOperator[
+ID11319,1071,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,746,Hamiltonian := H_selection = Î£_{i<j} J_{ij}(t) σ_i^z σ_j^z +
+ID11320,1735,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,749,TimeEvolution := UnitaryOperator[
+ID11321,60,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,750,"U(t) = PathOrdered[Exp[-i/ℏ ∫_0^t H_selection(Ï„) dÏ„]],"
+ID11322,1736,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,752,OptimizationFunctional := Min[
+ID11323,279,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,754,"Subject to: ∂_t ρ = -i/ℏ [H_selection, ρ] + 𝒟Ÿ[ρ]"
+ID11324,1737,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,758,ConvergenceAcceleration := GeometricFlow[
+ID11325,156,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,760,MeanCurvature → ∂_t X = HÂ·N + ∇^âŠ¥ log(Φ_fitness)
+ID11326,1738,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,765,Îž_convergence = ResurgentTransSeries[
+ID11327,1739,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,766,AsymptoticExpansion := Fitness[n] ~
+ID11328,1072,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,769,BorelTransform := â„¬[Fitness](ξ) =
+ID11329,1740,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,772,ResurgentStructure := AlienDerivative[
+ID11330,1073,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,773,Î”_Ï‰ â„¬[Fitness] = Î£_{Ï‰'∈Ω_singular}
+ID11331,1741,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,774,"S_{Ï‰,Ï‰'} × e^{-(Ï‰-Ï‰')/ξ} × â„¬[Fitness]|_{ξ→Ï‰'},"
+ID11332,1074,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,776,StokesAutomorphism := 𝔔–_θ =
+ID11333,1742,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,777,Exp[Î£_{Ï‰∈Ω_singularâˆ©â„“_θ} Disc_Ï‰ × Î”_Ï‰]
+ID11334,1743,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,780,"AccelerationMechanism := Module[{optimal_path},"
+ID11335,1744,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,781,optimal_path = ArgMin[
+ID11336,157,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,782,"ActionFunctional[path] = ∫ L[áº‹, x, t] dt,"
+ID11337,669,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,783,"Over: {path ∈ C^∞([0,T], ConfigurationSpace)}"
+ID11338,1745,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,787,"From → LocalMinimum[current_fitness],"
+ID11339,1746,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,788,"To → GlobalMinimum[via: optimal_path],"
+ID11340,280,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,789,Rate → Î“_tunnel = (Ï‰_0/2π) × Exp[-S_instanton/ℏ]
+ID11341,1747,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,795,Î˜_field = FieldCouplingTensor[
+ID11342,1075,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,796,"MetricTensor := g_μν = η_μν + h_μν^{DNA} + h_μν^{TZPQVT},"
+ID11343,1076,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,798,"DNAFieldTensor := F_μν^{DNA} = Module[{A_μ^{helix}},"
+ID11344,281,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,799,A_μ^{helix} = (e/c) × Î£_{n=1}^{10^9} q_n ×
+ID11345,1077,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,806,TZPQVTFieldTensor := G_μνρσ =
+ID11346,1078,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,810,CouplingLagrangian := ℒ_interaction =
+ID11347,670,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,817,"InitialDNA → |Ψ_0⟩,"
+ID11348,1748,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,818,"TargetPhenotype → Φ_target,"
+ID11349,1749,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,819,TimeHorizon → T
+ID11350,1750,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,820,] := Module[
+ID11351,282,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,824,trajectory[0] = BlobBitEncoding[|Ψ_0⟩] ∈ ℂ^{153600}
+ID11352,1751,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,827,control_sequence = PontryaginMaximumPrinciple[
+ID11353,1079,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,828,"StateEquation → áº‹ = f[x, u, t],"
+ID11354,62,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,829,"CostFunctional → ∫_0^T L[x, u] dt + Φ[x(T)],"
+ID11355,671,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,830,"Constraints → {u ∈ U_admissible, x ∈ DNA_space}"
+ID11356,1752,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,836,"Frequency → control_sequence[[t, ""frequency""]],"
+ID11357,1753,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,837,"Amplitude → control_sequence[[t, ""amplitude""]],"
+ID11358,1754,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,838,"Phase → control_sequence[[t, ""phase""]]"
+ID11359,1755,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,841,measurement_record[t] = QuantumMeasurement[
+ID11360,1756,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,842,"Observable → FitnessOperator,"
+ID11361,672,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,843,PostSelection → (Fitness > Fitness[t-1])
+ID11362,1757,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,846,trajectory[t] = QuantumJump[
+ID11363,673,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,848,JumpProbability → â€–L_k trajectory[t-1]â€–²dt
+ID11364,1758,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,856,"OptimizedDNA → InverseBlobBit[trajectory[T]],"
+ID11365,674,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,857,"AccelerationFactor → (Fitness[T] - Fitness[0])/(T × natural_rate),"
+ID11366,1759,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,858,ConvergenceOrder → n
+ID11367,1760,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,865,TheoreticalSpeedupAnalysis := Association[
+ID11368,1761,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,866,"""QuantumAdvantage"" → Speedup["
+ID11369,675,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,867,"Classical → O(4^N) (* Exhaustive search *),"
+ID11370,676,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,868,"Quantum → O(âˆš(4^N)) (* Grover's algorithm *),"
+ID11371,677,PHONE2_ANCHOR_009,CMBEmergenceTheorem,UnificationComparison.txt,869,TZPQVT → O(log(4^N)/n

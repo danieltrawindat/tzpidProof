@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdftitle={Quantum Field Theory on a Trawinistic Manifold},pdfsubject={TZPID Companion Spine Series, Paper C2},pdfkeywords={TZPID, trawin zero point quantum field theory}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Quantum Field Theory on a Trawinistic Manifold\\[0.6em]
+\large TZPID Companion Spine Series, Paper C2 of XXVII\\
+\normalsize Propagators and Green's functions under metric degeneracy}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}\\
+\small \href{mailto:danielalexandertrawin@gmail.com}{danielalexandertrawin@gmail.com}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion develops the quantum field theory of the program's geometric foundation: field quantization on a Trawinistic manifold, whose defining feature is a degenerate locus---the Trawin Zero Point---where the metric determinant vanishes.
+The source manuscript's stated thesis: ``We construct a quantum field theory on a Trawinistic manifold possessing a Trawin Zero Point (TZP), defined as a degenerate geometric locus where det g = 0. We extend classical propagator theory to incorporate metric degeneracy, introduce a TZP-localized interaction term, and derive modified Green's functions consistent with both geometric and operator-theoretic constraints.'' The paper organizes this thesis as a TZPID gold spine: a curated seven-node registry chain (ID9122, ID9123, ID0481, ID1805, ID9036, ID9037, ID0001) with typed proof-obligation roles, dictionary and encyclopedia anchors for every node, a declared dependency order, and stubs in the program's Isabelle/Wolfram verification pipeline. Within the arc this paper supplies the field-theoretic substrate: the propagator and Green's-function modifications that every later spine implicitly uses when it speaks of fields near the anchor.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Standard quantum field theory is built on backgrounds where the metric is everywhere invertible; its propagators, canonical commutators, and Green's functions all presuppose $\det g \neq 0$. The TZPID registry's founding axioms deny exactly this at one point: the Trawin Zero Point is defined by $\det g|_p = 0$ with non-degeneracy everywhere else (ID0002, ID0004). A field theory for the program must therefore answer a sharp technical question: what becomes of propagator theory when the background carries a single degenerate locus?
+
+The source manuscript's answer, organized here as a registry spine, proceeds in three moves. First, classical propagator theory is extended to tolerate metric degeneracy, with the degenerate point entering as a boundary-like defect rather than a curvature singularity. Second, a TZP-localized interaction term is introduced---the field-theoretic realization of the localized source $\Phi^{\mathrm{TZP}}_{\mu\nu}$ that the Einstein Focus companion types at the gravitational level. Third, modified Green's functions are derived, constrained jointly by the geometry (degeneracy at $p$, smoothness elsewhere) and by operator-theoretic consistency.
+
+The chain below anchors these moves to the registry's strongest matching entries. As throughout the companion corpus, the spine is concept-anchored and offered as a refinement backbone; its value is that it locates, in typed registry vocabulary, exactly where TZP quantum field theory departs from the textbook and where it provably does not.
+
+\section{The concept-anchored spine methodology}
+\label{sec:method}
+
+The companion series applies a uniform method, stated here so that the paper is self-contained. The source manuscript was published with its mathematics rendered as text rather than as machine-readable LaTeX, so its spine is \emph{concept-anchored}: the thesis is taken from the manuscript's abstract, and the spine nodes are the canonical-registry entries most strongly matched to the manuscript's themes, selected by weighted term overlap with foundational nodes ranked first. Each node carries its registry equation, its dictionary definition, its encyclopedia interpretation, and a declared proof-obligation role (Core\_Definition, Core\_Axiom, or Derived\_Theorem\_Obligation). The resulting chain is a starting backbone for refinement---a typed scaffold onto which an exact, equation-by-equation crosswalk with the source manuscript can be progressively attached---rather than a claim of completed formalization.
+
+Three properties make the backbone useful even before refinement completes. First, \emph{addressability}: every claim in the companion paper resolves to a registry identifier whose equation, definition, and verification status are independently inspectable, so disagreement can be localized to a node rather than to the paper as a whole. Second, \emph{pipeline coupling}: each spine is paired with an Isabelle focus-theory stub and a Wolfram check stub, so that as nodes are refined their obligations enter the same machine-checked pipeline that certifies the core series' guardrails. Third, \emph{role discipline}: the obligation roles separate what the spine defines from what it asserts and what it must prove, which keeps the demarcation section of every companion paper honest by construction.
+
+The dependency chain should accordingly be read as a proof-order proposal: upstream nodes supply the vocabulary and axioms that downstream nodes consume, and the refinement pass is free to reorder where the source manuscript's own logic demands it. Where a node's registry equation arrives with rendering artifacts inherited from the source extraction (a known cost of text-rendered mathematics), the equation is quoted as carried by the registry, with the dictionary and encyclopedia entries supplying the authoritative reading.
+
+\section{The registry chain}
+\label{sec:chain}
+
+The curated chain, in proof order, is
+\begin{equation*}
+\begin{gathered}
+\text{ID9122} \to \text{ID9123} \to \text{ID0481} \to \text{ID1805} \\
+\to \text{ID9036} \to \text{ID9037} \to \text{ID0001}.
+\end{gathered}
+\end{equation*}
+We take the nodes in order; each subsection quotes the registry equation as carried by the canonical master, then gives the dictionary definition and the encyclopedia's interpretive reading.
+
+\subsection{ID9122: Relation: SQTeff+SigmaTZPDelta (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{SQTeff+SigmaTZP\textbackslash{}Delta}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: SQTeff+SigmaTZPDelta --- SQTeff+SigmaTZPDelta\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: SQTeff+SigmaTZPDelta is a symbolic expression, written SQTeff+SigmaTZPDelta. It introduces a symbol or relation used elsewhere in the framework. It is built from Delta, S, Q, T, f, Z. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID9122\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} As a Core\_Definition this node contributes vocabulary rather than assertion: downstream nodes may use its object freely, but nothing is yet claimed about the world. Its refinement burden is precision---the typed form must capture exactly the object the source manuscript deploys.
+
+\subsection{ID9123: Relation: Sigma\_TZPSTeffQ+SigmaTZP. (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}Sigma\_\{\textbackslash{}text\{TZP\}\}STeffQ+SigmaTZP.}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation: Sigma\_TZPSTeffQ+SigmaTZP. --- Sigma\_TZPSTeffQ+SigmaTZP.\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation: Sigma\_TZPSTeffQ+SigmaTZP. is a symbolic expression, written Sigma\_TZPSTeffQ+SigmaTZP.. It introduces a symbol or relation used elsewhere in the framework. It is built from S, T, f, Q, Z, P. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID9123\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This Core\_Definition fixes an object the rest of the chain consumes. In proof order it must be discharged first; in refinement it is where a mismatch between the manuscript's usage and the registry's typing would first surface.
+
+\subsection{ID0481: Natural Three-Qubit Gate Implementation (Core\_Definition)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}begin\{adjustbox\}\{max width=\textbackslash{}linewidth,center\} \$\textbackslash{}displaystyle \textbackslash{}text\{cents\} = \textbackslash{}cdots \$ \textbackslash{}end\{adjustbox\}}}\par\medskip
+\noindent\textit{Dictionary definition.} ID 481 formalizes the inherent multi qubit processing of the Tripartite architecture.\par\medskip
+\noindent\textit{Encyclopedia reading.} T: Aggregate Relation is localized within the manifold and metric dynamics arc of the directory. R: Aggregate Relation preserves the operative relation that quantum process tomography (qpt) requires. A: Closure Relation fixes the admissible closure condition for the entry. W: QUANTUM PROCESS TOMOGRAPHY (QPT) is rendered as a reusable operator-level statement. I: The informational content of quantum process tomogra- phy (qpt) is retained rather than flattened. N: QUANTUM PROCESS TOMOGRAPHY (QPT) closes as a distinct normalized TRAWIN object. Interpretive role: This entry specifies the structure within the registry.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID0481\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A definitional node: its function is to make later statements well-formed. The guardrail attached to it is correspondingly structural---an identity or well-formedness check rather than a physical claim.
+
+\subsection{ID1805: Quantum Mechanics on the Trawinistic Manifold (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}hat\{\textbackslash{}phi\}(x) = \textbackslash{}sum\_k\textbackslash{}left[\textbackslash{}hat\{a\}\_k\textbackslash{}phi\_k(x) + \textbackslash{}hat\{a\}\_k\textasciicircum{}\textbackslash{}dagger\textbackslash{}phi\_k\textasciicircum{}*(x)\textbackslash{}right]}}\par\medskip
+\noindent\textit{Dictionary definition.} (kr)\$ (ID0230), reflecting the cylindrical structure of the field around the TZP.\par\medskip
+\noindent\textit{Encyclopedia reading.} (kr) (ID0230), reflecting the cylindrical structure of the field around the TZP. --- \#\# Part Two: Quantum Fields on the Curved Trawinistic Manifold \#\#\# Field Quantisation with a Degenerate Metric To quantise a field phi on the Trawinistic manifold, we expand it in modes that are eigenfunctions of the Trawinistic d'Alembertian (ID 019): The mode functions phi\_k are the curved-space analogues of plane waves. Away from p\_0, they reduce to standard plane waves; near p\_0, they are deformed by the metric degeneracy. The field is expanded as: with creation and annihilation operators satisfying the modified commutation relations [hat\{a\}\_k, hat\{a\}\_\{k'\}\textasciicircum{}dagger] = delta\_\{kk'\}cdot g\_k, where g\_k is a mode-dependent normalisation that incorporates the metric determinant sqrt\{|g|\}. **The crucial consequence:** the vacuum state |0rangle defined by hat\{a\}\_k|0rangle = 0 is o
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID1805\_threshold}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\subsection{ID9036: Definition of T (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{T=nablaT\_anablaTa\textbackslash{}Delta\{\textbackslash{}text\{T\}\}\textbackslash{}phi=\textbackslash{}n abla\{\textbackslash{}text\{T\}\}\_\{a\}\textbackslash{}nabla\textasciicircum{}\{\textbackslash{}text\{T\}a\}\textbackslash{}phi T=nablaT\_anablaTa,}}\par\medskip
+\noindent\textit{Dictionary definition.} Defines parallel transport; allows construction of curvature tensors; enters field equations; enables definition of the Trawinistic Laplacian.\par\medskip
+\noindent\textit{Encyclopedia reading.} Definition of T is a differential equation, written T=nablaT\_anablaTaDeltaTphi=nablaT\_anabla\textasciicircum{}TaphiT=nablaT\_anablaTa. It relates the quantity to its derivatives, governing how the system evolves in space and time. It is built from Delta, phi, nabla, T\_a, T, a, defining T. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID9036\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} A derived obligation: the spine claims this follows from what precedes it. Until the formal derivation is supplied, the computational guardrail polices at least the node's internal consistency.
+
+\subsection{ID9037: Relation... (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{nablaT\textbackslash{}nabla\textasciicircum{}\{\textbackslash{}text\{T\}\}nablaTistheTrawin isticconnectionandindicesareraisedusingt heregularisedinversemetric.}}\par\medskip
+\noindent\textit{Dictionary definition.} Relation... --- nablaTnabla\textasciicircum{}TnablaTistheTrawinisticconnectionandindicesareraisedusingtheregularisedinversemetric.\par\medskip
+\noindent\textit{Encyclopedia reading.} Relation... is a differential equation, written nablaTnabla\textasciicircum{}TnablaTistheTrawinisticconnectionandindicesareraisedusingtheregularisedinverseme. It relates the quantity to its derivatives, governing how the system evolves in space and time. It is built from T, s, h, r, a, w. Within the Trawin Zero Point registry it serves as one element of the framework's mathematical narrative.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID9037\_structure}.
+\par\medskip\noindent\textit{Obligation reading.} This node carries proof debt by declaration---Derived\_Theorem\_Obligation---and is therefore where the refinement pass should concentrate first: a discharged derivation here strengthens every downstream node simultaneously.
+
+\subsection{ID0001: Tzp Trawin Zero Point (Derived\_Theorem\_Obligation)}
+
+\noindent\textit{Registry equation:}\par
+{\small\texttt{\textbackslash{}forall \textbackslash{}Gamma \textbackslash{}subset M,\textbackslash{}; \textbackslash{}Gamma \textbackslash{}sim \textbackslash{}Lambda || \textbackslash{}Lambda(0)=\textbackslash{}Lambda(1/2)=p}}\par\medskip
+\noindent\textit{Dictionary definition.} A Trawinistic manifold is a smooth manifold ((M,g)) equipped with a Lorentzian metric (g) such that ( g\_p=0) at the TZP and (g) is nondegenerate elsewhere.\par\medskip
+\noindent\textit{Encyclopedia reading.} The lemniscate is the canonical shape of TZP recurrence: two lobes, one crossing, one central point. This turns the zero point into a geometric crossing rather than a simple endpoint. Interpretive role: This axiom is the topological engine for later dimensional branching and winding-based measurement. It is the first place where the registry shows a double-valued local passage rather than a simple smooth loop.
+\par\medskip\noindent\textit{Computational guardrail:} \texttt{trawin\_zero\_point\_qu\_ID0001\_identity}.
+\par\medskip\noindent\textit{Obligation reading.} As a Derived\_Theorem\_Obligation this node owes a proof: the registry asserts that it follows from the chain's upstream vocabulary and axioms, and the Isabelle focus stub holds the slot where that derivation will be discharged.
+
+\section{Dependency structure and obligations}
+\label{sec:dep}
+
+Table~\ref{tab:obligations} summarizes the spine's obligation ledger. The chain's proof order runs from the definitional nodes (vocabulary first) through the derived obligations to the spine's closure; the refinement pass may interleave additional registry nodes where the source manuscript's own derivations require them, in which case the table grows monotonically---existing rows are never weakened, only joined.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Obligation ledger for the trawin zero point quantum field theory spine.}
+\label{tab:obligations}
+\begin{tabular}{llp{6.2cm}}
+\toprule
+ID & Obligation role & Wolfram check \\
+\midrule
+ID9122 & Core\_Definition & \texttt{trawin\_zero\_point\_qu\_ID9122\_structure} \\
+ID9123 & Core\_Definition & \texttt{trawin\_zero\_point\_qu\_ID9123\_structure} \\
+ID0481 & Core\_Definition & \texttt{trawin\_zero\_point\_qu\_ID0481\_identity} \\
+ID1805 & Derived\_Theorem\_Obligation & \texttt{trawin\_zero\_point\_qu\_ID1805\_threshold} \\
+ID9036 & Derived\_Theorem\_Obligation & \texttt{trawin\_zero\_point\_qu\_ID9036\_identity} \\
+ID9037 & Derived\_Theorem\_Obligation & \texttt{trawin\_zero\_point\_qu\_ID9037\_structure} \\
+ID0001 & Derived\_Theorem\_Obligation & \texttt{trawin\_zero\_point\_qu\_ID0001\_identity} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Crosswalk to the core series and companion corpus}
+\label{sec:crosswalk}
+
+Because all spines draw on one canonical registry, node sharing is measurable and meaningful: a shared identifier means two papers consume literally the same typed object, so verification work transfers between them without translation. Of this spine's seven nodes, 0 appear in core-series spines and 1 recur elsewhere in the companion corpus. Table~\ref{tab:crosswalk} records the census.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Node-sharing census for this spine.}
+\label{tab:crosswalk}
+\begin{tabular}{lp{4.4cm}p{6.6cm}}
+\toprule
+ID & Core-series appearances & Companion-corpus appearances \\
+\midrule
+ID9122 & --- & --- \\
+ID9123 & --- & --- \\
+ID0481 & --- & algebraic signal geometric enforcement; universal interaction kernel \\
+ID1805 & --- & --- \\
+ID9036 & --- & --- \\
+ID9037 & --- & --- \\
+ID0001 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Nodes shared with the core series are this spine's strongest members: their guardrails are already certified in the core pipeline, and the present paper inherits that status. Nodes unique to this spine are its distinctive contribution---and its refinement priority, since no other paper will discharge them. Nodes recurring across companions mark the corpus's internal seams: the same object consumed by several manuscripts, whose refinements must agree by the duplicate discipline documented in the Einstein Focus companion.
+
+\section{Position in the TZPID arc}
+\label{sec:arc}
+
+This companion underwrites the core series wherever fields meet the anchor. Paper V's modified Einstein source and the Einstein Focus companion's far-field recovery are the gravitational shadows of the modified Green's functions developed here; Paper VI's retarded-kernel frame-dragging residual (TAP-008) borrows precisely this propagator technology; and Paper VII's pair-creation operator acts on the vacuum whose mode structure this paper's quantization defines. In the program's logical order, this spine sits between the founding axioms and everything dynamical.
+
+\section{Verification pathway}
+\label{sec:verify}
+
+The spine enters the program's two-engine verification pipeline. The Isabelle focus theory \texttt{TZPID\_Spine\_trawin\_zero\_point\_quantum\_field\_theory.thy} types the seven obligations over the registry's declared vocabulary, in the dependency order of Section~\ref{sec:chain}; the Wolfram check stub \texttt{trawin\_zero\_point\_quantum\_field\_theory\_checks.wl} carries the per-node computational guardrails listed in Table~\ref{tab:obligations}. As with the core series, the division of labor is deliberate: the theorem prover certifies structure (types, roles, dependency soundness), while the computational engine certifies arithmetic and algebraic identities node by node. A check name of the form \texttt{...\_identity} denotes a per-node identity guardrail generated from the registry equation; refined checks replace these as the equation-level crosswalk matures.
+
+Because the companion spines share the registry with the core series, verification is cumulative: any node here that also appears in a core spine (the chain tables record several) inherits the core guardrail's status, and any refinement proved here propagates back. The companion series thus functions as the proof pipeline's breadth dimension---161 distinct registry nodes across the 27 companions---complementing the core series' depth.
+
+The pipeline's two-engine division also fixes what failure means at this layer. A failed Wolfram guardrail localizes an arithmetic or algebraic defect in one node's registered equation: the repair is editorial (correct the registration against the source) or substantive (the source itself errs), and the obligations ledger records which. A failed Isabelle discharge, by contrast, indicts the chain: a type mismatch or unprovable dependency means the proof-order proposal of Section~\\ref{sec:chain} is wrong as stated, and the refinement pass must re-curate. Keeping these failure modes separate is what the stub architecture buys: every companion enters the pipeline with its failure semantics declared in advance, which is the practical meaning of being peer-reviewable by machine.
+
+\section{Refinement worksheet}
+\label{sec:worksheet}
+
+The concept-anchored backbone converts into an equation-level formalization through a bounded, node-by-node worksheet. For each node the worksheet item below states the concrete refinement act; completing all seven closes the spine's first formalization pass.
+
+\begin{enumerate}
+\item \textbf{ID9122} (\texttt{trawin\_zero\_point\_qu\_ID9122\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID9123} (\texttt{trawin\_zero\_point\_qu\_ID9123\_structure}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID0481} (\texttt{trawin\_zero\_point\_qu\_ID0481\_identity}): exhibit the source manuscript's working definition beside the registry equation; reconcile notation; type the object in the focus theory and confirm every downstream node consumes the typed form.
+\item \textbf{ID1805} (\texttt{trawin\_zero\_point\_qu\_ID1805\_threshold}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9036} (\texttt{trawin\_zero\_point\_qu\_ID9036\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID9037} (\texttt{trawin\_zero\_point\_qu\_ID9037\_structure}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\item \textbf{ID0001} (\texttt{trawin\_zero\_point\_qu\_ID0001\_identity}): reconstruct the source manuscript's derivation sketch; identify the upstream nodes it actually uses (amending the chain if they differ from the curated order); discharge the proof in the focus theory or record the precise gap.
+\end{enumerate}
+
+The worksheet's order matters: definitional items unblock derived ones, and a failure at any item halts propagation rather than silently weakening downstream claims. Completed items should update the obligations CSV in place, so that the spine's public ledger always reflects its true refinement state---the same live-ledger discipline the core series applies to its guardrails.
+
+\section{Demarcation and refinement targets}
+\label{sec:demarc}
+
+As throughout the program, the demarcation line is drawn explicitly. The established layer comprises the standard mathematics and physics that the chain's nodes quote---definitions, identities, and independently citable results---together with whatever the computational guardrails certify. The framework layer comprises the source manuscript's interpretive claims and the spine's structural assertion that its nodes form the stated dependency chain. The interaction term's localization and strength are framework commitments; the propagator and Green's-function machinery surrounding them is standard analysis whose degenerate-point extension must be exhibited, in the refinement pass, with the same rigor as its textbook ancestor.
+
+Refinement targets, in pipeline order: (i) replace the concept-anchored node selection with an equation-level crosswalk against the source manuscript; (ii) promote each \texttt{...\_identity} guardrail to a content-bearing check; (iii) discharge the typed obligations in the Isabelle focus theory against the program's shared vocabulary; and (iv) record any node whose refinement fails, since a failed node localizes exactly where the source manuscript and the canonical registry disagree---the information a refinement pass exists to produce.
+
+\section{Conclusion}
+\label{sec:conc}
+
+Quantum field theory on a Trawinistic manifold is the program's claim to technical seriousness: not a new interpretation layered on old equations, but a worked extension of propagator theory to a background with one degenerate point. Its refinement targets---explicit spectral representation of the modified Green's functions, unitarity at the degenerate locus, and matching to the Einstein Focus far-field conditions---are the corpus's most conventional open problems, in the best sense: they are exactly the questions a quantum field theorist would ask, and they have typed registry slots waiting for the answers.
+
+\begin{thebibliography}{9}
+
+\bibitem{registry} Trawin, D. A., \emph{TZPID Canonical Equation Master Registry, Dictionary, and Encyclopedia}, TZPIDProof archive (2026). Registry identifiers as cited in text.
+
+\bibitem{spine} Trawin, D. A., \emph{TZPID Zenodo Individual Spines: trawin zero point quantum field theory}, TZPIDProof archive, \texttt{zenodo\_individual\_spines/} (2026).
+
+\bibitem{manuscript} Trawin, D. A., \emph{trawin zero point quantum field theory}, Zenodo manuscript (2026).
+
+\bibitem{core} Trawin, D. A., TZPID Gold Spine Series, Papers I--VIII (2026).
+
+\bibitem{einstein} Trawin, D. A., \emph{The Einstein Focus}, TZPID Gold Spine Series, Paper V-A (2026).
+
+\bibitem{index} Trawin, D. A., \emph{TZPID Zenodo Paper Gold Spines} (aggregate), \texttt{TZPID\_ZENODO\_SPINES.md}, TZPIDProof archive (2026).
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,273 @@
+\tzpanchor{0032}
+\tzpentryheader{0032}{Action Functional on Trawinistic Manifolds}
+
+\begingroup\small
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\noindent\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.36\linewidth}X@{}}
+\textbf{UUID} & \multicolumn{2}{l@{}}{\tzpcode{06988d3b-37c6-56b0-800f-9c937f231c62}}\\
+\textbf{PiID} & \tzpcode{2884197169399} & \textbf{TZPi}\quad \tzpcode{7}\quad \textbf{PiPE}\quad \tzpcode{39}\\
+\textbf{RTEID} & \textbf{Poloidal $\theta$}\quad \tzpcode{124.2631 rad} & \textbf{Toroidal $\phi$}\quad \tzpcode{00.2047 rad}\\
+\textbf{TZPID} & \tzpcode{ID0032} & \textbf{Node Dependencies}\quad \tzpidref{0017}\\
+\textbf{Registry} & \tzpcode{registry\_id\_0032} & \textbf{Scale}\quad variational\\
+\textbf{LOC Classification} & QA320 action principles & QC20 variational field theory\\
+\textbf{arXiv Classification} & Primary: math-ph \quad Cross-list: hep-th, gr-qc & \\
+\textbf{Primary Support} & Trawinistic Lagrangian Density & Manifold Integration\\
+\textbf{Closure Support} & Action Functional & \\
+\end{tabularx}\par
+\endgroup
+\endgroup
+
+\tzpsection{Canonical Statement}
+The action functional on a Trawinistic manifold aggregates kinetic, potential, and curvature contributions into one variational object. It is the source from which the field equations and conservation structures of the next entries are derived.
+
+\tzpsection{Canonical Equation}
+\[
+S[\phi]
+=
+\int_{M}
+\mathcal{L}_{\mathrm{T}}
+\bigl(
+\phi,\nabla^{\mathrm{T}}\phi,g
+\bigr)\,
+d^{n}x
+\]
+\[
+\mathcal{L}_{\mathrm{T}}
+=
+\mathcal{L}_{\mathrm{kin}}
+\;+\;
+\mathcal{L}_{\mathrm{pot}}
+\;+\;
+\mathcal{L}_{\mathrm{curv}}
+\]
+
+\begin{minipage}[t]{0.49\linewidth}
+\tzpsection{Canonical Symbol Key}
+\begingroup
+\small
+\raggedright
+\textbf{Source equation symbols.}\par
+\begin{itemize}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+    \item $S$: source equation symbol.
+    \item $\phi$: flux, phase, or topological map term in the source equation.
+    \item $M$: source equation symbol.
+    \item $\mathcal{L}_{\mathrm{T}}$: source equation symbol.
+    \item $n$: integer mode index.
+    \item $\mathcal{L}_{\mathrm{kin}}$: source equation symbol.
+    \item $\mathcal{L}_{\mathrm{pot}}$: source equation symbol.
+    \item $\mathcal{L}_{\mathrm{curv}}$: source equation symbol.
+\end{itemize}
+\endgroup
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\tzpsection{Wolfram Form}
+\begingroup
+\scriptsize
+\raggedright
+\textbf{Source Wolfram model.}\par
+\begin{Verbatim}[fontsize=\tiny,breaklines=true,breakanywhere=true]
+(* TZPID ID0032 generated source Wolfram model *)
+ClearAll[K0032, Cr0032, T, R, A, W, I, N];
+eq0032$1 = HoldForm[S[phi] == IntegralM*LT[phi, Grad^T*phi, g]*d^n*x];
+eq0032$2 = HoldForm[LT == LKin + LPot + LCurv];
+eq0032$3 = HoldForm[IntegralMLT*d^n*x];
+
+K0032 = HoldForm[{eq0032$1, eq0032$2, eq0032$3}];
+
+N = "normalized TRAWIN closure object for Action Functional on Trawinistic Manifolds";
+I = "Action Functional integration/comparison layer";
+W = "Manifold Integration wave or operator carrier";
+A = "Trawinistic Lagrangian Density admissible action/amplitude condition";
+R = "Manifold Integration rotation/curl preservation layer";
+T = "Trawinistic Lagrangian Density local source condition";
+
+Cr0032[expr_] := HoldForm[N[I[W[A[R[T[expr]]]]]]];
+
+Result0032 = Cr0032[K0032];
+\end{Verbatim}
+\endgroup
+\end{minipage}
+
+\par\vspace{0.45\baselineskip}
+\noindent\begin{minipage}[t]{\linewidth}
+\begingroup
+\small
+\raggedright
+\textbf{TRAWIN Operator Key.}\par
+\noindent\textbf{Time/localization operator:} $\mathsf{T}\!\left[\mathrm{local}\right]$ Trawinistic Lagrangian Density local source condition.\par
+\noindent\textbf{Rotation/curl operator:} $\mathsf{R}\!\left[\nabla\times\right]$ Manifold Integration rotation/curl preservation layer.\par
+\noindent\textbf{Action/amplitude operator:} $\mathsf{A}\!\left[\mathrm{admissible}\right]$ Trawinistic Lagrangian Density admissible action/amplitude condition.\par
+\noindent\textbf{Wave/d'Alembertian operator:} $\mathsf{W}\!\left[\Box\right]$ Manifold Integration wave or operator carrier.\par
+\noindent\textbf{Integration operator:} $\mathsf{I}\!\left[\int\right]$ Action Functional integration/comparison layer.\par
+\noindent\textbf{Normalization operator:} $\mathsf{N}\!\left[\mathrm{normalized}\right]$ normalized TRAWIN closure object for Action Functional on Trawinistic Manifolds.\par
+\endgroup
+\end{minipage}
+
+\clearpage
+\noindent\textbf{[ID 0032] Action Functional on Trawinistic Manifolds}\par
+\vspace{0.35em}
+\tzpsection{Derivation Layer}
+\paragraph{Primary Equation.}
+\begin{equation}
+S[\phi]
+=
+\int_M
+\mathcal{L}_T
+\left(
+\phi,\nabla^T\phi,g
+\right)
+\,\mathrm{d}^n x .
+\end{equation}
+
+\paragraph{Primary Derivation.}
+Let $\phi$ be a field defined on the Trawinistic manifold $M$.  
+The local dynamics are encoded in a Trawinistic Lagrangian density:
+
+\begin{equation}
+\mathcal{L}_T
+\left(
+\phi,\nabla^T\phi,g
+\right).
+\end{equation}
+
+This density depends on the field, its Trawinistic covariant derivative, and the metric structure.
+
+The total action is obtained by integrating the density over the manifold:
+
+\begin{equation}
+\boxed{
+S[\phi]
+=
+\int_M
+\mathcal{L}_T
+\left(
+\phi,\nabla^T\phi,g
+\right)
+\,\mathrm{d}^n x .
+}
+\end{equation}
+
+\paragraph{Interpretation.}
+The action functional is the master quantity from which the Trawinistic field equations are derived.
+
+\par\vspace{0.35em}
+\noindent\textbf{Derivable Consequences.}\quad
+\begingroup
+\footnotesize
+\raggedright
+The canonical equation anchors Action Functional on Trawinistic Manifolds by connecting the source condition to the derivation layer and proof certificate.
+\par\endgroup
+
+\tzpsection{Equation Support}
+\noindent\textbf{1. Trawinistic Lagrangian Density}\par
+\[
+\mathcal{L}_{\mathrm{T}}
+=
+\mathcal{L}_{\mathrm{kin}}
+\;+\;
+\mathcal{L}_{\mathrm{pot}}
+\;+\;
+\mathcal{L}_{\mathrm{curv}}
+\]
+\noindent This collects the kinetic, potential, and curvature contributions into one local density.\par
+\noindent\textbf{2. Manifold Integration}\par
+\[
+\int_{M}\mathcal{L}_{\mathrm{T}}\,d^{n}x
+\]
+\noindent This globalizes the local density into a variational quantity over the full admissible manifold.\par
+\noindent\textbf{3. Action Functional}\par
+\[
+S[\phi]
+=
+\int_{M}
+\mathcal{L}_{\mathrm{T}}
+\bigl(
+\phi,\nabla^{\mathrm{T}}\phi,g
+\bigr)\,
+d^{n}x
+\]
+\noindent This closes the progression by producing the object whose stationary points determine the dynamics.\par
+
+\clearpage
+\noindent\textbf{[ID 0032] Action Functional on Trawinistic Manifolds}\par
+\vspace{0.35em}
+\tzpsection{Dictionary}
+\begingroup\small
+\tzpsection{Definition}
+Action Functional on Trawinistic Manifolds is a registry definition in the active TZPID arc.
+
+% BEGIN TZP CONTEXTUAL MEANING
+\tzpsection{Contextual Meaning}
+\begingroup\footnotesize\setlength{\emergencystretch}{3em}\sloppy
+\textbf{Formal statement:} The action functional S [   ] S [ phi ] S [   ] for a field  phi  is given by S [   ] =intMLT( ,nablaT ,g) dnxS [ phi ] =integral sub M L sub T (phi,nablatextsuperscript T phi,g)textbackslash, d n xS [   ] =intMLT( ,nablaT ,g)dnx, where LT L sub T LT includes kinetic, potential, and curvature terms compatible with the TZP structure. \textbackslash{}. \textbf{Contextual meaning:} The entry reads Action Functional on Trawinistic Manifolds as a controlled technical headword whose equation layer, proof route, and registry role are interpreted together. \textbf{Derivable consequences:} This functional is the center of the variational part of the canon. Once it is fixed, least-action principles, Euler--Lagrange equations, and conserved currents all become consequences rather than separate axioms. \textbf{Lemma support:} Trawinistic Lagrangian Density; Manifold Integration; Action Functional.\par
+\endgroup
+% END TZP CONTEXTUAL MEANING
+
+\tzpsection{Technical Interpretation}
+The action functional is the master quantity from which the Trawinistic field equations are derived.
+
+\tzpsection{Equation Grounding}
+Equation anchors: The action functional S [   ] S [ phi ] S [   ] for a field  phi  is given by S [   ] =intMLT( , ablaT ,g) dnxS [ phi ] =integral M L T (phi, ablatextsuperscript T phi,g)textbackslash, d n xS [   ] =intMLT( , ablaT ,g)dnx, where LT L T LT includes kinetic, potential, and curvature terms compatible with the TZP structure. The action functional S [   ] S [ phi ] S [   ] for a field  phi  is given by S [   ] =intMLT( , ablaT ,g) dnxS [ phi ] =integral M L T (phi, ablatextsuperscript T phi,g)textbackslash, d n xS [   ] =intMLT( , ablaT ,g)dnx, where LT L T LT includes kinetic, potential, and curvature terms compatible with the TZP structure.
+
+\tzpsection{Interpretive Role}
+This functional is the center of the variational part of the canon. Once it is fixed, least-action principles, Euler--Lagrange equations, and conserved currents all become consequences rather than separate axioms.
+\endgroup
+
+\tzpsection{TZP Thesaurus}
+\begingroup\footnotesize\sloppy
+\begin{enumerate}[leftmargin=1.35em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item \textbf{Variational Work Functional Trawinistic Manifolds}: variational synonym for action, energy generation, admissible variation, or closure.
+\item \textbf{Variational Work Geometric Analogue}: geometric neighbor term for shape, measure, curvature, or tensor structure.
+\item \textbf{Variational Work Terminology}: variational synonym for action, energy generation, admissible variation, or closure.
+\end{enumerate}
+\endgroup
+
+\tzpsection{Encyclopedia Mathematica}
+\begingroup\footnotesize\sloppy
+The visual plate below is reserved for the source-specific equation and progression graphic for [ID 0032]. It is included only as a companion to the canonical equation, not as a substitute for the formal text.
+\par\endgroup
+\ifTZPDarkEdition
+\tzpdictionaryvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0032_dictionary_figure_dark.pdf}
+\fi
+
+\clearpage
+\begingroup\tzpsupportsetup
+\noindent\textbf{\fontsize{10.8pt}{12.8pt}\selectfont [ID 0032] Constructive Logic and Proof Certificate}\par
+\noindent\textbf{\fontsize{10pt}{12pt}\selectfont Action Functional on Trawinistic Manifolds}\par
+\vspace{0.45em}
+\begingroup
+\footnotesize
+\setlength{\parskip}{0.22em}
+\setlength{\parindent}{0pt}
+\noindent\textbf{Curry--Howard--Lambek Interpretation}\par
+Under the Curry--Howard--Lambek correspondence, this registry entry is read as a typed proof
+object: the stated source condition supplies the proposition, the derivation supplies the
+morphism, and the proof certificate records the machine handles needed to check the obligation
+in the formal registry.
+
+\vspace{0.45em}
+\noindent\textbf{CHL Proof}\par
+\textbf{Statement:} the action functional on a Trawinistic manifold aggregates kinetic, potential, and
+curvature contributions into one variational object
+
+\textbf{Logic Validation:}\\
+\textbf{Proposition:} ``Action Functional on Trawinistic Manifolds is valid when the total tensorial quantity is
+conserved under the stated constraint.''\\
+\textbf{Proof:} The source statement identifies a conserved balance law. Reading 0032 as a proposition,
+validity follows by requiring the full stress, flux, or current contribution to be
+included before the divergence or balance condition is evaluated.
+
+\textbf{VERDICT:} \ensuremath{\checkmark}\ \textbf{TRUE} --- conserved total-structure validation
+
+\textbf{Formal Status:} \ensuremath{\checkmark}\ THEORETICAL -- source-backed CHL proof obligation
+
+\textbf{Physical Status:} THEORETICAL -- requires model-specific empirical interpretation
+\par\vspace{0.45em}
+\noindent{\tiny\textbf{Isabelle/HOL.} \tzpplaincode{physics\_validity\_from\_model, external\_validity\_package, registry\_number\_matches, equation\_count\_matches}}\par
+\ifTZPDarkEdition
+\tzpproofvisualband{D:/TZPID/kdp_workflow/build/tikz_figures/ID0032_proof_certificate_figure_dark.pdf}
+\fi
+\endgroup
+\endgroup

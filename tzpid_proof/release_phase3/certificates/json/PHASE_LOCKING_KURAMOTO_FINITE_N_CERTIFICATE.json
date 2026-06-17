@@ -1,0 +1,115 @@
+{
+  "certificate": "PHASE_LOCKING_KURAMOTO_FINITE_N_CERTIFICATE",
+  "generated_utc": "2026-06-09T20:48:59+00:00",
+  "creator": "Daniel Alexander Trawin",
+  "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "engine": "Python standard library",
+  "claim_boundary": "Finite-N algebraic entrainment scan for the phase-locking carrier; not a full nonlinear time-domain Kuramoto simulation.",
+  "equations": {
+    "finite_capture": "forall i, |Delta_i| <= K",
+    "detuning_radius": "D = max_i |Delta_i|",
+    "phase_witness": "w_i = Delta_i / K",
+    "phase_residual": "K*w_i - Delta_i = 0",
+    "order_floor": "1 - (D/K)^2"
+  },
+  "checks": {
+    "all_scenarios_pass": "pass",
+    "finite_capture_verified": "pass",
+    "order_floor_verified": "pass"
+  },
+  "scenarios": [
+    {
+      "name": "three_body_near_resonance",
+      "role": "Small finite population with all detunings safely inside the capture basin.",
+      "coupling": 1.0,
+      "detunings": [
+        -0.32,
+        0.0,
+        0.41
+      ]
+    },
+    {
+      "name": "orbital_cluster_partial_lock",
+      "role": "Cluster-like spread near the boundary of a stronger coupling window.",
+      "coupling": 1.5,
+      "detunings": [
+        -1.2,
+        -0.75,
+        -0.1,
+        0.6,
+        1.35
+      ]
+    },
+    {
+      "name": "wide_coupling_entrainment",
+      "role": "Wide coupling keeps a heterogeneous finite population entrained.",
+      "coupling": 2.25,
+      "detunings": [
+        -2.0,
+        -1.2,
+        -0.35,
+        0.15,
+        0.9,
+        2.1
+      ]
+    }
+  ],
+  "scenario_summaries": [
+    {
+      "scenario": "three_body_near_resonance",
+      "role": "Small finite population with all detunings safely inside the capture basin.",
+      "coupling": 1.0,
+      "oscillator_count": 3,
+      "radius": 0.41,
+      "order_floor": 0.8319000000000001,
+      "max_witness_abs": 0.41,
+      "max_residual": 0.0,
+      "tolerance": 1e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "radius_inside_coupling": "pass",
+      "all_detunings_captured": "pass",
+      "all_phase_witnesses_bounded": "pass",
+      "all_residuals_zero": "pass",
+      "order_floor_bounded": "pass"
+    },
+    {
+      "scenario": "orbital_cluster_partial_lock",
+      "role": "Cluster-like spread near the boundary of a stronger coupling window.",
+      "coupling": 1.5,
+      "oscillator_count": 5,
+      "radius": 1.35,
+      "order_floor": 0.18999999999999995,
+      "max_witness_abs": 0.9,
+      "max_residual": 0.0,
+      "tolerance": 1.5e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "radius_inside_coupling": "pass",
+      "all_detunings_captured": "pass",
+      "all_phase_witnesses_bounded": "pass",
+      "all_residuals_zero": "pass",
+      "order_floor_bounded": "pass"
+    },
+    {
+      "scenario": "wide_coupling_entrainment",
+      "role": "Wide coupling keeps a heterogeneous finite population entrained.",
+      "coupling": 2.25,
+      "oscillator_count": 6,
+      "radius": 2.1,
+      "order_floor": 0.12888888888888883,
+      "max_witness_abs": 0.9333333333333333,
+      "max_residual": 0.0,
+      "tolerance": 2.25e-12,
+      "status": "pass",
+      "positive_coupling": "pass",
+      "radius_inside_coupling": "pass",
+      "all_detunings_captured": "pass",
+      "all_phase_witnesses_bounded": "pass",
+      "all_residuals_zero": "pass",
+      "order_floor_bounded": "pass"
+    }
+  ],
+  "grid_csv": "phase2_checks\\PHASE_LOCKING_KURAMOTO_FINITE_N_GRID.csv",
+  "status": "pass"
+}
