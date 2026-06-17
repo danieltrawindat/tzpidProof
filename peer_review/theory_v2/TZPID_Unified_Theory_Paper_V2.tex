@@ -1,0 +1,126 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,filecolor=black,menucolor=black,anchorcolor=black,pdfauthor={Daniel Alexander Trawin},pdfcreator={Trawin, Daniel Alexander},pdftitle={TZPID Unified Theory Paper, Version 2},pdfsubject={DAANSsphere, matter creation, DNA addressing, qubit spin-state access, communications, reverse harmonics},pdfkeywords={TZPID, DAANSsphere, qubit, DNA, matter creation, reverse harmonics, dimensional accessibility}]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{TZPID Unified Theory Paper, Version 2\\[0.5em]
+\large DAANSsphere Access, Matter Creation, DNA Addressing, Qubit Spin-State Carriers, Communications, and Reverse Harmonics}
+\author{Daniel Alexander Trawin\\
+\small ORCID: \href{https://orcid.org/0009-0001-4630-3715}{0009-0001-4630-3715}}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This Version 2 theory-paper layer adds material that was present in the wider corpus but not yet explicit in the unified paper: matter creation, DNA, communications, DAANSsphere-based qubit spin-state access, dimensional accessibility, and reverse harmonics.  The new Isabelle/HOL carrier, \texttt{TZPID\_DAANS\_Qubit\_DNA\_Communication.thy}, formalizes the bridge conservatively.  It proves address validity, antipodal involution, bit-pair communication, bounded dimensional access, normalized two-state qubit-carrier access, reverse-harmonic reconstruction, and reuse of the existing matter-creation threshold contract.  The result is not an empirical claim that these mechanisms are physically realized; it is a disciplined Version 2 formal scaffold for testing them.
+\end{abstract}
+
+\section{Why Version 2 Is Needed}
+
+The first theory package emphasized proof architecture: derivation order, gold spines, Isabelle/HOL carriers, Wolfram certificates, graph topology, and registry provenance.  That was necessary, but it left several recurring corpus themes in side lanes.  Version 2 moves those themes into the main theory paper: matter creation, DNA as an addressable biological carrier, communication through antipodal DAANSsphere structure, qubit spin-state access through a normalized two-state carrier, dimensional accessibility as a bounded gate, and reverse harmonics as inverse spectral reconstruction.
+
+\section{DAANSsphere Address Space}
+
+The DAANSsphere carrier is stated with two explicit counts:
+\[
+N_{\mathrm{DAANS}}=153600,\qquad N_{\mathrm{axis}}=76800.
+\]
+The antipodal index map is
+\[
+\alpha(i)=153601-i,
+\]
+so that applying the map twice returns the original index:
+\[
+\alpha(\alpha(i))=i.
+\]
+This gives the communication and qubit-access layers a precise address space rather than a purely narrative sphere.
+
+\section{DNA Addressing}
+
+The DNA-to-DAANS projection is formalized by modular addressing:
+\[
+A_{\mathrm{DNA}}(i)=(i\bmod 153600)+1.
+\]
+The Isabelle theorem \texttt{daans\_dna\_address\_valid} proves
+\[
+1\leq A_{\mathrm{DNA}}(i)\leq 153600.
+\]
+Thus every indexed biological position receives a valid DAANS address.  Stronger biochemical or quantum-biological claims remain certificate targets, but the address carrier is now total and bounded.
+
+\section{Antipodal Communication}
+
+The communication contract is the deterministic paired-bit relation
+\[
+b_{\mathrm{client}}=\neg b_{\mathrm{server}}.
+\]
+In the theory file this is wrapped as \texttt{antipodal\_bit\_constraint}.  A valid DAANS communication axis requires both a valid axis index and this bit-pair condition.  The paper-facing interpretation is modest: the formal layer proves a stable paired-state carrier.  It does not assert nonlocal signalling or hardware realization without a later certificate.
+
+\section{Qubit Spin-State Access}
+
+The qubit layer imports the existing two-state probability carrier:
+\[
+p_0\geq 0,\qquad p_1\geq 0,\qquad p_0+p_1=1.
+\]
+Version 2 adds a selected DAANS axis and an accessibility gate:
+\[
+0<a\leq 1.
+\]
+The resulting carrier,
+\[
+\mathrm{SpinAccess}(p_0,p_1,\mathrm{axis},a),
+\]
+means that a normalized two-state object, a valid antipodal axis, and a bounded accessibility weight are simultaneously present.  This is the formal way to discuss DAANSsphere use in determining or indexing a qubit spin state.
+
+\section{Dimensional Accessibility}
+
+Dimensional accessibility is deliberately not left unbounded.  It is represented as
+\[
+\mathrm{Accessible}(a)\iff 0<a\leq 1.
+\]
+This gate is important because it forces any higher-dimensional access claim to declare a finite interface weight.  It keeps the theory from treating dimensional access as an unconstrained explanatory wildcard.
+
+\section{Reverse Harmonics}
+
+Reverse harmonics are formalized as the inverse problem
+\[
+f_{\mathrm{obs}}=n f_0,\qquad f_0>0.
+\]
+Given an observed mode and a positive base, the reconstruction asks which integer harmonic index \(n\) could have generated the observation.  This is only the first form.  Later versions should extend it to Bessel roots, log-periodic ladders, and noisy spectral inference.
+
+\section{Matter-Creation Coupling}
+
+Matter creation is imported from the existing threshold spine.  The bridge uses:
+\[
+P_{\mathrm{crit}}\leq P_{\mathrm{vac}},
+\qquad
+\rho_{\mathrm{before}}<\rho_{\mathrm{after}}.
+\]
+From these assumptions the existing theory derives a thresholded creation predicate.  Version 2 then combines this threshold with DNA addressing and antipodal bit pairing into one bridge predicate.  The point is not to overclaim matter creation, but to require explicit threshold and density assumptions before any biological or communication carrier is attached to it.
+
+\section{Unified Version 2 Contract}
+
+The new Isabelle theorem \texttt{daans\_qubit\_dna\_communication\_unified\_contract} packages the layer:
+\begin{enumerate}
+  \item a normalized qubit spin-state access contract,
+  \item a reverse-harmonic reconstruction contract,
+  \item a matter-DNA-communication bridge contract.
+\end{enumerate}
+The theorem is a formal scaffold for the next proof phase: it shows that the named structures can coexist under explicit assumptions.  Physical realization remains a separate empirical and computational question.
+
+\section{Next Certificate Targets}
+
+The next certificate pass should attach Wolfram or Python checks for the modular address map, the antipodal involution, bit-pair stability under noise, reverse-harmonic reconstruction from simulated spectra, and DNA-to-DAANS ID coverage.  Once those certificates exist, this Version 2 scaffold can become a paper-facing table of registry IDs, formal theorems, and computational status.
+
+\end{document}
